@@ -1,0 +1,73 @@
+format = """
+$username\
+$hostname\
+$directory\
+$git_branch\
+$git_state\
+$git_status\
+$git_metrics\
+$fill\
+$cmd_duration $jobs $time\
+$line_break\
+$character"""
+
+
+[fill]
+symbol = " "
+
+[directory]
+style = "blue"
+read_only = " "
+truncation_length = 4
+truncate_to_repo = false
+
+[character]
+success_symbol = "[](bold yellow)"
+error_symbol = "[](bold red)"
+vicmd_symbol = "[](bold green)"
+
+[git_branch]
+symbol = " "
+format = 'on [$symbol$branch(:$remote_branch)]($style) '
+ignore_branches=[]
+style = "bold purple"
+
+
+[git_status]
+format = '([\[$all_status$ahead_behind\]]($style) )'
+style = "cyan"
+
+[git_state]
+format = '\([$state( $progress_current/$progress_total)]($style)\) '
+style = "bright-black"
+
+[git_metrics]
+disabled = false
+
+[jobs]
+symbol = ""
+style = "bold red"
+number_threshold = 1
+format = "[$symbol]($style)"
+
+[cmd_duration]
+format = "[$duration]($style)"
+style = "yellow"
+
+[memory_usage]
+symbol = " "
+
+[rust]
+symbol = " "
+
+[time]
+disabled = false
+style = "bold yellow"
+format = "[$time]($style)"
+
+[custom.stunnel]
+when = "ps aux | grep stunnel | grep -v grep"
+command = "ps -o etime= -p $(ps aux | grep stunnel | grep -v grep | awk '{print $2}')"
+style = "red"
+format = "[TUNNEL OPEN for $output]($style)"
+

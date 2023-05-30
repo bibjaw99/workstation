@@ -1,0 +1,293 @@
+####################################
+#     MY MODS
+####################################
+focus_follows_mouse no
+focus_wrapping no
+for_window [class="^.*"] border pixel 2
+######################################
+
+####################################
+#     Fonts 
+####################################
+font pango: Roboto Condensed Regular 11
+
+################################
+#         Mod Key
+################################
+# set the mod key to the winkey:
+set $mod Mod4
+
+#####################
+# workspace layout: #
+#####################
+# default i3 tiling mode:
+workspace_layout default
+
+##############################
+#border indicator on windows:
+##############################
+new_window pixel 1
+# thin borders
+# hide_edge_borders both
+
+###############################
+#         Gaps
+###############################
+# Set inner/outer gaps
+gaps inner 10
+gaps outer 0
+hide_edge_borders smart
+
+##############################
+#     Floating Modifier      # 
+##############################
+floating_modifier $mod
+
+##############################
+#  Switch Active Workspaces  #
+##############################
+bindsym $mod+Tab workspace next
+bindsym Mod1+Tab workspace prev
+
+##########################################
+# configuration for workspace behaviour: #
+##########################################
+
+set $ws1 "1"
+set $ws2 "2"
+set $ws3 "3"
+set $ws4 "4"
+set $ws5 "5"
+set $ws6 "6"
+set $ws7 "7"
+set $ws8 "8"
+
+##############################
+# switch to workspace        #
+##############################
+bindsym $mod+1    workspace  $ws1
+bindsym $mod+2    workspace  $ws2
+bindsym $mod+3    workspace  $ws3
+bindsym $mod+4    workspace  $ws4
+bindsym $mod+5    workspace  $ws5
+bindsym $mod+6    workspace  $ws6
+bindsym $mod+7    workspace  $ws7
+bindsym $mod+8    workspace  $ws8
+
+
+# move focused container to workspace
+bindsym $mod+Shift+1    move container to workspace  $ws1
+bindsym $mod+Shift+2    move container to workspace  $ws2
+bindsym $mod+Shift+3    move container to workspace  $ws3
+bindsym $mod+Shift+4    move container to workspace  $ws4
+bindsym $mod+Shift+5    move container to workspace  $ws5
+bindsym $mod+Shift+6    move container to workspace  $ws6
+bindsym $mod+Shift+7    move container to workspace  $ws7
+bindsym $mod+Shift+8    move container to workspace  $ws8
+
+################################
+#     Assigned Workspace       #
+################################
+
+# bind program to workspace and focus to them on startup:
+assign [class="kitty"] $ws1
+assign [class="(?i)firefox"] $ws2
+assign [class="Anaconda-Navigator"] $ws3
+assign [class="(?i)Code"] $ws3
+assign [class="Emacs"] $ws3
+assign [class="Pcmanfm"] $ws4
+assign [class="TelegramDesktop"] $ws5
+assign [class="discord"] $ws5
+assign [class="Slack"] $ws5
+assign [class="Inkscape"] $ws6
+assign [class="Gimp"] $ws6
+assign [class="Darktable"] $ws6
+assign [class="libreoffice-startcenter|Soffice"] $ws7
+assign [class="Atril"] $ws7
+assign [class="marktext"] $ws7
+assign [class="SimpleScreenRecorder"] $ws7
+assign [class="Lxappearance"] $ws8
+assign [class="stacer"] $ws8
+assign [class="qBittorrent"] $ws8
+assign [class="Yad"] $ws8
+assign [class="Gnome-disks"] $ws8
+assign [class="Nitrogen"] $ws8
+
+# automatic set focus new window if it opens on another workspace then the current:
+for_window [class=kitty] focus
+for_window [class=firefox] focus
+for_window [class=Anaconda-Navigator] focus
+for_window [class=Code] focus
+for_window [class=Emacs] focus
+for_window [class=Pcmanfm] focus
+for_window [class=TelegramDesktop] focus
+for_window [class=discord] focus
+for_window [class=Slack] focus
+for_window [class=Inkscape] focus
+for_window [class=Gimp] focus
+for_window [class=Darktable] focus
+for_window [class=libreoffice-startcenter|Soffice] focus
+for_window [class=Atril] focus
+for_window [class=marktext] focus
+for_window [class=SimpleScreenRecorder] focus
+for_window [class=Lxappearance] focus
+for_window [class=stacer] focus
+for_window [class=qBittorrent] focus
+for_window [class=Yad] focus
+for_window [class=Gnome-disks] focus
+for_window [class=Nitrogen] focus
+
+##############################
+# Focus Changing
+##############################
+
+# change focus
+bindsym $mod+h focus left
+bindsym $mod+j focus down
+bindsym $mod+k focus up
+bindsym $mod+l focus right
+
+# move focused window
+bindsym $mod+Shift+h move left
+bindsym $mod+Shift+j move down
+bindsym $mod+Shift+k move up
+bindsym $mod+Shift+l move right
+
+##############################
+# Window Modifying Rules
+##############################
+
+# split in horizontal orientation
+bindsym $mod+z split h
+
+# split in vertical orientation
+bindsym $mod+a split v
+
+# enter fullscreen mode for the focused container
+bindsym $mod+f fullscreen toggle
+
+# change container layout (stacked, tabbed, toggle split)
+bindsym $mod+s layout stacking
+bindsym $mod+e layout tabbed
+bindsym $mod+t layout toggle split
+
+# toggle tiling / floating
+bindsym $mod+space floating toggle
+
+# change focus between tiling / floating windows
+bindsym $mod+q focus mode_toggle
+
+# focus the parent container
+bindsym $mod+p focus parent
+
+##############################
+#  Window Resizing           #
+##############################
+# resize window (you can also use the mouse for that):
+mode "resize" {
+  bindsym h resize grow width 5 px or 5 ppt
+  bindsym j resize shrink height 5 px or 5 ppt
+  bindsym k resize grow height 5 px or 5 ppt
+  bindsym l resize shrink width 5 px or 5 ppt
+
+
+ #back to normal: Enter or Escape
+	bindsym Return mode "default"
+  bindsym Escape mode "default"
+}
+
+bindsym $mod+r mode "resize"
+
+##################
+# floating rules #
+##################
+
+# set floating (nontiling) for apps needing it
+for_window [class="Yad" instance="yad"] floating disable
+#for_window [class="obsidian"] floating disable
+
+# set floating (nontiling) for special apps
+for_window [class="GLava" instance="GLava"] floating enable
+
+####################################################
+# keybindings for different shortcuts and actions: #
+###################################################
+
+## App shortcuts
+
+# Firefox
+bindsym $mod+w exec firefox
+
+# File Manager
+bindsym $mod+n exec pcmanfm
+
+# Screenshot : FlameShot
+bindsym Print exec flameshot full --path ~/Pictures/screenshots
+bindsym $mod+Print exec flameshot gui --path ~/Pictures/screenshots
+
+# start a terminal
+bindsym $mod+Return exec kitty
+
+# ibus
+bindsym $mod+Shift+b exec ibus-setup
+
+# Network Manager Applet
+bindsym $mod+Shift+n exec --no-startup-id nm-applet
+
+# Rofi
+bindsym $mod+d exec --no-startup-id rofi -show drun -disable-history -show-icons
+bindsym Mod1+d exec --no-startup-id rofi -show run -disable-history
+bindsym Mod1+w exec rofi -show window -show-icons
+
+# kill focused window
+bindsym $mod+Shift+q kill
+
+# exit-menu
+bindsym $mod+Shift+e exec ~/.config/i3/scripts/power.sh
+
+# Lock the system
+bindsym $mod+Shift+x exec betterlockscreen -l dimblur 
+
+# reload the configuration file
+bindsym $mod+Shift+c reload
+
+# restart i3 inplace (preserves your layout/session, can be used to update i3)
+bindsym $mod+Shift+r restart
+
+#############################################
+# autostart applications/services on login: #
+#############################################
+
+# get auth work with polkit
+exec --no-startup-id /usr/lib/mate-polkit/polkit-mate-authentication-agent-1
+
+#exec --no-startup-id dex -a -s /etc/xdg/autostart/:~/.config/autostart/
+exec --no-startup-id dex --autostart --environment i3
+
+# autostart
+exec --no-startup-id ~/.config/autostart/autostart.sh
+
+# Compositor
+exec_always picom
+
+
+# Polybar
+exec_always --no-startup-id ~/.config/polybar/launch.sh
+
+######################################
+# color settings fo windows         #
+######################################
+
+# Define colors variables:
+# bg tab mode
+set $color1     #504945
+set $color2     #d8a657
+set $color3     #e78a4e
+set $color4     #928374
+
+# define colors for windows:
+#class                          border          bground         text            indicator       child_border
+client.focused               $color2           $color1         $color3           $color2         $color2
+client.unfocused             $color4           $color1         $color4           $color2         $color1
+client.focused_inactive      $color4           $color1         $color4           $color1         $color1
+client.urgent                $color3           $color3         $color2           $color2         $color1
