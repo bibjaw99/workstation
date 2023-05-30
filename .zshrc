@@ -43,6 +43,7 @@ alias xx="exit"
 alias cc="clear"
 alias ai="tgpt"
 alias ls="ls -la"
+
 ## Arch
 alias up="yay -Syyu"
 alias ref="yay -Syy"
