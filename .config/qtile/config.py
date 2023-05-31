@@ -335,7 +335,7 @@ groups = [
     Group(
         "5",
         label="󰍦",
-        matches=[Match(wm_class="TelegramDesktop")],
+        matches=[Match(wm_class="TelegramDesktop, discord")],
         layout="monadtall",
     ),
     Group(
