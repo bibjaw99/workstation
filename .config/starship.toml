@@ -57,8 +57,17 @@ style = "yellow"
 [memory_usage]
 symbol = " "
 
+[Python]
+symbol="󰌠"
+
+[C]
+symbol=""
+
+[Lua]
+symbol="󰢱"
+
 [rust]
-symbol = " "
+symbol = ""
 
 [time]
 disabled = false
