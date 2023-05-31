@@ -48,6 +48,7 @@
 |    alt+d    |        rofi rum         |
 |    alt+d    |      rofi windows       |
 | mod+Shift+e |       Power Menu        |
+| mod+Shift+o |     toggle layouts      |
 | mod+return  |     Kitty terminal      |
 | mod+Shift+q |     Kills a window      |
 |  mod+ctrl   | resize window(vim keys) |
@@ -55,6 +56,8 @@
 |  mod+space  |     floating window     |
 |    mod+w    |         firefox         |
 |    mod+n    |         pcmanfm         |
+|   mod+Tab   |   next active window    |
+|   alt+tab   | previous active window  |
 
 ---
 

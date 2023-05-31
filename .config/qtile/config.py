@@ -132,6 +132,19 @@ keys = [
         lazy.layout.up(),
         desc="Move focus up",
     ),
+    ######### Toggling Between Active Groups #########
+    Key(
+        [mod],
+        "Tab",
+        lazy.screen.next_group(skip_empty=True),
+        desc="Toggel next active group",
+    ),
+    Key(
+        [alt],
+        "Tab",
+        lazy.screen.prev_group(skip_empty=True),
+        desc="Toggel previous active group",
+    ),
     ######### Moving windows #########
     Key(
         [mod, "shift"],
@@ -215,8 +228,8 @@ keys = [
         desc="Toggle Floating layout",
     ),
     Key(
-        [mod],
-        "Tab",
+        [mod, "shift"],
+        "o",
         lazy.next_layout(),
         desc="Toggle between layouts",
     ),
