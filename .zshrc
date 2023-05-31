@@ -5,7 +5,7 @@ SAVEHIST=10000
 bindkey -v
 # End of lines configured by zsh-newuser-install
 # The following lines were added by compinstall
-zstyle :compinstall filename '/home/habib350/.zshrc'
+zstyle :compinstall filename '~/.zshrc'
 
 autoload -Uz compinit
 compinit
@@ -26,9 +26,10 @@ export PATH="$HOME/.local/bin:$PATH"
 
 ## Universal
 alias iconfig="nvim ~/.config/i3/config"
+alias qconfig="nvim ~/.config/qtile/config.py"
 alias polyconfig="nvim ~/.config/polybar/config.ini"
 alias piconfig="nvim ~/.config/picom/picom.conf"
-alias alconfig="nvim ~/.config/alacritty/alacritty.yml"
+alias kitconfig="nvim ~/.config/kitty/kitty.conf"
 alias vim="nvim"
 alias ff="neofetch"
 alias cc="musikcube"
