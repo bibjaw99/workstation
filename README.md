@@ -49,6 +49,7 @@
 |    alt+d    |      rofi windows       |
 | mod+Shift+e |       Power Menu        |
 | mod+Shift+o |     toggle layouts      |
+| mod+Shift+x |    Betterlockscreen     |
 | mod+return  |     Kitty terminal      |
 | mod+Shift+q |     Kills a window      |
 |  mod+ctrl   | resize window(vim keys) |
