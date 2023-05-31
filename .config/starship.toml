@@ -57,13 +57,13 @@ style = "yellow"
 [memory_usage]
 symbol = " "
 
-[Python]
+[python]
 symbol="󰌠"
 
-[C]
+[c]
 symbol=""
 
-[Lua]
+[lua]
 symbol="󰢱"
 
 [rust]
