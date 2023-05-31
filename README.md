@@ -56,8 +56,8 @@
 |  mod+space  |     floating window     |
 |    mod+w    |         firefox         |
 |    mod+n    |         pcmanfm         |
-|   mod+Tab   |   next active window    |
-|   alt+tab   | previous active window  |
+|   mod+Tab   |    next active group    |
+|   alt+tab   |  previous active group  |
 
 ---
 
