@@ -19,6 +19,15 @@
 
 ---
 
+## Scripts you need to make executable:
+
+- .config/autostart/autostart.sh
+- .config/i3/scripts/power.sh
+- .config/qtile/scripts/power.sh
+- .config/polybar/launch.sh
+
+---
+
 ## Apps in each workspace
 
 | Workspace Number |                       Assigned Apps                       |
@@ -27,7 +36,7 @@
 |        2         |                          Firefox                          |
 |        3         |                Vscode , Anaconda-Navigator                |
 |        4         |                          pcmanfm                          |
-|        5         |                         Telegram                          |
+|        5         |                     Telegram,Discord                      |
 |        6         |                 Gimp, Inkscape, Darktable                 |
 |        7         |                LibreOffice,Marktext,Atril                 |
 |        8         | Lxappearance,Stacer,Transmission,Yad,Gnome-Disks,Nitrogen |
