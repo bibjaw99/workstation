@@ -328,7 +328,7 @@ groups = [
     ),
     Group(
         "4",
-        label="󰑈",
+        label="",
         matches=[Match(wm_class="Pcmanfm")],
         layout="monadtall",
     ),
