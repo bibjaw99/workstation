@@ -441,7 +441,7 @@ def open_rofi():
 ######### DEFAULT WIDGET SETTINGS ######
 
 widget_defaults = dict(
-    font="JetBrainsMono Nerd Font Mono",
+    font="JetBrainsMono Nerd Font",
     fontsize=14,
     padding=3,
     foreground=gruv_mat["white"],
@@ -467,6 +467,7 @@ screens = [
                     **arrow_powerlineLeft,
                 ),
                 widget.GroupBox(
+                    font="JetBrainsMono Nerd Font Mono",
                     fontsize=27,
                     padding_x=5,
                     padding_y=5,
