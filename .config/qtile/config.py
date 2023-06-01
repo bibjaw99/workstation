@@ -346,7 +346,7 @@ groups = [
     ),
     Group(
         "7",
-        label="󰏆",
+        label="󰹕",
         matches=[Match(wm_class="marktext,Soffice,SimpleScreenRecorder,Atril")],
         layout="monadtall",
     ),
@@ -441,8 +441,8 @@ def open_rofi():
 ######### DEFAULT WIDGET SETTINGS ######
 
 widget_defaults = dict(
-    font="JetBrainsMono Nerd Font",
-    fontsize=13,
+    font="JetBrainsMono Nerd Font Mono",
+    fontsize=14,
     padding=3,
     foreground=gruv_mat["white"],
 )
@@ -467,7 +467,7 @@ screens = [
                     **arrow_powerlineLeft,
                 ),
                 widget.GroupBox(
-                    fontsize=20,
+                    fontsize=27,
                     padding_x=5,
                     padding_y=5,
                     rounded=False,
