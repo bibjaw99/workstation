@@ -4,7 +4,6 @@ vim.cmd([[colorscheme gruvbox-material]]) -- Set color scheme
 vim.opt.termguicolors = true
 vim.o.pumheight = 10 -- Max items to show in pop up menu
 vim.o.cmdheight = 1 -- Max items to show in command menu
-vim.o.guifont = "Monospace:h10" -- for neovide
 
 -- Files and Others
 vim.o.fileencoding = "utf-8" -- File Encoding
