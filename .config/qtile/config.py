@@ -340,7 +340,7 @@ groups = [
     ),
     Group(
         "6",
-        label="",
+        label="󰭛",
         matches=[Match(wm_class="Gimp-2.10,Inkscape,Darktable")],
         layout="monadtall",
     ),
