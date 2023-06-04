@@ -36,7 +36,7 @@ new_window pixel 1
 # Set inner/outer gaps
 gaps inner 10
 gaps outer 0
-hide_edge_borders smart
+# hide_edge_borders smart
 
 ##############################
 #     Floating Modifier      # 
@@ -282,7 +282,7 @@ exec_always --no-startup-id ~/.config/polybar/launch.sh
 # bg tab mode
 set $color1     #504945
 set $color2     #d8a657
-set $color3     #e78a4e
+set $color3     #fabd3f
 set $color4     #928374
 
 # define colors for windows:
