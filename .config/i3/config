@@ -272,7 +272,7 @@ exec_always picom
 
 
 # Polybar
-exec_always --no-startup-id ~/.config/polybar/launch.sh
+exec_always --no-startup-id ~/.config/polybar/i3_bar.sh
 
 ######################################
 # color settings fo windows         #
