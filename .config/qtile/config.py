@@ -312,43 +312,43 @@ groups = [
         "1",
         label="",
         matches=[Match(wm_class="kitty")],
-        layout="monadtall",
+        layout="columns",
     ),
     Group(
         "2",
         label="",
         matches=[Match(wm_class="firefox")],
-        layout="monadtall",
+        layout="columns",
     ),
     Group(
         "3",
         label="",
         matches=[Match(wm_class="Code,Anaconda-Navigator")],
-        layout="monadtall",
+        layout="columns",
     ),
     Group(
         "4",
         label="",
         matches=[Match(wm_class="Pcmanfm")],
-        layout="monadtall",
+        layout="columns",
     ),
     Group(
         "5",
         label="󰍦",
         matches=[Match(wm_class="TelegramDesktop, discord, Slack")],
-        layout="monadtall",
+        layout="columns",
     ),
     Group(
         "6",
         label="󰭛",
         matches=[Match(wm_class="Gimp-2.10,Inkscape,Darktable")],
-        layout="monadtall",
+        layout="columns",
     ),
     Group(
         "7",
         label="",
         matches=[Match(wm_class="marktext,Soffice,SimpleScreenRecorder,Atril")],
-        layout="monadtall",
+        layout="columns",
     ),
     Group(
         "8",
@@ -356,7 +356,7 @@ groups = [
         matches=[
             Match(wm_class="Lxappearance,Yad,stacer,qBittorrent,Gnome-disks,Nitrogen")
         ],
-        layout="monadtall",
+        layout="columns",
     ),
 ]
 
@@ -385,9 +385,12 @@ for i in groups:
 #########################################
 
 layouts = [
-    layout.MonadTall(
+    layout.Columns(
+        num_columns=2,
         border_width=2,
-        margin=6,
+        margin=4,
+        wrap_focus_columns=False,
+        wrap_focus_rows=False,
         border_focus=gruv_mat["grey"],
         border_normal=gruv_mat["dark"],
     ),
