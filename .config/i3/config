@@ -184,19 +184,10 @@ bindsym $mod+p focus parent
 #  Window Resizing           #
 ##############################
 # resize window (you can also use the mouse for that):
-mode "resize" {
-  bindsym h resize grow width 5 px or 5 ppt
-  bindsym j resize shrink height 5 px or 5 ppt
-  bindsym k resize grow height 5 px or 5 ppt
-  bindsym l resize shrink width 5 px or 5 ppt
-
-
- #back to normal: Enter or Escape
-	bindsym Return mode "default"
-  bindsym Escape mode "default"
-}
-
-bindsym $mod+r mode "resize"
+bindsym $mod+Ctrl+h resize grow width 5 px or 5 ppt
+bindsym $mod+Ctrl+j resize shrink height 5 px or 5 ppt
+bindsym $mod+Ctrl+k resize grow height 5 px or 5 ppt
+bindsym $mod+Ctrl+l resize shrink width 5 px or 5 ppt
 
 ##################
 # floating rules #
