@@ -24,7 +24,7 @@
 - .config/autostart/autostart.sh
 - .config/i3/scripts/power.sh
 - .config/qtile/scripts/power.sh
-- .config/polybar/launch.sh
+- .config/polybar/i3_bar.sh
 
 ---
 
