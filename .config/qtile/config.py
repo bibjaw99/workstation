@@ -335,7 +335,7 @@ groups = [
     Group(
         "5",
         label="󰍦",
-        matches=[Match(wm_class="TelegramDesktop, discord")],
+        matches=[Match(wm_class="TelegramDesktop, discord, Slack")],
         layout="monadtall",
     ),
     Group(
@@ -570,7 +570,7 @@ screens = [
             # BAR CONGIGURATIONS #
             ######################
             30,
-            margin=[9, 10, 6, 10],
+            margin=[6, 10, 6, 10],
             border_width=[0, 0, 0, 0],
             background=gruv_mat["dark"],
         ),
