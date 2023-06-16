@@ -490,11 +490,6 @@ screens = [
                     foreground=gruv_mat["disabled"],
                     **arrow_powerlineLeft,
                 ),
-                widget.Spacer(
-                    length=1,
-                    background=gruvbox["dark-grey"],
-                    **arrow_powerlineLeft,
-                ),
                 widget.TaskList(
                     margin=0,
                     padding=6,
@@ -517,11 +512,6 @@ screens = [
                     length=1,
                     background=gruvbox["cream"],
                     **rounded_powerlineRight,
-                ),
-                widget.Spacer(
-                    length=1,
-                    background=gruvbox["dark-grey"],
-                    **arrow_powerlineRight,
                 ),
                 widget.CPU(
                     padding=5,
