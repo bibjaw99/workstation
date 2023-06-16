@@ -217,7 +217,7 @@ keys = [
     ######### Toggle Layout #########
     Key(
         [mod],
-        "f",
+        "m",
         lazy.window.toggle_fullscreen(),
         desc="Toggle Full Screen",
     ),
@@ -316,7 +316,7 @@ groups = [
     ),
     Group(
         "2",
-        label="",
+        label="󰈹",
         matches=[Match(wm_class="firefox")],
         layout="columns",
     ),
@@ -334,7 +334,7 @@ groups = [
     ),
     Group(
         "5",
-        label="󰍦",
+        label="",
         matches=[Match(wm_class="TelegramDesktop, discord, Slack")],
         layout="columns",
     ),
@@ -346,7 +346,7 @@ groups = [
     ),
     Group(
         "7",
-        label="",
+        label="",
         matches=[Match(wm_class="marktext,Soffice,SimpleScreenRecorder,Atril")],
         layout="columns",
     ),
@@ -472,7 +472,7 @@ screens = [
                 widget.GroupBox(
                     font="FiraCode Nerd Font Mono",
                     fontsize=27,
-                    padding_x=5,
+                    padding_x=3,
                     padding_y=5,
                     rounded=False,
                     center_aligned=True,

@@ -14,7 +14,7 @@
 - **Terminal:** Kitty
 - **Lockscreen:** Betterlockscreen
 - **File Manager:** pcmanfm
-- **Fonts:** roboto-condensed (for rofi and polybar), font-awesome (for rofi and polybar), monospace, jetbrainsmono, jetbrainsmono nerd fonts ( for qtile bar), firacode nerd font (for terminal)
+- **Fonts:** roboto-condensed (for rofi and polybar), font-awesome (for rofi and polybar), monospace, jetbrainsmono, jetbrainsmono nerd fonts, firacode nerd font (for terminal,qtile bar)
 - **Policykit:** mate-polkit
 
 ---
@@ -36,7 +36,7 @@
 |        2         |                          Firefox                          |
 |        3         |                Vscode , Anaconda-Navigator                |
 |        4         |                          pcmanfm                          |
-|        5         |                     Telegram,Discord                      |
+|        5         |                  Telegram,Discord,Slack                   |
 |        6         |                 Gimp, Inkscape, Darktable                 |
 |        7         |                LibreOffice,Marktext,Atril                 |
 |        8         | Lxappearance,Stacer,Transmission,Yad,Gnome-Disks,Nitrogen |
@@ -62,7 +62,7 @@
 | mod+return  |     Kitty terminal      |
 | mod+Shift+q |     Kills a window      |
 |  mod+ctrl   | resize window(vim keys) |
-|    mod+f    |    toggle fullscreen    |
+|    mod+m    |    toggle fullscreen    |
 |  mod+space  |     floating window     |
 |    mod+w    |         firefox         |
 |    mod+n    |         pcmanfm         |
@@ -79,26 +79,26 @@
 
 ## Keybindings For i3
 
-| Keybindings |         Actions         |
-| :---------: | :---------------------: |
-|    mod+t    |       Tiling Mode       |
-|    mod+e    |        Tab Mode         |
-|    mod+s    |      Stacking Mode      |
-|    mod+d    |        rofi drun        |
-|    alt+d    |        rofi rum         |
-|    alt+d    |      rofi windows       |
-| mod+Shift+e |       Power Menu        |
-| mod+return  |     Kitty terminal      |
-| mod+Shift+q |     Kills a window      |
-|    mod+r    | resize window(vim keys) |
-|    mod+z    |       horizontal        |
-|    mod+a    |        vertical         |
-|    mod+f    |    toggle fullscreen    |
-|  mod+space  |     floating window     |
-|    mod+q    |  focus floating window  |
-|    mod+p    |      focus parent       |
-|    mod+w    |         firefox         |
-|    mod+n    |         pcmanfm         |
+| Keybindings  |        Actions        |
+| :----------: | :-------------------: |
+|    mod+t     |      Tiling Mode      |
+|    mod+e     |       Tab Mode        |
+|    mod+s     |     Stacking Mode     |
+|    mod+d     |       rofi drun       |
+|    alt+d     |       rofi rum        |
+|    alt+d     |     rofi windows      |
+| mod+Shift+e  |      Power Menu       |
+|  mod+return  |    Kitty terminal     |
+| mod+Shift+q  |    Kills a window     |
+| mod+vim keys |     resize window     |
+|    mod+z     |      horizontal       |
+|    mod+a     |       vertical        |
+|    mod+f     |   toggle fullscreen   |
+|  mod+space   |    floating window    |
+|    mod+q     | focus floating window |
+|    mod+p     |     focus parent      |
+|    mod+w     |        firefox        |
+|    mod+n     |        pcmanfm        |
 
 ---
 
