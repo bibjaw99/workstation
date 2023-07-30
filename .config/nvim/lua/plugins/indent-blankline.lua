@@ -58,4 +58,7 @@ require("indent_blankline").setup({
 		"IndentBlanklineIndent5",
 		"IndentBlanklineIndent6",
 	},
+	max_indent_increase = 1,
+	strict_tabs = true,
+	vim.opt.listchars:append("space:⋅"),
 })
