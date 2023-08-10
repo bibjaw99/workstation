@@ -99,3 +99,7 @@ cmp.setup.cmdline(":", {
 	}),
 })
 require("luasnip.loaders.from_vscode").lazy_load()
+
+-- Support for tailwind auto completion
+-- install the tailwind server : "sudo npm install -g @tailwindcss/language-server"
+require("lspconfig").tailwindcss.setup({})
