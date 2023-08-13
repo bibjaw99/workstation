@@ -29,7 +29,7 @@ local plugins = {
 
 	-- Colorscheme
 	{ "ellisonleao/gruvbox.nvim" },
-	{"sainnhe/gruvbox-material"},
+	{ "sainnhe/gruvbox-material" },
 
 	-- For Transparency
 	{ "xiyaowong/transparent.nvim" },
@@ -69,8 +69,8 @@ local plugins = {
 	-- nvim-ts-autotag
 	{ "windwp/nvim-ts-autotag" },
 
-	-- Nvim treesitter rainbow
-	{ "mrjones2014/nvim-ts-rainbow" },
+	-- Nvim treesitter rainbow brackets
+	{ "hiphish/rainbow-delimiters.nvim" },
 
 	-- nvim autopairs
 	{ "windwp/nvim-autopairs" },
