@@ -28,7 +28,7 @@ local plugins = {
 	{ "numToStr/Comment.nvim" },
 
 	-- Colorscheme
-	{ "ellisonleao/gruvbox.nvim" },
+	{ "gruvbox-community/gruvbox" },
 	{ "sainnhe/gruvbox-material" },
 
 	-- For Transparency
@@ -138,5 +138,8 @@ local plugins = {
 
 	-- lorem ipsum
 	{ "derektata/lorem.nvim" },
+
+	-- Neovim Tagbar
+	{ "preservim/tagbar" },
 } -- end of plugin line
 require("lazy").setup(plugins, opts)

@@ -1,6 +1,7 @@
 -- Appearance
 vim.o.background = "dark" -- or "light" for light mode
-vim.cmd([[colorscheme gruvbox-material]]) -- Set color scheme
+vim.cmd("let g:gruvbox_contrast_dark = 'hard'")
+vim.cmd([[colorscheme gruvbox]]) -- Set color scheme
 vim.opt.termguicolors = true
 vim.o.pumheight = 10 -- Max items to show in pop up menu
 vim.o.cmdheight = 1 -- Max items to show in command menu
