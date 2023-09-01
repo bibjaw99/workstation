@@ -1,4 +1,12 @@
-require("lspsaga").setup({
+-- requring plugin
+local installed, LspSaga = pcall(require, "lspsaga")
+if not installed then
+	vim.notify("Plugin 'lspsaga' not installed")
+	return
+end
+
+-- Setting up lspsaga
+LspSaga.setup({
 	debug = false,
 	use_saga_diagnostic_sign = true,
 	-- diagnostic sign

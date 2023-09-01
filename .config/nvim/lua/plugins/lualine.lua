@@ -1,4 +1,11 @@
-require("lualine").setup({
+-- requring plugin
+local installed, LuaLine = pcall(require, "lualine")
+if not installed then
+	vim.notify("Plugin 'lualine' not installed")
+	return
+end
+
+LuaLine.setup({
 	options = {
 		icons_enabled = true,
 		theme = "gruvbox-material",

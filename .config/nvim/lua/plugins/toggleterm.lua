@@ -1,4 +1,13 @@
-require("toggleterm").setup({
+-- requring plugin
+local installed, ToggleTerm = pcall(require, "toggleterm")
+if not installed then
+	vim.notify("Plugin 'toggleterm' is not installed")
+	return
+end
+
+-- #####################################################
+-- Setting up toggleterm
+ToggleTerm.setup({
 	size = 13,
 	open_mapping = [[<c-\>]],
 	shade_filetypes = {},

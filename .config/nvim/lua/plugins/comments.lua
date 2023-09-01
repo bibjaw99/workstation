@@ -1,4 +1,12 @@
-require("Comment").setup({
+-- requring plugin
+local installed, NvimComment = pcall(require, "Comment")
+if not installed then
+	vim.notify("Plugin 'nvim-comment' not installed")
+	return
+end
+
+-- Setting up nvim  comment
+NvimComment.setup({
 	---Add a space b/w comment and the line
 	padding = true,
 	---Whether the cursor should stay at its position

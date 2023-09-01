@@ -1,3 +1,4 @@
+-- Dfining Colors
 vim.opt.termguicolors = true
 vim.cmd([[highlight IndentBlanklineIndent1 guifg=#458588 gui=nocombine]])
 vim.cmd([[highlight IndentBlanklineIndent2 guifg=#fe8019 gui=nocombine]])
@@ -7,7 +8,15 @@ vim.cmd([[highlight IndentBlanklineIndent5 guifg=#d79921 gui=nocombine]])
 vim.cmd([[highlight IndentBlanklineIndent6 guifg=#b8bb26 gui=nocombine]])
 vim.cmd([[highlight IndentBlanklineIndent7 guifg=#fb4934 gui=nocombine]])
 
-require("indent_blankline").setup({
+-- requring Plugin
+local installed, IndentBlankLine = pcall(require, "indent_blankline")
+if not installed then
+	vim.notify("Plugin 'indent_blankline' is not installed")
+	return
+end
+
+-- Setting up indent_blankline
+IndentBlankLine.setup({
 	opts = {
 		show_trailing_blankline_indent = false,
 	},

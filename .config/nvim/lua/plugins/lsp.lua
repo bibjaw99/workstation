@@ -1,4 +1,51 @@
-require("mason").setup({
+-- requiring necessary plugins
+-- mason
+local installed, Mason = pcall(require, "mason")
+if not installed then
+	vim.notify("Plugin 'mason' not installed ")
+	return
+end
+
+-- Mason lspconfig
+local installed, MasonLspConfig = pcall(require, "mason-lspconfig")
+if not installed then
+	vim.notify("Plugin 'mason-lspconfig' not installed ")
+	return
+end
+
+-- Mason nvim dap
+local installed, MasonNvimDap = pcall(require, "mason-nvim-dap")
+if not installed then
+	vim.notify("Plugin 'mason-nvim-dap' not installed ")
+	return
+end
+
+-- Mason tool installer
+local installed, MasonToolInstaller = pcall(require, "mason-tool-installer")
+if not installed then
+	vim.notify("Plugin 'mason-tool-installer' not installed ")
+	return
+end
+
+-- #############################################################################
+-- Lsp config
+local installed, LspConfig = pcall(require, "lspconfig")
+if not installed then
+	vim.notify("Plugin 'lspconfig' not installed ")
+	return
+end
+
+-- cmp_nvim_lsp
+local installed, CmpNvimLsp = pcall(require, "cmp_nvim_lsp")
+if not installed then
+	vim.notify("Plugin 'mason-tool-installer' not installed ")
+	return
+end
+
+-- #############################################################################
+-- Setting up plugins
+
+Mason.setup({
 	ui = {
 		icons = {
 			package_installed = "✓",
@@ -10,7 +57,7 @@ require("mason").setup({
 
 -- Masong Lsp config
 
-require("mason-lspconfig").setup({
+MasonLspConfig.setup({
 	ensure_installed = {
 		"lua_ls",
 		"cssls",
@@ -19,13 +66,13 @@ require("mason-lspconfig").setup({
 })
 
 -- Mason automatically installs required tools for nvim-dap
-require("mason-nvim-dap").setup({
+MasonNvimDap.setup({
 	ensure_installed = { "python", "stylua" },
 	handlers = {}, -- sets up dap in the predefined manner
 })
 
 -- Mason Tool Installer
-require("mason-tool-installer").setup({
+MasonToolInstaller.setup({
 	-- a list of all tools you want to ensure are installed upon
 	-- start; they should be the names Mason uses for each tool
 	ensure_installed = {
@@ -44,48 +91,27 @@ require("mason-tool-installer").setup({
 		{ "prettier" },
 	},
 
-	-- if set to true this will check each tool for updates. If updates
-	-- are available the tool will be updated. This setting does not
-	-- affect :MasonToolsUpdate or :MasonToolsInstall.
-	-- Default: false
 	auto_update = false,
-
-	-- automatically install / update on startup. If set to false nothing
-	-- will happen on startup. You can use :MasonToolsInstall or
-	-- :MasonToolsUpdate to install tools and check for updates.
-	-- Default: true
 	run_on_start = true,
-
-	-- set a delay (in ms) before the installation starts. This is only
-	-- effective if run_on_start is set to true.
-	-- e.g.: 5000 = 5 second delay, 10000 = 10 second delay, etc...
-	-- Default: 0
 	start_delay = 3000, -- 3 second delay
-
-	-- Only attempt to install if 'debounce_hours' number of hours has
-	-- elapsed since the last time Neovim was started. This stores a
-	-- timestamp in a file named stdpath('data')/mason-tool-installer-debounce.
-	-- This is only relevant when you are using 'run_on_start'. It has no
-	-- effect when running manually via ':MasonToolsInstall' etc....
-	-- Default: nil
 	debounce_hours = 5, -- at least 5 hours between attempts to install/update
 })
 
--- Managing language servers
+-- #############################################################################
+-- Managing language servers individually
 
-local lspconfig = require("lspconfig") -- Setup built LSP config
-local capabilities = require("cmp_nvim_lsp").default_capabilities()
+local capabilities = CmpNvimLsp.default_capabilities()
 
 -- pyright
-lspconfig.pyright.setup({
+LspConfig.pyright.setup({
 	capabilities = capabilities,
 })
 -- tsserver
-lspconfig.tsserver.setup({
+LspConfig.tsserver.setup({
 	capabilities = capabilities,
 })
 -- rust_analyzer
-lspconfig.rust_analyzer.setup({
+LspConfig.rust_analyzer.setup({
 	capabilities = capabilities,
 	-- Server-specific settings. See `:help lspconfig-setup`
 	settings = {
@@ -94,16 +120,23 @@ lspconfig.rust_analyzer.setup({
 })
 
 -- html
-lspconfig.html.setup({
+LspConfig.html.setup({
 	capabilities = capabilities,
 })
 
 -- Lua LS
-lspconfig.lua_ls.setup({
+LspConfig.lua_ls.setup({
 	capabilities = capabilities,
 })
 
 -- CSS LS
-lspconfig.cssls.setup({
+LspConfig.cssls.setup({
+	capabilities = capabilities,
+})
+
+-- Tailwind
+-- Support for tailwind auto completion
+-- install the tailwind server : "sudo npm install -g @tailwindcss/language-server"
+LspConfig.tailwindcss.setup({
 	capabilities = capabilities,
 })

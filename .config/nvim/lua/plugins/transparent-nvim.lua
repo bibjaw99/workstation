@@ -1,4 +1,12 @@
-require("transparent").setup({
+-- requring plugin
+local installed, Transparent = pcall(require, "transparent")
+if not installed then
+	vim.notify("Plugin 'transparent.nvim' is not installed")
+	return
+end
+
+-- Setting up plugin
+Transparent.setup({
 	groups = { -- table: default groups
 		"Normal",
 		"NormalNC",

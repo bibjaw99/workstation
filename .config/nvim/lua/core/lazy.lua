@@ -89,7 +89,10 @@ local plugins = {
 	},
 
 	-- NeoVIMTree
-	{ "nvim-tree/nvim-tree.lua", dependencies = { "nvim-tree/nvim-web-devicons" } },
+	{
+		"nvim-tree/nvim-tree.lua",
+		dependencies = { "nvim-tree/nvim-web-devicons" },
+	},
 
 	-- Buffer Line
 	{
@@ -141,5 +144,8 @@ local plugins = {
 
 	-- Neovim Tagbar
 	{ "preservim/tagbar" },
+	-- ==============================================================
 } -- end of plugin line
+
+local opts = {}
 require("lazy").setup(plugins, opts)

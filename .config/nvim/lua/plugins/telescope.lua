@@ -1,5 +1,21 @@
-local actions = require("telescope.actions")
-require("telescope").setup({
+-- requring Telescope
+local installed, Telescope = pcall(require, "telescope")
+if not installed then
+	vim.notify("Plugin 'telescope' is not installed")
+	return
+end
+
+-- requring telescope.actions
+local installed, TelescopeActions = pcall(require, "telescope.actions")
+if not installed then
+	vim.notify("Plugin 'telescope' is not installed")
+	return
+end
+
+-- #############################################################################
+-- Setting Up Telescope
+local actions = TelescopeActions
+Telescope.setup({
 	defaults = {
 		layout_config = {
 			width = 0.80,

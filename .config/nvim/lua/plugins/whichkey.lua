@@ -1,6 +1,22 @@
-local wk = require("which-key")
+-- requring plugin
+local installed, WhichKey = pcall(require, "which-key")
+if not installed then
+	vim.notify("Plugin 'which-key' is not installed")
+	return
+end
 
-local Terminal = require("toggleterm.terminal").Terminal
+-- requring plugin
+local installed, ToggleTerm = pcall(require, "toggleterm.terminal")
+if not installed then
+	vim.notify("Plugin 'toggleterm' is not installed")
+	return
+end
+
+-- ##################################################################################################
+
+local wk = WhichKey
+
+local Terminal = ToggleTerm.Terminal
 local toggle_float = function()
 	local float = Terminal:new({ direction = "float" })
 	return float:toggle()
@@ -11,6 +27,8 @@ local toggle_lazygit = function()
 	return lazygit:toggle()
 end
 
+-- ##################################################################################################
+-- Keymaps
 local mappings = {
 	-- Return to StartPage
 	DD = { ":Alpha<cr>", "StartPage" },

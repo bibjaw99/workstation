@@ -1,4 +1,12 @@
-require("nvim-tree").setup({
+-- requring plugin
+local installed, NvimTree = pcall(require, "nvim-tree")
+if not installed then
+	vim.notify("Plugin 'nvim-tree' is not installed")
+	return
+end
+
+-- Setting up nvim-tree
+NvimTree.setup({
 	auto_reload_on_write = true,
 	view = {
 		width = 30,
