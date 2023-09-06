@@ -104,6 +104,11 @@ local mappings = {
 	T = {
 		f = { ":TagbarToggle<cr>", "Functions List Tagbar" },
 	},
+
+	-- AutoFormatting
+	F = {
+		M = { ":lua vim.lsp.buf.format()<cr>", "Format code" },
+	},
 }
 local opts = { prefix = "<leader>" }
 wk.register(mappings, opts)

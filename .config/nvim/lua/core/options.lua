@@ -15,6 +15,7 @@ vim.cmd("filetype plugin indent on")
 vim.o.shortmess = vim.o.shortmess .. "c"
 vim.o.hidden = true
 vim.o.whichwrap = "b,s,<,>,[,],h,l"
+vim.opt.iskeyword:append("-,_")
 
 -- Split Windows
 vim.o.splitbelow = true
@@ -74,4 +75,4 @@ vim.opt.fillchars = { eob = " " }
 vim.notify = require("notify")
 
 -- Auto Formatting and LSP settings
-vim.cmd([[autocmd BufWritePre * lua vim.lsp.buf.format()]])
+-- vim.cmd([[autocmd BufWritePre * lua vim.lsp.buf.format()]])

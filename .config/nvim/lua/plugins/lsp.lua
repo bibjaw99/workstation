@@ -127,6 +127,13 @@ LspConfig.html.setup({
 -- Lua LS
 LspConfig.lua_ls.setup({
 	capabilities = capabilities,
+	settings = {
+		Lua = {
+			diagnostics = {
+				globals = { "vim" },
+			},
+		},
+	},
 })
 
 -- CSS LS
