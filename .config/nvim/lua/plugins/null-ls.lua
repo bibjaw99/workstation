@@ -13,7 +13,7 @@ local sources = {
 	formatting.autopep8,
 	formatting.black,
 	formatting.isort,
-	formatting.eslint,
+	formatting.eslint_d,
 }
 
 Null_ls.setup({
