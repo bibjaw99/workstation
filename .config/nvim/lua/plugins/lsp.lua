@@ -89,6 +89,12 @@ MasonToolInstaller.setup({
 		{ "autopep8" },
 		{ "json-lsp" },
 		{ "prettier" },
+		{ "typescript-language-server" },
+		{ "js-debug-adapter" },
+		{ "eslint_d" },
+		{ "eslint-lsp" },
+		{ "codelldb" },
+		{ "tailwindcss-language-server" },
 	},
 
 	auto_update = false,
