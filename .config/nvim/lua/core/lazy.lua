@@ -147,5 +147,10 @@ local plugins = {
 	-- ==============================================================
 } -- end of plugin line
 
-local opts = {}
-require("lazy").setup(plugins, opts)
+local installed, Lazy = pcall(require, "lazy")
+if not installed then
+	vim.notify("Plugin Manager 'lazy.nvim' is not Loading.....")
+	return
+end
+
+Lazy.setup({ plugins })
