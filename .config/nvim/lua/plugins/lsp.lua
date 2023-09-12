@@ -91,6 +91,7 @@ MasonToolInstaller.setup({
 		{ "prettier" },
 		{ "typescript-language-server" },
 		{ "js-debug-adapter" },
+		{ "node-debug2-adapter" },
 		{ "eslint_d" },
 		{ "eslint-lsp" },
 		{ "codelldb" },

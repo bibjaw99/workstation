@@ -30,9 +30,6 @@ end
 -- ##################################################################################################
 -- Keymaps
 local mappings = {
-	-- Return to StartPage
-	DD = { ":Alpha<cr>", "StartPage" },
-
 	-- Basic Operations
 	q = { ":q<cr>", "Quit File" },
 	Q = { ":q!<cr>", "Force Quit File" },
@@ -105,9 +102,19 @@ local mappings = {
 		f = { ":TagbarToggle<cr>", "Functions List Tagbar" },
 	},
 
-	-- AutoFormatting
+	-- Code Formatting
 	F = {
+		name = "Code Formoat",
 		M = { ":lua vim.lsp.buf.format()<cr>", "Format code" },
+	},
+
+	-- debugging nvim dap
+	D = {
+		name = "DAP",
+		b = { "<cmd>lua require('dap').toggle_breakpoint()<cr>", "Toggle Breakpoint" },
+		c = { "<cmd>lua require('dap').continue()<cr>", "DAP Continue" },
+		si = { "<cmd>lua require('dap').step_into()<cr>", "DAP Step into" },
+		so = { "<cmd>lua require('dap').step_out()<cr>", "DAP Step Out" },
 	},
 }
 local opts = { prefix = "<leader>" }

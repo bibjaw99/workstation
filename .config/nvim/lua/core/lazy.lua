@@ -136,6 +136,16 @@ local plugins = {
 		dependencies = { "mfussenegger/nvim-dap" },
 	},
 
+	-- debugging
+	{
+		"rcarriga/nvim-dap-ui",
+		dependencies = { "mfussenegger/nvim-dap" },
+	},
+	{
+		"mxsdev/nvim-dap-vscode-js",
+		dependencies = { "microsoft/vscode-js-debug" },
+	},
+
 	-- emmet
 	{ "mattn/emmet-vim" },
 
