@@ -1,7 +1,4 @@
 -- Appearance
-vim.o.background = "dark" -- or "light" for light mode
-vim.cmd("let g:gruvbox_material_background= 'hard'")
-vim.cmd([[colorscheme gruvbox-material]]) -- Set color scheme
 vim.opt.termguicolors = true
 vim.o.pumheight = 10 -- Max items to show in pop up menu
 vim.o.cmdheight = 1 -- Max items to show in command menu
@@ -71,8 +68,5 @@ vim.opt.list = true
 vim.opt.listchars:append("eol:↴")
 vim.opt.fillchars = { eob = " " }
 
--- Nvim Notify
-vim.notify = require("notify")
-
--- Auto Formatting and LSP settings
--- vim.cmd([[autocmd BufWritePre * lua vim.lsp.buf.format()]])
+-- Auto Formatting
+vim.cmd([[autocmd BufWritePre * lua vim.lsp.buf.format()]])
