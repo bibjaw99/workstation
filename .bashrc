@@ -16,6 +16,7 @@ alias iconfig="nvim ~/.config/i3/config"
 alias polyconfig="nvim ~/.config/polybar/config.ini"
 alias piconfig="nvim ~/.config/picom/picom.conf"
 alias alconfig="nvim ~/.config/alacritty/alacritty.yml"
+alias kitconfig="nvim ~/.config/kitty/kitty.conf"
 alias vim="nvim"
 alias ff="neofetch"
 alias cc="musikcube"
@@ -45,12 +46,12 @@ alias aur_list="yay -Qm"
 #alias bistory="cat .bash_history"
 
 ###################################
-#         Emacs
+#         Tmux
 ###################################
-
-export PATH="$HOME/.emacs.d/bin:$PATH"
-export PATH="$HOME/.config/emacs/bin:$PATH"
-export PATH="$HOME/.local/bin:$PATH"
+alias tnewS="tmux new -s"
+alias tls="tmux ls"
+alias trename="tmux rename-session -t"
+alias tA="tmux a -t"
 
 ###################################
 #       Tweaks and Designs
