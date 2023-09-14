@@ -111,32 +111,38 @@
 ```
 .
 ├── init.lua
+├── lazy-lock.json
 └── lua
-    ├── core
-    │   ├── init.lua
-    │   ├── keymaps.lua
-    │   ├── lazy.lua
-    │   └── options.lua
-    └── plugins
-        ├── alpha-nvim.lua
-        ├── autopairs.lua
-        ├── bufferline.lua
-        ├── cmp.lua
-        ├── colorizer.lua
-        ├── comments.lua
-        ├── diagonistic-signs.lua
-        ├── indent-blankline.lua
-        ├── init.lua
-        ├── lorem-nvim.lua
-        ├── lsp.lua
-        ├── lsp-saga.lua
-        ├── lualine.lua
-        ├── notify.lua
-        ├── null-ls.lua
-        ├── nvim-tree.lua
-        ├── telescope.lua
-        ├── toggleterm.lua
-        ├── transparent-nvim.lua
-        ├── treesitter.lua
-        └── whichkey.lua
+    └── habib
+        ├── core
+        │   ├── init.lua
+        │   ├── keymaps.lua
+        │   ├── lazy.lua
+        │   └── options.lua
+        └── plugins
+            ├── autopairs.lua
+            ├── bufferline.lua
+            ├── cmp.lua
+            ├── colorizer.lua
+            ├── colorscheme.lua
+            ├── comment.lua
+            ├── dashboard.lua
+            ├── dressing.lua
+            ├── gitsigns.lua
+            ├── indent.lua
+            ├── lsp
+            │   ├── lspconfig.lua
+            │   ├── lsp_saga.lua
+            │   ├── mason.lua
+            │   └── null_ls.lua
+            ├── lualine.lua
+            ├── notify.lua
+            ├── nvim-tree.lua
+            ├── tagbar.lua
+            ├── telescope.lua
+            ├── toggleterm.lua
+            ├── treesitter.lua
+            ├── utils.lua
+            └── whichkey.lua
+
 ```
