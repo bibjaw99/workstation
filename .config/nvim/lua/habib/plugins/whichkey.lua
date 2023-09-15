@@ -104,15 +104,6 @@ return {
 				name = "Code Formoat",
 				M = { ":lua vim.lsp.buf.format()<cr>", "Format code" },
 			},
-
-			-- debugging nvim dap
-			D = {
-				name = "DAP",
-				b = { "<cmd>lua require('dap').toggle_breakpoint()<cr>", "Toggle Breakpoint" },
-				c = { "<cmd>lua require('dap').continue()<cr>", "DAP Continue" },
-				si = { "<cmd>lua require('dap').step_into()<cr>", "DAP Step into" },
-				so = { "<cmd>lua require('dap').step_out()<cr>", "DAP Step Out" },
-			},
 		}
 
 		local opts = { prefix = "<leader>" }
