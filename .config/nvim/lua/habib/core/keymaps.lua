@@ -22,3 +22,6 @@ map("n", "<C-s>", '"+P', { noremap = true, silent = false })
 map("i", "kj", "<Esc>", { noremap = true, silent = false })
 map("n", "kj", "<Esc>", { noremap = true, silent = false })
 map("v", "kj", "<Esc>", { noremap = true, silent = false })
+
+-- Unhighlight searched elements
+map("n", "<C-u>", ":nohlsearch<cr>", { noremap = true, silent = true })

@@ -11,25 +11,17 @@ if not vim.loop.fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(lazypath)
 
-local installed, lazy = pcall(require,"lazy")
+local installed, lazy = pcall(require, "lazy")
 if not installed then
 	return
 end
 
-lazy.setup(
-
-{{import="habib.plugins"},
-  {import="habib.plugins.lsp"},
-},
-
-{
-  checker= {
-    enabled=true,
-    notify=false,
-  },
-  change_detection = {
-    notify=false,
-  },
-
-}
-)
+lazy.setup({ { import = "habib.plugins" }, { import = "habib.plugins.lsp" } }, {
+	checker = {
+		enabled = true,
+		notify = false,
+	},
+	change_detection = {
+		notify = false,
+	},
+})
