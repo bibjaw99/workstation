@@ -265,6 +265,8 @@ exec_always picom
 # Polybar
 exec_always --no-startup-id ~/.config/polybar/i3_bar.sh
 
+# disable capslock
+# exec setxkbmap -option ctrl:nocaps
 ######################################
 # color settings fo windows         #
 ######################################

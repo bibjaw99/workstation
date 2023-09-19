@@ -45,10 +45,10 @@ return {
 
 			-- Managing Sources for completions
 			sources = cmp.config.sources({
+				{ name = "nvim_lsp" },
 				{ name = "luasnip" }, -- For luasnip users.
 				{ name = "buffer" },
 				{ name = "path" },
-				{ name = "nvim_lsp" },
 			}),
 
 			formatting = {
