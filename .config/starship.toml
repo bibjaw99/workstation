@@ -9,8 +9,9 @@ $git_metrics\
 $fill\
 $cmd_duration $jobs $time\
 $line_break\
-$character"""
-
+$character\
+"""
+add_newline = false
 
 [fill]
 symbol = " "
