@@ -71,12 +71,20 @@
 
 ---
 
-### i3-wm and polybar
+### i3-wm
 
 ![i3_poly](https://github.com/bibjaw99/workstation/blob/master/screenshots/i3.png?raw=true)
 
+### Polybar
+
 ![poly](https://github.com/bibjaw99/workstation/blob/master/screenshots/polybar.png?raw=true)
-### picom-pijulius
+
+### App launcher: Rofi
+
+![rofi](https://github.com/bibjaw99/workstation/blob/master/screenshots/rofi.png?raw=true)
+
+### Animations: picom-pijulius
+
 ![ezgif com-video-to-gif](https://github.com/bibjaw99/workstation/assets/134938208/a2be6ec7-0188-434c-b15a-0548c21f8791)
 
 ## Keybindings For i3
