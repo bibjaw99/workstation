@@ -76,7 +76,6 @@
 ![i3_poly](https://github.com/bibjaw99/workstation/blob/master/screenshots/i3.png?raw=true)
 
 ![poly](https://github.com/bibjaw99/workstation/blob/master/screenshots/polybar.png?raw=true)
-![Uploading ezgif.com-video-to-gif.gif…]()
 
 ## Keybindings For i3
 
