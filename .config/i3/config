@@ -4,6 +4,7 @@
 focus_follows_mouse no
 focus_wrapping no
 for_window [class="^.*"] border pixel 2
+title_align center
 ######################################
 
 ####################################
@@ -273,7 +274,7 @@ exec_always --no-startup-id ~/.config/polybar/i3_bar.sh
 
 # Define colors variables:
 # bg tab mode
-set $color1     #504945
+set $color1     #1d2021
 set $color2     #d8a657
 set $color3     #fabd3f
 set $color4     #928374
