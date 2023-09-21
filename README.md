@@ -76,6 +76,8 @@
 ![i3_poly](https://github.com/bibjaw99/workstation/blob/master/screenshots/i3.png?raw=true)
 
 ![poly](https://github.com/bibjaw99/workstation/blob/master/screenshots/polybar.png?raw=true)
+### picom-pijulius
+![ezgif com-video-to-gif](https://github.com/bibjaw99/workstation/assets/134938208/a2be6ec7-0188-434c-b15a-0548c21f8791)
 
 ## Keybindings For i3
 
