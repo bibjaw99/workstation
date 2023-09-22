@@ -10,7 +10,7 @@ title_align center
 ####################################
 #     Fonts 
 ####################################
-font pango: Roboto Condensed Regular 11
+font pango: FiraCode Nerd Font Bold 10
 
 ################################
 #         Mod Key
