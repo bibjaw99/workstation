@@ -75,10 +75,18 @@
 
 ![i3_poly](https://github.com/bibjaw99/workstation/blob/master/screenshots/i3.png?raw=true)
 
-### Polybar
+### Polybars
+
+#### dark :
 
 ![poly](https://github.com/bibjaw99/workstation/blob/master/screenshots/polybar_dark.png?raw=true)
+
+#### light :
+
 ![poly](https://github.com/bibjaw99/workstation/blob/master/screenshots/polybar_light.png?raw=true)
+
+#### blocks :
+
 ![poly](https://github.com/bibjaw99/workstation/blob/master/screenshots/polybar_block.png?raw=true)
 
 ### App launcher: Rofi
