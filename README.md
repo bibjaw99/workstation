@@ -77,7 +77,9 @@
 
 ### Polybar
 
-![poly](https://github.com/bibjaw99/workstation/blob/master/screenshots/polybar.png?raw=true)
+![poly](https://github.com/bibjaw99/workstation/blob/master/screenshots/polybar_dark.png?raw=true)
+![poly](https://github.com/bibjaw99/workstation/blob/master/screenshots/polybar_light.png?raw=true)
+![poly](https://github.com/bibjaw99/workstation/blob/master/screenshots/polybar_block.png?raw=true)
 
 ### App launcher: Rofi
 
