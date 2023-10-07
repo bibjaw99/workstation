@@ -92,7 +92,7 @@ bindsym $mod+Shift+8    move container to workspace  $ws8
 
 # bind program to workspace and focus to them on startup:
 assign [class="kitty"] $ws1
-assign [class="(?i)firefox"] $ws2
+assign [class="Brave"] $ws2
 assign [class="Anaconda-Navigator"] $ws3
 assign [class="(?i)Code"] $ws3
 assign [class="Emacs"] $ws3
@@ -116,7 +116,7 @@ assign [class="Nitrogen"] $ws8
 
 # automatic set focus new window if it opens on another workspace then the current:
 for_window [class=kitty] focus
-for_window [class=firefox] focus
+for_window [class=Brave] focus
 for_window [class=Anaconda-Navigator] focus
 for_window [class=Code] focus
 for_window [class=Emacs] focus
@@ -207,8 +207,8 @@ for_window [class="GLava" instance="GLava"] floating enable
 
 ## App shortcuts
 
-# Firefox
-bindsym $mod+w exec firefox
+# Browser
+bindsym $mod+w exec brave 
 
 # File Manager
 bindsym $mod+n exec pcmanfm
@@ -230,6 +230,7 @@ bindsym $mod+Shift+n exec --no-startup-id nm-applet
 bindsym $mod+d exec --no-startup-id rofi -show drun -disable-history -show-icons
 bindsym Mod1+d exec --no-startup-id rofi -show run -disable-history
 bindsym Mod1+w exec rofi -show window -show-icons
+bindsym Mod1+m exec rofi -modi emoji -show emoji
 
 # kill focused window
 bindsym $mod+Shift+q kill
