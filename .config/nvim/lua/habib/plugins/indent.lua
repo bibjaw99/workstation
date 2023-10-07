@@ -36,6 +36,7 @@ return {
 				show_start = true,
 				show_end = true,
 			},
+			vim.opt.listchars:append("space: "),
 		})
 	end,
 }
