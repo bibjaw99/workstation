@@ -3,7 +3,7 @@
 ####################################
 focus_follows_mouse no
 focus_wrapping no
-for_window [class="^.*"] border pixel 2
+for_window [class="^.*"] border pixel 1
 title_align center
 ######################################
 
