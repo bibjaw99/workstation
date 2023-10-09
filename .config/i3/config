@@ -95,7 +95,7 @@ assign [class="kitty"] $ws1
 assign [class="Brave"] $ws2
 assign [class="Anaconda-Navigator"] $ws3
 assign [class="(?i)Code"] $ws3
-assign [class="Emacs"] $ws3
+assign [class="Google-chrome"] $ws3
 assign [class="Pcmanfm"] $ws4
 assign [class="TelegramDesktop"] $ws5
 assign [class="discord"] $ws5
@@ -119,7 +119,7 @@ for_window [class=kitty] focus
 for_window [class=Brave] focus
 for_window [class=Anaconda-Navigator] focus
 for_window [class=Code] focus
-for_window [class=Emacs] focus
+for_window [class=Google-chrome] focus
 for_window [class=Pcmanfm] focus
 for_window [class=TelegramDesktop] focus
 for_window [class=discord] focus
@@ -209,6 +209,7 @@ for_window [class="GLava" instance="GLava"] floating enable
 
 # Browser
 bindsym $mod+w exec brave 
+bindsym $mod+o exec google-chrome-stable
 
 # File Manager
 bindsym $mod+n exec pcmanfm
@@ -263,12 +264,12 @@ exec --no-startup-id ~/.config/autostart/autostart.sh
 # Compositor
 exec_always picom
 
-
 # Polybar
 exec_always --no-startup-id ~/.config/polybar/i3_bar.sh
 
 # disable capslock
-# exec setxkbmap -option ctrl:nocaps
+exec setxkbmap -option ctrl:nocaps
+
 ######################################
 # color settings fo windows         #
 ######################################
