@@ -30,10 +30,8 @@ alias qconfig="nvim ~/.config/qtile/config.py"
 alias polyconfig="nvim ~/.config/polybar/config.ini"
 alias piconfig="nvim ~/.config/picom/picom.conf"
 alias kitconfig="nvim ~/.config/kitty/kitty.conf"
-alias vim="nvim"
-alias ff="neofetch"
-alias cc="musikcube"
-alias vv="cava"
+alias vv="nvim"
+alias dv="devour"
 alias ss="htop"
 alias anaconda="source ~/anaconda3/bin/activate && anaconda-navigator"
 alias luadir="cd ~/Documents/Lua/Lua_Basics/"
@@ -52,6 +50,15 @@ alias search="yay -Ss"
 alias pacs="yay -Q | wc -l"
 alias list="yay -Q"
 alias aur_list="yay -Qm"
+
+###################################
+#         Tmux
+###################################
+alias tnew="tmux new -s"
+alias tls="tmux ls"
+alias trename="tmux rename-session -t"
+alias ta="tmux a -t"
+
 # Starship prompt
 eval "$(starship init zsh)"
 
