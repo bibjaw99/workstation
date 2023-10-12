@@ -36,7 +36,7 @@ return {
 				scope = {
 					enabled = false,
 				},
-				vim.opt.listchars:append("space:."),
+				vim.opt.listchars:append("space: "),
 			})
 		end,
 	},
