@@ -212,7 +212,7 @@ bindsym $mod+w exec brave
 bindsym $mod+o exec google-chrome-stable
 
 # File Manager
-bindsym $mod+n exec pcmanfm
+bindsym $mod+n exec ~/.config/i3/scripts/pcmanfm.sh
 
 # Screenshot : FlameShot
 bindsym Print exec flameshot full --path ~/Pictures/screenshots
