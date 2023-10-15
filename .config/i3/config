@@ -214,7 +214,7 @@ bindsym $mod+o exec google-chrome-stable
 
 # File Manager
 bindsym $mod+n exec pcmanfm
-bindsym Mod1+Shift+n exec ~/.config/i3/scripts/pcmanfm.sh
+bindsym $mod+Shift+n exec ~/.config/i3/scripts/pcmanfm.sh
 
 # Screenshot : FlameShot
 bindsym Print exec flameshot full --path ~/Pictures/screenshots
@@ -227,7 +227,7 @@ bindsym $mod+Return exec kitty
 bindsym $mod+Shift+b exec ibus-setup
 
 # Network Manager Applet
-bindsym $mod+Shift+n exec --no-startup-id nm-applet
+bindsym Mod1+Shift+n exec --no-startup-id nm-applet
 
 # Rofi
 bindsym $mod+d exec --no-startup-id rofi -show drun -disable-history -show-icons
