@@ -38,8 +38,9 @@ hide_edge_borders both
 # Set inner/outer gaps
 gaps inner 10
 gaps outer 0
-# hide_edge_borders smart
 
+smart_gaps on 
+smart_borders on
 ##############################
 #     Floating Modifier      # 
 ##############################
