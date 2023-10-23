@@ -164,5 +164,4 @@
             ├── treesitter.lua
             ├── utils.lua
             └── whichkey.lua
-
 ```

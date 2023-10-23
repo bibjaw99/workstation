@@ -5,7 +5,7 @@ window:
   padding:
     x: 10
     y: 10
-  opacity: 0.95
+  opacity: 0.70
 
 scrolling:
   history: 10000
@@ -14,52 +14,52 @@ scrolling:
 colors:
   # Default colors
   primary:
-    background: "0x141617"
-    foreground: "0xd5c4a1"
+    background: "#000000"
+    foreground: "#d5c4a1"
 
   # Colors the cursor will use if `custom_cursor_colors` is true
   cursor:
-    text: "0x1d2021"
-    cursor: "0xd5c4a1"
+    text: "#1d2021"
+    cursor: "#928374"
 
   # Normal colors
   normal:
-    black: "0x1d2021"
-    red: "0xea6962"
-    green: "0xa9a665"
-    yellow: "0xd8a657"
-    blue: "0x7daea3"
-    magenta: "0xd3869b"
-    cyan: "0x8ec07c"
-    white: "0xd5c4a1"
+    black: "#1d2021"
+    red: "#cc241d"
+    green: "#98971a"
+    yellow: "#d79921"
+    blue: "#458588"
+    magenta: "#b16286"
+    cyan: "#689d6a"
+    white: "#a89984"
 
   # Bright colors
   bright:
-    black: "0x665c54"
-    red: "0xea6962"
-    green: "0xa9a665"
-    yellow: "0xd8a657"
-    blue: "0x7daea3"
-    magenta: "0xd3869b"
-    cyan: "0x8ec07c"
-    white: "0xfbf1c7"
+    black: "#665c54"
+    red: "#fb4934"
+    green: "#b8bb26"
+    yellow: "#fabd2f"
+    blue: "#83a598"
+    magenta: "#d3869b"
+    cyan: "#8ec07c"
+    white: "#bdae93"
 
 font:
   normal:
-    family: Monospace
+    family: VictorMono Nerd Font Mono
     style: Regular
 
   bold:
-    family: Monospace
+    family: VictorMono Nerd Font Mono
     style: Bold
 
   italic:
-    family: Monospace
+    family: VictorMono Nerd Font Mono
     style: Italic
 
   bold_italic:
-    family: Monospace
+    family: VictorMono Nerd Font Mono
     style: Bold Italic
 
-  size: 11
+  size: 13
 draw_bold_text_with_bright_colors: true

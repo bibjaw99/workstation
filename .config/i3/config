@@ -93,9 +93,10 @@ bindsym $mod+Shift+8    move container to workspace  $ws8
 ################################
 
 # bind program to workspace and focus to them on startup:
-assign [class="kitty"] $ws1
+assign [class="Alacritty"] $ws1
 assign [class="Brave"] $ws2
 assign [class="Anaconda-Navigator"] $ws3
+assign [class="kitty"] $ws3
 assign [class="(?i)Code"] $ws3
 assign [class="Google-chrome"] $ws3
 assign [class="Pcmanfm"] $ws4
@@ -117,9 +118,10 @@ assign [class="Gnome-disks"] $ws8
 assign [class="Nitrogen"] $ws8
 
 # automatic set focus new window if it opens on another workspace then the current:
-for_window [class=kitty] focus
+for_window [class=Alacritty] focus
 for_window [class=Brave] focus
 for_window [class=Anaconda-Navigator] focus
+for_window [class=kitty] focus
 for_window [class=Code] focus
 for_window [class=Google-chrome] focus
 for_window [class=Pcmanfm] focus
@@ -223,6 +225,7 @@ bindsym $mod+Print exec flameshot gui --path ~/Pictures/screenshots
 
 # start a terminal
 bindsym $mod+Return exec kitty
+bindsym $mod+Shift+Return exec alacritty
 
 # ibus
 bindsym $mod+Shift+b exec ibus-setup
