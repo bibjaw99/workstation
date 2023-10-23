@@ -10,7 +10,7 @@
 - **Window Manager:** i3,qtile
 - **Bar:** polybar
 - **Launcher:** rofi
-- **Compositor:** picom-pijulius
+- **Compositor:** picom-allusive (active fork of picom-pijulius)
 - **Terminal:** Kitty
 - **Lockscreen:** i3lock
 - **File Manager:** pcmanfm
