@@ -107,13 +107,14 @@
 |       mod+d       |       rofi drun       |
 |       alt+d       |       rofi run        |
 |       alt+w       |     rofi windows      |
+|       alt+m       |      rofi emoji       |
 |    mod+Shift+e    |      Power Menu       |
 |    mod+return     |    Kitty terminal     |
 |    mod+Shift+q    |    Kills a window     |
 | mod+ctrl+vim keys |     resize window     |
 |       mod+z       |      horizontal       |
 |       mod+a       |       vertical        |
-|       mod+f       |   toggle fullscreen   |
+|       mod+m       |   toggle fullscreen   |
 |     mod+space     |    floating window    |
 |       mod+q       | focus floating window |
 |       mod+p       |     focus parent      |

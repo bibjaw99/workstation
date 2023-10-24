@@ -224,8 +224,8 @@ bindsym Print exec flameshot full --path ~/Pictures/screenshots
 bindsym $mod+Print exec flameshot gui --path ~/Pictures/screenshots
 
 # start a terminal
-bindsym $mod+Return exec kitty
-bindsym $mod+Shift+Return exec alacritty
+bindsym $mod+Return exec alacritty
+bindsym $mod+Shift+Return exec kitty
 
 # ibus
 bindsym $mod+Shift+b exec ibus-setup
@@ -266,9 +266,6 @@ exec --no-startup-id dex --autostart --environment i3
 
 # autostart
 exec --no-startup-id ~/.config/autostart/autostart.sh
-
-# Compositor
-exec_always picom
 
 # Polybar
 exec_always --no-startup-id ~/.config/polybar/i3_bar.sh
