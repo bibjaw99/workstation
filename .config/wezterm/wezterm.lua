@@ -13,6 +13,12 @@ config.color_scheme = "custom"
 config.window_background_opacity = 0.7
 config.default_cursor_style = "SteadyBar"
 config.enable_tab_bar = false
+config.window_padding = {
+	left = 3,
+	right = 0,
+	top = 0,
+	bottom = 0,
+}
 
 -- =======================================================================
 config.font = wezterm.font("VictorMono Nerd Font Mono", { weight = "DemiBold", italic = false })
