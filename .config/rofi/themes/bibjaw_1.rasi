@@ -30,7 +30,7 @@
     border-color:@yellow;
     background-color:@transparent;
 
-    font:"Roboto Condensed Bold 11";
+    font:"Roboto Condensed Bold 12";
 }
 
 configuration {

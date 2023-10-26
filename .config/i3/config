@@ -10,7 +10,7 @@ title_align center
 ####################################
 #     Fonts 
 ####################################
-font pango: FiraCode Nerd Font Bold 10
+font pango: JetBrainsMono Nerd Font Mono Bold 10
 
 ################################
 #         Mod Key

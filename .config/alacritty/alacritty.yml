@@ -46,19 +46,19 @@ colors:
 
 font:
   normal:
-    family: VictorMono Nerd Font Mono
+    family: JetBrainsMono Nerd Font Mono
     style: Regular
 
   bold:
-    family: VictorMono Nerd Font Mono
+    family: JetBrainsMono Nerd Font Mono
     style: Bold
 
   italic:
-    family: VictorMono Nerd Font Mono
+    family: JetBrainsMono Nerd Font Mono
     style: Italic
 
   bold_italic:
-    family: VictorMono Nerd Font Mono
+    family: JetBrainsMono Nerd Font Mono
     style: Bold Italic
 
   size: 13

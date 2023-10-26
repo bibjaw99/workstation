@@ -10,7 +10,7 @@ end
 
 -- =======================================================================
 config.color_scheme = "custom"
-config.window_background_opacity = 0.7
+config.window_background_opacity = 0.8
 config.default_cursor_style = "SteadyBar"
 config.enable_tab_bar = false
 config.scrollback_lines = 2000
@@ -22,14 +22,14 @@ config.window_padding = {
 }
 
 -- =======================================================================
-config.font = wezterm.font("VictorMono Nerd Font Mono", { weight = "DemiBold", italic = false })
+config.font = wezterm.font("JetBrainsMono Nerd Font Mono", { weight = "DemiBold", italic = false })
 config.font_size = 13
 config.font_rules = {
 	-- Bold
 	{
 		intensity = "Bold",
 		italic = false,
-		font = wezterm.font("VictorMono Nerd Font Mono", {
+		font = wezterm.font("JetBrainsMono Nerd Font Mono", {
 			weight = "Bold",
 			style = "Normal",
 		}),
@@ -38,7 +38,7 @@ config.font_rules = {
 	{
 		intensity = "Bold",
 		italic = true,
-		font = wezterm.font("VictorMono Nerd Font Mono", {
+		font = wezterm.font("JetBrainsMono Nerd Font Mono", {
 			weight = "Bold",
 		}),
 	},

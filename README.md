@@ -11,7 +11,7 @@
 - **Bar:** polybar
 - **Launcher:** rofi
 - **Compositor:** picom-allusive (active fork of picom-pijulius)
-- **Terminal:** Kitty
+- **Terminal:** Kitty,wezterm,alacritty
 - **Lockscreen:** i3lock
 - **File Manager:** pcmanfm
 - **Fonts:** roboto-condensed (for rofi and polybar), font-awesome (for rofi and polybar), monospace, jetbrainsmono, jetbrainsmono nerd fonts, firacode nerd font (for terminal,qtile bar)
