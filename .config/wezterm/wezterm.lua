@@ -13,6 +13,7 @@ config.color_scheme = "custom"
 config.window_background_opacity = 0.7
 config.default_cursor_style = "SteadyBar"
 config.enable_tab_bar = false
+config.scrollback_lines = 2000
 config.window_padding = {
 	left = 3,
 	right = 0,
