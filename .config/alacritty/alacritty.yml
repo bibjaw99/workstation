@@ -47,7 +47,7 @@ colors:
 font:
   normal:
     family: JetBrainsMono Nerd Font Mono
-    style: Regular
+    style: SemiBold
 
   bold:
     family: JetBrainsMono Nerd Font Mono
