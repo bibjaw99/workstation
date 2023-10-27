@@ -3,12 +3,12 @@
 
 window:
   padding:
-    x: 10
-    y: 10
-  opacity: 0.70
+    x: 3
+    y: 3
+  opacity: 0.80
 
 scrolling:
-  history: 10000
+  history: 1000
   multiplier: 3
 
 colors:
