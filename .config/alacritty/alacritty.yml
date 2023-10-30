@@ -1,10 +1,7 @@
-# Base16 Gruvbox dark, hard 256 - alacritty color config
-# Dawid Kurek (dawikur@gmail.com), morhetz (https://github.com/morhetz/gruvbox)
-
 window:
   padding:
-    x: 3
-    y: 3
+    x: 2
+    y: 0
   opacity: 0.80
 
 scrolling:
