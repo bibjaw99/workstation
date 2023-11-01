@@ -7,8 +7,8 @@ map("n", "<C-k>", "<C-w>k", { noremap = true, silent = false })
 map("n", "<C-l>", "<C-w>l", { noremap = true, silent = false })
 
 -- BufferLine
-map("n", "<A-n>", ":BufferLineCycleNext<cr>", { noremap = true, silent = true })
-map("n", "<A-p>", ":BufferLineCyclePrev<cr>", { noremap = true, silent = true })
+map("n", "<Tab>", ":BufferLineCycleNext<cr>", { noremap = true, silent = true })
+map("n", "<S-Tab>", ":BufferLineCyclePrev<cr>", { noremap = true, silent = true })
 
 -- Indenting
 map("v", "<", "<gv", { noremap = true, silent = false })
