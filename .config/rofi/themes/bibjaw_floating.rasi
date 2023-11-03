@@ -42,16 +42,11 @@ configuration {
 window {
     width: 25%;
     location: center;
-    border-radius: 6px;
+    border-radius: 0px;
     background-color: @transparent;
     orientaion: horizontal;
-}
-
-mainbox {
-    padding: 6px;
-    margin: 8px;
-    border-radius: 2px;
     children: [inputbar, message,listview];
+
 }
 
 inputbar {
@@ -93,6 +88,7 @@ listview {
 }
 element {
     padding:5px;
+    border-radius:3px;
 }
 
 element-text {
@@ -110,6 +106,7 @@ element-icon{
 
 element selected {
     background-color: @yellow;
+    border-radius:3px;
     text-color: @dark;
 }
 

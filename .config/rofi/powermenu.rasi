@@ -26,8 +26,6 @@
     spacing:0;
 
     text-color: @dark;
-    border-color:@transparent;
-    background-color:@transparent;
 
     font:"Roboto Condensed Bold 13";
 }
@@ -35,21 +33,16 @@
 window {
     width: 35%;
     location: center;
-    border-radius:8px;
-    background-color:@transparent;
-    children:[mainbox];
-}
-
-mainbox {
+    border-radius:0px;
+    background-color:@dark;
     children: [listview];
 }
 
 listview {
-    padding:5px;
-    margin:5px;
+    padding:1px;
+    margin:1px;
     columns:4;
     lines:1;
-    border-radius:3px;
     cycle:false;
 }
 

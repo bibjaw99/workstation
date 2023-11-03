@@ -42,7 +42,6 @@ configuration {
 window {
     width: 25%;
     location: center;
-    border-radius: 6px;
     background-color: @dark-grey;
     orientaion: horizontal;
 }
@@ -51,15 +50,12 @@ mainbox {
     padding: 6px;
     margin: 8px;
     border: 2px;
-    border-radius: 2px;
     children: [inputbar, message,listview];
 }
 
 inputbar {
-    padding: 3px;
-    margin: 3px ;
+    margin: 8px ;
     border: 2px;
-    border-radius: 3px;
     background-color: @yellow;
     children: [prompt,entry];
 }
@@ -67,7 +63,6 @@ inputbar {
 prompt {
     padding: 5px;
     margin: 2px;
-    border-radius: 3px;
     background-color: @dark-grey;
     text-color: @aqua;
     font:"Roboto Condensed Bold 13";
@@ -76,7 +71,6 @@ prompt {
 entry {
     padding:5px;
     margin:2px;
-    border-radius:3px;
     border-color:@grey;
     background-color:@dark-grey;
     text-color:@red;
@@ -127,7 +121,6 @@ textbox {
     expand: true;
     margin:6px;
     padding:3px;
-    border-radius:6px;
     background-color:@red-alt;
     text-color:@dark-grey;
 }
