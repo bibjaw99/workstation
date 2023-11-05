@@ -92,56 +92,101 @@ bindsym $mod+Shift+8    move container to workspace  $ws8
 #     Assigned Workspace       #
 ################################
 
-# bind program to workspace and focus to them on startup:
+# (W-1)
+# ========== Primary Terminal ==========
 assign [class="Alacritty"] $ws1
-assign [class="Brave"] $ws2
-assign [class="Anaconda-Navigator"] $ws3
-assign [class="kitty"] $ws3
-assign [class="wezterm"] $ws3
-assign [class="(?i)Code"] $ws3
-assign [class="Google-chrome"] $ws3
-assign [class="Pcmanfm"] $ws4
-assign [class="TelegramDesktop"] $ws5
-assign [class="discord"] $ws5
-assign [class="Slack"] $ws5
-assign [class="Inkscape"] $ws6
-assign [class="Gimp"] $ws6
-assign [class="Darktable"] $ws6
-assign [class="Soffice"] $ws7
-assign [class="Atril"] $ws7
-assign [class="marktext"] $ws7
-assign [class="SimpleScreenRecorder"] $ws7
-assign [class="Lxappearance"] $ws8
-assign [class="stacer"] $ws8
-assign [class="qBittorrent"] $ws8
-assign [class="Yad"] $ws8
-assign [class="Gnome-disks"] $ws8
-assign [class="Nitrogen"] $ws8
-
-# automatic set focus new window if it opens on another workspace then the current:
 for_window [class=Alacritty] focus
+
+# (W-2)
+# ========== Browsers ==========
+assign [class="Brave"] $ws2
 for_window [class=Brave] focus
+
+assign [class="LibreWolf"] $ws2
+for_window [class=LibreWolf] focus
+
+assign [class="(?)firefox"] $ws2
+for_window [class=firefox] focus
+
+# (W-3)
+# ========== Coding ===========
+assign [class="Anaconda-Navigator"] $ws3
 for_window [class=Anaconda-Navigator] focus
+
+assign [class="kitty"] $ws3
 for_window [class=kitty] focus
+
+assign [class="wezterm"] $ws3
 for_window [class=wezterm] focus
+
+assign [class="(?i)Code"] $ws3
 for_window [class=Code] focus
+
+assign [class="Google-chrome"] $ws3
 for_window [class=Google-chrome] focus
+
+# (W-4)
+# ========== File Manager ===========
+assign [class="Pcmanfm"] $ws4
 for_window [class=Pcmanfm] focus
+
+# (W-5)
+# ========== Email and Messages ===========
+assign [class="TelegramDesktop"] $ws5
 for_window [class=TelegramDesktop] focus
+
+assign [class="discord"] $ws5
 for_window [class=discord] focus
+
+assign [class="Slack"] $ws5
 for_window [class=Slack] focus
+
+# (W-6)
+# ========== Graphics Editor ===========
+assign [class="Inkscape"] $ws6
 for_window [class=Inkscape] focus
+
+assign [class="Gimp"] $ws6
 for_window [class=Gimp] focus
+
+assign [class="Darktable"] $ws6
 for_window [class=Darktable] focus
+
+# (W-7)
+# ========== Office Suits and tools ===========
+assign [class="Soffice"] $ws7
 for_window [class=Soffice] focus
+
+assign [class="Atril"] $ws7
 for_window [class=Atril] focus
+
+assign [class="marktext"] $ws7
 for_window [class=marktext] focus
+
+assign [class="obsidian"] $ws7
+for_window [class=obsidian] focus
+
+# (W-8)
+# ========== Settings and Misc. ===========
+assign [class="SimpleScreenRecorder"] $ws8
 for_window [class=SimpleScreenRecorder] focus
+
+assign [class="Lxappearance"] $ws8
 for_window [class=Lxappearance] focus
+
+assign [class="stacer"] $ws8
 for_window [class=stacer] focus
+
+assign [class="qBittorrent"] $ws8
 for_window [class=qBittorrent] focus
+
+assign [class="Yad"] $ws8
 for_window [class=Yad] focus
+
+assign [class="Gnome-disks"] $ws8
 for_window [class=Gnome-disks] focus
+
+assign [class="Nitrogen"] $ws8
 for_window [class=Nitrogen] focus
 
 ##############################

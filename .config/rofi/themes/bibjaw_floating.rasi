@@ -81,7 +81,7 @@ entry {
 listview {
     lines:8;
     padding:8px;
-    margin:5px;
+    margin:10px;
     border-radius:5px;
     background-color:@dark-grey;
     children:[element];
