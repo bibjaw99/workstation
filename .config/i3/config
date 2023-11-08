@@ -3,7 +3,7 @@
 ####################################
 focus_follows_mouse no
 focus_wrapping no
-for_window [class="^.*"] border pixel 1
+for_window [class="^.*"] border pixel 2
 title_align center
 ######################################
 
@@ -97,6 +97,10 @@ bindsym $mod+Shift+8    move container to workspace  $ws8
 assign [class="Alacritty"] $ws1
 for_window [class=Alacritty] focus
 
+
+assign [class="Nitrogen"] $ws1
+for_window [class=Nitrogen] focus
+
 # (W-2)
 # ========== Browsers ==========
 assign [class="Brave"] $ws2
@@ -186,9 +190,6 @@ for_window [class=Yad] focus
 assign [class="Gnome-disks"] $ws8
 for_window [class=Gnome-disks] focus
 
-assign [class="Nitrogen"] $ws8
-for_window [class=Nitrogen] focus
-
 ##############################
 # Focus Changing
 ##############################
@@ -247,7 +248,7 @@ bindsym $mod+Ctrl+l resize shrink width 5 px or 5 ppt
 
 # set floating (nontiling) for apps needing it
 for_window [class="Yad" instance="yad"] floating disable
-#for_window [class="obsidian"] floating disable
+for_window [class="Nitrogen"] floating enable
 
 # set floating (nontiling) for special apps
 for_window [class="GLava" instance="GLava"] floating enable

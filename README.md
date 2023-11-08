@@ -45,49 +45,9 @@
 
 ## Screenshots
 
-### Qtile
-
-![qtile](https://github.com/bibjaw99/workstation/blob/master/screenshots/qtile.png?raw=true)
-
-## Keybindings For Qtile
-
-| Keybindings |         Actions         |
-| :---------: | :---------------------: |
-|    mod+d    |        rofi drun        |
-|    alt+d    |        rofi rum         |
-|    alt+d    |      rofi windows       |
-| mod+Shift+e |       Power Menu        |
-| mod+Shift+o |     toggle layouts      |
-| mod+Shift+x |    Betterlockscreen     |
-| mod+return  |     Kitty terminal      |
-| mod+Shift+q |     Kills a window      |
-|  mod+ctrl   | resize window(vim keys) |
-|    mod+m    |    toggle fullscreen    |
-|  mod+space  |     floating window     |
-|    mod+w    |         firefox         |
-|    mod+n    |         pcmanfm         |
-|   mod+Tab   |    next active group    |
-|   alt+tab   |  previous active group  |
-
----
-
 ### i3-wm
 
 ![i3_poly](https://github.com/bibjaw99/workstation/blob/master/screenshots/i3.png?raw=true)
-
-### Polybars
-
-#### dark :
-
-![poly](https://github.com/bibjaw99/workstation/blob/master/screenshots/polybar_dark.png?raw=true)
-
-#### light :
-
-![poly](https://github.com/bibjaw99/workstation/blob/master/screenshots/polybar_light.png?raw=true)
-
-#### blocks :
-
-![poly](https://github.com/bibjaw99/workstation/blob/master/screenshots/polybar_block.png?raw=true)
 
 ### App launcher: Rofi
 
@@ -166,3 +126,29 @@
             ├── utils.lua
             └── whichkey.lua
 ```
+
+### Qtile ⚠️ (No longer maintained)
+
+![qtile](https://github.com/bibjaw99/workstation/blob/master/screenshots/qtile.png?raw=true)
+
+## Keybindings For Qtile
+
+| Keybindings |         Actions         |
+| :---------: | :---------------------: |
+|    mod+d    |        rofi drun        |
+|    alt+d    |        rofi rum         |
+|    alt+d    |      rofi windows       |
+| mod+Shift+e |       Power Menu        |
+| mod+Shift+o |     toggle layouts      |
+| mod+Shift+x |    Betterlockscreen     |
+| mod+return  |     Kitty terminal      |
+| mod+Shift+q |     Kills a window      |
+|  mod+ctrl   | resize window(vim keys) |
+|    mod+m    |    toggle fullscreen    |
+|  mod+space  |     floating window     |
+|    mod+w    |         firefox         |
+|    mod+n    |         pcmanfm         |
+|   mod+Tab   |    next active group    |
+|   alt+tab   |  previous active group  |
+
+---
