@@ -33,6 +33,7 @@ alias search="yay -Ss"
 alias pacs="yay -Q | wc -l"
 alias list="yay -Q"
 alias aur_list="yay -Qm"
+alias upArchMirrors="rate-mirrors --allow-root arch | sudo tee /etc/pacman.d/mirrorlist"
 
 ###################################
 #         Tmux

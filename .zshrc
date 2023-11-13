@@ -2,7 +2,6 @@
 HISTFILE=~/.histfile
 HISTSIZE=10000
 SAVEHIST=10000
-bindkey -v
 # End of lines configured by zsh-newuser-install
 # The following lines were added by compinstall
 zstyle :compinstall filename '~/.zshrc'
@@ -11,9 +10,33 @@ autoload -Uz compinit
 compinit
 # End of lines added by compinstall
 
+###################################
+#     Plugins 
+###################################
 # Sourcing Plugins from (~/.config/zsh/)
 source ~/.config/zsh/zsh-autosuggestions.zsh
 source ~/.config/zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+###################################
+#      exclusive settings
+###################################
+# vi mode
+bindkey -v
+export KEYTIMEOUT=1
+
+# Editor
+export EDITOR=nvim
+export VISUAL=nvim
+
+## Editing command line in vim
+autoload -z edit-command-line
+zle -N edit-command-line
+bindkey -M  vicmd v edit-command-line
+
+# Keybindings
+bindkey  "^[[H"   beginning-of-line
+bindkey  "^[[F"   end-of-line
+bindkey  "^[[3~"  delete-char
 
 ###################################
 #    Exporting Paths
@@ -54,6 +77,7 @@ alias search="yay -Ss"
 alias pacs="yay -Q | wc -l"
 alias list="yay -Q"
 alias aur_list="yay -Qm"
+alias upArchMirrors="rate-mirrors --allow-root arch | sudo tee /etc/pacman.d/mirrorlist"
 
 ###################################
 #         Tmux
