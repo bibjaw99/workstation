@@ -246,6 +246,9 @@ bindsym $mod+Ctrl+l resize shrink width 5 px or 5 ppt
 # floating rules #
 ##################
 
+# Default floting window size
+for_window [floating] resize set 1300 700, move position center
+
 # set floating (nontiling) for apps needing it
 for_window [class="Yad" instance="yad"] floating disable
 for_window [class="Nitrogen"] floating enable
