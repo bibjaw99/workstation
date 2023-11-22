@@ -43,19 +43,19 @@ colors:
 
 font:
   normal:
-    family: FiraCode Nerd Font Mono
-    style: Medium
+    family: JetBrainsMono NFM
+    style: SemiBold
 
   bold:
-    family: FiraCode Nerd Font Mono
+    family: JetBrainsMono NFM
     style: Bold
 
   italic:
-    family: FiraCode Nerd Font Mono
+    family: JetBrainsMono NFM
     style: Italic
 
   bold_italic:
-    family: FiraCode Nerd Font Mono
+    family: JetBrainsMono NFM
     style: Bold Italic
 
   size: 12
