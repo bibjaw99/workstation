@@ -39,8 +39,6 @@ hide_edge_borders both
 gaps inner 10
 gaps outer 0
 
-smart_gaps on 
-smart_borders on
 ##############################
 #     Floating Modifier      # 
 ##############################
