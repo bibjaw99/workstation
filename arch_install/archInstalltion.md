@@ -19,7 +19,7 @@
 #### Step 1: Check Internet:
 
 ```
-ip a
+$ ip a
 ```
 
 ---
@@ -27,7 +27,7 @@ ip a
 #### Step 2: Sync Time:
 
 ```
-timedatectl  set-ntp ture
+$ timedatectl  set-ntp ture
 ```
 
 ---
@@ -35,8 +35,8 @@ timedatectl  set-ntp ture
 #### Step 3: Disk Management and Partitioning
 
 ```
-lsblk
-cfdisk /dev/nvme0n1
+$ lsblk
+$ cfdisk /dev/nvme0n1
 ```
 
 > ##### A ui will popup. Select the desired size of the partition of efi, root and home directory
@@ -48,9 +48,9 @@ cfdisk /dev/nvme0n1
 #### Step 4: Formatting Disks
 
 ```
-mkfs.fat -F32 /dev/nvme0n1p1
-mkfs.ext4 /dev/nvme0n1p2
-mkfs.ext4 /dev/nvme0n1p3
+$ mkfs.fat -F32 /dev/nvme0n1p1
+$ mkfs.ext4 /dev/nvme0n1p2
+$ mkfs.ext4 /dev/nvme0n1p3
 ```
 
 > ##### The 1st one is for /boot/efi
@@ -66,13 +66,13 @@ mkfs.ext4 /dev/nvme0n1p3
 ### Step 5: Mounting disks:
 
 ```
-mount /dev/nvme0n1p2 /mnt
+$ mount /dev/nvme0n1p2 /mnt
 
-mkdir -p /mnt/boot
-mount /dev/nvme0n1p1 /mnt/boot
+$ mkdir -p /mnt/boot/efi
+$ mount /dev/nvme0n1p1 /mnt/boot/efi
 
-mkdir /mnt/home
-mount /dev/nvme0n1p3 /mnt/home
+$ mkdir /mnt/home
+$ mount /dev/nvme0n1p3 /mnt/home
 ```
 
 ---
@@ -80,8 +80,8 @@ mount /dev/nvme0n1p3 /mnt/home
 ### Step 6: Base Installation:
 
 ```
-pacstrap /mnt linux linux-headers linux-firmware base base-devel
-efibootmgr networkmanager neovim mtools dosfstools
+$ pacstrap /mnt linux linux-headers linux-firmware base base-devel
+efibootmgr networkmanager vim grub os-prober
 ```
 
 ---
@@ -89,10 +89,10 @@ efibootmgr networkmanager neovim mtools dosfstools
 ### Step 7: Generate fstab
 
 ```
-genfstab -U /mnt >> /mnt/etc/fstab
+$ genfstab -U /mnt >> /mnt/etc/fstab
 
 # Check generated fstab file
-cat /mnt/etc/fstab
+$ cat /mnt/etc/fstab
 ```
 
 ---
@@ -100,7 +100,7 @@ cat /mnt/etc/fstab
 ### Step 8 : Leave the installation and go to chroot:
 
 ```
-arch-chroot /mnt
+$ arch-chroot /mnt
 ```
 
 ---
@@ -108,8 +108,8 @@ arch-chroot /mnt
 ### Step 9 : System Time
 
 ```
-ln -sf /usr/share/zoneinfo/Asia/Dhaka /etc/localtime
-hwclock --systohc
+$ ln -sf /usr/share/zoneinfo/Asia/Dhaka /etc/localtime
+$ hwclock --systohc
 ```
 
 ---
@@ -117,12 +117,12 @@ hwclock --systohc
 ### Step 10: Locale
 
 ```
-nvim /etc/locale.gen
+$ nvim /etc/locale.gen
 # uncomment : en_US.UTF-8 UTF-8. write and quit vim
 
-locale-gen
+$ locale-gen
 
-nvim /etc/locale.conf
+$ nvim /etc/locale.conf
 # add the line : LANG = en_US.UTF-8
 ```
 
@@ -131,7 +131,7 @@ nvim /etc/locale.conf
 ### Step 11: Hostname
 
 ```
-nvim /etc/hostname
+$ nvim /etc/hostname
 # Write down whatever hostname you want to choose
 ```
 
@@ -140,7 +140,7 @@ nvim /etc/hostname
 ### Step 12: Setting up hosts
 
 ```
-nvim /etc/hosts
+$ nvim /etc/hosts
 # add the following line:
 127.0.0.1  localhost
 ::1        localhost
@@ -152,57 +152,35 @@ nvim /etc/hosts
 ### Step 13: Root Password
 
 ```
-passwd
+$ passwd
 ```
 
 ---
 
-### Step 14: SystemD boot as bootloader
+### Step 14: setting up Bootloader
 
 ```
-bootctl --path=/boot install
-cd /boot/loader
-nvim loader.conf
-# add the following line if not there
-timeout 3
-#console-mode keep
-default <host name>-* # save and quit out of vim
+$ grub-install --target=x86_64-efi --efi-directory=/boot/efi --bootloader-id=GRUB
+$ grub-mkconfig -o /boot/grub/grub.cfg
 ```
 
 ---
 
-### Step 15 : Entries Directory
-
-> ##### in the /boot/loader there should be a entries directory.
->
-> ##### Go there and add the following line :
+### Step 15: User Creation
 
 ```
-cd entries/ # this is where the entries will be strored of the installed  distro
-# add :
-title  Arch Linux
-linux vmlinuz-linux
-initrd  /initramfs-linux.img
-options  root=<root directory> # eg. in our case: /dev/nvme0n1p2 rw
-```
-
----
-
-### Step 16: User Creation
-
-```
-useradd -mG wheel habib350
-passwd habib350
-EDITOR=nvim visudo
+$ useradd -mG wheel habib
+$ passwd habib
+$ EDITOR=nvim visudo
 # uncomment the following line
 %wheel All=(All) All
 ```
 
 ---
 
-### Setp 17: Final
+### Setp 16: Final
 
 ```
-exit
-umount -a
+$ exit
+$ umount -a
 ```

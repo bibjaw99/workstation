@@ -159,6 +159,9 @@ for_window [class=Darktable] focus
 assign [class="Soffice"] $ws7
 for_window [class=Soffice] focus
 
+assign [class="libreoffice-startcenter"] $ws7
+for_window [class=libreoffice-startcenter] focus
+
 assign [class="Atril"] $ws7
 for_window [class=Atril] focus
 
@@ -172,6 +175,9 @@ for_window [class=obsidian] focus
 # ========== Settings and Misc. ===========
 assign [class="SimpleScreenRecorder"] $ws8
 for_window [class=SimpleScreenRecorder] focus
+
+assign [class="Kazam"] $ws8
+for_window [class=Kazam] focus
 
 assign [class="Lxappearance"] $ws8
 for_window [class=Lxappearance] focus
