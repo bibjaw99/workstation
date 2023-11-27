@@ -2,6 +2,7 @@
 vim.opt.termguicolors = true
 vim.o.pumheight = 10 -- Max items to show in pop up menu
 vim.o.cmdheight = 1 -- Max items to show in command menu
+vim.o.conceallevel = 2 -- Hides markdown like elements
 
 -- Files and Others
 vim.o.fileencoding = "utf-8" -- File Encoding
@@ -19,7 +20,6 @@ vim.o.splitbelow = true
 vim.o.splitright = true
 
 -- Update and backups
-vim.o.conceallevel = 0
 vim.o.showmode = false
 vim.o.backup = false
 vim.o.writebackup = false
@@ -47,7 +47,7 @@ vim.wo.wrap = false
 vim.wo.number = true
 vim.wo.relativenumber = true
 vim.o.cursorline = true
-vim.o.cursorcolumn = true
+vim.o.cursorcolumn = false
 vim.wo.signcolumn = "yes"
 
 -- Tabs and indentations
