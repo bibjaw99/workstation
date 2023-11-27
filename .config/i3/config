@@ -27,7 +27,7 @@ workspace_layout default
 ##############################
 #border indicator on windows:
 ##############################
-new_window pixel 1
+default_border pixel 1
 
 # thin borders
 hide_edge_borders both
