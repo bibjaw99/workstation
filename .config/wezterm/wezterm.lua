@@ -11,7 +11,7 @@ end
 -- =======================================================================
 config.color_scheme = "custom"
 config.window_background_opacity = 0.8
-config.default_cursor_style = "SteadyBar"
+config.window_close_confirmation = "NeverPrompt"
 config.enable_tab_bar = false
 config.scrollback_lines = 2000
 config.window_padding = {
@@ -22,14 +22,14 @@ config.window_padding = {
 }
 
 -- =======================================================================
-config.font = wezterm.font("JetBrainsMono Nerd Font Mono", { weight = "DemiBold", italic = false })
+config.font = wezterm.font("FiraCode Nerd Font Mono", { weight = "Medium", italic = false })
 config.font_size = 13
 config.font_rules = {
 	-- Bold
 	{
 		intensity = "Bold",
 		italic = false,
-		font = wezterm.font("JetBrainsMono Nerd Font Mono", {
+		font = wezterm.font("FiraCode Nerd Font Mono", {
 			weight = "Bold",
 			style = "Normal",
 		}),
@@ -38,8 +38,9 @@ config.font_rules = {
 	{
 		intensity = "Bold",
 		italic = true,
-		font = wezterm.font("JetBrainsMono Nerd Font Mono", {
+		font = wezterm.font("FiraCode Nerd Font Mono", {
 			weight = "Bold",
+			style = "Italic",
 		}),
 	},
 }
