@@ -22,28 +22,8 @@ config.window_padding = {
 }
 
 -- =======================================================================
-config.font = wezterm.font("FiraCode Nerd Font Mono", { weight = "Medium", italic = false })
+config.font = wezterm.font("JetBrainsMono Nerd Font Mono", { weight = "DemiBold" })
 config.font_size = 13
-config.font_rules = {
-	-- Bold
-	{
-		intensity = "Bold",
-		italic = false,
-		font = wezterm.font("FiraCode Nerd Font Mono", {
-			weight = "Bold",
-			style = "Normal",
-		}),
-	},
-	-- Italic
-	{
-		intensity = "Bold",
-		italic = true,
-		font = wezterm.font("FiraCode Nerd Font Mono", {
-			weight = "Bold",
-			style = "Italic",
-		}),
-	},
-}
 
 -- =======================================================================
 return config
