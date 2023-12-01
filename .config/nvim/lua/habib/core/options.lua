@@ -2,7 +2,7 @@
 vim.opt.termguicolors = true
 vim.o.pumheight = 10 -- Max items to show in pop up menu
 vim.o.cmdheight = 1 -- Max items to show in command menu
-vim.o.conceallevel = 2 -- Hides markdown like elements
+vim.o.conceallevel = 0 -- For markdown like elements
 
 -- Files and Others
 vim.o.fileencoding = "utf-8" -- File Encoding
@@ -65,7 +65,7 @@ vim.o.expandtab = true
 vim.bo.expandtab = true
 
 vim.opt.list = true
-vim.opt.listchars:append("eol:↴")
+vim.opt.listchars:append("eol:󱞣")
 vim.opt.fillchars = { eob = " " }
 
 -- Auto Formatting

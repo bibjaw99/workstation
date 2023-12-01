@@ -2,7 +2,7 @@ window:
   padding:
     x: 2
     y: 0
-  opacity: 0.80
+  opacity: 0.85
 
 scrolling:
   history: 1000

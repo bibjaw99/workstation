@@ -23,9 +23,9 @@ truncation_length = 4
 truncate_to_repo = false
 
 [character]
-success_symbol = "[](bold yellow)"
-error_symbol = "[](bold red)"
-vicmd_symbol = "[](bold green)"
+success_symbol = "[󰜴](bold yellow)"
+error_symbol = "[󰜴](bold red)"
+vicmd_symbol = "[󰜴](bold green)"
 
 [git_branch]
 symbol = " "
