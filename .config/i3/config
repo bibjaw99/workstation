@@ -300,7 +300,7 @@ bindsym $mod+Shift+q kill
 bindsym $mod+Shift+e exec ~/.config/i3/scripts/power.sh
 
 # Lock the system
-bindsym $mod+Shift+x exec i3lock -i ~/Pictures/backgrounds/coffee.png
+bindsym $mod+Shift+x exec i3lock -i ~/Pictures/backgrounds/VIM.png
 
 # reload the configuration file
 bindsym $mod+Shift+c reload

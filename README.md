@@ -4,8 +4,8 @@
 
 ## Package List
 
-- [Here](./arch_install/)
-- [Important Notes and Notes related to Artix](./arch_install/notes.md)
+- [Packages I use can be found here](./arch_install/) 📦
+- [Important Notes and Notes related to Artix](./arch_install/notes.md) ⚠️
 
 ### **Descriptions:**
 
