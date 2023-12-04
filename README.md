@@ -4,6 +4,9 @@
 
 ## Package List
 
+- [Here](./arch_install/)
+- [Important Notes and Notes related to Artix](./arch_install/notes.md)
+
 ### **Descriptions:**
 
 - **OS:** Arch Linux
