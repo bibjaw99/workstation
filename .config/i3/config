@@ -161,8 +161,8 @@ for_window [class=Soffice] focus
 assign [class="libreoffice-startcenter"] $ws7
 for_window [class=libreoffice-startcenter] focus
 
-assign [class="Atril"] $ws7
-for_window [class=Atril] focus
+assign [class="Zathura"] $ws7
+for_window [class=Zathura] focus
 
 assign [class="marktext"] $ws7
 for_window [class=marktext] focus

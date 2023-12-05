@@ -1,0 +1,51 @@
+set notification-error-bg       "#1d2021"
+set notification-error-fg       "#fb4934"
+set notification-warning-bg     "#1d2021"
+set notification-warning-fg     "#fabd2f"
+set notification-bg             "#1d2021"
+set notification-fg             "#b8bb26"
+
+set completion-bg               "#1d2021"
+set completion-fg               "#ebdbb2"
+set completion-group-bg         "#3c3836"
+set completion-group-fg         "#928374"
+set completion-highlight-bg     "#83a598"
+set completion-highlight-fg     "#504945"
+
+# Define the color in index mode
+set index-bg                    "#1d1d1d"
+set index-fg                    "#d8a675"
+set index-active-bg             "#458588"
+set index-active-fg             "#ebdbb2"
+
+set inputbar-bg                 "#1d2021"
+set inputbar-fg                 "#ebdbb2"
+
+set statusbar-bg                "#1d1d1d"
+set statusbar-fg                "#ebdbb2"
+
+set highlight-color             "#83a598"
+set highlight-active-color      "#8ec07c"
+
+set default-bg                  "#1d1d1d"
+set default-fg                  "#ebdbb2"
+set render-loading              true
+set render-loading-bg           "#171717"
+set render-loading-fg           "#ebdbb2"
+
+# Recolor book content's color
+set recolor-lightcolor          "#171717"
+set recolor-darkcolor           "#ebdbb2"
+set recolor                     "true"
+
+set page-padding 10
+
+# KEY MAPS
+
+map H zoom in
+map L zoom out
+map r reload
+map I recolor
+map Q quit
+map w adjust_window width
+map f adjust_window best-fit
