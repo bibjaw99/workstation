@@ -92,11 +92,8 @@ bindsym $mod+Shift+8    move container to workspace  $ws8
 
 # (W-1)
 # ========== Primary Terminal ==========
-assign [class="Alacritty"] $ws1
-for_window [class=Alacritty] focus
-
-assign [class="wezterm"] $ws1
-for_window [class=wezterm] focus
+assign [class="kitty"] $ws1
+for_window [class=kitty] focus
 
 assign [class="Nitrogen"] $ws1
 for_window [class=Nitrogen] focus
@@ -116,9 +113,6 @@ for_window [class=firefox] focus
 # ========== Coding ===========
 assign [class="Anaconda-Navigator"] $ws3
 for_window [class=Anaconda-Navigator] focus
-
-assign [class="kitty"] $ws3
-for_window [class=kitty] focus
 
 assign [class="(?i)Code"] $ws3
 for_window [class=Code] focus
@@ -277,8 +271,7 @@ bindsym Print exec flameshot full --path ~/Pictures/screenshots
 bindsym $mod+Print exec flameshot gui --path ~/Pictures/screenshots
 
 # start a terminal
-bindsym $mod+Return exec alacritty
-bindsym $mod+Shift+Return exec kitty
+bindsym $mod+Return exec kitty
 
 # ibus
 bindsym $mod+Shift+b exec ibus-setup

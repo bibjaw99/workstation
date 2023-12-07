@@ -158,18 +158,17 @@ channels = stereo
 # Gradient mode, only hex defined colors are supported,
 # background must also be defined in hex or remain commented out. 1 = on, 0 = off.
 # You can define as many as 8 different colors. They range from bottom to top of screen
-; gradient = 0
-; gradient_count = 8
-; gradient_color_1 = '#59cc33'
-; gradient_color_2 = '#80cc33'
-; gradient_color_3 = '#a6cc33'
-; gradient_color_4 = '#cccc33'
-; gradient_color_5 = '#cca633'
-; gradient_color_6 = '#cc8033'
-; gradient_color_7 = '#cc5933'
-; gradient_color_8 = '#cc3333'
 
+gradient = 1
 
+gradient_color_1 = '#cc241d'
+gradient_color_2 = '#98971a'
+gradient_color_3 = '#d79921'
+gradient_color_4 = '#458588'
+gradient_color_5 = '#689d6a'
+gradient_color_6 = '#d65d0e'
+gradient_color_7 = '#bdae93'
+gradient_color_8 = '#fbf1c7'
 
 [smoothing]
 
