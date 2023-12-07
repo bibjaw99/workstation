@@ -271,7 +271,6 @@ bindsym $mod+o exec google-chrome-stable
 
 # File Manager
 bindsym $mod+n exec pcmanfm
-bindsym $mod+Shift+n exec ~/.config/i3/scripts/pcmanfm.sh
 
 # Screenshot : FlameShot
 bindsym Print exec flameshot full --path ~/Pictures/screenshots
@@ -308,21 +307,31 @@ bindsym $mod+Shift+c reload
 # restart i3 inplace (preserves your layout/session, can be used to update i3)
 bindsym $mod+Shift+r restart
 
+# Random backgrounds
+bindsym $mod+Shift+g exec feh --bg-scale --recursive --randomize ~/Pictures/backgrounds/*
+
 #############################################
 # autostart applications/services on login: #
 #############################################
+# xorg commands
+exec xrandr -s 1920x1080 -r 75
+exec xset s -dpms
+exec xset s off
 
-# get auth work with polkit
-exec --no-startup-id /usr/lib/mate-polkit/polkit-mate-authentication-agent-1
+# compositor
+exec picom
 
-#exec --no-startup-id dex -a -s /etc/xdg/autostart/:~/.config/autostart/
-exec --no-startup-id dex --autostart --environment i3
-
-# autostart
-exec --no-startup-id ~/.config/autostart/autostart.sh
+# Notification Daemon
+exec dunst
 
 # Polybar
 exec_always --no-startup-id ~/.config/polybar/i3_bar.sh
+
+# background
+exec feh --bg-scale --recursive --randomize ~/Pictures/backgrounds/*
+
+# get auth work with polkit
+exec --no-startup-id /usr/lib/mate-polkit/polkit-mate-authentication-agent-1
 
 # disable capslock
 exec setxkbmap -option ctrl:nocaps
