@@ -260,7 +260,7 @@ for_window [class="GLava" instance="GLava"] floating enable
 ## App shortcuts
 
 # Browser
-bindsym $mod+w exec brave 
+bindsym $mod+w exec firefox
 bindsym $mod+o exec google-chrome-stable
 
 # File Manager
