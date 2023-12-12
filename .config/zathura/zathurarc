@@ -42,6 +42,7 @@ set page-padding 10
 
 # KEY MAPS
 
+map O open
 map H zoom in
 map L zoom out
 map r reload

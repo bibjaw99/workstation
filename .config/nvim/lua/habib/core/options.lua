@@ -14,6 +14,7 @@ vim.o.shortmess = vim.o.shortmess .. "c"
 vim.o.hidden = true
 vim.o.whichwrap = "b,s,<,>,[,],h,l"
 vim.opt.iskeyword:append("-,_")
+vim.opt.virtualedit = "block"
 
 -- Split Windows
 vim.o.splitbelow = true
