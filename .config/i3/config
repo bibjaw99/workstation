@@ -260,11 +260,14 @@ for_window [class="GLava" instance="GLava"] floating enable
 ## App shortcuts
 
 # Browser
-bindsym $mod+w exec firefox
+bindsym $mod+w exec brave
 bindsym $mod+o exec google-chrome-stable
 
 # File Manager
 bindsym $mod+n exec pcmanfm
+
+# PDF Reader Zathura 
+bindsym $mod+Shift+o exec zathura
 
 # Screenshot : FlameShot
 bindsym Print exec flameshot full --path ~/Pictures/screenshots
