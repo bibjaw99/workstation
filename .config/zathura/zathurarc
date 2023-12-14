@@ -49,3 +49,4 @@ map I recolor
 map Q quit
 map w adjust_window width
 map f adjust_window best-fit
+set selection-clipboard clipboard
