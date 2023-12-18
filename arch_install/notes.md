@@ -48,6 +48,39 @@ $ sudo mkinitcpio -p linux
   - Package Management (full)
   - EndeavourOS Apps: eos-log-tool, eos-rankmirrors, reflector-simple, Welcome,
 
+## Alacritty Emoji support
+
+```
+$ mkdir -p ~/.config/fontconfig/conf.d/
+$ cd ~/.config/fontconfig/conf.d/
+$ nvim 01-emoji.conf
+
+# add these lines :
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE fontconfig SYSTEM "fonts.dtd">
+<fontconfig>
+  <alias>
+    <family>serif</family>
+    <prefer>
+      <family>Noto Color Emoji</family>
+    </prefer>
+  </alias>
+  <alias>
+    <family>sans-serif</family>
+    <prefer>
+      <family>Noto Color Emoji</family>
+    </prefer>
+  </alias>
+  <alias>
+    <family>monospace</family>
+    <prefer>
+      <family>Noto Color Emoji</family>
+    </prefer>
+  </alias>
+</fontconfig>
+```
+
 ---
 
 # Artix (runit) exclusive things to do
