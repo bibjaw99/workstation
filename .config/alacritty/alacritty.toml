@@ -1,7 +1,7 @@
 [window]
 padding.x = 2
 padding.y = 0
-opacity = 0.85
+opacity = 1
 
 [scrolling]
 history = 10000
@@ -11,12 +11,12 @@ multiplier = 3
 draw_bold_text_with_bright_colors = true
 
 [colors.primary]
-background = "#000000"
+background = "#171717"
 foreground = "#d5c4a1"
 
 [colors.cursor]
-text = "#1d2021"
-cursor ="#928374"
+text = "#bdae93"
+cursor ="#665c54"
 
 [colors.normal]
 black = "#1d2021"
@@ -36,7 +36,7 @@ yellow = "#fabd2f"
 blue = "#83a598"
 magenta = "#d3869b"
 cyan = "#8ec07c"
-white = "#bdae93"
+white = "#fbf1c7"
 
 [font]
 size = 12

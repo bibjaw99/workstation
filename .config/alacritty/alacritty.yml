@@ -2,22 +2,22 @@ window:
   padding:
     x: 2
     y: 0
-  opacity: 0.85
+  opacity: 1
 
 scrolling:
-  history: 1000
+  history: 10000
   multiplier: 3
 
 colors:
   # Default colors
   primary:
-    background: "#000000"
+    background: "#171717"
     foreground: "#d5c4a1"
 
   # Colors the cursor will use if `custom_cursor_colors` is true
   cursor:
-    text: "#1d2021"
-    cursor: "#928374"
+    text: "#bdae93"
+    cursor: "#665c54"
 
   # Normal colors
   normal:
@@ -39,12 +39,12 @@ colors:
     blue: "#458588"
     magenta: "#d3869b"
     cyan: "#8ec07c"
-    white: "#bdae93"
+    white: "#fbf1c7"
 
 font:
   normal:
     family: JetBrainsMono Nerd Font Mono
-    style: SemiBold
+    style: Regular
 
   bold:
     family: JetBrainsMono Nerd Font Mono
