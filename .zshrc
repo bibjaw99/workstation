@@ -5,6 +5,7 @@ SAVEHIST=10000
 # End of lines configured by zsh-newuser-install
 # The following lines were added by compinstall
 zstyle :compinstall filename '~/.zshrc'
+zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}'
 
 autoload -Uz compinit
 compinit
