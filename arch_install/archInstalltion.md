@@ -27,7 +27,7 @@ $ ip a
 #### Step 2: Sync Time:
 
 ```
-$ timedatectl  set-ntp ture
+$ timedatectl  set-ntp true
 ```
 
 ---
@@ -71,6 +71,10 @@ $ mount /dev/nvme0n1p2 /mnt
 $ mkdir -p /mnt/boot/efi
 $ mount /dev/nvme0n1p1 /mnt/boot/efi
 
+#For, systemdboot,
+$ mkdir -p /mnt/boot/
+$ mount /dev/nvme0n1p1 /mnt/boot/
+
 $ mkdir /mnt/home
 $ mount /dev/nvme0n1p3 /mnt/home
 ```
@@ -80,8 +84,10 @@ $ mount /dev/nvme0n1p3 /mnt/home
 ### Step 6: Base Installation:
 
 ```
-$ pacstrap /mnt linux linux-headers linux-firmware base base-devel
-efibootmgr networkmanager vim grub os-prober
+$ pacstrap /mnt linux linux-headers linux-firmware base base-devel efibootmgr networkmanager neovim grub os-prober
+
+# for systemdboot,
+$ pacstrap /mnt linux linux-headers linux-firmware base base-devel efibootmgr networkmanager neovim mtools dosfstools
 ```
 
 ---
@@ -123,7 +129,9 @@ $ nvim /etc/locale.gen
 $ locale-gen
 
 $ nvim /etc/locale.conf
-# add the line : LANG = en_US.UTF-8
+
+# add the line
+LANG = en_US.UTF-8
 ```
 
 ---
@@ -142,9 +150,9 @@ $ nvim /etc/hostname
 ```
 $ nvim /etc/hosts
 # add the following line:
-127.0.0.1  localhost
-::1        localhost
-127.0.1.1  <host name>.localdomain  <host name>
+127.0.0.1   localhost
+::1         localhost
+127.0.1.1   <host name>.localdomain  <host name>
 ```
 
 ---
@@ -157,16 +165,7 @@ $ passwd
 
 ---
 
-### Step 14: setting up Bootloader
-
-```
-$ grub-install --target=x86_64-efi --efi-directory=/boot/efi --bootloader-id=GRUB
-$ grub-mkconfig -o /boot/grub/grub.cfg
-```
-
----
-
-### Step 15: User Creation
+### Step 14: User Creation
 
 ```
 $ useradd -mG wheel habib
@@ -174,6 +173,45 @@ $ passwd habib
 $ EDITOR=nvim visudo
 # uncomment the following line
 %wheel All=(All) All
+```
+
+---
+
+### Step 15: setting up Bootloader
+
+```
+$ grub-install --target=x86_64-efi --efi-directory=/boot/efi --bootloader-id=GRUB
+$ grub-mkconfig -o /boot/grub/grub.cfg
+```
+
+#### for systemd-boot
+
+```
+$ bootctl --path=/boot install
+$ cd /boot/loader/
+$ nvim loader.conf
+
+# add the line(s)
+default arch.conf # should be same name as the conf file in entries directory
+
+$ cd entries/
+$ nvim arch.conf
+
+# add the lines
+title	Arch Linux
+linux	/vmlinuz-linux
+initrd	/amd-ucode.img
+initrd	/initramfs-linux.img
+options	root=/dev/nvme0n1p2	rw
+
+$ nvim arch-fb.conf
+
+# add the lines
+title	Arch Linux Fallback Image
+linux	/vmlinuz-linux
+initrd	/amd-ucode.img
+initrd	/initramfs-linux-fallback.img
+options	root=/dev/nvme0n1p2	rw
 ```
 
 ---

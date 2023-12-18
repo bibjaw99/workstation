@@ -22,9 +22,20 @@
 
 ## commands:
 
+### Set default file manager
+
 ```
-xdg-mime default pcmanfm.desktop inode/directory
-xdg-user-dirs-update # or xdg-user-dirs-update --force
+$ xdg-mime default pcmanfm.desktop inode/directory
+$ xdg-user-dirs-update # or xdg-user-dirs-update --force
+```
+
+### Ran into an issue related to systemd `a failed ret 0x0`
+
+```
+$ sudo nvim /etc/mkinitcpio.conf
+# pass parameter in `modules=()`
+$ modules = (amdgpu)
+$ sudo mkinitcpio -p linux
 ```
 
 ---
