@@ -22,7 +22,18 @@ lazy.setup(
     { import = "habib.plugins" },
     { import = "habib.plugins.lsp" },
   },
-  -- end of importing dirs
+
+  -- ui config
+  {
+    ui = {
+      border = "double",
+      size = {
+        width = 0.8,
+        height = 0.8,
+      },
+    },
+  },
+
   {
     checker = {
       enabled = true,
