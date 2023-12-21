@@ -21,6 +21,7 @@ return {
 			finder_definition_icon = "  ",
 			finder_reference_icon = "  ",
 			max_preview_lines = 10,
+
 			finder_action_keys = {
 				open = "o",
 				vsplit = "s",
@@ -28,6 +29,10 @@ return {
 				quit = "q",
 				scroll_down = "<C-f>",
 				scroll_up = "<C-b>",
+			},
+
+			hover = {
+				max_width = 0.7,
 			},
 
 			code_action_keys = { quit = "q", exec = "<CR>" },

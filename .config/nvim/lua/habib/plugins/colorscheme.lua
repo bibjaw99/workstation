@@ -11,5 +11,6 @@ return {
     vim.cmd("let g:gruvbox_material_enable_italic=1")
     vim.cmd([[colorscheme gruvbox-material]]) -- Set color scheme
     vim.api.nvim_set_hl(0, "FloatBorder", { link = "Normal" })
+    vim.api.nvim_set_hl(0, "NormalFloat", { link = "Normal" })
   end,
 }

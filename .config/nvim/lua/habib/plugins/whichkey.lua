@@ -10,6 +10,13 @@ return {
 		vim.o.timeoutlen = 300
 
 		local wk = require("which-key")
+		-- border
+		wk.setup({
+			window = {
+				border = "double",
+			},
+		})
+
 		local terminal = require("toggleterm.terminal").Terminal
 
 		local toggle_float = function()
