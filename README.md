@@ -95,41 +95,42 @@
 #### Neovim File tree
 
 ```
-.
-├── init.lua
-├── lazy-lock.json
-└── lua
-    └── habib
-        ├── core
-        │   ├── init.lua
-        │   ├── keymaps.lua
-        │   ├── lazy.lua
-        │   └── options.lua
-        └── plugins
-            ├── autopairs.lua
-            ├── bufferline.lua
-            ├── cmp.lua
-            ├── colorizer.lua
-            ├── colorscheme.lua
-            ├── comment.lua
-            ├── dashboard.lua
-            ├── dressing.lua
-            ├── gitsigns.lua
-            ├── indent.lua
-            ├── lsp
-            │   ├── lspconfig.lua
-            │   ├── lsp_saga.lua
-            │   ├── mason.lua
-            │   └── null_ls.lua
-            ├── lualine.lua
-            ├── notify.lua
-            ├── nvim-tree.lua
-            ├── tagbar.lua
-            ├── telescope.lua
-            ├── toggleterm.lua
-            ├── treesitter.lua
-            ├── utils.lua
-            └── whichkey.lua
+ .
+├──  init.lua
+├──  lazy-lock.json
+└──  lua
+   └──  habib
+      ├──  core
+      │  ├──  init.lua
+      │  ├──  keymaps.lua
+      │  ├──  lazy.lua
+      │  └──  options.lua
+      └──  plugins
+         ├──  autopairs.lua
+         ├──  bufferline.lua
+         ├──  cmp.lua
+         ├──  colorizer.lua
+         ├──  colorscheme.lua
+         ├──  comment.lua
+         ├──  dashboard.lua
+         ├──  dressing.lua
+         ├──  gitsigns.lua
+         ├──  indent.lua
+         ├──  lsp
+         │  ├──  lsp_saga.lua
+         │  ├──  lspconfig.lua
+         │  ├──  mason.lua
+         │  └──  null_ls.lua
+         ├──  lualine.lua
+         ├──  markdown.lua
+         ├──  notify.lua
+         ├──  nvim-tree.lua
+         ├──  tagbar.lua
+         ├──  telescope.lua
+         ├──  toggleterm.lua
+         ├──  treesitter.lua
+         ├──  utils.lua
+         └──  whichkey.lua
 ```
 
 ### Qtile ⚠️ (No longer maintained)
