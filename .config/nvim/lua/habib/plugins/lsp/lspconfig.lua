@@ -6,6 +6,7 @@ return {
 	},
 	config = function()
 		local lspconfig = require("lspconfig")
+		local lspui = require("lspconfig.ui.windows")
 		local cmp_nvim_lsp = require("cmp_nvim_lsp")
 		local capabilities = cmp_nvim_lsp.default_capabilities()
 
@@ -14,6 +15,10 @@ return {
 			local hl = "DiagnosticSign" .. type
 			vim.fn.sign_define(hl, { text = icon, texthl = hl, numhl = "" })
 		end
+
+		--LspInfo Borders
+		lspui.default_options.border = "double"
+
 		-- Managing language servers individually
 		-- pyright
 		lspconfig.pyright.setup({
