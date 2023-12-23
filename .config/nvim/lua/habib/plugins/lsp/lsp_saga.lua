@@ -32,7 +32,7 @@ return {
 			},
 
 			hover = {
-				max_width = 0.7,
+				max_width = 0.5,
 			},
 
 			code_action_keys = { quit = "q", exec = "<CR>" },

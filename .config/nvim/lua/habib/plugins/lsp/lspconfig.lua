@@ -16,6 +16,9 @@ return {
 			vim.fn.sign_define(hl, { text = icon, texthl = hl, numhl = "" })
 		end
 
+		-- Auto Formatting
+		vim.cmd([[autocmd BufWritePre * lua vim.lsp.buf.format()]])
+
 		--LspInfo Borders
 		lspui.default_options.border = "double"
 

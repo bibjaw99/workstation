@@ -69,12 +69,19 @@ vim.opt.list = true
 vim.opt.listchars:append("eol:󱞣")
 vim.opt.fillchars = { eob = " " }
 
--- Auto Formatting
-vim.cmd([[autocmd BufWritePre * lua vim.lsp.buf.format()]])
-
 -- keep cursor unchanged after quiting
 vim.api.nvim_create_autocmd("ExitPre", {
 	group = vim.api.nvim_create_augroup("Exit", { clear = true }),
 	command = "set guicursor=a:ver90",
 	desc = "Set cursor back to beam when leaving Neovim.",
+})
+
+-- Options based on filetypes
+-- markdown
+vim.api.nvim_create_autocmd("FileType", {
+	pattern = "markdown",
+	callback = function()
+		vim.opt.wrap = true
+		vim.opt.linebreak = true
+	end,
 })
