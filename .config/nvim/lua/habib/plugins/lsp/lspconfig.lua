@@ -27,10 +27,12 @@ return {
 		lspconfig.pyright.setup({
 			capabilities = capabilities,
 		})
+
 		-- tsserver
 		lspconfig.tsserver.setup({
 			capabilities = capabilities,
 		})
+
 		-- rust_analyzer
 		lspconfig.rust_analyzer.setup({
 			capabilities = capabilities,
@@ -40,10 +42,16 @@ return {
 			},
 		})
 
+		-- clangd
+		lspconfig.clangd.setup({
+			capabilities = capabilities,
+		})
+
 		-- html
 		lspconfig.html.setup({
 			capabilities = capabilities,
 		})
+
 		-- configure emmet language server
 		lspconfig.emmet_ls.setup({
 			capabilities = capabilities,
