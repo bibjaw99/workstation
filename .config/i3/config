@@ -306,9 +306,6 @@ bindsym $mod+Shift+c reload
 # restart i3 inplace (preserves your layout/session, can be used to update i3)
 bindsym $mod+Shift+r restart
 
-# Random backgrounds
-bindsym $mod+Shift+g exec feh --bg-scale --recursive --randomize ~/Pictures/backgrounds/*
-
 #############################################
 # autostart applications/services on login: #
 #############################################
@@ -327,7 +324,7 @@ exec dunst
 exec_always --no-startup-id ~/.config/polybar/i3_bar.sh
 
 # background
-exec feh --bg-scale --recursive --randomize ~/Pictures/backgrounds/*
+exec nitrogen --restore
 
 # get auth work with polkit
 exec --no-startup-id /usr/lib/mate-polkit/polkit-mate-authentication-agent-1
