@@ -13,6 +13,7 @@ return {
 			formatting.black,
 			formatting.isort,
 			formatting.eslint_d,
+			formatting.clang_format,
 		}
 		null_ls.setup({
 			sources = sources,

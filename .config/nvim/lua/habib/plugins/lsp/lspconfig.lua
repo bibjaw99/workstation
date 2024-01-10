@@ -45,6 +45,10 @@ return {
 		-- clangd
 		lspconfig.clangd.setup({
 			capabilities = capabilities,
+			cmd = {
+				"clangd",
+				"--offset-encoding=utf-16",
+			},
 		})
 
 		-- html
