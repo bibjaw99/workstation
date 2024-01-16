@@ -1,0 +1,23 @@
+{
+  "height": 30, // Waybar height (to be removed for auto height)
+  "spacing": 4, // Gaps between modules (4px)
+  "modules-left": ["hyprland/workspaces"],
+
+  "hyprland/workspaces": {
+    "format": "{icon}",
+    "format-icons": {
+      "1": "",
+      "2": "",
+      "3": "",
+      "4": "",
+      "5": "",
+      "6": "󰭛",
+      "7": "",
+      "8": "󰚀",
+    },
+    "persistent-workspaces": {
+      "*": 8, // 5 workspaces by default on every monitor
+      "HDMI-A-1": 8, // but only three on HDMI-A-1
+    },
+  },
+}
