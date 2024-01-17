@@ -51,7 +51,7 @@ mainbox {
 }
 
 inputbar {
-    margin: 8px ;
+    margin: 8px 8px 3px 8px;
     background-color: @yellow;
     children: [prompt,entry];
 }
@@ -75,7 +75,9 @@ entry {
 
 listview {
     lines:10;
-    padding:3px 8px;
+    padding:8px;
+    border: 2px;
+    margin:8px;
     background-color:@dark-grey;
     children:[element];
 }

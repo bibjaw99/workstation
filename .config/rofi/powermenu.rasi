@@ -39,6 +39,7 @@ window {
 }
 
 listview {
+    border:0px;
     padding:1px;
     margin:1px;
     columns:4;
