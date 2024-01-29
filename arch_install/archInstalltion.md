@@ -75,7 +75,7 @@ $ mount /dev/nvme0n1p1 /mnt/boot/efi
 $ mkdir -p /mnt/boot/
 $ mount /dev/nvme0n1p1 /mnt/boot/
 
-$ mkdir /mnt/home
+$ mkdir -p /mnt/home
 $ mount /dev/nvme0n1p3 /mnt/home
 ```
 

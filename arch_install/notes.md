@@ -167,3 +167,29 @@ $ basestrap /mnt linux linux-firmware linux-headers base base-devel vim runit el
   $ loginclt reboot
   $ loginclt suspend
   ```
+
+# important packages for laptop settings
+
+## Drivers
+
+- xorg
+- intel-media-drivers
+- vulkan-intel
+- intel-gmmlib
+
+---
+
+## Bluetooth
+
+- blueman
+- bluez
+- bluez-utils
+- gnome-bluetooth
+
+## Brightnessctl
+
+- brightnessctl
+
+## Misc
+
+- lshw
