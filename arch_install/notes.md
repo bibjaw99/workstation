@@ -193,3 +193,14 @@ $ basestrap /mnt linux linux-firmware linux-headers base base-devel vim runit el
 ## Misc
 
 - lshw
+- auto-cpufreq # for optimizing cpu according to usage. The config file must be located in /etc/auto-cpufreq.conf
+
+---
+
+## Important commands
+
+to check bluetooth status:
+
+```
+bluetoothctl info
+```
