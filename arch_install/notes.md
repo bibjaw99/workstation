@@ -208,3 +208,13 @@ to check bluetooth status:
 ```
 bluetoothctl info
 ```
+
+the following file must be created to access brightness control in polybar:
+
+```
+sudo nvim /etc/udev/rules.d/backlight.rules
+```
+
+```
+ACTION=="add", SUBSYSTEM=="backlight", RUN+="/bin/chgrp video $sys$devpath/brightness", RUN+="/bin/chmod g+w $sys$devpath/brightness"
+```
