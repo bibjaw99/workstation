@@ -168,16 +168,20 @@ $ basestrap /mnt linux linux-firmware linux-headers base base-devel vim runit el
   $ loginclt suspend
   ```
 
+---
+
 # important packages for laptop settings
 
 ## Drivers
 
 - xorg
-- intel-media-drivers
+- intel-media-driver
 - vulkan-intel
 - intel-gmmlib
 
----
+## i3lock when screen is closed
+
+- xss-lock
 
 ## Bluetooth
 

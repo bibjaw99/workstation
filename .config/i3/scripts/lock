@@ -1,0 +1,14 @@
+#!/bin/sh
+image=~/Pictures/backgrounds/VIM.png
+mouse=10
+
+revert(){
+  xset dpms 0 0 0
+  xset s off -dpms
+  xinput --set-prop $mouse "Device Enabled" "1"
+}
+
+trap revert HUP INT TERM
+xinput --set-prop $mouse "Device Enabled" "0"
+i3lock -t -f -n -i $image
+revert
