@@ -264,7 +264,7 @@ for_window [class="GLava" instance="GLava"] floating enable
 
 # Browser
 bindsym $mod+w exec brave
-bindsym $mod+o exec google-chrome-stable
+bindsym $mod+o exec google-chrome-stable --enable-features=VaapiVideoDecodeLinuxGL
 
 # File Manager
 bindsym $mod+n exec pcmanfm
