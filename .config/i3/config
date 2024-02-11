@@ -330,9 +330,6 @@ exec xrandr -s 1920x1080 -r 60
 exec xset s -dpms
 exec xset s off
 
-# lockscreen on lid closed
-# exec_always xss-lock -- ~/.config/i3/scripts/lock
-
 # compositor
 exec picom
 

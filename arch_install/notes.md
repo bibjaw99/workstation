@@ -182,6 +182,15 @@ $ basestrap /mnt linux linux-firmware linux-headers base base-devel vim runit el
 ## i3lock when screen is closed
 
 - xss-lock
+- betterlockscreen
+
+For betterlockscreen to work with laptop lid
+
+```
+$ sudo systemctl enable betterlockscreen@habib.service
+$ sudo nvim /etc/systemd/logind.conf
+// uncomment `HandleLidSwitch=suspend`
+```
 
 ## Bluetooth
 
