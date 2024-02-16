@@ -46,11 +46,13 @@
 
 ---
 
-## Screenshots
+## Gallery
 
 ![i3_poly](https://github.com/bibjaw99/workstation/blob/master/screenshots/i3.png?raw=true)
 
 ![Artix](https://github.com/bibjaw99/workstation/blob/master/screenshots/artix.png?raw=true)
+
+![Polybar Blocks](https://github.com/bibjaw99/workstation/blob/master/screenshots/polybar_block.png?raw=true)
 
 ![Gruvbox with bg "#171717"](https://github.com/bibjaw99/workstation/blob/master/screenshots/gruvbox.png?raw=true)
 
