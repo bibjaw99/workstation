@@ -78,6 +78,16 @@ return {
 				l = { toggle_lazygit, "LazyGit" },
 			},
 
+			-- Set Options shortcutts
+			o = {
+				name = "Vim Options",
+				w = { ":set wrap<cr>", "Wrap Lines" },
+				W = { ":set nowrap<cr>", "Unwrap Lines" },
+				l = { ":set linebreak<cr>", "Linebreak On" },
+				L = { ":set nolinebreak<cr>", "Linebreak Off" },
+				s = { ":set spell<cr>", "Spell Check On" },
+				S = { ":set nospell<cr>", "Spell Check Off" },
+			},
 			-- Lsp Stuffs
 			l = {
 				name = "LSP",
