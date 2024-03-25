@@ -3,7 +3,7 @@
 ####################################
 focus_follows_mouse no
 focus_wrapping no
-for_window [class="^.*"] border pixel 2
+for_window [class="^.*"] border pixel 1
 title_align center
 ######################################
 
@@ -190,6 +190,9 @@ for_window [class=Yad] focus
 assign [class="Gnome-disks"] $ws8
 for_window [class=Gnome-disks] focus
 
+assign [class="Blueman-manager"] $ws8
+for_window [class=Blueman-manager] focus
+
 ##############################
 # Focus Changing
 ##############################
@@ -280,7 +283,7 @@ bindsym $mod+Print exec flameshot gui
 bindsym $mod+Return exec kitty
 
 # ibus
-bindsym $mod+Shift+b exec ibus-setup
+bindsym $mod+Shift+b exec blueman-manager
 
 # Network Manager Applet
 bindsym Mod1+Shift+n exec --no-startup-id nm-applet
@@ -338,6 +341,9 @@ exec dunst
 
 # Polybar
 exec_always --no-startup-id ~/.config/polybar/i3_bar.sh
+
+# nm-applet
+exec nm-applet
 
 # background
 exec nitrogen --restore
