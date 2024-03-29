@@ -23,5 +23,9 @@ map("i", "kj", "<Esc>", { noremap = true, silent = false })
 map("n", "kj", "<Esc>", { noremap = true, silent = false })
 map("v", "kj", "<Esc>", { noremap = true, silent = false })
 
+-- Remapping gj gk for wrapped line
+map("n", "j", "gj", { noremap = true, silent = true })
+map("n", "k", "gk", { noremap = true, silent = true })
+
 -- Unhighlight searched elements
 map("n", "<C-m>", ":nohlsearch<cr>", { noremap = true, silent = true })
