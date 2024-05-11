@@ -2,6 +2,7 @@
 padding.x = 2
 padding.y = 0
 opacity = 1
+decorations = "Buttonless"
 
 [scrolling]
 history = 10000
@@ -11,7 +12,7 @@ multiplier = 3
 draw_bold_text_with_bright_colors = true
 
 [colors.primary]
-background = "#171717"
+background = "#222222"
 foreground = "#d5c4a1"
 
 [colors.cursor]
@@ -39,13 +40,13 @@ cyan = "#8ec07c"
 white = "#fbf1c7"
 
 [font]
-size = 12
+size = 9
 [font.normal]
 family = "JetBrainsMono Nerd Font Mono"
-style = "Regular"
+style = "SemiBold"
 [font.bold]
 family = "JetBrainsMono Nerd Font Mono"
-style = "Bold"
+style = "ExtraBold"
 [font.italic]
 family = "JetBrainsMono Nerd Font Mono"
 style = "Italic"
