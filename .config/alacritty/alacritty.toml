@@ -1,8 +1,9 @@
 [window]
-padding.x = 2
+padding.x = 0
 padding.y = 0
+dynamic_padding = true
 opacity = 1
-decorations = "Buttonless"
+decorations = "none"
 
 [scrolling]
 history = 10000
@@ -40,10 +41,10 @@ cyan = "#8ec07c"
 white = "#fbf1c7"
 
 [font]
-size = 9
+size = 9.5
 [font.normal]
 family = "JetBrainsMono Nerd Font Mono"
-style = "SemiBold"
+style = "Regular"
 [font.bold]
 family = "JetBrainsMono Nerd Font Mono"
 style = "ExtraBold"
