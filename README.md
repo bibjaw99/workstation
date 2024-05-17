@@ -48,6 +48,8 @@
 
 ## Gallery
 
+![Floating Polybar](https://github.com/bibjaw99/workstation/blob/master/screenshots/polybar_floating.png?raw=true)
+
 ![i3_poly](https://github.com/bibjaw99/workstation/blob/master/screenshots/i3.png?raw=true)
 
 ![Artix](https://github.com/bibjaw99/workstation/blob/master/screenshots/artix.png?raw=true)
