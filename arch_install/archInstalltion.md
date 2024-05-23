@@ -84,10 +84,10 @@ $ mount /dev/nvme0n1p3 /mnt/home
 ### Step 6: Base Installation:
 
 ```
-$ pacstrap /mnt linux linux-headers linux-firmware base base-devel efibootmgr networkmanager neovim grub os-prober
+$ pacstrap /mnt linux linux-headers linux-firmware base base-devel efibootmgr networkmanager neovim grub os-prober intel-ucode sof-firmware
 
 # for systemdboot,
-$ pacstrap /mnt linux linux-headers linux-firmware base base-devel efibootmgr networkmanager neovim mtools dosfstools
+$ pacstrap /mnt linux linux-headers linux-firmware base base-devel efibootmgr networkmanager neovim mtools dosfstools intel-ucode sof-firmware
 ```
 
 ---
