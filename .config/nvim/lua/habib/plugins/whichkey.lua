@@ -87,6 +87,7 @@ return {
 				L = { ":set nolinebreak<cr>", "Linebreak Off" },
 				s = { ":set spell<cr>", "Spell Check On" },
 				S = { ":set nospell<cr>", "Spell Check Off" },
+				m = { ":MarkdownPreviewToggle<cr>", "Toggle Markdown Preview" },
 			},
 			-- Lsp Stuffs
 			l = {
