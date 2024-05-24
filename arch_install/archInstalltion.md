@@ -200,18 +200,18 @@ $ nvim arch.conf
 # add the lines
 title	Arch Linux
 linux	/vmlinuz-linux
-initrd	/amd-ucode.img
+initrd	/intel-ucode.img
 initrd	/initramfs-linux.img
-options	root=/dev/nvme0n1p2	rw
+options	root=/dev/nvme0n1p2 rw quiet splash loglevel=3
 
 $ nvim arch-fb.conf
 
 # add the lines
 title	Arch Linux Fallback Image
 linux	/vmlinuz-linux
-initrd	/amd-ucode.img
+initrd	/intel-ucode.img
 initrd	/initramfs-linux-fallback.img
-options	root=/dev/nvme0n1p2	rw
+options	root=/dev/nvme0n1p2 rw quiet splash loglevel=3
 ```
 
 ---

@@ -262,3 +262,13 @@ $ sudo nvim /etc/sddm.conf
 # Current theme name
 Current=sugar-candy
 ```
+
+## Splash screen : plymouth
+
+```
+# check available themes
+$ sudo plymouth-set-default-theme -l
+
+# Set a splash theme
+$ sudo plymouth-set-default-theme -R solar
+```
