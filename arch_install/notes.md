@@ -271,4 +271,10 @@ $ sudo plymouth-set-default-theme -l
 
 # Set a splash theme
 $ sudo plymouth-set-default-theme -R solar
+
+$ sudo nvim /etc/mkinitcpio.conf
+# add plymouth hook
+HOOKS=(base udev plymouth autodetect microcode modconf kms keyboard keymap consolefont block filesystems fsck)
+# update:
+$ sudo mkinitcpio -p linux
 ```
