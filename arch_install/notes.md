@@ -239,3 +239,26 @@ Section "InputClass"
         Option "Tapping" "on"
 EndSection
 ```
+
+## Set up environment variables
+
+- open `/etc/environment` and add the following lines :
+
+```
+QT_QPA_PLATFORMTHEME=gtk3
+BROWSER=firefox
+EDITOR=nvim
+```
+
+## sddm sugar-candy theme
+
+```
+$ sudo cp /usr/lib/sddm/sddm.conf.d/default.conf /etc/sddm.conf
+
+$ sudo nvim /etc/sddm.conf
+
+# set the theme to sugar-candy
+[Theme]
+# Current theme name
+Current=sugar-candy
+```
