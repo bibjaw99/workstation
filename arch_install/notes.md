@@ -203,6 +203,14 @@ $ sudo nvim /etc/systemd/logind.conf
 
 - brightnessctl
 
+the following file must be created to access brightness control in polybar:
+
+```
+sudo nvim /etc/udev/rules.d/backlight.rules
+ACTION=="add", SUBSYSTEM=="backlight", RUN+="/bin/chgrp video $sys$devpath/brightness", RUN+="/bin/chmod g+w $sys$devpath/brightness"
+sudo usermod -aG video $USER
+```
+
 ## Misc
 
 - lshw
@@ -218,10 +226,16 @@ to check bluetooth status:
 bluetoothctl info
 ```
 
-the following file must be created to access brightness control in polybar:
+## Enable touchpad gestures
+
+- create a file at `/etc/X11/xorg.conf.d/90.touchpad.conf`
+- add the following lines :
 
 ```
-sudo nvim /etc/udev/rules.d/backlight.rules
-ACTION=="add", SUBSYSTEM=="backlight", RUN+="/bin/chgrp video $sys$devpath/brightness", RUN+="/bin/chmod g+w $sys$devpath/brightness"
-sudo usermod -aG video $USER
+Section "InputClass"
+        Identifier "touchpad"
+        MatchIsTouchpad "on"
+        Driver "libinput"
+        Option "Tapping" "on"
+EndSection
 ```

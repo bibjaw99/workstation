@@ -2,12 +2,7 @@
 
 - The colorscheme is a combmination of both gruvbox and gruvbox-material in my configs
 
-## Package List
-
-- [Packages I use can be found here](./arch_install/) 📦
-- [Important Notes and Notes related to Artix](./arch_install/notes.md) ⚠️
-
-### **Descriptions:**
+## **Descriptions:**
 
 - **OS:** Arch Linux
 - **Window Manager:** i3,qtile
@@ -24,7 +19,6 @@
 
 ## Scripts you need to make executable:
 
-- .config/autostart/autostart.sh
 - .config/i3/scripts/power.sh
 - .config/qtile/scripts/power.sh
 - .config/polybar/i3_bar.sh
@@ -89,6 +83,8 @@
 |       mod+p       |     focus parent      |
 |       mod+w       |        firefox        |
 |       mod+n       |        pcmanfm        |
+
+- [Important Notes and Notes related to Artix](./arch_install/notes.md) ⚠️
 
 ---
 
