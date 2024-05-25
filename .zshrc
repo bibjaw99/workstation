@@ -24,6 +24,10 @@ source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.plugin.zsh
 bindkey -v
 export KEYTIMEOUT=1
 
+# language and unicode
+export LC_ALL=en_US.UTF-8
+export LANG=en_US.UTF-8
+
 # Editor
 export EDITOR=nvim
 export VISUAL=nvim

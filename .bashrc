@@ -3,6 +3,11 @@
 [[ $- != *i* ]] && return
 
 PS1='[\u@\h \W]\$ '
+
+# language and unicode
+export LC_ALL=en_US.UTF-8
+export LANG=en_US.UTF-8
+
 ###################################
 #     Aliases
 ###################################
