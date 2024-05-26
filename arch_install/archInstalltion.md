@@ -68,6 +68,7 @@ $ mkfs.ext4 /dev/nvme0n1p3
 ```
 $ mount /dev/nvme0n1p2 /mnt
 
+# For grub boot-loader
 $ mkdir -p /mnt/boot/efi
 $ mount /dev/nvme0n1p1 /mnt/boot/efi
 
@@ -84,6 +85,7 @@ $ mount /dev/nvme0n1p3 /mnt/home
 ### Step 6: Base Installation:
 
 ```
+# for grub boot-loader
 $ pacstrap /mnt linux linux-headers linux-firmware base base-devel efibootmgr networkmanager neovim grub os-prober intel-ucode sof-firmware
 
 # for systemdboot,
@@ -168,8 +170,8 @@ $ passwd
 ### Step 14: User Creation
 
 ```
-$ useradd -mG wheel habib
-$ passwd habib
+$ useradd -mG wheel <user_name>
+$ passwd <user_name>
 $ EDITOR=nvim visudo
 # uncomment the following line
 %wheel All=(All) All
