@@ -70,6 +70,8 @@ return {
 				name = "Split",
 				v = { ":vsplit<cr>", "Split Vertically" },
 				h = { ":split<cr>", "Split Vertically" },
+				c = { ":close<cr>", "Close Pane" },
+				o = { ":only<cr>", "Close Pane" },
 			},
 			-- Terminal
 			t = {
