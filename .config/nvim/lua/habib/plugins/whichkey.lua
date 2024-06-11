@@ -58,12 +58,12 @@ return {
 			-- Telescope
 			s = {
 				name = "Telescope",
-				f = { ":Telescope find_files theme=ivy<cr>", "Telescope find_files" },
-				w = { ":Telescope current_buffer_fuzzy_find theme=ivy<cr>", "Fuzzy Find in File" },
-				o = { ":Telescope oldfiles theme=ivy<cr>", "Telescope oldfiles" },
-				g = { ":Telescope live_grep theme=ivy<cr>", "Telescope live_grep" },
-				r = { ":Telescope resume theme=ivy<cr>", "Telescope resume" },
-				b = { ":Telescope buffers theme=ivy<cr>", "Telescope buffers" },
+				f = { ":Telescope find_files<cr>", "Telescope find_files" },
+				w = { ":Telescope current_buffer_fuzzy_find<cr>", "Fuzzy Find in File" },
+				o = { ":Telescope oldfiles<cr>", "Telescope oldfiles" },
+				g = { ":Telescope live_grep<cr>", "Telescope live_grep" },
+				r = { ":Telescope resume<cr>", "Telescope resume" },
+				b = { ":Telescope buffers<cr>", "Telescope buffers" },
 			},
 			-- Split
 			p = {
