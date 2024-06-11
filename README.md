@@ -42,19 +42,19 @@
 
 ## Gallery
 
-![Floating Polybar](https://github.com/bibjaw99/workstation/blob/master/screenshots/polybar_floating.png?raw=true)
+![Floating Polybar](./screenshots/polybar_floating.png)
 
-![i3_poly](https://github.com/bibjaw99/workstation/blob/master/screenshots/i3.png?raw=true)
+![i3_poly](./screenshots/i3.png)
 
-![Artix](https://github.com/bibjaw99/workstation/blob/master/screenshots/artix.png?raw=true)
+![Artix](./screenshots/artix.png)
 
-![Polybar Underline](https://github.com/bibjaw99/workstation/blob/master/screenshots/polybar_underline.png?raw=true)
+![Polybar Underline](./screenshots/polybar_underline.png)
 
-![Gruvbox with bg "#171717"](https://github.com/bibjaw99/workstation/blob/master/screenshots/gruvbox.png?raw=true)
+![Gruvbox with bg "#171717"](./screenshots/gruvbox.png)
 
 ### App launcher: Rofi
 
-![rofi](https://github.com/bibjaw99/workstation/blob/master/screenshots/rofi.png?raw=true)
+![rofi](./screenshots/rofi.png)
 
 ### Animations: picom-pijulius
 
@@ -101,7 +101,7 @@
 
 - Now copy my `nvim` config folder in the `~/.config` directory
 
-![nvim](https://github.com/bibjaw99/workstation/blob/master/screenshots/codex.png?raw=true)
+![nvim](./screenshots/codex.png)
 
 #### Neovim File tree
 
