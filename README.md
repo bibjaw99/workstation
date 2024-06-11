@@ -88,7 +88,18 @@
 
 ---
 
-### Neovim
+### Neovim: Grimm Vim:
+
+#### Installation Guide :
+
+- remove or backup the `nvim` folder from the following directory :
+
+  - `~/.config/nvim`
+  - `~/.cache/nvim`
+  - `~/.local/share/nvim`
+  - `~/.local/state/nvim`
+
+- Now copy my `nvim` config folder in the `~/.config` directory
 
 ![nvim](https://github.com/bibjaw99/workstation/blob/master/screenshots/codex.png?raw=true)
 
