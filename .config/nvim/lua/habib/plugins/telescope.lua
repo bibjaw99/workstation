@@ -16,11 +16,11 @@ return {
 			telescope.setup({
 				defaults = {
 					layout_config = {
-						width = 0.99,
-						height = 0.99,
+						width = 0.9,
+						height = 0.9,
 						prompt_position = "bottom",
 						preview_cutoff = 120,
-						preview_width = 80,
+						preview_width = 75,
 						horizontal = { mirror = false },
 						vertical = { mirror = false },
 					},
