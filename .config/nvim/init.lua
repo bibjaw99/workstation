@@ -1,1 +1,1 @@
-require("habib.core")
+require("grimmvim.core")
