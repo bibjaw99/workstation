@@ -17,7 +17,7 @@ return {
 		end
 
 		-- Auto Formatting
-		vim.cmd([[autocmd BufWritePre * lua vim.lsp.buf.format()]])
+		-- vim.cmd([[autocmd BufWritePre * lua vim.lsp.buf.format()]])
 
 		--LspInfo Borders
 		lspui.default_options.border = "double"
