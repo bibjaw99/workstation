@@ -112,17 +112,12 @@ return {
 				e = { "<cmd>Lspsaga show_line_diagnostics<cr>", "Show Line Diagnostics" },
 				n = { "<cmd>Lspsaga diagnostic_jump_next<cr>", "Go To Next Diagnostic" },
 				N = { "<cmd>Lspsaga diagnostic_jump_prev<cr>", "Go To Previous Diagnostic" },
+				F = { ":lua vim.lsp.buf.format()<cr>", "Format code" },
 			},
 
 			-- Tagbar for function list
 			T = {
 				f = { ":TagbarToggle<cr>", "Functions List Tagbar" },
-			},
-
-			-- Code Formatting
-			F = {
-				name = "Code Formoat",
-				M = { ":lua vim.lsp.buf.format()<cr>", "Format code" },
 			},
 		}
 
