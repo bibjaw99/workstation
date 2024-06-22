@@ -47,7 +47,7 @@ vim.o.mouse = "a"
 vim.wo.wrap = false
 vim.wo.number = true
 vim.wo.relativenumber = true
-vim.o.cursorline = true
+vim.o.cursorline = false
 vim.o.cursorcolumn = false
 vim.wo.signcolumn = "yes"
 

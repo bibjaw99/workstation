@@ -3,7 +3,7 @@
 ####################################
 focus_follows_mouse no
 focus_wrapping no
-for_window [class="^.*"] border pixel 1
+for_window [class="^.*"] border pixel 2
 title_align center
 ######################################
 
@@ -283,7 +283,8 @@ bindsym Print exec flameshot full --path ~/Pictures/screenshots
 bindsym $mod+Print exec flameshot gui
 
 # start a terminal
-bindsym $mod+Return exec kitty
+bindsym $mod+Return exec alacritty
+bindsym $mod+Shift+Return exec kitty
 
 # ibus
 bindsym $mod+Shift+b exec blueman-manager
