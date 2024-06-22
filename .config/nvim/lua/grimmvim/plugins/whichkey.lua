@@ -44,6 +44,7 @@ return {
 				x = { ":bdelete<cr>", "Close Buffer" },
 				n = { ":bnext<cr>", "Next Buffer" },
 				l = { ":blast<cr>", "Last Buffer" },
+				s = { ":source %<cr>", "Source Buffer" },
 			},
 
 			Ec = { ":e ~/.config/nvim<cr>", "Edit Configs" },
