@@ -52,5 +52,39 @@ return {
 		-- #########################
 		-- custom snippets here
 		-- #########################
+
+		-- CPP Snippets
+		ls.add_snippets("cpp", {
+			s(
+				"cfor",
+				fmt(
+					[[
+            for ( {}; {}; {} ) {{
+              {}
+            }}
+          ]],
+					{ i(1, "int i=0"), i(2, "i<size"), i(3, "i++"), i(4) }
+				)
+			),
+		})
+		ls.add_snippets("cpp", {
+			s(
+				"temp",
+				fmt(
+					[[
+            #include <cmath>
+            #include <cstring>
+            #include <iostream>
+            using namespace std;
+
+            int main() {{
+              {}
+              return 0;
+            }}
+          ]],
+					{ i(1) }
+				)
+			),
+		})
 	end,
 }
