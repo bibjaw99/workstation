@@ -356,7 +356,9 @@ exec nitrogen --restore
 exec --no-startup-id /usr/lib/mate-polkit/polkit-mate-authentication-agent-1
 
 # disable capslock
-exec setxkbmap -option ctrl:nocaps
+# exec setxkbmap -option ctrl:nocaps
+# remaped capslock to escape
+exec setxkbmap -option caps:swapescape
 
 ######################################
 # color settings fo windows         #
