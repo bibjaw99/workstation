@@ -19,6 +19,7 @@ vim.opt.virtualedit = "block"
 -- Split Windows
 vim.o.splitbelow = true
 vim.o.splitright = true
+vim.o.inccommand = "split"
 
 -- Update and backups
 vim.o.showmode = false
