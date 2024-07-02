@@ -43,6 +43,7 @@ return {
 				e = { ":NvimTreeToggle<cr>", "NvimTreeToggle" },
 				f = { ":NvimTreeFocus<cr>", "NvimTreeFocus" },
 				h = { ":e ~/<cr>", "NvimTreeHome" },
+        u = { ":UndotreeToggle<cr>", "UndoTree Toggle" },
 			},
 			-- Telescope
 			s = {
