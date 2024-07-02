@@ -1,5 +1,5 @@
 vim.g.mapleader = " "
-local map = vim.api.nvim_set_keymap
+local map = vim.keymap.set
 -- Toggle between tabs
 map("n", "<C-h>", "<C-w>h", { noremap = true, silent = false })
 map("n", "<C-j>", "<C-w>j", { noremap = true, silent = false })
@@ -19,9 +19,7 @@ map("v", "<C-c>", '"+y', { noremap = true, silent = false })
 map("n", "<C-s>", '"+P', { noremap = true, silent = false })
 
 -- Remapping Escape key
-map("i", "kj", "<Esc>", { noremap = true, silent = false })
-map("n", "kj", "<Esc>", { noremap = true, silent = false })
-map("v", "kj", "<Esc>", { noremap = true, silent = false })
+map({"i","n","v"}, "kj", "<Esc>", { noremap = true, silent = false })
 
 -- Remapping gj gk for wrapped line
 map("n", "j", "gj", { noremap = true, silent = true })
