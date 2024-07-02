@@ -17,18 +17,6 @@ return {
 			},
 		})
 
-		local terminal = require("toggleterm.terminal").Terminal
-
-		local toggle_float = function()
-			local float = terminal:new({ direction = "float" })
-			return float:toggle()
-		end
-
-		local toggle_lazygit = function()
-			local lazygit = terminal:new({ cmd = "lazygit", direction = "float" })
-			return lazygit:toggle()
-		end
-
 		-- Keymaps
 		local mappings = {
 			-- Basic Operations
@@ -76,9 +64,9 @@ return {
 			},
 			-- Terminal
 			t = {
-				t = { ":ToggleTerm<cr>", "Split Below" },
-				f = { toggle_float, "Floating Terminal" },
-				l = { toggle_lazygit, "LazyGit" },
+				t = { ":ToggleTerm<cr>", "Terminal Below" },
+				f = { ":ToggleTerm direction=float<cr>", "Floating Terminal" },
+				l = { ":LazyGit<cr>", "Toggle Lazygit" },
 			},
 
 			-- Set Options shortcutts
