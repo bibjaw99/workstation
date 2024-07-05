@@ -31,19 +31,19 @@ return {
 
 		-- keybindings
 
-		vim.keymap.set({ "i" }, "<C-S-k>", function()
+		vim.keymap.set({ "i" }, "<c-s-k>", function()
 			ls.expand()
 		end, { silent = true })
 
-		vim.keymap.set({ "i", "s" }, "<C-Tab>", function()
+		vim.keymap.set({ "i", "s" }, "<c-Tab>", function()
 			ls.jump(1)
 		end, { silent = true })
 
-		vim.keymap.set({ "i", "s" }, "<C-S-Tab>", function()
+		vim.keymap.set({ "i", "s" }, "<c-s-Tab>", function()
 			ls.jump(-1)
 		end, { silent = true })
 
-		vim.keymap.set({ "i", "s" }, "<C-c>", function()
+		vim.keymap.set({ "i", "s" }, "<c-c>", function()
 			if ls.choice_active() then
 				ls.change_choice(1)
 			end
