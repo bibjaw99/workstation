@@ -31,15 +31,15 @@ return {
 
 		-- keybindings
 
-		vim.keymap.set({ "i" }, "<c-s-k>", function()
+		vim.keymap.set({ "i" }, "<c-y>", function()
 			ls.expand()
 		end, { silent = true })
 
-		vim.keymap.set({ "i", "s" }, "<c-Tab>", function()
+		vim.keymap.set({ "i", "s" }, "<c-]>", function()
 			ls.jump(1)
 		end, { silent = true })
 
-		vim.keymap.set({ "i", "s" }, "<c-s-Tab>", function()
+		vim.keymap.set({ "i", "s" }, "<c-[>", function()
 			ls.jump(-1)
 		end, { silent = true })
 
