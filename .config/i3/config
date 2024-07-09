@@ -1,9 +1,18 @@
+##################################
+# ██╗██████╗ ██╗    ██╗███╗   ███╗
+# ██║╚════██╗██║    ██║████╗ ████║
+# ██║ █████╔╝██║ █╗ ██║██╔████╔██║
+# ██║ ╚═══██╗██║███╗██║██║╚██╔╝██║
+# ██║██████╔╝╚███╔███╔╝██║ ╚═╝ ██║
+# ╚═╝╚═════╝  ╚══╝╚══╝ ╚═╝     ╚═╝
+##################################
+
 ####################################
 #     MY MODS
 ####################################
 focus_follows_mouse no
 focus_wrapping no
-for_window [class="^.*"] border pixel 2
+for_window [class="^.*"] border pixel 1
 title_align center
 ######################################
 
@@ -36,7 +45,7 @@ hide_edge_borders both
 #         Gaps
 ###############################
 # Set inner/outer gaps
-gaps inner 10
+gaps inner 8
 gaps outer 0
 
 ##############################
@@ -123,6 +132,9 @@ for_window [class=Code] focus
 assign [class="Google-chrome"] $ws3
 for_window [class=Google-chrome] focus
 
+assign [class="neovide"] $ws3
+for_window [class=neovide] focus
+
 # (W-4)
 # ========== File Manager ===========
 assign [class="Pcmanfm"] $ws4
@@ -130,6 +142,9 @@ for_window [class=Pcmanfm] focus
 
 assign [class="mpv"] $ws4
 for_window [class=mpv] focus
+
+assign [class="Ristretto"] $ws4
+for_window [class=Ristretto] focus
 
 # (W-5)
 # ========== Email and Messages ===========
@@ -283,8 +298,8 @@ bindsym Print exec flameshot full --path ~/Pictures/screenshots
 bindsym $mod+Print exec flameshot gui
 
 # start a terminal
-bindsym $mod+Return exec kitty
-# bindsym $mod+Shift+Return exec kitty
+bindsym $mod+Return exec alacritty
+bindsym $mod+Shift+Return exec kitty
 
 # ibus
 bindsym $mod+Shift+b exec blueman-manager
@@ -357,7 +372,6 @@ exec --no-startup-id /usr/lib/mate-polkit/polkit-mate-authentication-agent-1
 
 # disable capslock
 # exec setxkbmap -option ctrl:nocaps
-# remaped capslock to escape
 exec setxkbmap -option caps:escape
 
 ######################################
@@ -374,6 +388,6 @@ set $color4     #928374
 # define colors for windows:
 #class                          border          bground         text            indicator       child_border
 client.focused               $color2           $color1         $color3           $color2         $color2
-client.unfocused             $color4           $color1         $color4           $color2         $color4
-client.focused_inactive      $color4           $color1         $color4           $color4         $color4
-client.urgent                $color3           $color3         $color2           $color2         $color4
+client.unfocused             $color4           $color1         $color4           $color1         $color1
+client.focused_inactive      $color4           $color1         $color4           $color4         $color1
+client.urgent                $color3           $color3         $color2           $color2         $color1
