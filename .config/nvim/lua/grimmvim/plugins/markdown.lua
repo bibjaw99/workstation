@@ -35,8 +35,8 @@ return {
 		config = function()
 			local img = require("image")
 			img.setup({
-				-- backend = "ueberzug",
-				backend = "kitty",
+				backend = "ueberzug",
+				-- backend = "kitty",
 				integrations = {
 					markdown = {
 						enabled = true,

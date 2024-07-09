@@ -24,6 +24,7 @@ return {
 			Q = { ":q!<cr>", "Force Quit File" },
 			w = { ":w<cr>", "Save File" },
 			W = { ":w!<cr>", "Force Save File" },
+			M = { ":messages<cr>", "Messages" },
 
 			-- Buffers
 			b = {
