@@ -298,8 +298,8 @@ bindsym Print exec flameshot full --path ~/Pictures/screenshots
 bindsym $mod+Print exec flameshot gui
 
 # start a terminal
-bindsym $mod+Return exec alacritty
-bindsym $mod+Shift+Return exec kitty
+bindsym $mod+Return exec kitty
+bindsym $mod+Shift+Return exec alacritty
 
 # ibus
 bindsym $mod+Shift+b exec blueman-manager
