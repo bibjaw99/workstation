@@ -26,7 +26,7 @@ vim.o.showmode = false
 vim.o.backup = false
 vim.o.writebackup = false
 vim.o.updatetime = 300
-vim.o.timeoutlen = 100
+vim.o.timeoutlen = 1000
 
 -- clipboard
 vim.o.clipboard = "unnamedplus"
