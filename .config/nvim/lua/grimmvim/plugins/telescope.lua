@@ -4,7 +4,6 @@ return {
 		branch = "0.1.x",
 		dependencies = {
 			"nvim-lua/plenary.nvim",
-			"kdheepak/lazygit.nvim",
 			"nvim-tree/nvim-web-devicons",
 			{ "nvim-telescope/telescope-fzf-native.nvim", build = "make" },
 		},
@@ -71,6 +70,30 @@ return {
 			})
 
 			telescope.load_extension("fzf")
+			local map = vim.keymap.set
+			-- Telescope
+			map("n", "<leader>sf", ":Telescope find_files<cr>", { desc = "Fuzzy Find", noremap = true, silent = true })
+			map(
+				"n",
+				"<leader>sw",
+				":Telescope current_buffer_fuzzy_find<cr>",
+				{ desc = "Fuzzy Find Pattern", noremap = true, silent = true }
+			)
+			map(
+				"n",
+				"<leader>so",
+				":Telescope oldfiles<cr>",
+				{ desc = "Fuzzy Find Recent Files", noremap = true, silent = true }
+			)
+			map("n", "<leader>sg", ":Telescope live_grep<cr>", { desc = "Live Grep", noremap = true, silent = true })
+			map("n", "<leader>sc", ":Telescope grep_string<cr>", { desc = "String", noremap = true, silent = true })
+			map("n", "<leader>sr", ":Telescope resume<cr>", { desc = "Resume Search", noremap = true, silent = true })
+			map(
+				"n",
+				"<leader>sb",
+				":Telescope buffers<cr>",
+				{ desc = "Fuzzy Find Buffers", noremap = true, silent = true }
+			)
 		end,
 	},
 

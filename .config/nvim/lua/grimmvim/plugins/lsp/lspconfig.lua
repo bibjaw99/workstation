@@ -16,9 +16,6 @@ return {
 			vim.fn.sign_define(hl, { text = icon, texthl = hl, numhl = "" })
 		end
 
-		-- Auto Formatting
-		-- vim.cmd([[autocmd BufWritePre * lua vim.lsp.buf.format()]])
-
 		--LspInfo Borders
 		lspui.default_options.border = "double"
 
@@ -85,5 +82,64 @@ return {
 		lspconfig.tailwindcss.setup({
 			capabilities = capabilities,
 		})
+
+		-- keymaps
+		local map = vim.keymap.set
+		-- LSP Keymaps
+		map("n", "<leader>li", ":LspInfo<cr>", { desc = "Connected Language Servers", noremap = true, silent = true })
+		map(
+			"n",
+			"<leader>lK",
+			"<cmd>lua vim.lsp.buf.signature_help()<cr>",
+			{ desc = "Signature Help", noremap = true, silent = true }
+		)
+		map(
+			"n",
+			"<leader>lD",
+			"<cmd>Telescope diagnostics<cr>",
+			{ desc = "Telescope Diagnostic", noremap = true, silent = true }
+		)
+		map(
+			"n",
+			"<leader>lt",
+			"<cmd>lua vim.lsp.buf.type_definition()<cr>",
+			{ desc = "Type Definition", noremap = true, silent = true }
+		)
+		map(
+			"n",
+			"<leader>ld",
+			"<cmd>lua vim.lsp.buf.definition()<cr>",
+			{ desc = "Go To Definition", noremap = true, silent = true }
+		)
+		map(
+			"n",
+			"<leader>lr",
+			"<cmd>Telescope lsp_references<cr>",
+			{ desc = "References", noremap = true, silent = true }
+		)
+
+		-- keymaps for LSP_Saga
+		map("n", "<leader>lk", "<cmd>Lspsaga hover_doc<cr>", { desc = "Hover Docs", noremap = true, silent = true })
+		map("n", "<leader>lR", "<cmd>Lspsaga rename<cr>", { desc = "Rename", noremap = true, silent = true })
+		map("n", "<leader>la", "<cmd>Lspsaga code_action<cr>", { desc = "Code Action", noremap = true, silent = true })
+		map(
+			"n",
+			"<leader>le",
+			"<cmd>Lspsaga show_line_diagnostics<cr>",
+			{ desc = "Show Line Diagnostics", noremap = true, silent = true }
+		)
+		map(
+			"n",
+			"<leader>ln",
+			"<cmd>Lspsaga diagnostic_jump_next<cr>",
+			{ desc = "Go To Next Diagnostic", noremap = true, silent = true }
+		)
+		map(
+			"n",
+			"<leader>lN",
+			"<cmd>Lspsaga diagnostic_jump_prev<cr>",
+			{ desc = "Go To Previous Diagnostic", noremap = true, silent = true }
+		)
+		map("n", "<leader>lo", "<cmd>Lspsaga outline<cr>", { desc = "LSP Saga outline", noremap = true, silent = true })
 	end,
 }

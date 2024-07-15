@@ -20,5 +20,15 @@ return {
 				height = 20,
 			},
 		})
+
+		local map = vim.keymap.set
+		-- keymaps
+		map("n", "<leader>tt", ":ToggleTerm<cr>", { desc = "Terminal Below", noremap = true, silent = true })
+		map(
+			"n",
+			"<leader>tf",
+			":ToggleTerm direction=float<cr>",
+			{ desc = "Terminal Floating", noremap = true, silent = true }
+		)
 	end,
 }

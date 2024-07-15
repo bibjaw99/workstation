@@ -1,32 +1,39 @@
 return {
 	"nvim-treesitter/nvim-treesitter",
-
 	dependencies = {
-		"JoosepAlviste/nvim-ts-context-commentstring",
 		"windwp/nvim-ts-autotag",
-		"hiphish/rainbow-delimiters.nvim",
+		"HiPhish/rainbow-delimiters.nvim",
 		"windwp/nvim-autopairs",
 	},
-
 	build = ":TSUpdate",
-	event = "bufWinEnter",
+	event = { "BufReadPre", "BufNewFile" },
 
 	config = function()
 		local treesitter = require("nvim-treesitter.configs")
+		local autotag = require("nvim-ts-autotag")
+		autotag.setup()
 		treesitter.setup({
 			ensure_installed = {
-				"c",
-				"lua",
-				"vim",
-				"vimdoc",
-				"html",
-				"css",
-				"java",
+				"json",
 				"javascript",
 				"typescript",
-				"python",
+				"tsx",
+				"yaml",
+				"html",
+				"css",
+				"prisma",
 				"markdown",
 				"markdown_inline",
+				"svelte",
+				"graphql",
+				"bash",
+				"lua",
+				"vim",
+				"dockerfile",
+				"gitignore",
+				"query",
+				"vimdoc",
+				"c",
 			},
 			sync_install = false,
 			auto_install = true,
@@ -34,14 +41,17 @@ return {
 				enable = true,
 				additional_vim_regex_highlighting = false,
 			},
-			autotag = {
+			inndent = {
 				enable = true,
 			},
-			autopairs = {
+			incremental_selection = {
 				enable = true,
-			},
-			rainbow = {
-				enable = true,
+				keymaps = {
+					init_selection = "<C-space>",
+					node_incremental = "<C-space>",
+					scope_incremental = false,
+					node_decremental = "<bs>",
+				},
 			},
 		})
 	end,
