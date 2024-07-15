@@ -99,48 +99,6 @@ return {
 					},
 				},
 			})
-			-- keymaps
-			local map = vim.keymap.set
-
-			-- NvimTree and UndoTree
-			map(
-				"n",
-				"<leader>ee",
-				"<cmd>NvimTreeToggle<cr>",
-				{ desc = "NvimTree Toggle", noremap = true, silent = true }
-			)
-			map(
-				"n",
-				"<leader>ef",
-				"<cmd>NvimTreeFocus<cr>",
-				{ desc = "NvimTree Current", noremap = true, silent = true }
-			)
-			map(
-				"n",
-				"<leader>eF",
-				"<cmd>NvimTreeFindFileToggle<cr>",
-				{ desc = "NvimTree Current", noremap = true, silent = true }
-			)
-			map(
-				"n",
-				"<leader>er",
-				"<cmd>NvimTreeRefresh<cr>",
-				{ desc = "NvimTree Refresh", noremap = true, silent = true }
-			)
-			map(
-				"n",
-				"<leader>ec",
-				"<cmd>NvimTreeCollapse<cr>",
-				{ desc = "NvimTree Collapse Folder", noremap = true, silent = true }
-			)
-			map(
-				"n",
-				"<leader>ec",
-				"<cmd>e ~/.config/nvim/lua/grimmvim/<cr>",
-				{ desc = "NvimTree Refresh", noremap = true, silent = true }
-			)
-			map("n", "<leader>eu", ":UndotreeToggle<cr>", { desc = "UndoTree Toggle", noremap = true, silent = true })
-			-- nvim undotree
 		end,
 	},
 

@@ -29,6 +29,7 @@ return {
 				{ "<leader>f", group = "Format" },
 				{ "<leader>p", group = "Pane" },
 				{ "<leader>t", group = "Terminal" },
+				{ "<leader>T", group = "Tagbar" },
 				{ "<leader>n", group = "NoHl" },
 			}),
 		})
