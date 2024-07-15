@@ -9,6 +9,8 @@ return {
 				separator = "➜",
 				group = "",
 			},
+			show_keys = false,
+			show_help = false, -- show a help message in the command line for using WhichKey
 			layout = {
 				align = "center",
 			},
