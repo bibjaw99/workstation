@@ -6,7 +6,8 @@ return {
 		wk.setup({
 			icons = {
 				rules = false,
-				separator = "-",
+				separator = "➜",
+				group = "",
 			},
 			layout = {
 				align = "center",
@@ -17,6 +18,17 @@ return {
 				padding = { 1, 1 }, -- extra window padding [top/bottom, right/left]
 				no_overlap = true,
 			},
+			wk.add({
+				{ "<leader>s", group = "Telescope" },
+				{ "<leader>e", group = "File Tree" },
+				{ "<leader>l", group = "LSP" },
+				{ "<leader>o", group = "Options" },
+				{ "<leader>b", group = "Buffer" },
+				{ "<leader>f", group = "Format" },
+				{ "<leader>p", group = "Pane" },
+				{ "<leader>t", group = "Terminal" },
+				{ "<leader>n", group = "NoHl" },
+			}),
 		})
 	end,
 }
