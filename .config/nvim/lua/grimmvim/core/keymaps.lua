@@ -127,13 +127,13 @@ map(
 map(
 	"n",
 	"<leader>lt",
-	"<cmd>lua vim.lsp.buf.type_definition()<cr>",
+	"<cmd>Telescope lsp_type_definitions<cr>",
 	{ desc = "Type Definition", noremap = true, silent = true }
 )
 map(
 	"n",
 	"<leader>ld",
-	"<cmd>lua vim.lsp.buf.definition()<cr>",
+	"<cmd>Telescope lsp_definitions<cr>",
 	{ desc = "Go To Definition", noremap = true, silent = true }
 )
 map("n", "<leader>lr", "<cmd>Telescope lsp_references<cr>", { desc = "References", noremap = true, silent = true })
