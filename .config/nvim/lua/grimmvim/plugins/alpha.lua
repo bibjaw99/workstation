@@ -29,12 +29,12 @@ return {
 		}
 
 		dashboard.section.buttons.val = {
-			dashboard.button("e", "New file", "<cmd>ene <CR>"),
-			dashboard.button("SPC s f", "Find file"),
-			dashboard.button("SPC s o", "Recently opened files"),
-			dashboard.button("SPC s r", "Resume Telescope"),
-			dashboard.button("SPC s g", "Find word"),
-			dashboard.button("SPC s b", "Open buffers"),
+			dashboard.button("SPC o", "Options"),
+			dashboard.button("SPC s", "Telescope"),
+			dashboard.button("SPC e", "Filetree"),
+			dashboard.button("SPC l", "LSP"),
+			dashboard.button("SPC p", "Window"),
+			dashboard.button("SPC t", "Terminal"),
 		}
 		_Gopts = {
 			position = "center",
