@@ -1,5 +1,6 @@
 return {
 	"akinsho/bufferline.nvim",
+	event = { "BufReadPre", "BufNewFile" },
 	dependencies = { "nvim-tree/nvim-web-devicons" },
 	config = function()
 		local bufferline = require("bufferline")
@@ -23,7 +24,7 @@ return {
 			-- highlights = {
 			-- 	fill = {
 			-- 		fg = "#ebdbb2",
-			-- 		bg = "#1d2021",
+			-- 		bg = "#1d1d1d",
 			-- 	},
 			-- },
 		})

@@ -11,6 +11,7 @@ opt.pumheight = 10
 opt.cmdheight = 0
 opt.conceallevel = 0
 opt.laststatus = 3
+opt.showtabline = 0
 
 -- Files and Others
 opt.fileencoding = "utf-8" -- File Encoding
@@ -28,7 +29,6 @@ opt.cursorcolumn = false
 opt.signcolumn = "yes"
 
 opt.tabstop = 2
-opt.showtabline = 2
 opt.softtabstop = 2
 opt.shiftwidth = 2
 opt.smartindent = true
