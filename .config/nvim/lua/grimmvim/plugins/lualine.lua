@@ -34,7 +34,7 @@ return {
 					file_status = true,
 					path = 2,
 				} },
-				lualine_x = { "searchcount","selectioncount", "encoding", "fileformat", "filetype" },
+				lualine_x = { "searchcount", "selectioncount", "encoding", "fileformat", "filetype" },
 				lualine_y = { "progress" },
 				lualine_z = { "location" },
 			},

@@ -108,37 +108,40 @@
 ```
 .
 ├── init.lua
-├── lazy-lock.json
 └── lua
-    └── habib
+    └── grimmvim
         ├── core
         │   ├── init.lua
         │   ├── keymaps.lua
         │   ├── lazy.lua
         │   └── options.lua
         └── plugins
+            ├── alpha.lua
             ├── autopairs.lua
             ├── bufferline.lua
             ├── cmp.lua
             ├── colorizer.lua
             ├── colorscheme.lua
-            ├── comment.lua
-            ├── dashboard.lua
+            ├── comments.lua
             ├── dressing.lua
+            ├── filetree.lua
             ├── gitsigns.lua
             ├── indent.lua
             ├── lsp
+            │   ├── formatting.lua
             │   ├── lspconfig.lua
-            │   ├── lsp_saga.lua
-            │   ├── mason.lua
-            │   └── null_ls.lua
+            │   ├── lspsaga.lua
+            │   └── mason.lua
             ├── lualine.lua
+            ├── luasnip.lua
             ├── markdown.lua
             ├── notify.lua
-            ├── nvim-tree.lua
+            ├── session.lua
+            ├── substitute.lua
+            ├── surround.lua
             ├── tagbar.lua
             ├── telescope.lua
-            ├── toggleterm.lua
+            ├── toggleTerm.lua
             ├── treesitter.lua
             ├── utils.lua
             └── whichkey.lua

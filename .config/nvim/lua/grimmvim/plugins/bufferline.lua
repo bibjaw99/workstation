@@ -21,6 +21,12 @@ return {
 				show_close_icon = false,
 				show_buffer_close_icons = false,
 			},
+			-- highlights = {
+			-- 	fill = {
+			-- 		fg = "#ebdbb2",
+			-- 		bg = "#1d1d1d",
+			-- 	},
+			-- },
 		})
 	end,
 }

@@ -14,14 +14,17 @@ return {
 
 			telescope.setup({
 				defaults = {
+					layout_strategy = "horizontal",
 					layout_config = {
-						width = 0.9,
-						height = 0.9,
-						prompt_position = "bottom",
-						preview_cutoff = 120,
-						preview_width = 75,
-						horizontal = { mirror = false },
-						vertical = { mirror = false },
+						horizontal = {
+							width = 0.9,
+							height = 0.9,
+							prompt_position = "bottom",
+							preview_cutoff = 120,
+							preview_width = 75,
+							horizontal = { mirror = false },
+							vertical = { mirror = false },
+						},
 					},
 					find_command = {
 						"rg",
@@ -37,7 +40,6 @@ return {
 					initial_mode = "insert",
 					selection_strategy = "reset",
 					sorting_strategy = "ascending",
-					layout_strategy = "horizontal",
 					file_sorter = require("telescope.sorters").get_fuzzy_file,
 					file_ignore_patterns = {},
 					generic_sorter = require("telescope.sorters").get_generic_fuzzy_sorter,

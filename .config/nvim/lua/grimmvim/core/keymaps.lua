@@ -78,6 +78,11 @@ map(
 	{ desc = "Toggle Markdown Preview", noremap = true, silent = true }
 )
 
+-- Auto-Session Manager
+map("n", "<leader>ss", ":SessionSave<CR>", { desc = "Session Save", noremap = true, silent = true })
+map("n", "<leader>sr", ":SessionRestore<CR>", { desc = "Session Restore", noremap = true, silent = true })
+map("n", "<leader>sd", ":SessionDelete<CR>", { desc = "Session Delete", noremap = true, silent = true })
+
 -- NvimTree
 map("n", "<leader>ee", ":NvimTreeToggle<cr>", { desc = "NvimTree Toggle", noremap = true, silent = true })
 map("n", "<leader>ef", ":NvimTreeFocus<cr>", { desc = "NvimTree Focus", noremap = true, silent = true })
@@ -88,19 +93,19 @@ map("n", "<leader>ec", ":Ex ~/.config/nvim/lua/grimmvim/<cr>", { desc = "Config 
 map("n", "<leader>eu", ":UndotreeToggle<cr>", { desc = "UndoTree Toggle", noremap = true, silent = true })
 
 -- Telescope
-map("n", "<leader>sf", ":Telescope find_files<cr>", { desc = "Fuzzy Find", noremap = true, silent = true })
+map("n", "<leader>ff", ":Telescope find_files<cr>", { desc = "Fuzzy Find", noremap = true, silent = true })
 map(
 	"n",
-	"<leader>sw",
+	"<leader>fw",
 	":Telescope current_buffer_fuzzy_find<cr>",
 	{ desc = "Fuzzy Find Pattern", noremap = true, silent = true }
 )
-map("n", "<leader>so", ":Telescope oldfiles<cr>", { desc = "Fuzzy Find Recent Files", noremap = true, silent = true })
-map("n", "<leader>sg", ":Telescope live_grep<cr>", { desc = "Live Grep", noremap = true, silent = true })
-map("n", "<leader>sc", ":Telescope grep_string<cr>", { desc = "String", noremap = true, silent = true })
-map("n", "<leader>sr", ":Telescope resume<cr>", { desc = "Resume Search", noremap = true, silent = true })
-map("n", "<leader>sk", ":Telescope keymaps<cr>", { desc = "Search Keymaps", noremap = true, silent = true })
-map("n", "<leader>sb", ":Telescope buffers<cr>", { desc = "Fuzzy Find Buffers", noremap = true, silent = true })
+map("n", "<leader>fo", ":Telescope oldfiles<cr>", { desc = "Fuzzy Find Recent Files", noremap = true, silent = true })
+map("n", "<leader>fg", ":Telescope live_grep<cr>", { desc = "Live Grep", noremap = true, silent = true })
+map("n", "<leader>fc", ":Telescope grep_string<cr>", { desc = "String", noremap = true, silent = true })
+map("n", "<leader>fr", ":Telescope resume<cr>", { desc = "Resume Search", noremap = true, silent = true })
+map("n", "<leader>fk", ":Telescope keymaps<cr>", { desc = "Search Keymaps", noremap = true, silent = true })
+map("n", "<leader>fb", ":Telescope buffers<cr>", { desc = "Fuzzy Find Buffers", noremap = true, silent = true })
 
 -- LSP Keymaps
 map("n", "<leader>li", ":LspInfo<cr>", { desc = "Connected Language Servers", noremap = true, silent = true })
