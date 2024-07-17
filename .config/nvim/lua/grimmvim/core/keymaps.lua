@@ -28,9 +28,9 @@ map("n", "<C-l>", "<C-w>l", { desc = "Focus Down", noremap = true, silent = fals
 
 -- Editing Keymaps
 map("n", "<leader>q", ":q<cr>", { desc = "QUIT FILE", noremap = true, silent = true })
-map("n", "<leader>Q", ":q!<cr>", { desc = "FORCE QUIT FILE", noremap = true, silent = true })
+map("n", "<leader>Q", ":qa<cr>", { desc = "FORCE QUIT FILE", noremap = true, silent = true })
 map("n", "<leader>w", ":w<cr>", { desc = "Write File", noremap = true, silent = true })
-map("n", "<leader>W", ":w!<cr>", { desc = "Force Write File", noremap = true, silent = true })
+map("n", "<leader>W", ":wa<cr>", { desc = "Force Write File", noremap = true, silent = true })
 map("n", "<leader>M", ":messages<cr>", { desc = "Show Messages", noremap = true, silent = true })
 
 -- Nvim Options and Commands
