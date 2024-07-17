@@ -2,14 +2,15 @@ vim.g.mapleader = " "
 local map = vim.keymap.set
 
 -- Remapping gj gk for wrapped line
-map("n", "j", "gj", { noremap = true, silent = true })
-map("n", "k", "gk", { noremap = true, silent = true })
+map("n", "j", "gj", { desc = "Down In Wrap", noremap = true, silent = true })
+map("n", "k", "gk", { desc = "Up In Wrap", noremap = true, silent = true })
+
+-- Move around in visual mode
+map("v", "J", ":m '>+1<CR>gv=gv", { desc = "Down In Visual", noremap = true, silent = true })
+map("v", "K", ":m '<-2<CR>gv=gv", { desc = "Up In Visual", noremap = true, silent = true })
 
 -- remapping escape key
 map({ "i", "n", "v" }, "kj", "<Esc>", { desc = "Escape", noremap = true, silent = true })
-
--- disable search highlight
-map("n", "<leader>nh", "<cmd>nohlsearch<cr>", { desc = "Disable Search Highlight", noremap = true, silent = false })
 
 -- Indenting
 map("v", "<", "<gv", { desc = "Indent >", noremap = true, silent = false })
@@ -32,13 +33,15 @@ map("n", "<leader>w", ":w<cr>", { desc = "Write File", noremap = true, silent = 
 map("n", "<leader>W", ":w!<cr>", { desc = "Force Write File", noremap = true, silent = true })
 map("n", "<leader>M", ":messages<cr>", { desc = "Show Messages", noremap = true, silent = true })
 
--- Nvim Options
+-- Nvim Options and Commands
 map("n", "<leader>ow", ":set wrap<cr>", { desc = "Wrap Lines", noremap = true, silent = true })
 map("n", "<leader>oW", ":set nowrap<cr>", { desc = "Unwrap Lines", noremap = true, silent = true })
 map("n", "<leader>ol", ":set linebreak<cr>", { desc = "Break Lines", noremap = true, silent = true })
 map("n", "<leader>oL", ":set nolinebreak<cr>", { desc = "Unbreak Lines", noremap = true, silent = true })
 map("n", "<leader>os", ":set spell<cr>", { desc = "Spell Check On", noremap = true, silent = true })
 map("n", "<leader>oS", ":set nospell<cr>", { desc = "Spell Check Off", noremap = true, silent = true })
+map("n", "<leader>oh", ":set hlsearch<cr>", { desc = "Enable Search Highlight", noremap = true, silent = false })
+map("n", "<leader>oH", ":nohlsearch<cr>", { desc = "Disable Search Highlight", noremap = true, silent = false })
 
 -- Buffers
 map("n", "<Tab>", ":bnext<cr>", { noremap = true, silent = true })
@@ -53,8 +56,8 @@ map("n", "<leader>bs", ":source %<cr>", { desc = "Source Buffer", noremap = true
 map("n", "<leader>pv", "<C-w>v", { desc = "Split Vertically", noremap = true, silent = false })
 map("n", "<leader>ph", "<C-w>s", { desc = "Split Horizontally", noremap = true, silent = false })
 map("n", "<leader>pe", "<C-w>=", { desc = "Equal Split", noremap = true, silent = false })
-map("n", "<leader>px", "<cmd>close<CR>", { desc = "Close split", noremap = true, silent = false })
-map("n", "<leader>po", "<cmd>only<CR>", { desc = "Single Pane", noremap = true, silent = false })
+map("n", "<leader>px", ":close<CR>", { desc = "Close split", noremap = true, silent = false })
+map("n", "<leader>po", ":only<CR>", { desc = "Single Pane", noremap = true, silent = false })
 
 -- =========================
 -- plugin specific keymaps
@@ -76,22 +79,11 @@ map(
 )
 
 -- NvimTree
-map("n", "<leader>ee", "<cmd>NvimTreeToggle<cr>", { desc = "NvimTree Toggle", noremap = true, silent = true })
-map("n", "<leader>ef", "<cmd>NvimTreeFocus<cr>", { desc = "NvimTree Current", noremap = true, silent = true })
-map("n", "<leader>eF", "<cmd>NvimTreeFindFileToggle<cr>", { desc = "NvimTree Current", noremap = true, silent = true })
-map("n", "<leader>er", "<cmd>NvimTreeRefresh<cr>", { desc = "NvimTree Refresh", noremap = true, silent = true })
-map(
-	"n",
-	"<leader>el",
-	"<cmd>NvimTreeCollapse<cr>",
-	{ desc = "NvimTree Collapse Folder", noremap = true, silent = true }
-)
-map(
-	"n",
-	"<leader>ec",
-	"<cmd>e ~/.config/nvim/lua/grimmvim/<cr>",
-	{ desc = "Nvim Config Dir", noremap = true, silent = true }
-)
+map("n", "<leader>ee", ":NvimTreeToggle<cr>", { desc = "NvimTree Toggle", noremap = true, silent = true })
+map("n", "<leader>ef", ":NvimTreeFocus<cr>", { desc = "NvimTree Focus", noremap = true, silent = true })
+map("n", "<leader>eF", ":NvimTreeFindFileToggle<cr>", { desc = "NvimTree Current", noremap = true, silent = true })
+map("n", "<leader>er", ":NvimTreeRefresh<cr>", { desc = "NvimTree Refresh", noremap = true, silent = true })
+map("n", "<leader>ec", ":Ex ~/.config/nvim/lua/grimmvim/<cr>", { desc = "Config Dir", noremap = true, silent = true })
 -- UndoTree
 map("n", "<leader>eu", ":UndotreeToggle<cr>", { desc = "UndoTree Toggle", noremap = true, silent = true })
 
@@ -115,49 +107,39 @@ map("n", "<leader>li", ":LspInfo<cr>", { desc = "Connected Language Servers", no
 map(
 	"n",
 	"<leader>lK",
-	"<cmd>lua vim.lsp.buf.signature_help()<cr>",
+	":lua vim.lsp.buf.signature_help()<cr>",
 	{ desc = "Signature Help", noremap = true, silent = true }
 )
-map(
-	"n",
-	"<leader>lD",
-	"<cmd>Telescope diagnostics<cr>",
-	{ desc = "Telescope Diagnostic", noremap = true, silent = true }
-)
+map("n", "<leader>lD", ":Telescope diagnostics<cr>", { desc = "Telescope Diagnostic", noremap = true, silent = true })
 map(
 	"n",
 	"<leader>lt",
-	"<cmd>Telescope lsp_type_definitions<cr>",
+	":Telescope lsp_type_definitions<cr>",
 	{ desc = "Type Definition", noremap = true, silent = true }
 )
-map(
-	"n",
-	"<leader>ld",
-	"<cmd>Telescope lsp_definitions<cr>",
-	{ desc = "Go To Definition", noremap = true, silent = true }
-)
-map("n", "<leader>lr", "<cmd>Telescope lsp_references<cr>", { desc = "References", noremap = true, silent = true })
+map("n", "<leader>ld", ":Telescope lsp_definitions<cr>", { desc = "Go To Definition", noremap = true, silent = true })
+map("n", "<leader>lr", ":Telescope lsp_references<cr>", { desc = "References", noremap = true, silent = true })
 
 -- LSP_Saga
-map("n", "<leader>lk", "<cmd>Lspsaga hover_doc<cr>", { desc = "Hover Docs", noremap = true, silent = true })
-map("n", "<leader>lR", "<cmd>Lspsaga rename<cr>", { desc = "Rename", noremap = true, silent = true })
-map("n", "<leader>la", "<cmd>Lspsaga code_action<cr>", { desc = "Code Action", noremap = true, silent = true })
+map("n", "<leader>lk", ":Lspsaga hover_doc<cr>", { desc = "Hover Docs", noremap = true, silent = true })
+map("n", "<leader>lR", ":Lspsaga rename<cr>", { desc = "Rename", noremap = true, silent = true })
+map("n", "<leader>la", ":Lspsaga code_action<cr>", { desc = "Code Action", noremap = true, silent = true })
 map(
 	"n",
 	"<leader>le",
-	"<cmd>Lspsaga show_line_diagnostics<cr>",
+	":Lspsaga show_line_diagnostics<cr>",
 	{ desc = "Show Line Diagnostics", noremap = true, silent = true }
 )
 map(
 	"n",
 	"<leader>ln",
-	"<cmd>Lspsaga diagnostic_jump_next<cr>",
+	":Lspsaga diagnostic_jump_next<cr>",
 	{ desc = "Go To Next Diagnostic", noremap = true, silent = true }
 )
 map(
 	"n",
 	"<leader>lN",
-	"<cmd>Lspsaga diagnostic_jump_prev<cr>",
+	":Lspsaga diagnostic_jump_prev<cr>",
 	{ desc = "Go To Previous Diagnostic", noremap = true, silent = true }
 )
-map("n", "<leader>lo", "<cmd>Lspsaga outline<cr>", { desc = "LSP Saga outline", noremap = true, silent = true })
+map("n", "<leader>lo", ":Lspsaga outline<cr>", { desc = "LSP Saga outline", noremap = true, silent = true })
