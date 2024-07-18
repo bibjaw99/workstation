@@ -3,44 +3,52 @@ return {
 	dependencies = { "nvim-tree/nvim-web-devicons" },
 	config = function()
 		local lualine = require("lualine")
-		local custom_gruvbox = require("lualine.themes.gruvbox")
-		custom_gruvbox.normal.a.bg = "#282828"
-		custom_gruvbox.normal.a.fg = "#fff4d2"
-		custom_gruvbox.normal.a.gui = ""
-		custom_gruvbox.normal.c.bg = "#83a598"
-		custom_gruvbox.normal.c.fg = "#1d1d1d"
-		custom_gruvbox.normal.c.gui = "bold"
-		custom_gruvbox.insert.c.bg = "#d3869b"
-		custom_gruvbox.insert.c.fg = "#1d1d1d"
-		custom_gruvbox.insert.c.gui = "bold"
-		custom_gruvbox.visual.c.bg = "#292929"
-		custom_gruvbox.visual.c.fg = "#fff4d2"
-		custom_gruvbox.visual.c.gui = "bold"
-		custom_gruvbox.command.a.bg = "#8ec07c"
-		custom_gruvbox.command.a.fg = "#1d1d1d"
-		custom_gruvbox.command.c.gui = "bold"
-		custom_gruvbox.command.c.bg = "#1d1d1d"
-		custom_gruvbox.command.c.fg = "#ebdbb2"
-		-- setting up lualine
-		lualine.setup({
 
+		local colors = {
+			blue = "#83a598",
+			green = "#8ec07c",
+			violet = "#d3869b",
+			yellow = "#d8a657",
+			red = "#FF4A4A",
+			cream = "#fff4d2",
+			black = "#1d1d1d",
+			grey = "#444444",
+			dark = "#292929",
+		}
+
+		local gruv_material = {
+			normal = {
+				a = { bg = colors.dark, fg = colors.cream, gui = "bold" },
+				c = { bg = colors.blue, fg = colors.black, gui = "bold" },
+			},
+			insert = {
+				a = { bg = colors.blue, fg = colors.black, gui = "bold" },
+				c = { bg = colors.violet, fg = colors.black, gui = "bold" },
+			},
+			visual = {
+				a = { bg = colors.violet, fg = colors.black, gui = "bold" },
+				c = { bg = colors.dark, fg = colors.cream, gui = "bold" },
+			},
+			command = {
+				a = { bg = colors.green, fg = colors.black, gui = "bold" },
+				c = { bg = colors.black, fg = colors.cream, gui = "bold" },
+			},
+			replace = {
+				a = { bg = colors.blue, fg = colors.black, gui = "bold" },
+				c = { bg = colors.violet, fg = colors.black, gui = "bold" },
+			},
+			inactive = {
+				a = { bg = colors.green, fg = colors.black, gui = "bold" },
+				c = { bg = colors.black, fg = colors.cream, gui = "bold" },
+			},
+		}
+
+		-- configure lualine with modified theme
+		lualine.setup({
 			options = {
-				icons_enabled = true,
-				theme = "gruvbox",
+				theme = gruv_material,
 				component_separators = { left = "", right = "|" },
 				section_separators = { left = "", right = "" },
-				disabled_filetypes = {
-					statusline = {},
-					winbar = {},
-				},
-				ignore_focus = {},
-				always_divide_middle = true,
-				globalstatus = true,
-				refresh = {
-					statusline = 1000,
-					tabline = 1000,
-					winbar = 1000,
-				},
 			},
 			sections = {
 				lualine_a = {
@@ -51,8 +59,8 @@ return {
 					{
 						"buffers",
 						buffers_color = {
-							active = { bg = "#d8a657", fg = "#1d1d1d", gui = "bold" },
-							inactive = { bg = "#444444", fg = "#fff4d2", gui = "italic" },
+							active = { bg = colors.yellow, fg = colors.black, gui = "bold" },
+							inactive = { bg = colors.grey, fg = colors.cream, gui = "italic" },
 						},
 						symbols = {
 							modified = " ●",
