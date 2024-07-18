@@ -59,6 +59,7 @@ return {
 							alternate_file = " ",
 							directory = "",
 						},
+						mode = 2,
 					},
 				},
 				lualine_b = {},
