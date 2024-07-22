@@ -94,7 +94,7 @@ map("n", "<leader>ee", ":NvimTreeToggle<cr>", { desc = "NvimTree Toggle", norema
 map("n", "<leader>ef", ":NvimTreeFocus<cr>", { desc = "NvimTree Focus", noremap = true, silent = true })
 map("n", "<leader>eF", ":NvimTreeFindFileToggle<cr>", { desc = "NvimTree Current", noremap = true, silent = true })
 map("n", "<leader>er", ":NvimTreeRefresh<cr>", { desc = "NvimTree Refresh", noremap = true, silent = true })
-map("n", "<leader>ec", ":Ex ~/.config/nvim/lua/grimmvim/<cr>", { desc = "Config Dir", noremap = true, silent = true })
+map("n", "<leader>ec", ":e ~/.config/nvim/lua/grimmvim/<cr>", { desc = "Config Dir", noremap = true, silent = true })
 
 -- UndoTree
 map("n", "<leader>uu", ":UndotreeToggle<cr>", { desc = "UndoTree Toggle", noremap = true, silent = true })
