@@ -19,7 +19,7 @@ return {
 						horizontal = {
 							width = 0.9,
 							height = 0.9,
-							prompt_position = "bottom",
+							prompt_position = "top",
 							preview_cutoff = 120,
 							preview_width = 75,
 							horizontal = { mirror = false },
