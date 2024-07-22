@@ -388,5 +388,5 @@ set $color4     #928374
 #class                          border          bground         text            indicator       child_border
 client.focused               $color2           $color1         $color3           $color2         $color2
 client.unfocused             $color4           $color1         $color4           $color1         $color1
-client.focused_inactive      $color4           $color1         $color4           $color4         $color1
+client.focused_inactive      $color4           $color1         $color4           $color1         $color1
 client.urgent                $color3           $color3         $color2           $color2         $color1
