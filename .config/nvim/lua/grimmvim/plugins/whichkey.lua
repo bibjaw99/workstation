@@ -31,6 +31,7 @@ return {
 				{ "<leader>p", group = "Pane" },
 				{ "<leader>t", group = "Terminal" },
 				{ "<leader>T", group = "Tagbar" },
+				{ "<leader>g", group = "Gitsigns" },
 			}),
 		})
 	end,

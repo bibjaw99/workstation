@@ -6,13 +6,13 @@ return {
 
 		toggleterm.setup({
 			size = 15,
-			open_mapping = [[<c-\>]],
+			open_mapping = [[<c-q>]],
 			shade_filetypes = {},
 			shade_terminal = true,
 			shading_factor = 1,
 			start_in_insert = true,
 			persist_size = true,
-			direction = "horizontal",
+			direction = "float",
 			autochdir = true,
 			float_opts = {
 				border = "double",

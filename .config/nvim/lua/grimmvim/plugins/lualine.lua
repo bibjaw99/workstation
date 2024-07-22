@@ -12,13 +12,14 @@ return {
 			red = "#FF4A4A",
 			cream = "#fff4d2",
 			black = "#1d1d1d",
-			grey = "#444444",
+			grey = "#393939",
 			dark = "#292929",
 		}
 
 		local gruv_material = {
 			normal = {
 				a = { bg = colors.dark, fg = colors.cream, gui = "bold" },
+				b = { bg = colors.grey, fg = colors.cream, gui = "bold" },
 				c = { bg = colors.blue, fg = colors.black, gui = "bold" },
 			},
 			insert = {
@@ -47,12 +48,14 @@ return {
 		lualine.setup({
 			options = {
 				theme = gruv_material,
-				component_separators = { left = "", right = "|" },
+				component_separators = { left = "│", right = "│" },
 				section_separators = { left = "", right = "" },
 			},
 			sections = {
 				lualine_a = {
 					"mode",
+				},
+				lualine_b = {
 					"branch",
 					"diff",
 					"diagnostics",
@@ -64,28 +67,28 @@ return {
 						},
 						symbols = {
 							modified = " ●",
-							alternate_file = " ",
+							alternate_file = "",
 							directory = "",
 						},
 						mode = 2,
 					},
 				},
-				lualine_b = {},
 				lualine_c = {
 					{
 						"filename",
 						file_status = true,
 						path = 3,
+						shorting_target = 0,
 					},
 				},
 				lualine_x = {},
-				lualine_y = {},
-				lualine_z = {
+				lualine_y = {
 					"searchcount",
 					"selectioncount",
 					"encoding",
-					"fileformat",
 					"filetype",
+				},
+				lualine_z = {
 					"progress",
 					"location",
 				},

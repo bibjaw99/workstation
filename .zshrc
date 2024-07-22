@@ -1,3 +1,11 @@
+# ███████╗███████╗██╗  ██╗
+# ╚══███╔╝██╔════╝██║  ██║
+#   ███╔╝ ███████╗███████║
+#  ███╔╝  ╚════██║██╔══██║
+# ███████╗███████║██║  ██║
+# ╚══════╝╚══════╝╚═╝  ╚═╝
+##########################
+
 # Lines configured by zsh-newuser-install
 HISTFILE=~/.histfile
 HISTSIZE=10000
@@ -16,6 +24,7 @@ compinit
 ###################################
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.plugin.zsh
 source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.plugin.zsh
+source <(fzf --zsh)
 
 ###################################
 #      exclusive settings
@@ -74,6 +83,8 @@ alias bsource="source .bashrc"
 alias xx="exit"
 alias cc="clear"
 alias ai="tgpt"
+alias gg="fg"
+alias ins='nvim $(fzf -m --preview="bat --theme=gruvbox-dark --color=always {}")'
 
 ## Arch
 alias up="yay -Syyu"
@@ -91,7 +102,3 @@ alias tnew="tmux new -s"
 alias tls="tmux ls"
 alias trename="tmux rename-session -t"
 alias ta="tmux a -t"
-
-# Starship prompt
-eval "$(starship init zsh)"
-

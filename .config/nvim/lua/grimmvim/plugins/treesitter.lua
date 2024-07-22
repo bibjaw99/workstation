@@ -34,6 +34,8 @@ return {
 				"query",
 				"vimdoc",
 				"c",
+				"cpp",
+				"python",
 			},
 			sync_install = false,
 			auto_install = true,

@@ -10,7 +10,7 @@ map("v", "J", ":m '>+1<CR>gv=gv", { desc = "Down In Visual", noremap = true, sil
 map("v", "K", ":m '<-2<CR>gv=gv", { desc = "Up In Visual", noremap = true, silent = true })
 
 -- remapping escape key
-map({ "i", "n", "v" }, "kj", "<Esc>", { desc = "Escape", noremap = true, silent = true })
+map({ "i", "v" }, "kj", "<Esc>", { desc = "Escape", noremap = true, silent = true })
 
 -- Indenting
 map("v", "<", "<gv", { desc = "Indent >", noremap = true, silent = false })
@@ -40,8 +40,9 @@ map("n", "<leader>ol", ":set linebreak<cr>", { desc = "Break Lines", noremap = t
 map("n", "<leader>oL", ":set nolinebreak<cr>", { desc = "Unbreak Lines", noremap = true, silent = true })
 map("n", "<leader>os", ":set spell<cr>", { desc = "Spell Check On", noremap = true, silent = true })
 map("n", "<leader>oS", ":set nospell<cr>", { desc = "Spell Check Off", noremap = true, silent = true })
-map("n", "<leader>oh", ":set hlsearch<cr>", { desc = "Enable Search Highlight", noremap = true, silent = false })
-map("n", "<leader>oH", ":nohlsearch<cr>", { desc = "Disable Search Highlight", noremap = true, silent = false })
+map("n", "<leader>oh", ":nohlsearch<cr>", { desc = "Disable Search Highlight", noremap = true, silent = false })
+map("n", "<leader>oH", ":set hlsearch<cr>", { desc = "Enable Search Highlight", noremap = true, silent = false })
+map("n", "<leader>op", ":pwd<cr>", { desc = "Current Working Directory", noremap = true, silent = false })
 
 -- Buffers
 map("n", "<Tab>", ":bnext<cr>", { noremap = true, silent = true })
@@ -67,7 +68,12 @@ map("n", "<leader>po", ":only<CR>", { desc = "Single Pane", noremap = true, sile
 map("n", "<leader>Tf", ":TagbarToggle<cr>", { desc = "Tagbar Toggle", noremap = true, silent = true })
 
 -- Toggle Term
-map("n", "<leader>tt", ":ToggleTerm<cr>", { desc = "Terminal Below", noremap = true, silent = true })
+map(
+	"n",
+	"<leader>tt",
+	":ToggleTerm direction=horizontal<cr>",
+	{ desc = "Terminal Below", noremap = true, silent = true }
+)
 map("n", "<leader>tf", ":ToggleTerm direction=float<cr>", { desc = "Terminal Floating", noremap = true, silent = true })
 
 -- Markdown Preview
@@ -106,6 +112,32 @@ map("n", "<leader>fc", ":Telescope grep_string<cr>", { desc = "String", noremap 
 map("n", "<leader>fr", ":Telescope resume<cr>", { desc = "Resume Search", noremap = true, silent = true })
 map("n", "<leader>fk", ":Telescope keymaps<cr>", { desc = "Search Keymaps", noremap = true, silent = true })
 map("n", "<leader>fb", ":Telescope buffers<cr>", { desc = "Fuzzy Find Buffers", noremap = true, silent = true })
+
+-- Gitsigns
+map("n", "<leader>gg", ":Gitsigns<cr>", { desc = "Gitsigns Options", noremap = true, silent = true })
+map(
+	"n",
+	"<leader>gl",
+	":Gitsigns toggle_linehl<cr>",
+	{ desc = "Gitsigns Line Highlight", noremap = true, silent = true }
+)
+map(
+	"n",
+	"<leader>gw",
+	":Gitsigns toggle_word_diff<cr>",
+	{ desc = "Gitsigns Word Difference", noremap = true, silent = true }
+)
+map(
+	"n",
+	"<leader>gd",
+	":Gitsigns toggle_deleted<cr>",
+	{ desc = "Gitsigns Toggle Deleted", noremap = true, silent = true }
+)
+map("n", "<leader>gh", ":Gitsigns preview_hunk<cr>", { desc = "Gitsigns Preview Hunk", noremap = true, silent = true })
+map("n", "<leader>gp", ":Gitsigns prev_hunk<cr>", { desc = "Gitsigns Previous Hunk", noremap = true, silent = true })
+map("n", "<leader>gn", ":Gitsigns next_hunk<cr>", { desc = "Gitsigns Next Hunk", noremap = true, silent = true })
+map("n", "<leader>gr", ":Gitsigns refresh<cr>", { desc = "Gitsigns Refresh", noremap = true, silent = true })
+map("n", "<leader>gH", ":Gitsigns diffthis<cr>", { desc = "Gitsigns Compare History", noremap = true, silent = true })
 
 -- LSP Keymaps
 map("n", "<leader>li", ":LspInfo<cr>", { desc = "Connected Language Servers", noremap = true, silent = true })

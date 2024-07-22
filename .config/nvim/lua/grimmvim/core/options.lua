@@ -35,8 +35,6 @@ opt.smartindent = true
 opt.autoindent = true
 opt.expandtab = true
 
-opt.list = true
-opt.listchars:append("eol: ")
 opt.fillchars = { eob = " " }
 
 opt.clipboard = "unnamedplus"
