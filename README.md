@@ -125,10 +125,6 @@
 
 ![i3_poly](./screenshots/i3.png)
 
-![Artix](./screenshots/artix.png)
-
-![Polybar Underline](./screenshots/polybar_underline.png)
-
 ![Gruvbox with bg "#171717"](./screenshots/gruvbox.png)
 
 ### App launcher: Rofi
