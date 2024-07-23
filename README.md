@@ -20,6 +20,12 @@
 
 #### Not a distro but my own personal config ⚠️
 
+##### Keymaps:
+
+- All the keymaps can be found in the `.config/nvim/lua/grimmvim/core/keymaps.lua` file.
+- Keymaps for `substitute.nvim` is in its plugin file: `.config/nvim/lua/grimmvim/plugins/substitute.lua`
+- Press `<leader>fk` to find available keymaps.
+
 ### Neovim Gallery :
 
 ##### Start Page
