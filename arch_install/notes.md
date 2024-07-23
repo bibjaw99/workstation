@@ -187,7 +187,7 @@ $ basestrap /mnt linux linux-firmware linux-headers base base-devel vim runit el
 For betterlockscreen to work with laptop lid
 
 ```
-$ sudo systemctl enable betterlockscreen@habib.service
+$ sudo systemctl enable betterlockscreen@<user_name>.service
 $ sudo nvim /etc/systemd/logind.conf
 // uncomment `HandleLidSwitch=suspend`
 ```

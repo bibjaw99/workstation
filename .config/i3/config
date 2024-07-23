@@ -45,7 +45,7 @@ hide_edge_borders both
 #         Gaps
 ###############################
 # Set inner/outer gaps
-gaps inner 8
+gaps inner 5
 gaps outer 0
 
 ##############################
