@@ -36,6 +36,14 @@
 
 ![LSP](./screenshots/neovim/2.png)
 
+##### Plugin Manager : Lazy and LSP manager : Mason
+
+![Managers](./screenshots/neovim/3.png)
+
+##### ToggleTerm X Lazygit
+
+![ToggleTerm](./screenshots/neovim/5.png)
+
 ##### Gitsigns plugin for visual git status
 
 ![Gitsigns](./screenshots/neovim/4.png)

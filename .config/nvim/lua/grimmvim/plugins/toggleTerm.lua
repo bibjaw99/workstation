@@ -16,8 +16,8 @@ return {
 			autochdir = true,
 			float_opts = {
 				border = "double",
-				width = 130,
-				height = 30,
+				width = 140,
+				height = 32,
 			},
 		})
 	end,
