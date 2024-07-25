@@ -39,6 +39,10 @@ map("n", "<leader>w", ":w<cr>", { desc = "Write File", noremap = true, silent = 
 map("n", "<leader>W", ":wa<cr>", { desc = "Force Write File", noremap = true, silent = true })
 map("n", "<leader>M", ":messages<cr>", { desc = "Show Messages", noremap = true, silent = true })
 
+-- Navigate between quickfix items
+map("n", "<leader>j", "<cmd>cnext<CR>zz", { desc = "QuickFixList Next" })
+map("n", "<leader>k", "<cmd>cprev<CR>zz", { desc = "QuickFixList Previous" })
+
 -- Nvim Options and Commands
 map("n", "<leader>ow", ":set wrap<cr>", { desc = "Wrap Lines", noremap = true, silent = true })
 map("n", "<leader>oW", ":set nowrap<cr>", { desc = "Unwrap Lines", noremap = true, silent = true })
