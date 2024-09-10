@@ -77,7 +77,7 @@ starship \
 dunst \
 python-pillow \
 nitrogen \
-feh \
+ristretto \
 mpv \
 zathura \
 zathura-pdf-poppler \

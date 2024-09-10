@@ -7,7 +7,7 @@
 # xf86-video-ati \
 # amd-ucode \
 # amdvlk \
-# vulkan-radeon 
+# vulkan-radeon
 
 # for my intel laptop
 
