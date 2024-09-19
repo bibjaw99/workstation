@@ -284,7 +284,7 @@ for_window [class="GLava" instance="GLava"] floating enable
 ## App shortcuts
 
 # Browser
-bindsym $mod+w exec firefox
+bindsym $mod+w exec firefox-developer-edition
 bindsym $mod+o exec google-chrome-stable --enable-features=VaapiVideoDecodeLinuxGL
 
 # File Manager

@@ -36,17 +36,21 @@
 
 ![LSP](./screenshots/neovim/2.png)
 
-##### Plugin Manager : Lazy and LSP manager : Mason
+##### Markdown
 
-![Managers](./screenshots/neovim/3.png)
+![Render Markdown](./screenshots/neovim/3.png)
+
+##### Gitsigns plugin for visual git status
+
+![Gitsigns](./screenshots/neovim/4.png)
 
 ##### ToggleTerm X Lazygit
 
 ![ToggleTerm](./screenshots/neovim/5.png)
 
-##### Gitsigns plugin for visual git status
+##### Plugin Manager : Lazy and LSP manager : Mason
 
-![Gitsigns](./screenshots/neovim/4.png)
+![Lsp and Plugin Managers](./screenshots/neovim/6.png)
 
 #### Installation Guide :
 
@@ -64,6 +68,7 @@
 ```
 .
 ├── init.lua
+├── lazy-lock.json
 └── lua
     └── grimmvim
         ├── core
@@ -74,7 +79,6 @@
         └── plugins
             ├── alpha.lua
             ├── autopairs.lua
-            ├── bufferline.lua
             ├── cmp.lua
             ├── colorizer.lua
             ├── colorscheme.lua
@@ -99,6 +103,7 @@
             ├── telescope.lua
             ├── toggleTerm.lua
             ├── treesitter.lua
+            ├── utilities.lua
             └── whichkey.lua
 ```
 
