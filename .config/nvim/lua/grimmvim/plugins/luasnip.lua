@@ -35,11 +35,11 @@ return {
 			ls.expand()
 		end, { silent = true })
 
-		vim.keymap.set({ "i", "s" }, "<c-]>", function()
+		vim.keymap.set({ "i", "s" }, "<c-j>", function()
 			ls.jump(1)
 		end, { silent = true })
 
-		vim.keymap.set({ "i", "s" }, "<c-[>", function()
+		vim.keymap.set({ "i", "s" }, "<c-k>", function()
 			ls.jump(-1)
 		end, { silent = true })
 
@@ -63,7 +63,12 @@ return {
               {}
             }}
           ]],
-					{ i(1, "int i=0"), i(2, "i<size"), i(3, "i++"), i(4) }
+					{
+						i(1, "int i=0"),
+						i(2, "i<size"),
+						i(3, "i++"),
+						i(4),
+					}
 				)
 			),
 		})
@@ -85,6 +90,66 @@ return {
 					{ i(1) }
 				)
 			),
+		})
+		-- react snippets
+		ls.add_snippets("javascriptreact", {
+			s(
+				"compo",
+				fmt(
+					[[ 
+            const {} = ({}) => {{
+              {}
+              return(
+                <div>
+                  {} 
+                </div>
+              )
+            }}
+            export {{ {} }};
+          ]],
+					{
+						i(1, "Compo"),
+						i(2, ""),
+						i(0, ""),
+						i(3, ""),
+						rep(1, "Compo"),
+					}
+				)
+			),
+		})
+		ls.add_snippets("javascriptreact", {
+			s(
+				"img",
+				fmt(
+					[[ 
+          <img src="{}" alt="{}" />
+         ]],
+					{
+						i(1),
+						i(2),
+					}
+				)
+			),
+		})
+		ls.add_snippets("javascriptreact", {
+			s(
+				"input",
+				fmt(
+					[[ 
+          <input type="{}" name="{}" />
+         ]],
+					{
+						i(1, "text"),
+						i(2, "name"),
+					}
+				)
+			),
+		})
+		ls.add_snippets("javascriptreact", {
+			s("hr", t("<hr />")),
+		})
+		ls.add_snippets("javascriptreact", {
+			s("br", t("<br />")),
 		})
 	end,
 }
