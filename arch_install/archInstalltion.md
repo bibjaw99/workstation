@@ -214,6 +214,24 @@ linux	/vmlinuz-linux
 initrd	/intel-ucode.img
 initrd	/initramfs-linux-fallback.img
 options	root=/dev/nvme0n1p2 rw quiet splash loglevel=3
+
+$ nvim arch-lts.conf
+
+# add the lines
+title	Arch Linux LTS
+linux	/vmlinuz-linux-lts
+initrd	/intel-ucode.img
+initrd	/initramfs-linux-lts.img
+options	root=/dev/nvme0n1p2 rw quiet splash loglevel=3
+
+$ nvim arch-zen.conf
+
+# add the lines
+title	Arch Linux Zen
+linux	/vmlinuz-linux-zen
+initrd	/intel-ucode.img
+initrd	/initramfs-linux-zen.img
+options	root=/dev/nvme0n1p2 rw quiet splash loglevel=3
 ```
 
 ---
