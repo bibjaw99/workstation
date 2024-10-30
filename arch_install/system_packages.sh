@@ -3,7 +3,6 @@
 yay -Syy \
 xorg-server \
 sddm \
-sddm-sugar-candy-git \
 plymouth \
 neovim \
 i3-wm \
