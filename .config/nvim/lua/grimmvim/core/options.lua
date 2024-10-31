@@ -46,7 +46,7 @@ opt.smartcase = true
 
 opt.scrolloff = 5
 opt.sidescrolloff = 5
-opt.mouse = "a"
+opt.mouse = "nv"
 
 -- Split Windows
 opt.splitbelow = true
@@ -74,6 +74,10 @@ vim.api.nvim_create_autocmd("FileType", {
 	callback = function()
 		vim.opt.wrap = true
 		vim.opt.linebreak = true
+		vim.opt.tabstop = 2
+		vim.opt.shiftwidth = 2
+		vim.bo.softtabstop = 2
+		vim.opt.expandtab = true
 	end,
 })
 
