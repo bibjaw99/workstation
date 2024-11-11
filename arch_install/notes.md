@@ -278,3 +278,20 @@ HOOKS=(base udev plymouth autodetect microcode modconf kms keyboard keymap conso
 # update:
 $ sudo mkinitcpio -p linux
 ```
+
+## Flags for chromium based borwsers
+
+### files for browsers
+
+- brave-flags.conf
+- chrome-flags.conf
+- chromium-flags.conf
+
+```
+--ignore-gpu-blocklist
+--enable-zero-copy
+--enable-features=VaapiVideoDecodeLinuxGL
+--enable-features=VaapiVideoDecoder,VaapiIgnoreDriverChecks,Vulkan,DefaultANGLEVulkan,VulkanFromANGLE
+```
+
+> put them in the .config directory
