@@ -52,7 +52,7 @@ return {
 				{ "prettier" },
 				{ "typescript-language-server" },
 				{ "js-debug-adapter" },
-				{ "node-debug2-adapter" },
+				-- { "node-debug2-adapter" }, -- deprecated
 				{ "eslint_d" },
 				{ "eslint-lsp" },
 				{ "codelldb" },
