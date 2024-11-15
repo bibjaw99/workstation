@@ -11,6 +11,7 @@ return {
 		"L3MON4D3/LuaSnip",
 		"rafamadriz/friendly-snippets",
 		"onsails/lspkind.nvim",
+		"roobert/tailwindcss-colorizer-cmp.nvim",
 	},
 
 	config = function()
@@ -18,6 +19,7 @@ return {
 		local luasnip = require("luasnip")
 		local lspkind = require("lspkind")
 		local vscodesnippets = require("luasnip.loaders.from_vscode")
+		local tailwindcss_cmp = require("tailwindcss-colorizer-cmp")
 
 		cmp.setup({
 			completion = {
@@ -52,7 +54,13 @@ return {
 			}),
 
 			formatting = {
-				format = lspkind.cmp_format({ with_text = true, maxwidth = 50 }),
+				format = function(entry, item)
+					-- Apply apply lspkind formatter
+					item = lspkind.cmp_format({ with_text = true, maxwidth = 50 })(entry, item)
+
+					-- Then apply tailwindcss-colorizer-cmp formatter
+					return tailwindcss_cmp.formatter(entry, item)
+				end,
 			},
 		})
 
@@ -81,6 +89,11 @@ return {
 			}, {
 				{ name = "cmdline" },
 			}),
+		})
+
+		-- tailwindcss_cmp
+		tailwindcss_cmp.setup({
+			color_square_width = 2,
 		})
 
 		--  VS Code like snippets
