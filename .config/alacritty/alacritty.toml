@@ -1,6 +1,6 @@
 [window]
 dynamic_padding = true
-padding.x = 1
+padding.x = 2
 padding.y = 0
 opacity = 1
 decorations = "none"
@@ -13,7 +13,7 @@ multiplier = 3
 draw_bold_text_with_bright_colors = true
 
 [colors.primary]
-background = "#1d1d1d"
+background = "#222222"
 foreground = "#fff4d2"
 
 [colors.cursor]
@@ -43,11 +43,11 @@ white = "#fff4d2"
 [font]
 size = 9.5
 offset.x=0
-offset.y=1
+offset.y=3
 
 [font.normal]
 family = "JetBrainsMono Nerd Font Mono"
-style = "Medium"
+style = "SemiBold"
 [font.bold]
 family = "JetBrainsMono Nerd Font Mono"
 style = "ExtraBold"
