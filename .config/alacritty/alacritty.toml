@@ -45,6 +45,9 @@ size = 9.5
 offset.x=0
 offset.y=3
 
+glyph_offset.x=0
+glyph_offset.y=2
+
 [font.normal]
 family = "JetBrainsMono Nerd Font Mono"
 style = "SemiBold"
