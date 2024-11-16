@@ -30,25 +30,36 @@ config.font = wezterm.font("JetBrainsMono Nerd Font Mono", { weight = "DemiBold"
 config.font_size = 14.5
 config.font_rules = {
 
-	-- Rule for bold text
+	-- bold font
 	{
+		intensity = "Bold",
 		italic = false,
-		intensity = "Bold",
-		font = wezterm.font("JetBrains Mono", { weight = "ExtraBold" }),
+		font = wezterm.font({
+			family = "JetBrainsMono Nerd Font Mono",
+			weight = "ExtraBold",
+		}),
 	},
 
-	-- Rule for italic text
+	-- italic font
 	{
-		italic = true,
 		intensity = "Normal",
-		font = wezterm.font("JetBrains Mono", { weight = "Bold", style = "Italic" }),
+		italic = true,
+		font = wezterm.font({
+			family = "JetBrainsMono Nerd Font Mono",
+			weight = "DemiBold",
+			style = "Italic",
+		}),
 	},
 
-	-- Rule for bodl italic text
+	-- bold italic font
 	{
-		italic = true,
 		intensity = "Bold",
-		font = wezterm.font("JetBrains Mono", { weight = "ExtraBold", style = "Italic" }),
+		italic = true,
+		font = wezterm.font({
+			family = "JetBrainsMono Nerd Font Mono",
+			weight = "ExtraBold",
+			style = "Italic",
+		}),
 	},
 }
 config.bold_brightens_ansi_colors = true
