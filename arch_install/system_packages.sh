@@ -44,6 +44,7 @@ gnome-disk-utility  \
 libgnome-keyring \
 ripgrep \
 lazygit \
+tokei \
 mingw-w64-gcc \
 gcc \
 cmake \
