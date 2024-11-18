@@ -41,22 +41,22 @@ cyan = "#8ec07c"
 white = "#fff4d2"
 
 [font]
-size = 9.5
+size = 11
 offset.x=0
-offset.y=3
+offset.y=0
 
 glyph_offset.x=0
-glyph_offset.y=2
+glyph_offset.y=0
 
 [font.normal]
-family = "JetBrainsMono Nerd Font Mono"
+family = "IosevkaTerm Nerd Font Mono"
 style = "SemiBold"
 [font.bold]
-family = "JetBrainsMono Nerd Font Mono"
+family = "IosevkaTerm Nerd Font Mono"
 style = "ExtraBold"
 [font.italic]
-family = "JetBrainsMono Nerd Font Mono"
-style = "Bold Italic"
+family = "IosevkaTerm Nerd Font Mono"
+style = "SemiBold Italic"
 [font.bold_italic]
-family = "JetBrainsMono Nerd Font Mono"
+family = "IosevkaTerm Nerd Font Mono"
 style = "ExtraBold Italic"

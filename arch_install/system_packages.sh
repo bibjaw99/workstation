@@ -11,7 +11,6 @@ polybar \
 rofi \
 rofi-emoji \
 alacritty \
-kitty \
 pcmanfm \
 gvfs \
 gvfs-mtp \
@@ -26,10 +25,7 @@ xdg-user-dirs \
 lxappearance-gtk3 \
 ttf-dejavu \
 ttf-roboto \
-ttf-jetbrains-mono \
-ttf-jetbrains-mono-nerd \
-ttf-firacode-nerd \
-ttf-ubuntu-mono-nerd \
+ttf-iosevkaterm-nerd \
 ttf-font-awesome \
 noto-fonts-emoji \
 pavucontrol \
