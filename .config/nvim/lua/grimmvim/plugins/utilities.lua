@@ -4,6 +4,17 @@ return {
 	dependencies = { "nvim-treesitter/nvim-treesitter" },
 	event = "VeryLazy",
 	config = function()
-		require("tailwind-fold").setup({ ft = { "html", "svelte", "astro", "vue", "typescriptreact", "php", "blade" } })
+		require("tailwind-fold").setup({
+			ft = {
+				"html",
+				"svelte",
+				"astro",
+				"vue",
+				"typescriptreact",
+				"javascriptreact",
+				"php",
+				"blade",
+			},
+		})
 	end,
 }
