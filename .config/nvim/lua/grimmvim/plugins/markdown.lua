@@ -15,15 +15,15 @@ return {
 	},
 
 	{
-		"preservim/vim-markdown",
-		dependencies = "godlygeek/tabular",
-		ft = { "markdown" },
-		config = function()
-			vim.cmd("let g:vim_markdown_folding_disabled = 1")
-			vim.cmd("let g:vim_markdown_folding_style_pythonic = 1")
-			vim.cmd("let g:vim_markdown_new_list_item_indent = 0")
-			vim.cmd("let g:vim_markdown_auto_insert_bullets = 0")
-		end,
+		-- "preservim/vim-markdown",
+		-- dependencies = "godlygeek/tabular",
+		-- ft = { "markdown" },
+		-- config = function()
+		-- 	vim.cmd("let g:vim_markdown_folding_disabled = 1")
+		-- 	vim.cmd("let g:vim_markdown_folding_style_pythonic = 1")
+		-- 	vim.cmd("let g:vim_markdown_new_list_item_indent = 0")
+		-- 	vim.cmd("let g:vim_markdown_auto_insert_bullets = 0")
+		-- end,
 	},
 
 	-- {
