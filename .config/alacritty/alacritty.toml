@@ -41,12 +41,12 @@ cyan = "#8ec07c"
 white = "#fff4d2"
 
 [font]
-size = 10
+size = 11
 offset.x=0
-offset.y=3
+offset.y=0
 
 glyph_offset.x=0
-glyph_offset.y=1
+glyph_offset.y=0
 
 [font.normal]
 family = "IosevkaTerm Nerd Font Mono"
