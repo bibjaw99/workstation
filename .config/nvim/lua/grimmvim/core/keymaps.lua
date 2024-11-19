@@ -1,6 +1,22 @@
 vim.g.mapleader = " "
 local map = vim.keymap.set
 
+-- custom functions
+-- automatically create a file if it does not exist
+vim.keymap.set("n", "gf", function()
+	local filepath = vim.fn.expand("<cfile>")
+	if vim.fn.filereadable(filepath) == 0 then
+		-- Create missing directories
+		vim.fn.mkdir(vim.fn.fnamemodify(filepath, ":h"), "p")
+		-- Create and open the file
+		vim.cmd("edit " .. filepath)
+		print("Created new file: " .. filepath)
+	else
+		-- Open the existing file
+		vim.cmd("edit " .. filepath)
+	end
+end, { desc = "Open or create file under cursor with missing directories", noremap = true, silent = true })
+
 -- Remapping gj gk for wrapped line
 map("n", "j", "gj", { desc = "Down In Wrap", noremap = true, silent = true })
 map("n", "k", "gk", { desc = "Up In Wrap", noremap = true, silent = true })
