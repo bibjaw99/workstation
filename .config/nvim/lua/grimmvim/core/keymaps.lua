@@ -60,14 +60,10 @@ map("n", "<leader>j", "<cmd>cnext<CR>zz", { desc = "QuickFixList Next" })
 map("n", "<leader>k", "<cmd>cprev<CR>zz", { desc = "QuickFixList Previous" })
 
 -- Nvim Options and Commands
-map("n", "<leader>ow", ":set wrap<cr>", { desc = "Wrap Lines", noremap = true, silent = true })
-map("n", "<leader>oW", ":set nowrap<cr>", { desc = "Unwrap Lines", noremap = true, silent = true })
-map("n", "<leader>ol", ":set linebreak<cr>", { desc = "Break Lines", noremap = true, silent = true })
-map("n", "<leader>oL", ":set nolinebreak<cr>", { desc = "Unbreak Lines", noremap = true, silent = true })
-map("n", "<leader>os", ":set spell<cr>", { desc = "Spell Check On", noremap = true, silent = true })
-map("n", "<leader>oS", ":set nospell<cr>", { desc = "Spell Check Off", noremap = true, silent = true })
-map("n", "<leader>oh", ":nohlsearch<cr>", { desc = "Disable Search Highlight", noremap = true, silent = false })
-map("n", "<leader>oH", ":set hlsearch<cr>", { desc = "Enable Search Highlight", noremap = true, silent = false })
+map("n", "<leader>ow", ":set wrap!<cr>", { desc = "Toggle Wrap Lines", noremap = true, silent = true })
+map("n", "<leader>ol", ":set linebreak!<cr>", { desc = "Toggle Break Lines", noremap = true, silent = true })
+map("n", "<leader>os", ":set spell!<cr>", { desc = "Toggle Spell Check On", noremap = true, silent = true })
+map("n", "<leader>oh", ":set hlsearch!<cr>", { desc = "Toggle Search Highlight", noremap = true, silent = false })
 map("n", "<leader>op", ":pwd<cr>", { desc = "Current Working Directory", noremap = true, silent = false })
 
 -- Buffers
