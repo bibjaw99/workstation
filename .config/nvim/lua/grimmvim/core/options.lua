@@ -46,7 +46,7 @@ opt.smartcase = true
 
 opt.scrolloff = 5
 opt.sidescrolloff = 5
-opt.mouse = "nv"
+opt.mouse = "n"
 
 -- Split Windows
 opt.splitbelow = true

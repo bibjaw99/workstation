@@ -5,6 +5,9 @@ padding.y = 2
 opacity = 1
 decorations = "none"
 
+[env]
+TERM = "xterm-256color"
+
 [scrolling]
 history = 10000
 multiplier = 3
