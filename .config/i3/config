@@ -310,7 +310,7 @@ bindsym Mod1+Shift+n exec --no-startup-id nm-applet
 bindsym $mod+d exec --no-startup-id rofi -show drun -disable-history -show-icons
 bindsym Mod1+d exec --no-startup-id rofi -show run -disable-history
 bindsym Mod1+w exec rofi -show window -show-icons
-bindsym Mod1+m exec rofi -modi emoji -show emoji
+bindsym $mod+i exec rofi -modi emoji -show emoji
 
 # kill focused window
 bindsym $mod+Shift+q kill
