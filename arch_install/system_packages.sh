@@ -46,6 +46,7 @@ gcc \
 cmake \
 yarn \
 lua \
+typescript \
 luarocks \
 npm \
 ctags \

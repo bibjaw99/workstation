@@ -21,6 +21,10 @@ end, { desc = "Open or create file under cursor with missing directories", norem
 map("n", "j", "gj", { desc = "Down In Wrap", noremap = true, silent = true })
 map("n", "k", "gk", { desc = "Up In Wrap", noremap = true, silent = true })
 
+-- Remapping JK
+map("n", "J", "<C-d>", { desc = "Scroll Down", noremap = true, silent = false })
+map("n", "K", "<C-u>", { desc = "Scroll Up", noremap = true, silent = false })
+
 -- Move around in visual mode
 map("v", "J", ":m '>+1<CR>gv=gv", { desc = "Down In Visual", noremap = true, silent = true })
 map("v", "K", ":m '<-2<CR>gv=gv", { desc = "Up In Visual", noremap = true, silent = true })
