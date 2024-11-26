@@ -71,10 +71,9 @@ map("n", "<leader>oh", ":set hlsearch!<cr>", { desc = "Toggle Search Highlight",
 map("n", "<leader>op", ":pwd<cr>", { desc = "Current Working Directory", noremap = true, silent = false })
 
 -- Buffers
-map("n", "<Tab>", ":bnext<cr>", { noremap = true, silent = true })
-map("n", "<S-Tab>", ":bprevious<cr>", { noremap = true, silent = true })
-map("n", "<leader>bn", ":bnext<cr>", { desc = "Next Buffer", noremap = true, silent = true })
-map("n", "<leader>bp", ":bprevious<cr>", { desc = "Previous Buffer", noremap = true, silent = true })
+map("n", "<Tab>", ":bnext<cr>", { desc = "Next Buffer", noremap = true, silent = true })
+map("n", "<S-Tab>", ":bprevious<cr>", { desc = "Previous Buffer", noremap = true, silent = true })
+map("n", "<leader>bn", ":enew<cr>", { desc = "New Empty Buffer", noremap = true, silent = true })
 map("n", "<leader>bl", ":blast<cr>", { desc = "Last Buffer", noremap = true, silent = true })
 map("n", "<leader>bx", ":bdelete<cr>", { desc = "Last Buffer", noremap = true, silent = true })
 map("n", "<leader>bs", ":source %<cr>", { desc = "Source Buffer", noremap = true, silent = true })
