@@ -1,3 +1,6 @@
+/* ================================ */
+/*            Common CSS            */
+/* ================================ */
 * {
   /* `otf-font-awesome` is required to be installed for icons */
   padding: 0;
@@ -12,7 +15,7 @@
 
 /* the whole window */
 window#waybar {
-  background: #222222;
+  background: #1d1d1d;
   color: #fff4d2;
   padding: 0;
   margin: 0;
@@ -34,14 +37,24 @@ window#waybar.hidden {
   padding: 0 4px;
   font-family: IosevkaTerm Nerd Font Propo;
   font-size: 28px;
-  font-weight: 700;
+  font-weight: 800;
 }
 
 #workspaces button.active {
   color: #8ec07c;
   font-family: IosevkaTerm Nerd Font Propo;
   font-size: 28px;
-  font-weight: 700;
+  font-weight: 800;
+  box-shadow: inset 0 -3px #689d6a;
+  border-radius: 0;
+  padding: 0 4px;
+}
+
+#workspaces button.active:hover {
+  color: #8ec07c;
+  font-family: IosevkaTerm Nerd Font Propo;
+  font-size: 28px;
+  font-weight: 800;
   box-shadow: inset 0 -3px #689d6a;
   border-radius: 0;
   padding: 0 4px;
@@ -57,47 +70,106 @@ window#waybar.hidden {
   box-shadow: inset 0 -3px #ea6966;
 }
 
+/* ================================ */
+/*            window                 */
+/* ================================ */
+
 #window {
   color: #d3869b;
   background: none;
   margin: 0 8px;
   font-family: IosevkaTerm Nerd Font Mono;
-  font-size: 20px;
-  font-weight: 700;
+  font-size: 15px;
+  font-weight: 800;
   box-shadow: inset 0 -3px #d3869b;
 }
 
+/* ================================ */
+/*            tray                 */
+/* ================================ */
+
+#tray {
+  margin: 0 3px;
+  padding: 0 8px;
+}
+
+/* ================================ */
+/*            disk                 */
+/* ================================ */
+
 #disk {
   font-family: IosevkaTerm Nerd Font Mono;
-  font-size: 20px;
-  font-weight: 700;
+  font-size: 15px;
+  font-weight: 800;
   color: #ea6962;
   margin: 0 3px;
   box-shadow: inset 0 -3px #ea6962;
 }
 
+/* ================================ */
+/*            cpu                  */
+/* ================================ */
 #cpu {
   font-family: IosevkaTerm Nerd Font Mono;
-  font-size: 20px;
-  font-weight: 700;
+  font-size: 15px;
+  font-weight: 800;
   color: #e78a4e;
   margin: 0 3px;
   box-shadow: inset 0 -3px #e78a4e;
 }
 
+/* ================================ */
+/*            temp                  */
+/* ================================ */
+#temperature {
+  font-family: IosevkaTerm Nerd Font Mono;
+  font-size: 15px;
+  font-weight: 800;
+  color: #d8a657;
+  margin: 0 3px;
+  box-shadow: inset 0 -3px #d8a657;
+}
+
+#temperature.critical {
+  font-family: IosevkaTerm Nerd Font Mono;
+  font-size: 15px;
+  font-weight: 800;
+  color: #cc241d;
+  margin: 0 3px;
+  box-shadow: inset 0 -3px #cc241d;
+}
+
+/* ================================ */
+/*            backlight             */
+/* ================================ */
+#backlight {
+  font-family: IosevkaTerm Nerd Font Mono;
+  font-size: 15px;
+  font-weight: 800;
+  color: #f6c657;
+  margin: 0 3px;
+  box-shadow: inset 0 -3px #f6c657;
+}
+
+/* ================================ */
+/*            memory                */
+/* ================================ */
 #memory {
   font-family: IosevkaTerm Nerd Font Mono;
-  font-size: 20px;
-  font-weight: 700;
+  font-size: 15px;
+  font-weight: 800;
   color: #458588;
   margin: 0 3px;
   box-shadow: inset 0 -3px #458588;
 }
 
+/* ================================ */
+/*         pulseaudio               */
+/* ================================ */
 #pulseaudio {
   font-family: IosevkaTerm Nerd Font Mono;
-  font-size: 20px;
-  font-weight: 700;
+  font-size: 15px;
+  font-weight: 800;
   color: #83a598;
   margin: 0 3px;
   box-shadow: inset 0 -3px #83a598;
@@ -105,9 +177,33 @@ window#waybar.hidden {
 
 #pulseaudio.muted {
   font-family: IosevkaTerm Nerd Font Mono;
-  font-size: 20px;
-  font-weight: 700;
-  color: #cc241d;
+  font-size: 15px;
+  font-weight: 800;
+  color: #ea6962;
   margin: 0 3px;
-  box-shadow: inset 0 -3px #cc241d;
+  box-shadow: inset 0 -3px #ea6962;
+}
+
+/* ================================ */
+/*            battery               */
+/* ================================ */
+#battery {
+  font-family: IosevkaTerm Nerd Font Mono;
+  font-size: 15px;
+  font-weight: 800;
+  color: #689d6a;
+  margin: 0 3px;
+  box-shadow: inset 0 -3px #689d6a;
+}
+
+/* ================================ */
+/*            clock                 */
+/* ================================ */
+#clock {
+  font-family: IosevkaTerm Nerd Font Mono;
+  font-size: 15px;
+  font-weight: 800;
+  color: #8ec07c;
+  margin: 0 3px;
+  box-shadow: inset 0 -3px #8ec07c;
 }

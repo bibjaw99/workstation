@@ -1,4 +1,5 @@
 {
+  "layer":"top",
   "height": 30,
   "spacing": 0,
   "modules-left": [
@@ -9,9 +10,14 @@
       "tray",
       "disk",
       "cpu",
+      "temperature",
+      "backlight",
       "memory",
       "pulseaudio",
+      "battery",
+      "clock",
   ],
+
   // Modules configuration
   "hyprland/workspaces": {
       "disable-scroll": true,
@@ -32,8 +38,13 @@
   },
 
   "hyprland/window": {
-      "format": "<span color='#222222' bgcolor='#d3869b' > WIN </span> {class} ",
+      "format": "<span color='#222222' bgcolor='#d3869b' > WIN </span> {class}",
     "separate-outputs": true
+  },
+
+  "tray": {
+      "icon-size": 20,
+      "spacing": 8
   },
 
 
@@ -50,46 +61,36 @@
   },
 
   "temperature": {
-      // "thermal-zone": 2,
-      // "hwmon-path": "/sys/class/hwmon/hwmon2/temp1_input",
-      "critical-threshold": 80,
-      "format-critical": "{temperatureC}°C {icon}",
-      "format": "{temperatureC}°C {icon}",
+      "thermal-zone": 2,
+      "hwmon-path": "/sys/class/hwmon/hwmon1/temp1_input",
+      "critical-threshold": 70,
+      "format-critical": "<span color='#222222' bgcolor='#cc241d' > TEMP </span> {temperatureC}°C ",
+      "format": "<span color='#222222' bgcolor='#d8a657' > TEMP </span> {temperatureC}°C ",
       "format-icons": ["", "", ""]
   },
 
+  "backlight": {
+      // "device": "acpi_video1",
+      "format": "<span color='#222222' bgcolor='#f6c657'> BRI </span> {percent}% ",
+      "format-icons": ["", "", "", "", "", "", "", "", ""]
+  },
   "memory": {
-      "format": "<span color='#222222' bgcolor='#458588'> MEM </span> {used}GB ",
+      "format": "<span color='#222222' bgcolor='#458588'> MEM </span> {used}GiB ",
       "interval":1,
   },
 
   "pulseaudio": {
       // "scroll-step": 1, // %, can be a float
       "format": "<span color='#222222' bgcolor='#83a598'> VOL </span> {volume}% ",
-      "format-muted": "<span color='#222222' bgcolor='#cc241d'> MUTE </span> {volume}% ",
-      "format-bluetooth": "<span color='#222222' bgcolor='#83a598'> VOL </span> {volume}% ",
-      "format-bluetooth-muted": "<span color='#222222' bgcolor='#cc241d'> MUTE </span> {volume}% ",
+      "format-muted": "<span color='#222222' bgcolor='#ea6962'> MUTE </span> {volume}% ",
+      "format-bluetooth": "<span color='#222222' bgcolor='#83a598'> BLU </span> {volume}% ",
+      "format-bluetooth-muted": "<span color='#222222' bgcolor='#ea6962'> MUTE </span> {volume}% ",
       "format-source": "{volume}% ",
       "on-click": "pactl set-sink-mute @DEFAULT_SINK@ toggle",
   },
 
-
-  "tray": {
-      "icon-size": 21,
-      "spacing": 10
-  },
-
-  "clock": {
-      // "timezone": "America/New_York",
-      "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
-      "format-alt": "{:%Y-%m-%d}"
-  },
-
-
-  "backlight": {
-      // "device": "acpi_video1",
-      "format": "{percent}% {icon}",
-      "format-icons": ["", "", "", "", "", "", "", "", ""]
+  "battery#bat2": {
+      "bat": "BAT2"
   },
 
   "battery": {
@@ -98,17 +99,18 @@
           "warning": 30,
           "critical": 15
       },
-      "format": "{capacity}% {icon}",
-      "format-full": "{capacity}% {icon}",
-      "format-charging": "{capacity}% ",
-      "format-plugged": "{capacity}% ",
-      "format-alt": "{time} {icon}",
-      // "format-good": "", // An empty format will hide the module
-      // "format-full": "",
+      "format": "<span color='#222222' bgcolor='#689d6a'> BAT </span> {capacity}% ",
+      "format-full": "<span color='#222222' bgcolor='#689d6a'> FULL </span> {capacity}% ",
+      "format-charging": "<span color='#222222' bgcolor='#689d6a'> POW </span> {capacity}% ",
+      "format-plugged": "<span color='#222222' bgcolor='#689d6a'> POW </span> {capacity}% ",
+      "format-alt": "<span color='#222222' bgcolor='#689d6a'> BAT </span> {time} ",
       "format-icons": ["", "", "", "", ""]
   },
-  "battery#bat2": {
-      "bat": "BAT2"
+
+
+  "clock": {
+      // "timezone": "America/New_York",
+      "format": "<span color='#222222' bgcolor='#8ec07c'> TIME </span> {:%H:%M:%S|%a %d %b} ",
   },
 
 
