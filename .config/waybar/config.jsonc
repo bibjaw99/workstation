@@ -3,6 +3,8 @@
   "height": 30,
   "spacing": 0,
   "modules-left": [
+      "sway/workspaces",
+      "sway/window",
       "hyprland/workspaces",
       "hyprland/window",
   ],
@@ -19,6 +21,29 @@
   ],
 
   // Modules configuration
+  "sway/workspaces": {
+      "disable-scroll": true,
+      "active-only" : false,
+      "all-outputs": true,
+      "warp-on-scroll": false,
+      "format": "{icon}",
+      "format-icons": {
+          "1": "󰎤",
+          "2": "󰎧",
+          "3": "󰎪",
+          "4": "󰎭",
+          "5": "󰎱",
+          "6": "󰎳",
+          "7": "󰎶",
+          "8": "󰎹",
+      }
+  },
+
+  "sway/window": {
+      "format": "<span color='#222222' bgcolor='#d3869b' > WIN </span> {app_id}",
+    "separate-outputs": true
+  },
+
   "hyprland/workspaces": {
       "disable-scroll": true,
       "active-only" : false,
@@ -110,7 +135,7 @@
 
   "clock": {
       // "timezone": "America/New_York",
-      "format": "<span color='#222222' bgcolor='#8ec07c'> TIME </span> {:%H:%M:%S|%a %d %b} ",
+      "format": "<span color='#222222' bgcolor='#8ec07c'> TIME </span> {:%H:%M:%S}",
   },
 
 

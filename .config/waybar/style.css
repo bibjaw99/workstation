@@ -40,6 +40,31 @@ window#waybar.hidden {
   font-weight: 800;
 }
 
+#workspaces button:hover {
+  color: #d3869b;
+  background: none;
+}
+
+#workspaces button.visible {
+  color: #8ec07c;
+  font-family: IosevkaTerm Nerd Font Propo;
+  font-size: 28px;
+  font-weight: 800;
+  box-shadow: inset 0 -3px #689d6a;
+  border-radius: 0;
+  padding: 0 4px;
+}
+
+#workspaces button.visible:hover {
+  color: #8ec07c;
+  font-family: IosevkaTerm Nerd Font Propo;
+  font-size: 28px;
+  font-weight: 800;
+  box-shadow: inset 0 -3px #689d6a;
+  border-radius: 0;
+  padding: 0 4px;
+}
+
 #workspaces button.active {
   color: #8ec07c;
   font-family: IosevkaTerm Nerd Font Propo;
@@ -58,11 +83,6 @@ window#waybar.hidden {
   box-shadow: inset 0 -3px #689d6a;
   border-radius: 0;
   padding: 0 4px;
-}
-
-#workspaces button:hover {
-  color: #d3869b;
-  background: none;
 }
 
 #workspaces button.urgent {

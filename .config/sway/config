@@ -1,0 +1,363 @@
+####################################
+#     MY MODS
+####################################
+focus_follows_mouse no
+focus_wrapping no
+for_window [app_id="^.*"] border pixel 1
+title_align center
+for_window [shell=".*"] focus
+
+######################################
+
+####################################
+#     Fonts 
+####################################
+font pango: JetBrainsMono Nerd Font Mono Bold 10
+
+################################
+#         Mod Key
+################################
+# set the mod key to the winkey:
+set $mod Mod4
+
+#####################
+# workspace layout: #
+#####################
+# default i3 tiling mode:
+workspace_layout default
+
+###############################
+#         Gaps
+###############################
+# Set inner/outer gaps
+gaps inner 10
+gaps outer 0
+
+##############################
+#     Floating Modifier      # 
+##############################
+floating_modifier $mod
+
+##############################
+#  Switch Active Workspaces  #
+##############################
+bindsym $mod+Tab workspace next
+bindsym Mod1+Tab workspace prev
+
+##########################################
+# configuration for workspace behaviour: #
+##########################################
+
+set $ws1 "1"
+set $ws2 "2"
+set $ws3 "3"
+set $ws4 "4"
+set $ws5 "5"
+set $ws6 "6"
+set $ws7 "7"
+set $ws8 "8"
+
+##############################
+# switch to workspace        #
+##############################
+bindsym $mod+1    workspace  $ws1
+bindsym $mod+2    workspace  $ws2
+bindsym $mod+3    workspace  $ws3
+bindsym $mod+4    workspace  $ws4
+bindsym $mod+5    workspace  $ws5
+bindsym $mod+6    workspace  $ws6
+bindsym $mod+7    workspace  $ws7
+bindsym $mod+8    workspace  $ws8
+
+
+# move focused container to workspace
+bindsym $mod+Shift+1    move container to workspace  $ws1
+bindsym $mod+Shift+2    move container to workspace  $ws2
+bindsym $mod+Shift+3    move container to workspace  $ws3
+bindsym $mod+Shift+4    move container to workspace  $ws4
+bindsym $mod+Shift+5    move container to workspace  $ws5
+bindsym $mod+Shift+6    move container to workspace  $ws6
+bindsym $mod+Shift+7    move container to workspace  $ws7
+bindsym $mod+Shift+8    move container to workspace  $ws8
+
+################################
+#     Assigned Workspace       #
+################################
+
+# (W-1)
+# ========== Primary Terminal ==========
+assign [app_id="kitty"] $ws1
+for_window [app_id=kitty] focus
+
+assign [app_id="Alacritty"] $ws1
+for_window [app_id=Alacritty] focus
+
+assign [app_id="wezterm"] $ws1
+for_window [app_id=wezterm] focus
+
+assign [app_id="Nitrogen"] $ws1
+for_window [app_id=Nitrogen] focus
+
+# (W-2)
+# ========== Browsers ==========
+assign [app_id="brave-browser"] $ws2
+for_window [app_id=brave-browser] focus
+
+assign [app_id="LibreWolf"] $ws2
+for_window [app_id=LibreWolf] focus
+
+assign [app_id="(?)firefox"] $ws2
+for_window [app_id=firefox] focus
+
+# (W-3)
+# ========== Coding ===========
+assign [app_id="Anaconda-Navigator"] $ws3
+for_window [app_id=Anaconda-Navigator] focus
+
+assign [app_id="(?i)Code"] $ws3
+for_window [app_id=Code] focus
+
+assign [app_id="Google-chrome"] $ws3
+for_window [app_id=Google-chrome] focus
+
+assign [app_id="neovide"] $ws3
+for_window [app_id=neovide] focus
+
+# (W-4)
+# ========== File Manager ===========
+assign [app_id="Pcmanfm"] $ws4
+for_window [app_id=Pcmanfm] focus
+
+assign [app_id="mpv"] $ws4
+for_window [app_id=mpv] focus
+
+assign [app_id="Ristretto"] $ws4
+for_window [app_id=Ristretto] focus
+
+# (W-5)
+# ========== Email and Messages ===========
+assign [app_id="TelegramDesktop"] $ws5
+for_window [app_id=TelegramDesktop] focus
+
+assign [app_id="discord"] $ws5
+for_window [app_id=discord] focus
+
+assign [app_id="Slack"] $ws5
+for_window [app_id=Slack] focus
+
+# (W-6)
+# ========== Graphics Editor ===========
+assign [app_id="Inkscape"] $ws6
+for_window [app_id=Inkscape] focus
+
+assign [app_id="Gimp"] $ws6
+for_window [app_id=Gimp] focus
+
+assign [app_id="Darktable"] $ws6
+for_window [app_id=Darktable] focus
+
+# (W-7)
+# ========== Office Suits and tools ===========
+assign [app_id="soffice"] $ws7
+for_window [app_id=soffice] focus
+
+assign [app_id="libreoffice-startcenter"] $ws7
+for_window [app_id=libreoffice-startcenter] focus
+
+assign [app_id="Zathura"] $ws7
+for_window [app_id=Zathura] focus
+
+assign [app_id="marktext"] $ws7
+for_window [app_id=marktext] focus
+
+assign [app_id="obsidian"] $ws7
+for_window [app_id=obsidian] focus
+
+# (W-8)
+# ========== Settings and Misc. ===========
+assign [app_id="SimpleScreenRecorder"] $ws8
+for_window [app_id=SimpleScreenRecorder] focus
+
+assign [app_id="Kazam"] $ws8
+for_window [app_id=Kazam] focus
+
+assign [app_id="Lxappearance"] $ws8
+for_window [app_id=Lxappearance] focus
+
+assign [app_id="stacer"] $ws8
+for_window [app_id=stacer] focus
+
+assign [app_id="qBittorrent"] $ws8
+for_window [app_id=qBittorrent] focus
+
+assign [app_id="Yad"] $ws8
+for_window [app_id=Yad] focus
+
+assign [app_id="Gnome-disks"] $ws8
+for_window [app_id=Gnome-disks] focus
+
+assign [app_id="Blueman-manager"] $ws8
+for_window [app_id=Blueman-manager] focus
+
+##############################
+# Focus Changing
+##############################
+
+# change focus
+bindsym $mod+h focus left
+bindsym $mod+j focus down
+bindsym $mod+k focus up
+bindsym $mod+l focus right
+
+# move focused window
+bindsym $mod+Shift+h move left
+bindsym $mod+Shift+j move down
+bindsym $mod+Shift+k move up
+bindsym $mod+Shift+l move right
+
+##############################
+# Window Modifying Rules
+##############################
+
+# split in horizontal orientation
+bindsym $mod+z split h
+
+# split in vertical orientation
+bindsym $mod+a split v
+
+# enter fullscreen mode for the focused container
+bindsym $mod+m fullscreen toggle
+
+# change container layout (stacked, tabbed, toggle split)
+# bindsym $mod+s layout stacking
+bindsym $mod+e layout tabbed
+bindsym $mod+t layout toggle split
+
+# toggle tiling / floating
+bindsym $mod+space floating toggle
+
+# change focus between tiling / floating windows
+bindsym $mod+q focus mode_toggle
+
+# focus the parent container
+bindsym $mod+p focus parent
+
+##############################
+#  Window Resizing           #
+##############################
+# resize window (you can also use the mouse for that):
+bindsym $mod+Ctrl+h resize grow width 5 px or 5 ppt
+bindsym $mod+Ctrl+j resize shrink height 5 px or 5 ppt
+bindsym $mod+Ctrl+k resize grow height 5 px or 5 ppt
+bindsym $mod+Ctrl+l resize shrink width 5 px or 5 ppt
+
+##################
+# floating rules #
+##################
+
+# Default floting window size
+for_window [floating] resize set 800 500, move position center
+
+# set floating (nontiling) for apps needing it
+for_window [app_id="Yad" instance="yad"] floating disable
+for_window [app_id="Nitrogen"] floating enable
+
+# set floating (nontiling) for special apps
+for_window [app_id="GLava" instance="GLava"] floating enable
+
+####################################################
+# keybindings for different shortcuts and actions: #
+###################################################
+
+## App shortcuts
+
+# Browser
+bindsym $mod+w exec brave 
+
+# File Manager
+bindsym $mod+n exec pcmanfm
+
+# PDF Reader Zathura 
+bindsym $mod+Shift+o exec zathura
+
+# Screenshot : Screenshot
+bindsym Print exec grim
+
+# start a terminal
+bindsym $mod+Return exec alacritty
+bindsym $mod+Shift+Return exec foot
+
+# ibus
+bindsym $mod+Shift+b exec blueman-manager
+
+# Network Manager Applet
+bindsym Mod1+Shift+n exec --no-startup-id nm-applet
+
+# Rofi
+bindsym $mod+d exec --no-startup-id rofi -show drun -disable-history -show-icons
+bindsym Mod1+d exec --no-startup-id rofi -show run -disable-history
+bindsym Mod1+w exec rofi -show window -show-icons
+bindsym $mod+i exec rofi -modi emoji -show emoji
+
+# kill focused window
+bindsym $mod+Shift+q kill
+
+# exit-menu
+bindsym $mod+Shift+e exec wlogout
+
+# Lock the system
+bindsym $mod+Shift+n exec ~/.config/customscripts/randomwall.sh
+
+# reload the configuration file
+bindsym $mod+Shift+r reload
+
+# Funtions Keys
+# Brightness
+bindsym XF86MonBrightnessUp exec brightnessctl set +5%
+bindsym XF86MonBrightnessDown exec brightnessctl set 5%-
+
+# Pulse Audio controls
+bindsym XF86AudioRaiseVolume exec pactl set-sink-volume 0 +5% 
+bindsym XF86AudioLowerVolume exec pactl set-sink-volume 0 -5% 
+bindsym XF86AudioMute exec pactl set-sink-mute 0 toggle
+
+# Media player controls
+bindsym XF86AudioPlay exec playerctl play-pause
+bindsym XF86AudioPause exec playerctl play-pause
+bindsym XF86AudioNext exec playerctl next
+bindsym XF86AudioPrev exec playerctl previous
+
+#############################################
+# autostart applications/services on login: #
+#############################################
+bar {
+  swaybar_command waybar
+}
+exec nm-applet
+exec swaync
+exec --no-startup-id /usr/lib/mate-polkit/polkit-mate-authentication-agent-1
+output eDP-1 bg ~/Pictures/backgrounds/grayLeaves.jpg fill
+output eDP-1 mode 1920x1080@60Hz
+input "1739:52908:SYNA30FB:00_06CB:CEAC_Touchpad" {
+    dwt enabled
+    tap enabled
+    middle_emulation enabled
+}
+input "type:keyboard" xkb_options caps:escape
+######################################
+# color settings fo windows         #
+######################################
+
+# Define colors variables:
+# bg tab mode
+set $color1     #1d2021
+set $color2     #d8a657
+set $color3     #fabd3f
+set $color4     #928374
+
+# define colors for windows:
+#app_id                          border          bground         text            indicator       child_border
+client.focused               $color2           $color1         $color3           $color2         $color2
+client.unfocused             $color4           $color1         $color4           $color4         $color4
+client.focused_inactive      $color4           $color1         $color4           $color4         $color4
+client.urgent                $color3           $color3         $color2           $color2         $color4
