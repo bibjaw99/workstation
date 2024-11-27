@@ -3,8 +3,7 @@
 ####################################
 focus_follows_mouse no
 focus_wrapping no
-for_window [app_id="^.*"] border pixel 1
-title_align center
+for_window [class="^.*"] border pixel 1
 for_window [shell=".*"] focus
 
 ######################################
@@ -13,6 +12,7 @@ for_window [shell=".*"] focus
 #     Fonts 
 ####################################
 font pango: JetBrainsMono Nerd Font Mono Bold 10
+title_align center
 
 ################################
 #         Mod Key
@@ -86,75 +86,40 @@ bindsym $mod+Shift+8    move container to workspace  $ws8
 
 # (W-1)
 # ========== Primary Terminal ==========
-assign [app_id="kitty"] $ws1
-for_window [app_id=kitty] focus
-
 assign [app_id="Alacritty"] $ws1
 for_window [app_id=Alacritty] focus
-
-assign [app_id="wezterm"] $ws1
-for_window [app_id=wezterm] focus
-
-assign [app_id="Nitrogen"] $ws1
-for_window [app_id=Nitrogen] focus
 
 # (W-2)
 # ========== Browsers ==========
 assign [app_id="brave-browser"] $ws2
 for_window [app_id=brave-browser] focus
 
-assign [app_id="LibreWolf"] $ws2
-for_window [app_id=LibreWolf] focus
-
-assign [app_id="(?)firefox"] $ws2
-for_window [app_id=firefox] focus
-
 # (W-3)
 # ========== Coding ===========
-assign [app_id="Anaconda-Navigator"] $ws3
-for_window [app_id=Anaconda-Navigator] focus
-
-assign [app_id="(?i)Code"] $ws3
-for_window [app_id=Code] focus
-
-assign [app_id="Google-chrome"] $ws3
-for_window [app_id=Google-chrome] focus
-
-assign [app_id="neovide"] $ws3
-for_window [app_id=neovide] focus
 
 # (W-4)
 # ========== File Manager ===========
-assign [app_id="Pcmanfm"] $ws4
-for_window [app_id=Pcmanfm] focus
+assign [class="Pcmanfm"] $ws4
+for_window [class=Pcmanfm] focus
 
 assign [app_id="mpv"] $ws4
 for_window [app_id=mpv] focus
 
-assign [app_id="Ristretto"] $ws4
-for_window [app_id=Ristretto] focus
+assign [app_id="ristretto"] $ws4
+for_window [app_id=ristretto] focus
 
 # (W-5)
 # ========== Email and Messages ===========
-assign [app_id="TelegramDesktop"] $ws5
-for_window [app_id=TelegramDesktop] focus
+assign [app_id="org.telegram.desktop"] $ws5
+for_window [app_id=org.telegram.desktop] focus
 
 assign [app_id="discord"] $ws5
 for_window [app_id=discord] focus
 
-assign [app_id="Slack"] $ws5
-for_window [app_id=Slack] focus
-
 # (W-6)
 # ========== Graphics Editor ===========
-assign [app_id="Inkscape"] $ws6
-for_window [app_id=Inkscape] focus
-
-assign [app_id="Gimp"] $ws6
+assign [class="Gimp"] $ws6
 for_window [app_id=Gimp] focus
-
-assign [app_id="Darktable"] $ws6
-for_window [app_id=Darktable] focus
 
 # (W-7)
 # ========== Office Suits and tools ===========
@@ -164,35 +129,29 @@ for_window [app_id=soffice] focus
 assign [app_id="libreoffice-startcenter"] $ws7
 for_window [app_id=libreoffice-startcenter] focus
 
-assign [app_id="Zathura"] $ws7
-for_window [app_id=Zathura] focus
+assign [app_id="libreoffice-writer"] $ws7
+for_window [app_id=libreoffice-writer] focus
 
-assign [app_id="marktext"] $ws7
-for_window [app_id=marktext] focus
+assign [app_id="libreoffice-impress"] $ws7
+for_window [app_id=libreoffice-impress] focus
 
-assign [app_id="obsidian"] $ws7
-for_window [app_id=obsidian] focus
+assign [app_id="libreoffice-calc"] $ws7
+for_window [app_id=libreoffice-calc] focus
+
+assign [app_id="libreoffice-base"] $ws7
+for_window [app_id=libreoffice-base] focus
+
+assign [app_id="libreoffice-draw"] $ws7
+for_window [app_id=libreoffice-draw] focus
+
+assign [app_id="libreoffice-math"] $ws7
+for_window [app_id=libreoffice-math] focus
+
+assign [app_id="org.pwmt.zathura"] $ws7
+for_window [app_id=org.pwmt.zathura] focus
 
 # (W-8)
 # ========== Settings and Misc. ===========
-assign [app_id="SimpleScreenRecorder"] $ws8
-for_window [app_id=SimpleScreenRecorder] focus
-
-assign [app_id="Kazam"] $ws8
-for_window [app_id=Kazam] focus
-
-assign [app_id="Lxappearance"] $ws8
-for_window [app_id=Lxappearance] focus
-
-assign [app_id="stacer"] $ws8
-for_window [app_id=stacer] focus
-
-assign [app_id="qBittorrent"] $ws8
-for_window [app_id=qBittorrent] focus
-
-assign [app_id="Yad"] $ws8
-for_window [app_id=Yad] focus
-
 assign [app_id="Gnome-disks"] $ws8
 for_window [app_id=Gnome-disks] focus
 
