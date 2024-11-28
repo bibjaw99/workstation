@@ -30,7 +30,7 @@ workspace_layout default
 #         Gaps
 ###############################
 # Set inner/outer gaps
-gaps inner 10
+gaps inner 8
 gaps outer 0
 
 ##############################
@@ -89,6 +89,8 @@ bindsym $mod+Shift+8    move container to workspace  $ws8
 assign [app_id="Alacritty"] $ws1
 for_window [app_id=Alacritty] focus
 
+assign [app_id="foot"] $ws1
+for_window [app_id=foot] focus
 # (W-2)
 # ========== Browsers ==========
 assign [class="Brave-browser"] $ws2
@@ -240,11 +242,13 @@ bindsym $mod+n exec pcmanfm
 bindsym $mod+Shift+o exec zathura
 
 # Screenshot : Screenshot
-bindsym Print exec grim
+bindsym Print exec grim ~/Pictures/screenshots/$(date +'%H.%M.%S-%Y-%m-%d.png')
+bindsym $mod+Print exec grim -g "$(slurp)" ~/Pictures/screenshots/$(date +'%H.%M.%S-%Y-%m-%d.png')
+bindsym Shift+Print exec grim - | wl-copy
+bindsym $mod+Shift+Print exec grim -g "$(slurp)" - | wl-copy
 
 # start a terminal
-bindsym $mod+Return exec alacritty
-bindsym $mod+Shift+Return exec foot
+bindsym $mod+Return exec foot
 
 # ibus
 bindsym $mod+Shift+b exec blueman-manager
@@ -262,10 +266,10 @@ bindsym $mod+i exec rofi -modi emoji -show emoji
 bindsym $mod+Shift+q kill
 
 # exit-menu
-bindsym $mod+Shift+e exec killall sway
+bindsym $mod+Shift+e exec ~/.config/sway/power.sh
 
 # Lock the system
-bindsym $mod+Shift+n exec ~/.config/customscripts/randomwall.sh
+bindsym $mod+Shift+x exec swaylock -i ~/Pictures/backgrounds/VIM.png
 
 # reload the configuration file
 bindsym $mod+Shift+r reload
@@ -294,9 +298,11 @@ bar {
 }
 exec nm-applet
 exec swaync
+exec foot --server
 exec XDG_CURRENT_DESKTOP=sway
 exec --no-startup-id /usr/lib/mate-polkit/polkit-mate-authentication-agent-1
-output eDP-1 bg ~/Pictures/backgrounds/grayLeaves.jpg fill
+# output eDP-1 bg ~/Pictures/backgrounds/gruvbox-beach.png fill
+exec waypaper --restore
 output eDP-1 mode 1920x1080@60Hz
 input "1739:52908:SYNA30FB:00_06CB:CEAC_Touchpad" {
     dwt enabled
@@ -321,3 +327,6 @@ client.focused               $color2           $color1         $color3          
 client.unfocused             $color4           $color1         $color4           $color4         $color4
 client.focused_inactive      $color4           $color1         $color4           $color4         $color4
 client.urgent                $color3           $color3         $color2           $color2         $color4
+
+exec "dbus-update-activation-environment --systemd --all "
+exec "dbus-update-activation-environment --systemd XDG_CURRENT_DESKTOP=sway "

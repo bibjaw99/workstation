@@ -114,6 +114,7 @@
       "format-source": "{volume}% ",
       "on-click": "pactl set-sink-mute @DEFAULT_SINK@ toggle",
       "tooltip" : false,
+      "max-volume" : 130,
   },
 
   "battery#bat2": {
