@@ -97,7 +97,8 @@
   "backlight": {
       // "device": "acpi_video1",
       "format": "<span color='#222222' bgcolor='#f6c657'> BRI </span> {percent}% ",
-      "format-icons": ["", "", "", "", "", "", "", "", ""]
+      "format-icons": ["", "", "", "", "", "", "", "", ""],
+      "tooltip" : false,
   },
   "memory": {
       "format": "<span color='#222222' bgcolor='#458588'> MEM </span> {used}GiB ",
@@ -112,6 +113,7 @@
       "format-bluetooth-muted": "<span color='#222222' bgcolor='#ea6962'> MUTE </span> {volume}% ",
       "format-source": "{volume}% ",
       "on-click": "pactl set-sink-mute @DEFAULT_SINK@ toggle",
+      "tooltip" : false,
   },
 
   "battery#bat2": {
@@ -135,7 +137,8 @@
 
   "clock": {
       // "timezone": "America/New_York",
-      "format": "<span color='#222222' bgcolor='#8ec07c'> TIME </span> {:%H:%M:%S}",
+      "format": "<span color='#222222' bgcolor='#8ec07c'> TIME </span> {:%H:%M:%S %a %d %b}",
+      "tooltip":false
   },
 
 

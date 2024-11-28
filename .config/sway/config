@@ -3,7 +3,8 @@
 ####################################
 focus_follows_mouse no
 focus_wrapping no
-for_window [class="^.*"] border pixel 1
+for_window [app_id="^.*"] border pixel 1
+title_align center
 for_window [shell=".*"] focus
 
 ######################################
@@ -12,7 +13,6 @@ for_window [shell=".*"] focus
 #     Fonts 
 ####################################
 font pango: JetBrainsMono Nerd Font Mono Bold 10
-title_align center
 
 ################################
 #         Mod Key
@@ -91,8 +91,8 @@ for_window [app_id=Alacritty] focus
 
 # (W-2)
 # ========== Browsers ==========
-assign [app_id="brave-browser"] $ws2
-for_window [app_id=brave-browser] focus
+assign [class="Brave-browser"] $ws2
+for_window [class=Brave-browser] focus
 
 # (W-3)
 # ========== Coding ===========
@@ -105,16 +105,16 @@ for_window [class=Pcmanfm] focus
 assign [app_id="mpv"] $ws4
 for_window [app_id=mpv] focus
 
-assign [app_id="ristretto"] $ws4
-for_window [app_id=ristretto] focus
+assign [app_id="gthumb"] $ws4
+for_window [app_id=gthumb] focus
 
 # (W-5)
 # ========== Email and Messages ===========
 assign [app_id="org.telegram.desktop"] $ws5
 for_window [app_id=org.telegram.desktop] focus
 
-assign [app_id="discord"] $ws5
-for_window [app_id=discord] focus
+assign [class="discord"] $ws5
+for_window [class=discord] focus
 
 # (W-6)
 # ========== Graphics Editor ===========
@@ -262,7 +262,7 @@ bindsym $mod+i exec rofi -modi emoji -show emoji
 bindsym $mod+Shift+q kill
 
 # exit-menu
-bindsym $mod+Shift+e exec wlogout
+bindsym $mod+Shift+e exec killall sway
 
 # Lock the system
 bindsym $mod+Shift+n exec ~/.config/customscripts/randomwall.sh
@@ -294,6 +294,7 @@ bar {
 }
 exec nm-applet
 exec swaync
+exec XDG_CURRENT_DESKTOP=sway
 exec --no-startup-id /usr/lib/mate-polkit/polkit-mate-authentication-agent-1
 output eDP-1 bg ~/Pictures/backgrounds/grayLeaves.jpg fill
 output eDP-1 mode 1920x1080@60Hz
