@@ -37,9 +37,9 @@ window#waybar.hidden {
   padding: 0 4px;
   margin-bottom: 4px;
   font-family: IosevkaTerm Nerd Font Propo;
-  font-size: 28px;
+  font-size: 22px;
   font-weight: 800;
-  border-bottom: 3px solid transparent;
+  border-bottom: 2px solid transparent;
 }
 
 #workspaces button:hover {
@@ -50,17 +50,17 @@ window#waybar.hidden {
 #workspaces button.visible {
   color: #8ec07c;
   font-family: IosevkaTerm Nerd Font Propo;
-  font-size: 28px;
+  font-size: 22px;
   font-weight: 800;
   border-radius: 0;
   padding: 0 4px;
-  border-bottom: 3px solid #8ec07c;
+  border-bottom: 2px solid #8ec07c;
 }
 
 #workspaces button.visible:hover {
   color: #8ec07c;
   font-family: IosevkaTerm Nerd Font Propo;
-  font-size: 28px;
+  font-size: 22px;
   font-weight: 800;
   border-radius: 0;
   padding: 0 4px;
@@ -69,17 +69,17 @@ window#waybar.hidden {
 #workspaces button.active {
   color: #8ec07c;
   font-family: IosevkaTerm Nerd Font Propo;
-  font-size: 28px;
+  font-size: 22px;
   font-weight: 800;
   border-radius: 0;
   padding: 0 4px;
-  border-bottom: 3px solid #8ec07c;
+  border-bottom: 2px solid #8ec07c;
 }
 
 #workspaces button.active:hover {
   color: #8ec07c;
   font-family: IosevkaTerm Nerd Font Propo;
-  font-size: 28px;
+  font-size: 22px;
   font-weight: 800;
   border-radius: 0;
   padding: 0 4px;
@@ -87,7 +87,7 @@ window#waybar.hidden {
 
 #workspaces button.urgent {
   color: #ea6962;
-  border-bottom: 3px solid #ea6962;
+  border-bottom: 2px solid #ea6962;
 }
 
 /* ================================ */
@@ -101,7 +101,7 @@ window#waybar.hidden {
   font-family: IosevkaTerm Nerd Font Mono;
   font-size: 15px;
   font-weight: 800;
-  border-bottom: 3px solid #d3869b;
+  border-bottom: 2px solid #d3869b;
 }
 
 /* ================================ */
@@ -122,8 +122,8 @@ window#waybar.hidden {
   font-size: 15px;
   font-weight: 800;
   color: #ea6962;
-  margin: 5px 3px;
-  border-bottom: 3px solid #ea6962;
+  margin: 5px 2px;
+  border-bottom: 2px solid #ea6962;
 }
 
 /* ================================ */
@@ -134,8 +134,8 @@ window#waybar.hidden {
   font-size: 15px;
   font-weight: 800;
   color: #e78a4e;
-  margin: 5px 3px;
-  border-bottom: 3px solid #e78a4e;
+  margin: 5px 2px;
+  border-bottom: 2px solid #e78a4e;
 }
 
 /* ================================ */
@@ -147,7 +147,7 @@ window#waybar.hidden {
   font-weight: 800;
   color: #d8a657;
   margin: 5px 3px;
-  border-bottom: 3px solid #d8a657;
+  border-bottom: 2px solid #d8a657;
 }
 
 #temperature.critical {
@@ -156,7 +156,7 @@ window#waybar.hidden {
   font-weight: 800;
   color: #cc241d;
   margin: 5px 3px;
-  border-bottom: 3px solid #cc241d;
+  border-bottom: 2px solid #cc241d;
 }
 
 /* ================================ */
@@ -168,7 +168,7 @@ window#waybar.hidden {
   font-weight: 800;
   color: #f6c657;
   margin: 5px 3px;
-  border-bottom: 3px solid #f6c657;
+  border-bottom: 2px solid #f6c657;
 }
 
 /* ================================ */
@@ -180,7 +180,7 @@ window#waybar.hidden {
   font-weight: 800;
   color: #458588;
   margin: 5px 3px;
-  border-bottom: 3px solid #458588;
+  border-bottom: 2px solid #458588;
 }
 
 /* ================================ */
@@ -192,7 +192,7 @@ window#waybar.hidden {
   font-weight: 800;
   color: #83a598;
   margin: 5px 3px;
-  border-bottom: 3px solid #83a598;
+  border-bottom: 2px solid #83a598;
 }
 
 #pulseaudio.muted {
@@ -201,7 +201,7 @@ window#waybar.hidden {
   font-weight: 800;
   color: #ea6962;
   margin: 5px 3px;
-  border-bottom: 3px solid #ea6962;
+  border-bottom: 2px solid #ea6962;
 }
 
 /* ================================ */
@@ -213,9 +213,26 @@ window#waybar.hidden {
   font-weight: 800;
   color: #689d6a;
   margin: 5px 3px;
-  border-bottom: 3px solid #689d6a;
+  border-bottom: 2px solid #689d6a;
 }
 
+#battery.critical {
+  font-family: IosevkaTerm Nerd Font Mono;
+  font-size: 15px;
+  font-weight: 800;
+  color: #cc241d;
+  margin: 5px 3px;
+  border-bottom: 2px solid #cc241d;
+}
+
+#battery.warning {
+  font-family: IosevkaTerm Nerd Font Mono;
+  font-size: 15px;
+  font-weight: 800;
+  color: #e78a4e;
+  margin: 5px 3px;
+  border-bottom: 2px solid #e78a4e;
+}
 /* ================================ */
 /*            clock                 */
 /* ================================ */
@@ -225,5 +242,5 @@ window#waybar.hidden {
   font-weight: 800;
   color: #8ec07c;
   margin: 5px 3px;
-  border-bottom: 3px solid #8ec07c;
+  border-bottom: 2px solid #8ec07c;
 }

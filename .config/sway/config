@@ -217,7 +217,7 @@ bindsym $mod+Ctrl+l resize shrink width 5 px or 5 ppt
 ##################
 
 # Default floting window size
-for_window [floating] resize set 800 500, move position center
+for_window [floating] resize set 800 500, move position center, sticky enable
 
 # set floating (nontiling) for apps needing it
 for_window [app_id="Yad" instance="yad"] floating disable
@@ -261,6 +261,9 @@ bindsym $mod+d exec --no-startup-id rofi -show drun -disable-history -show-icons
 bindsym Mod1+d exec --no-startup-id rofi -show run -disable-history
 bindsym Mod1+w exec rofi -show window -show-icons
 bindsym $mod+i exec rofi -modi emoji -show emoji
+
+# swaync
+bindsym $mod+Shift+n exec swaync-client -t
 
 # kill focused window
 bindsym $mod+Shift+q kill
