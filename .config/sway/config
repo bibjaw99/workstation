@@ -272,7 +272,7 @@ bindsym $mod+Shift+q kill
 bindsym $mod+Shift+e exec ~/.config/sway/power.sh
 
 # Lock the system
-bindsym $mod+Shift+x exec swaylock -i ~/Pictures/backgrounds/VIM.png
+bindsym $mod+Shift+x exec swaylock -i ~/.config/walls/VIM.png
 
 # reload the configuration file
 bindsym $mod+Shift+r reload
@@ -304,8 +304,7 @@ exec swaync
 exec foot --server
 exec XDG_CURRENT_DESKTOP=sway
 exec --no-startup-id /usr/lib/mate-polkit/polkit-mate-authentication-agent-1
-# output eDP-1 bg ~/Pictures/backgrounds/gruvbox-beach.png fill
-exec waypaper --restore
+output eDP-1 bg ~/.config/walls/beach_1.png fill
 output eDP-1 mode 1920x1080@60Hz
 input "1739:52908:SYNA30FB:00_06CB:CEAC_Touchpad" {
     dwt enabled
