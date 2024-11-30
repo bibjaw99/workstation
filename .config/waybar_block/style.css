@@ -25,6 +25,18 @@ window#waybar.hidden {
   opacity: 1;
 }
 
+#custom-rofi {
+  color: #222222;
+  border: 2px solid #458588;
+  background-color: #83a598;
+  border-radius: 2px;
+  padding: 0 6px;
+  margin: 5px 3px;
+  font-family: IosevkaTerm Nerd Font Propo;
+  font-size: 15px;
+  font-weight: 800;
+}
+
 /* ================================ */
 /*       workspaces module          */
 /* ================================ */

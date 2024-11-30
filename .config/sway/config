@@ -269,7 +269,7 @@ bindsym $mod+Shift+n exec swaync-client -t
 bindsym $mod+Shift+q kill
 
 # exit-menu
-bindsym $mod+Shift+e exec ~/.config/sway/power.sh
+bindsym $mod+Shift+e exec ~/.config/custom_scripts/power.sh
 
 # Lock the system
 bindsym $mod+Shift+x exec swaylock -i ~/.config/walls/VIM.png

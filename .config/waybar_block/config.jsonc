@@ -3,6 +3,7 @@
   "height": 20,
   "spacing": 0,
   "modules-left": [
+    "custom/rofi",
     "sway/workspaces",
     "sway/window",
     "hyprland/workspaces",
@@ -19,6 +20,14 @@
     "battery",
     "clock"
   ],
+
+  "custom/rofi": {
+		"format": "",
+		"on-click": "rofi -show drun -disable-history -show-icons",
+    "on-click-right": "~/.config/custom_scripts/power.sh",
+    "escape" : true,
+    "tooltip" : false
+	},
 
   // Modules configuration
   "sway/workspaces": {
@@ -139,7 +148,7 @@
 
   "clock": {
     // "timezone": "America/New_York",
-    "format": "<span color='#222222' bgcolor='#8ec07c'> DAY </span> {:%H:%M:%S %d-%m,%a}",
+    "format": "<span color='#222222' bgcolor='#8ec07c'> DAY </span> {:%H:%M:%S %A,%d-%m}",
     "tooltip": false,
     "interval":1,
   }

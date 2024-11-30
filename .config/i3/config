@@ -12,7 +12,7 @@
 ####################################
 focus_follows_mouse no
 focus_wrapping no
-for_window [class="^.*"] border pixel 2
+for_window [class="^.*"] border pixel 1
 title_align center
 ######################################
 
@@ -134,6 +134,9 @@ for_window [class=Code] focus
 
 assign [class="Google-chrome"] $ws3
 for_window [class=Google-chrome] focus
+
+assign [class="neovide"] $ws3
+for_window [class=neovide] focus
 
 # (W-4)
 # ========== File Manager ===========
@@ -284,8 +287,7 @@ for_window [class="GLava" instance="GLava"] floating enable
 ## App shortcuts
 
 # Browser
-bindsym $mod+w exec firefox-developer-edition
-bindsym $mod+o exec google-chrome-stable --enable-features=VaapiVideoDecodeLinuxGL
+bindsym $mod+w exec brave
 
 # File Manager
 bindsym $mod+n exec pcmanfm
@@ -316,7 +318,7 @@ bindsym $mod+i exec rofi -modi emoji -show emoji
 bindsym $mod+Shift+q kill
 
 # exit-menu
-bindsym $mod+Shift+e exec ~/.config/i3/scripts/power.sh
+bindsym $mod+Shift+e exec ~/.config/custom_scripts/power.sh
 
 # Lock the system
 bindsym $mod+Shift+x exec i3lock -i ~/Pictures/backgrounds/VIM.png
