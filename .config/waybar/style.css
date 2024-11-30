@@ -31,7 +31,7 @@ window#waybar.hidden {
   background-color: #83a598;
   border-radius: 2px;
   padding: 0 6px;
-  margin: 5px 3px;
+  margin: 5px 4px;
   font-family: IosevkaTerm Nerd Font Propo;
   font-size: 15px;
   font-weight: 800;
@@ -129,7 +129,7 @@ window#waybar.hidden {
 #window {
   color: #d3869b;
   background: none;
-  margin: 4px 8px;
+  margin: 5px 4px;
   font-family: IosevkaTerm Nerd Font Mono;
   font-size: 15px;
   font-weight: 800;
