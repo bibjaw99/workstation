@@ -242,8 +242,8 @@ bindsym $mod+n exec pcmanfm
 bindsym $mod+Shift+o exec zathura
 
 # Screenshot : Screenshot
-bindsym Print exec grim ~/Pictures/screenshots/$(date +'%H.%M.%S-%Y-%m-%d.png')
-bindsym $mod+Print exec grim -g "$(slurp)" ~/Pictures/screenshots/$(date +'%H.%M.%S-%Y-%m-%d.png')
+bindsym Print exec grim ~/Pictures/screenshots/$(date +'%Y-%m-%d_%H-%M-%S.png')
+bindsym $mod+Print exec grim -g "$(slurp)" ~/Pictures/screenshots/$(date +'%Y-%m-%d_%H-%M-%S.png')
 bindsym Shift+Print exec grim - | wl-copy
 bindsym $mod+Shift+Print exec grim -g "$(slurp)" - | wl-copy
 

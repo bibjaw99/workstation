@@ -34,7 +34,7 @@
 }
 
 configuration {
-    display-drun: " Apps: ";
+    display-drun: " Apps ";
     display-run: " Cmd: ";
     display-window: " Win : ";
 }

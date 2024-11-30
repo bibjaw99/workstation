@@ -3,8 +3,9 @@
 ## wm : sway
 
 - sway
+- hyprland
 - waybar
-- swaybg
+- swaybg,waypaper
 - swaync + libnotify
 - swaylock
 - grim , slurp

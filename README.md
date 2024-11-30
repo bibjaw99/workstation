@@ -134,15 +134,18 @@
 
 ## Gallery
 
+### Sway / Hyprland + waybar
+
+![Sway and Hyprland](./screenshots/sway_1.png)
+
+### i3wm + polybar
+
 ![Floating Polybar](./screenshots/polybar_floating.png)
 
-![i3_poly](./screenshots/i3.png)
+### App launcher and powe menu: Rofi
 
-![Gruvbox with bg "#171717"](./screenshots/gruvbox.png)
-
-### App launcher: Rofi
-
-![rofi](./screenshots/rofi.png)
+![Rofi](./screenshots/rofi_1.png)
+![Rofi](./screenshots/rofi_2.png)
 
 ## Keybindings For i3
 
@@ -168,12 +171,16 @@
 |       mod+w       |        firefox        |
 |       mod+n       |        pcmanfm        |
 
-# [Important Notes](./arch_install/notes.md) ⚠️
+# [Important Notes](./arch_install/notes/notes.md) ⚠️
+
+# [Wayland Notes](./arch_install/notes/wayland_notes.md)
+
+# [Arch Installation Prcess](./arch_install/notes/archInstalltion.md)
 
 # Packages I used in my System:
 
 ##### Currently using an ultrabook: HP probook 10 G450, i5 13th gen with iGPU - intel iris xe.
 
-- [Drivers](./arch_install/drivers.sh)
-- [System Packages](./arch_install/system_packages.sh)
-- [GUI Apps](./arch_install/applications.sh)
+- [Drivers](./arch_install/scripts/drivers.sh)
+- [System Packages](./arch_install/scripts/system_packages.sh)
+- [GUI Apps](./arch_install/scripts/applications.sh)
