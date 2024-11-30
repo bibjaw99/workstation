@@ -136,7 +136,7 @@
 
 ### Sway / Hyprland + waybar
 
-![Sway and Hyprland](./screenshots/sway_1.png)
+![Sway and Hyprland](./screenshots/hyprland.png)
 
 ### i3wm + polybar
 
