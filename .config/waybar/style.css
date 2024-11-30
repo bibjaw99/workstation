@@ -233,6 +233,15 @@ window#waybar.hidden {
   margin: 5px 3px;
   border-bottom: 2px solid #e78a4e;
 }
+
+#battery.chargin.warning {
+  font-family: IosevkaTerm Nerd Font Mono;
+  font-size: 15px;
+  font-weight: 800;
+  color: #689d6a;
+  margin: 5px 3px;
+  border-bottom: 2px solid #689d6a;
+}
 /* ================================ */
 /*            clock                 */
 /* ================================ */

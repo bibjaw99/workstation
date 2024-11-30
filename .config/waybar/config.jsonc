@@ -123,7 +123,7 @@
     "interval": 1,
     "states": {
       "good": 99,
-      "warning": 40,
+      "warning": 30,
       "critical": 15
     },
     "format": "<span color='#222222' bgcolor='#689d6a'> BAT </span> {capacity}%",
@@ -131,6 +131,7 @@
     "format-warning": "<span color='#222222' bgcolor='#e78a4e'> BAT </span> {capacity}%",
     "format-full": "<span color='#222222' bgcolor='#689d6a'> FULL </span> {capacity}%",
     "format-charging": "<span color='#222222' bgcolor='#689d6a'> POW </span> {capacity}%",
+    "format-charging-warning": "<span color='#222222' bgcolor='#e78a4e'> POW </span> {capacity}%",
     "format-plugged": "<span color='#222222' bgcolor='#689d6a'> POW </span> {capacity}%",
     "format-alt": "<span color='#222222' bgcolor='#689d6a'> BAT </span> {time}",
     "tooltip": false

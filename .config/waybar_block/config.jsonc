@@ -123,7 +123,7 @@
     "interval": 1,
     "states": {
       "good": 99,
-      "warning": 40,
+      "warning": 30,
       "critical": 15
     },
     "format": "<span color='#222222' bgcolor='#689d6a'> BAT </span> {capacity}%",
