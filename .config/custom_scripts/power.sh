@@ -12,7 +12,7 @@ if [ "$DESKTOP_SESSION" = "i3" ]; then
     logout="killall i3"
   elif [ "$DESKTOP_SESSION" = "hyprland" ]; then
     logout="killall Hyprland"
-  elif [ "DESKTOP_SESSION" = "sway" ]; then
+  elif [ "$DESKTOP_SESSION" = "sway" ]; then
     logout="killall sway"
   else
     logout="loginctl terminate-user $USER"
