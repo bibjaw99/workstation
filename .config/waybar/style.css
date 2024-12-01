@@ -206,7 +206,7 @@ window#waybar.hidden {
 /* ================================ */
 /*            memory                */
 /* ================================ */
-#memory {
+#custom-memory {
   font-family: IosevkaTerm Nerd Font Mono;
   font-size: 15px;
   font-weight: 800;

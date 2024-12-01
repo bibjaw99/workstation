@@ -15,7 +15,7 @@
     "cpu",
     "temperature",
     "backlight",
-    "memory",
+    "custom/memory",
     "pulseaudio",
     "battery",
     "clock"
@@ -106,10 +106,12 @@
     "format": "<span color='#222222' bgcolor='#f6c657'> BRI </span> {percent}%",
     "tooltip": false
   },
-  "memory": {
-    "format": "<span color='#222222' bgcolor='#458588'> MEM </span> {used}GiB",
-    "interval": 1,
-    "tooltip":false,
+
+  "custom/memory": {
+    "exec": "~/.config/waybar/scripts/memory_usage.sh",
+    "interval": 2,
+    "return-type": "json",
+    "format": "<span color='#222222' bgcolor='#458588'> MEM </span> {}"
   },
 
   "pulseaudio": {
