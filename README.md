@@ -16,6 +16,80 @@
 - **Fonts:** roboto-condensed (for rofi and polybar), font-awesome (for rofi and polybar), monospace, jetbrainsmono, jetbrainsmono nerd fonts, firacode nerd font (for terminal,qtile bar)
 - **Policykit:** mate-polkit
 
+# Notes ⚠️
+
+[Important Notes](./arch_install/notes/notes.md)
+
+[Wayland Notes](./arch_install/notes/wayland_notes.md)
+
+[Arch Installation Process I followed](./arch_install/notes/archInstalltion.md)
+
+Packages I used in my System:
+
+##### Currently using an ultrabook: HP probook 10 G450, i5 13th gen with iGPU - intel iris xe.
+
+- [Drivers](./arch_install/scripts/drivers.sh)
+- [System Packages](./arch_install/scripts/system_packages.sh)
+- [GUI Apps](./arch_install/scripts/applications.sh)
+
+---
+
+## Apps in each workspace
+
+| Workspace Number |   Assigned Apps    |
+| :--------------: | :----------------: |
+|        1         |      Terminal      |
+|        2         |      Browser       |
+|        3         | Development/Coding |
+|        4         |    File Manager    |
+|        5         |        Chat        |
+|        6         |    Design tools    |
+|        7         |    Office tools    |
+|        8         |    System tools    |
+
+---
+
+## Gallery
+
+### i3wm + polybar
+
+![Floating Polybar](./screenshots/i3.png)
+
+### Sway / Hyprland + waybar
+
+![Sway and Hyprland](./screenshots/hyprland.png)
+
+### App launcher and powe menu: Rofi
+
+![Rofi](./screenshots/rofi_1.png)
+![Rofi](./screenshots/rofi_2.png)
+
+## Keybindings For i3
+
+|    Keybindings    |        Actions        |
+| :---------------: | :-------------------: |
+|       mod+t       |      Tiling Mode      |
+|       mod+e       |       Tab Mode        |
+|       mod+s       |     Stacking Mode     |
+|       mod+d       |       rofi drun       |
+|       alt+d       |       rofi run        |
+|       alt+w       |     rofi windows      |
+|       alt+m       |      rofi emoji       |
+|    mod+Shift+e    |      Power Menu       |
+|    mod+return     |    Kitty terminal     |
+|    mod+Shift+q    |    Kills a window     |
+| mod+ctrl+vim keys |     resize window     |
+|       mod+z       |      horizontal       |
+|       mod+a       |       vertical        |
+|       mod+m       |   toggle fullscreen   |
+|     mod+space     |    floating window    |
+|       mod+q       | focus floating window |
+|       mod+p       |     focus parent      |
+|       mod+w       |        firefox        |
+|       mod+n       |        pcmanfm        |
+
+---
+
 ## Neovim: Grimm Vim:
 
 #### Not a distro but my own personal config ⚠️
@@ -106,81 +180,3 @@
             ├── utilities.lua
             └── whichkey.lua
 ```
-
----
-
-## i3 Window Manager
-
-### Scripts you need to make executable:
-
-- .config/i3/scripts/power.sh
-- .config/qtile/scripts/power.sh
-- .config/polybar/i3_bar.sh
-
-## Apps in each workspace
-
-| Workspace Number |   Assigned Apps    |
-| :--------------: | :----------------: |
-|        1         |      Terminal      |
-|        2         |      Browser       |
-|        3         | Development/Coding |
-|        4         |    File Manager    |
-|        5         |        Chat        |
-|        6         |    Design tools    |
-|        7         |    Office tools    |
-|        8         |    System tools    |
-
----
-
-## Gallery
-
-### Sway / Hyprland + waybar
-
-![Sway and Hyprland](./screenshots/hyprland.png)
-
-### i3wm + polybar
-
-![Floating Polybar](./screenshots/polybar_floating.png)
-
-### App launcher and powe menu: Rofi
-
-![Rofi](./screenshots/rofi_1.png)
-![Rofi](./screenshots/rofi_2.png)
-
-## Keybindings For i3
-
-|    Keybindings    |        Actions        |
-| :---------------: | :-------------------: |
-|       mod+t       |      Tiling Mode      |
-|       mod+e       |       Tab Mode        |
-|       mod+s       |     Stacking Mode     |
-|       mod+d       |       rofi drun       |
-|       alt+d       |       rofi run        |
-|       alt+w       |     rofi windows      |
-|       alt+m       |      rofi emoji       |
-|    mod+Shift+e    |      Power Menu       |
-|    mod+return     |    Kitty terminal     |
-|    mod+Shift+q    |    Kills a window     |
-| mod+ctrl+vim keys |     resize window     |
-|       mod+z       |      horizontal       |
-|       mod+a       |       vertical        |
-|       mod+m       |   toggle fullscreen   |
-|     mod+space     |    floating window    |
-|       mod+q       | focus floating window |
-|       mod+p       |     focus parent      |
-|       mod+w       |        firefox        |
-|       mod+n       |        pcmanfm        |
-
-# [Important Notes](./arch_install/notes/notes.md) ⚠️
-
-# [Wayland Notes](./arch_install/notes/wayland_notes.md)
-
-# [Arch Installation Prcess](./arch_install/notes/archInstalltion.md)
-
-# Packages I used in my System:
-
-##### Currently using an ultrabook: HP probook 10 G450, i5 13th gen with iGPU - intel iris xe.
-
-- [Drivers](./arch_install/scripts/drivers.sh)
-- [System Packages](./arch_install/scripts/system_packages.sh)
-- [GUI Apps](./arch_install/scripts/applications.sh)
