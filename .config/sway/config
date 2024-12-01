@@ -263,7 +263,7 @@ bindsym Mod1+w exec rofi -show window -show-icons
 bindsym $mod+i exec rofi -modi emoji -show emoji
 
 # swaync
-bindsym $mod+Shift+n exec swaync-client -t
+bindsym $mod+Shift+u exec swaync-client -t
 
 # kill focused window
 bindsym $mod+Shift+q kill
