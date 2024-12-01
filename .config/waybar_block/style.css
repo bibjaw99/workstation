@@ -19,6 +19,7 @@ window#waybar {
   color: #fff4d2;
   padding: 0;
   margin: 0;
+  border-radius: 3px;
 }
 
 window#waybar.hidden {
@@ -31,7 +32,7 @@ window#waybar.hidden {
   background-color: #83a598;
   border-radius: 2px;
   padding: 0 6px;
-  margin: 5px 4px;
+  margin: 5px 4px 5px 5px;
   font-family: IosevkaTerm Nerd Font Propo;
   font-size: 15px;
   font-weight: 800;
@@ -298,7 +299,7 @@ window#waybar.hidden {
   font-size: 15px;
   font-weight: 800;
   color: #8ec07c;
-  margin: 5px 2px;
+  margin: 5px 5px 5px 4px;
   padding-right: 4px;
   border: 2px solid #8ec07c;
   border-radius: 3px;
