@@ -299,7 +299,7 @@ window#waybar.hidden {
   font-size: 15px;
   font-weight: 800;
   color: #8ec07c;
-  margin: 5px 5px 5px 4px;
+  margin: 5px 5px 5px 2px;
   padding-right: 4px;
   border: 2px solid #8ec07c;
   border-radius: 3px;
