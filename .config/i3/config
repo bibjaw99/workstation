@@ -115,28 +115,16 @@ for_window [class=Nitrogen] focus
 
 # (W-2)
 # ========== Browsers ==========
-assign [class="Brave"] $ws2
-for_window [class=Brave] focus
-
 assign [class="LibreWolf"] $ws2
 for_window [class=LibreWolf] focus
 
-assign [class="(?)firefox"] $ws2
-for_window [class=firefox] focus
+assign [class="(?)firefox-developer-edition"] $ws2
+for_window [class=firefox-developer-edition] focus
 
 # (W-3)
 # ========== Coding ===========
-assign [class="Anaconda-Navigator"] $ws3
-for_window [class=Anaconda-Navigator] focus
-
-assign [class="(?i)Code"] $ws3
-for_window [class=Code] focus
-
-assign [class="Google-chrome"] $ws3
-for_window [class=Google-chrome] focus
-
-assign [class="neovide"] $ws3
-for_window [class=neovide] focus
+assign [class="Brave"] $ws3
+for_window [class=Brave] focus
 
 # (W-4)
 # ========== File Manager ===========
@@ -146,8 +134,8 @@ for_window [class=Pcmanfm] focus
 assign [class="mpv"] $ws4
 for_window [class=mpv] focus
 
-assign [class="Ristretto"] $ws4
-for_window [class=Ristretto] focus
+assign [class="feh"] $ws4
+for_window [class=feh] focus
 
 # (W-5)
 # ========== Email and Messages ===========
@@ -182,20 +170,8 @@ for_window [class=libreoffice-startcenter] focus
 assign [class="Zathura"] $ws7
 for_window [class=Zathura] focus
 
-assign [class="marktext"] $ws7
-for_window [class=marktext] focus
-
-assign [class="obsidian"] $ws7
-for_window [class=obsidian] focus
-
 # (W-8)
 # ========== Settings and Misc. ===========
-assign [class="SimpleScreenRecorder"] $ws8
-for_window [class=SimpleScreenRecorder] focus
-
-assign [class="Kazam"] $ws8
-for_window [class=Kazam] focus
-
 assign [class="Lxappearance"] $ws8
 for_window [class=Lxappearance] focus
 
@@ -214,6 +190,11 @@ for_window [class=Gnome-disks] focus
 assign [class="Blueman-manager"] $ws8
 for_window [class=Blueman-manager] focus
 
+assign [class="obs"] $ws8
+for_window [class=obs] focus
+
+assign [class="pavucontrol"] $ws8
+for_window [class=pavucontrol] focus
 ##############################
 # Focus Changing
 ##############################
@@ -277,9 +258,6 @@ for_window [floating] resize set 800 500, move position center
 for_window [class="Yad" instance="yad"] floating disable
 for_window [class="Nitrogen"] floating enable
 
-# set floating (nontiling) for special apps
-for_window [class="GLava" instance="GLava"] floating enable
-
 ####################################################
 # keybindings for different shortcuts and actions: #
 ###################################################
@@ -287,7 +265,8 @@ for_window [class="GLava" instance="GLava"] floating enable
 ## App shortcuts
 
 # Browser
-bindsym $mod+w exec brave
+bindsym $mod+w exec firefox-developer-edition
+bindsym $mod+Shift+w exec brave
 
 # File Manager
 bindsym $mod+n exec pcmanfm
@@ -370,6 +349,9 @@ exec nitrogen --restore
 
 # get auth work with polkit
 exec --no-startup-id /usr/lib/mate-polkit/polkit-mate-authentication-agent-1
+
+# redshift
+exec redshift-gtk
 
 # disable capslock
 # exec setxkbmap -option ctrl:nocaps

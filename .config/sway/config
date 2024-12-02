@@ -93,11 +93,13 @@ assign [app_id="foot"] $ws1
 for_window [app_id=foot] focus
 # (W-2)
 # ========== Browsers ==========
-assign [class="Brave-browser"] $ws2
-for_window [class=Brave-browser] focus
+assign [app_id="firefox-developer-edition"] $ws2
+for_window [app_id=firefox-developer-edition] focus
 
 # (W-3)
 # ========== Coding ===========
+assign [class="Brave-browser"] $ws3
+for_window [class=Brave-browser] focus
 
 # (W-4)
 # ========== File Manager ===========
@@ -107,9 +109,8 @@ for_window [class=Pcmanfm] focus
 assign [app_id="mpv"] $ws4
 for_window [app_id=mpv] focus
 
-assign [app_id="gthumb"] $ws4
-for_window [app_id=gthumb] focus
-
+assign [class="feh"] $ws4
+for_window [class=feh] focus
 # (W-5)
 # ========== Email and Messages ===========
 assign [app_id="org.telegram.desktop"] $ws5
@@ -160,6 +161,11 @@ for_window [app_id=Gnome-disks] focus
 assign [app_id="Blueman-manager"] $ws8
 for_window [app_id=Blueman-manager] focus
 
+assign [app_id="com.obsproject.Studio"] $ws8
+for_window [app_id=Blueman-manager] focus
+
+assign [app_id="org.pulseaudio.pavucontrol"] $ws8
+for_window [app_id=org.pulseaudio.pavucontrol] focus
 ##############################
 # Focus Changing
 ##############################
@@ -221,10 +227,6 @@ for_window [floating] resize set 800 500, move position center, sticky enable
 
 # set floating (nontiling) for apps needing it
 for_window [app_id="Yad" instance="yad"] floating disable
-for_window [app_id="Nitrogen"] floating enable
-
-# set floating (nontiling) for special apps
-for_window [app_id="GLava" instance="GLava"] floating enable
 
 ####################################################
 # keybindings for different shortcuts and actions: #
@@ -233,7 +235,8 @@ for_window [app_id="GLava" instance="GLava"] floating enable
 ## App shortcuts
 
 # Browser
-bindsym $mod+w exec brave 
+bindsym $mod+w exec firefox-developer-edition
+bindsym $mod+Shift+w exec brave
 
 # File Manager
 bindsym $mod+n exec pcmanfm
