@@ -25,13 +25,21 @@ window#waybar.hidden {
   opacity: 1;
 }
 
+.modules-left {
+  padding-left: 5px;
+}
+
+.modules-right {
+  padding-right: 5px;
+}
+
 #custom-rofi {
   color: #222222;
   border: 2px solid #458588;
   background-color: #83a598;
   border-radius: 2px;
   padding: 0 6px;
-  margin: 5px 4px;
+  margin: 5px 0px;
   font-family: IosevkaTerm Nerd Font Propo;
   font-size: 15px;
   font-weight: 800;
@@ -129,7 +137,7 @@ window#waybar.hidden {
 #window {
   color: #d3869b;
   background: none;
-  margin: 5px 4px;
+  margin: 5px 0px;
   font-family: IosevkaTerm Nerd Font Mono;
   font-size: 15px;
   font-weight: 800;
@@ -141,7 +149,7 @@ window#waybar.hidden {
 /* ================================ */
 
 #tray {
-  margin: 0 3px;
+  margin: 0 0px;
   padding: 0 8px;
 }
 
@@ -154,7 +162,7 @@ window#waybar.hidden {
   font-size: 15px;
   font-weight: 800;
   color: #ea6962;
-  margin: 5px 2px;
+  margin: 5px 0px;
   border-bottom: 2px solid #ea6962;
 }
 
@@ -166,7 +174,7 @@ window#waybar.hidden {
   font-size: 15px;
   font-weight: 800;
   color: #e78a4e;
-  margin: 5px 2px;
+  margin: 5px 0px;
   border-bottom: 2px solid #e78a4e;
 }
 
@@ -178,7 +186,7 @@ window#waybar.hidden {
   font-size: 15px;
   font-weight: 800;
   color: #d8a657;
-  margin: 5px 3px;
+  margin: 5px 0px;
   border-bottom: 2px solid #d8a657;
 }
 
@@ -187,7 +195,7 @@ window#waybar.hidden {
   font-size: 15px;
   font-weight: 800;
   color: #cc241d;
-  margin: 5px 3px;
+  margin: 5px 0px;
   border-bottom: 2px solid #cc241d;
 }
 
@@ -199,7 +207,7 @@ window#waybar.hidden {
   font-size: 15px;
   font-weight: 800;
   color: #f6c657;
-  margin: 5px 3px;
+  margin: 5px 0px;
   border-bottom: 2px solid #f6c657;
 }
 
@@ -211,7 +219,7 @@ window#waybar.hidden {
   font-size: 15px;
   font-weight: 800;
   color: #458588;
-  margin: 5px 3px;
+  margin: 5px 0px;
   border-bottom: 2px solid #458588;
 }
 
@@ -223,7 +231,7 @@ window#waybar.hidden {
   font-size: 15px;
   font-weight: 800;
   color: #83a598;
-  margin: 5px 3px;
+  margin: 5px 0px;
   border-bottom: 2px solid #83a598;
 }
 
@@ -232,7 +240,7 @@ window#waybar.hidden {
   font-size: 15px;
   font-weight: 800;
   color: #ea6962;
-  margin: 5px 3px;
+  margin: 5px 0px;
   border-bottom: 2px solid #ea6962;
 }
 
@@ -244,7 +252,7 @@ window#waybar.hidden {
   font-size: 15px;
   font-weight: 800;
   color: #689d6a;
-  margin: 5px 3px;
+  margin: 5px 0px;
   border-bottom: 2px solid #689d6a;
 }
 
@@ -253,7 +261,7 @@ window#waybar.hidden {
   font-size: 15px;
   font-weight: 800;
   color: #cc241d;
-  margin: 5px 3px;
+  margin: 5px 0px;
   border-bottom: 2px solid #cc241d;
 }
 
@@ -262,7 +270,7 @@ window#waybar.hidden {
   font-size: 15px;
   font-weight: 800;
   color: #e78a4e;
-  margin: 5px 3px;
+  margin: 5px 0px;
   border-bottom: 2px solid #e78a4e;
 }
 
@@ -271,7 +279,7 @@ window#waybar.hidden {
   font-size: 15px;
   font-weight: 800;
   color: #689d6a;
-  margin: 5px 3px;
+  margin: 5px 0px;
   border-bottom: 2px solid #689d6a;
 }
 /* ================================ */
@@ -282,6 +290,6 @@ window#waybar.hidden {
   font-size: 15px;
   font-weight: 800;
   color: #8ec07c;
-  margin: 5px 3px;
+  margin: 5px 0px;
   border-bottom: 2px solid #8ec07c;
 }

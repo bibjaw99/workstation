@@ -1,7 +1,7 @@
 {
   "layer": "top",
   "height": 20,
-  "spacing": 0,
+  "spacing": 5,
   "modules-left": [
     "custom/rofi",
     "sway/workspaces",
