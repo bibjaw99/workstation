@@ -138,7 +138,7 @@
     "states": {
       "good": 99,
       "warning": 30,
-      "critical": 15
+      "critical": 20,
     },
     "format": "<span color='#222222' bgcolor='#689d6a'> BAT </span> {capacity}%",
     "format-critical": "<span color='#222222' bgcolor='#cc241d'> BAT </span> {capacity}%!!",
@@ -146,6 +146,7 @@
     "format-full": "<span color='#222222' bgcolor='#689d6a'> FULL </span> {capacity}%",
     "format-charging": "<span color='#222222' bgcolor='#689d6a'> POW </span> {capacity}%",
     "format-charging-warning": "<span color='#222222' bgcolor='#e78a4e'> POW </span> {capacity}%",
+    "format-charging-critical": "<span color='#222222' bgcolor='#cc241d'> POW </span> {capacity}%",
     "format-plugged": "<span color='#222222' bgcolor='#689d6a'> POW </span> {capacity}%",
     "format-alt": "<span color='#222222' bgcolor='#689d6a'> BAT </span> {time}",
     "tooltip": false
@@ -153,7 +154,7 @@
 
   "clock": {
     // "timezone": "America/New_York",
-    "format": "<span color='#222222' bgcolor='#8ec07c'> DAY </span> {:%H:%M:%S %A,%d-%m}",
+    "format": "<span color='#222222' bgcolor='#8ec07c'> DAY </span> {:%H:%M:%S %A %d.%m}",
     "tooltip": false,
     "interval":1,
   }

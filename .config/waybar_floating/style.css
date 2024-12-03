@@ -32,7 +32,6 @@ window#waybar.hidden {
   background-color: #83a598;
   border-radius: 2px;
   padding: 0 6px;
-  margin: 5px 4px 5px 5px;
   font-family: IosevkaTerm Nerd Font Propo;
   font-size: 15px;
   font-weight: 800;
@@ -51,7 +50,7 @@ window#waybar.hidden {
   border: 2px solid #222222;
   border-radius: 2px;
   padding: 0 4px;
-  margin: 5px 3px;
+  margin: 0px 3px;
   font-family: IosevkaTerm Nerd Font Propo;
   font-size: 15px;
   font-weight: 800;
@@ -69,7 +68,7 @@ window#waybar.hidden {
   background-color: #8ec07c;
   border-radius: 2px;
   padding: 0 4px;
-  margin: 5px 3px;
+  margin: 0px 3px;
   font-family: IosevkaTerm Nerd Font Propo;
   font-size: 15px;
   font-weight: 800;
@@ -81,7 +80,7 @@ window#waybar.hidden {
   background-color: #8ec07c;
   border-radius: 2px;
   padding: 0 4px;
-  margin: 5px 3px;
+  margin: 0px 3px;
   font-family: IosevkaTerm Nerd Font Propo;
   font-size: 15px;
   font-weight: 800;
@@ -93,7 +92,7 @@ window#waybar.hidden {
   background-color: #8ec07c;
   border-radius: 2px;
   padding: 0 4px;
-  margin: 5px 3px;
+  margin: 0px 3px;
   font-family: IosevkaTerm Nerd Font Propo;
   font-size: 15px;
   font-weight: 800;
@@ -105,7 +104,7 @@ window#waybar.hidden {
   background-color: #8ec07c;
   border-radius: 2px;
   padding: 0 4px;
-  margin: 5px 3px;
+  margin: 0px 3px;
   font-family: IosevkaTerm Nerd Font Propo;
   font-size: 15px;
   font-weight: 800;
@@ -117,7 +116,7 @@ window#waybar.hidden {
   background-color: #ea6962;
   border-radius: 2px;
   padding: 0 4px;
-  margin: 5px 3px;
+  margin: 0px 3px;
   font-family: IosevkaTerm Nerd Font Propo;
   font-size: 15px;
   font-weight: 800;
@@ -133,7 +132,6 @@ window#waybar.hidden {
   font-weight: 800;
   color: #d3869b;
   background: #222222;
-  margin: 5px 4px;
   padding-right: 4px;
   border: 2px solid #222222;
   border-radius: 3px;
@@ -144,7 +142,6 @@ window#waybar.hidden {
 /* ================================ */
 
 #tray {
-  margin: 5 3px;
   padding: 0 6px;
   background: #222222;
   border-radius: 3px;
@@ -160,7 +157,6 @@ window#waybar.hidden {
   font-weight: 800;
   color: #ea6962;
   background: #222222;
-  margin: 5px 2px;
   padding-right: 4px;
   border: 2px solid #222222;
   border-radius: 3px;
@@ -175,7 +171,6 @@ window#waybar.hidden {
   font-weight: 800;
   color: #e78a4e;
   background: #222222;
-  margin: 5px 2px;
   padding-right: 4px;
   border: 2px solid #222222;
   border-radius: 3px;
@@ -190,7 +185,6 @@ window#waybar.hidden {
   font-weight: 800;
   color: #d8a657;
   background: #222222;
-  margin: 5px 2px;
   padding-right: 4px;
   border: 2px solid #222222;
   border-radius: 3px;
@@ -202,7 +196,6 @@ window#waybar.hidden {
   font-weight: 800;
   color: #cc241d;
   background: #222222;
-  margin: 5px 2px;
   padding-right: 4px;
   border: 2px solid #222222;
   border-radius: 3px;
@@ -217,7 +210,6 @@ window#waybar.hidden {
   font-weight: 800;
   color: #f6c657;
   background: #222222;
-  margin: 5px 2px;
   padding-right: 4px;
   border: 2px solid #222222;
   border-radius: 3px;
@@ -232,7 +224,6 @@ window#waybar.hidden {
   font-weight: 800;
   color: #458588;
   background: #222222;
-  margin: 5px 2px;
   padding-right: 4px;
   border: 2px solid #222222;
   border-radius: 3px;
@@ -247,7 +238,6 @@ window#waybar.hidden {
   font-weight: 800;
   color: #83a598;
   background: #222222;
-  margin: 5px 2px;
   padding-right: 4px;
   border: 2px solid #222222;
   border-radius: 3px;
@@ -259,7 +249,6 @@ window#waybar.hidden {
   font-weight: 800;
   color: #ea6962;
   background: #222222;
-  margin: 5px 2px;
   padding-right: 4px;
   border: 2px solid #222222;
   border-radius: 3px;
@@ -274,7 +263,6 @@ window#waybar.hidden {
   font-weight: 800;
   color: #689d6a;
   background: #222222;
-  margin: 5px 2px;
   padding-right: 4px;
   border: 2px solid #222222;
   border-radius: 3px;
@@ -286,7 +274,6 @@ window#waybar.hidden {
   font-weight: 800;
   color: #cc241d;
   background: #222222;
-  margin: 5px 2px;
   padding-right: 4px;
   border: 2px solid #222222;
   border-radius: 3px;
@@ -298,7 +285,6 @@ window#waybar.hidden {
   font-weight: 800;
   color: #e78a4e;
   background: #222222;
-  margin: 5px 2px;
   padding-right: 4px;
   border: 2px solid #222222;
   border-radius: 3px;
@@ -312,7 +298,6 @@ window#waybar.hidden {
   font-weight: 800;
   color: #8ec07c;
   background: #222222;
-  margin: 5px 5px 5px 2px;
   padding-right: 4px;
   border: 2px solid #222222;
   border-radius: 3px;
