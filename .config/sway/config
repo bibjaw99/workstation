@@ -12,7 +12,7 @@ for_window [shell=".*"] focus
 ####################################
 #     Fonts 
 ####################################
-font pango: JetBrainsMono Nerd Font Mono Bold 10
+font pango: IosevkaTerm Nerd Font Mono Bold 10
 
 ################################
 #         Mod Key
@@ -91,6 +91,10 @@ for_window [app_id=Alacritty] focus
 
 assign [app_id="foot"] $ws1
 for_window [app_id=foot] focus
+
+assign [app_id="org.wezfurlong.wezterm"] $ws1
+for_window [app_id=org.wezfurlong.wezterm] focus
+
 # (W-2)
 # ========== Browsers ==========
 assign [app_id="firefox-developer-edition"] $ws2
@@ -98,8 +102,8 @@ for_window [app_id=firefox-developer-edition] focus
 
 # (W-3)
 # ========== Coding ===========
-assign [class="Brave-browser"] $ws3
-for_window [class=Brave-browser] focus
+assign [app_id="brave-browser"] $ws3
+for_window [app_id=brave-browser] focus
 
 # (W-4)
 # ========== File Manager ===========
@@ -251,7 +255,7 @@ bindsym Shift+Print exec grim - | wl-copy && notify-send -e "   Screenshot copie
 bindsym $mod+Shift+Print exec grim -g "$(slurp)" - | wl-copy && notify-send -e "   Screenshot copied to clipboard   "
 
 # start a terminal
-bindsym $mod+Return exec foot
+bindsym $mod+Return exec alacritty
 
 # ibus
 bindsym $mod+Shift+b exec blueman-manager

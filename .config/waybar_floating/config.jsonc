@@ -3,7 +3,7 @@
   "height": 20,
   "spacing": 5,
   "margin-top" :5,
-  "margin-right" :5,
+  "margin-right" :8,
   "margin-left" :8,
   "modules-left": [
     "custom/rofi",

@@ -10,24 +10,26 @@ end
 
 -- =======================================================================
 config.color_scheme = "custom"
+config.term = "xterm-256color"
 config.window_decorations = "NONE"
 config.window_background_opacity = 1
 config.window_close_confirmation = "NeverPrompt"
-config.line_height = 1.1
+config.line_height = 1
 config.cell_width = 1
-config.freetype_load_target = "HorizontalLcd"
+config.enable_scroll_bar = false
+-- config.freetype_load_target = "HorizontalLcd"
 config.enable_tab_bar = false
 config.scrollback_lines = 2000
 config.window_padding = {
-	left = "0.25%",
-	right = "0.25%",
-	top = "0.5%",
-	bottom = "0%",
+	left = "0.5cell",
+	right = "0.25cell",
+	top = "0.3cell",
+	bottom = "0cell",
 }
 
 -- =======================================================================
-config.font = wezterm.font("JetBrainsMono Nerd Font Mono", { weight = "DemiBold" })
-config.font_size = 14.5
+config.font = wezterm.font("IosevkaTerm Nerd Font Mono", { weight = "DemiBold" })
+config.font_size = 16.5
 config.font_rules = {
 
 	-- bold font
@@ -35,7 +37,7 @@ config.font_rules = {
 		intensity = "Bold",
 		italic = false,
 		font = wezterm.font({
-			family = "JetBrainsMono Nerd Font Mono",
+			family = "IosevkaTerm Nerd Font Mono",
 			weight = "ExtraBold",
 		}),
 	},
@@ -45,7 +47,7 @@ config.font_rules = {
 		intensity = "Normal",
 		italic = true,
 		font = wezterm.font({
-			family = "JetBrainsMono Nerd Font Mono",
+			family = "IosevkaTerm Nerd Font Mono",
 			weight = "DemiBold",
 			style = "Italic",
 		}),
@@ -56,7 +58,7 @@ config.font_rules = {
 		intensity = "Bold",
 		italic = true,
 		font = wezterm.font({
-			family = "JetBrainsMono Nerd Font Mono",
+			family = "IosevkaTerm Nerd Font Mono",
 			weight = "ExtraBold",
 			style = "Italic",
 		}),
