@@ -33,7 +33,7 @@ window#waybar.hidden {
   border-radius: 2px;
   padding: 0 6px;
   font-family: IosevkaTerm Nerd Font Propo;
-  font-size: 15px;
+  font-size: 16px;
   font-weight: 800;
 }
 
@@ -52,7 +52,7 @@ window#waybar.hidden {
   padding: 0 4px;
   margin: 0px 3px;
   font-family: IosevkaTerm Nerd Font Propo;
-  font-size: 15px;
+  font-size: 16px;
   font-weight: 800;
 }
 
@@ -70,7 +70,7 @@ window#waybar.hidden {
   padding: 0 4px;
   margin: 0px 3px;
   font-family: IosevkaTerm Nerd Font Propo;
-  font-size: 15px;
+  font-size: 16px;
   font-weight: 800;
 }
 
@@ -82,7 +82,7 @@ window#waybar.hidden {
   padding: 0 4px;
   margin: 0px 3px;
   font-family: IosevkaTerm Nerd Font Propo;
-  font-size: 15px;
+  font-size: 16px;
   font-weight: 800;
 }
 
@@ -94,7 +94,7 @@ window#waybar.hidden {
   padding: 0 4px;
   margin: 0px 3px;
   font-family: IosevkaTerm Nerd Font Propo;
-  font-size: 15px;
+  font-size: 16px;
   font-weight: 800;
 }
 
@@ -106,7 +106,7 @@ window#waybar.hidden {
   padding: 0 4px;
   margin: 0px 3px;
   font-family: IosevkaTerm Nerd Font Propo;
-  font-size: 15px;
+  font-size: 16px;
   font-weight: 800;
 }
 
@@ -118,7 +118,7 @@ window#waybar.hidden {
   padding: 0 4px;
   margin: 0px 3px;
   font-family: IosevkaTerm Nerd Font Propo;
-  font-size: 15px;
+  font-size: 16px;
   font-weight: 800;
 }
 
@@ -128,7 +128,7 @@ window#waybar.hidden {
 
 #window {
   font-family: IosevkaTerm Nerd Font Propo;
-  font-size: 15px;
+  font-size: 16px;
   font-weight: 800;
   color: #d3869b;
   background: #222222;
@@ -153,7 +153,7 @@ window#waybar.hidden {
 
 #disk {
   font-family: IosevkaTerm Nerd Font Propo;
-  font-size: 15px;
+  font-size: 16px;
   font-weight: 800;
   color: #ea6962;
   background: #222222;
@@ -167,7 +167,7 @@ window#waybar.hidden {
 /* ================================ */
 #cpu {
   font-family: IosevkaTerm Nerd Font Propo;
-  font-size: 15px;
+  font-size: 16px;
   font-weight: 800;
   color: #e78a4e;
   background: #222222;
@@ -181,7 +181,7 @@ window#waybar.hidden {
 /* ================================ */
 #temperature {
   font-family: IosevkaTerm Nerd Font Propo;
-  font-size: 15px;
+  font-size: 16px;
   font-weight: 800;
   color: #d8a657;
   background: #222222;
@@ -192,7 +192,7 @@ window#waybar.hidden {
 
 #temperature.critical {
   font-family: IosevkaTerm Nerd Font Propo;
-  font-size: 15px;
+  font-size: 16px;
   font-weight: 800;
   color: #cc241d;
   background: #222222;
@@ -206,7 +206,7 @@ window#waybar.hidden {
 /* ================================ */
 #backlight {
   font-family: IosevkaTerm Nerd Font Propo;
-  font-size: 15px;
+  font-size: 16px;
   font-weight: 800;
   color: #f6c657;
   background: #222222;
@@ -220,7 +220,7 @@ window#waybar.hidden {
 /* ================================ */
 #custom-memory {
   font-family: IosevkaTerm Nerd Font Propo;
-  font-size: 15px;
+  font-size: 16px;
   font-weight: 800;
   color: #458588;
   background: #222222;
@@ -234,7 +234,7 @@ window#waybar.hidden {
 /* ================================ */
 #pulseaudio {
   font-family: IosevkaTerm Nerd Font Propo;
-  font-size: 15px;
+  font-size: 16px;
   font-weight: 800;
   color: #83a598;
   background: #222222;
@@ -245,7 +245,7 @@ window#waybar.hidden {
 
 #pulseaudio.muted {
   font-family: IosevkaTerm Nerd Font Propo;
-  font-size: 15px;
+  font-size: 16px;
   font-weight: 800;
   color: #ea6962;
   background: #222222;
@@ -259,7 +259,7 @@ window#waybar.hidden {
 /* ================================ */
 #battery {
   font-family: IosevkaTerm Nerd Font Propo;
-  font-size: 15px;
+  font-size: 16px;
   font-weight: 800;
   color: #689d6a;
   background: #222222;
@@ -270,7 +270,7 @@ window#waybar.hidden {
 
 #battery.critical {
   font-family: IosevkaTerm Nerd Font Propo;
-  font-size: 15px;
+  font-size: 16px;
   font-weight: 800;
   color: #cc241d;
   background: #222222;
@@ -281,7 +281,7 @@ window#waybar.hidden {
 
 #battery.warning {
   font-family: IosevkaTerm Nerd Font Propo;
-  font-size: 15px;
+  font-size: 16px;
   font-weight: 800;
   color: #e78a4e;
   background: #222222;
@@ -294,7 +294,7 @@ window#waybar.hidden {
 /* ================================ */
 #clock {
   font-family: IosevkaTerm Nerd Font Propo;
-  font-size: 15px;
+  font-size: 16px;
   font-weight: 800;
   color: #8ec07c;
   background: #222222;

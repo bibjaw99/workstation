@@ -28,3 +28,9 @@ create a file in `.config/xdg-desktop-portal/portals.conf` and add the following
 [preferred]
 default=wlr
 ```
+
+## bemoji with fuzzel
+
+```sh
+BEMOJI_PICKER_CMD="fuzzel -d" bemoji
+```
