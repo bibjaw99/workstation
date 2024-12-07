@@ -138,7 +138,7 @@ window#waybar.hidden {
   color: #d3869b;
   background: none;
   margin: 5px 0px;
-  font-family: IosevkaTerm Nerd Font Mono;
+  font-family: IosevkaTerm Nerd Font Propo;
   font-size: 15px;
   font-weight: 800;
   border-bottom: 2px solid #d3869b;
@@ -149,8 +149,10 @@ window#waybar.hidden {
 /* ================================ */
 
 #tray {
-  margin: 0 0px;
-  padding: 0 8px;
+  margin: 5px 0px;
+  padding: 0 6px;
+  background: #333333;
+  border-radius: 3px;
 }
 
 /* ================================ */
@@ -158,7 +160,7 @@ window#waybar.hidden {
 /* ================================ */
 
 #disk {
-  font-family: IosevkaTerm Nerd Font Mono;
+  font-family: IosevkaTerm Nerd Font Propo;
   font-size: 15px;
   font-weight: 800;
   color: #ea6962;
@@ -170,7 +172,7 @@ window#waybar.hidden {
 /*            cpu                  */
 /* ================================ */
 #cpu {
-  font-family: IosevkaTerm Nerd Font Mono;
+  font-family: IosevkaTerm Nerd Font Propo;
   font-size: 15px;
   font-weight: 800;
   color: #e78a4e;
@@ -182,7 +184,7 @@ window#waybar.hidden {
 /*            temp                  */
 /* ================================ */
 #temperature {
-  font-family: IosevkaTerm Nerd Font Mono;
+  font-family: IosevkaTerm Nerd Font Propo;
   font-size: 15px;
   font-weight: 800;
   color: #d8a657;
@@ -191,7 +193,7 @@ window#waybar.hidden {
 }
 
 #temperature.critical {
-  font-family: IosevkaTerm Nerd Font Mono;
+  font-family: IosevkaTerm Nerd Font Propo;
   font-size: 15px;
   font-weight: 800;
   color: #cc241d;
@@ -203,7 +205,7 @@ window#waybar.hidden {
 /*            backlight             */
 /* ================================ */
 #backlight {
-  font-family: IosevkaTerm Nerd Font Mono;
+  font-family: IosevkaTerm Nerd Font Propo;
   font-size: 15px;
   font-weight: 800;
   color: #f6c657;
@@ -215,7 +217,7 @@ window#waybar.hidden {
 /*            memory                */
 /* ================================ */
 #custom-memory {
-  font-family: IosevkaTerm Nerd Font Mono;
+  font-family: IosevkaTerm Nerd Font Propo;
   font-size: 15px;
   font-weight: 800;
   color: #458588;
@@ -227,7 +229,7 @@ window#waybar.hidden {
 /*         pulseaudio               */
 /* ================================ */
 #pulseaudio {
-  font-family: IosevkaTerm Nerd Font Mono;
+  font-family: IosevkaTerm Nerd Font Propo;
   font-size: 15px;
   font-weight: 800;
   color: #83a598;
@@ -236,7 +238,7 @@ window#waybar.hidden {
 }
 
 #pulseaudio.muted {
-  font-family: IosevkaTerm Nerd Font Mono;
+  font-family: IosevkaTerm Nerd Font Propo;
   font-size: 15px;
   font-weight: 800;
   color: #ea6962;
@@ -248,7 +250,7 @@ window#waybar.hidden {
 /*            battery               */
 /* ================================ */
 #battery {
-  font-family: IosevkaTerm Nerd Font Mono;
+  font-family: IosevkaTerm Nerd Font Propo;
   font-size: 15px;
   font-weight: 800;
   color: #689d6a;
@@ -257,7 +259,7 @@ window#waybar.hidden {
 }
 
 #battery.critical {
-  font-family: IosevkaTerm Nerd Font Mono;
+  font-family: IosevkaTerm Nerd Font Propo;
   font-size: 15px;
   font-weight: 800;
   color: #cc241d;
@@ -266,7 +268,7 @@ window#waybar.hidden {
 }
 
 #battery.warning {
-  font-family: IosevkaTerm Nerd Font Mono;
+  font-family: IosevkaTerm Nerd Font Propo;
   font-size: 15px;
   font-weight: 800;
   color: #e78a4e;
@@ -275,7 +277,7 @@ window#waybar.hidden {
 }
 
 #battery.chargin.warning {
-  font-family: IosevkaTerm Nerd Font Mono;
+  font-family: IosevkaTerm Nerd Font Propo;
   font-size: 15px;
   font-weight: 800;
   color: #689d6a;
@@ -286,7 +288,7 @@ window#waybar.hidden {
 /*            clock                 */
 /* ================================ */
 #clock {
-  font-family: IosevkaTerm Nerd Font Mono;
+  font-family: IosevkaTerm Nerd Font Propo;
   font-size: 15px;
   font-weight: 800;
   color: #8ec07c;
