@@ -162,11 +162,11 @@ for_window [app_id=org.pwmt.zathura] focus
 assign [app_id="Gnome-disks"] $ws8
 for_window [app_id=Gnome-disks] focus
 
-assign [app_id="Blueman-manager"] $ws8
-for_window [app_id=Blueman-manager] focus
+assign [app_id="blueman-manager"] $ws8
+for_window [app_id=blueman-manager] focus
 
 assign [app_id="com.obsproject.Studio"] $ws8
-for_window [app_id=Blueman-manager] focus
+for_window [app_id=com.obsproject.Studio] focus
 
 assign [app_id="org.pulseaudio.pavucontrol"] $ws8
 for_window [app_id=org.pulseaudio.pavucontrol] focus
