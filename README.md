@@ -59,6 +59,8 @@ Packages I used in my System:
 
 ![Sway and Hyprland](./screenshots/hyprland.png)
 
+![Sway and Hyprland](./screenshots/waybar_floating.png)
+
 ### App launcher and powe menu: Rofi
 
 ![Rofi](./screenshots/rofi_1.png)
