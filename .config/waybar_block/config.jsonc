@@ -160,7 +160,7 @@
 
   "clock": {
     // "timezone": "America/New_York",
-    "format": "<span color='#222222' bgcolor='#8ec07c' >  </span> {:%H:%M:%S %A %d.%m.%y}",
+    "format": "<span color='#222222' bgcolor='#8ec07c' >  </span> {:%a %d %b %H:%M:%S}",
     "tooltip": false,
     "interval":1,
   }
