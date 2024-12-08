@@ -38,7 +38,7 @@ window#waybar {
   padding: 0 6px;
   margin: 5px 0px 5px 0px;
   font-family: IosevkaTerm Nerd Font Propo;
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 800;
 }
 
@@ -57,7 +57,7 @@ window#waybar {
   padding: 0 4px;
   margin: 5px 3px;
   font-family: IosevkaTerm Nerd Font Propo;
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 800;
 }
 
@@ -75,7 +75,7 @@ window#waybar {
   padding: 0 4px;
   margin: 5px 3px;
   font-family: IosevkaTerm Nerd Font Propo;
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 800;
 }
 
@@ -87,7 +87,7 @@ window#waybar {
   padding: 0 4px;
   margin: 5px 3px;
   font-family: IosevkaTerm Nerd Font Propo;
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 800;
 }
 
@@ -99,7 +99,7 @@ window#waybar {
   padding: 0 4px;
   margin: 5px 3px;
   font-family: IosevkaTerm Nerd Font Propo;
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 800;
 }
 
@@ -111,7 +111,7 @@ window#waybar {
   padding: 0 4px;
   margin: 5px 3px;
   font-family: IosevkaTerm Nerd Font Propo;
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 800;
 }
 
@@ -123,7 +123,7 @@ window#waybar {
   padding: 0 4px;
   margin: 5px 3px;
   font-family: IosevkaTerm Nerd Font Propo;
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 800;
 }
 
@@ -133,7 +133,7 @@ window#waybar {
 
 #window {
   font-family: IosevkaTerm Nerd Font Propo;
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 800;
   color: #d3869b;
   margin: 5px 0px;
@@ -159,7 +159,7 @@ window#waybar {
 
 #disk {
   font-family: IosevkaTerm Nerd Font Propo;
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 800;
   color: #ea6962;
   margin: 5px 0px;
@@ -173,7 +173,7 @@ window#waybar {
 /* ================================ */
 #cpu {
   font-family: IosevkaTerm Nerd Font Propo;
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 800;
   color: #e78a4e;
   margin: 5px 0px;
@@ -187,7 +187,7 @@ window#waybar {
 /* ================================ */
 #temperature {
   font-family: IosevkaTerm Nerd Font Propo;
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 800;
   color: #d8a657;
   margin: 5px 0px;
@@ -198,7 +198,7 @@ window#waybar {
 
 #temperature.critical {
   font-family: IosevkaTerm Nerd Font Propo;
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 800;
   color: #cc241d;
   margin: 5px 0px;
@@ -212,7 +212,7 @@ window#waybar {
 /* ================================ */
 #backlight {
   font-family: IosevkaTerm Nerd Font Propo;
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 800;
   color: #f6c657;
   margin: 5px 0px;
@@ -226,7 +226,7 @@ window#waybar {
 /* ================================ */
 #custom-memory {
   font-family: IosevkaTerm Nerd Font Propo;
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 800;
   color: #458588;
   margin: 5px 0px;
@@ -240,7 +240,7 @@ window#waybar {
 /* ================================ */
 #pulseaudio {
   font-family: IosevkaTerm Nerd Font Propo;
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 800;
   color: #83a598;
   margin: 5px 0px;
@@ -251,7 +251,7 @@ window#waybar {
 
 #pulseaudio.muted {
   font-family: IosevkaTerm Nerd Font Propo;
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 800;
   color: #ea6962;
   margin: 5px 0px;
@@ -265,7 +265,7 @@ window#waybar {
 /* ================================ */
 #battery {
   font-family: IosevkaTerm Nerd Font Propo;
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 800;
   color: #689d6a;
   margin: 5px 0px;
@@ -276,7 +276,7 @@ window#waybar {
 
 #battery.critical {
   font-family: IosevkaTerm Nerd Font Propo;
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 800;
   color: #cc241d;
   margin: 5px 0px;
@@ -287,7 +287,7 @@ window#waybar {
 
 #battery.warning {
   font-family: IosevkaTerm Nerd Font Propo;
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 800;
   color: #e78a4e;
   margin: 5px 0px;
@@ -300,7 +300,7 @@ window#waybar {
 /* ================================ */
 #clock {
   font-family: IosevkaTerm Nerd Font Propo;
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 800;
   color: #8ec07c;
   margin: 5px 0px 5px 0px;

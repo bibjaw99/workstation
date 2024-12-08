@@ -81,7 +81,7 @@
   },
 
   "tray": {
-    "icon-size": 20,
+    "icon-size": 15,
     "spacing": 8
   },
 
@@ -141,16 +141,16 @@
       "warning": 30,
       "critical": 20
     },
-    "format-icons": ["󰂎", "󱊡", "󱊢", "󱊣"],
+    "format-icons": ["󰂎","󰁺","󰁻","󰁽","󰁾","󰁿","󰂀","󰂁","󰂂","󰁹"],
     "format": "<span color='#222222' bgcolor='#689d6a' > {icon} </span> {capacity}%",
     "format-critical": "<span color='#222222' bgcolor='#cc241d' > {icon} </span> {capacity}%!!",
     "format-warning": "<span color='#222222' bgcolor='#e78a4e' > {icon} </span> {capacity}%",
     "format-full": "<span color='#222222' bgcolor='#689d6a' > {icon} </span> {capacity}%",
-    "format-charging": "<span color='#222222' bgcolor='#689d6a' > 󱊦 </span> {capacity}%",
-    "format-charging-warning": "<span color='#222222' bgcolor='#e78a4e' > 󱊥 </span> {capacity}%",
-    "format-charging-critical": "<span color='#222222' bgcolor='#cc241d' > 󱊤 </span> {capacity}%",
-    "format-plugged": "<span color='#222222' bgcolor='#689d6a' > 󱊦 </span> {capacity}%",
-    "format-alt": "<span color='#222222' bgcolor='#689d6a' > 󱊢 </span> {time}",
+    "format-charging": "<span color='#222222' bgcolor='#689d6a' > 󰂅 </span> {capacity}%",
+    "format-charging-warning": "<span color='#222222' bgcolor='#e78a4e' > 󰢝 </span> {capacity}%",
+    "format-charging-critical": "<span color='#222222' bgcolor='#cc241d' > 󰢜 </span> {capacity}%",
+    "format-plugged": "<span color='#222222' bgcolor='#689d6a' > 󰂅 </span> {capacity}%",
+    "format-alt": "<span color='#222222' bgcolor='#689d6a' > 󱧥 </span> {time}",
     "tooltip": false
   },
 
