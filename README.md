@@ -5,15 +5,15 @@
 ## **Descriptions:**
 
 - **OS:** Arch Linux
-- **Window Manager:** i3
-- **Bar:** polybar
-- **Launcher:** rofi
+- **Window Manager:** i3,swaywm,hyprland
+- **Bar:** polybar,waybar
+- **Launcher:** rofi,fuzzel
 - **Compositor:** picom
-- **Terminal:** alacritty
+- **Terminal:** alacritty,wezterm,kitty,foot
 - **Code Editor** : Neovim
-- **Lockscreen:** i3lock
+- **Lockscreen:** i3lock,swaylock
 - **File Manager:** pcmanfm
-- **Fonts:** roboto-condensed (for rofi and polybar), font-awesome (for rofi and polybar), monospace, jetbrainsmono, jetbrainsmono nerd fonts, firacode nerd font (for terminal,qtile bar)
+- **Fonts:** iosevkaterm nerd font, roboto-condensed (for rofi and polybar), font-awesome (for rofi and polybar), monospace, jetbrainsmono, jetbrainsmono nerd fonts, firacode nerd font (for terminal,qtile bar)
 - **Policykit:** mate-polkit
 
 # Notes ⚠️
@@ -61,7 +61,7 @@ Packages I used in my System:
 
 ![Sway and Hyprland](./screenshots/waybar_floating.png)
 
-### App launcher and powe menu: Rofi
+### App launcher and power menu: Rofi
 
 ![Rofi](./screenshots/rofi_1.png)
 ![Rofi](./screenshots/rofi_2.png)
