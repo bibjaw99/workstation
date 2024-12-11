@@ -116,7 +116,7 @@
   },
 
   "custom/memory": {
-    "exec": "~/.config/waybar/scripts/memory_usage.sh",
+    "exec": "~/.config/custom_scripts/memory_usage.sh",
     "interval": 2,
     "return-type": "json",
     "format": "<span color='#222222' bgcolor='#458588' >  </span> {}"
