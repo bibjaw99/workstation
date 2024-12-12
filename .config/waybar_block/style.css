@@ -19,7 +19,6 @@ window#waybar {
   color: #fff4d2;
   padding: 0px 5px;
   margin: 0;
-  border-radius: 3px;
 }
 
 .modules-left {
@@ -34,7 +33,7 @@ window#waybar {
   color: #222222;
   border: 2px solid #458588;
   background-color: #83a598;
-  border-radius: 2px;
+
   padding: 0 6px;
   margin: 5px 0px 5px 0px;
   font-family: JetBrainsMono Nerd Font Propo;
@@ -53,7 +52,7 @@ window#waybar {
   color: #fff4d2;
   background-color: #222222;
   border: 2px solid #fff4d2;
-  border-radius: 2px;
+
   padding: 0 4px;
   margin: 5px 3px;
   font-family: JetBrainsMono Nerd Font Propo;
@@ -71,7 +70,7 @@ window#waybar {
   color: #222222;
   border: 2px solid #689d6a;
   background-color: #8ec07c;
-  border-radius: 2px;
+
   padding: 0 4px;
   margin: 5px 3px;
   font-family: JetBrainsMono Nerd Font Propo;
@@ -83,7 +82,7 @@ window#waybar {
   color: #222222;
   border: 2px solid #689d6a;
   background-color: #8ec07c;
-  border-radius: 2px;
+
   padding: 0 4px;
   margin: 5px 3px;
   font-family: JetBrainsMono Nerd Font Propo;
@@ -95,7 +94,7 @@ window#waybar {
   color: #222222;
   border: 2px solid #689d6a;
   background-color: #8ec07c;
-  border-radius: 2px;
+
   padding: 0 4px;
   margin: 5px 3px;
   font-family: JetBrainsMono Nerd Font Propo;
@@ -107,7 +106,7 @@ window#waybar {
   color: #222222;
   border: 2px solid #689d6a;
   background-color: #8ec07c;
-  border-radius: 2px;
+
   padding: 0 4px;
   margin: 5px 3px;
   font-family: JetBrainsMono Nerd Font Propo;
@@ -119,7 +118,7 @@ window#waybar {
   color: #222222;
   border: 2px solid #cc241d;
   background-color: #ea6962;
-  border-radius: 2px;
+
   padding: 0 4px;
   margin: 5px 3px;
   font-family: JetBrainsMono Nerd Font Propo;
@@ -139,7 +138,6 @@ window#waybar {
   margin: 5px 0px;
   padding-right: 4px;
   border: 2px solid #d3869b;
-  border-radius: 3px;
 }
 
 /* ================================ */
@@ -150,7 +148,6 @@ window#waybar {
   margin: 5px 0px;
   padding: 0 6px;
   background: #333333;
-  border-radius: 3px;
 }
 
 /* ================================ */
@@ -165,7 +162,6 @@ window#waybar {
   margin: 5px 0px;
   padding-right: 4px;
   border: 2px solid #ea6962;
-  border-radius: 3px;
 }
 
 /* ================================ */
@@ -179,7 +175,6 @@ window#waybar {
   margin: 5px 0px;
   padding-right: 4px;
   border: 2px solid #e78a4e;
-  border-radius: 3px;
 }
 
 /* ================================ */
@@ -193,7 +188,6 @@ window#waybar {
   margin: 5px 0px;
   padding-right: 4px;
   border: 2px solid #d8a657;
-  border-radius: 3px;
 }
 
 #temperature.critical {
@@ -204,7 +198,6 @@ window#waybar {
   margin: 5px 0px;
   padding-right: 4px;
   border: 2px solid #cc241d;
-  border-radius: 3px;
 }
 
 /* ================================ */
@@ -218,7 +211,6 @@ window#waybar {
   margin: 5px 0px;
   padding-right: 4px;
   border: 2px solid #f6c657;
-  border-radius: 3px;
 }
 
 /* ================================ */
@@ -232,7 +224,6 @@ window#waybar {
   margin: 5px 0px;
   padding-right: 4px;
   border: 2px solid #458588;
-  border-radius: 3px;
 }
 
 /* ================================ */
@@ -246,7 +237,6 @@ window#waybar {
   margin: 5px 0px;
   padding-right: 4px;
   border: 2px solid #83a598;
-  border-radius: 3px;
 }
 
 #pulseaudio.muted {
@@ -257,7 +247,6 @@ window#waybar {
   margin: 5px 0px;
   padding-right: 4px;
   border: 2px solid #ea6962;
-  border-radius: 3px;
 }
 
 /* ================================ */
@@ -271,7 +260,6 @@ window#waybar {
   margin: 5px 0px;
   padding-right: 4px;
   border: 2px solid #689d6a;
-  border-radius: 3px;
 }
 
 #battery.critical {
@@ -282,7 +270,6 @@ window#waybar {
   margin: 5px 0px;
   padding-right: 4px;
   border: 2px solid #cc241d;
-  border-radius: 3px;
 }
 
 #battery.warning {
@@ -293,7 +280,6 @@ window#waybar {
   margin: 5px 0px;
   padding-right: 4px;
   border: 2px solid #e78a4e;
-  border-radius: 3px;
 }
 /* ================================ */
 /*            clock                 */
@@ -306,5 +292,4 @@ window#waybar {
   margin: 5px 0px 5px 0px;
   padding-right: 4px;
   border: 2px solid #8ec07c;
-  border-radius: 3px;
 }

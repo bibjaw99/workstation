@@ -57,7 +57,7 @@ Packages I used in my System:
 
 ### Sway / Hyprland + waybar
 
-![Sway and Hyprland](./screenshots/hyprland.png)
+![Sway and Hyprland](./screenshots/sway.png)
 
 ![Sway and Hyprland](./screenshots/waybar_floating.png)
 
