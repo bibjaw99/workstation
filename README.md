@@ -13,7 +13,7 @@
 - **Code Editor** : Neovim
 - **Lockscreen:** i3lock,swaylock
 - **File Manager:** pcmanfm
-- **Fonts:** iosevkaterm nerd font, roboto-condensed (for rofi and polybar), font-awesome (for rofi and polybar), monospace, jetbrainsmono, jetbrainsmono nerd fonts, firacode nerd font (for terminal,qtile bar)
+- **Fonts:** jetbrainsmono nerd font, roboto-condensed, font-awesome (No longer using Iosevka , since jetbrainsmono just works with any terminal)
 - **Policykit:** mate-polkit
 
 # Notes ⚠️

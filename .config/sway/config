@@ -12,7 +12,7 @@ for_window [shell=".*"] focus
 ####################################
 #     Fonts 
 ####################################
-font pango: IosevkaTerm Nerd Font Mono Bold 10
+font pango: JetBrainsMono Nerd Font Mono Bold 10
 
 ################################
 #         Mod Key

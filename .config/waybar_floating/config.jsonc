@@ -55,7 +55,7 @@
   },
 
   "sway/window": {
-    "format": "<span color='#222222' bgcolor='#d3869b' > 󰻈 </span> {app_id}",
+    "format": "<span color='#222222' bgcolor='#d3869b' >  </span> {app_id}",
     "separate-outputs": true,
     "icon":false,
   },
@@ -79,7 +79,7 @@
   },
 
   "hyprland/window": {
-    "format": "<span color='#222222' bgcolor='#d3869b' > 󰻈 </span> {class}",
+    "format": "<span color='#222222' bgcolor='#d3869b' >  </span> {class}",
     "separate-outputs": true,
     "icon":false,
   },

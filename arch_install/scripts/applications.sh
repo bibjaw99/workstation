@@ -2,8 +2,9 @@
 # GUI Applicationss 
 
 yay -Syy \
-firefox \
-libreoffice-fresh gimp \
+firefox-developer-edition \
+libreoffice-fresh \
+gimp \
 telegram-desktop \
 discord \
 flameshot

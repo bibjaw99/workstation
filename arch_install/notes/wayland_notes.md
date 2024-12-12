@@ -12,6 +12,7 @@
 - rofi-wayland
 - xdg-desktop-portal-wlr
 - nwg-look
+- fuzzel
 
 ## xdg-desktop-portal-wlr in swaywm
 

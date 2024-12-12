@@ -25,7 +25,7 @@ xdg-user-dirs \
 lxappearance-gtk3 \
 ttf-dejavu \
 ttf-roboto \
-ttf-iosevkaterm-nerd \
+ttf-jetbrains-mono-nerd \
 ttf-font-awesome \
 noto-fonts-emoji \
 pavucontrol \

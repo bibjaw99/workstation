@@ -28,8 +28,8 @@ config.window_padding = {
 }
 
 -- =======================================================================
-config.font = wezterm.font("IosevkaTerm Nerd Font Mono", { weight = "DemiBold" })
-config.font_size = 16.5
+config.font = wezterm.font("JetBrainsMono Nerd Font Mono", { weight = "DemiBold" })
+config.font_size = 15
 config.font_rules = {
 
 	-- bold font
@@ -37,7 +37,7 @@ config.font_rules = {
 		intensity = "Bold",
 		italic = false,
 		font = wezterm.font({
-			family = "IosevkaTerm Nerd Font Mono",
+			family = "JetBrainsMono Nerd Font Mono",
 			weight = "ExtraBold",
 		}),
 	},
@@ -47,7 +47,7 @@ config.font_rules = {
 		intensity = "Normal",
 		italic = true,
 		font = wezterm.font({
-			family = "IosevkaTerm Nerd Font Mono",
+			family = "JetBrainsMono Nerd Font Mono",
 			weight = "DemiBold",
 			style = "Italic",
 		}),
@@ -58,7 +58,7 @@ config.font_rules = {
 		intensity = "Bold",
 		italic = true,
 		font = wezterm.font({
-			family = "IosevkaTerm Nerd Font Mono",
+			family = "JetBrainsMono Nerd Font Mono",
 			weight = "ExtraBold",
 			style = "Italic",
 		}),
