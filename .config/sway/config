@@ -3,7 +3,7 @@
 ####################################
 focus_follows_mouse no
 focus_wrapping no
-for_window [app_id="^.*"] border pixel 1
+for_window [app_id="^.*"] border pixel 2
 title_align center
 for_window [shell=".*"] focus
 
@@ -170,6 +170,9 @@ for_window [app_id=com.obsproject.Studio] focus
 
 assign [app_id="org.pulseaudio.pavucontrol"] $ws8
 for_window [app_id=org.pulseaudio.pavucontrol] focus
+
+assign [app_id="nwg-look"] $ws8
+for_window [app_id=nwg-look] focus
 ##############################
 # Focus Changing
 ##############################
@@ -311,7 +314,7 @@ exec swaync
 exec foot --server
 exec XDG_CURRENT_DESKTOP=sway
 exec --no-startup-id /usr/lib/mate-polkit/polkit-mate-authentication-agent-1
-output eDP-1 bg ~/.config/walls/beach_1.png fill
+output eDP-1 bg ~/.config/walls/wall.png fill
 output eDP-1 mode 1920x1080@60Hz
 input "1739:52908:SYNA30FB:00_06CB:CEAC_Touchpad" {
     dwt enabled

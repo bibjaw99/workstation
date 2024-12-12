@@ -8,8 +8,8 @@ neovim \
 i3-wm \
 i3lock \
 polybar \
-rofi \
-rofi-emoji \
+rofi-wayland \
+rofi-emoji-git \
 alacritty \
 pcmanfm \
 gvfs \
@@ -85,4 +85,15 @@ blueman \
 bluez \
 bluez-utils \
 gnome-bluetooth \
-brightnessctl
+brightnessctl \
+tela-circle-icon-theme-black \
+orchis-theme \
+sway \
+waybar \
+swaync \
+swaylock \
+libnotify \
+grim \
+slurp \
+xdg-desktop-portal-wlr \
+nwg-look 

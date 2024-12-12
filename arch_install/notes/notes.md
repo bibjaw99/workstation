@@ -295,3 +295,8 @@ $ sudo mkinitcpio -p linux
 ```
 
 > put them in the .config directory
+
+## image preview with sixel
+
+- libsixel
+- imagemagick

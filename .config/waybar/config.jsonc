@@ -51,7 +51,7 @@
   },
 
   "sway/window": {
-    "format": "<span color='#d3869b'>[]</span> {app_id}",
+    "format": "<span color='#d3869b'>[󰣆]</span> {app_id}",
     "separate-outputs": true,
     "icon":false,
   },
@@ -75,7 +75,7 @@
   },
 
   "hyprland/window": {
-    "format": "<span color='#d3869b'>[]</span> {class}",
+    "format": "<span color='#d3869b'>[󰣆]</span> {class}",
     "separate-outputs": true,
     "icon":false,
   },
@@ -91,7 +91,7 @@
   },
 
   "cpu": {
-    "format": "<span color='#e78a4e'>[]</span> {usage}%",
+    "format": "<span color='#e78a4e'>[]</span> {usage}%",
     "tooltip": false,
     "interval": 1
   },
@@ -101,13 +101,13 @@
     "thermal-zone": 2,
     "hwmon-path": "/sys/class/hwmon/hwmon1/temp1_input",
     "critical-threshold": 70,
-    "format": "<span color='#d8a657'>[]</span> {temperatureC}°C",
-    "format-critical": "<span color='#cc241d'>[]</span> {temperatureC}°C",
+    "format": "<span color='#d8a657'>[󱃃]</span> {temperatureC}°C",
+    "format-critical": "<span color='#cc241d'>[󰔐]</span> {temperatureC}°C",
   },
 
   "backlight": {
     // "device": "acpi_video1",
-    "format": "<span color='#f6c657'>[]</span> {percent}%",
+    "format": "<span color='#f6c657'>[󰞏]</span> {percent}%",
     "tooltip": false
   },
 
