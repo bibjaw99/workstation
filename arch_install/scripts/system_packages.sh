@@ -29,6 +29,10 @@ ttf-jetbrains-mono-nerd \
 ttf-font-awesome \
 noto-fonts-emoji \
 pavucontrol \
+pipewire \
+pipewire-pulse \
+pipewire-jack \
+wireplumber \
 network-manager-applet \
 xarchiver \
 wget \
@@ -91,9 +95,11 @@ orchis-theme \
 sway \
 waybar \
 swaync \
+swaybg \
 swaylock \
 libnotify \
 grim \
 slurp \
 xdg-desktop-portal-wlr \
-nwg-look 
+nwg-look \
+wl-clipboard
