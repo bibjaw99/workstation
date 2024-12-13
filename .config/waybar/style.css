@@ -56,7 +56,7 @@ window#waybar.hidden {
   color: #fff4d2;
   background-color: #222222;
   border: 2px solid #fff4d2;
-  border-radius: 2px;
+  min-width: 22px;
   padding: 0 4px;
   margin: 5px 3px;
   font-family: JetBrainsMono Nerd Font Propo;
@@ -68,13 +68,14 @@ window#waybar.hidden {
   color: #222222;
   background: #d3869b;
   border: 2px solid #b16286;
+  min-width: 22px;
 }
 
 #workspaces button.visible {
   color: #222222;
   border: 2px solid #689d6a;
   background-color: #8ec07c;
-  border-radius: 2px;
+  min-width: 22px;
   padding: 0 4px;
   margin: 5px 3px;
   font-family: JetBrainsMono Nerd Font Propo;
@@ -86,7 +87,7 @@ window#waybar.hidden {
   color: #222222;
   border: 2px solid #689d6a;
   background-color: #8ec07c;
-  border-radius: 2px;
+  min-width: 22px;
   padding: 0 4px;
   margin: 5px 3px;
   font-family: JetBrainsMono Nerd Font Propo;
@@ -98,7 +99,7 @@ window#waybar.hidden {
   color: #222222;
   border: 2px solid #689d6a;
   background-color: #8ec07c;
-  border-radius: 2px;
+  min-width: 22px;
   padding: 0 4px;
   margin: 5px 3px;
   font-family: JetBrainsMono Nerd Font Propo;
@@ -110,7 +111,7 @@ window#waybar.hidden {
   color: #222222;
   border: 2px solid #689d6a;
   background-color: #8ec07c;
-  border-radius: 2px;
+  min-width: 22px;
   padding: 0 4px;
   margin: 5px 3px;
   font-family: JetBrainsMono Nerd Font Propo;
@@ -122,7 +123,7 @@ window#waybar.hidden {
   color: #222222;
   border: 2px solid #cc241d;
   background-color: #ea6962;
-  border-radius: 2px;
+  min-width: 22px;
   padding: 0 4px;
   margin: 5px 3px;
   font-family: JetBrainsMono Nerd Font Propo;

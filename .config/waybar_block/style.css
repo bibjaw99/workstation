@@ -52,7 +52,7 @@ window#waybar {
   color: #fff4d2;
   background-color: #222222;
   border: 2px solid #fff4d2;
-
+  min-width: 25px;
   padding: 0 4px;
   margin: 5px 3px;
   font-family: JetBrainsMono Nerd Font Propo;
@@ -64,13 +64,14 @@ window#waybar {
   color: #222222;
   background: #d3869b;
   border: 2px solid #b16286;
+  min-width: 25px;
 }
 
 #workspaces button.visible {
   color: #222222;
   border: 2px solid #689d6a;
   background-color: #8ec07c;
-
+  min-width: 25px;
   padding: 0 4px;
   margin: 5px 3px;
   font-family: JetBrainsMono Nerd Font Propo;
@@ -82,7 +83,7 @@ window#waybar {
   color: #222222;
   border: 2px solid #689d6a;
   background-color: #8ec07c;
-
+  min-width: 25px;
   padding: 0 4px;
   margin: 5px 3px;
   font-family: JetBrainsMono Nerd Font Propo;
@@ -94,7 +95,7 @@ window#waybar {
   color: #222222;
   border: 2px solid #689d6a;
   background-color: #8ec07c;
-
+  min-width: 25px;
   padding: 0 4px;
   margin: 5px 3px;
   font-family: JetBrainsMono Nerd Font Propo;
@@ -106,7 +107,7 @@ window#waybar {
   color: #222222;
   border: 2px solid #689d6a;
   background-color: #8ec07c;
-
+  min-width: 25px;
   padding: 0 4px;
   margin: 5px 3px;
   font-family: JetBrainsMono Nerd Font Propo;
@@ -118,7 +119,7 @@ window#waybar {
   color: #222222;
   border: 2px solid #cc241d;
   background-color: #ea6962;
-
+  min-width: 25px;
   padding: 0 4px;
   margin: 5px 3px;
   font-family: JetBrainsMono Nerd Font Propo;
