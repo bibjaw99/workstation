@@ -159,8 +159,8 @@ for_window [app_id=org.pwmt.zathura] focus
 
 # (W-8)
 # ========== Settings and Misc. ===========
-assign [app_id="Gnome-disks"] $ws8
-for_window [app_id=Gnome-disks] focus
+assign [app_id="gnome-disks"] $ws8
+for_window [app_id=gnome-disks] focus
 
 assign [app_id="blueman-manager"] $ws8
 for_window [app_id=blueman-manager] focus

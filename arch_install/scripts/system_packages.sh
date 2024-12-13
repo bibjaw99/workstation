@@ -91,7 +91,7 @@ bluez-utils \
 gnome-bluetooth \
 brightnessctl \
 tela-circle-icon-theme-black \
-orchis-theme \
+materia-gtk-theme \
 sway \
 waybar \
 swaync \
@@ -102,4 +102,5 @@ grim \
 slurp \
 xdg-desktop-portal-wlr \
 nwg-look \
-wl-clipboard
+wl-clipboard \
+wlsunset

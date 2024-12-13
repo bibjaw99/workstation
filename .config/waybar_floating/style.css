@@ -19,7 +19,6 @@ window#waybar {
   color: #fff4d2;
   padding: 0;
   margin: 0;
-  border-radius: 3px;
 }
 
 window#waybar.hidden {
@@ -28,9 +27,8 @@ window#waybar.hidden {
 
 #custom-rofi {
   color: #222222;
-  border: 2px solid #222222;
+  border: 3px solid #222222;
   background-color: #83a598;
-  border-radius: 2px;
   padding: 0 6px;
   font-family: JetBrainsMono Nerd Font Propo;
   font-size: 15px;
@@ -47,8 +45,7 @@ window#waybar.hidden {
 #workspaces button {
   color: #fff4d2;
   background-color: #222222;
-  border: 2px solid #222222;
-  border-radius: 2px;
+  border: 3px solid #222222;
   padding: 0 4px;
   margin: 0px 3px;
   min-width: 25px;
@@ -60,15 +57,14 @@ window#waybar.hidden {
 #workspaces button:hover {
   color: #222222;
   background: #d3869b;
-  border: 2px solid #222222;
+  border: 3px solid #222222;
   min-width: 25px;
 }
 
 #workspaces button.visible {
   color: #222222;
-  border: 2px solid #222222;
+  border: 3px solid #222222;
   background-color: #8ec07c;
-  border-radius: 2px;
   padding: 0 4px;
   margin: 0px 3px;
   min-width: 25px;
@@ -79,9 +75,8 @@ window#waybar.hidden {
 
 #workspaces button.visible:hover {
   color: #222222;
-  border: 2px solid #222222;
+  border: 3px solid #222222;
   background-color: #8ec07c;
-  border-radius: 2px;
   padding: 0 4px;
   margin: 0px 3px;
   min-width: 25px;
@@ -92,9 +87,8 @@ window#waybar.hidden {
 
 #workspaces button.active {
   color: #222222;
-  border: 2px solid #222222;
+  border: 3px solid #222222;
   background-color: #8ec07c;
-  border-radius: 2px;
   padding: 0 4px;
   margin: 0px 3px;
   min-width: 25px;
@@ -105,9 +99,8 @@ window#waybar.hidden {
 
 #workspaces button.active:hover {
   color: #222222;
-  border: 2px solid #222222;
+  border: 3px solid #222222;
   background-color: #8ec07c;
-  border-radius: 2px;
   padding: 0 4px;
   margin: 0px 3px;
   min-width: 25px;
@@ -118,9 +111,8 @@ window#waybar.hidden {
 
 #workspaces button.urgent {
   color: #222222;
-  border: 2px solid #222222;
+  border: 3px solid #222222;
   background-color: #ea6962;
-  border-radius: 2px;
   padding: 0 4px;
   margin: 0px 3px;
   min-width: 25px;
@@ -140,8 +132,7 @@ window#waybar.hidden {
   color: #d3869b;
   background: #222222;
   padding-right: 4px;
-  border: 2px solid #222222;
-  border-radius: 3px;
+  border: 3px solid #222222;
 }
 
 /* ================================ */
@@ -151,7 +142,6 @@ window#waybar.hidden {
 #tray {
   padding: 0 6px;
   background: #222222;
-  border-radius: 3px;
 }
 
 /* ================================ */
@@ -165,8 +155,7 @@ window#waybar.hidden {
   color: #ea6962;
   background: #222222;
   padding-right: 4px;
-  border: 2px solid #222222;
-  border-radius: 3px;
+  border: 3px solid #222222;
 }
 
 /* ================================ */
@@ -179,8 +168,7 @@ window#waybar.hidden {
   color: #e78a4e;
   background: #222222;
   padding-right: 4px;
-  border: 2px solid #222222;
-  border-radius: 3px;
+  border: 3px solid #222222;
 }
 
 /* ================================ */
@@ -193,8 +181,7 @@ window#waybar.hidden {
   color: #d8a657;
   background: #222222;
   padding-right: 4px;
-  border: 2px solid #222222;
-  border-radius: 3px;
+  border: 3px solid #222222;
 }
 
 #temperature.critical {
@@ -204,8 +191,7 @@ window#waybar.hidden {
   color: #cc241d;
   background: #222222;
   padding-right: 4px;
-  border: 2px solid #222222;
-  border-radius: 3px;
+  border: 3px solid #222222;
 }
 
 /* ================================ */
@@ -218,8 +204,7 @@ window#waybar.hidden {
   color: #f6c657;
   background: #222222;
   padding-right: 4px;
-  border: 2px solid #222222;
-  border-radius: 3px;
+  border: 3px solid #222222;
 }
 
 /* ================================ */
@@ -232,8 +217,7 @@ window#waybar.hidden {
   color: #458588;
   background: #222222;
   padding-right: 4px;
-  border: 2px solid #222222;
-  border-radius: 3px;
+  border: 3px solid #222222;
 }
 
 /* ================================ */
@@ -246,8 +230,7 @@ window#waybar.hidden {
   color: #83a598;
   background: #222222;
   padding-right: 4px;
-  border: 2px solid #222222;
-  border-radius: 3px;
+  border: 3px solid #222222;
 }
 
 #pulseaudio.muted {
@@ -257,8 +240,7 @@ window#waybar.hidden {
   color: #ea6962;
   background: #222222;
   padding-right: 4px;
-  border: 2px solid #222222;
-  border-radius: 3px;
+  border: 3px solid #222222;
 }
 
 /* ================================ */
@@ -271,8 +253,7 @@ window#waybar.hidden {
   color: #689d6a;
   background: #222222;
   padding-right: 4px;
-  border: 2px solid #222222;
-  border-radius: 3px;
+  border: 3px solid #222222;
 }
 
 #battery.critical {
@@ -282,8 +263,7 @@ window#waybar.hidden {
   color: #cc241d;
   background: #222222;
   padding-right: 4px;
-  border: 2px solid #222222;
-  border-radius: 3px;
+  border: 3px solid #222222;
 }
 
 #battery.warning {
@@ -293,8 +273,7 @@ window#waybar.hidden {
   color: #e78a4e;
   background: #222222;
   padding-right: 4px;
-  border: 2px solid #222222;
-  border-radius: 3px;
+  border: 3px solid #222222;
 }
 /* ================================ */
 /*            clock                 */
@@ -306,6 +285,5 @@ window#waybar.hidden {
   color: #8ec07c;
   background: #222222;
   padding-right: 4px;
-  border: 2px solid #222222;
-  border-radius: 3px;
+  border: 3px solid #222222;
 }
