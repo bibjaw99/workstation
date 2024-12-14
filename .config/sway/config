@@ -92,6 +92,9 @@ for_window [app_id=Alacritty] focus
 assign [app_id="foot"] $ws1
 for_window [app_id=foot] focus
 
+assign [app_id="kitty"] $ws1
+for_window [app_id=kitty] focus
+
 assign [app_id="org.wezfurlong.wezterm"] $ws1
 for_window [app_id=org.wezfurlong.wezterm] focus
 

@@ -1,0 +1,79 @@
+{
+    "logo": {
+        "source": "$(find \"${XDG_CONFIG_HOME:-$HOME/.config}/fastfetch/pngs/\" -name \"*.png\" | sort -R | head -1)",
+        "height": 15
+    },
+    "display": {
+        "separator": " : "
+    },
+    "modules": [
+        {
+            "type": "os",
+            "key": "   OS",
+            "keyColor": "red"
+        },
+        {
+            "type": "kernel",
+            "key": "   Kernel",
+            "keyColor": "red"
+        },
+        {
+            "type": "packages",
+            "key": "   Packages",
+            "keyColor": "green"
+        },
+        {
+            "type": "display",
+            "key": "   Display",
+            "keyColor": "green"
+        },
+        {
+            "type": "command",
+            "key": "   OS Age ",
+            "keyColor": "31",
+            "text": "birth_install=$(stat -c %W /); current=$(date +%s); time_progression=$((current - birth_install)); days_difference=$((time_progression / 86400)); days_with_addition=$((days_difference + 422)); echo $days_with_addition days"
+        },
+        {
+            "type": "wm",
+            "key": "   WM",
+            "keyColor": "yellow"
+        },
+        {
+            "type": "terminal",
+            "key": "   Terminal",
+            "keyColor": "yellow"
+        },
+        "break",
+        {
+            "type": "cpu",
+            "format": "{1}",
+            "key": "   CPU",
+            "keyColor": "blue"
+        },
+        {
+            "type":   "host",
+            "key": "    Host",
+            "keyColor": "yellow"
+
+        },
+        {
+            "type": "gpu",
+            "format": "{3}",
+            "key": "   GPU Driver",
+            "keyColor": "magenta"
+        },
+        {
+            "type": "memory",
+            "key": "   Memory",
+            "keyColor": "magenta"
+        },
+
+        "break",
+        {
+            "type": "colors",
+            "paddingLeft": 2,
+            "symbol": "circle"
+        },
+        "break"
+    ]
+}
