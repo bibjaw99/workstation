@@ -40,6 +40,7 @@ export LANG=en_US.UTF-8
 # Editor
 export EDITOR=nvim
 export VISUAL=nvim
+export TERM=screen-256color
 
 ## Editing command line in vim
 autoload -z edit-command-line
@@ -102,3 +103,4 @@ alias tnew="tmux new -s"
 alias tls="tmux ls"
 alias trename="tmux rename-session -t"
 alias ta="tmux a -t"
+eval "$(starship init zsh)"
