@@ -4,9 +4,10 @@
 * {
   /* `otf-font-awesome` is required to be installed for icons */
   padding: 0;
-  border-radius: 0;
-  min-height: 0;
   margin: 0;
+  min-height: 0;
+  border-radius: 0;
+  background: none;
   border: none;
   text-shadow: none;
   transition: none;
@@ -15,24 +16,63 @@
 
 /* the whole window */
 window#waybar {
-  background: none;
   color: #fff4d2;
-  padding: 0;
-  margin: 0;
 }
 
 window#waybar.hidden {
   opacity: 1;
 }
 
-#custom-rofi {
-  color: #222222;
-  border: 3px solid #222222;
-  background-color: #83a598;
-  padding: 0 6px;
+#custom-rofi,
+#workspaces button,
+#workspaces button:hover,
+#workspaces button.visible,
+#workspaces button.visible:hover,
+#workspaces button.active,
+#workspaces button.active:hover,
+#workspaces button.urgent,
+#window,
+#tray,
+#disk,
+#cpu,
+#temperature,
+#temperature.critical,
+#backlight,
+#custom-memory,
+#pulseaudio,
+#pulseaudio.muted,
+#battery,
+#battery.critical,
+#battery.warning,
+#clock {
   font-family: JetBrainsMono Nerd Font Propo;
   font-size: 15px;
   font-weight: 800;
+  color: #222222;
+  background: #222222;
+  border: 3px solid #222222;
+}
+
+#window,
+#tray,
+#disk,
+#cpu,
+#temperature,
+#temperature.critical,
+#backlight,
+#custom-memory,
+#pulseaudio,
+#pulseaudio.muted,
+#battery,
+#battery.critical,
+#battery.warning,
+#clock {
+  padding-right: 4px;
+}
+
+#custom-rofi {
+  background: #83a598;
+  padding: 0 6px;
 }
 
 /* ================================ */
@@ -44,81 +84,33 @@ window#waybar.hidden {
 
 #workspaces button {
   color: #fff4d2;
-  background-color: #222222;
-  border: 3px solid #222222;
   padding: 0 4px;
   margin: 0px 3px;
   min-width: 25px;
-  font-family: JetBrainsMono Nerd Font Propo;
-  font-size: 15px;
-  font-weight: 800;
 }
 
 #workspaces button:hover {
-  color: #222222;
   background: #d3869b;
-  border: 3px solid #222222;
-  min-width: 25px;
 }
 
 #workspaces button.visible {
-  color: #222222;
-  border: 3px solid #222222;
-  background-color: #8ec07c;
-  padding: 0 4px;
-  margin: 0px 3px;
-  min-width: 25px;
-  font-family: JetBrainsMono Nerd Font Propo;
-  font-size: 15px;
-  font-weight: 800;
+  background: #8ec07c;
 }
 
 #workspaces button.visible:hover {
-  color: #222222;
-  border: 3px solid #222222;
-  background-color: #8ec07c;
-  padding: 0 4px;
-  margin: 0px 3px;
-  min-width: 25px;
-  font-family: JetBrainsMono Nerd Font Propo;
-  font-size: 15px;
-  font-weight: 800;
+  background: #8ec07c;
 }
 
 #workspaces button.active {
-  color: #222222;
-  border: 3px solid #222222;
-  background-color: #8ec07c;
-  padding: 0 4px;
-  margin: 0px 3px;
-  min-width: 25px;
-  font-family: JetBrainsMono Nerd Font Propo;
-  font-size: 15px;
-  font-weight: 800;
+  background: #8ec07c;
 }
 
 #workspaces button.active:hover {
-  color: #222222;
-  border: 3px solid #222222;
-  background-color: #8ec07c;
-  padding: 0 4px;
-  margin: 0px 3px;
-  min-width: 25px;
-  font-family: JetBrainsMono Nerd Font Propo;
-  font-size: 15px;
-  font-weight: 800;
+  background: #8ec07c;
 }
 
 #workspaces button.urgent {
-  color: #222222;
-  border: 3px solid #222222;
-  background-color: #ea6962;
-  padding: 0 4px;
-  margin: 0px 3px;
-  min-width: 25px;
-  font-family: JetBrainsMono Nerd Font Propo;
-  font-size: 15px;
-  font-weight: 800;
+  background: #ea6962;
 }
 
 /* ================================ */
@@ -126,13 +118,7 @@ window#waybar.hidden {
 /* ================================ */
 
 #window {
-  font-family: JetBrainsMono Nerd Font Propo;
-  font-size: 15px;
-  font-weight: 800;
   color: #d3869b;
-  background: #222222;
-  padding-right: 4px;
-  border: 3px solid #222222;
 }
 
 /* ================================ */
@@ -140,8 +126,7 @@ window#waybar.hidden {
 /* ================================ */
 
 #tray {
-  padding: 0 6px;
-  background: #222222;
+  padding: 0 6px 0 6px;
 }
 
 /* ================================ */
@@ -149,141 +134,69 @@ window#waybar.hidden {
 /* ================================ */
 
 #disk {
-  font-family: JetBrainsMono Nerd Font Propo;
-  font-size: 15px;
-  font-weight: 800;
   color: #ea6962;
-  background: #222222;
-  padding-right: 4px;
-  border: 3px solid #222222;
 }
 
 /* ================================ */
 /*            cpu                  */
 /* ================================ */
 #cpu {
-  font-family: JetBrainsMono Nerd Font Propo;
-  font-size: 15px;
-  font-weight: 800;
   color: #e78a4e;
-  background: #222222;
-  padding-right: 4px;
-  border: 3px solid #222222;
 }
 
 /* ================================ */
 /*            temp                  */
 /* ================================ */
 #temperature {
-  font-family: JetBrainsMono Nerd Font Propo;
-  font-size: 15px;
-  font-weight: 800;
   color: #d8a657;
-  background: #222222;
-  padding-right: 4px;
-  border: 3px solid #222222;
 }
 
 #temperature.critical {
-  font-family: JetBrainsMono Nerd Font Propo;
-  font-size: 15px;
-  font-weight: 800;
   color: #cc241d;
-  background: #222222;
-  padding-right: 4px;
-  border: 3px solid #222222;
 }
 
 /* ================================ */
 /*            backlight             */
 /* ================================ */
 #backlight {
-  font-family: JetBrainsMono Nerd Font Propo;
-  font-size: 15px;
-  font-weight: 800;
   color: #f6c657;
-  background: #222222;
-  padding-right: 4px;
-  border: 3px solid #222222;
 }
 
 /* ================================ */
 /*            memory                */
 /* ================================ */
 #custom-memory {
-  font-family: JetBrainsMono Nerd Font Propo;
-  font-size: 15px;
-  font-weight: 800;
   color: #458588;
-  background: #222222;
-  padding-right: 4px;
-  border: 3px solid #222222;
 }
 
 /* ================================ */
 /*         pulseaudio               */
 /* ================================ */
 #pulseaudio {
-  font-family: JetBrainsMono Nerd Font Propo;
-  font-size: 15px;
-  font-weight: 800;
   color: #83a598;
-  background: #222222;
-  padding-right: 4px;
-  border: 3px solid #222222;
 }
 
 #pulseaudio.muted {
-  font-family: JetBrainsMono Nerd Font Propo;
-  font-size: 15px;
-  font-weight: 800;
   color: #ea6962;
-  background: #222222;
-  padding-right: 4px;
-  border: 3px solid #222222;
 }
 
 /* ================================ */
 /*            battery               */
 /* ================================ */
 #battery {
-  font-family: JetBrainsMono Nerd Font Propo;
-  font-size: 15px;
-  font-weight: 800;
   color: #689d6a;
-  background: #222222;
-  padding-right: 4px;
-  border: 3px solid #222222;
 }
 
 #battery.critical {
-  font-family: JetBrainsMono Nerd Font Propo;
-  font-size: 15px;
-  font-weight: 800;
   color: #cc241d;
-  background: #222222;
-  padding-right: 4px;
-  border: 3px solid #222222;
 }
 
 #battery.warning {
-  font-family: JetBrainsMono Nerd Font Propo;
-  font-size: 15px;
-  font-weight: 800;
   color: #e78a4e;
-  background: #222222;
-  padding-right: 4px;
-  border: 3px solid #222222;
 }
 /* ================================ */
 /*            clock                 */
 /* ================================ */
 #clock {
-  font-family: JetBrainsMono Nerd Font Propo;
-  font-size: 15px;
-  font-weight: 800;
   color: #8ec07c;
-  background: #222222;
-  padding-right: 4px;
-  border: 3px solid #222222;
 }
