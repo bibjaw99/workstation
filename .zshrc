@@ -40,7 +40,7 @@ export LANG=en_US.UTF-8
 # Editor
 export EDITOR=nvim
 export VISUAL=nvim
-export TERM=screen-256color
+export TERM=xterm-256color
 
 ## Editing command line in vim
 autoload -z edit-command-line
@@ -69,6 +69,7 @@ alias piconfig="nvim ~/.config/picom/picom.conf"
 alias alconfig="nvim ~/.config/alacritty/alacritty.toml"
 alias kitconfig="nvim ~/.config/kitty/kitty.conf"
 alias wezconfig="nvim ~/.config/wezterm/wezterm.lua"
+alias swayfig="nvim ~/.config/sway/"
 alias ls="eza --icons"
 alias la="ls -la"
 alias lsTree="ls --tree"
@@ -84,6 +85,7 @@ alias bsource="source .bashrc"
 alias xx="exit"
 alias cc="clear"
 alias ai="tgpt"
+alias lg="lazygit"
 alias gg="fg"
 alias ins='nvim $(fzf -m --preview="bat --theme=gruvbox-dark --color=always {}")'
 
