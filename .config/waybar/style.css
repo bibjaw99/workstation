@@ -7,7 +7,6 @@
   margin: 0;
   min-height: 0;
   border-radius: 0;
-  background: none;
   border: none;
   text-shadow: none;
   transition: none;
@@ -17,6 +16,7 @@
 /* the whole window */
 window#waybar {
   color: #fff4d2;
+  background: none;
 }
 
 window#waybar.hidden {
@@ -46,7 +46,7 @@ window#waybar.hidden {
 #battery.warning,
 #clock {
   font-family: JetBrainsMono Nerd Font Propo;
-  font-size: 15px;
+  font-size: 16px;
   font-weight: 800;
   color: #222222;
   background: #222222;
