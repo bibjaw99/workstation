@@ -48,9 +48,9 @@ window#waybar.hidden {
   font-family: JetBrainsMono Nerd Font Propo;
   font-size: 16px;
   font-weight: 800;
-  color: #222222;
-  background: #222222;
-  border: 3px solid #222222;
+  color: #202020;
+  background: #202020;
+  border: 3px solid #202020;
 }
 
 #window,

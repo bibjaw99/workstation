@@ -15,7 +15,7 @@
 
 /* the whole window */
 window#waybar {
-  background: #222222;
+  background: #202020;
   color: #fff4d2;
   padding: 0;
   margin: 0;
@@ -58,8 +58,8 @@ window#waybar.hidden {
   font-family: JetBrainsMono Nerd Font Propo;
   font-size: 15px;
   font-weight: 800;
-  color: #222222;
-  background: #222222;
+  color: #202020;
+  background: #202020;
 }
 
 #custom-rofi,
@@ -82,7 +82,7 @@ window#waybar.hidden {
 }
 
 #custom-rofi {
-  color: #222222;
+  color: #202020;
   border: 2px solid #458588;
   background: #83a598;
   border-radius: 2px;
@@ -98,7 +98,7 @@ window#waybar.hidden {
 
 #workspaces button {
   color: #fff4d2;
-  background: #222222;
+  background: #202020;
   border: 2px solid #fff4d2;
   min-width: 22px;
   padding: 0 4px;
@@ -106,38 +106,38 @@ window#waybar.hidden {
 }
 
 #workspaces button:hover {
-  color: #222222;
+  color: #202020;
   background: #d3869b;
   border: 2px solid #b16286;
   min-width: 22px;
 }
 
 #workspaces button.visible {
-  color: #222222;
+  color: #202020;
   border: 2px solid #689d6a;
   background: #8ec07c;
 }
 
 #workspaces button.visible:hover {
-  color: #222222;
+  color: #202020;
   border: 2px solid #689d6a;
   background: #8ec07c;
 }
 
 #workspaces button.active {
-  color: #222222;
+  color: #202020;
   border: 2px solid #689d6a;
   background: #8ec07c;
 }
 
 #workspaces button.active:hover {
-  color: #222222;
+  color: #202020;
   border: 2px solid #689d6a;
   background: #8ec07c;
 }
 
 #workspaces button.urgent {
-  color: #222222;
+  color: #202020;
   border: 2px solid #cc241d;
   background: #ea6962;
 }

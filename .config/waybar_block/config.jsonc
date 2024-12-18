@@ -3,20 +3,21 @@
   "mode":"dock",
   "height": 20,
   "spacing": 5,
-  "margin-top" :3,
-  "margin-right" :3,
-  "margin-left" :3,
 
   "modules-left": [
     "custom/rofi",
     "sway/workspaces",
     "sway/window",
     "hyprland/workspaces",
-    "hyprland/window"
+    "hyprland/window",
+    "tray",
+  ],
+
+  "modules-center": [
+    "clock"
   ],
 
   "modules-right": [
-    "tray",
     "disk",
     "cpu",
     "temperature",
@@ -24,7 +25,6 @@
     "custom/memory",
     "pulseaudio",
     "battery",
-    "clock"
   ],
 
   "custom/rofi": {
@@ -55,7 +55,7 @@
   },
 
   "sway/window": {
-    "format": "<span color='#222222' bgcolor='#d3869b' > 󰣆 </span> {app_id}",
+    "format": "<span color='#202020' bgcolor='#d3869b' > 󰣆 </span> {app_id}",
     "separate-outputs": true,
     "tooltip":false,
   },
@@ -79,7 +79,7 @@
   },
 
   "hyprland/window": {
-    "format": "<span color='#222222' bgcolor='#d3869b' > 󰣆 </span> {class}",
+    "format": "<span color='#202020' bgcolor='#d3869b' > 󰣆 </span> {class}",
     "separate-outputs": true,
     "icon":false,
   },
@@ -90,12 +90,12 @@
   },
 
   "disk": {
-    "format": "<span color='#222222' bgcolor='#ea6962' >  </span> {free}",
+    "format": "<span color='#202020' bgcolor='#ea6962' >  </span> {free}",
     "interval": 20
   },
 
   "cpu": {
-    "format": "<span color='#222222' bgcolor='#e78a4e' >  </span> {usage}%",
+    "format": "<span color='#202020' bgcolor='#e78a4e' >  </span> {usage}%",
     "tooltip": false,
     "interval": 1
   },
@@ -105,13 +105,13 @@
     "thermal-zone": 2,
     "hwmon-path": "/sys/class/hwmon/hwmon1/temp1_input",
     "critical-threshold": 70,
-    "format": "<span color='#222222' bgcolor='#d8a657' > 󱃃 </span> {temperatureC}°C",
-    "format-critical": "<span color='#222222' bgcolor='#cc241d' > 󰔐 </span> {temperatureC}°C",
+    "format": "<span color='#202020' bgcolor='#d8a657' > 󱃃 </span> {temperatureC}°C",
+    "format-critical": "<span color='#202020' bgcolor='#cc241d' > 󰔐 </span> {temperatureC}°C",
   },
 
   "backlight": {
     // "device": "acpi_video1",
-    "format": "<span color='#222222' bgcolor='#f6c657' > 󰞏 </span> {percent}%",
+    "format": "<span color='#202020' bgcolor='#f6c657' > 󰞏 </span> {percent}%",
     "tooltip": false
   },
 
@@ -119,15 +119,15 @@
     "exec": "~/.config/custom_scripts/memory_usage.sh",
     "interval": 2,
     "return-type": "json",
-    "format": "<span color='#222222' bgcolor='#458588' >  </span> {}"
+    "format": "<span color='#202020' bgcolor='#458588' >  </span> {}"
   },
 
   "pulseaudio": {
     // "scroll-step": 1, // %, can be a float
-    "format": "<span color='#222222' bgcolor='#83a598' >  </span> {volume}%",
-    "format-muted": "<span color='#222222' bgcolor='#ea6962' >  </span> {volume}%",
-    "format-bluetooth": "<span color='#222222' bgcolor='#83a598' > 󰂰 </span> {volume}%",
-    "format-bluetooth-muted": "<span color='#222222' bgcolor='#ea6962' > 󰂲 </span> {volume}%",
+    "format": "<span color='#202020' bgcolor='#83a598' >  </span> {volume}%",
+    "format-muted": "<span color='#202020' bgcolor='#ea6962' >  </span> {volume}%",
+    "format-bluetooth": "<span color='#202020' bgcolor='#83a598' > 󰂰 </span> {volume}%",
+    "format-bluetooth-muted": "<span color='#202020' bgcolor='#ea6962' > 󰂲 </span> {volume}%",
     "format-source": "{volume}% ",
     "on-click": "pactl set-sink-mute @DEFAULT_SINK@ toggle",
     "tooltip": false,
@@ -146,21 +146,21 @@
       "critical": 20
     },
     "format-icons": ["󰂎","󰁺","󰁻","󰁽","󰁾","󰁿","󰂀","󰂁","󰂂","󰁹"],
-    "format": "<span color='#222222' bgcolor='#689d6a' > {icon} </span> {capacity}%",
-    "format-critical": "<span color='#222222' bgcolor='#cc241d' > {icon} </span> {capacity}%!!",
-    "format-warning": "<span color='#222222' bgcolor='#e78a4e' > {icon} </span> {capacity}%",
-    "format-full": "<span color='#222222' bgcolor='#689d6a' > {icon} </span> {capacity}%",
-    "format-charging": "<span color='#222222' bgcolor='#689d6a' > 󰂅 </span> {capacity}%",
-    "format-charging-warning": "<span color='#222222' bgcolor='#e78a4e' > 󰢝 </span> {capacity}%",
-    "format-charging-critical": "<span color='#222222' bgcolor='#cc241d' > 󰢜 </span> {capacity}%",
-    "format-plugged": "<span color='#222222' bgcolor='#689d6a' > 󰂅 </span> {capacity}%",
-    "format-alt": "<span color='#222222' bgcolor='#689d6a' > 󱧥 </span> {time}",
+    "format": "<span color='#202020' bgcolor='#689d6a' > {icon} </span> {capacity}%",
+    "format-critical": "<span color='#202020' bgcolor='#cc241d' > {icon} </span> {capacity}%!!",
+    "format-warning": "<span color='#202020' bgcolor='#e78a4e' > {icon} </span> {capacity}%",
+    "format-full": "<span color='#202020' bgcolor='#689d6a' > {icon} </span> {capacity}%",
+    "format-charging": "<span color='#202020' bgcolor='#689d6a' > 󰂅 </span> {capacity}%",
+    "format-charging-warning": "<span color='#202020' bgcolor='#e78a4e' > 󰢝 </span> {capacity}%",
+    "format-charging-critical": "<span color='#202020' bgcolor='#cc241d' > 󰢜 </span> {capacity}%",
+    "format-plugged": "<span color='#202020' bgcolor='#689d6a' > 󰂅 </span> {capacity}%",
+    "format-alt": "<span color='#202020' bgcolor='#689d6a' > 󱧥 </span> {time}",
     "tooltip": false
   },
 
   "clock": {
     // "timezone": "America/New_York",
-    "format": "<span color='#222222' bgcolor='#8ec07c' >  </span> {:%a %d %b %H:%M:%S}",
+    "format": "<span color='#202020' bgcolor='#8ec07c' >  </span> {:%a %d %b %H:%M:%S}",
     "tooltip": false,
     "interval":1,
   }
