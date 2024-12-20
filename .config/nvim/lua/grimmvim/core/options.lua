@@ -4,6 +4,7 @@ local opt = vim.opt
 cmd("let g:netrw_liststyle = 3")
 cmd("filetype plugin indent on")
 cmd([[highlight WinSeparator guibg = None]])
+cmd([[highlight CursorLineNr guifg = #d8a657]])
 
 -- Appearance
 opt.termguicolors = true
@@ -24,7 +25,7 @@ opt.virtualedit = "block"
 opt.wrap = false
 opt.number = true
 opt.relativenumber = true
-opt.cursorline = false
+opt.cursorline = true
 opt.cursorcolumn = false
 opt.signcolumn = "yes"
 
@@ -72,7 +73,7 @@ vim.api.nvim_create_autocmd("ExitPre", {
 vim.api.nvim_create_autocmd("FileType", {
 	pattern = "markdown",
 	callback = function()
-		vim.opt.wrap = true
+		vim.opt.wrap = false
 		vim.opt.linebreak = true
 		vim.opt.tabstop = 2
 		vim.opt.shiftwidth = 2
