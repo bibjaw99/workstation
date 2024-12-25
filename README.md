@@ -66,29 +66,31 @@ Packages I used in my System:
 ![Rofi](./screenshots/rofi_1.png)
 ![Rofi](./screenshots/rofi_2.png)
 
-## Keybindings For i3
+## Keybindings For i3 and sway
 
 |    Keybindings    |        Actions        |
 | :---------------: | :-------------------: |
 |       mod+t       |      Tiling Mode      |
 |       mod+e       |       Tab Mode        |
-|       mod+s       |     Stacking Mode     |
+|       mod+u       |     Select Parent     |
+|       mod+i       |     Select Child      |
 |       mod+d       |       rofi drun       |
 |       alt+d       |       rofi run        |
 |       alt+w       |     rofi windows      |
-|       alt+m       |      rofi emoji       |
+|       alt+y       |      rofi emoji       |
+|       mod+m       |   toggle fullscreen   |
 |    mod+Shift+e    |      Power Menu       |
-|    mod+return     |    Kitty terminal     |
+|    mod+return     |       terminal        |
 |    mod+Shift+q    |    Kills a window     |
 | mod+ctrl+vim keys |     resize window     |
 |       mod+z       |      horizontal       |
 |       mod+a       |       vertical        |
-|       mod+m       |   toggle fullscreen   |
 |     mod+space     |    floating window    |
 |       mod+q       | focus floating window |
-|       mod+p       |     focus parent      |
 |       mod+w       |        firefox        |
 |       mod+n       |        pcmanfm        |
+|    mod+Shift+b    |        blueman        |
+|    mod+Shift+n    |        swaync         |
 
 ---
 
