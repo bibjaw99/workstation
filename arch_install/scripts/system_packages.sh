@@ -10,7 +10,7 @@ i3lock \
 polybar \
 rofi-wayland \
 rofi-emoji-git \
-alacritty \
+ghostty \
 pcmanfm \
 gvfs \
 gvfs-mtp \
@@ -66,7 +66,7 @@ xdotool \
 devour-git \
 picom \
 tree \
-ranger \
+yazi \
 poppler \
 ueberzugpp \
 rust \

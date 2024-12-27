@@ -76,7 +76,7 @@ alias lsTree="ls --tree"
 alias vv="nvim"
 alias dv="devour"
 alias open="devour pcmanfm"
-alias ss="ranger ~/Pictures/screenshots"
+alias ss="yazi ~/Pictures/screenshots"
 alias anaconda="source ~/anaconda3/bin/activate && anaconda-navigator"
 alias luadir="cd ~/Documents/Lua/Lua_Basics/"
 alias neodir="cd ~/.config/nvim"
@@ -88,6 +88,7 @@ alias ai="tgpt"
 alias lg="lazygit"
 alias gg="fg"
 alias ins='nvim $(fzf -m --preview="bat --theme=gruvbox-dark --color=always {}")'
+alias fastfetch='fastfetch --kitty ~/.config/fastfetch/pngs/anime.png'
 
 ## Arch
 alias up="yay -Syyu"
