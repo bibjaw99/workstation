@@ -300,3 +300,13 @@ $ sudo mkinitcpio -p linux
 
 - libsixel
 - imagemagick
+
+## Disable gtk rounded corner:
+
+- go to : `.config/gtk-version/gtk.css`
+
+```css
+window {
+  border-radius: 0;
+}
+```

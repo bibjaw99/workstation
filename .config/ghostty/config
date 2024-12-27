@@ -19,6 +19,7 @@ window-padding-x = 5,5
 window-padding-y = 5,0
 window-padding-balance = true
 window-decoration = false
+window-theme = system
 confirm-close-surface = false
 resize-overlay = never
 
