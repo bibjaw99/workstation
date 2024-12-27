@@ -3,6 +3,9 @@
   "mode":"dock",
   "height": 20,
   "spacing": 5,
+  "margin-top" :5,
+  "margin-left" :5,
+  "margin-right" :5,
 
   "modules-left": [
     "custom/rofi",

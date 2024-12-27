@@ -19,6 +19,7 @@ window#waybar {
   color: #fff4d2;
   padding: 0px 5px;
   margin: 0;
+  border-radius: 3px;
 }
 
 .modules-left {
@@ -56,7 +57,7 @@ window#waybar {
   font-weight: 800;
   color: #202020;
   background: #202020;
-  border-radius: 3px;
+  border-radius: 2px;
 }
 
 #window,

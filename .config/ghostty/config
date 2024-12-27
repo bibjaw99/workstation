@@ -22,6 +22,8 @@ window-decoration = false
 window-theme = system
 confirm-close-surface = false
 resize-overlay = never
+gtk-adwaita = false
+title = "Ghostty"
 
 # theming
 background = #222222
