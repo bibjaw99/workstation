@@ -24,7 +24,7 @@ return {
 
 		dashboard.section.buttons.val = {
 			dashboard.button("SPC o", "Options"),
-			dashboard.button("SPC f", "Telescope"),
+			dashboard.button("SPC f", "Fuzzy Find"),
 			dashboard.button("SPC s", "Session"),
 			dashboard.button("SPC b", "Buffers"),
 			dashboard.button("SPC e", "Filetree"),

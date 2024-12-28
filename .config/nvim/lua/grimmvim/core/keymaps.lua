@@ -109,8 +109,8 @@ map(
 
 -- Auto-Session Manager
 map("n", "<leader>ss", ":SessionSave<CR>", { desc = "Session Save", noremap = true, silent = true })
-map("n", "<leader>sr", ":SessionRestore<CR>", { desc = "Session Restore", noremap = true, silent = true })
-map("n", "<leader>sd", ":SessionDelete<CR>", { desc = "Session Delete", noremap = true, silent = true })
+map("n", "<leader>sl", ":SessionRestore ", { desc = "Session List", noremap = true, silent = true })
+map("n", "<leader>sd", ":SessionDelete ", { desc = "Session Delete", noremap = true, silent = true })
 
 -- NvimTree
 map("n", "<leader>ee", ":NvimTreeToggle<cr>", { desc = "NvimTree Toggle", noremap = true, silent = true })
@@ -123,21 +123,6 @@ map("n", "<leader>eo", ":Oil<cr>", { desc = "Oil Nvim", noremap = true, silent =
 -- UndoTree
 map("n", "<leader>uu", ":UndotreeToggle<cr>", { desc = "UndoTree Toggle", noremap = true, silent = true })
 map("n", "<leader>uf", ":UndotreeFocus<cr>", { desc = "UndoTree Focus", noremap = true, silent = true })
-
--- Telescope
-map("n", "<leader>ff", ":Telescope find_files<cr>", { desc = "Fuzzy Find", noremap = true, silent = true })
-map(
-	"n",
-	"<leader>fw",
-	":Telescope current_buffer_fuzzy_find<cr>",
-	{ desc = "Fuzzy Find Pattern", noremap = true, silent = true }
-)
-map("n", "<leader>fo", ":Telescope oldfiles<cr>", { desc = "Fuzzy Find Recent Files", noremap = true, silent = true })
-map("n", "<leader>fg", ":Telescope live_grep<cr>", { desc = "Live Grep", noremap = true, silent = true })
-map("n", "<leader>fc", ":Telescope grep_string<cr>", { desc = "String", noremap = true, silent = true })
-map("n", "<leader>fr", ":Telescope resume<cr>", { desc = "Resume Search", noremap = true, silent = true })
-map("n", "<leader>fk", ":Telescope keymaps<cr>", { desc = "Search Keymaps", noremap = true, silent = true })
-map("n", "<leader>fb", ":Telescope buffers<cr>", { desc = "Fuzzy Find Buffers", noremap = true, silent = true })
 
 -- Gitsigns
 map("n", "<leader>gg", ":Gitsigns<cr>", { desc = "Gitsigns Options", noremap = true, silent = true })
@@ -165,23 +150,23 @@ map("n", "<leader>gn", ":Gitsigns next_hunk<cr>", { desc = "Gitsigns Next Hunk",
 map("n", "<leader>gr", ":Gitsigns refresh<cr>", { desc = "Gitsigns Refresh", noremap = true, silent = true })
 map("n", "<leader>gH", ":Gitsigns diffthis<cr>", { desc = "Gitsigns Compare History", noremap = true, silent = true })
 
+-- FzfLua
+map("n", "<leader>ff", ":FzfLua files<cr>", { desc = "Fuzzy Find", noremap = true, silent = true })
+map("n", "<leader>fo", ":FzfLua oldfiles<cr>", { desc = "Fuzzy History", noremap = true, silent = true })
+map("n", "<leader>fg", ":FzfLua grep<cr>", { desc = "Live Grep", noremap = true, silent = true })
+map("n", "<leader>fc", ":FzfLua grep_cword<cr>", { desc = "Find Under Cursor", noremap = true, silent = true })
+map("n", "<leader>fr", ":FzfLua resume<cr>", { desc = "Resume Search", noremap = true, silent = true })
+map("n", "<leader>fw", ":FzfLua grep_curbuf<cr>", { desc = "Find in Buffer", noremap = true, silent = true })
+map("n", "<leader>fk", ":FzfLua keymaps<cr>", { desc = "Search Keymaps", noremap = true, silent = true })
+map("n", "<leader>fb", ":FzfLua buffers<cr>", { desc = "Fuzzy Find Buffers", noremap = true, silent = true })
+
 -- LSP Keymaps
 map("n", "<leader>li", ":LspInfo<cr>", { desc = "Connected Language Servers", noremap = true, silent = true })
-map(
-	"n",
-	"<leader>lK",
-	":lua vim.lsp.buf.signature_help()<cr>",
-	{ desc = "Signature Help", noremap = true, silent = true }
-)
-map("n", "<leader>lD", ":Telescope diagnostics<cr>", { desc = "Telescope Diagnostic", noremap = true, silent = true })
-map(
-	"n",
-	"<leader>lt",
-	":Telescope lsp_type_definitions<cr>",
-	{ desc = "Type Definition", noremap = true, silent = true }
-)
-map("n", "<leader>ld", ":Telescope lsp_definitions<cr>", { desc = "Go To Definition", noremap = true, silent = true })
-map("n", "<leader>lr", ":Telescope lsp_references<cr>", { desc = "References", noremap = true, silent = true })
+map("n", "<leader>lK", ":lua vim.lsp.buf.signature_help()<cr>", { desc = "Signature", noremap = true, silent = true })
+map("n", "<leader>lD", ":FzfLua lsp_document_diagnostics<cr>", { desc = "Diagnostic", noremap = true, silent = true })
+map("n", "<leader>lt", ":FzfLua lsp_typedefs<cr>", { desc = "Type Definition", noremap = true, silent = true })
+map("n", "<leader>ld", ":FzfLua lsp_definitions<cr>", { desc = "Go To Definition", noremap = true, silent = true })
+map("n", "<leader>lr", ":FzfLua lsp_references<cr>", { desc = "References", noremap = true, silent = true })
 
 -- LSP_Saga
 map("n", "<leader>lk", ":Lspsaga hover_doc<cr>", { desc = "Hover Docs", noremap = true, silent = true })

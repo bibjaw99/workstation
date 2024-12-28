@@ -51,7 +51,7 @@ window#waybar.hidden {
   color: #202020;
   background: #202020;
   border: 3px solid #202020;
-  border-radius: 2px;
+  border-radius: 3px;
 }
 
 #window,

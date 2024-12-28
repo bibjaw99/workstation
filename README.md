@@ -146,7 +146,6 @@ Packages I used in my System:
 ```
 .
 ├── init.lua
-├── lazy-lock.json
 └── lua
     └── grimmvim
         ├── core
@@ -162,7 +161,6 @@ Packages I used in my System:
             ├── colorscheme.lua
             ├── comments.lua
             ├── dressing.lua
-            ├── filetree.lua
             ├── gitsigns.lua
             ├── indent.lua
             ├── lsp
@@ -174,13 +172,16 @@ Packages I used in my System:
             ├── luasnip.lua
             ├── markdown.lua
             ├── notify.lua
+            ├── nvimtree.lua
+            ├── oil.lua
+            ├── search.lua
             ├── session.lua
             ├── substitute.lua
             ├── surround.lua
             ├── tagbar.lua
-            ├── telescope.lua
             ├── toggleTerm.lua
             ├── treesitter.lua
+            ├── undotree.lua
             ├── utilities.lua
             └── whichkey.lua
 ```

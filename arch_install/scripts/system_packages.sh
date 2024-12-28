@@ -5,6 +5,7 @@ xorg-server \
 sddm \
 plymouth \
 neovim \
+fzf \
 i3-wm \
 i3lock \
 polybar \
