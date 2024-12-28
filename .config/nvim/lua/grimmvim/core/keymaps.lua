@@ -191,3 +191,11 @@ map(
 	{ desc = "Go To Previous Diagnostic", noremap = true, silent = true }
 )
 map("n", "<leader>lo", ":Lspsaga outline<cr>", { desc = "LSP Saga outline", noremap = true, silent = true })
+
+-- Snacks Nvim
+map(
+	"n",
+	"<leader>on",
+	':lua require("snacks").notifier.show_history()<cr>',
+	{ desc = "Notifications", noremap = true, silent = true }
+)
