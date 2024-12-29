@@ -45,8 +45,8 @@ opt.hlsearch = true
 opt.ignorecase = true
 opt.smartcase = true
 
-opt.scrolloff = 5
-opt.sidescrolloff = 5
+opt.scrolloff = 999
+opt.sidescrolloff = 999
 opt.mouse = ""
 
 -- Split Windows

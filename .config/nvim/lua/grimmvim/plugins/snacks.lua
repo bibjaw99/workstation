@@ -45,7 +45,7 @@ return {
 			-- ====================
 			notifier = {
 				enabled = true,
-				timeout = 3000,
+				timeout = 2000,
 			}, -- notifier ends
 
 			-- ====================

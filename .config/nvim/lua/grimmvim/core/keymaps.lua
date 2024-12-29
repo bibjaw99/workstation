@@ -2,6 +2,15 @@ vim.g.mapleader = " "
 local map = vim.keymap.set
 
 -- custom functions
+-- toggle conceallevel
+function ToggleConcealLevel()
+	if vim.wo.conceallevel == 0 then
+		vim.wo.conceallevel = 2
+	else
+		vim.wo.conceallevel = 0
+	end
+end
+
 -- automatically create a file if it does not exist
 vim.keymap.set("n", "gf", function()
 	local filepath = vim.fn.expand("<cfile>")
@@ -67,6 +76,12 @@ map("n", "<leader>ol", ":set linebreak!<cr>", { desc = "Toggle Break Lines", nor
 map("n", "<leader>os", ":set spell!<cr>", { desc = "Toggle Spell Check On", noremap = true, silent = true })
 map("n", "<leader>oh", ":set hlsearch!<cr>", { desc = "Toggle Search Highlight", noremap = true, silent = false })
 map("n", "<leader>od", ":pwd<cr>", { desc = "Current Working Directory", noremap = true, silent = false })
+map(
+	"n",
+	"<leader>oc",
+	":lua ToggleConcealLevel()<cr>",
+	{ desc = "Toggle Conceallevel", noremap = true, silent = false }
+)
 
 -- Buffers
 map("n", "<Tab>", ":bnext<cr>", { desc = "Next Buffer", noremap = true, silent = true })
@@ -201,3 +216,4 @@ map(
 )
 map("n", "<leader>cd", ':lua require("snacks").dim()<cr>', { desc = "Dim", noremap = true, silent = true })
 map("n", "<leader>cz", ':lua require("snacks").zen()<cr>', { desc = "Zen Mode", noremap = true, silent = true })
+map("n", "<leader>cg", ':lua require("snacks").lazygit()<cr>', { desc = "LazyGit", noremap = true, silent = true })
