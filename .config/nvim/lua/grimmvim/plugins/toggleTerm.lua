@@ -1,9 +1,7 @@
 return {
 	"akinsho/toggleterm.nvim",
-
 	config = function()
 		local toggleterm = require("toggleterm")
-
 		toggleterm.setup({
 			size = 15,
 			open_mapping = [[<c-q>]],
@@ -15,9 +13,9 @@ return {
 			direction = "float",
 			autochdir = true,
 			float_opts = {
-				border = "double",
-				width = 140,
-				height = 32,
+				border = "single",
+				width = 130,
+				height = 30,
 			},
 		})
 	end,

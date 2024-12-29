@@ -1,14 +1,12 @@
 return {
 	"neovim/nvim-lspconfig",
 	event = { "BufReadPre", "BufNewFile" },
-	dependencies = {
-		"hrsh7th/cmp-nvim-lsp",
-	},
+	dependencies = { "saghen/blink.cmp" },
 	config = function()
 		local lspconfig = require("lspconfig")
 		local lspui = require("lspconfig.ui.windows")
-		local cmp_nvim_lsp = require("cmp_nvim_lsp")
-		local capabilities = cmp_nvim_lsp.default_capabilities()
+		local blinkCmp = require("blink.cmp")
+		local capabilities = blinkCmp.get_lsp_capabilities()
 
 		local signs = { Error = " ", Warn = " ", Hint = "󰠠 ", Info = " " }
 		for type, icon in pairs(signs) do

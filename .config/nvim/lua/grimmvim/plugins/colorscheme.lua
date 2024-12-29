@@ -14,5 +14,9 @@ return {
 		vim.api.nvim_set_hl(0, "FloatBorder", { link = "Normal" })
 		vim.api.nvim_set_hl(0, "LspInfoBorder", { link = "Normal" })
 		vim.api.nvim_set_hl(0, "NormalFloat", { link = "Normal" })
+		vim.api.nvim_set_hl(0, "BlinkCmpMenu", { link = "Normal" })
+		vim.api.nvim_set_hl(0, "BlinkCmpMenuBorder", { link = "Normal" })
+		vim.api.nvim_set_hl(0, "BlinkCmpMenuSelection", { link = "Search" })
+		vim.api.nvim_set_hl(0, "BlinkCmpLabelMatch", { link = "Search" })
 	end,
 }
