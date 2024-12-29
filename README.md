@@ -154,7 +154,6 @@ Packages I used in my System:
         │   ├── lazy.lua
         │   └── options.lua
         └── plugins
-            ├── alpha.lua
             ├── autopairs.lua
             ├── cmp.lua
             ├── colorizer.lua
@@ -162,7 +161,6 @@ Packages I used in my System:
             ├── comments.lua
             ├── dressing.lua
             ├── gitsigns.lua
-            ├── indent.lua
             ├── lsp
             │   ├── formatting.lua
             │   ├── lspconfig.lua
@@ -171,11 +169,11 @@ Packages I used in my System:
             ├── lualine.lua
             ├── luasnip.lua
             ├── markdown.lua
-            ├── notify.lua
             ├── nvimtree.lua
             ├── oil.lua
             ├── search.lua
             ├── session.lua
+            ├── snacks.lua
             ├── substitute.lua
             ├── surround.lua
             ├── tagbar.lua

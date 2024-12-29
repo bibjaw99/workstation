@@ -3,8 +3,8 @@ return {
 	-- priority = 1000,
 	lazy = false,
 	config = function()
-		local Snacks = require("snacks")
-		Snacks.setup({
+		local snacks = require("snacks")
+		snacks.setup({
 			-- ====================
 			-- dashboard setup
 			-- ====================
@@ -71,6 +71,36 @@ return {
 						"SnacksIndent7",
 					},
 				},
+			},
+			bigfile = {
+				enabled = true,
+			},
+			lazygit = {
+				enabled = false,
+			},
+			terminal = {
+				enabled = false,
+			},
+			dim = {
+				enabled = false,
+			},
+			zen = {
+				enabled = false,
+			},
+			input = {
+				enabled = false,
+			},
+			quickfile = {
+				enabled = false,
+			},
+			scroll = {
+				enabled = false,
+			},
+			statuscolumn = {
+				enabled = false,
+			},
+			words = {
+				enabled = false,
 			},
 		})
 		vim.api.nvim_set_hl(0, "SnacksDashboardHeader", { fg = "#d8a657" })

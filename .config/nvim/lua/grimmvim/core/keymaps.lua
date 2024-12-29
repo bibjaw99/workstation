@@ -195,7 +195,9 @@ map("n", "<leader>lo", ":Lspsaga outline<cr>", { desc = "LSP Saga outline", nore
 -- Snacks Nvim
 map(
 	"n",
-	"<leader>on",
+	"<leader>cn",
 	':lua require("snacks").notifier.show_history()<cr>',
 	{ desc = "Notifications", noremap = true, silent = true }
 )
+map("n", "<leader>cd", ':lua require("snacks").dim()<cr>', { desc = "Dim", noremap = true, silent = true })
+map("n", "<leader>cz", ':lua require("snacks").zen()<cr>', { desc = "Zen Mode", noremap = true, silent = true })
