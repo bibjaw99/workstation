@@ -1,14 +1,58 @@
+## blink.lua
+
+```lua
+return {
+	"saghen/blink.cmp",
+	dependencies = {
+		"rafamadriz/friendly-snippets",
+	},
+	version = "*",
+	event = "LspAttach",
+	opts = {
+		keymap = {
+			preset = "default",
+		},
+		appearance = {
+			use_nvim_cmp_as_default = true,
+			nerd_font_variant = "mono",
+		},
+		completion = {
+			accept = {
+				auto_brackets = {
+					enabled = true,
+				},
+			},
+			menu = {
+				border = "single",
+			},
+			documentation = {
+				auto_show = true,
+				auto_show_delay_ms = 200,
+				window = {
+					border = "single",
+				},
+			},
+		},
+		sources = {
+			default = { "luasnip", "lsp", "path", "snippets", "buffer" },
+		},
+	},
+	opts_extend = { "sources.default" },
+}
+```
+
+## lspconfig.lua
+
+```lua
 return {
 	"neovim/nvim-lspconfig",
 	event = { "BufReadPre", "BufNewFile" },
-	dependencies = {
-		"hrsh7th/cmp-nvim-lsp",
-	},
+	dependencies = { "saghen/blink.cmp" },
 	config = function()
 		local lspconfig = require("lspconfig")
 		local lspui = require("lspconfig.ui.windows")
-		local cmp_nvim_lsp = require("cmp_nvim_lsp")
-		local capabilities = cmp_nvim_lsp.default_capabilities()
+		local blinkCmp = require("blink.cmp")
+		local capabilities = blinkCmp.get_lsp_capabilities()
 
 		local signs = { Error = " ", Warn = " ", Hint = "󰠠 ", Info = " " }
 		for type, icon in pairs(signs) do
@@ -110,3 +154,4 @@ return {
 		})
 	end,
 }
+```

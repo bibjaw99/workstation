@@ -3,7 +3,7 @@ return {
 	dependencies = {
 		"JoosepAlviste/nvim-ts-context-commentstring",
 	},
-	event = { "BufReadPre", "BufNewFile" },
+	event = { "LspAttach" },
 	config = function()
 		local comment = require("Comment")
 
