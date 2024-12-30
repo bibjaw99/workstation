@@ -177,6 +177,7 @@ map("n", "<leader>fb", ":FzfLua buffers<cr>", { desc = "Fuzzy Find Buffers", nor
 
 -- LSP Keymaps
 map("n", "<leader>li", ":LspInfo<cr>", { desc = "Connected Language Servers", noremap = true, silent = true })
+map("n", "<leader>lk", ":lua vim.lsp.buf.hover()<cr>", { desc = "Hover Docs", noremap = true, silent = true })
 map("n", "<leader>lK", ":lua vim.lsp.buf.signature_help()<cr>", { desc = "Signature", noremap = true, silent = true })
 map("n", "<leader>lD", ":FzfLua lsp_document_diagnostics<cr>", { desc = "Diagnostic", noremap = true, silent = true })
 map("n", "<leader>lt", ":FzfLua lsp_typedefs<cr>", { desc = "Type Definition", noremap = true, silent = true })
@@ -184,7 +185,6 @@ map("n", "<leader>ld", ":FzfLua lsp_definitions<cr>", { desc = "Go To Definition
 map("n", "<leader>lr", ":FzfLua lsp_references<cr>", { desc = "References", noremap = true, silent = true })
 
 -- LSP_Saga
-map("n", "<leader>lk", ":Lspsaga hover_doc<cr>", { desc = "Hover Docs", noremap = true, silent = true })
 map("n", "<leader>lR", ":Lspsaga rename<cr>", { desc = "Rename", noremap = true, silent = true })
 map("n", "<leader>la", ":Lspsaga code_action<cr>", { desc = "Code Action", noremap = true, silent = true })
 map(

@@ -88,7 +88,7 @@ return {
 				enabled = false,
 			},
 			input = {
-				enabled = false,
+				enabled = true,
 			},
 			quickfile = {
 				enabled = false,
