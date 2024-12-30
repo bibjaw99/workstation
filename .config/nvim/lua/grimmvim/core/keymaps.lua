@@ -180,11 +180,11 @@ map("n", "<leader>li", ":LspInfo<cr>", { desc = "Connected Language Servers", no
 map("n", "<leader>lk", ":lua vim.lsp.buf.hover()<cr>", { desc = "Hover Docs", noremap = true, silent = true })
 map("n", "<leader>lK", ":lua vim.lsp.buf.signature_help()<cr>", { desc = "Signature", noremap = true, silent = true })
 map("n", "<leader>lD", ":FzfLua lsp_document_diagnostics<cr>", { desc = "Diagnostic", noremap = true, silent = true })
-map("n", "<leader>lt", ":FzfLua lsp_typedefs<cr>", { desc = "Type Definition", noremap = true, silent = true })
-map("n", "<leader>ld", ":FzfLua lsp_definitions<cr>", { desc = "Go To Definition", noremap = true, silent = true })
 map("n", "<leader>lr", ":FzfLua lsp_references<cr>", { desc = "References", noremap = true, silent = true })
 
 -- LSP_Saga
+map("n", "<leader>ld", ":Lspsaga goto_definition<cr>", { desc = "Go To Definition", noremap = true, silent = true })
+map("n", "<leader>lt", ":Lspsaga goto_type_definition<cr>", { desc = "Type Definition", noremap = true, silent = true })
 map("n", "<leader>lR", ":Lspsaga rename<cr>", { desc = "Rename", noremap = true, silent = true })
 map("n", "<leader>la", ":Lspsaga code_action<cr>", { desc = "Code Action", noremap = true, silent = true })
 map(

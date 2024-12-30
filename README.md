@@ -114,10 +114,6 @@ Packages I used in my System:
 
 ![LSP](./screenshots/neovim/2.png)
 
-##### Markdown
-
-![Render Markdown](./screenshots/neovim/3.png)
-
 ##### Gitsigns plugin for visual git status
 
 ![Gitsigns](./screenshots/neovim/4.png)
@@ -140,46 +136,3 @@ Packages I used in my System:
   - `~/.local/state/nvim`
 
 - Now copy my `nvim` config folder in the `~/.config` directory
-
-#### Neovim File tree
-
-```
-.
-├── init.lua
-└── lua
-    └── grimmvim
-        ├── core
-        │   ├── init.lua
-        │   ├── keymaps.lua
-        │   ├── lazy.lua
-        │   └── options.lua
-        └── plugins
-            ├── autopairs.lua
-            ├── cmp.lua
-            ├── colorizer.lua
-            ├── colorscheme.lua
-            ├── comments.lua
-            ├── dressing.lua
-            ├── gitsigns.lua
-            ├── lsp
-            │   ├── formatting.lua
-            │   ├── lspconfig.lua
-            │   ├── lspsaga.lua
-            │   └── mason.lua
-            ├── lualine.lua
-            ├── luasnip.lua
-            ├── markdown.lua
-            ├── nvimtree.lua
-            ├── oil.lua
-            ├── search.lua
-            ├── session.lua
-            ├── snacks.lua
-            ├── substitute.lua
-            ├── surround.lua
-            ├── tagbar.lua
-            ├── toggleTerm.lua
-            ├── treesitter.lua
-            ├── undotree.lua
-            ├── utilities.lua
-            └── whichkey.lua
-```
