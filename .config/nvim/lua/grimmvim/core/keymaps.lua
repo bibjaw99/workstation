@@ -124,8 +124,21 @@ map(
 
 -- Auto-Session Manager
 map("n", "<leader>ss", ":SessionSave<CR>", { desc = "Session Save", noremap = true, silent = true })
-map("n", "<leader>sl", ":SessionRestore ", { desc = "Session List", noremap = true, silent = true })
-map("n", "<leader>sd", ":SessionDelete ", { desc = "Session Delete", noremap = true, silent = true })
+map("n", "<leader>sl", ":SessionSearch<CR>", { desc = "Available Sessions", noremap = true, silent = true })
+map("n", "<leader>sd", ":SessionDelete<CR>", { desc = "Delete Sessions", noremap = true, silent = true })
+map(
+	"n",
+	"<leader>sa",
+	":SessionToggleAutoSave<CR>",
+	{ desc = "Toggle Autosave Sessions", noremap = true, silent = true }
+)
+map(
+	"n",
+	"<leader>sD",
+	":SessionDisableAutoSave<CR>",
+	{ desc = "Disable Autosave Sessions", noremap = true, silent = true }
+)
+map("n", "<leader>sp", ":SessionPurgeOrphaned<CR>", { desc = "Purge Orphaned Sessions", noremap = true, silent = true })
 
 -- NvimTree
 map("n", "<leader>ee", ":NvimTreeToggle<cr>", { desc = "NvimTree Toggle", noremap = true, silent = true })
