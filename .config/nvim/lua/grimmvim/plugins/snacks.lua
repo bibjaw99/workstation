@@ -32,6 +32,7 @@ return {
 						{ key = "SPC l", desc = "LSP" },
 						{ key = "SPC p", desc = "Window" },
 						{ key = "SPC g", desc = "Gitsigns" },
+						{ key = "SPC n", desc = "Noice" },
 					},
 				},
 				formats = {

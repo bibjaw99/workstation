@@ -89,18 +89,3 @@ vim.api.nvim_create_autocmd("FileType", {
 		vim.opt_local.formatoptions:remove({ "r", "o" })
 	end,
 })
-
--- disable lsp hover Notifications
-local original_notify = vim.notify
-local banned_messages = { "No information available" }
-vim.notify = function(msg, ...)
-	print("Notification message: " .. msg)
-	for _, banned in ipairs(banned_messages) do
-		-- Optionally, use case-insensitive matching
-		if msg:match("^" .. banned .. "$") then
-			return -- Do nothing if the message is banned
-		end
-	end
-	-- Call the original vim.notify function for non-banned messages
-	original_notify(msg, ...)
-end

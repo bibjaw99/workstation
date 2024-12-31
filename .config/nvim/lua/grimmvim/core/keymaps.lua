@@ -232,3 +232,10 @@ map(
 map("n", "<leader>cd", ':lua require("snacks").dim()<cr>', { desc = "Dim", noremap = true, silent = true })
 map("n", "<leader>cz", ':lua require("snacks").zen()<cr>', { desc = "Zen Mode", noremap = true, silent = true })
 map("n", "<leader>cg", ':lua require("snacks").lazygit()<cr>', { desc = "LazyGit", noremap = true, silent = true })
+
+-- noice
+map("n", "<leader>nh", ":Noice history<cr>", { desc = "History", noremap = true, silent = true })
+map("n", "<leader>nl", ":Noice last<cr>", { desc = "Last Msg", noremap = true, silent = true })
+map("n", "<leader>na", ":Noice all<cr>", { desc = "All Msg", noremap = true, silent = true })
+map("n", "<leader>nd", ":Noice dismiss<cr>", { desc = "Dismiss", noremap = true, silent = true })
+map("n", "<leader>np", ":Noice pick<cr>", { desc = "Pick", noremap = true, silent = true })

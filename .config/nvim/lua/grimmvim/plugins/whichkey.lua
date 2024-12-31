@@ -32,6 +32,7 @@ return {
 				{ "<leader>t", group = "Terminal" },
 				{ "<leader>g", group = "Gitsigns" },
 				{ "<leader>c", group = "Snacks" },
+				{ "<leader>n", group = "Noice" },
 			}),
 		})
 	end,
