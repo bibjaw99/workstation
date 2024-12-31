@@ -123,9 +123,10 @@ map(
 )
 
 -- Auto-Session Manager
-map("n", "<leader>ss", ":SessionSave<CR>", { desc = "Session Save", noremap = true, silent = true })
-map("n", "<leader>sl", ":SessionSearch<CR>", { desc = "Available Sessions", noremap = true, silent = true })
-map("n", "<leader>sd", ":SessionDelete<CR>", { desc = "Delete Sessions", noremap = true, silent = true })
+map("n", "<leader>ss", ":SessionSave<CR>", { desc = "Sessions Save", noremap = true, silent = true })
+map("n", "<leader>sl", ":Autosession search<cr>", { desc = "Available Sessions", noremap = true, silent = true })
+map("n", "<leader>sd", ":Autosession delete<cr>", { desc = "Delete Sessions", noremap = true, silent = true })
+map("n", "<leader>sr", ":SessionRestore ", { desc = "Restore Sessions", noremap = true, silent = true })
 map(
 	"n",
 	"<leader>sa",
