@@ -6,7 +6,7 @@ return {
 		"windwp/nvim-autopairs",
 	},
 	build = ":TSUpdate",
-	event = { "BufReadPre", "BufNewFile" },
+	event = { "VeryLazy" },
 
 	config = function()
 		local treesitter = require("nvim-treesitter.configs")
