@@ -47,6 +47,9 @@ return {
 			notifier = {
 				enabled = true,
 				timeout = 2000,
+				style = "compact",
+				width = { min = 35, max = 0.8 },
+				height = { min = 1, max = 0.8 },
 			}, -- notifier ends
 
 			-- ====================

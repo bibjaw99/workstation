@@ -1,7 +1,7 @@
 return {
 	"nvim-lualine/lualine.nvim",
 	dependencies = { "nvim-tree/nvim-web-devicons" },
-	event = { "BufReadPre", "BufNewFile" },
+	event = { "VeryLazy" },
 	config = function()
 		local lualine = require("lualine")
 
@@ -107,5 +107,6 @@ return {
 			inactive_winbar = {},
 			extensions = {},
 		})
+		vim.opt.laststatus = 3
 	end,
 }

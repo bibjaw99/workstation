@@ -11,6 +11,7 @@ return {
 				formatter = "path.filename_first",
 				cwd_prompt = false,
 				prompt = "> ",
+				file_icons = true,
 			},
 			winopts = {
 				height = 0.9,
