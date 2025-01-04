@@ -51,6 +51,7 @@ return {
 				theme = gruv_material,
 				component_separators = { left = "│", right = "│" },
 				section_separators = { left = "", right = "" },
+				disabled_filetypes = { "snacks_dashboard" },
 			},
 			sections = {
 				lualine_a = {
