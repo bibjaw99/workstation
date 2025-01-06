@@ -244,6 +244,12 @@ map(
 	{ desc = "Notifications", noremap = true, silent = true }
 )
 map("n", "<leader>cd", ':lua require("snacks").dim()<cr>', { desc = "Dim", noremap = true, silent = true })
+map(
+	"n",
+	"<leader>cD",
+	':lua require("snacks").dim.disable()<cr>',
+	{ desc = "Dim Disable", noremap = true, silent = true }
+)
 map("n", "<leader>cz", ':lua require("snacks").zen()<cr>', { desc = "Zen Mode", noremap = true, silent = true })
 map("n", "<leader>cg", ':lua require("snacks").lazygit()<cr>', { desc = "LazyGit", noremap = true, silent = true })
 
