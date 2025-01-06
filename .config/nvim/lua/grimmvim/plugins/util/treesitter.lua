@@ -2,12 +2,10 @@ return {
 	"nvim-treesitter/nvim-treesitter",
 	dependencies = {
 		"windwp/nvim-ts-autotag",
-		"HiPhish/rainbow-delimiters.nvim",
 		"windwp/nvim-autopairs",
 	},
 	build = ":TSUpdate",
 	event = { "VeryLazy" },
-
 	config = function()
 		local treesitter = require("nvim-treesitter.configs")
 		local autotag = require("nvim-ts-autotag")

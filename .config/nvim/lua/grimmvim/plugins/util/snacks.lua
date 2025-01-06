@@ -111,10 +111,10 @@ return {
 
 		-- indent highlight
 		vim.api.nvim_set_hl(0, "SnacksIndent1", { fg = "#ea6962" })
-		vim.api.nvim_set_hl(0, "SnacksIndent2", { fg = "#fabd2f" })
+		vim.api.nvim_set_hl(0, "SnacksIndent2", { fg = "#d8a657" })
 		vim.api.nvim_set_hl(0, "SnacksIndent3", { fg = "#458588" })
 		vim.api.nvim_set_hl(0, "SnacksIndent4", { fg = "#8ec07c" })
-		vim.api.nvim_set_hl(0, "SnacksIndent5", { fg = "#b8bb26" })
+		vim.api.nvim_set_hl(0, "SnacksIndent5", { fg = "#d3869b" })
 		vim.api.nvim_set_hl(0, "SnacksIndent6", { fg = "#e78a4e" })
 		vim.api.nvim_set_hl(0, "SnacksIndent7", { fg = "#83a598" })
 	end,
