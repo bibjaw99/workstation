@@ -38,6 +38,7 @@ map("v", "K", ":m '<-2<CR>gv=gv", { desc = "Up In Visual", noremap = true, silen
 
 -- remapping escape key
 map({ "i", "v" }, "kj", "<Esc>", { desc = "Escape", noremap = true, silent = true })
+map("t", "<Esc><Esc>", "<C-\\><C-N>", { desc = "Escape Term Mode", noremap = true, silent = true })
 
 -- Indenting
 map("v", "<", "<gv", { desc = "Indent >", noremap = true, silent = false })
