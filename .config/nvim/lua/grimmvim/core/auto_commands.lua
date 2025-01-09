@@ -13,7 +13,7 @@ local function RunKeymap(filetype, command)
 			map(
 				0,
 				"n",
-				"<leader><leader>r",
+				"<leader>R",
 				":w<CR>:split term://" .. command .. " %<CR>:resize 10<CR>",
 				{ desc = "Execute File", noremap = true, silent = true }
 			)
