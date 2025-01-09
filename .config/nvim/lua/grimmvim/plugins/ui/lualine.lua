@@ -35,6 +35,10 @@ return {
 				a = { bg = colors.green, fg = colors.black, gui = "bold" },
 				c = { bg = colors.black, fg = colors.cream, gui = "bold" },
 			},
+			terminal = {
+				a = { bg = colors.red, fg = colors.black, gui = "bold" },
+				c = { bg = colors.black, fg = colors.cream, gui = "bold" },
+			},
 			replace = {
 				a = { bg = colors.blue, fg = colors.black, gui = "bold" },
 				c = { bg = colors.violet, fg = colors.black, gui = "bold" },
