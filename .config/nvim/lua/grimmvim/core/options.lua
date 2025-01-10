@@ -1,6 +1,9 @@
 local cmd = vim.cmd
 local opt = vim.opt
 
+cmd("let g:netrw_liststyle = 3")
+cmd("filetype plugin indent on")
+
 -- Appearance
 opt.termguicolors = true
 opt.pumheight = 10
@@ -55,8 +58,3 @@ opt.backup = false
 opt.writebackup = false
 opt.updatetime = 300
 opt.timeoutlen = 500
-
-cmd("let g:netrw_liststyle = 3")
-cmd("filetype plugin indent on")
-cmd([[highlight WinSeparator guibg = None]])
-cmd([[highlight CursorLineNr guifg = #d8a657]])

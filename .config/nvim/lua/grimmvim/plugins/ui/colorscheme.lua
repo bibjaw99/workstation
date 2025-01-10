@@ -10,15 +10,5 @@ return {
 		vim.cmd("let g:gruvbox_material_enable_bold=1")
 		vim.cmd("let g:gruvbox_material_enable_italic=1")
 		vim.cmd([[colorscheme gruvbox-material]]) -- Set color scheme
-		-- changing bg and border colors
-		vim.api.nvim_set_hl(0, "FloatBorder", { link = "Normal" })
-		vim.api.nvim_set_hl(0, "LspInfoBorder", { link = "Normal" })
-		vim.api.nvim_set_hl(0, "NormalFloat", { link = "Normal" })
-		vim.api.nvim_set_hl(0, "Pmenu", { link = "Normal" })
-		vim.api.nvim_set_hl(0, "PmenuSel", { link = "Search" })
-		vim.api.nvim_set_hl(0, "BlinkCmpMenu", { link = "Normal" })
-		vim.api.nvim_set_hl(0, "BlinkCmpMenuBorder", { link = "Normal" })
-		vim.api.nvim_set_hl(0, "BlinkCmpMenuSelection", { link = "Search" })
-		vim.api.nvim_set_hl(0, "BlinkCmpLabelMatch", { link = "Search" })
 	end,
 }

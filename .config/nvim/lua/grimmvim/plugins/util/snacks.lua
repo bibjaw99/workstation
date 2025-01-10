@@ -1,6 +1,6 @@
 return {
 	"folke/snacks.nvim",
-	-- priority = 1000,
+	priority = 1000,
 	lazy = false,
 	config = function()
 		local snacks = require("snacks")
@@ -105,17 +105,5 @@ return {
 				enabled = false,
 			},
 		})
-		vim.api.nvim_set_hl(0, "SnacksDashboardHeader", { fg = "#d8a657" })
-		vim.api.nvim_set_hl(0, "SnacksDashboardDesc", { fg = "#83a598" })
-		vim.api.nvim_set_hl(0, "SnacksDashboardFooter", { fg = "#d8a657" })
-
-		-- indent highlight
-		vim.api.nvim_set_hl(0, "SnacksIndent1", { fg = "#ea6962" })
-		vim.api.nvim_set_hl(0, "SnacksIndent2", { fg = "#d8a657" })
-		vim.api.nvim_set_hl(0, "SnacksIndent3", { fg = "#458588" })
-		vim.api.nvim_set_hl(0, "SnacksIndent4", { fg = "#8ec07c" })
-		vim.api.nvim_set_hl(0, "SnacksIndent5", { fg = "#d3869b" })
-		vim.api.nvim_set_hl(0, "SnacksIndent6", { fg = "#e78a4e" })
-		vim.api.nvim_set_hl(0, "SnacksIndent7", { fg = "#83a598" })
 	end,
 }
