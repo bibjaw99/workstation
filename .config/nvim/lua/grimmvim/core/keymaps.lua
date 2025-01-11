@@ -177,6 +177,7 @@ map("n", "<leader>fb", ":FzfLua buffers<cr>", { desc = "Fuzzy Find Buffers", nor
 
 -- LSP Keymaps
 map("n", "<leader>li", ":LspInfo<cr>", { desc = "Connected Language Servers", noremap = true, silent = true })
+map("n", "<leader>ls", ":lua vim.lsp.buf.signature_help()<CR>", { noremap = true, silent = true })
 map("n", "<leader>lr", ":FzfLua lsp_references<cr>", { desc = "References", noremap = true, silent = true })
 -- LSP_Saga
 map("n", "<leader>lk", ":Lspsaga hover_doc<cr>", { desc = "Hover Docs", noremap = true, silent = true })
