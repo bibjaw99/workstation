@@ -92,13 +92,8 @@ map("n", "<leader>po", ":only<CR>", { desc = "Single Pane", noremap = true, sile
 map("n", "<leader>Tf", ":TagbarToggle<cr>", { desc = "Tagbar Toggle", noremap = true, silent = true })
 
 -- Toggle Term
-map(
-	"n",
-	"<leader>tt",
-	":ToggleTerm direction=horizontal<cr>",
-	{ desc = "Terminal Below", noremap = true, silent = true }
-)
-map("n", "<leader>tf", ":ToggleTerm direction=float<cr>", { desc = "Terminal Floating", noremap = true, silent = true })
+map("n", "<C-q>", ":Floaterminal<cr>", { desc = "Floating Terminal", noremap = true, silent = true })
+map("n", "<leader>t", ":sp<bar>term<cr>:resize 10<cr>", { desc = "Split Terminal", noremap = true, silent = true })
 
 -- Markdown Preview
 map(
@@ -177,11 +172,18 @@ map("n", "<leader>fb", ":FzfLua buffers<cr>", { desc = "Fuzzy Find Buffers", nor
 
 -- LSP Keymaps
 map("n", "<leader>li", ":LspInfo<cr>", { desc = "Connected Language Servers", noremap = true, silent = true })
-map("n", "<leader>ls", ":lua vim.lsp.buf.signature_help()<CR>", { noremap = true, silent = true })
+map(
+	"n",
+	"<leader>ls",
+	":lua vim.lsp.buf.signature_help()<CR>",
+	{ desc = "Signaturehelp", noremap = true, silent = true }
+)
 map("n", "<leader>lr", ":FzfLua lsp_references<cr>", { desc = "References", noremap = true, silent = true })
 -- LSP_Saga
 map("n", "<leader>lk", ":Lspsaga hover_doc<cr>", { desc = "Hover Docs", noremap = true, silent = true })
+map("n", "<leader>lf", ":Lspsaga finder<cr>", { desc = "LSP Finder", noremap = true, silent = true })
 map("n", "<leader>ld", ":Lspsaga goto_definition<cr>", { desc = "Go To Definition", noremap = true, silent = true })
+map("n", "<leader>lp", ":Lspsaga peek_definition<cr>", { desc = "Peek Definition", noremap = true, silent = true })
 map("n", "<leader>lt", ":Lspsaga goto_type_definition<cr>", { desc = "Type Definition", noremap = true, silent = true })
 map("n", "<leader>lR", ":Lspsaga rename<cr>", { desc = "Rename", noremap = true, silent = true })
 map("n", "<leader>la", ":Lspsaga code_action<cr>", { desc = "Code Action", noremap = true, silent = true })
@@ -221,7 +223,7 @@ map(
 	":Lspsaga diagnostic_jump_prev<cr>",
 	{ desc = "Go To Previous Diagnostic", noremap = true, silent = true }
 )
-map("n", "<leader>lo", ":Lspsaga outline<cr>", { desc = "LSP Saga outline", noremap = true, silent = true })
+map("n", "<leader>lo", ":Lspsaga outline<cr>", { desc = "LSP Outline", noremap = true, silent = true })
 
 -- Snacks Nvim
 map(
