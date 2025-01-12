@@ -3,20 +3,20 @@ cursor-style = block
 cursor-style-blink = false
 
 # fonts
-font-size = 15.5
+font-size = 14
 
 font-family = "JetBrainsMono NFM SemiBold"
 font-family-bold = "JetBrainsMono NFM ExtraBold"
 font-family-italic = "JetBrainsMono NFM SemiBold"
 font-family-bold-italic = "JetBrainsMono NFM ExtraBold"
 
-adjust-cell-width = -1
+adjust-cell-width = 0
 
 # Window
 gtk-single-instance = true
 gtk-wide-tabs = false
-window-padding-x = 5,5
-window-padding-y = 5,0
+window-padding-x = 3,3
+window-padding-y = 3,0
 window-padding-balance = true
 window-decoration = false
 window-theme = system

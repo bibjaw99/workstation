@@ -53,7 +53,7 @@ window#waybar {
 #battery.warning,
 #clock {
   font-family: JetBrainsMono Nerd Font Propo;
-  font-size: 15px;
+  font-size: 14px;
   font-weight: 800;
   color: #202020;
   background: #202020;

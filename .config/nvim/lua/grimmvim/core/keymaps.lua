@@ -9,6 +9,9 @@ vim.keymap.set(
 	{ desc = "Open or create file under cursor", noremap = true, silent = true }
 )
 
+-- source buffer
+map("n", "<leader><leader>S", ":source %<cr>", { desc = "Source Buffer", noremap = true, silent = true })
+
 -- Remapping gj gk for wrapped line
 map("n", "j", "gj", { desc = "Down In Wrap", noremap = true, silent = true })
 map("n", "k", "gk", { desc = "Up In Wrap", noremap = true, silent = true })
@@ -124,7 +127,19 @@ map("n", "<leader>sp", ":SessionPurgeOrphaned<CR>", { desc = "Purge Orphaned Ses
 
 -- FileTree
 map("n", "<leader>ec", ":e ~/.config/nvim/lua/grimmvim/<cr>", { desc = "Config Dir", noremap = true, silent = true })
-map("n", "<leader>eo", ":Oil<cr>", { desc = "Oil Nvim", noremap = true, silent = false })
+map(
+	"n",
+	"<leader>et",
+	":e ~/.local/share/nvim/mini.files/trash/<cr>",
+	{ desc = "MiniFiles Trash", noremap = true, silent = true }
+)
+map(
+	"n",
+	"<leader>eo",
+	":lua MiniFiles.open(vim.api.nvim_buf_get_name(0),true)<cr>",
+	{ desc = "MiniFiles Open", noremap = true, silent = false }
+)
+map("n", "<leader>er", ":lua MiniFiles.reset()<cr>", { desc = "MiniFiles Reset", noremap = true, silent = false })
 
 -- UndoTree
 map("n", "<leader>uu", ":UndotreeToggle<cr>", { desc = "UndoTree Toggle", noremap = true, silent = true })

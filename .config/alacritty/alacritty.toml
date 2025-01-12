@@ -44,7 +44,7 @@ cyan = "#8ec07c"
 white = "#fff4d2"
 
 [font]
-size = 15.5
+size = 14
 offset.x=0
 offset.y=0
 
