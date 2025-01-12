@@ -137,8 +137,9 @@ map(
 	"n",
 	"<leader>eo",
 	":lua MiniFiles.open(vim.api.nvim_buf_get_name(0),true)<cr>",
-	{ desc = "MiniFiles Open", noremap = true, silent = false }
+	{ desc = "MiniFiles Current", noremap = true, silent = false }
 )
+map("n", "<leader>ee", ":lua MiniFiles.open()<cr>", { desc = "MiniFiles Open", noremap = true, silent = false })
 map("n", "<leader>er", ":lua MiniFiles.reset()<cr>", { desc = "MiniFiles Reset", noremap = true, silent = false })
 
 -- UndoTree

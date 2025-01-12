@@ -110,9 +110,13 @@ Packages I used in my System:
 
 ![alpha.nvim](./screenshots/neovim/1.png)
 
-##### LSP Support
+##### File Tree : mini.files
 
 ![LSP](./screenshots/neovim/2.png)
+
+##### LSP Support and Autocompletion support
+
+![LSP](./screenshots/neovim/3.png)
 
 ##### Gitsigns plugin for visual git status
 
