@@ -106,4 +106,5 @@ alias tnew="tmux new -s"
 alias tls="tmux ls"
 alias trename="tmux rename-session -t"
 alias ta="tmux a -t"
+
 eval "$(starship init zsh)"
