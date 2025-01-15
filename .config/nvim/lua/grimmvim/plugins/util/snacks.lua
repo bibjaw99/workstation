@@ -3,6 +3,7 @@ return {
 	priority = 1000,
 	lazy = false,
 	config = function()
+		local map = vim.keymap.set
 		local snacks = require("snacks")
 		snacks.setup({
 			-- ====================
@@ -62,6 +63,7 @@ return {
 				scope = {
 					enabled = false,
 				},
+
 				-- can be a list of hl groups to cycle through
 				indent = {
 					hl = {
@@ -72,6 +74,29 @@ return {
 						"SnacksIndent5",
 						"SnacksIndent6",
 						"SnacksIndent7",
+					},
+				},
+			},
+			picker = {
+				enabled = true,
+				prompt = "> ",
+				ui_select = true,
+				layouts = {
+					default = {
+						layout = {
+							box = "horizontal",
+							width = 0.90,
+							height = 0.90,
+							{
+								box = "vertical",
+								border = "rounded",
+								title = "{source} {live}",
+								title_pos = "center",
+								{ win = "input", height = 1, border = "bottom" },
+								{ win = "list", border = "none" },
+							},
+							{ win = "preview", border = "rounded", width = 0.5 },
+						},
 					},
 				},
 			},
@@ -106,5 +131,89 @@ return {
 				enabled = false,
 			},
 		})
+
+		-- keymaps
+		map(
+			"n",
+			"<leader>cn",
+			':lua require("snacks").notifier.show_history()<cr>',
+			{ desc = "Notifications", noremap = true, silent = true }
+		)
+		map("n", "<leader>cd", ':lua require("snacks").dim()<cr>', { desc = "Dim", noremap = true, silent = true })
+		map(
+			"n",
+			"<leader>cD",
+			':lua require("snacks").dim.disable()<cr>',
+			{ desc = "Dim Disable", noremap = true, silent = true }
+		)
+		map("n", "<leader>cz", ':lua require("snacks").zen()<cr>', { desc = "Zen Mode", noremap = true, silent = true })
+		map(
+			"n",
+			"<leader>cg",
+			':lua require("snacks").lazygit()<cr>',
+			{ desc = "LazyGit", noremap = true, silent = true }
+		)
+		-- picker
+		map(
+			"n",
+			"<leader>ff",
+			':lua require("snacks").picker.files()<cr>',
+			{ desc = "Find Files", noremap = true, silent = true }
+		)
+		map(
+			"n",
+			"<leader>fb",
+			':lua require("snacks").picker.buffers()<cr>',
+			{ desc = "Find Buffers", noremap = true, silent = true }
+		)
+		map(
+			"n",
+			"<leader>fo",
+			':lua require("snacks").picker.recent()<cr>',
+			{ desc = "Find Recent files", noremap = true, silent = true }
+		)
+		map(
+			"n",
+			"<leader>fr",
+			':lua require("snacks").picker.resume()<cr>',
+			{ desc = "Resume", noremap = true, silent = true }
+		)
+		map(
+			"n",
+			"<leader>fg",
+			':lua require("snacks").picker.grep()<cr>',
+			{ desc = "Grep", noremap = true, silent = true }
+		)
+		map(
+			"n",
+			"<leader>fG",
+			':lua require("snacks").picker.grep_buffers()<cr>',
+			{ desc = "Grep Buffers", noremap = true, silent = true }
+		)
+		map(
+			"n",
+			"<leader>fc",
+			':lua require("snacks").picker.grep_word()<cr>',
+			{ desc = "Grep Under Curor", noremap = true, silent = true }
+		)
+		map(
+			"n",
+			"<leader>fw",
+			':lua require("snacks").picker.lines()<cr>',
+			{ desc = "Grep Lines", noremap = true, silent = true }
+		)
+		map(
+			"n",
+			"<leader>fk",
+			':lua require("snacks").picker.keymaps()<cr>',
+			{ desc = "Grep Keymaps", noremap = true, silent = true }
+		)
+		-- lsp
+		map(
+			"n",
+			"<leader>lr",
+			':lua require("snacks").picker.lsp_references()<cr>',
+			{ desc = "Lsp References", noremap = true, silent = true }
+		)
 	end,
 }

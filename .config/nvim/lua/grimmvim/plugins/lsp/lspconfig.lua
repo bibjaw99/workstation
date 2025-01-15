@@ -5,6 +5,7 @@ return {
 		"hrsh7th/cmp-nvim-lsp",
 	},
 	config = function()
+		local map = vim.keymap.set
 		local lspconfig = require("lspconfig")
 		local lspui = require("lspconfig.ui.windows")
 		local cmp_nvim_lsp = require("cmp_nvim_lsp")
@@ -108,5 +109,13 @@ return {
 		lspconfig.tailwindcss.setup({
 			capabilities = capabilities,
 		})
+		-- keymaps
+		map("n", "<leader>li", ":LspInfo<cr>", { desc = "Connected Language Servers", noremap = true, silent = true })
+		map(
+			"n",
+			"<leader>ls",
+			":lua vim.lsp.buf.signature_help()<CR>",
+			{ desc = "Signaturehelp", noremap = true, silent = true }
+		)
 	end,
 }

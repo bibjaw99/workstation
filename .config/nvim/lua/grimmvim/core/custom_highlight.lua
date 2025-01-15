@@ -31,6 +31,9 @@ hl(0, "SnacksIndent5", { fg = "#d3869b" })
 hl(0, "SnacksIndent6", { fg = "#e78a4e" })
 hl(0, "SnacksIndent7", { fg = "#83a598" })
 
+-- snacks picker
+hl(0, "SnacksPickerDir", { fg = "#928374" })
+
 -- rainbow delimiter
 hl(0, "RainbowDelimiter1", { fg = "#ea6962" })
 hl(0, "RainbowDelimiter2", { fg = "#d8a657" })

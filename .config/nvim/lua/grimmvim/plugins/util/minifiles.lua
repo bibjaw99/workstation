@@ -3,6 +3,7 @@ return {
 	version = "*",
 	event = "VeryLazy",
 	config = function()
+		local map = vim.keymap.set
 		require("mini.files").setup({
 			options = {
 				permanent_delete = false,
@@ -31,5 +32,31 @@ return {
 				width_preview = 50,
 			},
 		})
+
+		map(
+			"n",
+			"<leader>ec",
+			":e ~/.config/nvim/lua/grimmvim/<cr>",
+			{ desc = "Config Dir", noremap = true, silent = true }
+		)
+		map(
+			"n",
+			"<leader>et",
+			":e ~/.local/share/nvim/mini.files/trash/<cr>",
+			{ desc = "MiniFiles Trash", noremap = true, silent = true }
+		)
+		map(
+			"n",
+			"<leader>eo",
+			":lua MiniFiles.open(vim.api.nvim_buf_get_name(0),true)<cr>",
+			{ desc = "MiniFiles Current", noremap = true, silent = false }
+		)
+		map("n", "<leader>ee", ":lua MiniFiles.open()<cr>", { desc = "MiniFiles Open", noremap = true, silent = false })
+		map(
+			"n",
+			"<leader>er",
+			":lua MiniFiles.reset()<cr>",
+			{ desc = "MiniFiles Reset", noremap = true, silent = false }
+		)
 	end,
 }
