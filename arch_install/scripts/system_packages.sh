@@ -11,7 +11,7 @@ i3lock \
 polybar \
 rofi-wayland \
 rofi-emoji-git \
-foot \
+ghostty \
 pcmanfm \
 gvfs \
 gvfs-mtp \

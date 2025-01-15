@@ -99,6 +99,15 @@ return {
 						},
 					},
 				},
+				win = {
+					-- input window
+					input = {
+						keys = {
+							["<C-h>"] = { "toggle_hidden", mode = { "i", "n" } },
+							["<Esc>"] = { "close", mode = { "i", "n" } },
+						},
+					},
+				},
 			},
 			bigfile = {
 				enabled = true,
@@ -207,6 +216,12 @@ return {
 			"<leader>fk",
 			':lua require("snacks").picker.keymaps()<cr>',
 			{ desc = "Grep Keymaps", noremap = true, silent = true }
+		)
+		map(
+			"n",
+			"<leader>fh",
+			':lua require("snacks").picker.help()<cr>',
+			{ desc = "Help", noremap = true, silent = true }
 		)
 		-- lsp
 		map(

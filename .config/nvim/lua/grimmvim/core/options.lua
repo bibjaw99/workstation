@@ -26,6 +26,7 @@ opt.relativenumber = true
 opt.cursorline = true
 opt.cursorcolumn = false
 opt.signcolumn = "yes"
+opt.wrapscan = false
 
 opt.tabstop = 2
 opt.softtabstop = 2
