@@ -81,6 +81,11 @@ return {
 				enabled = true,
 				prompt = "> ",
 				ui_select = true,
+				formatters = {
+					file = {
+						filename_first = true,
+					},
+				},
 				layouts = {
 					default = {
 						layout = {
