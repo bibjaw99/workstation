@@ -144,6 +144,12 @@ return {
 			words = {
 				enabled = false,
 			},
+			layout = {
+				enabled = false,
+			},
+			debug = {
+				enabled = false,
+			},
 		})
 
 		-- keymaps
@@ -234,6 +240,19 @@ return {
 			"<leader>lr",
 			':lua require("snacks").picker.lsp_references()<cr>',
 			{ desc = "Lsp References", noremap = true, silent = true }
+		)
+		-- buffdelete
+		map(
+			"n",
+			"<leader>bx",
+			':lua require("snacks").bufdelete()<cr>',
+			{ desc = "Delete Buffer", noremap = true, silent = true }
+		)
+		map(
+			"n",
+			"<leader>bo",
+			':lua require("snacks").bufdelete.other()<cr>',
+			{ desc = "Delete Others", noremap = true, silent = true }
 		)
 	end,
 }
