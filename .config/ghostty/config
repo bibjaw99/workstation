@@ -11,6 +11,7 @@ font-family-italic = "JetBrainsMono NFM SemiBold"
 font-family-bold-italic = "JetBrainsMono NFM ExtraBold"
 
 adjust-cell-width = 0
+adjust-cell-height = -10%
 
 # Window
 gtk-single-instance = true
@@ -63,3 +64,12 @@ bold-is-bright = true
 # Other
 copy-on-select = clipboard
 shell-integration-features = no-cursor,sudo,no-title
+
+# keybindings
+keybind = clear
+keybind = ctrl+shift+v=paste_from_clipboard
+keybind = ctrl+shift+c=copy_to_clipboard
+keybind = ctrl+shift+comma=reload_config
+keybind = ctrl+shift+a=select_all
+keybind = ctrl+equal=increase_font_size:1
+keybind = ctrl+minus=decrease_font_size:1
