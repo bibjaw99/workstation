@@ -100,7 +100,7 @@ return {
 								{ win = "input", height = 1, border = "bottom" },
 								{ win = "list", border = "none" },
 							},
-							{ win = "preview", border = "rounded", width = 0.5 },
+							{ win = "preview", title = "{preview}", border = "rounded", width = 0.5 },
 						},
 					},
 				},
@@ -110,6 +110,7 @@ return {
 						keys = {
 							["<C-h>"] = { "toggle_hidden", mode = { "i", "n" } },
 							["<Esc>"] = { "close", mode = { "i", "n" } },
+							["<C-\\>"] = { "toggle_preview", mode = { "i", "n" } },
 						},
 					},
 				},

@@ -1,7 +1,7 @@
 [window]
 dynamic_padding = true
-# padding.x = 2
-# padding.y = 2
+padding.x = 5
+padding.y = 5
 opacity = 1
 decorations = "none"
 
@@ -46,10 +46,10 @@ white = "#fff4d2"
 [font]
 size = 14
 offset.x=0
-offset.y=0
+offset.y=-3
 
 glyph_offset.x=0
-glyph_offset.y=0
+glyph_offset.y=-1
 
 [font.normal]
 family = "JetBrainsMono Nerd Font Mono"
