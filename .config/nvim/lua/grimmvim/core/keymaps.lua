@@ -88,5 +88,5 @@ map("n", "<leader>px", ":close<CR>", { desc = "Close split", noremap = true, sil
 map("n", "<leader>po", ":only<CR>", { desc = "Single Pane", noremap = true, silent = false })
 
 -- Toggle Term
-map("n", "<C-q>", ":Floaterminal<cr>", { desc = "Floating Terminal", noremap = true, silent = true })
+map("n", "<C-q>", ":Lspsaga term_toggle<cr>", { desc = "Floating Terminal", noremap = true, silent = true })
 map("n", "<leader>t", ":sp<bar>term<cr>:resize 10<cr>", { desc = "Split Terminal", noremap = true, silent = true })

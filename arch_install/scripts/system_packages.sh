@@ -5,6 +5,8 @@ xorg-server \
 sddm \
 plymouth \
 neovim \
+tree-sitter-cli \
+texlive-binextra \
 fzf \
 i3-wm \
 i3lock \
