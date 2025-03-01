@@ -96,6 +96,7 @@ brightnessctl \
 tela-circle-icon-theme-black \
 materia-gtk-theme \
 sway \
+hyprland \
 waybar \
 swaync \
 swaybg \
@@ -104,6 +105,7 @@ libnotify \
 grim \
 slurp \
 xdg-desktop-portal-wlr \
+xdg-desktop-portal-hyprland \
 nwg-look \
 wl-clipboard \
 wlsunset

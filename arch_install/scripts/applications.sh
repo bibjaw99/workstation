@@ -2,9 +2,7 @@
 # GUI Applicationss 
 
 yay -Syy \
-firefox-developer-edition \
+zen-browser-bin \
 libreoffice-fresh \
 gimp \
 telegram-desktop \
-discord \
-flameshot

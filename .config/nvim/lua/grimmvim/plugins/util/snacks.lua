@@ -84,6 +84,7 @@ return {
 				formatters = {
 					file = {
 						filename_first = true,
+						truncate = 100, -- truncate the file path to (roughly) this length
 					},
 				},
 				layouts = {
