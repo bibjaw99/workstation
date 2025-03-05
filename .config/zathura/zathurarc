@@ -1,42 +1,40 @@
-set notification-error-bg       "#1d2021"
-set notification-error-fg       "#fb4934"
-set notification-warning-bg     "#1d2021"
-set notification-warning-fg     "#fabd2f"
-set notification-bg             "#1d2021"
-set notification-fg             "#b8bb26"
+set notification-error-bg     "rgba(29, 32, 33, 1.0)"
+set notification-error-fg     "rgba(251, 73, 52, 1.0)"
+set notification-warning-bg   "rgba(29, 32, 33, 1.0)"
+set notification-warning-fg   "rgba(250, 189, 47, 1.0)"
+set notification-bg           "rgba(29, 32, 33, 1.0)"
+set notification-fg           "rgba(184, 187, 38, 1.0)"
 
-set completion-bg               "#1d2021"
-set completion-fg               "#ebdbb2"
-set completion-group-bg         "#3c3836"
-set completion-group-fg         "#928374"
-set completion-highlight-bg     "#83a598"
-set completion-highlight-fg     "#504945"
+set completion-bg             "rgba(29, 32, 33, 1.0)"
+set completion-fg             "rgba(235, 219, 178, 1.0)"
+set completion-group-bg       "rgba(60, 56, 54, 1.0)"
+set completion-group-fg       "rgba(146, 131, 116, 1.0)"
+set completion-highlight-bg   "rgba(131, 165, 152, 1.0)"
+set completion-highlight-fg   "rgba(80, 73, 69, 1.0)"
 
-# Define the color in index mode
-set index-bg                    "#1d1d1d"
-set index-fg                    "#d8a675"
-set index-active-bg             "#458588"
-set index-active-fg             "#ebdbb2"
+set index-bg                  "rgba(29, 29, 29, 1.0)"
+set index-fg                  "rgba(216, 166, 117, 1.0)"
+set index-active-bg           "rgba(69, 133, 136, 1.0)"
+set index-active-fg           "rgba(235, 219, 178, 1.0)"
 
-set inputbar-bg                 "#1d2021"
-set inputbar-fg                 "#ebdbb2"
+set inputbar-bg               "rgba(29, 32, 33, 1.0)"
+set inputbar-fg               "rgba(235, 219, 178, 1.0)"
 
-set statusbar-bg                "#1d1d1d"
-set statusbar-fg                "#ebdbb2"
+set statusbar-bg              "rgba(29, 29, 29, 1.0)"
+set statusbar-fg              "rgba(235, 219, 178, 1.0)"
 
-set highlight-color             "#83a598"
-set highlight-active-color      "#8ec07c"
+set highlight-color           "rgba(131, 165, 152, 0.5)"
+set highlight-active-color    "rgba(142, 192, 124, 0.5)"
 
-set default-bg                  "#1d1d1d"
-set default-fg                  "#ebdbb2"
-set render-loading              true
-set render-loading-bg           "#171717"
-set render-loading-fg           "#ebdbb2"
+set default-bg                "rgba(29, 29, 29, 1.0)"
+set default-fg                "rgba(235, 219, 178, 1.0)"
+set render-loading            true
+set render-loading-bg         "rgba(23, 23, 23, 1.0)"
+set render-loading-fg         "rgba(235, 219, 178, 1.0)"
 
-# Recolor book content's color
-set recolor-lightcolor          "#171717"
-set recolor-darkcolor           "#ebdbb2"
-set recolor                     "true"
+set recolor-lightcolor        "rgba(23, 23, 23, 1.0)"
+set recolor-darkcolor         "rgba(235, 219, 178, 1.0)"
+set recolor                   "true"
 
 set page-padding 10
 
