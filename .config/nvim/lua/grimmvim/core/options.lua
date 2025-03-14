@@ -45,7 +45,7 @@ opt.ignorecase = true
 opt.smartcase = true
 
 opt.scrolloff = 999
-opt.sidescrolloff = 999
+opt.sidescrolloff = 5
 opt.mouse = "n"
 
 -- Split Windows

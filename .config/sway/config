@@ -5,3 +5,4 @@ include ~/.config/sway/autostart.conf
 include ~/.config/sway/appearance.conf
 include ~/.config/sway/input.conf
 include ~/.config/sway/output.conf
+# include ~/.config/sway/swayfx.conf

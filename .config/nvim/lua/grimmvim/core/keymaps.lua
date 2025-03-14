@@ -9,6 +9,9 @@ vim.keymap.set(
 	{ desc = "Open or create file under cursor", noremap = true, silent = true }
 )
 
+-- disable double click mouse
+vim.api.nvim_set_keymap("n", "<2-LeftMouse>", "", { noremap = true, silent = true })
+
 -- source buffer
 map("n", "<leader><leader>S", ":source %<cr>", { desc = "Source Buffer", noremap = true, silent = true })
 
