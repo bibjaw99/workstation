@@ -4,7 +4,7 @@ return {
 	config = function()
 		local map = vim.keymap.set
 		require("gitsigns").setup({
-			current_line_blame = true,
+			current_line_blame = false,
 			numhl = true,
 		})
 		-- keymaps
