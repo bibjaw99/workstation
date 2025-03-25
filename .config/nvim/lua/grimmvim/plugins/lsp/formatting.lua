@@ -1,6 +1,6 @@
 return {
 	"stevearc/conform.nvim",
-	event = { "VeryLazy" },
+	event = { "LspAttach" },
 	config = function()
 		local conform = require("conform")
 
@@ -31,7 +31,6 @@ return {
 		vim.keymap.set({ "n", "v" }, "<leader>Fm", function()
 			conform.format({
 				lsp_fallback = true,
-				async = false,
 				timeout_ms = 1000,
 			})
 		end, { desc = "Format Manually" })
