@@ -1,5 +1,5 @@
 include ~/.config/sway/workspaces.conf
-include ~/.config/sway/keysmaps.conf
+include ~/.config/sway/keymaps.conf
 include ~/.config/sway/windowrules.conf
 include ~/.config/sway/autostart.conf
 include ~/.config/sway/appearance.conf
