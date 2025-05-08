@@ -310,3 +310,8 @@ window {
   border-radius: 0;
 }
 ```
+
+## zen browser
+
+- `zen.urlbar.replace-newtab` - false
+- `zen.view.experimental-no-window-controls` - false
