@@ -2,20 +2,17 @@
   "layer": "top",
   "height": 20,
   "spacing": 5,
-
   "modules-left": [
     "custom/rofi",
-    "sway/workspaces",
+    "clock",
     "sway/window",
-    "hyprland/workspaces",
     "hyprland/window",
     "tray",
   ],
-
   "modules-center": [
-    "clock"
+    "sway/workspaces",
+    "hyprland/workspaces",
   ],
-
   "modules-right": [
     "disk",
     "cpu",
@@ -25,15 +22,13 @@
     "pulseaudio",
     "battery",
   ],
-
   "custom/rofi": {
-		"format": "<span ></span>",
-		"on-click": "rofi -show drun -disable-history -show-icons",
+    "format": "<span ></span>",
+    "on-click": "rofi -show drun -disable-history -show-icons",
     "on-click-right": "~/.config/custom_scripts/power.sh",
-    "escape" : true,
-    "tooltip" : false
-	},
-
+    "escape": true,
+    "tooltip": false
+  },
   // Modules configuration
   "sway/workspaces": {
     "disable-scroll": true,
@@ -52,13 +47,11 @@
       "8": "<span >󰚀</span>"
     }
   },
-
   "sway/window": {
     "format": "<span color='#202020' bgcolor='#d3869b' > 󰣆 </span> {app_id}",
     "separate-outputs": true,
-    "tooltip":false,
+    "tooltip": false,
   },
-
   "hyprland/workspaces": {
     "disable-scroll": true,
     "active-only": false,
@@ -76,51 +69,43 @@
       "8": "<span >󰚀</span>"
     }
   },
-
   "hyprland/window": {
     "format": "<span color='#202020' bgcolor='#d3869b' > 󰣆 </span> {class}",
     "separate-outputs": true,
-    "icon":false,
+    "icon": false,
   },
-
   "tray": {
     "icon-size": 15,
     "spacing": 8
   },
-
   "disk": {
     "format": "<span color='#202020' bgcolor='#ea6962' >  </span> {free}",
     "interval": 20
   },
-
   "cpu": {
     "format": "<span color='#202020' bgcolor='#e78a4e' >  </span> {usage}%",
     "tooltip": false,
     "interval": 1
   },
-
   "temperature": {
-    "tooltip":false,
+    "tooltip": false,
     "thermal-zone": 2,
     "hwmon-path": "/sys/class/hwmon/hwmon1/temp1_input",
     "critical-threshold": 70,
     "format": "<span color='#202020' bgcolor='#d8a657' > 󰴈 </span> {temperatureC}°C",
     "format-critical": "<span color='#202020' bgcolor='#cc241d' >  </span> {temperatureC}°C",
   },
-
   "backlight": {
     // "device": "acpi_video1",
     "format": "<span color='#202020' bgcolor='#f6c657' > 󰞏 </span> {percent}%",
     "tooltip": false
   },
-
   "custom/memory": {
     "exec": "~/.config/custom_scripts/memory_usage.sh",
     "interval": 2,
     "return-type": "json",
     "format": "<span color='#202020' bgcolor='#458588' >  </span> {}"
   },
-
   "pulseaudio": {
     // "scroll-step": 1, // %, can be a float
     "format": "<span color='#202020' bgcolor='#83a598' >  </span> {volume}%",
@@ -132,11 +117,9 @@
     "tooltip": false,
     "max-volume": 130
   },
-
   "battery#bat2": {
     "bat": "BAT2"
   },
-
   "battery": {
     "interval": 1,
     "states": {
@@ -144,7 +127,18 @@
       "warning": 30,
       "critical": 20
     },
-    "format-icons": ["󰂎","󰁺","󰁻","󰁽","󰁾","󰁿","󰂀","󰂁","󰂂","󰁹"],
+    "format-icons": [
+      "󰂎",
+      "󰁺",
+      "󰁻",
+      "󰁽",
+      "󰁾",
+      "󰁿",
+      "󰂀",
+      "󰂁",
+      "󰂂",
+      "󰁹"
+    ],
     "format": "<span color='#202020' bgcolor='#689d6a' > {icon} </span> {capacity}%",
     "format-critical": "<span color='#202020' bgcolor='#cc241d' > {icon} </span> {capacity}%!!",
     "format-warning": "<span color='#202020' bgcolor='#e78a4e' > {icon} </span> {capacity}%",
@@ -156,11 +150,10 @@
     "format-alt": "<span color='#202020' bgcolor='#689d6a' > 󱧥 </span> {time}",
     "tooltip": false
   },
-
   "clock": {
     // "timezone": "America/New_York",
     "format": "<span color='#202020' bgcolor='#8ec07c' >  </span> {:%a %d %b %H:%M:%S}",
     "tooltip": false,
-    "interval":1,
+    "interval": 1,
   }
 }

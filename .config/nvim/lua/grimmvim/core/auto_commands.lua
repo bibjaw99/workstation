@@ -4,7 +4,6 @@ local augroup = vim.api.nvim_create_augroup
 
 -- Create an autocmd group for executing files
 augroup("RunOnSave", { clear = true })
-
 local function RunKeymap(filetype, command)
 	autocmd("FileType", {
 		group = "RunOnSave",

@@ -58,5 +58,11 @@ return {
 			":lua MiniFiles.reset()<cr>",
 			{ desc = "MiniFiles Reset", noremap = true, silent = false }
 		)
+		map(
+			"n",
+			"<leader>es",
+			":e ~/Pictures/screenshots/<cr>",
+			{ desc = "screenshots", noremap = true, silent = false }
+		)
 	end,
 }

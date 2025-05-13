@@ -93,3 +93,6 @@ map("n", "<leader>po", ":only<CR>", { desc = "Single Pane", noremap = true, sile
 -- Toggle Term
 map("n", "<C-q>", ":Lspsaga term_toggle<cr>", { desc = "Floating Terminal", noremap = true, silent = true })
 map("n", "<leader>t", ":sp<bar>term<cr>:resize 10<cr>", { desc = "Split Terminal", noremap = true, silent = true })
+
+-- add ; at the end of the line
+map("i", "<C-;>", "<esc>A;<esc>i", { desc = "semicolon at the end", noremap = true, silent = true })
