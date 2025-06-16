@@ -1,6 +1,6 @@
 return {
 	"stevearc/conform.nvim",
-	event = { "InsertEnter", "CmdlineEnter", "LspAttach" },
+	event = { "InsertEnter", "LspAttach" },
 	opts = {
 		formatters_by_ft = {
 			javascript = { "prettier" },

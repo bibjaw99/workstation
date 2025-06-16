@@ -5,6 +5,9 @@ return {
 		{ "saghen/blink.cmp", version = "1.*" },
 	},
 	opts = {
+		diagnostics = {
+			virtual_text = false,
+		},
 		servers = {
 			lua_ls = {
 				settings = {
