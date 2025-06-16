@@ -4,12 +4,12 @@ return {
 		"williamboman/mason-lspconfig.nvim",
 		"WhoIsSethDaniel/mason-tool-installer.nvim",
 	},
+
 	event = { "BufReadPre", "BufNewFile" },
+
 	config = function()
-		local mason = require("mason")
-		local mason_lspconfig = require("mason-lspconfig")
-		local mason_tool_installer = require("mason-tool-installer")
-		mason.setup({
+		-- mason
+		require("mason").setup({
 			ui = {
 				icons = {
 					package_installed = "✓",
@@ -22,8 +22,8 @@ return {
 			},
 		})
 
-		-- mason-lspconfig
-		mason_lspconfig.setup({
+		-- mason lsp config
+		require("mason-lspconfig").setup({
 			ensure_installed = {
 				"lua_ls",
 				"cssls",
@@ -33,8 +33,8 @@ return {
 			automatic_installation = true,
 		})
 
-		-- mason-tool-installer
-		mason_tool_installer.setup({
+		-- mason tools intaller
+		require("mason-tool-installer").setup({
 			ensure_installed = {
 				-- you can turn off/on auto_update per tool
 				{ "bash-language-server" },
@@ -52,15 +52,12 @@ return {
 				{ "prettier" },
 				{ "typescript-language-server" },
 				{ "js-debug-adapter" },
-				-- { "node-debug2-adapter" }, -- deprecated
-				{ "eslint_d" },
 				{ "eslint-lsp" },
 				{ "codelldb" },
 				{ "tailwindcss-language-server" },
 				{ "clangd" },
 				{ "clang-format" },
 			},
-
 			auto_update = true,
 			run_on_start = true,
 			start_delay = 3000, -- 3 second delay

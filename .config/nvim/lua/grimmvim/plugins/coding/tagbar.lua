@@ -1,6 +1,6 @@
 return {
 	"preservim/tagbar",
-	event = "VeryLazy",
+	event = { "LspAttach" },
 	config = function()
 		local map = vim.keymap.set
 		-- keymap

@@ -96,3 +96,20 @@ map("n", "<leader>t", ":sp<bar>term<cr>:resize 10<cr>", { desc = "Split Terminal
 
 -- add ; at the end of the line
 map("i", "<C-;>", "<esc>A;<esc>i", { desc = "semicolon at the end", noremap = true, silent = true })
+
+-- lsp keymaps
+map("n", "<leader>lk", ":lua vim.lsp.buf.hover()<cr>", { desc = "LSP Hover", noremap = true, silent = true })
+map("n", "<leader>ld", ":lua vim.lsp.buf.definition()<cr>", { desc = "LSP Definition", noremap = true, silent = true })
+map(
+	"n",
+	"<leader>ln",
+	":lua vim.diagnostic.goto_next()<cr>",
+	{ desc = "LSP Next Diagnostic", noremap = true, silent = true }
+)
+
+map(
+	"n",
+	"<leader>lN",
+	":lua vim.diagnostic.goto_prev()<cr>",
+	{ desc = "LSP Previous Diagnostic", noremap = true, silent = true }
+)

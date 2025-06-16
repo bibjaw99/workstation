@@ -3,13 +3,13 @@ local opt = vim.opt
 
 cmd("let g:netrw_liststyle = 3")
 cmd("filetype plugin indent on")
+opt.winborder = "rounded"
 
 -- Appearance
 opt.termguicolors = true
 opt.pumheight = 10
 opt.cmdheight = 0
 opt.conceallevel = 0
-opt.laststatus = 3
 opt.showtabline = 0
 
 -- Files and Others

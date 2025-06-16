@@ -19,3 +19,12 @@ function OpenFile()
 		vim.cmd("edit " .. filepath)
 	end
 end
+
+-- lsp floating window modifications
+local orig_util_open_floating_preview = vim.lsp.util.open_floating_preview
+function vim.lsp.util.open_floating_preview(contents, syntax, opts, ...)
+	opts = opts or {}
+	opts.border = opts.border or "rounded"
+	opts.max_width = opts.max_width or 80
+	return orig_util_open_floating_preview(contents, syntax, opts, ...)
+end
