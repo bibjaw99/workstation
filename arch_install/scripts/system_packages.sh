@@ -80,6 +80,7 @@ eza
 starship
 dunst
 python-pillow
+imagemagick
 nitrogen
 feh
 mpv

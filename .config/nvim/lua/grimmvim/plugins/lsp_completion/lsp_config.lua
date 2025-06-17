@@ -19,8 +19,26 @@ return {
 				},
 			},
 			pyright = {},
-			ts_ls = {},
-			eslint = {},
+			ts_ls = {
+				filetypes = {
+					"javascript",
+					"javascriptreact",
+					"javascript.jsx",
+					"typescript",
+					"typescriptreact",
+					"typescript.tsx",
+				},
+			},
+			eslint = {
+				filetypes = {
+					"javascript",
+					"javascriptreact",
+					"javascript.jsx",
+					"typescript",
+					"typescriptreact",
+					"typescript.tsx",
+				},
+			},
 			rust_analyzer = {
 				settings = {
 					["rust-analyzer"] = {},
