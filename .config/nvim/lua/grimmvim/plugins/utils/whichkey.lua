@@ -15,7 +15,7 @@ return {
 				align = "center",
 			},
 			win = {
-				border = "double",
+				border = "bold",
 				title = false,
 				padding = { 1, 1 }, -- extra window padding [top/bottom, right/left]
 				no_overlap = true,

@@ -10,7 +10,7 @@ opt.pumheight = 10
 opt.cmdheight = 0
 opt.conceallevel = 0
 opt.showtabline = 0
--- opt.winborder = "rounded"
+opt.winborder = "bold"
 
 -- Files and Others
 opt.fileencoding = "utf-8" -- File Encoding

@@ -26,7 +26,7 @@ require("lazy").setup({
 	},
 	-- ui config
 	ui = {
-		border = "double",
+		border = "bold",
 		size = {
 			width = 0.8,
 			height = 0.8,

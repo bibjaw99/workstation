@@ -70,6 +70,7 @@ return {
 				},
 			},
 			layouts = {
+				-- default layout
 				default = {
 					layout = {
 						box = "horizontal",
@@ -77,13 +78,30 @@ return {
 						height = 0.90,
 						{
 							box = "vertical",
-							border = "rounded",
+							border = "bold",
 							title = "{source} {live}",
 							title_pos = "center",
 							{ win = "input", height = 1, border = "bottom" },
 							{ win = "list", border = "none" },
 						},
-						{ win = "preview", title = "{preview}", border = "rounded", width = 0.5 },
+						{ win = "preview", title = "{preview}", border = "bold", width = 0.5 },
+					},
+				},
+				-- vertical layout
+				vertical = {
+					layout = {
+						backdrop = false,
+						width = 0.5,
+						min_width = 80,
+						height = 0.8,
+						min_height = 30,
+						box = "vertical",
+						border = "bold",
+						title = "{title} {live} {flags}",
+						title_pos = "center",
+						{ win = "input", height = 1, border = "bottom" },
+						{ win = "list", border = "none" },
+						{ win = "preview", title = "{preview}", height = 0.4, border = "top" },
 					},
 				},
 			},
