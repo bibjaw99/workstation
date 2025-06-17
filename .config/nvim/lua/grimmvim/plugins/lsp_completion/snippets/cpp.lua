@@ -13,7 +13,7 @@ ls.add_snippets("cpp", {
 		"cfor",
 		fmt(
 			[[
-      for ( {}; {}; {} ) {{
+      for ({}; {}; {}) {{
         {}
       }}
       ]],

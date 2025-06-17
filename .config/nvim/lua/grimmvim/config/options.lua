@@ -3,7 +3,6 @@ local opt = vim.opt
 
 cmd("let g:netrw_liststyle = 3")
 cmd("filetype plugin indent on")
-opt.winborder = "rounded"
 
 -- Appearance
 opt.termguicolors = true
@@ -11,6 +10,7 @@ opt.pumheight = 10
 opt.cmdheight = 0
 opt.conceallevel = 0
 opt.showtabline = 0
+-- opt.winborder = "rounded"
 
 -- Files and Others
 opt.fileencoding = "utf-8" -- File Encoding
