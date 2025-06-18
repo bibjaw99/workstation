@@ -1,6 +1,6 @@
 return {
 	"neovim/nvim-lspconfig",
-	event = { "InsertEnter", "CmdlineEnter", "LspAttach" },
+	event = { "BufReadPre", "BufNewFile" },
 	dependencies = {
 		{ "saghen/blink.cmp", version = "1.*" },
 	},

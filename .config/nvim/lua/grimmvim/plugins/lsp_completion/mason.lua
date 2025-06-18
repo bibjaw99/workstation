@@ -1,10 +1,10 @@
 return {
 	"williamboman/mason.nvim",
+	event = { "BufReadPre", "BufNewFile" },
 	dependencies = {
 		"williamboman/mason-lspconfig.nvim",
 		"WhoIsSethDaniel/mason-tool-installer.nvim",
 	},
-	event = { "BufReadPre", "BufNewFile" },
 	config = function()
 		-- mason
 		require("mason").setup({
