@@ -11,18 +11,4 @@ return {
 		"vue",
 		"php",
 	},
-	config = function()
-		require("tailwind-fold").setup({
-			ft = {
-				"html",
-				"svelte",
-				"astro",
-				"vue",
-				"typescriptreact",
-				"javascriptreact",
-				"php",
-				"blade",
-			},
-		})
-	end,
 }

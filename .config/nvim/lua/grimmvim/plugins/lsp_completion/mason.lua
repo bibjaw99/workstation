@@ -4,9 +4,7 @@ return {
 		"williamboman/mason-lspconfig.nvim",
 		"WhoIsSethDaniel/mason-tool-installer.nvim",
 	},
-
 	event = { "BufReadPre", "BufNewFile" },
-
 	config = function()
 		-- mason
 		require("mason").setup({
@@ -21,7 +19,6 @@ return {
 				height = 0.8,
 			},
 		})
-
 		-- mason lsp config
 		require("mason-lspconfig").setup({
 			ensure_installed = {
@@ -32,7 +29,6 @@ return {
 			-- auto installation
 			automatic_installation = true,
 		})
-
 		-- mason tools intaller
 		require("mason-tool-installer").setup({
 			ensure_installed = {

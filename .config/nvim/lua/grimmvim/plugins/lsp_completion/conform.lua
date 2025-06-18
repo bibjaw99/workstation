@@ -24,14 +24,17 @@ return {
 			timeout_ms = 1000,
 		},
 	},
-	config = function(_, opts)
-		local conform = require("conform")
-		conform.setup(opts)
-		vim.keymap.set({ "n", "v" }, "<leader>Fm", function()
-			conform.format({
-				lsp_fallback = true,
-				timeout_ms = 1000,
-			})
-		end, { desc = "Format Manually" })
-	end,
+	keys = {
+		{
+			mode = { "n", "v" },
+			"<leader>Fm",
+			function()
+				require("conform").format({
+					lsp_fallback = true,
+					timeout_ms = 1000,
+				})
+			end,
+			desc = "Conform: Format Manually",
+		},
+	},
 }

@@ -1,56 +1,64 @@
 return {
 	"lewis6991/gitsigns.nvim",
 	event = { "BufReadPre", "BufNewFile" },
-	config = function()
-		local map = vim.keymap.set
-		require("gitsigns").setup({
-			current_line_blame = false,
-			numhl = true,
-		})
-		-- keymaps
-		map("n", "<leader>gg", ":Gitsigns<cr>", { desc = "Gitsigns Options", noremap = true, silent = true })
-		map(
-			"n",
+	opts = {
+		current_line_blame = false,
+		numhl = true,
+	},
+	keys = {
+		{
+			mode = "n",
+			"<leader>gg",
+			":Gitsigns<CR>",
+			desc = "Gitsigns Options",
+		},
+		{
+			mode = "n",
 			"<leader>gl",
-			":Gitsigns toggle_linehl<cr>",
-			{ desc = "Gitsigns Line Highlight", noremap = true, silent = true }
-		)
-		map(
-			"n",
+			":Gitsigns toggle_linehl<CR>",
+			desc = "Gitsigns Line Highlight",
+		},
+		{
+			mode = "n",
 			"<leader>gw",
-			":Gitsigns toggle_word_diff<cr>",
-			{ desc = "Gitsigns Word Difference", noremap = true, silent = true }
-		)
-		map(
-			"n",
+			":Gitsigns toggle_word_diff<CR>",
+			desc = "Gitsigns Word Difference",
+		},
+		{
+			mode = "n",
 			"<leader>gd",
-			":Gitsigns toggle_deleted<cr>",
-			{ desc = "Gitsigns Toggle Deleted", noremap = true, silent = true }
-		)
-		map(
-			"n",
+			":Gitsigns toggle_deleted<CR>",
+			desc = "Gitsigns Toggle Deleted",
+		},
+		{
+			mode = "n",
 			"<leader>gh",
-			":Gitsigns preview_hunk<cr>",
-			{ desc = "Gitsigns Preview Hunk", noremap = true, silent = true }
-		)
-		map(
-			"n",
+			":Gitsigns preview_hunk<CR>",
+			desc = "Gitsigns Preview Hunk",
+		},
+		{
+			mode = "n",
 			"<leader>gp",
-			":Gitsigns prev_hunk<cr>",
-			{ desc = "Gitsigns Previous Hunk", noremap = true, silent = true }
-		)
-		map(
-			"n",
+			":Gitsigns prev_hunk<CR>",
+			desc = "Gitsigns Previous Hunk",
+		},
+		{
+			mode = "n",
 			"<leader>gn",
-			":Gitsigns next_hunk<cr>",
-			{ desc = "Gitsigns Next Hunk", noremap = true, silent = true }
-		)
-		map("n", "<leader>gr", ":Gitsigns refresh<cr>", { desc = "Gitsigns Refresh", noremap = true, silent = true })
-		map(
-			"n",
+			":Gitsigns next_hunk<CR>",
+			desc = "Gitsigns Next Hunk",
+		},
+		{
+			mode = "n",
+			"<leader>gr",
+			":Gitsigns refresh<CR>",
+			desc = "Gitsigns Refresh",
+		},
+		{
+			mode = "n",
 			"<leader>gH",
-			":Gitsigns diffthis<cr>",
-			{ desc = "Gitsigns Compare History", noremap = true, silent = true }
-		)
-	end,
+			":Gitsigns diffthis<CR>",
+			desc = "Gitsigns Compare History",
+		},
+	},
 }
