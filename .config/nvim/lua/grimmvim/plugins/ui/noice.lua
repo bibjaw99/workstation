@@ -31,11 +31,43 @@ return {
 				},
 			},
 		},
+		-- views options
 		views = {
+			notify = {
+				scrollbar = false,
+			},
 			split = {
 				enter = true,
+				scrollbar = false,
+			},
+			vsplit = {
+				scrollbar = false,
+			},
+			popup = {
+				scrollbar = false,
+			},
+			mini = {
+				scrollbar = false,
+			},
+			cmdline = {
+				scrollbar = false,
+			},
+			cmdline_popup = {
+				scrollbar = false,
+			},
+			cmdline_output = {
+				scrollbar = false,
+			},
+			messages = {
+				scrollbar = false,
+			},
+			confirm = {
+				scrollbar = false,
 			},
 			hover = {
+				scrollbar = false,
+			},
+			popupmenu = {
 				scrollbar = false,
 			},
 		},
@@ -47,6 +79,7 @@ return {
 		},
 	},
 
+	-- keymaps
 	keys = {
 		{
 			mode = "n",
@@ -64,7 +97,7 @@ return {
 			mode = "n",
 			"<leader>na",
 			":Noice all<cr>",
-			desc = "MiniFiles Reset",
+			desc = "Noice all",
 		},
 		{
 			mode = "n",
