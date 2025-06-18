@@ -86,7 +86,9 @@ return {
 					shorting_target = 0,
 				},
 			},
-			lualine_x = {},
+			lualine_x = {
+				"filesize",
+			},
 			lualine_y = {
 				"searchcount",
 				"selectioncount",
