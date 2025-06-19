@@ -1,47 +1,35 @@
+-- function for simplifying the views options
+local function getviews()
+	local views = {}
+	local all_views = {
+		"notify",
+		"split",
+		"vsplit",
+		"popup",
+		"mini",
+		"cmdline",
+		"cmdline_popup",
+		"cmdline_output",
+		"messages",
+		"confirm",
+		"hover",
+		"popupmenu",
+	}
+	for _, view in ipairs(all_views) do
+		-- disable the scrollbar for all views
+		views[view] = { scrollbar = false }
+	end
+	-- extra options
+	views["split"].enter = true
+	return views
+end
+
 return {
 	"folke/noice.nvim",
 	event = "VeryLazy",
 	opts = {
 		-- views options
-		views = {
-			notify = {
-				scrollbar = false,
-			},
-			split = {
-				enter = true,
-				scrollbar = false,
-			},
-			vsplit = {
-				scrollbar = false,
-			},
-			popup = {
-				scrollbar = false,
-			},
-			mini = {
-				scrollbar = false,
-			},
-			cmdline = {
-				scrollbar = false,
-			},
-			cmdline_popup = {
-				scrollbar = false,
-			},
-			cmdline_output = {
-				scrollbar = false,
-			},
-			messages = {
-				scrollbar = false,
-			},
-			confirm = {
-				scrollbar = false,
-			},
-			hover = {
-				scrollbar = false,
-			},
-			popupmenu = {
-				scrollbar = false,
-			},
-		},
+		views = getviews(),
 		lsp = {
 			override = {
 				["vim.lsp.util.convert_input_to_markdown_lines"] = true,
