@@ -2,7 +2,6 @@ return {
 	"williamboman/mason.nvim",
 	event = { "BufReadPre", "BufNewFile" },
 	dependencies = {
-		"williamboman/mason-lspconfig.nvim",
 		"WhoIsSethDaniel/mason-tool-installer.nvim",
 	},
 	config = function()
@@ -18,16 +17,6 @@ return {
 				width = 0.8,
 				height = 0.8,
 			},
-		})
-		-- mason lsp config
-		require("mason-lspconfig").setup({
-			ensure_installed = {
-				"lua_ls",
-				"cssls",
-				"marksman",
-			},
-			-- auto installation
-			automatic_installation = true,
 		})
 		-- mason tools intaller
 		require("mason-tool-installer").setup({
