@@ -1,8 +1,10 @@
 return {
 	"folke/which-key.nvim",
-	event = "VeryLazy",
+	event = "CursorMoved",
 	config = function()
 		local wk = require("which-key")
+		-- disable missing-fields warning using lua annotations
+		---@diagnostic disable-next-line: missing-fields
 		wk.setup({
 			icons = {
 				rules = false,
