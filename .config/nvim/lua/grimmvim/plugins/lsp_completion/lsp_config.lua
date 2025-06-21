@@ -9,6 +9,7 @@ return {
 			virtual_text = false,
 		},
 		servers = {
+			-- lua_ls
 			lua_ls = {
 				settings = {
 					Lua = {
@@ -18,7 +19,7 @@ return {
 					},
 				},
 			},
-			pyright = {},
+			-- ts_ls
 			ts_ls = {
 				filetypes = {
 					"javascript",
@@ -28,7 +29,13 @@ return {
 					"typescriptreact",
 					"typescript.tsx",
 				},
+				init_options = {
+					preferences = {
+						disableSuggestions = true,
+					},
+				},
 			},
+			-- eslint
 			eslint = {
 				filetypes = {
 					"javascript",
@@ -39,13 +46,7 @@ return {
 					"typescript.tsx",
 				},
 			},
-			rust_analyzer = {
-				settings = {
-					["rust-analyzer"] = {},
-				},
-			},
-			clangd = {},
-			html = {},
+			-- emmet_ls
 			emmet_ls = {
 				filetypes = {
 					"html",
@@ -58,6 +59,7 @@ return {
 					"svelte",
 				},
 			},
+			-- cssls
 			cssls = {
 				settings = {
 					css = {
@@ -74,6 +76,9 @@ return {
 					},
 				},
 			},
+			clangd = {},
+			pyright = {},
+			html = {},
 			tailwindcss = {},
 		},
 	},
