@@ -7,27 +7,28 @@ local fmt = require("luasnip.extras.fmt").fmt
 -- custom snippets here
 -- #########################
 
--- CPP Snippets
-ls.add_snippets("cpp", {
+-- for loop template
+local cfor = {
 	s(
 		"cfor",
 		fmt(
 			[[
-      for ({}; {}; {}) {{
+      for (int i = {}; i < {}; i{}) {{
         {}
       }}
       ]],
 			{
-				i(1, "int i=0"),
-				i(2, "i<size"),
-				i(3, "i++"),
+				i(1, "0"),
+				i(2, "n"),
+				i(3, "++"),
 				i(4),
 			}
 		)
 	),
-})
+}
 
-ls.add_snippets("cpp", {
+-- boilerplate code
+local boil = {
 	s(
 		"boil",
 		fmt(
@@ -43,4 +44,8 @@ ls.add_snippets("cpp", {
 			{ i(1) }
 		)
 	),
-})
+}
+
+-- CPP Snippets
+ls.add_snippets("cpp", cfor)
+ls.add_snippets("cpp", boil)

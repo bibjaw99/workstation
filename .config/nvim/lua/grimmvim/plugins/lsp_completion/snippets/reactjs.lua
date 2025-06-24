@@ -6,8 +6,8 @@ local extras = require("luasnip.extras")
 local rep = extras.rep
 local fmt = require("luasnip.extras.fmt").fmt
 
--- react snippets
-ls.add_snippets("javascriptreact", {
+-- react component template
+local compo = {
 	s(
 		"compo",
 		fmt(
@@ -27,15 +27,16 @@ ls.add_snippets("javascriptreact", {
 				i(2, ""),
 				i(0, ""),
 				i(3, ""),
-				rep(1, "Compo"),
+				rep(1),
 			}
 		)
 	),
-})
+}
 
-ls.add_snippets("javascriptreact", {
+-- react img
+local rimg = {
 	s(
-		"img",
+		"rimg",
 		fmt(
 			[[ 
       <img src="{}" alt="{}" />
@@ -46,11 +47,12 @@ ls.add_snippets("javascriptreact", {
 			}
 		)
 	),
-})
+}
 
-ls.add_snippets("javascriptreact", {
+-- react input
+local rinput = {
 	s(
-		"input",
+		"rinput",
 		fmt(
 			[[ 
       <input type="{}" name="{}" />
@@ -61,12 +63,30 @@ ls.add_snippets("javascriptreact", {
 			}
 		)
 	),
-})
+}
 
-ls.add_snippets("javascriptreact", {
-	s("hr", t("<hr />")),
-})
+-- react hr
+local rhr = {
+	s("rhr", t("<hr />")),
+}
 
-ls.add_snippets("javascriptreact", {
-	s("br", t("<br />")),
-})
+-- react br
+local rbr = {
+	s("rbr", t("<br />")),
+}
+
+-- react snippets
+ls.add_snippets("javascriptreact", compo)
+ls.add_snippets("typescriptreact", compo)
+
+ls.add_snippets("javascriptreact", rimg)
+ls.add_snippets("typescriptreact", rimg)
+
+ls.add_snippets("javascriptreact", rinput)
+ls.add_snippets("typescriptreact", rinput)
+
+ls.add_snippets("javascriptreact", rhr)
+ls.add_snippets("typescriptreact", rhr)
+
+ls.add_snippets("javascriptreact", rbr)
+ls.add_snippets("typescriptreact", rbr)

@@ -35,6 +35,7 @@ return {
 				{ "autopep8" },
 				{ "json-lsp" },
 				{ "prettier" },
+				{ "biome" },
 				{ "typescript-language-server" },
 				{ "js-debug-adapter" },
 				{ "eslint-lsp" },

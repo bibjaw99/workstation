@@ -46,17 +46,24 @@ return {
 					"typescript.tsx",
 				},
 			},
+			-- biome
+			biome = {
+				filetypes = {
+					"javascript",
+					"javascriptreact",
+					"javascript.jsx",
+					"typescript",
+					"typescriptreact",
+					"typescript.tsx",
+				},
+			},
 			-- emmet_ls
 			emmet_ls = {
 				filetypes = {
 					"html",
+					"htmx",
 					"typescriptreact",
 					"javascriptreact",
-					"css",
-					"sass",
-					"scss",
-					"less",
-					"svelte",
 				},
 			},
 			-- cssls
