@@ -51,6 +51,10 @@ return {
 							find = "No information available",
 						},
 						{
+							event = { "notify", "msg_show" },
+							find = "minifiles is not supported",
+						},
+						{
 							event = "msg_show",
 							kind = "",
 							find = "written",
