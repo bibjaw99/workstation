@@ -166,8 +166,14 @@ return {
 		{
 			mode = "n",
 			"<leader>fo",
-			':lua require("snacks").picker.recent()<cr>',
+			':lua require("snacks").picker.recent({layout={preview=false}})<cr>',
 			desc = "Find Recent Files",
+		},
+		{
+			mode = "n",
+			"<leader>fO",
+			':lua require("snacks").picker.recent({ filter = { cwd = true }})<cr>',
+			desc = "Recent CWD Files",
 		},
 		{
 			mode = "n",

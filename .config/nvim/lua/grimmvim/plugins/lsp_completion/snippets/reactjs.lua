@@ -15,9 +15,9 @@ local compo = {
       const {} = ({}) => {{
         {}
         return(
-          <div>
-          {} 
-          </div>
+          <>
+          {}
+          </>
         )
       }}
       export {{ {} }};
@@ -39,7 +39,7 @@ local rimg = {
 		"rimg",
 		fmt(
 			[[ 
-      <img src="{}" alt="{}" />
+      <img src="{}" alt="{}"/>
       ]],
 			{
 				i(1),
@@ -55,7 +55,7 @@ local rinput = {
 		"rinput",
 		fmt(
 			[[ 
-      <input type="{}" name="{}" />
+      <input type="{}" name="{}"/>
       ]],
 			{
 				i(1, "text"),
