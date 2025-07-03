@@ -12,7 +12,7 @@
 # for my intel laptop
 
 packages=(
-xorg
+# xorg
 intel-media-driver
 vulkan-intel
 intel-gmmlib
@@ -21,7 +21,7 @@ intel-gmmlib
 for package in "${packages[@]}"; do
   installed=$(yay -Qi "$package" 2>/dev/null | awk -F ' *: ' '$1 == "Name" { print $2 }')
   if [[ -z "$installed" ]]; then
-    yay -Syy "$package"
+    yay -S --noconfirm "$package"
   else
     echo "$package is already installed"
   fi

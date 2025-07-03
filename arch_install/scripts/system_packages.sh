@@ -13,7 +13,7 @@ i3lock
 polybar
 rofi-wayland
 rofi-emoji-git
-alacritty
+ghostty
 pcmanfm
 gvfs
 gvfs-mtp
@@ -115,7 +115,7 @@ wlsunset
 for package in "${packages[@]}"; do
   installed=$(yay -Qi "$package" 2>/dev/null | awk -F ' *: ' '$1 == "Name" { print $2 }')
   if [[ -z "$installed" ]]; then
-    yay -Syy "$package"
+    yay -S --noconfirm "$package"
   else
     echo "$package is already installed"
   fi
