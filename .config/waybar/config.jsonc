@@ -58,6 +58,7 @@
     "format": "<span color='#202020' bgcolor='#d3869b' > 󰣆 </span> {app_id}",
     "separate-outputs": true,
     "icon":false,
+    "tooltip": false
   },
 
   "hyprland/workspaces": {
@@ -82,6 +83,7 @@
     "format": "<span color='#202020' bgcolor='#d3869b' > 󰣆 </span> {class}",
     "separate-outputs": true,
     "icon":false,
+    "tooltip": false
   },
 
   "tray": {

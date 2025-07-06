@@ -4,9 +4,9 @@
   "spacing": 5,
   "modules-left": [
     "custom/rofi",
-    "clock",
     "sway/window",
     "hyprland/window",
+    "clock",
     "tray"
   ],
   "modules-center": [
@@ -72,7 +72,8 @@
   "hyprland/window": {
     "format": "<span color='#202020' bgcolor='#d3869b' > 󰣆 </span> {class}",
     "separate-outputs": true,
-    "icon": false
+    "icon": false,
+    "tooltip": false
   },
   "tray": {
     "icon-size": 15,

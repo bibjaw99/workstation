@@ -2,31 +2,31 @@
 /*            Common CSS            */
 /* ================================ */
 * {
-  /* `otf-font-awesome` is required to be installed for icons */
-  padding: 0;
-  border-radius: 0;
-  min-height: 0;
-  margin: 0;
-  border: none;
-  text-shadow: none;
-  transition: none;
-  box-shadow: none;
+	/* `otf-font-awesome` is required to be installed for icons */
+	padding: 0;
+	border-radius: 0;
+	min-height: 0;
+	margin: 0;
+	border: none;
+	text-shadow: none;
+	transition: none;
+	box-shadow: none;
 }
 
 /* the whole window */
 window#waybar {
-  background-color: rgba(0, 0, 0, 0.65);
-  color: #fff4d2;
-  padding: 0px 5px;
-  margin: 0;
+	background-color: rgba(0, 0, 0, 0.4);
+	color: #fff4d2;
+	padding: 0px 5px;
+	margin: 0;
 }
 
 .modules-left {
-  padding-left: 5px;
+	padding-left: 5px;
 }
 
 .modules-right {
-  padding-right: 5px;
+	padding-right: 5px;
 }
 
 #custom-rofi,
@@ -51,12 +51,12 @@ window#waybar {
 #battery.critical,
 #battery.warning,
 #clock {
-  font-family: JetBrainsMono Nerd Font Propo;
-  font-size: 14px;
-  font-weight: 800;
-  color: #202020;
-  background: #202020;
-  /* box-shadow: -1px 2px 3px black; */
+	font-family: IosevkaTerm Nerd Font Propo;
+	font-size: 15px;
+	font-weight: 800;
+	color: #202020;
+	background: #202020;
+	/* box-shadow: -1px 2px 3px black; */
 }
 
 #window,
@@ -73,61 +73,61 @@ window#waybar {
 #battery.critical,
 #battery.warning,
 #clock {
-  padding-right: 4px;
-  margin: 5px 0px;
+	padding-right: 4px;
+	margin: 5px 0px;
 }
 
 #custom-rofi {
-  border: 2px solid #458588;
-  background: #83a598;
-  padding: 0 6px;
-  margin: 5px 0px;
+	border: 2px solid #458588;
+	background: #83a598;
+	padding: 0 6px;
+	margin: 5px 0px;
 }
 
 /* ================================ */
 /*       workspaces module          */
 /* ================================ */
 #workspaces {
-  margin: 0px;
+	margin: 0px;
 }
 
 #workspaces button {
-  color: #fff4d2;
-  background: #202020;
-  border: 2px solid #fff4d2;
-  min-width: 25px;
-  padding: 0 4px;
-  margin: 5px 3px;
+	color: #fff4d2;
+	background: #202020;
+	border: 2px solid #fff4d2;
+	min-width: 25px;
+	padding: 0 4px;
+	margin: 5px 3px;
 }
 
 #workspaces button:hover {
-  background: #d3869b;
-  border: 2px solid #b16286;
+	background: #d3869b;
+	border: 2px solid #b16286;
 }
 
 #workspaces button.visible {
-  border: 2px solid #689d6a;
-  background: #8ec07c;
+	border: 2px solid #689d6a;
+	background: #8ec07c;
 }
 
 #workspaces button.visible:hover {
-  border: 2px solid #689d6a;
-  background: #8ec07c;
+	border: 2px solid #689d6a;
+	background: #8ec07c;
 }
 
 #workspaces button.active {
-  border: 2px solid #689d6a;
-  background: #8ec07c;
+	border: 2px solid #689d6a;
+	background: #8ec07c;
 }
 
 #workspaces button.active:hover {
-  border: 2px solid #689d6a;
-  background: #8ec07c;
+	border: 2px solid #689d6a;
+	background: #8ec07c;
 }
 
 #workspaces button.urgent {
-  border: 2px solid #cc241d;
-  background: #ea6962;
+	border: 2px solid #cc241d;
+	background: #ea6962;
 }
 
 /* ================================ */
@@ -135,8 +135,8 @@ window#waybar {
 /* ================================ */
 
 #window {
-  color: #d3869b;
-  border: 2px solid #d3869b;
+	color: #d3869b;
+	border: 2px solid #d3869b;
 }
 
 /* ================================ */
@@ -144,8 +144,8 @@ window#waybar {
 /* ================================ */
 
 #tray {
-  padding: 0 6px;
-  background-color: rgba(0, 0, 0, 0.5);
+	padding: 0 6px;
+	background-color: rgba(0, 0, 0, 0.5);
 }
 
 /* ================================ */
@@ -153,81 +153,81 @@ window#waybar {
 /* ================================ */
 
 #disk {
-  color: #ea6962;
-  border: 2px solid #ea6962;
+	color: #ea6962;
+	border: 2px solid #ea6962;
 }
 
 /* ================================ */
 /*            cpu                  */
 /* ================================ */
 #cpu {
-  color: #e78a4e;
-  border: 2px solid #e78a4e;
+	color: #e78a4e;
+	border: 2px solid #e78a4e;
 }
 
 /* ================================ */
 /*            temp                  */
 /* ================================ */
 #temperature {
-  color: #d8a657;
-  border: 2px solid #d8a657;
+	color: #d8a657;
+	border: 2px solid #d8a657;
 }
 
 #temperature.critical {
-  color: #cc241d;
-  border: 2px solid #cc241d;
+	color: #cc241d;
+	border: 2px solid #cc241d;
 }
 
 /* ================================ */
 /*            backlight             */
 /* ================================ */
 #backlight {
-  color: #f6c657;
-  border: 2px solid #f6c657;
+	color: #f6c657;
+	border: 2px solid #f6c657;
 }
 
 /* ================================ */
 /*            memory                */
 /* ================================ */
 #custom-memory {
-  color: #458588;
-  border: 2px solid #458588;
+	color: #458588;
+	border: 2px solid #458588;
 }
 
 /* ================================ */
 /*         pulseaudio               */
 /* ================================ */
 #pulseaudio {
-  color: #83a598;
-  border: 2px solid #83a598;
+	color: #83a598;
+	border: 2px solid #83a598;
 }
 
 #pulseaudio.muted {
-  color: #ea6962;
-  border: 2px solid #ea6962;
+	color: #ea6962;
+	border: 2px solid #ea6962;
 }
 
 /* ================================ */
 /*            battery               */
 /* ================================ */
 #battery {
-  color: #689d6a;
-  border: 2px solid #689d6a;
+	color: #689d6a;
+	border: 2px solid #689d6a;
 }
 
 #battery.critical {
-  color: #cc241d;
-  border: 2px solid #cc241d;
+	color: #cc241d;
+	border: 2px solid #cc241d;
 }
 
 #battery.warning {
-  color: #e78a4e;
-  border: 2px solid #e78a4e;
+	color: #e78a4e;
+	border: 2px solid #e78a4e;
 }
 /* ================================ */
 /*            clock                 */
 /* ================================ */
 #clock {
-  color: #8ec07c;
-  border: 2px solid #8ec07c;
+	color: #8ec07c;
+	border: 2px solid #8ec07c;
 }
