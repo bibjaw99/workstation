@@ -2,25 +2,25 @@
 /*            Common CSS            */
 /* ================================ */
 * {
-  /* `otf-font-awesome` is required to be installed for icons */
-  padding: 0;
-  margin: 0;
-  min-height: 0;
-  border-radius: 0;
-  border: none;
-  text-shadow: none;
-  transition: none;
-  box-shadow: none;
+	/* `otf-font-awesome` is required to be installed for icons */
+	padding: 0;
+	margin: 0;
+	min-height: 0;
+	border-radius: 0;
+	border: none;
+	text-shadow: none;
+	transition: none;
+	box-shadow: none;
 }
 
 /* the whole window */
 window#waybar {
-  color: #fff4d2;
-  background: none;
+	color: #fff4d2;
+	background: none;
 }
 
 window#waybar.hidden {
-  opacity: 1;
+	opacity: 1;
 }
 
 #custom-rofi,
@@ -45,13 +45,13 @@ window#waybar.hidden {
 #battery.critical,
 #battery.warning,
 #clock {
-  font-family: JetBrainsMono Nerd Font Propo;
-  font-size: 16px;
-  font-weight: 800;
-  color: #202020;
-  background: #202020;
-  border: 3px solid #202020;
-  border-radius: 3px;
+	font-family: JetBrainsMono Nerd Font Propo;
+	font-size: 16px;
+	font-weight: 800;
+	color: #202020;
+	background: #202020;
+	border: 3px solid #202020;
+	border-radius: 3px;
 }
 
 #window,
@@ -68,50 +68,41 @@ window#waybar.hidden {
 #battery.critical,
 #battery.warning,
 #clock {
-  padding-right: 4px;
+	padding-right: 4px;
 }
 
 #custom-rofi {
-  background: #83a598;
-  padding: 0 6px;
+	background: #83a598;
+	padding: 0 6px;
 }
 
 /* ================================ */
 /*       workspaces module          */
 /* ================================ */
 #workspaces {
-  margin: 0px;
+	margin: 0px;
 }
 
 #workspaces button {
-  color: #fff4d2;
-  padding: 0 4px;
-  margin: 0px 3px;
-  min-width: 25px;
+	color: #fff4d2;
+	padding: 0 4px;
+	margin: 0px 3px;
+	min-width: 25px;
 }
 
 #workspaces button:hover {
-  background: #d3869b;
+	background: #d3869b;
 }
 
-#workspaces button.visible {
-  background: #8ec07c;
-}
-
-#workspaces button.visible:hover {
-  background: #8ec07c;
-}
-
-#workspaces button.active {
-  background: #8ec07c;
-}
-
+#workspaces button.visible,
+#workspaces button.visible:hover,
+#workspaces button.active,
 #workspaces button.active:hover {
-  background: #8ec07c;
+	background: #8ec07c;
 }
 
 #workspaces button.urgent {
-  background: #ea6962;
+	background: #ea6962;
 }
 
 /* ================================ */
@@ -119,7 +110,7 @@ window#waybar.hidden {
 /* ================================ */
 
 #window {
-  color: #d3869b;
+	color: #d3869b;
 }
 
 /* ================================ */
@@ -127,7 +118,7 @@ window#waybar.hidden {
 /* ================================ */
 
 #tray {
-  padding: 0 6px 0 6px;
+	padding: 0 6px 0 6px;
 }
 
 /* ================================ */
@@ -135,69 +126,69 @@ window#waybar.hidden {
 /* ================================ */
 
 #disk {
-  color: #ea6962;
+	color: #ea6962;
 }
 
 /* ================================ */
 /*            cpu                  */
 /* ================================ */
 #cpu {
-  color: #e78a4e;
+	color: #e78a4e;
 }
 
 /* ================================ */
 /*            temp                  */
 /* ================================ */
 #temperature {
-  color: #d8a657;
+	color: #d8a657;
 }
 
 #temperature.critical {
-  color: #cc241d;
+	color: #cc241d;
 }
 
 /* ================================ */
 /*            backlight             */
 /* ================================ */
 #backlight {
-  color: #f6c657;
+	color: #f6c657;
 }
 
 /* ================================ */
 /*            memory                */
 /* ================================ */
 #custom-memory {
-  color: #458588;
+	color: #458588;
 }
 
 /* ================================ */
 /*         pulseaudio               */
 /* ================================ */
 #pulseaudio {
-  color: #83a598;
+	color: #83a598;
 }
 
 #pulseaudio.muted {
-  color: #ea6962;
+	color: #ea6962;
 }
 
 /* ================================ */
 /*            battery               */
 /* ================================ */
 #battery {
-  color: #689d6a;
+	color: #689d6a;
 }
 
 #battery.critical {
-  color: #cc241d;
+	color: #cc241d;
 }
 
 #battery.warning {
-  color: #e78a4e;
+	color: #e78a4e;
 }
 /* ================================ */
 /*            clock                 */
 /* ================================ */
 #clock {
-  color: #8ec07c;
+	color: #8ec07c;
 }

@@ -306,8 +306,27 @@ $ sudo mkinitcpio -p linux
 - go to : `.config/gtk-version/gtk.css`
 
 ```css
-window {
-  border-radius: 0;
+decoration {
+	box-shadow: none;
+	border-top-left-radius: 0px;
+	border-top-right-radius: 0px;
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+}
+
+decoration:backdrop {
+	box-shadow: none;
+}
+
+.titlebar,
+.titlebar .background,
+.window-frame,
+.window-frame:backdrop {
+	border-top-left-radius: 0px;
+	border-top-right-radius: 0px;
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+	box-shadow: none;
 }
 ```
 

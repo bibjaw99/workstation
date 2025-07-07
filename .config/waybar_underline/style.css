@@ -2,35 +2,35 @@
 /*            Common CSS            */
 /* ================================ */
 * {
-  /* `otf-font-awesome` is required to be installed for icons */
-  padding: 0;
-  border-radius: 0;
-  min-height: 0;
-  margin: 0;
-  border: none;
-  text-shadow: none;
-  transition: none;
-  box-shadow: none;
+	/* `otf-font-awesome` is required to be installed for icons */
+	padding: 0;
+	border-radius: 0;
+	min-height: 0;
+	margin: 0;
+	border: none;
+	text-shadow: none;
+	transition: none;
+	box-shadow: none;
 }
 
 /* the whole window */
 window#waybar {
-  background: #202020;
-  color: #fff4d2;
-  padding: 0;
-  margin: 0;
+	background: #202020;
+	color: #fff4d2;
+	padding: 0;
+	margin: 0;
 }
 
 window#waybar.hidden {
-  opacity: 1;
+	opacity: 1;
 }
 
 .modules-left {
-  padding-left: 5px;
+	padding-left: 5px;
 }
 
 .modules-right {
-  padding-right: 5px;
+	padding-right: 5px;
 }
 
 #custom-rofi,
@@ -55,11 +55,11 @@ window#waybar.hidden {
 #battery.critical,
 #battery.warning,
 #clock {
-  font-family: JetBrainsMono Nerd Font Propo;
-  font-size: 15px;
-  font-weight: 800;
-  color: #202020;
-  background: #202020;
+	font-family: JetBrainsMono Nerd Font Propo;
+	font-size: 15px;
+	font-weight: 800;
+	color: #fff4d2;
+	background: #202020;
 }
 
 #custom-rofi,
@@ -77,69 +77,54 @@ window#waybar.hidden {
 #battery.critical,
 #battery.warning,
 #clock {
-  padding: 0px 4px 0px 4px;
-  margin: 5px 0px;
+	padding: 0px 4px 0px 4px;
+	margin: 5px 0px;
 }
 
 #custom-rofi {
-  color: #202020;
-  border: 2px solid #458588;
-  background: #83a598;
-  border-radius: 2px;
-  padding: 0 6px;
+	color: #202020;
+	border: 2px solid #458588;
+	background: #83a598;
+	border-radius: 2px;
+	padding: 0 6px;
 }
 
 /* ================================ */
 /*       workspaces module          */
 /* ================================ */
 #workspaces {
-  margin: 0px;
+	margin: 0px;
 }
 
 #workspaces button {
-  color: #fff4d2;
-  background: #202020;
-  border: 2px solid #fff4d2;
-  min-width: 22px;
-  padding: 0 4px;
-  margin: 5px 3px;
+	color: #fff4d2;
+	background: #202020;
+	border: 2px solid #fff4d2;
+	min-width: 22px;
+	padding: 0 4px;
+	margin: 5px 3px;
 }
 
 #workspaces button:hover {
-  color: #202020;
-  background: #d3869b;
-  border: 2px solid #b16286;
-  min-width: 22px;
+	color: #202020;
+	background: #d3869b;
+	border: 2px solid #b16286;
+	min-width: 22px;
 }
 
-#workspaces button.visible {
-  color: #202020;
-  border: 2px solid #689d6a;
-  background: #8ec07c;
-}
-
-#workspaces button.visible:hover {
-  color: #202020;
-  border: 2px solid #689d6a;
-  background: #8ec07c;
-}
-
-#workspaces button.active {
-  color: #202020;
-  border: 2px solid #689d6a;
-  background: #8ec07c;
-}
-
+#workspaces button.visible,
+#workspaces button.visible:hover,
+#workspaces button.active,
 #workspaces button.active:hover {
-  color: #202020;
-  border: 2px solid #689d6a;
-  background: #8ec07c;
+	color: #202020;
+	border: 2px solid #689d6a;
+	background: #8ec07c;
 }
 
 #workspaces button.urgent {
-  color: #202020;
-  border: 2px solid #cc241d;
-  background: #ea6962;
+	color: #202020;
+	border: 2px solid #cc241d;
+	background: #ea6962;
 }
 
 /* ================================ */
@@ -147,8 +132,7 @@ window#waybar.hidden {
 /* ================================ */
 
 #window {
-  color: #d3869b;
-  border-bottom: 2px solid #d3869b;
+	border-bottom: 2px solid #d3869b;
 }
 
 /* ================================ */
@@ -156,10 +140,10 @@ window#waybar.hidden {
 /* ================================ */
 
 #tray {
-  margin: 6px 0px;
-  padding: 0 6px;
-  background: #333333;
-  border-radius: 3px;
+	margin: 6px 0px;
+	padding: 0 6px;
+	background: #333333;
+	border-radius: 3px;
 }
 
 /* ================================ */
@@ -167,86 +151,78 @@ window#waybar.hidden {
 /* ================================ */
 
 #disk {
-  color: #ea6962;
-  border-bottom: 2px solid #ea6962;
+	border-bottom: 2px solid #ea6962;
 }
 
 /* ================================ */
 /*            cpu                  */
 /* ================================ */
 #cpu {
-  color: #e78a4e;
-  border-bottom: 2px solid #e78a4e;
+	border-bottom: 2px solid #e78a4e;
 }
 
 /* ================================ */
 /*            temp                  */
 /* ================================ */
 #temperature {
-  color: #d8a657;
-  border-bottom: 2px solid #d8a657;
+	border-bottom: 2px solid #d8a657;
 }
 
 #temperature.critical {
-  color: #cc241d;
-  border-bottom: 2px solid #cc241d;
+	color: #cc241d;
+	border-bottom: 2px solid #cc241d;
 }
 
 /* ================================ */
 /*            backlight             */
 /* ================================ */
 #backlight {
-  color: #f6c657;
-  border-bottom: 2px solid #f6c657;
+	border-bottom: 2px solid #f6c657;
 }
 
 /* ================================ */
 /*            memory                */
 /* ================================ */
 #custom-memory {
-  color: #458588;
-  border-bottom: 2px solid #458588;
+	border-bottom: 2px solid #458588;
 }
 
 /* ================================ */
 /*         pulseaudio               */
 /* ================================ */
 #pulseaudio {
-  color: #83a598;
-  border-bottom: 2px solid #83a598;
+	border-bottom: 2px solid #83a598;
 }
 
 #pulseaudio.muted {
-  color: #ea6962;
-  border-bottom: 2px solid #ea6962;
+	color: #ea6962;
+	border-bottom: 2px solid #ea6962;
 }
 
 /* ================================ */
 /*            battery               */
 /* ================================ */
 #battery {
-  color: #689d6a;
-  border-bottom: 2px solid #689d6a;
+	border-bottom: 2px solid #689d6a;
 }
 
 #battery.critical {
-  color: #cc241d;
-  border-bottom: 2px solid #cc241d;
+	color: #cc241d;
+	border-bottom: 2px solid #cc241d;
 }
 
 #battery.warning {
-  color: #e78a4e;
-  border-bottom: 2px solid #e78a4e;
+	color: #e78a4e;
+	border-bottom: 2px solid #e78a4e;
 }
 
 #battery.chargin.warning {
-  color: #689d6a;
-  border-bottom: 2px solid #689d6a;
+	color: #689d6a;
+	border-bottom: 2px solid #689d6a;
 }
 /* ================================ */
 /*            clock                 */
 /* ================================ */
 #clock {
-  color: #8ec07c;
-  border-bottom: 2px solid #8ec07c;
+	border-bottom: 2px solid #8ec07c;
 }

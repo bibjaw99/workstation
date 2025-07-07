@@ -105,21 +105,9 @@ window#waybar {
 	border: 2px solid #b16286;
 }
 
-#workspaces button.visible {
-	border: 2px solid #689d6a;
-	background: #8ec07c;
-}
-
-#workspaces button.visible:hover {
-	border: 2px solid #689d6a;
-	background: #8ec07c;
-}
-
-#workspaces button.active {
-	border: 2px solid #689d6a;
-	background: #8ec07c;
-}
-
+#workspaces button.visible,
+#workspaces button.visible:hover,
+#workspaces button.active,
 #workspaces button.active:hover {
 	border: 2px solid #689d6a;
 	background: #8ec07c;
