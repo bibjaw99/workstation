@@ -15,7 +15,7 @@
 
 /* the whole window */
 window#waybar {
-	background: #202020;
+	background: rgb(34, 34, 34);
 	color: #fff4d2;
 	padding: 0;
 	margin: 0;
@@ -59,7 +59,6 @@ window#waybar.hidden {
 	font-size: 15px;
 	font-weight: 800;
 	color: #fff4d2;
-	background: #202020;
 }
 
 #custom-rofi,
@@ -142,7 +141,7 @@ window#waybar.hidden {
 #tray {
 	margin: 6px 0px;
 	padding: 0 6px;
-	background: #333333;
+	background: rgb(51, 51, 51);
 	border-radius: 3px;
 }
 
