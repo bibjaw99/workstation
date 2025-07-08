@@ -68,29 +68,28 @@ Packages I used in my System:
 
 ## Keybindings For i3 and sway
 
-|    Keybindings    |        Actions        |
-| :---------------: | :-------------------: |
-|       mod+t       |      Tiling Mode      |
-|       mod+e       |       Tab Mode        |
-|       mod+u       |     Select Parent     |
-|       mod+i       |     Select Child      |
-|       mod+d       |       rofi drun       |
-|       alt+d       |       rofi run        |
-|       alt+w       |     rofi windows      |
-|       alt+y       |      rofi emoji       |
-|       mod+m       |   toggle fullscreen   |
-|    mod+Shift+e    |      Power Menu       |
-|    mod+return     |       terminal        |
-|    mod+Shift+q    |    Kills a window     |
-| mod+ctrl+vim keys |     resize window     |
-|       mod+z       |      horizontal       |
-|       mod+a       |       vertical        |
-|     mod+space     |    floating window    |
-|       mod+q       | focus floating window |
-|       mod+w       |        firefox        |
-|       mod+n       |        pcmanfm        |
-|    mod+Shift+b    |        blueman        |
-|    mod+Shift+n    |        swaync         |
+|    Keybindings    |        Actions         |
+| :---------------: | :--------------------: |
+|       mod+y       | Tiling and Tabbed Mode |
+|       mod+u       |     Select Parent      |
+|       mod+i       |      Select Child      |
+|       mod+d       |       rofi drun        |
+|       alt+d       |        rofi run        |
+|       alt+w       |      rofi windows      |
+|       mod+e       |       rofi emoji       |
+|       mod+m       |   toggle fullscreen    |
+|    mod+Shift+e    |       Power Menu       |
+|    mod+return     |        terminal        |
+|    mod+Shift+q    |     Kills a window     |
+| mod+ctrl+vim keys |     resize window      |
+|       mod+z       |       horizontal       |
+|       mod+a       |        vertical        |
+|     mod+space     |    floating window     |
+|       mod+q       | focus floating window  |
+|       mod+w       |        browser         |
+|       mod+n       |        pcmanfm         |
+|    mod+Shift+b    |        blueman         |
+|    mod+Shift+n    |         swaync         |
 
 ---
 
@@ -133,7 +132,6 @@ Packages I used in my System:
 #### Installation Guide :
 
 - remove or backup the `nvim` folder from the following directory :
-
   - `~/.config/nvim`
   - `~/.cache/nvim`
   - `~/.local/share/nvim`

@@ -15,7 +15,7 @@
 
 /* the whole window */
 window#waybar {
-	background: rgb(34, 34, 34);
+	background: rgba(34, 34, 34, 1);
 	color: #fff4d2;
 	padding: 0;
 	margin: 0;
@@ -55,9 +55,9 @@ window#waybar.hidden {
 #battery.critical,
 #battery.warning,
 #clock {
-	font-family: JetBrainsMono Nerd Font Propo;
-	font-size: 15px;
-	font-weight: 800;
+	font-family: IosevkaTerm Nerd Font Propo;
+	font-size: 16px;
+	font-weight: 900;
 	color: #fff4d2;
 }
 

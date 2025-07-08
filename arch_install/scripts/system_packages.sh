@@ -101,6 +101,7 @@ mpv
 ttf-dejavu
 ttf-roboto
 ttf-jetbrains-mono-nerd
+ttf-iosevkaterm-nerd
 ttf-font-awesome
 noto-fonts-emoji
 tela-circle-icon-theme-black
@@ -114,18 +115,18 @@ grim
 slurp
 nwg-look
 wl-clipboard
+swaybg
+waypaper
 
 # sway packages
 sway
 swaync
-swaybg
 swaylock
 xdg-desktop-portal-wlr
 
 # hyprland packages
 hyprland
 hyprlock
-hyprpaper
 xdg-desktop-portal-hyprland
 mako
 )

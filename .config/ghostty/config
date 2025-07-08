@@ -3,12 +3,12 @@ cursor-style = block
 cursor-style-blink = false
 
 # fonts
-font-size = 14
+font-size = 15
 
-font-family = "JetBrainsMono NFM SemiBold"
-font-family-bold = "JetBrainsMono NFM ExtraBold"
-font-family-italic = "JetBrainsMono NFM SemiBold"
-font-family-bold-italic = "JetBrainsMono NFM ExtraBold"
+font-family = "IosevkaTerm NFM SemiBold"
+font-family-bold = "IosevkaTerm NFM ExtraBold"
+font-family-italic = "IosevkaTerm NFM SemiBold"
+font-family-bold-italic = "IosevkaTerm NFM ExtraBold"
 
 adjust-cell-width = 0
 adjust-cell-height = -10%
@@ -27,7 +27,7 @@ gtk-adwaita = false
 title = "Ghostty"
 
 # theming
-background = #222222
+background = #282828
 foreground = #ebdbb2
 
 palette = 0=#3c3836

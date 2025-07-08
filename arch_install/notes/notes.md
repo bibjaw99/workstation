@@ -1,5 +1,23 @@
 # Some notes and commands
 
+## set thems and icons for flatpak apps
+
+check theme and icon
+
+```
+ls -I "*.*" /usr/share/themes
+ls -I "*.*" /usr/share/icons
+```
+
+set theme and icon
+
+```
+sudo flatpak override --env=GTK_THEME=Materia-dark-compact
+sudo flatpak override --env=ICON_THEME=Tela-circle-black-dark
+```
+
+flatpak global override configs are in : `cd /var/lib/flatpak/overrides`
+
 ---
 
 ## xfce minimal install:
@@ -98,9 +116,11 @@ $ basestrap /mnt linux linux-firmware linux-headers base base-devel vim runit el
 ### Services
 
 - Most of the services are stored in `/etc/runit/sv` and to start a service you need to create a symlink to `/run/runit/service` like the following
+
   ```
   $ sudo ln -s /etc/runit/sv/[service_name] /run/runit/service # simply remove the  symlink if you want to disable a service.
   ```
+
   - Important services to enable on first boot :
     1. networkmanager
     2. dbus
@@ -112,7 +132,6 @@ $ basestrap /mnt linux linux-firmware linux-headers base base-devel vim runit el
 ### Adding Arch repos
 
 - Before adding arch repos must install the following packages:
-
   1. artix-archlinux-support
   2. archlinux-keyring
   3. archlinux-mirrorlist
@@ -307,26 +326,26 @@ $ sudo mkinitcpio -p linux
 
 ```css
 decoration {
-	box-shadow: none;
-	border-top-left-radius: 0px;
-	border-top-right-radius: 0px;
-	border-bottom-left-radius: 0px;
-	border-bottom-right-radius: 0px;
+  box-shadow: none;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
 }
 
 decoration:backdrop {
-	box-shadow: none;
+  box-shadow: none;
 }
 
 .titlebar,
 .titlebar .background,
 .window-frame,
 .window-frame:backdrop {
-	border-top-left-radius: 0px;
-	border-top-right-radius: 0px;
-	border-bottom-left-radius: 0px;
-	border-bottom-right-radius: 0px;
-	box-shadow: none;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  box-shadow: none;
 }
 ```
 

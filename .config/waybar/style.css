@@ -45,7 +45,7 @@ window#waybar.hidden {
 #battery.critical,
 #battery.warning,
 #clock {
-	font-family: JetBrainsMono Nerd Font Propo;
+	font-family: IosevkaTerm Nerd Font Propo;
 	font-size: 16px;
 	font-weight: 800;
 	color: #202020;
