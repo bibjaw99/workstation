@@ -353,3 +353,12 @@ decoration:backdrop {
 
 - `zen.urlbar.replace-newtab` - false
 - `zen.view.experimental-no-window-controls` - false
+
+## always youtube theatre mode
+
+- go to youtube.com
+- run the following code in the console
+
+```
+document.cookie = 'wide=1; expires='+new Date('3099').toUTCString()+'; path=/';
+```
