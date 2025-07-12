@@ -352,7 +352,7 @@ decoration:backdrop {
 ## zen browser
 
 - `zen.urlbar.replace-newtab` - false
-- `zen.view.experimental-no-window-controls` - false
+- `zen.view.experimental-no-window-controls` - true
 
 ## always youtube theatre mode
 

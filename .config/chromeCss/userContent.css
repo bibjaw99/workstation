@@ -1,0 +1,17 @@
+@-moz-document url(about:home), url(about:blank), url(about:newtab), url(about:privatebrowsing) {
+	.click-target-container *,
+	.top-sites-list * {
+		color: #fff !important;
+	}
+	body::before {
+		content: "";
+		z-index: -1;
+		position: fixed;
+		top: 0;
+		left: 0;
+		background: #f9a no-repeat url(img/wall.png) center;
+		background-size: cover;
+		width: 100vw;
+		height: 100vh;
+	}
+}
