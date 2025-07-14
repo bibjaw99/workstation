@@ -4,9 +4,9 @@
 * {
 	/* `otf-font-awesome` is required to be installed for icons */
 	padding: 0;
-	border-radius: 0;
-	min-height: 0;
 	margin: 0;
+	min-height: 0;
+	border-radius: 0;
 	border: none;
 	text-shadow: none;
 	transition: none;
@@ -15,22 +15,12 @@
 
 /* the whole window */
 window#waybar {
-	background: rgba(34, 34, 34, 1);
 	color: #fff4d2;
-	padding: 0;
-	margin: 0;
+	background: none;
 }
 
 window#waybar.hidden {
 	opacity: 1;
-}
-
-.modules-left {
-	padding-left: 5px;
-}
-
-.modules-right {
-	padding-right: 5px;
 }
 
 #custom-rofi,
@@ -57,11 +47,13 @@ window#waybar.hidden {
 #clock {
 	font-family: IosevkaTerm Nerd Font Propo;
 	font-size: 16px;
-	font-weight: 900;
-	color: #fff4d2;
+	font-weight: 800;
+	color: #202020;
+	background: #202020;
+	border: 3px solid #202020;
+	border-radius: 3px;
 }
 
-#custom-rofi,
 #window,
 #tray,
 #disk,
@@ -76,15 +68,11 @@ window#waybar.hidden {
 #battery.critical,
 #battery.warning,
 #clock {
-	padding: 0px 4px 0px 4px;
-	margin: 5px 0px;
+	padding-right: 4px;
 }
 
 #custom-rofi {
-	color: #202020;
-	border: 2px solid #458588;
 	background: #83a598;
-	border-radius: 2px;
 	padding: 0 6px;
 }
 
@@ -97,32 +85,23 @@ window#waybar.hidden {
 
 #workspaces button {
 	color: #fff4d2;
-	background: #202020;
-	border: 2px solid #fff4d2;
-	min-width: 22px;
 	padding: 0 4px;
-	margin: 5px 3px;
+	margin: 0px 3px;
+	min-width: 25px;
 }
 
 #workspaces button:hover {
-	color: #202020;
 	background: #d3869b;
-	border: 2px solid #b16286;
-	min-width: 22px;
 }
 
 #workspaces button.visible,
 #workspaces button.visible:hover,
 #workspaces button.active,
 #workspaces button.active:hover {
-	color: #202020;
-	border: 2px solid #689d6a;
 	background: #8ec07c;
 }
 
 #workspaces button.urgent {
-	color: #202020;
-	border: 2px solid #cc241d;
 	background: #ea6962;
 }
 
@@ -131,7 +110,7 @@ window#waybar.hidden {
 /* ================================ */
 
 #window {
-	border-bottom: 2px solid #d3869b;
+	color: #d3869b;
 }
 
 /* ================================ */
@@ -139,10 +118,7 @@ window#waybar.hidden {
 /* ================================ */
 
 #tray {
-	margin: 6px 0px;
-	padding: 0 6px;
-	background: rgb(51, 51, 51);
-	border-radius: 3px;
+	padding: 0 6px 0 6px;
 }
 
 /* ================================ */
@@ -150,78 +126,69 @@ window#waybar.hidden {
 /* ================================ */
 
 #disk {
-	border-bottom: 2px solid #ea6962;
+	color: #ea6962;
 }
 
 /* ================================ */
 /*            cpu                  */
 /* ================================ */
 #cpu {
-	border-bottom: 2px solid #e78a4e;
+	color: #e78a4e;
 }
 
 /* ================================ */
 /*            temp                  */
 /* ================================ */
 #temperature {
-	border-bottom: 2px solid #d8a657;
+	color: #d8a657;
 }
 
 #temperature.critical {
 	color: #cc241d;
-	border-bottom: 2px solid #cc241d;
 }
 
 /* ================================ */
 /*            backlight             */
 /* ================================ */
 #backlight {
-	border-bottom: 2px solid #f6c657;
+	color: #f6c657;
 }
 
 /* ================================ */
 /*            memory                */
 /* ================================ */
 #custom-memory {
-	border-bottom: 2px solid #458588;
+	color: #458588;
 }
 
 /* ================================ */
 /*         pulseaudio               */
 /* ================================ */
 #pulseaudio {
-	border-bottom: 2px solid #83a598;
+	color: #83a598;
 }
 
 #pulseaudio.muted {
 	color: #ea6962;
-	border-bottom: 2px solid #ea6962;
 }
 
 /* ================================ */
 /*            battery               */
 /* ================================ */
 #battery {
-	border-bottom: 2px solid #689d6a;
+	color: #689d6a;
 }
 
 #battery.critical {
 	color: #cc241d;
-	border-bottom: 2px solid #cc241d;
 }
 
 #battery.warning {
 	color: #e78a4e;
-	border-bottom: 2px solid #e78a4e;
-}
-
-#battery.chargin.warning {
-	color: #689d6a;
-	border-bottom: 2px solid #689d6a;
 }
 /* ================================ */
 /*            clock                 */
 /* ================================ */
 #clock {
-	border-bottom: 2px solid #8ec07c;
+	color: #8ec07c;
 }
