@@ -23,7 +23,7 @@
     "battery"
   ],
   "custom/rofi": {
-    "format": "<span ></span>",
+    "format": "<span ></span>",
     "on-click": "rofi -show drun -disable-history -show-icons",
     "on-click-right": "~/.config/custom_scripts/power.sh",
     "escape": true,
@@ -115,6 +115,7 @@
     "format-bluetooth-muted": "<span color='#202020' bgcolor='#ea6962' > 󰂲 </span> {volume}%",
     "format-source": "{volume}% ",
     "on-click": "pactl set-sink-mute @DEFAULT_SINK@ toggle",
+    "on-click-right": "pavucontrol",
     "tooltip": false,
     "max-volume": 130
   },
