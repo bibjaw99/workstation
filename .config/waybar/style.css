@@ -1,99 +1,27 @@
-/* ================================ */
-/*            Common CSS            */
-/* ================================ */
 * {
-	/* `otf-font-awesome` is required to be installed for icons */
 	padding: 0;
+	margin: 0;
 	border-radius: 0;
 	min-height: 0;
-	margin: 0;
-	border: none;
 	text-shadow: none;
 	transition: none;
 	box-shadow: none;
 }
 
-/* the whole window */
 window#waybar {
-	background: rgba(34, 34, 34, 0.999);
 	color: #fff4d2;
-	padding: 0;
-	margin: 0;
+	background: rgba(32, 32, 32, 0.999);
 	border-radius: 5;
-}
-
-window#waybar.hidden {
-	opacity: 1;
-}
-
-.modules-left {
-	padding-left: 6px;
-}
-
-.modules-right {
-	padding-right: 6px;
-}
-
-#custom-rofi,
-#workspaces button,
-#workspaces button:hover,
-#workspaces button.visible,
-#workspaces button.visible:hover,
-#workspaces button.active,
-#workspaces button.active:hover,
-#workspaces button.urgent,
-#window,
-#tray,
-#disk,
-#cpu,
-#temperature,
-#temperature.critical,
-#backlight,
-#custom-memory,
-#pulseaudio,
-#pulseaudio.muted,
-#battery,
-#battery.critical,
-#battery.warning,
-#clock {
 	font-family: IosevkaTerm Nerd Font Propo;
 	font-size: 16px;
 	font-weight: 900;
-	color: #fff4d2;
 }
 
-#custom-rofi,
-#window,
-#tray,
-#disk,
-#cpu,
-#temperature,
-#temperature.critical,
-#backlight,
-#custom-memory,
-#pulseaudio,
-#pulseaudio.muted,
-#battery,
-#battery.critical,
-#battery.warning,
-#clock {
-	padding: 0px 4px 0px 4px;
+.modules-left,
+.modules-center,
+.modules-right {
+	padding: 0 7px;
 	margin: 5px 0px;
-}
-
-#custom-rofi {
-	color: #202020;
-	border: 2px solid #458588;
-	background: #83a598;
-	border-radius: 5px;
-	padding: 0 6px;
-}
-
-/* ================================ */
-/*       workspaces module          */
-/* ================================ */
-#workspaces {
-	margin: 0px;
 }
 
 #workspaces button {
@@ -102,7 +30,7 @@ window#waybar.hidden {
 	border: 2px solid #fff4d2;
 	min-width: 22px;
 	padding: 0 4px;
-	margin: 5px 3px;
+	margin: 0px 3px;
 	border-radius: 5;
 }
 
@@ -128,43 +56,32 @@ window#waybar.hidden {
 	background: #ea6962;
 }
 
-/* ================================ */
-/*            window                 */
-/* ================================ */
+#custom-rofi {
+	color: #202020;
+	border: 2px solid #458588;
+	background: #83a598;
+	border-radius: 5px;
+	padding: 0 6px;
+}
 
 #window {
 	border-bottom: 2px solid #d3869b;
 }
 
-/* ================================ */
-/*            tray                 */
-/* ================================ */
-
 #tray {
-	margin: 6px 0px;
 	padding: 0 6px;
 	background: rgb(51, 51, 51);
 	border-radius: 3px;
 }
 
-/* ================================ */
-/*            disk                 */
-/* ================================ */
-
 #disk {
 	border-bottom: 2px solid #ea6962;
 }
 
-/* ================================ */
-/*            cpu                  */
-/* ================================ */
 #cpu {
 	border-bottom: 2px solid #e78a4e;
 }
 
-/* ================================ */
-/*            temp                  */
-/* ================================ */
 #temperature {
 	border-bottom: 2px solid #d8a657;
 }
@@ -174,23 +91,14 @@ window#waybar.hidden {
 	border-bottom: 2px solid #cc241d;
 }
 
-/* ================================ */
-/*            backlight             */
-/* ================================ */
 #backlight {
 	border-bottom: 2px solid #f6c657;
 }
 
-/* ================================ */
-/*            memory                */
-/* ================================ */
 #custom-memory {
 	border-bottom: 2px solid #458588;
 }
 
-/* ================================ */
-/*         pulseaudio               */
-/* ================================ */
 #pulseaudio {
 	border-bottom: 2px solid #83a598;
 }
@@ -200,9 +108,6 @@ window#waybar.hidden {
 	border-bottom: 2px solid #ea6962;
 }
 
-/* ================================ */
-/*            battery               */
-/* ================================ */
 #battery {
 	border-bottom: 2px solid #689d6a;
 }
@@ -221,9 +126,11 @@ window#waybar.hidden {
 	color: #689d6a;
 	border-bottom: 2px solid #689d6a;
 }
-/* ================================ */
-/*            clock                 */
-/* ================================ */
+
 #clock {
 	border-bottom: 2px solid #8ec07c;
+}
+
+#network {
+	border-bottom: 2px solid #d3869b;
 }

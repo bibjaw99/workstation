@@ -1,7 +1,7 @@
 {
   "layer": "top",
   "height": 20,
-  "spacing": 6,
+  "spacing": 5,
   "margin-top": 5,
   "margin-left": 5,
   "margin-right": 5,
@@ -16,6 +16,7 @@
 
   "modules-right": [
     "tray",
+    "network",
     "disk",
     "cpu",
     "temperature",
@@ -86,8 +87,8 @@
   },
 
   "tray": {
-    "icon-size": 15,
-    "spacing": 8
+    "icon-size": 16,
+    "spacing": 6
   },
 
   "disk": {
@@ -98,7 +99,7 @@
   "cpu": {
     "format": "<span color='#e78a4e'>[]</span> {usage}%",
     "tooltip": false,
-    "interval": 1
+    "interval": 1,
   },
 
   "temperature": {
@@ -167,4 +168,16 @@
     "interval":1,
   },
 
+  "network": {
+    "interval": 2,
+    "format": "<span color='#d3869b'>[󱘖]</span> {bandwidthDownBits}",
+    "format-wifi": "<span color='#d3869b'>[{icon}]</span> {bandwidthDownBits}",
+    "format-ethernet": "<span color='#d3869b'>[󰈀]</span> {bandwidthDownBits}",
+    "min-length": 11,
+    "format-icons": ["󰤫", "󰤟", "󰤢", "󰤥", "󰤨"],
+    "tooltip": false,
+    "states": {
+      "normal": 25,
+    },
+  },
 }

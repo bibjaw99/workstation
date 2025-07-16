@@ -19,7 +19,7 @@ mate-polkit
 xdg-desktop-portal
 xdg-user-dirs
 networkmanager
-network-manager-applet
+net-tools
 wget
 unzip
 unrar
