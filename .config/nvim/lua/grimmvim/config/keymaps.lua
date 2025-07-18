@@ -58,10 +58,6 @@ map("n", "<leader>w", ":w<cr>", { desc = "Write File", noremap = true, silent = 
 map("n", "<leader>W", ":wa<cr>", { desc = "Write All Files", noremap = true, silent = true })
 map("n", "<leader>M", ":messages<cr>", { desc = "Show Messages", noremap = true, silent = true })
 
--- Navigate between quickfix items
-map("n", "<leader>j", "<cmd>cnext<CR>zz", { desc = "QuickFixList Next" })
-map("n", "<leader>k", "<cmd>cprev<CR>zz", { desc = "QuickFixList Previous" })
-
 -- Nvim Options and Commands
 map("n", "<leader>ow", ":set wrap!<cr>", { desc = "Toggle Wrap Lines", noremap = true, silent = true })
 map("n", "<leader>ol", ":set linebreak!<cr>", { desc = "Toggle Break Lines", noremap = true, silent = true })
@@ -83,6 +79,11 @@ map("n", "<leader>bl", ":blast<cr>", { desc = "Last Buffer", noremap = true, sil
 -- map("n", "<leader>bx", ":bp<bar>sp<bar>bn<bar>bd<cr>", { desc = "Delete Buffer", noremap = true, silent = true })
 map("n", "<leader>bs", ":source %<cr>", { desc = "Source Buffer", noremap = true, silent = true })
 
+-- QuickFIx
+map("n", "<C-n>", ":cnext<cr>", { desc = "QuickFIx Next", noremap = true, silent = true })
+map("n", "<C-p>", ":cprev<cr>", { desc = "QuickFIx Prev", noremap = true, silent = true })
+map("n", "<C-q>", ":cclose<cr>", { desc = "QuickFIx Close", noremap = true, silent = false })
+
 -- Splits and Panes
 map("n", "<leader>pv", "<C-w>v", { desc = "Split Vertically", noremap = true, silent = false })
 map("n", "<leader>ph", "<C-w>s", { desc = "Split Horizontally", noremap = true, silent = false })
@@ -91,7 +92,6 @@ map("n", "<leader>px", ":close<CR>", { desc = "Close split", noremap = true, sil
 map("n", "<leader>po", ":only<CR>", { desc = "Single Pane", noremap = true, silent = false })
 
 -- Toggle Term
-map("n", "<C-q>", ":Lspsaga term_toggle<cr>", { desc = "Floating Terminal", noremap = true, silent = true })
 map("n", "<leader>t", ":sp<bar>term<cr>:resize 10<cr>", { desc = "Split Terminal", noremap = true, silent = true })
 
 -- add ; at the end of the line
@@ -112,10 +112,11 @@ map(
 	":lua vim.diagnostic.goto_next()<cr>",
 	{ desc = "LSP Next Diagnostic", noremap = true, silent = true }
 )
-
 map(
 	"n",
 	"<leader>lN",
 	":lua vim.diagnostic.goto_prev()<cr>",
 	{ desc = "LSP Previous Diagnostic", noremap = true, silent = true }
 )
+map("n", "<leader>lr", ":lua vim.lsp.buf.references()<cr>", { desc = "LSP References", noremap = true, silent = true })
+map("n", "<leader>lR", ":lua vim.lsp.buf.rename()<cr>", { desc = "LSP Rename", noremap = true, silent = true })

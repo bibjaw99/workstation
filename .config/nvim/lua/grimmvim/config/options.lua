@@ -56,6 +56,6 @@ opt.inccommand = "split"
 -- Update and backups
 opt.showmode = false
 opt.backup = false
-opt.writebackup = false
+opt.writebackup = true
 opt.updatetime = 300
 opt.timeoutlen = 500
