@@ -9,7 +9,7 @@
 }
 
 window#waybar {
-	color: #fff4d2;
+	color: rgb(255, 244, 210);
 	background: rgba(32, 32, 32, 0.999);
 	border-radius: 5;
 	font-family: IosevkaTerm Nerd Font Propo;
@@ -25,9 +25,9 @@ window#waybar {
 }
 
 #workspaces button {
-	color: #fff4d2;
-	background: #202020;
-	border: 2px solid #fff4d2;
+	color: rgb(255, 244, 210);
+	background: rgb(32, 32, 32);
+	border: 2px solid rgb(255, 244, 210);
 	min-width: 22px;
 	padding: 0 4px;
 	margin: 0px 3px;
@@ -35,9 +35,9 @@ window#waybar {
 }
 
 #workspaces button:hover {
-	color: #202020;
-	background: #d3869b;
-	border: 2px solid #b16286;
+	color: rgb(32, 32, 32);
+	background: rgb(211, 134, 155);
+	border: 2px solid rgb(177, 98, 134);
 	min-width: 22px;
 }
 
@@ -45,27 +45,27 @@ window#waybar {
 #workspaces button.visible:hover,
 #workspaces button.active,
 #workspaces button.active:hover {
-	color: #202020;
-	border: 2px solid #689d6a;
-	background: #8ec07c;
+	color: rgb(32, 32, 32);
+	border: 2px solid rgb(104, 157, 106);
+	background: rgb(142, 192, 124);
 }
 
 #workspaces button.urgent {
-	color: #202020;
-	border: 2px solid #cc241d;
-	background: #ea6962;
+	color: rgb(32, 32, 32);
+	border: 2px solid rgb(204, 36, 29);
+	background: rgb(234, 105, 98);
 }
 
 #custom-rofi {
-	color: #202020;
-	border: 2px solid #458588;
-	background: #83a598;
+	color: rgb(32, 32, 32);
+	border: 2px solid rgb(69, 133, 136);
+	background: rgb(131, 165, 152);
 	border-radius: 5px;
 	padding: 0 6px;
 }
 
 #window {
-	border-bottom: 2px solid #d3869b;
+	border-bottom: 2px solid rgb(211, 134, 155);
 }
 
 #tray {
@@ -75,62 +75,62 @@ window#waybar {
 }
 
 #disk {
-	border-bottom: 2px solid #ea6962;
+	border-bottom: 2px solid rgb(234, 105, 98);
 }
 
 #cpu {
-	border-bottom: 2px solid #e78a4e;
+	border-bottom: 2px solid rgb(231, 138, 78);
 }
 
 #temperature {
-	border-bottom: 2px solid #d8a657;
+	border-bottom: 2px solid rgb(216, 166, 87);
 }
 
 #temperature.critical {
-	color: #cc241d;
-	border-bottom: 2px solid #cc241d;
+	color: rgb(204, 36, 29);
+	border-bottom: 2px solid rgb(204, 36, 29);
 }
 
 #backlight {
-	border-bottom: 2px solid #f6c657;
+	border-bottom: 2px solid rgb(246, 198, 87);
 }
 
 #custom-memory {
-	border-bottom: 2px solid #458588;
+	border-bottom: 2px solid rgb(69, 133, 136);
 }
 
 #pulseaudio {
-	border-bottom: 2px solid #83a598;
+	border-bottom: 2px solid rgb(131, 165, 152);
 }
 
 #pulseaudio.muted {
-	color: #ea6962;
-	border-bottom: 2px solid #ea6962;
+	color: rgb(234, 105, 98);
+	border-bottom: 2px solid rgb(234, 105, 98);
 }
 
 #battery {
-	border-bottom: 2px solid #689d6a;
+	border-bottom: 2px solid rgb(104, 157, 106);
 }
 
 #battery.critical {
-	color: #cc241d;
-	border-bottom: 2px solid #cc241d;
+	color: rgb(204, 36, 29);
+	border-bottom: 2px solid rgb(204, 36, 29);
 }
 
 #battery.warning {
-	color: #e78a4e;
-	border-bottom: 2px solid #e78a4e;
+	color: rgb(231, 138, 78);
+	border-bottom: 2px solid rgb(231, 138, 78);
 }
 
 #battery.chargin.warning {
-	color: #689d6a;
-	border-bottom: 2px solid #689d6a;
+	color: rgb(104, 157, 106);
+	border-bottom: 2px solid rgb(104, 157, 106);
 }
 
 #clock {
-	border-bottom: 2px solid #8ec07c;
+	border-bottom: 2px solid rgb(142, 192, 124);
 }
 
 #network {
-	border-bottom: 2px solid #d3869b;
+	border-bottom: 2px solid rgb(211, 134, 155);
 }

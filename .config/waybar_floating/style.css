@@ -12,7 +12,7 @@
 
 /* the whole window */
 window#waybar {
-	color: #fff4d2;
+	color: rgb(255, 244, 210);
 	background: none;
 	font-family: IosevkaTerm Nerd Font Propo;
 	font-size: 16px;
@@ -67,7 +67,7 @@ window#waybar {
 }
 
 #custom-rofi {
-	background: #83a598;
+	background: rgb(131, 165, 152);
 	padding: 0 6px;
 }
 
@@ -76,29 +76,29 @@ window#waybar {
 }
 
 #workspaces button {
-	color: #fff4d2;
+	color: rgb(255, 244, 210);
 	padding: 0 4px;
 	margin: 0px 3px;
-	min-width: 25px;
+	min-width: 22px;
 }
 
 #workspaces button:hover {
-	background: #d3869b;
+	background: rgb(211, 134, 155);
 }
 
 #workspaces button.visible,
 #workspaces button.visible:hover,
 #workspaces button.active,
 #workspaces button.active:hover {
-	background: #8ec07c;
+	background: rgb(142, 192, 124);
 }
 
 #workspaces button.urgent {
-	background: #ea6962;
+	background: rgb(234, 105, 98);
 }
 
 #window {
-	color: #d3869b;
+	color: rgb(211, 134, 155);
 }
 
 #tray {
@@ -108,53 +108,53 @@ window#waybar {
 }
 
 #disk {
-	color: #ea6962;
+	color: rgb(234, 105, 98);
 }
 
 #cpu {
-	color: #e78a4e;
+	color: rgb(231, 138, 78);
 }
 
 #temperature {
-	color: #d8a657;
+	color: rgb(216, 166, 87);
 }
 
 #temperature.critical {
-	color: #cc241d;
+	color: rgb(204, 36, 29);
 }
 
 #backlight {
-	color: #f6c657;
+	color: rgb(246, 198, 87);
 }
 
 #custom-memory {
-	color: #458588;
+	color: rgb(69, 133, 136);
 }
 
 #pulseaudio {
-	color: #83a598;
+	color: rgb(131, 165, 152);
 }
 
 #pulseaudio.muted {
-	color: #ea6962;
+	color: rgb(234, 105, 98);
 }
 
 #battery {
-	color: #689d6a;
+	color: rgb(104, 157, 106);
 }
 
 #battery.critical {
-	color: #cc241d;
+	color: rgb(204, 36, 29);
 }
 
 #battery.warning {
-	color: #e78a4e;
+	color: rgb(231, 138, 78);
 }
 
 #clock {
-	color: #8ec07c;
+	color: rgb(142, 192, 124);
 }
 
 #network {
-	color: #d3869b;
+	color: rgb(211, 134, 155);
 }
