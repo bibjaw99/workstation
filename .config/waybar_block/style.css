@@ -1,6 +1,3 @@
-/* ================================ */
-/*            Common CSS            */
-/* ================================ */
 * {
 	/* `otf-font-awesome` is required to be installed for icons */
 	padding: 0;
@@ -15,48 +12,19 @@
 
 /* the whole window */
 window#waybar {
-	background-color: rgba(0, 0, 0, 0.4);
-	color: #fff4d2;
+	background-color: rgb(34, 34, 34);
 	padding: 0px 5px;
-	margin: 0;
-}
-
-.modules-left {
-	padding-left: 5px;
-}
-
-.modules-right {
-	padding-right: 5px;
-}
-
-#custom-rofi,
-#workspaces button,
-#workspaces button:hover,
-#workspaces button.visible,
-#workspaces button.visible:hover,
-#workspaces button.active,
-#workspaces button.active:hover,
-#workspaces button.urgent,
-#window,
-#tray,
-#disk,
-#cpu,
-#temperature,
-#temperature.critical,
-#backlight,
-#custom-memory,
-#pulseaudio,
-#pulseaudio.muted,
-#battery,
-#battery.critical,
-#battery.warning,
-#clock {
 	font-family: IosevkaTerm Nerd Font Propo;
-	font-size: 15px;
-	font-weight: 800;
+	font-size: 16px;
+	font-weight: 900;
 	color: #202020;
-	background: #202020;
-	/* box-shadow: -1px 2px 3px black; */
+}
+
+.modules-left,
+.modules-center,
+.modules-right {
+	padding: 0 5px;
+	margin: 5px 0px;
 }
 
 #window,
@@ -72,35 +40,27 @@ window#waybar {
 #battery,
 #battery.critical,
 #battery.warning,
+#network,
 #clock {
 	padding-right: 4px;
-	margin: 5px 0px;
 }
 
 #custom-rofi {
 	border: 2px solid #458588;
 	background: #83a598;
 	padding: 0 6px;
-	margin: 5px 0px;
-}
-
-/* ================================ */
-/*       workspaces module          */
-/* ================================ */
-#workspaces {
-	margin: 0px;
 }
 
 #workspaces button {
 	color: #fff4d2;
-	background: #202020;
 	border: 2px solid #fff4d2;
 	min-width: 25px;
 	padding: 0 4px;
-	margin: 5px 3px;
+	margin: 0 3px;
 }
 
 #workspaces button:hover {
+	color: #222222;
 	background: #d3869b;
 	border: 2px solid #b16286;
 }
@@ -109,53 +69,38 @@ window#waybar {
 #workspaces button.visible:hover,
 #workspaces button.active,
 #workspaces button.active:hover {
+	color: #222222;
 	border: 2px solid #689d6a;
 	background: #8ec07c;
 }
 
 #workspaces button.urgent {
+	color: #222222;
 	border: 2px solid #cc241d;
 	background: #ea6962;
 }
-
-/* ================================ */
-/*            window                 */
-/* ================================ */
 
 #window {
 	color: #d3869b;
 	border: 2px solid #d3869b;
 }
 
-/* ================================ */
-/*            tray                 */
-/* ================================ */
-
 #tray {
 	padding: 0 6px;
-	background-color: rgba(0, 0, 0, 0.5);
+	background: rgb(51, 51, 51);
+	border-radius: 3px;
 }
-
-/* ================================ */
-/*            disk                 */
-/* ================================ */
 
 #disk {
 	color: #ea6962;
 	border: 2px solid #ea6962;
 }
 
-/* ================================ */
-/*            cpu                  */
-/* ================================ */
 #cpu {
 	color: #e78a4e;
 	border: 2px solid #e78a4e;
 }
 
-/* ================================ */
-/*            temp                  */
-/* ================================ */
 #temperature {
 	color: #d8a657;
 	border: 2px solid #d8a657;
@@ -166,25 +111,16 @@ window#waybar {
 	border: 2px solid #cc241d;
 }
 
-/* ================================ */
-/*            backlight             */
-/* ================================ */
 #backlight {
 	color: #f6c657;
 	border: 2px solid #f6c657;
 }
 
-/* ================================ */
-/*            memory                */
-/* ================================ */
 #custom-memory {
 	color: #458588;
 	border: 2px solid #458588;
 }
 
-/* ================================ */
-/*         pulseaudio               */
-/* ================================ */
 #pulseaudio {
 	color: #83a598;
 	border: 2px solid #83a598;
@@ -195,9 +131,6 @@ window#waybar {
 	border: 2px solid #ea6962;
 }
 
-/* ================================ */
-/*            battery               */
-/* ================================ */
 #battery {
 	color: #689d6a;
 	border: 2px solid #689d6a;
@@ -212,10 +145,13 @@ window#waybar {
 	color: #e78a4e;
 	border: 2px solid #e78a4e;
 }
-/* ================================ */
-/*            clock                 */
-/* ================================ */
+
 #clock {
 	color: #8ec07c;
 	border: 2px solid #8ec07c;
+}
+
+#network {
+	color: #d3869b;
+	border: 2px solid #d3869b;
 }

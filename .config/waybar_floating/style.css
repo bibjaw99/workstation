@@ -1,6 +1,3 @@
-/* ================================ */
-/*            Common CSS            */
-/* ================================ */
 * {
 	/* `otf-font-awesome` is required to be installed for icons */
 	padding: 0;
@@ -17,10 +14,9 @@
 window#waybar {
 	color: #fff4d2;
 	background: none;
-}
-
-window#waybar.hidden {
-	opacity: 1;
+	font-family: IosevkaTerm Nerd Font Propo;
+	font-size: 16px;
+	font-weight: 900;
 }
 
 #custom-rofi,
@@ -44,18 +40,17 @@ window#waybar.hidden {
 #battery,
 #battery.critical,
 #battery.warning,
+#network,
 #clock {
-	font-family: IosevkaTerm Nerd Font Propo;
-	font-size: 16px;
-	font-weight: 800;
-	color: #202020;
-	background: #202020;
-	border: 3px solid #202020;
+	color: rgb(34, 34, 34);
+	background: rgba(34, 34, 34, 0.99);
+	border: 3px solid rgba(34, 34, 34, 0.99);
 	border-radius: 3px;
 }
 
 #window,
 #tray,
+#network,
 #disk,
 #cpu,
 #temperature,
@@ -76,9 +71,6 @@ window#waybar.hidden {
 	padding: 0 6px;
 }
 
-/* ================================ */
-/*       workspaces module          */
-/* ================================ */
 #workspaces {
 	margin: 0px;
 }
@@ -105,40 +97,24 @@ window#waybar.hidden {
 	background: #ea6962;
 }
 
-/* ================================ */
-/*            window                 */
-/* ================================ */
-
 #window {
 	color: #d3869b;
 }
 
-/* ================================ */
-/*            tray                 */
-/* ================================ */
-
 #tray {
-	padding: 0 6px 0 6px;
+	padding: 0 6px;
+	background: rgb(34, 34, 34);
+	border-radius: 3px;
 }
-
-/* ================================ */
-/*            disk                 */
-/* ================================ */
 
 #disk {
 	color: #ea6962;
 }
 
-/* ================================ */
-/*            cpu                  */
-/* ================================ */
 #cpu {
 	color: #e78a4e;
 }
 
-/* ================================ */
-/*            temp                  */
-/* ================================ */
 #temperature {
 	color: #d8a657;
 }
@@ -147,23 +123,14 @@ window#waybar.hidden {
 	color: #cc241d;
 }
 
-/* ================================ */
-/*            backlight             */
-/* ================================ */
 #backlight {
 	color: #f6c657;
 }
 
-/* ================================ */
-/*            memory                */
-/* ================================ */
 #custom-memory {
 	color: #458588;
 }
 
-/* ================================ */
-/*         pulseaudio               */
-/* ================================ */
 #pulseaudio {
 	color: #83a598;
 }
@@ -172,9 +139,6 @@ window#waybar.hidden {
 	color: #ea6962;
 }
 
-/* ================================ */
-/*            battery               */
-/* ================================ */
 #battery {
 	color: #689d6a;
 }
@@ -186,9 +150,11 @@ window#waybar.hidden {
 #battery.warning {
 	color: #e78a4e;
 }
-/* ================================ */
-/*            clock                 */
-/* ================================ */
+
 #clock {
 	color: #8ec07c;
+}
+
+#network {
+	color: #d3869b;
 }

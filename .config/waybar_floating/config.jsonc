@@ -3,8 +3,8 @@
   "height": 20,
   "spacing": 5,
   "margin-top" :5,
-  "margin-right" :8,
-  "margin-left" :8,
+  "margin-right" :5,
+  "margin-left" :5,
 
   "modules-left": [
     "custom/rofi",
@@ -18,6 +18,7 @@
   "modules-center": ["clock"],
 
   "modules-right": [
+    "network",
     "disk",
     "cpu",
     "temperature",
@@ -114,7 +115,8 @@
   "backlight": {
     // "device": "acpi_video1",
     "format": "<span color='#202020' bgcolor='#f6c657' > 󰞏 </span> {percent}%",
-    "tooltip": false
+    "tooltip": false,
+    "on-click-right" : "~/.config/custom_scripts/wlsunset.sh"
   },
 
   "custom/memory": {
@@ -161,9 +163,21 @@
     "tooltip": false
   },
 
+  "network": {
+    "interval": 2,
+    "format": "<span color='#202020' bgcolor='#d3869b'> 󱘖 </span> {bandwidthDownBits}",
+    "format-wifi": "<span color='#202020' bgcolor='#d3869b'> {icon} </span> {bandwidthDownBits}",
+    "format-ethernet": "<span color='#202020' bgcolor='#d3869b'> 󰈀 </span> {bandwidthDownBits}",
+    "format-icons": ["󰤫", "󰤟", "󰤢", "󰤥", "󰤨"],
+    "tooltip": false,
+    "states": {
+      "normal": 25,
+    },
+  },
+
   "clock": {
     // "timezone": "America/New_York",
-    "format": "<span color='#202020' bgcolor='#8ec07c' >  </span> {:%a %d %b %H:%M:%S}",
+    "format": "<span color='#202020' bgcolor='#8ec07c' >  </span> {:%a %d | %H:%M}",
     "tooltip": false,
     "interval":1,
   }
