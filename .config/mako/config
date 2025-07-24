@@ -3,6 +3,7 @@ layer=overlay
 width=350
 height=199
 text-alignment=center
+default-timeout=5000
 border-size=4
 border-radius=5
 icons=1

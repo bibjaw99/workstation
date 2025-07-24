@@ -7,7 +7,8 @@ zsh-syntax-highlighting
 zsh-autosuggestions lshw
 libnotify
 ghostty
-pcmanfm
+nemo
+nemo-fileroller
 xarchiver
 gvfs
 gvfs-mtp
@@ -27,6 +28,7 @@ gnome-keyring
 gnome-disk-utility
 libgnome-keyring
 brightnessctl
+inetutils
 
 # xorg-packages
 lxappearance-gtk3
