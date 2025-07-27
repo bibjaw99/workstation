@@ -29,6 +29,7 @@ gnome-disk-utility
 libgnome-keyring
 brightnessctl
 inetutils
+jq
 
 # xorg-packages
 lxappearance-gtk3

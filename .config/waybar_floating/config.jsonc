@@ -11,8 +11,8 @@
     "sway/workspaces",
     "sway/window",
     "hyprland/workspaces",
-    "tray",
     "hyprland/window",
+    "tray",
   ],
 
   "modules-center": ["clock"],

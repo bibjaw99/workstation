@@ -3,5 +3,5 @@
 if pidof wlsunset; then
    killall wlsunset
 else
-   wlsunset -T 4500
+   wlsunset -T 4001
 fi
