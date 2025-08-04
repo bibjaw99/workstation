@@ -3,7 +3,7 @@ layer=overlay
 width=350
 height=199
 text-alignment=center
-default-timeout=5000
+default-timeout=10000
 border-size=4
 border-radius=5
 icons=1
@@ -18,3 +18,10 @@ max-visible=12
 history=1
 background-color=#d8a657
 border-color=#222222
+
+[urgency=low]
+background-color=#e78a4e
+
+[urgency=critical]
+background-color=#FF0000
+default-timeout=0

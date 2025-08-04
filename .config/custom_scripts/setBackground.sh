@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# set the background using swaybg
+
 bgFolder="$HOME/Pictures/backgrounds/"
 bg=$(cat "$HOME/.cache/wall.txt")
 default_bg="$HOME/.config/walls/wall.png"

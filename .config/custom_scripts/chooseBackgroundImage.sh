@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# script for choosing the backgrounds image using rofi
+
 folder="$HOME/Pictures/backgrounds/"
 files=$(find "$folder" -type f \( -iname \*.jpg -o -iname \*.png -o -iname \*.jpeg -o -iname \*.gif \) | xargs -n 1 basename)
 selected=$(echo "$files" | rofi -dmenu -i -p "Select Image:")
