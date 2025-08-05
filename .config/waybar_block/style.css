@@ -30,8 +30,8 @@ window#waybar {
 #tray,
 #disk,
 #cpu,
-#temperature,
-#temperature.critical,
+#custom-cpu_temp,
+#custom-cpu_temp.critical,
 #backlight,
 #custom-memory,
 #pulseaudio,
@@ -100,14 +100,19 @@ window#waybar {
 	border: 2px solid rgba(231, 138, 78, 0.999);
 }
 
-#temperature {
+#custom-cpu_temp {
 	color: rgb(216, 166, 87);
 	border: 2px solid rgba(216, 166, 87, 0.999);
 }
 
-#temperature.critical {
+#custom-cpu_temp.critical {
 	color: rgb(204, 36, 29);
 	border: 2px solid rgba(204, 36, 29, 0.999);
+}
+
+#custom-cpu_temp.unknown {
+	color: rgb(85, 85, 85);
+	border: 2px solid rgba(85, 85, 85, 0.999);
 }
 
 #backlight {

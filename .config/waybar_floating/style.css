@@ -31,8 +31,8 @@ window#waybar {
 #tray,
 #disk,
 #cpu,
-#temperature,
-#temperature.critical,
+#custom-cpu_temp,
+#custom-cpu_temp.critical,
 #backlight,
 #custom-memory,
 #pulseaudio,
@@ -53,8 +53,8 @@ window#waybar {
 #network,
 #disk,
 #cpu,
-#temperature,
-#temperature.critical,
+#custom-cpu_temp,
+#custom-cpu_temp.critical,
 #backlight,
 #custom-memory,
 #pulseaudio,
@@ -115,12 +115,16 @@ window#waybar {
 	color: rgb(231, 138, 78);
 }
 
-#temperature {
+#custom-cpu_temp {
 	color: rgb(216, 166, 87);
 }
 
-#temperature.critical {
+#custom-cpu_temp.critical {
 	color: rgb(204, 36, 29);
+}
+
+#custom-cpu_temp.unknown {
+	color: rgb(85, 85, 85);
 }
 
 #backlight {

@@ -82,13 +82,17 @@ window#waybar {
 	border-bottom: 2px solid rgb(231, 138, 78);
 }
 
-#temperature {
+#custom-cpu_temp {
 	border-bottom: 2px solid rgb(216, 166, 87);
 }
 
-#temperature.critical {
+#custom-cpu_temp.critical {
 	color: rgb(204, 36, 29);
 	border-bottom: 2px solid rgb(204, 36, 29);
+}
+#custom-cpu_temp.unknown {
+	color: rgb(85, 85, 85);
+	border-bottom: 2px solid rgb(85, 85, 85);
 }
 
 #backlight {

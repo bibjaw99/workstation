@@ -21,7 +21,7 @@
     "network",
     "disk",
     "cpu",
-    "temperature",
+    "custom/cpu_temp",
     "backlight",
     "custom/memory",
     "pulseaudio",
@@ -101,6 +101,14 @@
     "format": "<span color='#202020' bgcolor='#e78a4e' >  </span> {usage}%",
     "tooltip": false,
     "interval": 1
+  },
+
+  "custom/cpu_temp": {
+    "exec": "~/.config/waybar/scripts/waybarTemp.sh",
+    "return-type": "json",
+    "interval": 2,
+    "format": "{}",
+    "tooltip": false
   },
 
   "temperature": {
