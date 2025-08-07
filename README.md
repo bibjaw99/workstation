@@ -16,6 +16,18 @@
 - **Fonts:** jetbrainsmono nerd font, roboto-condensed, font-awesome (No longer using Iosevka , since jetbrainsmono just works with any terminal)
 - **Policykit:** mate-polkit
 
+# Expect some breaking changes after August 07 ⚠️⚠️⚠️
+
+### I will be messing up with the repo but all the config files will be untouched
+
+## Installation script :
+
+### pls make sure you have `git` and `yay` installed
+
+```sh
+curl -s https://raw.githubusercontent.com/bibjaw99/workstation/refs/heads/main/install_scripts/install.sh | bash
+```
+
 # Notes ⚠️
 
 [Important Notes](./arch_install/notes/notes.md)
@@ -88,7 +100,7 @@ Packages I used in my System:
 |       mod+q       | focus floating window  |
 |       mod+w       |        browser         |
 |       mod+n       |        pcmanfm         |
-|    mod+Shift+b    |        blueman         |
+|       mod+b       |        blueman         |
 |    mod+Shift+n    |         swaync         |
 
 ---

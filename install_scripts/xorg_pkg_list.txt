@@ -1,0 +1,12 @@
+xorg
+lxappearance-gtk3
+xdg-desktop-portal-gtk
+xsel
+xorg-xrandr
+xdotool
+picom
+nitrogen
+i3-wm
+i3lock
+dunst
+polybar
