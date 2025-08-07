@@ -25,7 +25,7 @@
 ### pls make sure you have `git` and `yay` installed
 
 ```sh
-curl -s https://raw.githubusercontent.com/bibjaw99/workstation/refs/heads/main/install_scripts/install.sh | bash
+https://raw.githubusercontent.com/bibjaw99/workstation/refs/heads/master/install_scripts/install.sh
 ```
 
 # Notes ⚠️
