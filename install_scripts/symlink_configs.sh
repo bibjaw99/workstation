@@ -41,7 +41,7 @@ for directory in "${DIRECTORIES[@]}"; do
     rm "$target_path"
 
   # If it's a real directory, back it up
-  elif [[ -d "$target_path" ]]; then
+  elif [[ -d "$target_path" ]] && [[ ! -L "$target_path" ]]; then
     echo "📦 Backing up real directory to: $BACKUP_DIR/$directory"
     mv "$target_path" "$BACKUP_DIR/$directory"
 
