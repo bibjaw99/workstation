@@ -41,9 +41,19 @@ Packages I used in my System:
 
 ##### Currently using an ultrabook: HP probook 10 G450, i5 13th gen with iGPU - intel iris xe.
 
-- [Drivers](./arch_install/scripts/drivers.sh)
-- [System Packages](./arch_install/scripts/system_packages.sh)
-- [GUI Apps](./arch_install/scripts/applications.sh)
+```sh
+# intel
+xorg
+xf86-video-amdgpu
+xf86-video-ati
+amd-ucode
+amdvlk
+
+# amd
+intel-media-driver
+vulkan-intel
+intel-gmmlib
+```
 
 ---
 
