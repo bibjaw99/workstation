@@ -13,20 +13,21 @@
 - **Code Editor** : Neovim
 - **Lockscreen:** i3lock,swaylock
 - **File Manager:** pcmanfm
-- **Fonts:** jetbrainsmono nerd font, roboto-condensed, font-awesome (No longer using Iosevka , since jetbrainsmono just works with any terminal)
+- **Fonts:** jetbrainsmono nerd font, roboto-condensed, font-awesome, iosevkaterm nerd font
 - **Policykit:** mate-polkit
-
-# Expect some breaking changes after August 07 ⚠️⚠️⚠️
-
-### I will be messing up with the repo but all the config files will be untouched
 
 ## Installation script :
 
-### pls make sure you have `git` and `yay` installed
+### pls make sure you have `git` and `yay` installed before running the command
 
 ```sh
 curl -s https://raw.githubusercontent.com/bibjaw99/workstation/refs/heads/master/install_scripts/install.sh | bash
 ```
+
+- if you already finished the base arch installation just clone the repo
+- got `$HOME/github/workstation/install_scripts/`
+- run the `install.sh` script
+- before installing you can check the list of the Packages in the install_scripts directory and modify it according to your likings
 
 # Notes ⚠️
 
@@ -77,31 +78,6 @@ Packages I used in my System:
 
 ![Rofi](./screenshots/rofi_1.png)
 ![Rofi](./screenshots/rofi_2.png)
-
-## Keybindings For i3 and sway
-
-|    Keybindings    |        Actions         |
-| :---------------: | :--------------------: |
-|       mod+y       | Tiling and Tabbed Mode |
-|       mod+u       |     Select Parent      |
-|       mod+i       |      Select Child      |
-|       mod+d       |       rofi drun        |
-|       alt+d       |        rofi run        |
-|       alt+w       |      rofi windows      |
-|       mod+e       |       rofi emoji       |
-|       mod+m       |   toggle fullscreen    |
-|    mod+Shift+e    |       Power Menu       |
-|    mod+return     |        terminal        |
-|    mod+Shift+q    |     Kills a window     |
-| mod+ctrl+vim keys |     resize window      |
-|       mod+z       |       horizontal       |
-|       mod+a       |        vertical        |
-|     mod+space     |    floating window     |
-|       mod+q       | focus floating window  |
-|       mod+w       |        browser         |
-|       mod+n       |        pcmanfm         |
-|       mod+b       |        blueman         |
-|    mod+Shift+n    |         swaync         |
 
 ---
 
