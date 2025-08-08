@@ -8,7 +8,6 @@ if ! command -v yay &>/dev/null; then
   exit 1
 fi
 
-# Read lists into arrays using full paths
 mapfile -t common_packages < "$SCRIPT_DIR/common_pkg_list.txt"
 mapfile -t dev_packages < "$SCRIPT_DIR/dev_pkg_list.txt"
 mapfile -t wayland_packages < "$SCRIPT_DIR/wayland_pkg_list.txt"
@@ -33,9 +32,8 @@ install_package "${dev_packages[@]}"
 
 # Display server choice
 while true; do
-  echo -n "What is your preference? 1) xorg 2) wayland 3) both [default: 2]: " > /dev/tty
+  echo -n "What is your preference? 1) xorg 2) wayland 3) both : " > /dev/tty
   read -r display_server < /dev/tty
-  display_server=${display_server:-2}
 
   case "$display_server" in
     1)

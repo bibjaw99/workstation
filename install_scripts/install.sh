@@ -8,7 +8,7 @@ REPO_NAME=$(basename "$REPO_URL" .git)
 CLONE_DIR="$GITHUB_PROJECT_DIR/$REPO_NAME"
 INSTALL_SCRIPT_DIR="$CLONE_DIR/install_scripts"
 
-# ───── Functions ─────
+# Functions
 error() {
   echo "❌ $1" >&2
   exit 1
@@ -18,12 +18,12 @@ info() {
   echo "📦 $1"
 }
 
-# ───── Check for git ─────
+# Check if git  exists
 if ! command -v git &>/dev/null; then
   error "git is not installed. Please install it and retry."
 fi
 
-# ───── Clone repo if needed ─────
+# Clone repo if needed
 if [[ ! -d "$CLONE_DIR" ]]; then
   info "Cloning $REPO_URL into $CLONE_DIR"
   mkdir -p "$GITHUB_PROJECT_DIR"
@@ -32,7 +32,7 @@ else
   info "Repo already exists at $CLONE_DIR"
 fi
 
-# ───── Copy dotfiles directory ─────
+# Copy dotfiles to the targetted directory 
 if [[ -d "$TARGET_DIR" ]]; then
   echo "⚠️  $TARGET_DIR already exists. Overwrite? [y/N]" > /dev/tty
   read -r confirm < /dev/tty
@@ -48,7 +48,7 @@ else
   info "Copied dotfiles (fresh install). Proceeding with setup..."
 fi
 
-# ───── Run installation scripts ─────
+# Run installation scripts
 run_script_if_exists() {
   local script="$1"
   local script_path="$INSTALL_SCRIPT_DIR/$script"
