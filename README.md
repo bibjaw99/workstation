@@ -37,7 +37,7 @@ curl -s https://raw.githubusercontent.com/bibjaw99/workstation/refs/heads/master
 
 [Arch Installation Process I followed](./arch_install/notes/archInstalltion.md)
 
-Packages I used in my System:
+### Drivers:
 
 ##### Currently using an ultrabook: HP probook 10 G450, i5 13th gen with iGPU - intel iris xe.
 
