@@ -1,0 +1,5 @@
+com.discordapp.Discord
+org.telegram.desktop
+org.libreoffice.LibreOffice
+org.gimp.GIMP
+org.inkscape.Inkscape
