@@ -7,12 +7,12 @@
 - **OS:** Arch Linux
 - **Window Manager:** i3,swaywm,hyprland
 - **Bar:** polybar,waybar
-- **Launcher:** rofi,fuzzel
-- **Compositor:** picom
-- **Terminal:** alacritty,wezterm,kitty,foot
+- **Launcher:** rofi
+- **Compositor:** picom (for xorg)
+- **Terminal:** ghostty
 - **Code Editor** : Neovim
-- **Lockscreen:** i3lock,swaylock
-- **File Manager:** pcmanfm
+- **Lockscreen:** i3lock,swaylock,hyprlock
+- **File Manager:** nemo
 - **Fonts:** jetbrainsmono nerd font, roboto-condensed, font-awesome, iosevkaterm nerd font
 - **Policykit:** mate-polkit
 
