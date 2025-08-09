@@ -26,6 +26,7 @@ libgnome-keyring
 brightnessctl
 inetutils
 jq
+rsync
 imagemagick
 python-pillow
 rofi-wayland

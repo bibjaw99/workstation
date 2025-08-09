@@ -76,3 +76,8 @@ autocmd("User", {
 		vim.cmd("set guicursor+=a:Cursor/lCursor")
 	end,
 })
+
+vim.api.nvim_create_autocmd({ "TextChanged", "TextChangedI" }, {
+	pattern = "*",
+	command = "silent! write",
+})
