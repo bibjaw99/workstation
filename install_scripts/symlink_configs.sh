@@ -1,19 +1,19 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-CONFIG_DIR="$HOME/.local/share/dotfiles/config"
-TARGET_DIR="$HOME/.config"
+DOTFILES_DIR="$HOME/.local/share/dotfiles/config"
+CONFIG_DIR="$HOME/.config"
 BACKUP_DIR="$HOME/.config.backup/$(date +"%Y%d%m_%H-%M-%S")"
 mkdir -p "$BACKUP_DIR"
 
-mapfile -t DIRECTORIES < config_dirs.txt
+mapfile -t CONFIG_DIRECTORIES < config_dirs.txt
 
 # Special configs
 WAYBAR_CONFIG="$HOME/.local/share/dotfiles/config/waybar_configs/waybar_underline"
 POLYBAR_CONFIG="$HOME/.local/share/dotfiles/config/polybar_configs/polybar_underline"
 
-for directory in "${DIRECTORIES[@]}"; do
-  target_path="$TARGET_DIR/$directory"
+for directory in "${CONFIG_DIRECTORIES[@]}"; do
+  target_path="$CONFIG_DIR/$directory"
   # Override config path for special cases
   case "$directory" in
     waybar)
@@ -23,7 +23,7 @@ for directory in "${DIRECTORIES[@]}"; do
       config_path="$POLYBAR_CONFIG"
       ;;
     *)
-      config_path="$CONFIG_DIR/$directory"
+      config_path="$DOTFILES_DIR/$directory"
       ;;
   esac
 

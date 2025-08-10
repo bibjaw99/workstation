@@ -3,7 +3,7 @@ set -euo pipefail
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
-mapfile -t flatpak_packages < "$SCRIPT_DIR/flatpak_pkg_list.txt"
+mapfile -t FLATPAK_PACKAGES < "$SCRIPT_DIR/flatpak_pkg_list.txt"
 
 install_flatpak_package () {
   [[ $# -eq 0 ]] && echo "⚠️  No packages to install." && return
@@ -18,4 +18,4 @@ install_flatpak_package () {
   done
 }
 
-install_flatpak_package "${flatpak_packages[@]}"
+install_flatpak_package "${FLATPAK_PACKAGES[@]}"

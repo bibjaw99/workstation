@@ -3,7 +3,6 @@ set -euo pipefail
 
 # Define constants
 CONFIG_DIR="$HOME/.config"
-HOME_DIR="$HOME"
 BACKUP_DIR="$HOME/.config.backup/$(date +"%Y%m%d_%H-%M-%S")"
 mkdir -p "$BACKUP_DIR"
 
@@ -24,19 +23,19 @@ for file in "${CONFIG_FILES[@]}"; do
       source="$STARSHIP_CONFIG"
       ;;
     ".zshrc")
-      target="$HOME_DIR/$file"
+      target="$HOME/$file"
       source="$ZSH_CONFIG"
       ;;
     ".bashrc")
-      target="$HOME_DIR/$file"
+      target="$HOME/$file"
       source="$BASH_CONFIG"
       ;;
     ".vimrc")
-      target="$HOME_DIR/$file"
+      target="$HOME/$file"
       source="$VIM_CONFIG"
       ;;
     ".tmux.conf")
-      target="$HOME_DIR/$file"
+      target="$HOME/$file"
       source="$TMUX_CONFIG"
       ;;
     *)
