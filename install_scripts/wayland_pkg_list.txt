@@ -2,6 +2,7 @@ wayland
 xorg-xwayland
 waybar
 nwg-look
+wlsunset
 wl-clipboard
 swaybg
 sway

@@ -2,11 +2,13 @@
 set -euo pipefail
 
 REPO_URL="https://github.com/bibjaw99/workstation"
-CONFIG_DIR="$HOME/.local/share/dotfiles"
+DOTFILES_DIR="$HOME/.local/share/dotfiles"
 GITHUB_PROJECT_DIR="$HOME/github"
 REPO_NAME=$(basename "$REPO_URL" .git)
 CLONE_DIR="$GITHUB_PROJECT_DIR/$REPO_NAME"
 INSTALL_SCRIPT_DIR="$CLONE_DIR/install_scripts"
+
+mkdir -p "$(dirname "$DOTFILES_DIR")"
 
 # Functions
 error() {
@@ -35,18 +37,18 @@ else
 fi
 
 # Copy dotfiles to the targetted directory 
-if [[ -d "$CONFIG_DIR" ]]; then
-  echo "⚠️  $CONFIG_DIR already exists. Overwrite? [y/N]" > /dev/tty
+if [[ -d "$DOTFILES_DIR" ]]; then
+  echo "⚠️  $DOTFILES_DIR already exists. Overwrite? [y/N]" > /dev/tty
   read -r confirm < /dev/tty
   if [[ ! "$confirm" =~ ^[Yy]$ ]]; then
     error "Aborted by user."
   fi
-  rm -rf "$CONFIG_DIR"
-  cp -r "$CLONE_DIR/dotfiles" "$CONFIG_DIR"
+  rm -rf "$DOTFILES_DIR"
+  cp -r "$CLONE_DIR/dotfiles" "$DOTFILES_DIR"
   info "Copied and overwritten dotfiles. Skipping further install."
   exit 0
 else
-  cp -r "$CLONE_DIR/dotfiles" "$CONFIG_DIR"
+  cp -r "$CLONE_DIR/dotfiles" "$DOTFILES_DIR"
   info "Copied dotfiles (fresh install). Proceeding with setup..."
 fi
 

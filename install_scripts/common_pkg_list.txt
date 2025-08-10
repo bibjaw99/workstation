@@ -51,7 +51,7 @@ bluez
 bluez-utils
 gnome-bluetooth
 cmus
-feh
+ristretto
 mpv
 ttf-dejavu
 ttf-roboto
