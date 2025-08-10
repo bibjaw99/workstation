@@ -1,8 +1,6 @@
 wayland
 xorg-xwayland
 waybar
-grim
-slurp
 nwg-look
 wl-clipboard
 swaybg

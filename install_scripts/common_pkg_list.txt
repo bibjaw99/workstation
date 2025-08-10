@@ -6,6 +6,7 @@ libnotify
 ghostty
 nemo
 nemo-fileroller
+flameshot
 gvfs
 gvfs-mtp
 gvfs-gphoto2
