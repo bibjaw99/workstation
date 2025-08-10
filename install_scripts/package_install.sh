@@ -71,7 +71,8 @@ install_package "${dev_packages[@]}"
 
 # Ask for display server preference
 while true; do
-  read -rp "What is your preference? 1) xorg 2) wayland 3) both : " display_server
+  echo "Lets choose the display_server !!" > /dev/tty
+  read -rp "What is your preference? 1) xorg 2) wayland 3) both : " display_server < /dev/tty
   case "$display_server" in
     1) install_package "${xorg_packages[@]}"; break ;;
     2) install_package "${wayland_packages[@]}"; break ;;
