@@ -20,7 +20,9 @@ info() {
 
 # Check if git  exists
 if ! command -v git &>/dev/null; then
-  error "git is not installed. Please install it and retry."
+  echo " ⚠️  git is not installed !!"
+  echo "Installing git...."
+  sudo pacman -S git
 fi
 
 # Clone repo if needed

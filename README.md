@@ -18,8 +18,6 @@
 
 ## Installation script :
 
-### pls make sure you have `git` and `yay` installed before running the command
-
 ```sh
 curl -s https://raw.githubusercontent.com/bibjaw99/workstation/refs/heads/master/install_scripts/install.sh | bash
 ```
