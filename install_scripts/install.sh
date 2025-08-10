@@ -22,7 +22,7 @@ info() {
 if ! command -v git &>/dev/null; then
   echo " ⚠️  git is not installed !!"
   echo "Installing git...."
-  sudo pacman -S git
+  sudo pacman -Sy --noconfirm git < /dev/tty
 fi
 
 # Clone repo if needed
