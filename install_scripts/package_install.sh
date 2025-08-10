@@ -23,8 +23,8 @@ install_yay () {
 
 # Check if yay is installed
 if ! command -v yay &>/dev/null; then
-  echo "⚠️  yay is not installed!"
-  read -rp "Do you want to install yay now? (y/n): " choice
+  echo "⚠️  yay is not installed!" > /dev/tty
+  read -rp "Do you want to install yay now? (y/n): " choice < /dev/tty
   case "$choice" in
     y|Y) 
       echo "📥 Installing yay..."
