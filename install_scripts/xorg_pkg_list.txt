@@ -1,4 +1,5 @@
 xorg
+xorg-server
 lxappearance-gtk3
 xdg-desktop-portal-gtk
 xsel
