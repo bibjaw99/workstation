@@ -13,7 +13,7 @@ install_flatpak_package () {
       echo "✅ $package already installed."
     else
       echo "📦 Installing $package..."
-      flatpak install -y flathub "$package"
+      flatpak install -y "$package"
     fi
   done
 }
