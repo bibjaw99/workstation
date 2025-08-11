@@ -1,18 +1,23 @@
 #!/bin/bash
 
 folder="$HOME/Pictures/backgrounds/"
-files=$(find "$folder" -type f \( -iname \*.jpg -o -iname \*.png -o -iname \*.jpeg -o -iname \*.gif \) | xargs -n 1 basename)
-selected=$(echo "$files" | rofi -dmenu -i -p "Wallpapers:")
-
+mapfile -t wallpapers < <(find "$folder" -type f \( -iname "*.jpg" -o -iname "*.png" -o -iname "*.jpeg" -o -iname "*.gif" \) -printf "%f\t%p\n")
+selected=$(printf '%s\n' "${wallpapers[@]}" | cut -f1 | rofi -dmenu -i -p "Walls")
 if [ -n "$selected" ]; then
-  full_path=$(find "$folder" -type f -name "$selected" | head -n 1)
+  full_path=$(printf '%s\n' "${wallpapers[@]}" | grep -F "$selected" | cut -f2 -d$'\t')
+  echo "$(basename "$full_path")" > "$HOME/.cache/wall.txt"
+    # swaybg
+    if command -v swaybg >/dev/null 2>&1; then
+      pkill swaybg 2>/dev/null
+      swaybg -i "$full_path" -m fill &
+    else
+      echo "Warning: swaybg is not installed." >&2
+    fi
 
-  if pgrep -x swaybg > /dev/null; then
-    killall swaybg
-    echo "$(basename "$full_path")" > "$HOME/.cache/wall.txt"
-    swaybg -i "$full_path" -m fill
-  else
-    echo "$(basename "$full_path")" > "$HOME/.cache/wall.txt"
-    feh --bg-fill "$full_path"
-  fi
+    # feh
+    if command -v feh >/dev/null 2>&1; then
+      feh --bg-fill "$full_path"
+    else
+      echo "Warning: feh is not installed." >&2
+    fi
 fi
