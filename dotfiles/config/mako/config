@@ -1,4 +1,4 @@
-font=JetBrainsMono NFM 12
+font=IosevkaTerm Nerd Font SemiBold 14
 layer=overlay
 width=350
 height=199
@@ -18,10 +18,13 @@ max-visible=12
 history=1
 background-color=#d8a657
 border-color=#222222
+text-color=#222222
 
 [urgency=low]
 background-color=#e78a4e
+text-color=#222222
 
 [urgency=critical]
-background-color=#FF0000
+background-color=#b22222
+text-color=#ebdbb2
 default-timeout=0

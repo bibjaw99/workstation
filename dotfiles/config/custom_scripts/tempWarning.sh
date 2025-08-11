@@ -11,7 +11,7 @@ check_temp() {
 
   # If the temperature is not empty and above threshold
   if [[ -n "$TEMP" && "${TEMP%.*}" -ge "$THRESHOLD" ]]; then
-    notify-send "🔥 High Temperature" "CPU Temp is ${TEMP}°C"
+    notify-send -u critical "🔥 High Temperature" "CPU Temp is ${TEMP}°C"
   fi
 }
 

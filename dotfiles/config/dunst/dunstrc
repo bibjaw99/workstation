@@ -1,46 +1,20 @@
 [global]
-font = "FiraCode Nerd Font 10"
-allow_markup = yes
-format = "<b>%s</b>\n%b"
-sort = yes
-indicate_hidden = yes
-alignment = center
-bounce_freq = 0
-show_age_threshold = 60
-word_wrap = yes
-ignore_newline = no
-geometry = "200x5-6+30"
-transparency = 0
-idle_threshold = 120
-monitor = 0
-follow = mouse
-sticky_history = yes
-line_height = 10
-separator_height = 2
-padding = 4
-horizontal_padding = 4
-separator_color = "#222222"
-startup_notification = false
-# https://github.com/knopwob/dunst/issues/26#issuecomment-36159395
-icon_position = left
-icon_folders = ~/.icons/16x16/
-timeout = 5
-
-[frame]
-width = (0,400)
-color = "#ebdbb2"
-[shortcuts]
-close = ctrl+space
-close_all = ctrl+shift+space
-history = ctrl+grave
-context = ctrl+shift+period
-
+    background = "#d8a657"
+    foreground = "#222222"
+    frame_color = "#222222"
+    frame_width = 5
+    timeout = 10
+    alignment = center
+    enable_recursive_icon_lookup = true
+    padding = 5
+    horizontal_padding = 5
+    font = IosevkaTerm Nerd Font Propo SemiBold 14
+    corner_radius = 5
+    separator_height = 5
 [urgency_low]
-background = "#e78a4e"
-foreground = "#222222"
-timeout = 5
-
+    background = "#e78a4e"
+    timeout = 10
 [urgency_critical]
-background = "#FF0000"
-foreground = "#ebdbb2"
-timeout = 0
+    background = "#b22222"
+    foreground = "#ebdbb2"
+    timeout = 0
