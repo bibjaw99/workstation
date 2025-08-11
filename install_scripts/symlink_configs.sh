@@ -4,6 +4,8 @@ set -euo pipefail
 DOTFILES_DIR="$HOME/.local/share/dotfiles/config"
 CONFIG_DIR="$HOME/.config"
 BACKUP_DIR="$HOME/.config.backup/$(date +"%Y%d%m_%H-%M-%S")"
+
+mkdir -p "$CONFIG_DIR"
 mkdir -p "$BACKUP_DIR"
 
 mapfile -t CONFIG_DIRECTORIES < config_dirs.txt

@@ -12,3 +12,4 @@ xdg-desktop-portal-hyprland
 hyprland
 hyprlock
 mako
+grim

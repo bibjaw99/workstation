@@ -6,7 +6,7 @@ xsel
 xorg-xrandr
 xdotool
 picom
-nitrogen
+feh
 i3-wm
 i3lock
 dunst
