@@ -11,8 +11,8 @@ mkdir -p "$BACKUP_DIR"
 mapfile -t CONFIG_DIRECTORIES < config_dirs.txt
 
 # Special configs
-WAYBAR_CONFIG="$HOME/.local/share/dotfiles/config/waybar_configs/waybar_underline"
-POLYBAR_CONFIG="$HOME/.local/share/dotfiles/config/polybar_configs/polybar_underline"
+WAYBAR_CONFIG="$HOME/.local/share/dotfiles/config/waybar_configs/waybar_block_alt/"
+POLYBAR_CONFIG="$HOME/.local/share/dotfiles/config/polybar_configs/polybar_block"
 
 for directory in "${CONFIG_DIRECTORIES[@]}"; do
   target_path="$CONFIG_DIR/$directory"
