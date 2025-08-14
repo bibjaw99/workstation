@@ -28,7 +28,7 @@ gtk-adwaita = false
 title = "Ghostty"
 
 # theming
-background = #282828
+background = #222222
 foreground = #ebdbb2
 
 palette = 0=#3c3836

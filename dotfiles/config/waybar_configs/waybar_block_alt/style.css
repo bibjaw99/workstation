@@ -37,9 +37,9 @@ window#waybar {
 #battery.warning,
 #network,
 #clock {
-	border: 2px solid #484848;
+	border: 2px solid #444444;
 	color: #fff4d2;
-	background-color: #383838;
+	background-color: #333333;
 	padding: 1px 6px 1px 0px;
 }
 
@@ -52,8 +52,8 @@ window#waybar {
 
 #workspaces button {
 	color: #fff4d2;
-	background-color: #383838;
-	border: 2px solid #484848;
+	background-color: #333333;
+	border: 2px solid #444444;
 	min-width: 20px;
 	margin: 0 3px;
 	padding: 0px 6px;

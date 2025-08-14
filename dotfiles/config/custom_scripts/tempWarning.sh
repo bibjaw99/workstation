@@ -3,7 +3,7 @@
 # notify high temperature
 
 # Threshold in Celsius
-THRESHOLD=70
+THRESHOLD=80
 
 check_temp() {
   # Get CPU temp (modify grep/awk part if needed)

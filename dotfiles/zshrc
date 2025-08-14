@@ -62,6 +62,8 @@ export PATH="$HOME/.local/bin:$PATH"
 
 ## Universal
 alias swayfig="nvim ~/.config/sway/keymaps.conf"
+alias hyconfig="nvim ~/.config/hypr/keymaps.conf"
+alias gconfig="nvim ~/.config/ghostty/config"
 alias ls="eza --icons"
 alias la="ls -la"
 alias lsTree="ls --tree"
@@ -77,7 +79,6 @@ alias DS="cd ~/Desktop/DS"
 alias bsource="source .bashrc"
 alias xx="exit"
 alias cc="clear"
-alias ai="tgpt"
 alias lg="lazygit"
 alias gg="fg"
 alias ins='nvim $(fzf -m --preview="bat --theme=gruvbox-dark --color=always {}")'
@@ -100,7 +101,7 @@ alias tls="tmux ls"
 alias trename="tmux rename-session -t"
 alias ta="tmux a -t"
 
-alias cmusic='
+alias mus='
   tmux new-session -d -s cmusic "cmus" \
     \; split-window -v  -l 12 -d "cava" \
     \; attach -t cmusic
