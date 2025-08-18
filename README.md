@@ -22,10 +22,29 @@
 curl -s https://raw.githubusercontent.com/bibjaw99/workstation/refs/heads/master/install_scripts/install.sh | bash
 ```
 
+## folder structure of my install script :
+
 - if you already finished the base arch installation just clone the repo
 - got `$HOME/github/workstation/install_scripts/`
 - run the `install.sh` script
 - before installing you can check the list of the Packages in the install_scripts directory and modify it according to your likings
+
+```sh
+├── config_lists
+│   ├── config_dirs.txt
+│   └── config_files.txt
+├── flatpak_install.sh
+├── install.sh
+├── package_install.sh
+├── package_lists
+│   ├── common_pkg_list.txt
+│   ├── dev_pkg_list.txt
+│   ├── flatpak_pkg_list.txt
+│   ├── wayland_pkg_list.txt
+│   └── xorg_pkg_list.txt
+├── symlink_configs.sh
+└── symlink_files.sh
+```
 
 # Notes ⚠️
 
