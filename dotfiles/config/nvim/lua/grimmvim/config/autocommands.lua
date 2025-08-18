@@ -26,6 +26,7 @@ RunKeymap("cpp", "g++ % -o %:r && ./%:r")
 RunKeymap("c", "gcc % -o %:r && ./%:r")
 RunKeymap("lua", "lua")
 RunKeymap("python", "python3")
+RunKeymap("sh", "bash")
 
 -- keep cursor unchanged after quiting
 autocmd("ExitPre", {
