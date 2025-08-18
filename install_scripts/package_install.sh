@@ -2,22 +2,22 @@
 set -euo pipefail
 
 # Variables
-YAY_URL="https://aur.archlinux.org/yay-bin.git"
-SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-GITHUB_PROJECT_DIR="$HOME/github"
-YAY_DIR="$GITHUB_PROJECT_DIR/$(basename "$YAY_URL" .git)"
+REPO_URL_YAY="https://aur.archlinux.org/yay-bin.git"
+DIR_OF_THIS_SCRIPT="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+DIR_GITHUB_PROJECTS="$HOME/github"
+DIR_PROJECT_YAY="$DIR_GITHUB_PROJECTS/$(basename "$REPO_URL_YAY" .git)"
 
 # Function to install yay
 install_yay () {
-  mkdir -p "$GITHUB_PROJECT_DIR"
+  mkdir -p "$DIR_GITHUB_PROJECTS"
 
-  if [ -d "$YAY_DIR" ]; then
-    echo "⚠️ Directory $YAY_DIR already exists, removing it..."
-    rm -rf "$YAY_DIR"
+  if [ -d "$DIR_PROJECT_YAY" ]; then
+    echo "⚠️ Directory $DIR_PROJECT_YAY already exists, removing it..."
+    rm -rf "$DIR_PROJECT_YAY"
   fi
 
-  git clone "$YAY_URL" "$YAY_DIR"
-  cd "$YAY_DIR"
+  git clone "$REPO_URL_YAY" "$DIR_PROJECT_YAY"
+  cd "$DIR_PROJECT_YAY"
   makepkg -si --noconfirm
 }
 
@@ -39,17 +39,17 @@ fi
 
 # Load package lists
 for list in common_pkg_list.txt dev_pkg_list.txt wayland_pkg_list.txt xorg_pkg_list.txt; do
-  file="$SCRIPT_DIR/$list"
+  file="$DIR_OF_THIS_SCRIPT/package_lists/$list"
   if [[ ! -f "$file" ]]; then
     echo "❌ Missing file: $file"
     exit 1
   fi
 done
 
-mapfile -t common_packages < "$SCRIPT_DIR/common_pkg_list.txt"
-mapfile -t dev_packages < "$SCRIPT_DIR/dev_pkg_list.txt"
-mapfile -t wayland_packages < "$SCRIPT_DIR/wayland_pkg_list.txt"
-mapfile -t xorg_packages < "$SCRIPT_DIR/xorg_pkg_list.txt"
+mapfile -t common_packages < "$DIR_OF_THIS_SCRIPT/package_lists/common_pkg_list.txt"
+mapfile -t dev_packages < "$DIR_OF_THIS_SCRIPT/package_lists/dev_pkg_list.txt"
+mapfile -t wayland_packages < "$DIR_OF_THIS_SCRIPT/package_lists/wayland_pkg_list.txt"
+mapfile -t xorg_packages < "$DIR_OF_THIS_SCRIPT/package_lists/xorg_pkg_list.txt"
 
 # Install package function
 install_package () {

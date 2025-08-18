@@ -2,9 +2,10 @@
 set -euo pipefail
 
 # Define constants
-CONFIG_DIR="$HOME/.config"
-BACKUP_DIR="$HOME/.config.backup/$(date +"%Y%m%d_%H-%M-%S")"
-mkdir -p "$BACKUP_DIR"
+DIR_OF_THIS_SCRIPT="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+DIR_CONFIG="$HOME/.config"
+DIR_BACKUP="$HOME/.config.backup/$(date +"%Y%m%d_%H-%M-%S")"
+mkdir -p "$DIR_BACKUP"
 
 # Define config source paths
 STARSHIP_CONFIG="$HOME/.local/share/dotfiles/config/starship.toml"
@@ -14,12 +15,12 @@ VIM_CONFIG="$HOME/.local/share/dotfiles/vimrc"
 TMUX_CONFIG="$HOME/.local/share/dotfiles/tmux.conf"
 
 # Read the list of config files to install
-mapfile -t CONFIG_FILES < config_files.txt
+mapfile -t CONFIG_FILES < "$DIR_OF_THIS_SCRIPT/config_lists/config_files.txt"
 
 for file in "${CONFIG_FILES[@]}"; do
   case "$file" in
     "starship.toml")
-      target="$CONFIG_DIR/$file"
+      target="$DIR_CONFIG/$file"
       source="$STARSHIP_CONFIG"
       ;;
     ".zshrc")
@@ -50,8 +51,8 @@ for file in "${CONFIG_FILES[@]}"; do
     echo "🔗 Removing existing symlink: $target"
     rm "$target"
   elif [[ -e "$target" ]]; then
-    echo "📦 Backing up: $target → $BACKUP_DIR/"
-    mv "$target" "$BACKUP_DIR/"
+    echo "📦 Backing up: $target → $DIR_BACKUP/"
+    mv "$target" "$DIR_BACKUP/"
   else
     echo "ℹ️  No existing file at $target"
   fi

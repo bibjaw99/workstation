@@ -13,8 +13,6 @@ rofi
 mako
 walls
 zathura
-ranger
-yazi
 walls
 i3
 polybar

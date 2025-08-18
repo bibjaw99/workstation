@@ -1,21 +1,22 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-DOTFILES_DIR="$HOME/.local/share/dotfiles/config"
-CONFIG_DIR="$HOME/.config"
-BACKUP_DIR="$HOME/.config.backup/$(date +"%Y%d%m_%H-%M-%S")"
+DIR_OF_THIS_SCRIPT="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+DIR_DOTFILES="$HOME/.local/share/dotfiles/config"
+DIR_CONFIG="$HOME/.config"
+DIR_BACKUP="$HOME/.config.backup/$(date +"%Y%d%m_%H-%M-%S")"
 
-mkdir -p "$CONFIG_DIR"
-mkdir -p "$BACKUP_DIR"
+mkdir -p "$DIR_CONFIG"
+mkdir -p "$DIR_BACKUP"
 
-mapfile -t CONFIG_DIRECTORIES < config_dirs.txt
+mapfile -t DIR_CONFIGECTORIES < "$DIR_OF_THIS_SCRIPT/config_lists/config_dirs.txt"
 
 # Special configs
 WAYBAR_CONFIG="$HOME/.local/share/dotfiles/config/waybar_configs/waybar_block_alt/"
 POLYBAR_CONFIG="$HOME/.local/share/dotfiles/config/polybar_configs/polybar_block"
 
-for directory in "${CONFIG_DIRECTORIES[@]}"; do
-  target_path="$CONFIG_DIR/$directory"
+for directory in "${DIR_CONFIGECTORIES[@]}"; do
+  target_path="$DIR_CONFIG/$directory"
   # Override config path for special cases
   case "$directory" in
     waybar)
@@ -25,7 +26,7 @@ for directory in "${CONFIG_DIRECTORIES[@]}"; do
       config_path="$POLYBAR_CONFIG"
       ;;
     *)
-      config_path="$DOTFILES_DIR/$directory"
+      config_path="$DIR_DOTFILES/$directory"
       ;;
   esac
 
@@ -44,8 +45,8 @@ for directory in "${CONFIG_DIRECTORIES[@]}"; do
 
   # If it's a real directory, back it up
   elif [[ -d "$target_path" ]] && [[ ! -L "$target_path" ]]; then
-    echo "📦 Backing up real directory to: $BACKUP_DIR/$directory"
-    mv "$target_path" "$BACKUP_DIR/$directory"
+    echo "📦 Backing up real directory to: $DIR_BACKUP/$directory"
+    mv "$target_path" "$DIR_BACKUP/$directory"
 
   else
     echo "ℹ️  No existing config at $target_path — no need to backup"
