@@ -25,9 +25,9 @@ curl -s https://raw.githubusercontent.com/bibjaw99/workstation/refs/heads/master
 ## folder structure of my install script :
 
 - if you already finished the base arch installation just clone the repo
-- go to `$HOME/github/workstation/install_scripts/package_lists`
-- run the `install.sh` script
+- run the `$HOME/github/workstation/install_scripts/install.sh` script
 - before installing you can check the list of the Packages in the install_scripts directory and modify it according to your likings
+  - just go to `/workstation/install_scripts/package_lists` directory to find all the list of packages
 
 ```sh
 ├── config_lists

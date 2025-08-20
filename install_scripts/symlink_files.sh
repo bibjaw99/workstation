@@ -2,42 +2,42 @@
 set -euo pipefail
 
 # Define constants
-DIR_OF_THIS_SCRIPT="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-DIR_CONFIG="$HOME/.config"
-DIR_BACKUP="$HOME/.config.backup/$(date +"%Y%m%d_%H-%M-%S")"
-mkdir -p "$DIR_BACKUP"
+dir_of_this_script="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+dir_config="$HOME/.config"
+dir_backup="$HOME/.config.backup/$(date +"%Y%m%d_%H-%M-%S")"
+mkdir -p "$dir_backup"
 
 # Define config source paths
-STARSHIP_CONFIG="$HOME/.local/share/dotfiles/config/starship.toml"
-ZSH_CONFIG="$HOME/.local/share/dotfiles/zshrc"
-BASH_CONFIG="$HOME/.local/share/dotfiles/bashrc"
-VIM_CONFIG="$HOME/.local/share/dotfiles/vimrc"
-TMUX_CONFIG="$HOME/.local/share/dotfiles/tmux.conf"
+starship_config="$HOME/.local/share/dotfiles/config/starship.toml"
+zsh_config="$HOME/.local/share/dotfiles/zshrc"
+bash_config="$HOME/.local/share/dotfiles/bashrc"
+vim_config="$HOME/.local/share/dotfiles/vimrc"
+tmux_config="$HOME/.local/share/dotfiles/tmux.conf"
 
 # Read the list of config files to install
-mapfile -t CONFIG_FILES < "$DIR_OF_THIS_SCRIPT/config_lists/config_files.txt"
+mapfile -t config_files < "$dir_of_this_script/config_lists/config_files.txt"
 
-for file in "${CONFIG_FILES[@]}"; do
+for file in "${config_files[@]}"; do
   case "$file" in
     "starship.toml")
-      target="$DIR_CONFIG/$file"
-      source="$STARSHIP_CONFIG"
+      target="$dir_config/$file"
+      source="$starship_config"
       ;;
     ".zshrc")
       target="$HOME/$file"
-      source="$ZSH_CONFIG"
+      source="$zsh_config"
       ;;
     ".bashrc")
       target="$HOME/$file"
-      source="$BASH_CONFIG"
+      source="$bash_config"
       ;;
     ".vimrc")
       target="$HOME/$file"
-      source="$VIM_CONFIG"
+      source="$vim_config"
       ;;
     ".tmux.conf")
       target="$HOME/$file"
-      source="$TMUX_CONFIG"
+      source="$tmux_config"
       ;;
     *)
       echo "⚠️  Invalid config entry: $file"
@@ -51,8 +51,8 @@ for file in "${CONFIG_FILES[@]}"; do
     echo "🔗 Removing existing symlink: $target"
     rm "$target"
   elif [[ -e "$target" ]]; then
-    echo "📦 Backing up: $target → $DIR_BACKUP/"
-    mv "$target" "$DIR_BACKUP/"
+    echo "📦 Backing up: $target → $dir_backup/"
+    mv "$target" "$dir_backup/"
   else
     echo "ℹ️  No existing file at $target"
   fi

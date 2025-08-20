@@ -2,22 +2,22 @@
 set -euo pipefail
 
 # Variables
-REPO_URL_YAY="https://aur.archlinux.org/yay-bin.git"
-DIR_OF_THIS_SCRIPT="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-DIR_GITHUB_PROJECTS="$HOME/github"
-DIR_PROJECT_YAY="$DIR_GITHUB_PROJECTS/$(basename "$REPO_URL_YAY" .git)"
+repo_url_yay="https://aur.archlinux.org/yay-bin.git"
+dir_of_this_script="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+dir_github_projects="$HOME/github"
+dir_project_yay="$dir_github_projects/$(basename "$repo_url_yay" .git)"
 
 # Function to install yay
 install_yay () {
-  mkdir -p "$DIR_GITHUB_PROJECTS"
+  mkdir -p "$dir_github_projects"
 
-  if [ -d "$DIR_PROJECT_YAY" ]; then
-    echo "⚠️ Directory $DIR_PROJECT_YAY already exists, removing it..."
-    rm -rf "$DIR_PROJECT_YAY"
+  if [ -d "$dir_project_yay" ]; then
+    echo "⚠️ Directory $dir_project_yay already exists, removing it..."
+    rm -rf "$dir_project_yay"
   fi
 
-  git clone "$REPO_URL_YAY" "$DIR_PROJECT_YAY"
-  cd "$DIR_PROJECT_YAY"
+  git clone "$repo_url_yay" "$dir_project_yay"
+  cd "$dir_project_yay"
   makepkg -si --noconfirm
 }
 
@@ -39,17 +39,18 @@ fi
 
 # Load package lists
 for list in common_pkg_list.txt dev_pkg_list.txt wayland_pkg_list.txt xorg_pkg_list.txt; do
-  file="$DIR_OF_THIS_SCRIPT/package_lists/$list"
+  file="$dir_of_this_script/package_lists/$list"
   if [[ ! -f "$file" ]]; then
     echo "❌ Missing file: $file"
     exit 1
   fi
 done
 
-mapfile -t common_packages < "$DIR_OF_THIS_SCRIPT/package_lists/common_pkg_list.txt"
-mapfile -t dev_packages < "$DIR_OF_THIS_SCRIPT/package_lists/dev_pkg_list.txt"
-mapfile -t wayland_packages < "$DIR_OF_THIS_SCRIPT/package_lists/wayland_pkg_list.txt"
-mapfile -t xorg_packages < "$DIR_OF_THIS_SCRIPT/package_lists/xorg_pkg_list.txt"
+# store the packages in an array fro the package lists
+mapfile -t common_packages < "$dir_of_this_script/package_lists/common_pkg_list.txt"
+mapfile -t dev_packages < "$dir_of_this_script/package_lists/dev_pkg_list.txt"
+mapfile -t wayland_packages < "$dir_of_this_script/package_lists/wayland_pkg_list.txt"
+mapfile -t xorg_packages < "$dir_of_this_script/package_lists/xorg_pkg_list.txt"
 
 # Install package function
 install_package () {

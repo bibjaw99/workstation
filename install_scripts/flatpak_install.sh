@@ -1,9 +1,9 @@
 #!/bin/bash
 set -euo pipefail
 
-DIR_OF_THIS_SCRIPT="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+dir_of_this_script="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
-mapfile -t FLATPAK_PACKAGES < "$DIR_OF_THIS_SCRIPT/package_lists/flatpak_pkg_list.txt"
+mapfile -t flatpak_packages < "$dir_of_this_script/package_lists/flatpak_pkg_list.txt"
 
 install_flatpak_package () {
   [[ $# -eq 0 ]] && echo "⚠️  No packages to install." && return
@@ -18,4 +18,4 @@ install_flatpak_package () {
   done
 }
 
-install_flatpak_package "${FLATPAK_PACKAGES[@]}"
+install_flatpak_package "${flatpak_packages[@]}"

@@ -1,60 +1,62 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-DIR_OF_THIS_SCRIPT="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-DIR_DOTFILES="$HOME/.local/share/dotfiles/config"
-DIR_CONFIG="$HOME/.config"
-DIR_BACKUP="$HOME/.config.backup/$(date +"%Y%d%m_%H-%M-%S")"
+dir_of_this_script="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+dir_dotfiles="$HOME/.local/share/dotfiles/config"
+dir_config="$HOME/.config"
+dir_backup="$HOME/.config.backup/$(date +"%Y%d%m_%H-%M-%S")"
 
-mkdir -p "$DIR_CONFIG"
-mkdir -p "$DIR_BACKUP"
+# make sure config and backup dir exists
+mkdir -p "$dir_config"
+mkdir -p "$dir_backup"
 
-mapfile -t DIR_CONFIGECTORIES < "$DIR_OF_THIS_SCRIPT/config_lists/config_dirs.txt"
+# store the config directory names in an array
+mapfile -t dir_config_directories < "$dir_of_this_script/config_lists/config_dirs.txt"
 
-# Special configs
-WAYBAR_CONFIG="$HOME/.local/share/dotfiles/config/waybar_configs/waybar_block_alt/"
-POLYBAR_CONFIG="$HOME/.local/share/dotfiles/config/polybar_configs/polybar_block"
+# default configs
+default_dotfile_waybar="$HOME/.local/share/dotfiles/config/waybar_configs/waybar_block_alt/"
+default_dotfile_polybar="$HOME/.local/share/dotfiles/config/polybar_configs/polybar_block"
 
-for directory in "${DIR_CONFIGECTORIES[@]}"; do
-  target_path="$DIR_CONFIG/$directory"
+for directory in "${dir_config_directories[@]}"; do
+  path_config="$dir_config/$directory"
   # Override config path for special cases
   case "$directory" in
     waybar)
-      config_path="$WAYBAR_CONFIG"
+      path_dotfile="$default_dotfile_waybar"
       ;;
     polybar)
-      config_path="$POLYBAR_CONFIG"
+      path_dotfile="$default_dotfile_polybar"
       ;;
     *)
-      config_path="$DIR_DOTFILES/$directory"
+      path_dotfile="$dir_dotfiles/$directory"
       ;;
   esac
 
   echo "▶ Processing $directory..."
 
   # Check if config source exists
-  if [[ ! -d "$config_path" ]]; then
-    echo "⚠️  Skipping: Config not found at $config_path"
+  if [[ ! -d "$path_dotfile" ]]; then
+    echo "⚠️  Skipping: Config not found at $path_dotfile"
     continue
   fi
 
   # If the target is a symlink, remove it
-  if [[ -L "$target_path" ]]; then
-    echo "🔗 Removing symlink: $target_path"
-    rm "$target_path"
+  if [[ -L "$path_config" ]]; then
+    echo "🔗 Removing symlink: $path_config"
+    rm "$path_config"
 
   # If it's a real directory, back it up
-  elif [[ -d "$target_path" ]] && [[ ! -L "$target_path" ]]; then
-    echo "📦 Backing up real directory to: $DIR_BACKUP/$directory"
-    mv "$target_path" "$DIR_BACKUP/$directory"
+  elif [[ -d "$path_config" ]] && [[ ! -L "$path_config" ]]; then
+    echo "📦 Backing up real directory to: $dir_backup/$directory"
+    mv "$path_config" "$dir_backup/$directory"
 
   else
-    echo "ℹ️  No existing config at $target_path — no need to backup"
+    echo "ℹ️  No existing config at $path_config — no need to backup"
   fi
 
   # Symlink the config
-  echo "🔗 Linking $config_path → $target_path"
-  ln -sfn "$config_path" "$target_path"
+  echo "🔗 Linking $path_dotfile → $path_config"
+  ln -sfn "$path_dotfile" "$path_config"
   echo "✅ Done: $directory"
   echo
 done

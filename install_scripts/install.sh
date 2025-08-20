@@ -1,14 +1,14 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-REPO_URL_WORKSTATION="https://github.com/bibjaw99/workstation"
-DIR_DOTFILES="$HOME/.local/share/dotfiles"
-DIR_GITHUB_PROJECTS="$HOME/github"
-BASENAME_REPO_WORKSTATION=$(basename "$REPO_URL_WORKSTATION" .git)
-DIR_PROJECT_WORKSTATION="$DIR_GITHUB_PROJECTS/$BASENAME_REPO_WORKSTATION"
-DIR_INSTALL_SCRIPTS="$DIR_PROJECT_WORKSTATION/install_scripts"
+repo_url_workstation="https://github.com/bibjaw99/workstation"
+dir_dotfiles="$HOME/.local/share/dotfiles"
+dir_github_projects="$HOME/github"
+basename_repo_workstation=$(basename "$repo_url_workstation" .git)
+dir_project_workstation="$dir_github_projects/$basename_repo_workstation"
+dir_install_scripts="$dir_project_workstation/install_scripts"
 
-mkdir -p "$(dirname "$DIR_DOTFILES")"
+mkdir -p "$(dirname "$dir_dotfiles")"
 
 # Functions
 info () {
@@ -36,39 +36,39 @@ if ! command -v git &>/dev/null; then
 fi
 
 # Clone repo if needed
-if [[ ! -d "$DIR_PROJECT_WORKSTATION" ]]; then
-  info "Cloning $REPO_URL_WORKSTATION into $DIR_PROJECT_WORKSTATION"
-  mkdir -p "$DIR_GITHUB_PROJECTS"
-  git clone "$REPO_URL_WORKSTATION" "$DIR_PROJECT_WORKSTATION"
+if [[ ! -d "$dir_project_workstation" ]]; then
+  info "Cloning $repo_url_workstation into $dir_project_workstation"
+  mkdir -p "$dir_github_projects"
+  git clone "$repo_url_workstation" "$dir_project_workstation"
 else
-  info "Repo already exists at $DIR_PROJECT_WORKSTATION"
+  info "Repo already exists at $dir_project_workstation"
 fi
 
 # Copy dotfiles to the targetted directory 
-if [[ -d "$DIR_DOTFILES" ]]; then
-  warning "$DIR_DOTFILES already exists. Overwrite? [y/N]" > /dev/tty
+if [[ -d "$dir_dotfiles" ]]; then
+  warning "$dir_dotfiles already exists. Overwrite? [y/N]" > /dev/tty
   read -r confirm < /dev/tty
   if [[ ! "$confirm" =~ ^[Yy]$ ]]; then
     error "Aborted by user."
   fi
-  rm -rf "$DIR_DOTFILES"
-  cp -r "$DIR_PROJECT_WORKSTATION/dotfiles" "$DIR_DOTFILES"
+  rm -rf "$dir_dotfiles"
+  cp -r "$dir_project_workstation/dotfiles" "$dir_dotfiles"
   info "Copied and overwritten dotfiles. Skipping further install."
   exit 0
 else
-  cp -r "$DIR_PROJECT_WORKSTATION/dotfiles" "$DIR_DOTFILES"
+  cp -r "$dir_project_workstation/dotfiles" "$dir_dotfiles"
   info "Copied dotfiles (fresh install). Proceeding with setup..."
 fi
 
 # Run installation scripts
 run_script_if_exists() {
   local script="$1"
-  local script_path="$DIR_INSTALL_SCRIPTS/$script"
+  local script_path="$dir_install_scripts/$script"
 
   if [[ -f "$script_path" ]]; then
     info "Running $script..."
     (
-      cd "$DIR_INSTALL_SCRIPTS"
+      cd "$dir_install_scripts"
       bash "./$script"
     )
   else
