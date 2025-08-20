@@ -6,17 +6,16 @@
 	transition: none;
 	box-shadow: none;
 	border: none;
-	border-radius: 2px;
+	border-radius: 0px;
 }
 
 window#waybar {
 	background-color: rgba(34, 34, 34, 1);
 	padding: 0px 5px;
 	font-family: IosevkaTerm Nerd Font Propo;
-	font-size: 15px;
+	font-size: 16px;
 	font-weight: 900;
 	color: rgb(32, 32, 32);
-	border-radius: 0px;
 }
 
 .modules-left,
@@ -89,7 +88,6 @@ window#waybar {
 #tray {
 	padding: 0 6px;
 	background: rgb(51, 51, 51);
-	border-radius: 3px;
 }
 
 #disk {
