@@ -32,7 +32,6 @@ imagemagick
 python-pillow
 rofi-wayland
 rofi-emoji-git
-plymouth
 rate-mirrors-bin
 pacman-contrib
 eza

@@ -22,6 +22,15 @@
 curl -s https://raw.githubusercontent.com/bibjaw99/workstation/refs/heads/master/install_scripts/install.sh | bash
 ```
 
+## how the script works :
+
+- all the dotfiles will by stored in a folder called `dotfiles` in your `$HOME/.local/share` directory
+- then if the config already exists in the `$HOME/.config` directory then it will be backed up in the `$HOME/.config.backup` directory
+- then a symlink will be created from `$HOME/.local/share/dotfiles` directory to the `$HOME/.config` directory
+  - **why this approach instead of using/creating actual directories ? :** it's easy to dump them all togather in the github project folder after making huge changes in multiple app configs
+- names of the config directories and config files that needs to be symlinked, must be listed in the respected files in `workstation/install_scripts/config_lists`.
+  - check `symlink_configs.sh` and `symlink_files.sh` to understand it better
+
 ## folder structure of my install script :
 
 - if you already finished the base arch installation just clone the repo
