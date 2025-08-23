@@ -24,7 +24,7 @@ curl -s https://raw.githubusercontent.com/bibjaw99/workstation/refs/heads/master
 
 ## how the script works :
 
-- all the dotfiles will by stored in a folder called `dotfiles` in your `$HOME/.local/share` directory
+- all the dotfiles will be stored in a folder called `dotfiles` in your `$HOME/.local/share` directory
 - then if the config already exists in the `$HOME/.config` directory then it will be backed up in the `$HOME/.config.backup` directory
 - then a symlink will be created from `$HOME/.local/share/dotfiles` directory to the `$HOME/.config` directory
   - **why this approach instead of using/creating actual directories ? :** it's easy to dump them all togather in the github project folder after making huge changes in multiple app configs
