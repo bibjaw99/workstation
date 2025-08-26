@@ -6,7 +6,6 @@ return {
 	config = function()
 		local map = vim.keymap.set
 		vim.g.mkdp_filetypes = { "markdown" }
-		vim.cmd("let g:mkdp_theme = 'light'")
 		vim.cmd("let g:mkdp_auto_start = 0")
 		vim.cmd("let g:mkdp_refresh_slow = 0")
 		vim.cmd("let g:mkdp_auto_close = 0")
