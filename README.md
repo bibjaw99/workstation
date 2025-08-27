@@ -55,13 +55,10 @@ curl -s https://raw.githubusercontent.com/bibjaw99/workstation/refs/heads/master
 └── symlink_files.sh
 ```
 
-# Notes ⚠️
+# Notes
 
-[Important Notes](./arch_install/notes/notes.md)
-
-[Wayland Notes](./arch_install/notes/wayland_notes.md)
-
-[Arch Installation Process I followed](./arch_install/notes/archInstalltion.md)
+- [Important Notes](./arch_install/notes/notes.md)
+- [Arch Installation Process I followed](./arch_install/notes/archInstalltion.md)
 
 ### Drivers:
 

@@ -4,16 +4,14 @@
 
 check theme and icon
 
-```
-ls -I "*.*" /usr/share/themes
-ls -I "*.*" /usr/share/icons
-```
-
 set theme and icon
 
 ```
-sudo flatpak override --env=GTK_THEME=Materia-dark-compact
-sudo flatpak override --env=ICON_THEME=Tela-circle-black-dark
+sudo flatpak override --system --reset
+sudo flatpak override --filesystem=$HOME/.themes/
+sudo flatpak override --filesystem=$HOME/.icons/
+sudo flatpak override --env=GTK_THEME=Orchis-Grey-Dark-Compact
+sudo flatpak override --env=ICON_THEME=Papirus-Dark
 ```
 
 flatpak global override configs are in : `cd /var/lib/flatpak/overrides`

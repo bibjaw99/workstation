@@ -4,8 +4,8 @@ zsh-autosuggestions
 lshw
 libnotify
 ghostty
-nemo
-nemo-fileroller
+pcmanfm-gtk3
+xarchiver
 flameshot
 gvfs
 gvfs-mtp
@@ -58,5 +58,3 @@ ttf-jetbrains-mono-nerd
 ttf-iosevkaterm-nerd
 ttf-font-awesome
 noto-fonts-emoji
-tela-circle-icon-theme-black
-materia-gtk-theme
