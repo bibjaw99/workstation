@@ -20,6 +20,7 @@ window#waybar {
 }
 
 #custom-rofi,
+#mode,
 #workspaces button,
 #workspaces button:hover,
 #workspaces button.visible,
@@ -161,4 +162,9 @@ window#waybar {
 
 #network {
 	color: rgb(211, 134, 155);
+}
+
+#mode {
+	background: rgb(131, 165, 152);
+	padding: 0 6px;
 }

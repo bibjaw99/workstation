@@ -13,6 +13,7 @@
     "hyprland/workspaces",
     "hyprland/window",
     "tray",
+    "sway/mode",
   ],
 
   "modules-center": ["clock"],
@@ -60,6 +61,11 @@
     "separate-outputs": true,
     "icon":false,
     "tooltip": false
+  },
+
+  "sway/mode": {
+    "format": " {}",
+    "max-length": 50
   },
 
   "hyprland/workspaces": {

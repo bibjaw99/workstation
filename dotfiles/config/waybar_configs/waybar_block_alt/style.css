@@ -107,3 +107,10 @@ window#waybar {
 	border: 2px solid #484848;
 	padding: 0 8px;
 }
+
+#mode {
+	color: #000000;
+	border: 2px solid #458588;
+	background: #83a598;
+	padding: 0px 8px;
+}

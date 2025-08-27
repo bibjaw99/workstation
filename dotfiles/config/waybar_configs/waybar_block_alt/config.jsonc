@@ -9,7 +9,8 @@
     "hyprland/workspaces",
     "sway/window",
     "hyprland/window",
-    "tray"
+    "tray",
+    "sway/mode",
   ],
 
   "modules-center": [
@@ -58,6 +59,11 @@
     "format": "<span color='#f6c657' > 󰣆 </span>{app_id}",
     "separate-outputs": true,
     "tooltip": false
+  },
+
+  "sway/mode": {
+    "format": " {}",
+    "max-length": 50
   },
 
   "hyprland/workspaces": {

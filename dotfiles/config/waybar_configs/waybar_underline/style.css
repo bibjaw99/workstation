@@ -137,3 +137,11 @@ window#waybar {
 #network {
 	border-bottom: 2px solid rgb(211, 134, 155);
 }
+
+#mode {
+	color: rgb(32, 32, 32);
+	border: 2px solid rgb(69, 133, 136);
+	border-radius: 3;
+	background: rgb(131, 165, 152);
+	padding: 0 6px;
+}

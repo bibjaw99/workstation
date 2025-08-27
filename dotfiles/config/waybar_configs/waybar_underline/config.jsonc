@@ -9,6 +9,7 @@
     "sway/window",
     "hyprland/workspaces",
     "hyprland/window",
+    "sway/mode",
   ],
 
   "modules-right": [
@@ -56,6 +57,11 @@
     "separate-outputs": true,
     "icon":false,
     "tooltip": false
+  },
+
+  "sway/mode": {
+    "format": " {}",
+    "max-length": 50
   },
 
   "hyprland/workspaces": {
