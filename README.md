@@ -18,8 +18,6 @@
 
 ## Installation script :
 
-temporary installation
-
 ```sh
 mkdir -p ~/github && (cd ~/github/workstation || git clone https://github.com/bibjaw99/workstation ~/github/workstation) && [ -f ~/github/workstation/install_scripts/install.sh ] && bash ~/github/workstation/install_scripts/install.sh || echo "Install script not found."
 ```
