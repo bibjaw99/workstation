@@ -13,7 +13,7 @@ window#waybar {
 	background-color: rgba(34, 34, 34, 1);
 	padding: 0px 5px;
 	font-family: IosevkaTerm Nerd Font Propo;
-	font-size: 16px;
+	font-size: 17px;
 	font-weight: 900;
 	color: rgb(32, 32, 32);
 }
@@ -21,8 +21,8 @@ window#waybar {
 .modules-left,
 .modules-center,
 .modules-right {
-	padding: 0 7px;
 	margin: 5px 0px;
+	padding: 0 6px;
 }
 
 #window,

@@ -12,15 +12,15 @@ window#waybar {
 	color: rgb(255, 244, 210);
 	background: rgba(32, 32, 32, 0.999);
 	font-family: IosevkaTerm Nerd Font Propo;
-	font-size: 16px;
+	font-size: 17px;
 	font-weight: 900;
 }
 
 .modules-left,
 .modules-center,
 .modules-right {
-	padding: 0 7px;
 	margin: 5px 0px;
+	padding: 0 6px;
 }
 
 #workspaces button {

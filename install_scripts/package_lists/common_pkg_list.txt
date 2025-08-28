@@ -15,6 +15,7 @@ jmtpfs
 ntfs-3g
 mate-polkit
 xdg-desktop-portal
+xdg-desktop-portal-gtk
 xdg-user-dirs
 networkmanager
 net-tools
