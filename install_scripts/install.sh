@@ -28,6 +28,23 @@ error () {
   exit 1
 }
 
+# Run installation scripts
+run_script_if_exists() {
+  local script="$1"
+  local script_path="$dir_install_scripts/$script"
+
+  if [[ -f "$script_path" ]]; then
+    info "Running $script..."
+    (
+      cd "$dir_install_scripts"
+      bash "./$script"
+    )
+  else
+    info "$script not found, skipping."
+  fi
+}
+
+
 # Check if git  exists
 if ! command -v git &>/dev/null; then
   warning "git is not installed !!"
@@ -54,27 +71,14 @@ if [[ -d "$dir_dotfiles" ]]; then
   rm -rf "$dir_dotfiles"
   cp -r "$dir_project_workstation/dotfiles" "$dir_dotfiles"
   info "Copied and overwritten dotfiles. Skipping further install."
+  info "Creating symbolic links of configs"
+  run_script_if_exists "symlink_configs.sh"
+  run_script_if_exists "symlink_files.sh"
   exit 0
 else
   cp -r "$dir_project_workstation/dotfiles" "$dir_dotfiles"
   info "Copied dotfiles (fresh install). Proceeding with setup..."
 fi
-
-# Run installation scripts
-run_script_if_exists() {
-  local script="$1"
-  local script_path="$dir_install_scripts/$script"
-
-  if [[ -f "$script_path" ]]; then
-    info "Running $script..."
-    (
-      cd "$dir_install_scripts"
-      bash "./$script"
-    )
-  else
-    info "$script not found, skipping."
-  fi
-}
 
 run_script_if_exists "package_install.sh"
 run_script_if_exists "symlink_configs.sh"
