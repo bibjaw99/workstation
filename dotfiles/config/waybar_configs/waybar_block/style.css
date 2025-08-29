@@ -160,7 +160,8 @@ window#waybar {
 	border: 2px solid rgba(211, 134, 155, 0.999);
 }
 
-#mode {
+#mode,
+#submap {
 	border: 2px solid rgba(69, 133, 136, 0.999);
 	background: rgb(131, 165, 152);
 	padding: 0 6px;

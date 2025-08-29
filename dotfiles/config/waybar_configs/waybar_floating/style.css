@@ -21,6 +21,7 @@ window#waybar {
 
 #custom-rofi,
 #mode,
+#submap,
 #workspaces button,
 #workspaces button:hover,
 #workspaces button.visible,
@@ -164,7 +165,8 @@ window#waybar {
 	color: rgb(211, 134, 155);
 }
 
-#mode {
+#mode,
+#submap {
 	background: rgb(131, 165, 152);
 	padding: 0 6px;
 }

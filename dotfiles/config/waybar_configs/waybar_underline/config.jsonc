@@ -13,6 +13,7 @@
     "hyprland/workspaces",
     "hyprland/window",
     "sway/mode",
+    "hyprland/submap"
   ],
 
   "modules-right": [
@@ -90,6 +91,11 @@
     "separate-outputs": true,
     "icon":false,
     "tooltip": false
+  },
+
+  "hyprland/submap": {
+    "format": " {}",
+    "max-length": 50
   },
 
   "tray": {

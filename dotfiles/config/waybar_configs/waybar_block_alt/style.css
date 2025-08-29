@@ -108,7 +108,8 @@ window#waybar {
 	padding: 0 8px;
 }
 
-#mode {
+#mode,
+#submap {
 	color: #000000;
 	border: 2px solid #458588;
 	background: #83a598;

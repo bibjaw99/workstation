@@ -3,10 +3,10 @@ local autocmd = vim.api.nvim_create_autocmd
 local augroup = vim.api.nvim_create_augroup
 
 -- Create an autocmd group for executing files
-augroup("RunOnSave", { clear = true })
-local function RunKeymap(filetype, command)
+augroup("RunMyCode", { clear = true })
+local function CodeRunner(filetype, command)
 	autocmd("FileType", {
-		group = "RunOnSave",
+		group = "RunMyCode",
 		pattern = filetype,
 		callback = function()
 			map(
@@ -21,12 +21,12 @@ local function RunKeymap(filetype, command)
 end
 
 -- Define the commands for each filetype
-RunKeymap("javascript", "node")
-RunKeymap("cpp", "g++ % -o %:r && ./%:r")
-RunKeymap("c", "gcc % -o %:r && ./%:r")
-RunKeymap("lua", "lua")
-RunKeymap("python", "python3")
-RunKeymap("sh", "bash")
+CodeRunner("javascript", "node")
+CodeRunner("cpp", "g++ % -o %:r && ./%:r")
+CodeRunner("c", "gcc % -o %:r && ./%:r")
+CodeRunner("lua", "lua")
+CodeRunner("python", "python3")
+CodeRunner("sh", "bash")
 
 -- keep cursor unchanged after quiting
 autocmd("ExitPre", {
