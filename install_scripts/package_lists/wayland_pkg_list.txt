@@ -10,6 +10,5 @@ swaylock
 xdg-desktop-portal-wlr
 xdg-desktop-portal-hyprland
 hyprland
-hyprlock
 mako
 grim
