@@ -101,10 +101,5 @@ alias tls="tmux ls"
 alias trename="tmux rename-session -t"
 alias ta="tmux a -t"
 
-alias mus='
-  tmux new-session -d -s cmusic "cmus" \
-    \; split-window -v  -l 12 -d "cava" \
-    \; attach -t cmusic
-'
 eval "$(starship init zsh)"
 
