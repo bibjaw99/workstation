@@ -1,7 +1,7 @@
 [window]
 dynamic_padding = true
-padding.x = 5
-padding.y = 5
+padding.x = 8
+padding.y = 8
 opacity = 1
 decorations = "none"
 
@@ -44,7 +44,7 @@ cyan = "#8ec07c"
 white = "#fff4d2"
 
 [font]
-size = 14
+size = 15
 offset.x=0
 offset.y=-3
 
@@ -52,14 +52,14 @@ glyph_offset.x=0
 glyph_offset.y=-1
 
 [font.normal]
-family = "JetBrainsMono Nerd Font Mono"
+family = "IosevkaTerm Nerd Font Mono"
 style = "SemiBold"
 [font.bold]
-family = "JetBrainsMono Nerd Font Mono"
+family = "IosevkaTerm Nerd Font Mono"
 style = "ExtraBold"
 [font.italic]
-family = "JetBrainsMono Nerd Font Mono"
+family = "IosevkaTerm Nerd Font Mono"
 style = "SemiBold Italic"
 [font.bold_italic]
-family = "JetBrainsMono Nerd Font Mono"
+family = "IosevkaTerm Nerd Font Mono"
 style = "ExtraBold Italic"

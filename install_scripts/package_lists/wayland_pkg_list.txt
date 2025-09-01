@@ -1,3 +1,4 @@
+foot
 wayland
 xorg-xwayland
 waybar

@@ -3,7 +3,6 @@ zsh-syntax-highlighting
 zsh-autosuggestions
 lshw
 libnotify
-ghostty
 pcmanfm-gtk3
 xarchiver
 flameshot

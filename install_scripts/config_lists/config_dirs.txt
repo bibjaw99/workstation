@@ -1,5 +1,5 @@
 alacritty
-ghostty
+foot
 hypr
 sway
 swaync

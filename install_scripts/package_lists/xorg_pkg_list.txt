@@ -1,3 +1,4 @@
+alacritty
 xorg
 xorg-server
 lxappearance-gtk3

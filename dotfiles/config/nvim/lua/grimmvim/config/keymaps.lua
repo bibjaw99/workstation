@@ -19,9 +19,14 @@ map("n", "<leader><leader>S", ":source %<cr>", { desc = "Source Buffer", noremap
 map("n", "j", "gj", { desc = "Down In Wrap", noremap = true, silent = true })
 map("n", "k", "gk", { desc = "Up In Wrap", noremap = true, silent = true })
 
--- Remapping JK
-map("n", "J", "<C-d>", { desc = "Scroll Down", noremap = true, silent = false })
-map("n", "K", "<C-u>", { desc = "Scroll Up", noremap = true, silent = false })
+-- remap tab for insert mode
+map("i", "<Tab>", "<C-Tab>", { desc = "Down In Wrap", noremap = true, silent = true })
+
+-- Scrolling with HJKL
+map("n", "H", "5h", { desc = "Scroll Left", noremap = true, silent = false })
+map("n", "J", "5j", { desc = "Scroll Down", noremap = true, silent = false })
+map("n", "K", "5k", { desc = "Scroll Up", noremap = true, silent = false })
+map("n", "L", "5l", { desc = "Scroll Right", noremap = true, silent = false })
 
 -- Move around in visual mode
 map("v", "J", ":m '>+1<CR>gv=gv", { desc = "Down In Visual", noremap = true, silent = true })
