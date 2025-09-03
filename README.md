@@ -5,13 +5,12 @@
 ## **Descriptions:**
 
 - **OS:** Arch Linux
-- **Window Manager:** hyprland, swaywm, i3
-- **Bar:** waybar , polybar
+- **Window Manager:** hyprland, swaywm
+- **Bar:** waybar
 - **Launcher:** rofi
-- **Compositor:** picom (for xorg)
-- **Terminal:** foot (wayland), alacritty(xorg)
+- **Terminal:** foot
 - **Code Editor** : Neovim
-- **Lockscreen:** swaylock, i3lock
+- **Lockscreen:** swaylock
 - **File Manager:** pcmanfm
 - **Screenshot Tool:** flameshot
 - **Fonts:** iosevkaterm nerd font, roboto-condensed
@@ -67,14 +66,13 @@ mkdir -p ~/github && (cd ~/github/workstation || git clone https://github.com/bi
 ##### Currently using an ultrabook: HP probook 10 G450, i5 13th gen with iGPU - intel iris xe.
 
 ```sh
-# intel
-xorg
+# amd
 xf86-video-amdgpu
 xf86-video-ati
 amd-ucode
 amdvlk
 
-# amd
+# intel
 intel-media-driver
 vulkan-intel
 intel-gmmlib
@@ -83,10 +81,6 @@ intel-gmmlib
 ---
 
 ## Gallery
-
-### i3wm + polybar
-
-![Floating Polybar](./screenshots/i3.png)
 
 ### Sway / Hyprland + waybar
 

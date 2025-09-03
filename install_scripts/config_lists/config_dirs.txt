@@ -1,9 +1,7 @@
-alacritty
 foot
 hypr
 sway
 waybar
-cava
 nvim
 zathura
 fontconfig
@@ -13,7 +11,3 @@ mako
 walls
 zathura
 walls
-i3
-polybar
-picom
-dunst

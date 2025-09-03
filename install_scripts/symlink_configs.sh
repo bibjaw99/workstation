@@ -15,7 +15,6 @@ mapfile -t dir_config_directories < "$dir_of_this_script/config_lists/config_dir
 
 # default configs
 default_dotfile_waybar="$HOME/.local/share/config_dotfiles/config/waybar_configs/waybar_block_alt/"
-default_dotfile_polybar="$HOME/.local/share/config_dotfiles/config/polybar_configs/polybar_block"
 
 for directory in "${dir_config_directories[@]}"; do
   path_config="$dir_config/$directory"
@@ -23,9 +22,6 @@ for directory in "${dir_config_directories[@]}"; do
   case "$directory" in
     waybar)
       path_dotfile="$default_dotfile_waybar"
-      ;;
-    polybar)
-      path_dotfile="$default_dotfile_polybar"
       ;;
     *)
       path_dotfile="$dir_dotfiles/$directory"

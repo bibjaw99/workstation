@@ -38,7 +38,7 @@ if ! command -v yay &>/dev/null; then
 fi
 
 # Load package lists
-for list in common_pkg_list.txt dev_pkg_list.txt wayland_pkg_list.txt xorg_pkg_list.txt; do
+for list in common_pkg_list.txt dev_pkg_list.txt wayland_pkg_list.txt ; do
   file="$dir_of_this_script/package_lists/$list"
   if [[ ! -f "$file" ]]; then
     echo "❌ Missing file: $file"
@@ -50,7 +50,6 @@ done
 mapfile -t common_packages < "$dir_of_this_script/package_lists/common_pkg_list.txt"
 mapfile -t dev_packages < "$dir_of_this_script/package_lists/dev_pkg_list.txt"
 mapfile -t wayland_packages < "$dir_of_this_script/package_lists/wayland_pkg_list.txt"
-mapfile -t xorg_packages < "$dir_of_this_script/package_lists/xorg_pkg_list.txt"
 
 # Install package function
 install_package () {
@@ -66,22 +65,7 @@ install_package () {
   done
 }
 
-# Install common + dev packages
+# Install packages
 install_package "${common_packages[@]}"
 install_package "${dev_packages[@]}"
-
-# Ask for display server preference
-while true; do
-  echo "Lets choose the display_server !!" > /dev/tty
-  read -rp "What is your preference? 1) xorg 2) wayland 3) both : " display_server < /dev/tty
-  case "$display_server" in
-    1) install_package "${xorg_packages[@]}"; break ;;
-    2) install_package "${wayland_packages[@]}"; break ;;
-    3) 
-      install_package "${wayland_packages[@]}"
-      install_package "${xorg_packages[@]}"
-      break
-      ;;
-    *) echo "❌ Invalid input. Please choose 1, 2, or 3." ;;
-  esac
-done
+install_package "${wayland_packages[@]}"
