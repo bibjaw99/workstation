@@ -2,7 +2,6 @@ alacritty
 foot
 hypr
 sway
-swaync
 waybar
 cava
 nvim

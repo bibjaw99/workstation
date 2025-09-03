@@ -8,11 +8,12 @@ dir_backup="$HOME/.config.backup/$(date +"%Y%m%d_%H-%M-%S")"
 mkdir -p "$dir_backup"
 
 # Define config source paths
-starship_config="$HOME/.local/share/dotfiles/config/starship.toml"
-zsh_config="$HOME/.local/share/dotfiles/zshrc"
-bash_config="$HOME/.local/share/dotfiles/bashrc"
-vim_config="$HOME/.local/share/dotfiles/vimrc"
-tmux_config="$HOME/.local/share/dotfiles/tmux.conf"
+starship_config="$HOME/.local/share/config_dotfiles/config/starship.toml"
+zsh_config="$HOME/.local/share/config_dotfiles/zshrc"
+bash_config="$HOME/.local/share/config_dotfiles/bashrc"
+vim_config="$HOME/.local/share/config_dotfiles/vimrc"
+tmux_config="$HOME/.local/share/config_dotfiles/tmux.conf"
+global_alias="$HOME/.local/share/config_dotfiles/alias"
 
 # Read the list of config files to install
 mapfile -t config_files < "$dir_of_this_script/config_lists/config_files.txt"
@@ -22,6 +23,10 @@ for file in "${config_files[@]}"; do
     "starship.toml")
       target="$dir_config/$file"
       source="$starship_config"
+      ;;
+    ".alias")
+      target="$HOME/$file"
+      source="$global_alias"
       ;;
     ".zshrc")
       target="$HOME/$file"

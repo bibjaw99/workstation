@@ -1,5 +1,5 @@
 starship.toml
+.alias
 .zshrc
-.bashrc
 .tmux.conf
 .vimrc

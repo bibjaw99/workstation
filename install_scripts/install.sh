@@ -2,7 +2,7 @@
 set -euo pipefail
 
 repo_url_workstation="https://github.com/bibjaw99/workstation"
-dir_dotfiles="$HOME/.local/share/dotfiles"
+dir_dotfiles="$HOME/.local/share/config_dotfiles"
 dir_github_projects="$HOME/github"
 basename_repo_workstation=$(basename "$repo_url_workstation" .git)
 dir_project_workstation="$dir_github_projects/$basename_repo_workstation"
@@ -61,7 +61,7 @@ else
   info "Repo already exists at $dir_project_workstation"
 fi
 
-# Copy dotfiles to the targetted directory 
+# Copy config_dotfiles to the targetted directory 
 if [[ -d "$dir_dotfiles" ]]; then
   warning "$dir_dotfiles already exists. Overwrite? [y/N]" > /dev/tty
   read -r confirm < /dev/tty
@@ -69,15 +69,15 @@ if [[ -d "$dir_dotfiles" ]]; then
     error "Aborted by user."
   fi
   rm -rf "$dir_dotfiles"
-  cp -r "$dir_project_workstation/dotfiles" "$dir_dotfiles"
-  info "Copied and overwritten dotfiles. Skipping further install."
+  cp -r "$dir_project_workstation/config_dotfiles" "$dir_dotfiles"
+  info "Copied and overwritten config_dotfiles. Skipping further install."
   info "Creating symbolic links of configs"
   run_script_if_exists "symlink_configs.sh"
   run_script_if_exists "symlink_files.sh"
   exit 0
 else
-  cp -r "$dir_project_workstation/dotfiles" "$dir_dotfiles"
-  info "Copied dotfiles (fresh install). Proceeding with setup..."
+  cp -r "$dir_project_workstation/config_dotfiles" "$dir_dotfiles"
+  info "Copied config_dotfiles (fresh install). Proceeding with setup..."
 fi
 
 run_script_if_exists "package_install.sh"

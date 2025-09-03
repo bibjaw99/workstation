@@ -2,7 +2,7 @@
 set -euo pipefail
 
 dir_of_this_script="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-dir_dotfiles="$HOME/.local/share/dotfiles/config"
+dir_dotfiles="$HOME/.local/share/config_dotfiles/config"
 dir_config="$HOME/.config"
 dir_backup="$HOME/.config.backup/$(date +"%Y%d%m_%H-%M-%S")"
 
@@ -14,8 +14,8 @@ mkdir -p "$dir_backup"
 mapfile -t dir_config_directories < "$dir_of_this_script/config_lists/config_dirs.txt"
 
 # default configs
-default_dotfile_waybar="$HOME/.local/share/dotfiles/config/waybar_configs/waybar_block_alt/"
-default_dotfile_polybar="$HOME/.local/share/dotfiles/config/polybar_configs/polybar_block"
+default_dotfile_waybar="$HOME/.local/share/config_dotfiles/config/waybar_configs/waybar_block_alt/"
+default_dotfile_polybar="$HOME/.local/share/config_dotfiles/config/polybar_configs/polybar_block"
 
 for directory in "${dir_config_directories[@]}"; do
   path_config="$dir_config/$directory"

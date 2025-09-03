@@ -5,17 +5,18 @@
 ## **Descriptions:**
 
 - **OS:** Arch Linux
-- **Window Manager:** i3,swaywm,hyprland
-- **Bar:** polybar,waybar
+- **Window Manager:** hyprland, swaywm, i3
+- **Bar:** waybar , polybar
 - **Launcher:** rofi
 - **Compositor:** picom (for xorg)
-- **Terminal:** ghostty
+- **Terminal:** foot (wayland), alacritty(xorg)
 - **Code Editor** : Neovim
-- **Lockscreen:** i3lock,swaylock,hyprlock
+- **Lockscreen:** swaylock, i3lock
 - **File Manager:** pcmanfm
 - **Screenshot Tool:** flameshot
-- **Fonts:** jetbrainsmono nerd font, roboto-condensed, font-awesome, iosevkaterm nerd font
+- **Fonts:** iosevkaterm nerd font, roboto-condensed
 - **Policykit:** mate-polkit
+- **Shell:** zshell
 
 ## Installation script :
 
@@ -25,9 +26,9 @@ mkdir -p ~/github && (cd ~/github/workstation || git clone https://github.com/bi
 
 ## how the script works :
 
-- all the dotfiles will be stored in a folder called `dotfiles` in your `$HOME/.local/share` directory
+- all the dotfiles will be stored in a folder called `config_dotfiles` in your `$HOME/.local/share` directory
 - then if the config already exists in the `$HOME/.config` directory then it will be backed up in the `$HOME/.config.backup` directory
-- then a symlink will be created from `$HOME/.local/share/dotfiles` directory to the `$HOME/.config` directory
+- then a symlink will be created from `$HOME/.local/share/config_dotfiles` directory to the `$HOME/.config` directory
   - **why this approach instead of using/creating actual directories ? :** it's easy to dump them all togather in the github project folder after making huge changes in multiple app configs
 - names of the config directories and config files that needs to be symlinked, must be listed in the respected files in `workstation/install_scripts/config_lists`.
   - check `symlink_configs.sh` and `symlink_files.sh` to understand it better
