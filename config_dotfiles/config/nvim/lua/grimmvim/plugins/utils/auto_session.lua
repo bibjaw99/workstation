@@ -27,13 +27,13 @@ return {
 		{
 			mode = "n",
 			"<leader>sl",
-			":Autosession search<cr>",
+			":AutoSession search<cr>",
 			desc = "Search Sessions",
 		},
 		{
 			mode = "n",
 			"<leader>sd",
-			":Autosession delete<cr>",
+			":AutoSession delete<cr>",
 			desc = "Delete Session",
 		},
 		{
