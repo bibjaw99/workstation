@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-CONFIG_DIR="$HOME/.local/share/dotfiles/config/waybar_configs"
+CONFIG_DIR="$HOME/.local/share/config_dotfiles/config/waybar_configs"
 TARGET_DIR="$HOME/.config/waybar"
 
 # show choices with rofi
