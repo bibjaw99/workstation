@@ -21,6 +21,9 @@ return {
 			["<C-f>"] = { "scroll_documentation_down", "fallback" },
 
 			["<C-s>"] = { "show_signature", "hide_signature", "fallback" },
+
+			["<Tab>"] = false,
+			["<S-Tab>"] = false,
 		},
 		appearance = {
 			nerd_font_variant = "mono",

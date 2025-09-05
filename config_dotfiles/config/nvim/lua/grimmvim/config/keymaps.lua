@@ -19,9 +19,6 @@ map("n", "<leader><leader>S", ":source %<cr>", { desc = "Source Buffer", noremap
 map("n", "j", "gj", { desc = "Down In Wrap", noremap = true, silent = true })
 map("n", "k", "gk", { desc = "Up In Wrap", noremap = true, silent = true })
 
--- remap tab for insert mode
-map("i", "<Tab>", "<C-Tab>", { desc = "", noremap = true, silent = true })
-
 -- Scrolling with HJKL
 map("n", "H", "5h", { desc = "Scroll Left", noremap = true, silent = false })
 map("n", "J", "5j", { desc = "Scroll Down", noremap = true, silent = false })
