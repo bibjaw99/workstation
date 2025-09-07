@@ -49,7 +49,7 @@ run_script_if_exists() {
 if ! command -v git &>/dev/null; then
   warning "git is not installed !!"
   info "Installing git...."
-  sudo pacman -Sy --noconfirm git < /dev/tty
+  sudo apt install git < /dev/tty
 fi
 
 # Clone repo if needed
