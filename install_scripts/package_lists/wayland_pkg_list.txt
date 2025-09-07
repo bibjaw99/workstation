@@ -9,7 +9,5 @@ swaybg
 sway
 swaylock
 xdg-desktop-portal-wlr
-xdg-desktop-portal-hyprland
-hyprland
 mako
 grim
