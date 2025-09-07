@@ -1,6 +1,5 @@
 foot
-wayland
-xorg-xwayland
+xwayland
 waybar
 nwg-look
 wlsunset
@@ -9,5 +8,5 @@ swaybg
 sway
 swaylock
 xdg-desktop-portal-wlr
-mako
+mako-notifier
 grim

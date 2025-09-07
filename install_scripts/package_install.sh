@@ -35,5 +35,5 @@ install_package () {
 
 # Install packages
 install_package "${common_packages[@]}"
-install_package "${dev_packages[@]}"
+#install_package "${dev_packages[@]}"
 install_package "${wayland_packages[@]}"

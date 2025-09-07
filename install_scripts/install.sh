@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-repo_url_workstation="https://github.com/bibjaw99/workstation"
+repo_url_workstation="https://github.com/alexandrefqt/bbj-workstation"
 dir_dotfiles="$HOME/.local/share/config_dotfiles"
 dir_github_projects="$HOME/github"
 basename_repo_workstation=$(basename "$repo_url_workstation" .git)
@@ -61,7 +61,7 @@ else
   info "Repo already exists at $dir_project_workstation"
 fi
 
-# Copy config_dotfiles to the targetted directory 
+# Copy config_dotfiles to the targetted directory
 if [[ -d "$dir_dotfiles" ]]; then
   warning "$dir_dotfiles already exists. Overwrite? [y/N]" > /dev/tty
   read -r confirm < /dev/tty
