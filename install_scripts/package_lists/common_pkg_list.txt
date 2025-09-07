@@ -3,7 +3,6 @@ zsh-syntax-highlighting
 zsh-autosuggestions
 lshw
 libnotify
-pcmanfm
 xarchiver
 flameshot
 gvfs
@@ -33,9 +32,6 @@ python-pillow
 rofi-wayland
 rofi-emoji-git
 rate-mirrors-bin
-pacman-contrib
-eza
-starship
 zathura
 zathura-pdf-poppler
 poppler
@@ -45,9 +41,6 @@ pipewire-pulse
 pipewire-jack
 pipewire-alsa
 wireplumber
-blueman
-bluez
-bluez-utils
 gnome-bluetooth
 cmus
 ristretto
