@@ -1,4 +1,4 @@
-foot
+ghostty
 wayland
 xorg-xwayland
 waybar

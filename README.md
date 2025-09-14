@@ -8,7 +8,7 @@
 - **Window Manager:** hyprland, swaywm
 - **Bar:** waybar
 - **Launcher:** rofi
-- **Terminal:** foot
+- **Terminal:** ghostty
 - **Code Editor** : Neovim
 - **Lockscreen:** swaylock
 - **File Manager:** pcmanfm
