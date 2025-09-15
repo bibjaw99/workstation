@@ -12,12 +12,16 @@
     "sway/window",
     "hyprland/workspaces",
     "hyprland/window",
+    "tray",
     "sway/mode",
-    "hyprland/submap"
+    "hyprland/submap",
+  ],
+
+  "modules-center": [
+    "clock",
   ],
 
   "modules-right": [
-    "tray",
     "network",
     "disk",
     "cpu",
@@ -26,7 +30,6 @@
     "custom/memory",
     "pulseaudio",
     "battery",
-    "clock",
   ],
 
   "custom/rofi": {
