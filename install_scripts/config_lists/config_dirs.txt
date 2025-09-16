@@ -11,3 +11,4 @@ mako
 walls
 zathura
 walls
+cava
