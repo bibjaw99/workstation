@@ -44,19 +44,19 @@ window#waybar {
 #clock {
 	padding: 2 2 2 2;
 	background: rgba(34, 34, 34, 0.99);
-	border-radius: 5px;
+	border-radius: 2px;
 }
 
 #custom-rofi {
 	background: rgb(34, 34, 34);
 	color: rgb(131, 165, 152);
-	border: 2px solid rgb(131, 165, 152);
+	border: 3px solid rgb(131, 165, 152);
 	padding: 0 10;
 }
 
 #workspaces button {
 	color: rgb(255, 244, 210);
-	border: 2px solid rgb(255, 244, 210);
+	border: 3px solid rgb(255, 244, 210);
 	margin: 0px 3px;
 	min-width: 22px;
 	padding: 0 8;
@@ -64,7 +64,7 @@ window#waybar {
 
 #workspaces button:hover {
 	color: rgb(211, 134, 155);
-	border: 2px solid rgb(211, 134, 155);
+	border: 3px solid rgb(211, 134, 155);
 	padding: 0 8;
 }
 
@@ -73,90 +73,90 @@ window#waybar {
 #workspaces button.active,
 #workspaces button.active:hover {
 	color: rgb(142, 192, 124);
-	border: 2px solid rgb(142, 192, 124);
+	border: 3px solid rgb(142, 192, 124);
 	padding: 0 8;
 }
 
 #workspaces button.urgent {
 	color: rgb(234, 105, 98);
-	border: 2px solid rgb(234, 105, 98);
+	border: 3px solid rgb(234, 105, 98);
 	padding: 0 8;
 }
 
 #window {
-	border: 2px solid rgb(211, 134, 155);
+	border: 3px solid rgb(211, 134, 155);
 }
 
 #tray {
 	background: rgb(34, 34, 34);
-	border: 2px solid rgb(231, 138, 78);
-	border-radius: 5px;
+	border: 3px solid rgb(231, 138, 78);
+	border-radius: 2px;
 	padding: 0 10;
 }
 
 #disk {
-	border: 2px solid rgb(234, 105, 98);
+	border: 3px solid rgb(234, 105, 98);
 }
 
 #cpu {
-	border: 2px solid rgb(231, 138, 78);
+	border: 3px solid rgb(231, 138, 78);
 }
 
 #custom-cpu_temp {
-	border: 2px solid rgb(216, 166, 87);
+	border: 3px solid rgb(216, 166, 87);
 }
 
 #custom-cpu_temp.critical {
 	color: rgb(204, 36, 29);
-	border: 2px solid rgb(204, 36, 29);
+	border: 3px solid rgb(204, 36, 29);
 }
 
 #custom-cpu_temp.unknown {
-	border: 2px solid rgb(85, 85, 85);
+	border: 3px solid rgb(85, 85, 85);
 }
 
 #backlight {
-	border: 2px solid rgb(246, 198, 87);
+	border: 3px solid rgb(246, 198, 87);
 }
 
 #custom-memory {
-	border: 2px solid rgb(69, 133, 136);
+	border: 3px solid rgb(69, 133, 136);
 }
 
 #pulseaudio {
-	border: 2px solid rgb(131, 165, 152);
+	border: 3px solid rgb(131, 165, 152);
 }
 
 #pulseaudio.muted {
-	border: 2px solid rgb(234, 105, 98);
+	border: 3px solid rgb(234, 105, 98);
 	color: rgb(234, 105, 98);
 }
 
 #battery {
-	border: 2px solid rgb(104, 157, 106);
+	border: 3px solid rgb(104, 157, 106);
 }
 
 #battery.critical {
-	border: 2px solid rgb(204, 36, 29);
+	border: 3px solid rgb(204, 36, 29);
 }
 
 #battery.warning {
-	border: 2px solid rgb(231, 138, 78);
+	border: 3px solid rgb(231, 138, 78);
 }
 
 #clock {
-	border: 2px solid rgb(142, 192, 124);
+	border: 3px solid rgb(142, 192, 124);
 }
 
 #network {
-	border: 2px solid rgb(211, 134, 155);
+	border: 3px solid rgb(211, 134, 155);
 }
 
 #mode,
 #submap {
 	background: rgb(34, 34, 34);
 	color: rgb(131, 165, 152);
-	border: 2px solid rgb(131, 165, 152);
-	border-radius: 5px;
+	border: 3px solid rgb(131, 165, 152);
+	border-radius: 2px;
 	padding: 0 10;
 }

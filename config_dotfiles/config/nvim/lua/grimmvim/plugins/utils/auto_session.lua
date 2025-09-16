@@ -33,7 +33,7 @@ return {
 		{
 			mode = "n",
 			"<leader>sd",
-			":AutoSession delete<cr>",
+			":AutoSession deletePicker<cr>",
 			desc = "Delete Session",
 		},
 		{
