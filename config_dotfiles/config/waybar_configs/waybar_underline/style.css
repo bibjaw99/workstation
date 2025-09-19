@@ -12,7 +12,7 @@ window#waybar {
 	color: rgb(255, 244, 210);
 	background: rgba(32, 32, 32, 0.999);
 	font-family: IosevkaTerm Nerd Font Propo;
-	font-size: 18px;
+	font-size: 16px;
 	font-weight: 900;
 }
 
