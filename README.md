@@ -84,6 +84,8 @@ intel-gmmlib
 
 ### Sway / Hyprland + waybar
 
+![Sway and Hyprland](./screenshots/swayTab.png)
+
 ![Sway and Hyprland](./screenshots/sway.png)
 
 ![Sway and Hyprland](./screenshots/waybar_floating.png)
@@ -108,7 +110,7 @@ intel-gmmlib
 |        7         | Office tools          |
 |        8         | System tools and Misc |
 
-## keymaps : for Hyprland and Sway
+## keymaps : for Hyprland and Sway (AI generated tables please look into the `keymaps.config` files for more details)
 
 - I am using keychords like keybindings.
 
