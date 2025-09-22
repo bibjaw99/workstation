@@ -20,13 +20,14 @@ gtk-wide-tabs = false
 window-padding-x = 5,5
 window-padding-y = 5,0
 window-padding-balance = true
+window-inherit-working-directory = false
 window-decoration = false
 window-theme = system
 confirm-close-surface = false
 resize-overlay = never
-gtk-adwaita = false
 quit-after-last-window-closed=false
 title = "Ghostty"
+window-subtitle = working-directory
 
 # theming
 background = #222222
