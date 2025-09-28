@@ -2,10 +2,9 @@
   "layer": "top",
   "height": 20,
   "spacing": 5,
-  "margin-top" : 5,
-  "margin-left" : 5,
-  "margin-right" : 5,
-
+  "margin-top": 5,
+  "margin-left": 5,
+  "margin-right": 5,
   "modules-left": [
     "custom/rofi",
     "sway/workspaces",
@@ -14,13 +13,11 @@
     "hyprland/window",
     "tray",
     "sway/mode",
-    "hyprland/submap",
+    "hyprland/submap"
   ],
-
   "modules-center": [
-    "clock",
+    "clock"
   ],
-
   "modules-right": [
     "network",
     "disk",
@@ -31,7 +28,6 @@
     "pulseaudio",
     "battery"
   ],
-
   "custom/rofi": {
     "format": "<span ></span>",
     "on-click": "rofi -show drun -disable-history -show-icons",
@@ -39,7 +35,6 @@
     "escape": true,
     "tooltip": false
   },
-
   // Modules configuration
   "sway/workspaces": {
     "disable-scroll": true,
@@ -58,18 +53,15 @@
       "8": "<span>󰚀</span>"
     }
   },
-
   "sway/window": {
     "format": "<span color='#f6c657' > 󰣆 </span>{app_id}",
     "separate-outputs": true,
     "tooltip": false
   },
-
   "sway/mode": {
     "format": " {}",
     "max-length": 50
   },
-
   "hyprland/workspaces": {
     "disable-scroll": true,
     "active-only": false,
@@ -87,35 +79,29 @@
       "8": "<span>󰚀</span>"
     }
   },
-
   "hyprland/window": {
     "format": "<span color='#f6c657' > 󰣆 </span>{class}",
     "separate-outputs": true,
     "icon": false,
     "tooltip": false
   },
-
   "hyprland/submap": {
     "format": " {}",
     "max-length": 50
   },
-
   "tray": {
     "icon-size": 16,
     "spacing": 8
   },
-
   "disk": {
     "format": "<span color='#ea6962' >  </span>{free}",
     "interval": 20
   },
-
   "cpu": {
     "format": "<span color='#e78a4e' >  </span>{usage}%",
     "tooltip": false,
     "interval": 1
   },
-
   "custom/cpu_temp": {
     "exec": "~/.config/waybar/scripts/waybarTemp.sh",
     "return-type": "json",
@@ -123,21 +109,18 @@
     "format": "{}",
     "tooltip": false
   },
-
   "backlight": {
     // "device": "acpi_video1",
     "format": "<span color='#f6c657' > 󰞏 </span>{percent}%",
     "tooltip": false,
-    "on-click-right" : "~/.config/custom_scripts/wlsunset.sh"
+    "on-click-right": "~/.config/custom_scripts/wlsunset.sh"
   },
-
   "custom/memory": {
     "exec": "~/.config/waybar/scripts/memory_usage.sh",
     "interval": 2,
     "return-type": "json",
     "format": "<span color='#458588' >  </span>{}"
   },
-
   "pulseaudio": {
     // "scroll-step": 1, // %, can be a float
     "format": "<span color='#83a598' >  </span>{volume}%",
@@ -150,11 +133,9 @@
     "tooltip": false,
     "max-volume": 130
   },
-
   "battery#bat2": {
     "bat": "BAT2"
   },
-
   "battery": {
     "interval": 1,
     "states": {
@@ -185,19 +166,23 @@
     "format-alt": "<span color='#689d6a' > 󱧥 </span>{time}",
     "tooltip": false
   },
-
   "network": {
     "interval": 2,
     "format": "<span color='#d3869b'> 󱘖 </span>{bandwidthDownBits}",
     "format-wifi": "<span color='#d3869b'> {icon} </span>{bandwidthDownBits}",
     "format-ethernet": "<span color='#d3869b'> 󰈀 </span>{bandwidthDownBits}",
-    "format-icons": ["󰤫", "󰤟", "󰤢", "󰤥", "󰤨"],
+    "format-icons": [
+      "󰤫",
+      "󰤟",
+      "󰤢",
+      "󰤥",
+      "󰤨"
+    ],
     "tooltip": false,
     "states": {
-      "normal": 25,
-    },
+      "normal": 25
+    }
   },
-
   "clock": {
     // "timezone": "America/New_York",
     "format": "<span color='#8ec07c' >  </span>{:%a %d | %H:%M}",

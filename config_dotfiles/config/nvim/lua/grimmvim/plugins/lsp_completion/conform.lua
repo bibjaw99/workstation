@@ -8,6 +8,7 @@ return {
 			javascriptreact = { "biome" },
 			typescriptreact = { "biome" },
 			json = { "biome" },
+			jsoc = { "biome" },
 			svelte = { "prettier" },
 			css = { "biome" },
 			html = { "prettier" },

@@ -24,7 +24,6 @@ return {
 				-- you can turn off/on auto_update per tool
 				{ "bash-language-server" },
 				{ "lua-language-server" },
-				{ "vim-language-server" },
 				{ "stylua" },
 				{ "editorconfig-checker" },
 				{ "html-lsp" },
