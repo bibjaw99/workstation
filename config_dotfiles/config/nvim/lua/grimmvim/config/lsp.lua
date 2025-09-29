@@ -13,4 +13,7 @@ local lsp_servers = {
 	"jsonls",
 	"pyright",
 }
-vim.lsp.enable(lsp_servers)
+
+for _, server in ipairs(lsp_servers) do
+	vim.lsp.enable(server)
+end
