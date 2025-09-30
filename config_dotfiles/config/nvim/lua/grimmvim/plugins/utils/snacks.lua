@@ -165,6 +165,12 @@ return {
 		},
 		{
 			mode = "n",
+			"<leader>fF",
+			':lua require("snacks").picker.files({cwd=vim.fn.expand("~")})<cr>',
+			desc = "Find From Home",
+		},
+		{
+			mode = "n",
 			"<leader>fo",
 			':lua require("snacks").picker.recent({layout={preview=false}})<cr>',
 			desc = "Find Recent Files",
