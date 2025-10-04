@@ -3,3 +3,5 @@ org.telegram.desktop
 org.libreoffice.LibreOffice
 org.gimp.GIMP
 org.inkscape.Inkscape
+org.localsend.localsend_app
+org.qbittorrent.qBittorrent
