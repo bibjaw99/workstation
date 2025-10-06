@@ -1,15 +1,11 @@
-local map = vim.api.nvim_buf_set_keymap
-local autocmd = vim.api.nvim_create_autocmd
-local augroup = vim.api.nvim_create_augroup
-
--- Create an autocmd group for executing files
-augroup("RunMyCode", { clear = true })
+-- code runner function
+vim.api.nvim_create_augroup("RunMyCode", { clear = true })
 local function CodeRunner(filetype, command)
-	autocmd("FileType", {
+	vim.api.nvim_create_autocmd("FileType", {
 		group = "RunMyCode",
 		pattern = filetype,
 		callback = function()
-			map(
+			vim.api.nvim_buf_set_keymap(
 				0,
 				"n",
 				"<leader>R",
@@ -20,7 +16,6 @@ local function CodeRunner(filetype, command)
 	})
 end
 
--- Define the commands for each filetype
 CodeRunner("javascript", "node")
 CodeRunner("cpp", "g++ % -o %:r && ./%:r")
 CodeRunner("c", "gcc % -o %:r && ./%:r")
@@ -29,14 +24,14 @@ CodeRunner("python", "python3")
 CodeRunner("sh", "bash")
 
 -- keep cursor unchanged after quiting
-autocmd("ExitPre", {
+vim.api.nvim_create_autocmd("ExitPre", {
 	group = vim.api.nvim_create_augroup("Exit", { clear = true }),
 	command = "set guicursor=a:ver90",
 	desc = "Set cursor back to beam when leaving Neovim.",
 })
 
 -- Options for markdown
-autocmd("FileType", {
+vim.api.nvim_create_autocmd("FileType", {
 	pattern = "markdown",
 	callback = function()
 		vim.opt.wrap = false
@@ -49,7 +44,7 @@ autocmd("FileType", {
 })
 
 -- disalbe commenting next line
-autocmd("FileType", {
+vim.api.nvim_create_autocmd("FileType", {
 	pattern = "*",
 	callback = function()
 		vim.opt_local.formatoptions:remove({ "r", "o" })
@@ -57,27 +52,24 @@ autocmd("FileType", {
 })
 
 -- hide cursor in SnacksDashboardOpened
-autocmd("User", {
+vim.api.nvim_create_autocmd("User", {
 	pattern = "SnacksDashboardOpened",
 	callback = function()
-		local hl = vim.api.nvim_get_hl(0, { name = "Cursor", create = true })
-		hl.blend = 100
-		vim.api.nvim_set_hl(0, "Cursor", hl)
-		vim.cmd("set guicursor+=a:Cursor/lCursor")
-	end,
-})
--- unhide cursor in SnacksDashboardClosed
-autocmd("User", {
-	pattern = "SnacksDashboardClosed",
-	callback = function()
-		local hl = vim.api.nvim_get_hl(0, { name = "Cursor", create = true })
-		hl.blend = 0
-		vim.api.nvim_set_hl(0, "Cursor", hl)
-		-- vim.opt.guicursor.append("a:Cursor/lCursor")
+		vim.cmd([[hi Cursor blend=100]])
 		vim.cmd("set guicursor+=a:Cursor/lCursor")
 	end,
 })
 
+-- unhide cursor in SnacksDashboardClosed
+vim.api.nvim_create_autocmd("User", {
+	pattern = "SnacksDashboardClosed",
+	callback = function()
+		vim.cmd([[hi Cursor blend=0]])
+		vim.cmd("set guicursor+=a:Cursor/lCursor")
+	end,
+})
+
+-- save text on change
 vim.api.nvim_create_autocmd({ "TextChanged", "TextChangedI" }, {
 	pattern = "*",
 	command = "silent! write",

@@ -4,6 +4,7 @@ return {
 	dependencies = {
 		"WhoIsSethDaniel/mason-tool-installer.nvim",
 	},
+
 	config = function()
 		-- mason
 		require("mason").setup({
