@@ -2,7 +2,6 @@ local hl = vim.api.nvim_set_hl
 local cmd = vim.cmd
 
 cmd([[highlight WinSeparator guibg = None]])
-cmd([[highlight CursorLine guibg = None]])
 cmd([[highlight CursorLineNr guifg = #d8a657]])
 
 -- changing bg and border colors

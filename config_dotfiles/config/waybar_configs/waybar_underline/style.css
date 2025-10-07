@@ -1,148 +1,148 @@
 * {
-	padding: 0;
-	margin: 0;
-	border-radius: 0;
-	min-height: 0;
-	text-shadow: none;
-	transition: none;
-	box-shadow: none;
+  padding: 0;
+  margin: 0;
+  border-radius: 0;
+  min-height: 0;
+  text-shadow: none;
+  transition: none;
+  box-shadow: none;
 }
 
 window#waybar {
-	color: rgb(255, 244, 210);
-	background: rgba(32, 32, 32, 0.999);
-	font-family: IosevkaTerm Nerd Font Propo;
-	font-size: 16px;
-	font-weight: 900;
+  color: rgb(255, 244, 210);
+  background: rgba(32, 32, 32, 0.999);
+  font-family: IosevkaTerm Nerd Font Propo;
+  font-size: 16px;
+  font-weight: 900;
 }
 
 .modules-left,
 .modules-center,
 .modules-right {
-	margin: 5px 0px;
-	padding: 0 6px;
+  margin: 5px 0px;
+  padding: 0 6px;
 }
 
 #workspaces button {
-	color: rgb(255, 244, 210);
-	background: rgb(32, 32, 32);
-	border: 3px solid rgb(255, 244, 210);
-	border-radius: 2;
-	min-width: 22px;
-	padding: 0 4px;
-	margin: 0px 3px;
+  color: rgb(255, 244, 210);
+  background: rgb(32, 32, 32);
+  border: 3px solid rgb(255, 244, 210);
+  border-radius: 2;
+  min-width: 22px;
+  padding: 0 4px;
+  margin: 0px 3px;
 }
 
 #workspaces button:hover {
-	color: rgb(32, 32, 32);
-	background: rgb(211, 134, 155);
-	border: 3px solid rgb(177, 98, 134);
-	min-width: 22px;
+  color: rgb(32, 32, 32);
+  background: rgb(211, 134, 155);
+  border: 3px solid rgb(177, 98, 134);
+  min-width: 22px;
 }
 
 #workspaces button.visible,
 #workspaces button.visible:hover,
 #workspaces button.active,
 #workspaces button.active:hover {
-	color: rgb(32, 32, 32);
-	border: 3px solid rgb(104, 157, 106);
-	background: rgb(142, 192, 124);
+  color: rgb(32, 32, 32);
+  border: 3px solid rgb(104, 157, 106);
+  background: rgb(142, 192, 124);
 }
 
 #workspaces button.urgent {
-	color: rgb(32, 32, 32);
-	border: 3px solid rgb(204, 36, 29);
-	background: rgb(234, 105, 98);
+  color: rgb(32, 32, 32);
+  border: 3px solid rgb(204, 36, 29);
+  background: rgb(234, 105, 98);
 }
 
 #custom-rofi {
-	color: rgb(32, 32, 32);
-	border: 3px solid rgb(69, 133, 136);
-	border-radius: 2;
-	background: rgb(131, 165, 152);
-	padding: 0 6px;
+  color: rgb(32, 32, 32);
+  border: 3px solid rgb(69, 133, 136);
+  border-radius: 2;
+  background: rgb(131, 165, 152);
+  padding: 0 6px;
 }
 
 #window {
-	border-bottom: 3px solid rgb(211, 134, 155);
+  border-bottom: 3px solid rgb(211, 134, 155);
 }
 
 #tray {
-	padding: 0 6px;
-	background: rgb(51, 51, 51);
-	border-radius: 3px;
+  padding: 0 6px;
+  background: rgb(51, 51, 51);
+  border-radius: 3px;
 }
 
 #disk {
-	border-bottom: 3px solid rgb(234, 105, 98);
+  border-bottom: 3px solid rgb(234, 105, 98);
 }
 
 #cpu {
-	border-bottom: 3px solid rgb(231, 138, 78);
+  border-bottom: 3px solid rgb(231, 138, 78);
 }
 
 #custom-cpu_temp {
-	border-bottom: 3px solid rgb(216, 166, 87);
+  border-bottom: 3px solid rgb(216, 166, 87);
 }
 
 #custom-cpu_temp.critical {
-	color: rgb(204, 36, 29);
-	border-bottom: 3px solid rgb(204, 36, 29);
+  color: rgb(204, 36, 29);
+  border-bottom: 3px solid rgb(204, 36, 29);
 }
 #custom-cpu_temp.unknown {
-	color: rgb(85, 85, 85);
-	border-bottom: 3px solid rgb(85, 85, 85);
+  color: rgb(85, 85, 85);
+  border-bottom: 3px solid rgb(85, 85, 85);
 }
 
 #backlight {
-	border-bottom: 3px solid rgb(246, 198, 87);
+  border-bottom: 3px solid rgb(246, 198, 87);
 }
 
 #custom-memory {
-	border-bottom: 3px solid rgb(69, 133, 136);
+  border-bottom: 3px solid rgb(69, 133, 136);
 }
 
 #pulseaudio {
-	border-bottom: 3px solid rgb(131, 165, 152);
+  border-bottom: 3px solid rgb(131, 165, 152);
 }
 
 #pulseaudio.muted {
-	color: rgb(234, 105, 98);
-	border-bottom: 3px solid rgb(234, 105, 98);
+  color: rgb(234, 105, 98);
+  border-bottom: 3px solid rgb(234, 105, 98);
 }
 
 #battery {
-	border-bottom: 3px solid rgb(104, 157, 106);
+  border-bottom: 3px solid rgb(104, 157, 106);
 }
 
 #battery.critical {
-	color: rgb(204, 36, 29);
-	border-bottom: 3px solid rgb(204, 36, 29);
+  color: rgb(204, 36, 29);
+  border-bottom: 3px solid rgb(204, 36, 29);
 }
 
 #battery.warning {
-	color: rgb(231, 138, 78);
-	border-bottom: 3px solid rgb(231, 138, 78);
+  color: rgb(231, 138, 78);
+  border-bottom: 3px solid rgb(231, 138, 78);
 }
 
 #battery.chargin.warning {
-	color: rgb(104, 157, 106);
-	border-bottom: 3px solid rgb(104, 157, 106);
+  color: rgb(104, 157, 106);
+  border-bottom: 3px solid rgb(104, 157, 106);
 }
 
 #clock {
-	border-bottom: 3px solid rgb(142, 192, 124);
+  border-bottom: 3px solid rgb(142, 192, 124);
 }
 
 #network {
-	border-bottom: 3px solid rgb(211, 134, 155);
+  border-bottom: 3px solid rgb(211, 134, 155);
 }
 
 #mode,
 #submap {
-	color: rgb(32, 32, 32);
-	border: 2px solid rgb(69, 133, 136);
-	border-radius: 3;
-	background: rgb(131, 165, 152);
-	padding: 0 6px;
+  color: rgb(32, 32, 32);
+  border: 2px solid rgb(69, 133, 136);
+  border-radius: 3;
+  background: rgb(131, 165, 152);
+  padding: 0 6px;
 }

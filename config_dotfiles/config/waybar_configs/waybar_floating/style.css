@@ -1,22 +1,22 @@
 * {
-	/* `otf-font-awesome` is required to be installed for icons */
-	padding: 0;
-	margin: 0;
-	min-height: 0;
-	border-radius: 0;
-	border: none;
-	text-shadow: none;
-	transition: none;
-	box-shadow: none;
+  /* `otf-font-awesome` is required to be installed for icons */
+  padding: 0;
+  margin: 0;
+  min-height: 0;
+  border-radius: 0;
+  border: none;
+  text-shadow: none;
+  transition: none;
+  box-shadow: none;
 }
 
 /* the whole window */
 window#waybar {
-	color: rgb(255, 244, 210);
-	background: none;
-	font-family: IosevkaTerm Nerd Font Propo;
-	font-size: 16px;
-	font-weight: 900;
+  color: rgb(255, 244, 210);
+  background: none;
+  font-family: IosevkaTerm Nerd Font Propo;
+  font-size: 16px;
+  font-weight: 900;
 }
 
 #custom-rofi,
@@ -44,10 +44,10 @@ window#waybar {
 #battery.warning,
 #network,
 #clock {
-	color: rgb(34, 34, 34);
-	background: rgba(34, 34, 34, 0.99);
-	border: 3px solid rgba(34, 34, 34, 0.99);
-	border-radius: 3px;
+  color: rgb(34, 34, 34);
+  background: rgba(34, 34, 34, 0.99);
+  border: 3px solid rgba(34, 34, 34, 0.99);
+  border-radius: 3px;
 }
 
 #window,
@@ -65,108 +65,108 @@ window#waybar {
 #battery.critical,
 #battery.warning,
 #clock {
-	padding-right: 4px;
+  padding-right: 4px;
 }
 
 #custom-rofi {
-	background: rgb(131, 165, 152);
-	padding: 0 6px;
+  background: rgb(131, 165, 152);
+  padding: 0 6px;
 }
 
 #workspaces {
-	margin: 0px;
+  margin: 0px;
 }
 
 #workspaces button {
-	color: rgb(255, 244, 210);
-	padding: 0 4px;
-	margin: 0px 3px;
-	min-width: 22px;
+  color: rgb(255, 244, 210);
+  padding: 0 4px;
+  margin: 0px 3px;
+  min-width: 22px;
 }
 
 #workspaces button:hover {
-	background: rgb(211, 134, 155);
+  background: rgb(211, 134, 155);
 }
 
 #workspaces button.visible,
 #workspaces button.visible:hover,
 #workspaces button.active,
 #workspaces button.active:hover {
-	background: rgb(142, 192, 124);
+  background: rgb(142, 192, 124);
 }
 
 #workspaces button.urgent {
-	background: rgb(234, 105, 98);
+  background: rgb(234, 105, 98);
 }
 
 #window {
-	color: rgb(211, 134, 155);
+  color: rgb(211, 134, 155);
 }
 
 #tray {
-	padding: 0 6px;
-	background: rgb(34, 34, 34);
-	border-radius: 3px;
+  padding: 0 6px;
+  background: rgb(34, 34, 34);
+  border-radius: 3px;
 }
 
 #disk {
-	color: rgb(234, 105, 98);
+  color: rgb(234, 105, 98);
 }
 
 #cpu {
-	color: rgb(231, 138, 78);
+  color: rgb(231, 138, 78);
 }
 
 #custom-cpu_temp {
-	color: rgb(216, 166, 87);
+  color: rgb(216, 166, 87);
 }
 
 #custom-cpu_temp.critical {
-	color: rgb(204, 36, 29);
+  color: rgb(204, 36, 29);
 }
 
 #custom-cpu_temp.unknown {
-	color: rgb(85, 85, 85);
+  color: rgb(85, 85, 85);
 }
 
 #backlight {
-	color: rgb(246, 198, 87);
+  color: rgb(246, 198, 87);
 }
 
 #custom-memory {
-	color: rgb(69, 133, 136);
+  color: rgb(69, 133, 136);
 }
 
 #pulseaudio {
-	color: rgb(131, 165, 152);
+  color: rgb(131, 165, 152);
 }
 
 #pulseaudio.muted {
-	color: rgb(234, 105, 98);
+  color: rgb(234, 105, 98);
 }
 
 #battery {
-	color: rgb(104, 157, 106);
+  color: rgb(104, 157, 106);
 }
 
 #battery.critical {
-	color: rgb(204, 36, 29);
+  color: rgb(204, 36, 29);
 }
 
 #battery.warning {
-	color: rgb(231, 138, 78);
+  color: rgb(231, 138, 78);
 }
 
 #clock {
-	color: rgb(142, 192, 124);
+  color: rgb(142, 192, 124);
 }
 
 #network {
-	color: rgb(211, 134, 155);
+  color: rgb(211, 134, 155);
 }
 
 #mode,
 #submap {
-	background: rgb(131, 165, 152);
-	padding: 0 6px;
+  background: rgb(131, 165, 152);
+  padding: 0 6px;
 }
