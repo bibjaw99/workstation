@@ -44,9 +44,9 @@ window#waybar {
 #battery.warning,
 #network,
 #clock {
-  color: rgb(34, 34, 34);
+  color: rgb(255, 244, 210);
   background: rgba(34, 34, 34, 0.99);
-  border: 3px solid rgba(34, 34, 34, 0.99);
+  border: 4px solid rgba(34, 34, 34, 0.99);
 }
 
 #window,
@@ -64,10 +64,11 @@ window#waybar {
 #battery.critical,
 #battery.warning,
 #clock {
-  padding-right: 4px;
+  padding-right: 1px;
 }
 
 #custom-rofi {
+  color: rgb(34, 34, 34);
   background: rgb(131, 165, 152);
   padding: 0 6px;
 }
@@ -84,6 +85,7 @@ window#waybar {
 }
 
 #workspaces button:hover {
+  color: rgb(34, 34, 34);
   background: rgb(211, 134, 155);
 }
 
@@ -91,10 +93,12 @@ window#waybar {
 #workspaces button.visible:hover,
 #workspaces button.active,
 #workspaces button.active:hover {
+  color: rgb(34, 34, 34);
   background: rgb(142, 192, 124);
 }
 
 #workspaces button.urgent {
+  color: rgb(34, 34, 34);
   background: rgb(234, 105, 98);
 }
 
@@ -165,6 +169,7 @@ window#waybar {
 
 #mode,
 #submap {
+  color: rgb(34, 34, 34);
   background: rgb(131, 165, 152);
   padding: 0 6px;
 }

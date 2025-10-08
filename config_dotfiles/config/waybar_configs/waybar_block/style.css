@@ -10,12 +10,12 @@
 }
 
 window#waybar {
+  color: rgb(255, 244, 210);
   background-color: rgba(34, 34, 34, 1);
   padding: 0px 5px;
   font-family: IosevkaTerm Nerd Font Propo;
   font-size: 16px;
   font-weight: 900;
-  color: rgb(32, 32, 32);
 }
 
 .modules-left,
@@ -45,9 +45,10 @@ window#waybar {
 }
 
 #custom-rofi {
-  border: 3px solid rgba(69, 133, 136, 0.999);
+  color: rgb(34, 34, 34);
   background: rgb(131, 165, 152);
   padding: 0 6px;
+  border: 3px solid rgba(69, 133, 136, 0.999);
 }
 
 #workspaces button {
@@ -162,6 +163,7 @@ window#waybar {
 
 #mode,
 #submap {
+  color: rgb(34, 34, 34);
   border: 3px solid rgba(69, 133, 136, 0.999);
   background: rgb(131, 165, 152);
   padding: 0 6px;

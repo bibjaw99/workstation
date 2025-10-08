@@ -50,7 +50,7 @@ window#waybar {
   background: rgb(34, 34, 34);
   color: rgb(131, 165, 152);
   border: 3px solid rgb(131, 165, 152);
-  padding: 0 10;
+  padding: 0 9px;
 }
 
 #workspaces button {
@@ -58,13 +58,13 @@ window#waybar {
   border: 3px solid rgb(255, 244, 210);
   margin: 0px 3px;
   min-width: 22px;
-  padding: 0 8;
+  padding: 0 6;
 }
 
 #workspaces button:hover {
   color: rgb(211, 134, 155);
   border: 3px solid rgb(211, 134, 155);
-  padding: 0 8;
+  padding: 0 6;
 }
 
 #workspaces button.visible,
@@ -73,13 +73,13 @@ window#waybar {
 #workspaces button.active:hover {
   color: rgb(142, 192, 124);
   border: 3px solid rgb(142, 192, 124);
-  padding: 0 8;
+  padding: 0 6;
 }
 
 #workspaces button.urgent {
   color: rgb(234, 105, 98);
   border: 3px solid rgb(234, 105, 98);
-  padding: 0 8;
+  padding: 0 6;
 }
 
 #window {
