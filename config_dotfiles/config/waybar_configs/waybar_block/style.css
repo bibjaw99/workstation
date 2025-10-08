@@ -11,7 +11,7 @@
 
 window#waybar {
   color: rgb(255, 244, 210);
-  background-color: rgba(34, 34, 34, 1);
+  background-color: rgb(34, 34, 34);
   padding: 0px 5px;
   font-family: IosevkaTerm Nerd Font Propo;
   font-size: 16px;
@@ -41,29 +41,29 @@ window#waybar {
 #network,
 #clock {
   padding-right: 4px;
-  background-color: rgba(34, 34, 34, 1);
+  background-color: rgb(34, 34, 34);
 }
 
 #custom-rofi {
   color: rgb(34, 34, 34);
   background: rgb(131, 165, 152);
   padding: 0 6px;
-  border: 3px solid rgba(69, 133, 136, 0.999);
+  border: 3px solid rgb(69, 133, 136);
 }
 
 #workspaces button {
   color: rgb(255, 244, 210);
-  border: 3px solid rgba(255, 244, 210, 0.999);
+  border: 3px solid rgb(255, 244, 210);
   min-width: 20px;
   padding: 0 4px;
   margin: 0 3px;
-  background-color: rgba(34, 34, 34, 1);
+  background-color: rgb(34, 34, 34);
 }
 
 #workspaces button:hover {
   color: rgb(34, 34, 34);
   background: rgb(211, 134, 155);
-  border: 3px solid rgba(178, 98, 134, 0.999);
+  border: 3px solid rgb(178, 98, 134);
 }
 
 #workspaces button.visible,
@@ -71,19 +71,19 @@ window#waybar {
 #workspaces button.active,
 #workspaces button.active:hover {
   color: rgb(34, 34, 34);
-  border: 3px solid rgba(104, 157, 106, 0.999);
+  border: 3px solid rgb(104, 157, 106);
   background: rgb(142, 192, 124);
 }
 
 #workspaces button.urgent {
   color: rgb(34, 34, 34);
-  border: 3px solid rgba(204, 36, 29, 0.999);
+  border: 3px solid rgb(204, 36, 29);
   background: rgb(234, 105, 98);
 }
 
 #window {
   color: rgb(211, 134, 155);
-  border: 3px solid rgba(211, 134, 155, 0.999);
+  border: 3px solid rgb(211, 134, 155);
 }
 
 #tray {
@@ -93,78 +93,78 @@ window#waybar {
 
 #disk {
   color: rgb(234, 105, 98);
-  border: 3px solid rgba(234, 105, 98, 0.999);
+  border: 3px solid rgb(234, 105, 98);
 }
 
 #cpu {
   color: rgb(231, 138, 78);
-  border: 3px solid rgba(231, 138, 78, 0.999);
+  border: 3px solid rgb(231, 138, 78);
 }
 
 #custom-cpu_temp {
   color: rgb(216, 166, 87);
-  border: 3px solid rgba(216, 166, 87, 0.999);
+  border: 3px solid rgb(216, 166, 87);
 }
 
 #custom-cpu_temp.critical {
   color: rgb(204, 36, 29);
-  border: 3px solid rgba(204, 36, 29, 0.999);
+  border: 3px solid rgb(204, 36, 29);
 }
 
 #custom-cpu_temp.unknown {
   color: rgb(85, 85, 85);
-  border: 3px solid rgba(85, 85, 85, 0.999);
+  border: 3px solid rgb(85, 85, 85);
 }
 
 #backlight {
   color: rgb(246, 198, 87);
-  border: 3px solid rgba(246, 198, 87, 0.999);
+  border: 3px solid rgb(246, 198, 87);
 }
 
 #custom-memory {
   color: rgb(69, 133, 136);
-  border: 3px solid rgba(69, 133, 136, 0.999);
+  border: 3px solid rgb(69, 133, 136);
 }
 
 #pulseaudio {
   color: rgb(131, 165, 152);
-  border: 3px solid rgba(131, 165, 152, 0.999);
+  border: 3px solid rgb(131, 165, 152);
 }
 
 #pulseaudio.muted {
   color: rgb(234, 105, 98);
-  border: 3px solid rgba(234, 105, 98, 0.999);
+  border: 3px solid rgb(234, 105, 98);
 }
 
 #battery {
   color: rgb(104, 157, 106);
-  border: 3px solid rgba(104, 157, 106, 0.999);
+  border: 3px solid rgb(104, 157, 106);
 }
 
 #battery.critical {
   color: rgb(204, 36, 29);
-  border: 3px solid rgba(204, 36, 29, 0.999);
+  border: 3px solid rgb(204, 36, 29);
 }
 
 #battery.warning {
   color: rgb(231, 138, 78);
-  border: 3px solid rgba(231, 138, 78, 0.999);
+  border: 3px solid rgb(231, 138, 78);
 }
 
 #clock {
   color: rgb(142, 192, 124);
-  border: 3px solid rgba(142, 192, 124, 0.999);
+  border: 3px solid rgb(142, 192, 124);
 }
 
 #network {
   color: rgb(211, 134, 155);
-  border: 3px solid rgba(211, 134, 155, 0.999);
+  border: 3px solid rgb(211, 134, 155);
 }
 
 #mode,
 #submap {
   color: rgb(34, 34, 34);
-  border: 3px solid rgba(69, 133, 136, 0.999);
+  border: 3px solid rgb(69, 133, 136);
   background: rgb(131, 165, 152);
   padding: 0 6px;
 }

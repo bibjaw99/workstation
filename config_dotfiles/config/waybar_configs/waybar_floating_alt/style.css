@@ -43,7 +43,7 @@ window#waybar {
 #network,
 #clock {
   padding: 2 2 2 2;
-  background: rgba(34, 34, 34, 0.99);
+  background: rgb(34, 34, 34);
 }
 
 #custom-rofi {
