@@ -27,7 +27,6 @@ window#waybar {
   color: rgb(255, 244, 210);
   background: rgb(32, 32, 32);
   border: 3px solid rgb(255, 244, 210);
-  border-radius: 2;
   min-width: 22px;
   padding: 0 4px;
   margin: 0px 3px;
@@ -58,7 +57,6 @@ window#waybar {
 #custom-rofi {
   color: rgb(32, 32, 32);
   border: 3px solid rgb(69, 133, 136);
-  border-radius: 2;
   background: rgb(131, 165, 152);
   padding: 0 6px;
 }
@@ -70,7 +68,6 @@ window#waybar {
 #tray {
   padding: 0 6px;
   background: rgb(51, 51, 51);
-  border-radius: 3px;
 }
 
 #disk {
@@ -142,7 +139,6 @@ window#waybar {
 #submap {
   color: rgb(32, 32, 32);
   border: 2px solid rgb(69, 133, 136);
-  border-radius: 3;
   background: rgb(131, 165, 152);
   padding: 0 6px;
 }

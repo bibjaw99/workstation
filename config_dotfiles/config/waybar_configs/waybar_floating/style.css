@@ -47,7 +47,6 @@ window#waybar {
   color: rgb(34, 34, 34);
   background: rgba(34, 34, 34, 0.99);
   border: 3px solid rgba(34, 34, 34, 0.99);
-  border-radius: 3px;
 }
 
 #window,
@@ -106,7 +105,6 @@ window#waybar {
 #tray {
   padding: 0 6px;
   background: rgb(34, 34, 34);
-  border-radius: 3px;
 }
 
 #disk {
