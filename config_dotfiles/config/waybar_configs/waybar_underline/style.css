@@ -8,9 +8,27 @@
   box-shadow: none;
 }
 
+#custom-rofi,
+#window,
+#disk,
+#cpu,
+#custom-cpu_temp,
+#custom-cpu_temp.critical,
+#backlight,
+#custom-memory,
+#pulseaudio,
+#pulseaudio.muted,
+#battery,
+#battery.critical,
+#battery.warning,
+#network,
+#clock {
+  padding-right: 4;
+}
+
 window#waybar {
-  color: rgb(255, 244, 210);
-  background: rgb(32, 32, 32);
+  color: #fff4d2;
+  background: #202020;
   font-family: IosevkaTerm Nerd Font Propo;
   font-size: 16px;
   font-weight: 900;
@@ -24,18 +42,18 @@ window#waybar {
 }
 
 #workspaces button {
-  color: rgb(255, 244, 210);
-  background: rgb(32, 32, 32);
-  border: 3px solid rgb(255, 244, 210);
+  color: #fff4d2;
+  background: #202020;
+  border: 3px solid #fff4d2;
   min-width: 22px;
-  padding: 0 4px;
+  padding: 0 6px;
   margin: 0px 3px;
 }
 
 #workspaces button:hover {
-  color: rgb(32, 32, 32);
-  background: rgb(211, 134, 155);
-  border: 3px solid rgb(177, 98, 134);
+  color: #202020;
+  background: #d3869b;
+  border: 3px solid #b16286;
   min-width: 22px;
 }
 
@@ -43,102 +61,103 @@ window#waybar {
 #workspaces button.visible:hover,
 #workspaces button.active,
 #workspaces button.active:hover {
-  color: rgb(32, 32, 32);
-  border: 3px solid rgb(104, 157, 106);
-  background: rgb(142, 192, 124);
+  color: #202020;
+  border: 3px solid #689d68;
+  background: #8ec07c;
 }
 
 #workspaces button.urgent {
-  color: rgb(32, 32, 32);
-  border: 3px solid rgb(204, 36, 29);
-  background: rgb(234, 105, 98);
+  color: #202020;
+  border: 3px solid #cc241d;
+  background: #ea6962;
 }
 
 #custom-rofi {
-  color: rgb(32, 32, 32);
-  border: 3px solid rgb(69, 133, 136);
-  background: rgb(131, 165, 152);
-  padding: 0 6px;
+  color: #202020;
+  border: 3px solid #458588;
+  background: #83a598;
+  padding: 0 8px;
 }
 
 #window {
-  border-bottom: 3px solid rgb(211, 134, 155);
+  border-bottom: 3px solid #d3869b;
 }
 
 #tray {
-  padding: 0 10px;
-  background: rgb(51, 51, 51);
+  background: #484848;
+  padding: 0 8;
 }
 
 #disk {
-  border-bottom: 3px solid rgb(234, 105, 98);
+  border-bottom: 3px solid #ea6962;
 }
 
 #cpu {
-  border-bottom: 3px solid rgb(231, 138, 78);
+  border-bottom: 3px solid #e78a4e;
 }
 
 #custom-cpu_temp {
-  border-bottom: 3px solid rgb(216, 166, 87);
+  border-bottom: 3px solid #d8a657;
 }
 
 #custom-cpu_temp.critical {
-  color: rgb(204, 36, 29);
-  border-bottom: 3px solid rgb(204, 36, 29);
+  color: #cc241d;
+  border-bottom: 3px solid #cc241d;
 }
+
 #custom-cpu_temp.unknown {
-  color: rgb(85, 85, 85);
-  border-bottom: 3px solid rgb(85, 85, 85);
+  color: #555555;
+  border-bottom: 3px solid #555555;
 }
 
 #backlight {
-  border-bottom: 3px solid rgb(246, 198, 87);
+  border-bottom: 3px solid #f6c657;
 }
 
 #custom-memory {
-  border-bottom: 3px solid rgb(69, 133, 136);
+  border-bottom: 3px solid #458588;
 }
 
 #pulseaudio {
-  border-bottom: 3px solid rgb(131, 165, 152);
+  border-bottom: 3px solid #83a598;
 }
 
 #pulseaudio.muted {
-  color: rgb(234, 105, 98);
-  border-bottom: 3px solid rgb(234, 105, 98);
+  color: #ea6962;
+  border-bottom: 3px solid #ea6962;
 }
 
 #battery {
-  border-bottom: 3px solid rgb(104, 157, 106);
+  border-bottom: 3px solid #689d68;
 }
 
 #battery.critical {
-  color: rgb(204, 36, 29);
-  border-bottom: 3px solid rgb(204, 36, 29);
+  color: #cc241d;
+  border-bottom: 3px solid #cc241d;
 }
 
 #battery.warning {
-  color: rgb(231, 138, 78);
-  border-bottom: 3px solid rgb(231, 138, 78);
+  color: #e78a4e;
+  border-bottom: 3px solid #e78a4e;
 }
 
-#battery.chargin.warning {
-  color: rgb(104, 157, 106);
-  border-bottom: 3px solid rgb(104, 157, 106);
+#battery.charging.warning {
+  color: #689d68;
+  border-bottom: 3px solid #689d68;
 }
 
 #clock {
-  border-bottom: 3px solid rgb(142, 192, 124);
+  border-bottom: 3px solid #8ec07c;
 }
 
 #network {
-  border-bottom: 3px solid rgb(211, 134, 155);
+  border-bottom: 3px solid #d3869b;
 }
 
 #mode,
 #submap {
-  color: rgb(32, 32, 32);
-  border: 2px solid rgb(69, 133, 136);
-  background: rgb(131, 165, 152);
+  color: #202020;
+  border: 2px solid #458588;
+  background: #83a598;
   padding: 0 6px;
 }

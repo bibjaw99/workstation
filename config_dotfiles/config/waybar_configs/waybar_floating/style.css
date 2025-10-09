@@ -10,6 +10,13 @@
   box-shadow: none;
 }
 
+.modules-left,
+.modules-center,
+.modules-right {
+  margin: 5px 0px;
+  padding: 0 6px;
+}
+
 /* the whole window */
 window#waybar {
   color: rgb(255, 244, 210);
@@ -22,15 +29,7 @@ window#waybar {
 #custom-rofi,
 #mode,
 #submap,
-#workspaces button,
-#workspaces button:hover,
-#workspaces button.visible,
-#workspaces button.visible:hover,
-#workspaces button.active,
-#workspaces button.active:hover,
-#workspaces button.urgent,
 #window,
-#tray,
 #disk,
 #cpu,
 #custom-cpu_temp,
@@ -47,30 +46,13 @@ window#waybar {
   color: rgb(255, 244, 210);
   background: rgb(34, 34, 34);
   border: 4px solid rgb(34, 34, 34);
-}
-
-#window,
-#tray,
-#network,
-#disk,
-#cpu,
-#custom-cpu_temp,
-#custom-cpu_temp.critical,
-#backlight,
-#custom-memory,
-#pulseaudio,
-#pulseaudio.muted,
-#battery,
-#battery.critical,
-#battery.warning,
-#clock {
   padding-right: 4px;
 }
 
 #custom-rofi {
   color: rgb(34, 34, 34);
   background: rgb(131, 165, 152);
-  padding: 0 6px;
+  padding: 0 8px;
 }
 
 #workspaces {
@@ -78,10 +60,12 @@ window#waybar {
 }
 
 #workspaces button {
-  color: rgb(255, 244, 210);
   padding: 0 4px;
   margin: 0px 3px;
   min-width: 22px;
+  color: rgb(255, 244, 210);
+  background: rgb(34, 34, 34);
+  border: 4px solid rgb(34, 34, 34);
 }
 
 #workspaces button:hover {

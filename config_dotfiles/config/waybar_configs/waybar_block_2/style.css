@@ -26,16 +26,7 @@ window#waybar {
   padding: 0 6px;
 }
 
-#custom-rofi,
-#workspaces button,
-#workspaces button:hover,
-#workspaces button.visible,
-#workspaces button.visible:hover,
-#workspaces button.active,
-#workspaces button.active:hover,
-#workspaces button.urgent,
 #window,
-#tray,
 #disk,
 #cpu,
 #custom-cpu_temp,
@@ -49,118 +40,114 @@ window#waybar {
 #battery.warning,
 #network,
 #clock {
-  padding: 2;
-  background: rgb(34, 34, 34);
+  padding: 0 2px;
 }
 
 #custom-rofi {
-  background: rgb(34, 34, 34);
-  color: rgb(131, 165, 152);
-  border: 3px solid rgb(131, 165, 152);
-  padding: 0 9px;
+  background: #222222;
+  color: #83a598;
+  border: 3px solid #83a598;
+  padding: 0 8px;
 }
 
 #workspaces button {
-  color: rgb(255, 244, 210);
-  border: 3px solid rgb(255, 244, 210);
+  color: #fff4d2;
+  border: 3px solid #fff4d2;
   margin: 0px 3px;
   min-width: 22px;
   padding: 0 6;
 }
 
 #workspaces button:hover {
-  color: rgb(211, 134, 155);
-  border: 3px solid rgb(211, 134, 155);
-  padding: 0 6;
+  color: #d3869b;
+  border: 3px solid #d3869b;
 }
 
 #workspaces button.visible,
 #workspaces button.visible:hover,
 #workspaces button.active,
 #workspaces button.active:hover {
-  color: rgb(142, 192, 124);
-  border: 3px solid rgb(142, 192, 124);
-  padding: 0 6;
+  color: #8ec07c;
+  border: 3px solid #8ec07c;
 }
 
 #workspaces button.urgent {
-  color: rgb(234, 105, 98);
-  border: 3px solid rgb(234, 105, 98);
-  padding: 0 6;
+  color: #ea6962;
+  border: 3px solid #ea6962;
 }
 
 #window {
-  border: 3px solid rgb(211, 134, 155);
+  border: 3px solid #d3869b;
 }
 
 #tray {
-  background: rgb(34, 34, 34);
-  border: 3px solid rgb(231, 138, 78);
-  padding: 0 10;
+  background: #222222;
+  border: 3px solid #e78a4e;
+  padding: 0 8;
 }
 
 #disk {
-  border: 3px solid rgb(234, 105, 98);
+  border: 3px solid #ea6962;
 }
 
 #cpu {
-  border: 3px solid rgb(231, 138, 78);
+  border: 3px solid #e78a4e;
 }
 
 #custom-cpu_temp {
-  border: 3px solid rgb(216, 166, 87);
+  border: 3px solid #d8a657;
 }
 
 #custom-cpu_temp.critical {
-  color: rgb(204, 36, 29);
-  border: 3px solid rgb(204, 36, 29);
+  color: #cc241d;
+  border: 3px solid #cc241d;
 }
 
 #custom-cpu_temp.unknown {
-  border: 3px solid rgb(85, 85, 85);
+  border: 3px solid #555555;
 }
 
 #backlight {
-  border: 3px solid rgb(246, 198, 87);
+  border: 3px solid #f6c657;
 }
 
 #custom-memory {
-  border: 3px solid rgb(69, 133, 136);
+  border: 3px solid #458588;
 }
 
 #pulseaudio {
-  border: 3px solid rgb(131, 165, 152);
+  border: 3px solid #83a598;
 }
 
 #pulseaudio.muted {
-  border: 3px solid rgb(234, 105, 98);
-  color: rgb(234, 105, 98);
+  border: 3px solid #ea6962;
+  color: #ea6962;
 }
 
 #battery {
-  border: 3px solid rgb(104, 157, 106);
+  border: 3px solid #689d68;
 }
 
 #battery.critical {
-  border: 3px solid rgb(204, 36, 29);
+  border: 3px solid #cc241d;
 }
 
 #battery.warning {
-  border: 3px solid rgb(231, 138, 78);
+  border: 3px solid #e78a4e;
 }
 
 #clock {
-  border: 3px solid rgb(142, 192, 124);
+  border: 3px solid #8ec07c;
 }
 
 #network {
-  border: 3px solid rgb(211, 134, 155);
+  border: 3px solid #d3869b;
 }
 
 #mode,
 #submap {
-  background: rgb(34, 34, 34);
-  color: rgb(131, 165, 152);
-  border: 3px solid rgb(131, 165, 152);
+  background: #222222;
+  color: #83a598;
+  border: 3px solid #83a598;
   padding: 0 10;
 }

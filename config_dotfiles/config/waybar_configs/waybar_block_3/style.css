@@ -40,7 +40,7 @@ window#waybar {
   border: 3px solid #444444;
   color: #fff4d2;
   background-color: #333333;
-  padding: 1px 6px 1px 0px;
+  padding-right: 6px;
 }
 
 #custom-rofi {

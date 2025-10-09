@@ -91,7 +91,7 @@
     "max-length": 50
   },
   "tray": {
-    "icon-size": 15,
+    "icon-size": 16,
     "spacing": 8
   },
   "disk": {
