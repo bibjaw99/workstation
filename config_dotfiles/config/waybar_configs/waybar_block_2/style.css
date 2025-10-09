@@ -13,10 +13,17 @@
 /* the whole window */
 window#waybar {
   color: #ebdbb2;
-  background: none;
+  background: #222222;
   font-family: IosevkaTerm Nerd Font Propo;
   font-size: 16px;
   font-weight: 900;
+}
+
+.modules-left,
+.modules-center,
+.modules-right {
+  margin: 5px 0px;
+  padding: 0 6px;
 }
 
 #custom-rofi,
@@ -42,7 +49,7 @@ window#waybar {
 #battery.warning,
 #network,
 #clock {
-  padding: 2 2 2 2;
+  padding: 2;
   background: rgb(34, 34, 34);
 }
 

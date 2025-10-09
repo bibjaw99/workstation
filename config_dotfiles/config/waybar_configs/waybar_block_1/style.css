@@ -87,8 +87,8 @@ window#waybar {
 }
 
 #tray {
-  padding: 0 6px;
-  background: rgb(51, 51, 51);
+  padding: 0 10px;
+  background: rgb(66, 66, 66);
 }
 
 #disk {
