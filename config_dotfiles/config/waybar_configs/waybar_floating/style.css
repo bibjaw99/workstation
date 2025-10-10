@@ -19,7 +19,7 @@
 
 /* the whole window */
 window#waybar {
-  color: rgb(255, 244, 210);
+  color: #ebdbb2;
   background: none;
   font-family: IosevkaTerm Nerd Font Propo;
   font-size: 16px;
@@ -43,15 +43,15 @@ window#waybar {
 #battery.warning,
 #network,
 #clock {
-  color: rgb(255, 244, 210);
-  background: rgb(34, 34, 34);
-  border: 4px solid rgb(34, 34, 34);
+  color: #ebdbb2;
+  background: #222222;
+  border: 4px solid #222222;
   padding-right: 4px;
 }
 
 #custom-rofi {
-  color: rgb(34, 34, 34);
-  background: rgb(131, 165, 152);
+  color: #222222;
+  background: #83a598;
   padding: 0 8px;
 }
 
@@ -63,97 +63,97 @@ window#waybar {
   padding: 0 4px;
   margin: 0px 3px;
   min-width: 22px;
-  color: rgb(255, 244, 210);
-  background: rgb(34, 34, 34);
-  border: 4px solid rgb(34, 34, 34);
+  color: #ebdbb2;
+  background: #222222;
+  border: 4px solid #222222;
 }
 
 #workspaces button:hover {
-  color: rgb(34, 34, 34);
-  background: rgb(211, 134, 155);
+  color: #222222;
+  background: #d3869b;
 }
 
 #workspaces button.visible,
 #workspaces button.visible:hover,
 #workspaces button.active,
 #workspaces button.active:hover {
-  color: rgb(34, 34, 34);
-  background: rgb(142, 192, 124);
+  color: #222222;
+  background: #8ec07c;
 }
 
 #workspaces button.urgent {
-  color: rgb(34, 34, 34);
-  background: rgb(234, 105, 98);
+  color: #222222;
+  background: #ea6962;
 }
 
 #window {
-  color: rgb(211, 134, 155);
+  color: #d3869b;
 }
 
 #tray {
   padding: 0 6px;
-  background: rgb(34, 34, 34);
+  background: #222222;
 }
 
 #disk {
-  color: rgb(234, 105, 98);
+  color: #ea6962;
 }
 
 #cpu {
-  color: rgb(231, 138, 78);
+  color: #e78a4e;
 }
 
 #custom-cpu_temp {
-  color: rgb(216, 166, 87);
+  color: #d8a657;
 }
 
 #custom-cpu_temp.critical {
-  color: rgb(204, 36, 29);
+  color: #cc241d;
 }
 
 #custom-cpu_temp.unknown {
-  color: rgb(85, 85, 85);
+  color: #555555;
 }
 
 #backlight {
-  color: rgb(246, 198, 87);
+  color: #f6c657;
 }
 
 #custom-memory {
-  color: rgb(69, 133, 136);
+  color: #458588;
 }
 
 #pulseaudio {
-  color: rgb(131, 165, 152);
+  color: #83a598;
 }
 
 #pulseaudio.muted {
-  color: rgb(234, 105, 98);
+  color: #ea6962;
 }
 
 #battery {
-  color: rgb(104, 157, 106);
+  color: #689d68;
 }
 
 #battery.critical {
-  color: rgb(204, 36, 29);
+  color: #cc241d;
 }
 
 #battery.warning {
-  color: rgb(231, 138, 78);
+  color: #e78a4e;
 }
 
 #clock {
-  color: rgb(142, 192, 124);
+  color: #8ec07c;
 }
 
 #network {
-  color: rgb(211, 134, 155);
+  color: #d3869b;
 }
 
 #mode,
 #submap {
-  color: rgb(34, 34, 34);
-  background: rgb(131, 165, 152);
+  color: #222222;
+  background: #83a598;
   padding: 0 6px;
 }

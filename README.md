@@ -91,6 +91,12 @@ intel-gmmlib
 
 ![Sway and Hyprland](./screenshots/waybar_floating.png)
 
+### waybar themes
+
+- press `mod+shift+s` then `b` to launch the waybar theme switcher
+
+![waybars](./screenshots/waybars.png)
+
 ### App launcher and power menu: Rofi
 
 ![Rofi](./screenshots/rofi_1.png)
