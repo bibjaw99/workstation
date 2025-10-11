@@ -82,18 +82,17 @@ intel-gmmlib
 
 ## Gallery
 
-### Sway / Hyprland + waybar
+### Sway / Hyprland
 
 ![Sway and Hyprland](./screenshots/sway.png)
 
-![Sway and Hyprland](./screenshots/swayTab.png)
+### waybar themes
 
-![Sway and Hyprland](./screenshots/waybar_floating.png)
+![wabar themes](./screenshots/waybarSwitching.gif)
 
 ### App launcher and power menu: Rofi
 
 ![Rofi](./screenshots/rofi_1.png)
-![Rofi](./screenshots/rofi_2.png)
 
 ---
 
