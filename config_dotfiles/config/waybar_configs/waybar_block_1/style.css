@@ -13,7 +13,7 @@
 /* the whole window */
 window#waybar {
   color: #ebdbb2;
-  background: #222222;
+  background: none;
   font-family: IosevkaTerm Nerd Font Propo;
   font-size: 16px;
   font-weight: 900;
@@ -22,8 +22,8 @@ window#waybar {
 .modules-left,
 .modules-center,
 .modules-right {
-  margin: 5px 0px;
-  padding: 0 6px;
+  padding: 5px;
+  background: #222222;
 }
 
 #custom-rofi,
@@ -85,7 +85,6 @@ window#waybar {
 }
 
 #tray {
-  background: #222222;
   border: 3px solid #e78a4e;
   padding: 0 8;
 }
@@ -150,7 +149,6 @@ window#waybar {
 
 #mode,
 #submap {
-  background: #222222;
   color: #83a598;
   border: 3px solid #83a598;
   padding: 0 10;

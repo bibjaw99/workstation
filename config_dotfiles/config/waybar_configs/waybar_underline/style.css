@@ -37,13 +37,12 @@ window#waybar {
 .modules-left,
 .modules-center,
 .modules-right {
-  margin: 5px 0px;
-  padding: 0 6px;
+  padding: 5px;
 }
 
 #workspaces button {
   color: #fff4d2;
-  background: #202020;
+  background: #222222;
   border: 3px solid #fff4d2;
   min-width: 22px;
   padding: 0 6px;

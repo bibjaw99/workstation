@@ -9,7 +9,7 @@
 }
 
 window#waybar {
-  background-color: #222222;
+  background: none;
   font-family: IosevkaTerm Nerd Font Propo;
   font-size: 16px;
   font-weight: 900;
@@ -19,8 +19,8 @@ window#waybar {
 .modules-left,
 .modules-center,
 .modules-right {
-  margin: 5px 0px;
-  padding: 0 6px;
+  padding: 5px;
+  background: #222222;
 }
 
 #window,
