@@ -84,15 +84,17 @@ intel-gmmlib
 
 ### Sway / Hyprland
 
-![Sway and Hyprland](./screenshots/sway.png)
+![Sway and Hyprland](https://github.com/bibjaw99/workstation-screenshots/blob/main/screenshots/sway.png?raw=true)
 
 ### waybar themes
 
-![wabar themes](./screenshots/waybarSwitching.gif)
+- to launch the rofi theme selector, press `mod+shift+s` then `b`
+
+![wabar themes](https://github.com/bibjaw99/workstation-screenshots/blob/main/screenshots/waybarSwitching.gif?raw=true)
 
 ### App launcher and power menu: Rofi
 
-![Rofi](./screenshots/rofi_1.png)
+![Rofi](https://raw.githubusercontent.com/bibjaw99/workstation-screenshots/refs/heads/main/screenshots/rofi_1.png)
 
 ---
 
@@ -271,27 +273,27 @@ intel-gmmlib
 
 ##### Start Page
 
-![alpha.nvim](./screenshots/neovim/1.png)
+![nvim 1](https://raw.githubusercontent.com/bibjaw99/workstation-screenshots/refs/heads/main/screenshots/neovim/1.png)
 
 ##### File Tree : mini.files
 
-![LSP](./screenshots/neovim/2.png)
+![nvim 2](https://raw.githubusercontent.com/bibjaw99/workstation-screenshots/refs/heads/main/screenshots/neovim/2.png)
 
 ##### LSP Support and Autocompletion support
 
-![LSP](./screenshots/neovim/3.png)
+![nvim 3](https://raw.githubusercontent.com/bibjaw99/workstation-screenshots/refs/heads/main/screenshots/neovim/3.png)
 
 ##### Gitsigns plugin for visual git status
 
-![Gitsigns](./screenshots/neovim/4.png)
+![nvim 4](https://raw.githubusercontent.com/bibjaw99/workstation-screenshots/refs/heads/main/screenshots/neovim/4.png)
 
 ##### ToggleTerm X Lazygit
 
-![ToggleTerm](./screenshots/neovim/5.png)
+![nvim 5](https://raw.githubusercontent.com/bibjaw99/workstation-screenshots/refs/heads/main/screenshots/neovim/5.png)
 
 ##### Plugin Manager : Lazy and LSP manager : Mason
 
-![Lsp and Plugin Managers](./screenshots/neovim/6.png)
+![nvim 6](https://raw.githubusercontent.com/bibjaw99/workstation-screenshots/refs/heads/main/screenshots/neovim/6.png)
 
 #### Installation Guide :
 
