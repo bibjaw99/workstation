@@ -9,7 +9,6 @@
 - **Bar:** waybar
 - **Launcher:** rofi
 - **Terminal:** ghostty
-- **Browser:** firefox-developer-edition
 - **Code Editor** : Neovim
 - **Lockscreen:** swaylock
 - **File Manager:** pcmanfm

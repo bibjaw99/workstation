@@ -15,9 +15,6 @@
     "sway/mode",
     "hyprland/submap"
   ],
-  "modules-center": [
-    "clock"
-  ],
   "modules-right": [
     "network",
     "disk",
@@ -26,7 +23,8 @@
     "backlight",
     "custom/memory",
     "pulseaudio",
-    "battery"
+    "battery",
+    "clock"
   ],
   "custom/rofi": {
     "format": "<span ></span>",

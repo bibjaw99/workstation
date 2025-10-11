@@ -1,5 +1,4 @@
 ghostty
-firefox-developer-edition
 zsh
 zsh-syntax-highlighting
 zsh-autosuggestions

@@ -14,7 +14,7 @@ mkdir -p "$dir_backup"
 mapfile -t dir_config_directories < "$dir_of_this_script/config_lists/config_dirs.txt"
 
 # default configs
-default_dotfile_waybar="$HOME/.local/share/config_dotfiles/config/waybar_configs/waybar_block_3/"
+default_dotfile_waybar="$HOME/.local/share/config_dotfiles/config/waybar_configs/waybar_block_1/"
 
 for directory in "${dir_config_directories[@]}"; do
   path_config="$dir_config/$directory"
