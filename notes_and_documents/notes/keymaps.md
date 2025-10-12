@@ -18,15 +18,15 @@
 
 ### Window Management
 
-| Keys                      | Action                |
-| ------------------------- | --------------------- |
-| **\$mainMod + Space**     | Toggle floating       |
-| **\$mainMod + m**         | Toggle fullscreen     |
-| **\$mainMod + q**         | Cycle next window     |
-| **\$mainMod + SHIFT + n** | Cycle layout next     |
-| **\$mainMod + SHIFT + p** | Cycle layout previous |
-| **\$mainMod + SHIFT + q** | Kill active window    |
-| **\$mainMod + SHIFT + o** | Cycle Layouts         |
+| Keys                      | Action                                          |
+| ------------------------- | ----------------------------------------------- |
+| **\$mainMod + Space**     | Toggle floating                                 |
+| **\$mainMod + m**         | Toggle fullscreen                               |
+| **\$mainMod + q**         | focus next/floating window                      |
+| **\$mainMod + SHIFT + n** | Cycle window next                               |
+| **\$mainMod + SHIFT + p** | Cycle window previous                           |
+| **\$mainMod + SHIFT + q** | Kill active window                              |
+| **\$mainMod + SHIFT + o** | Cycle Layouts : `tabbed, vertical , horizontal` |
 
 ---
 
@@ -58,14 +58,15 @@
 
 ---
 
-### Submap Trigger keys
+### Submap/mode Trigger keys
 
-| Keys                      | Opens Submap |
-| ------------------------- | ------------ |
-| **\$mainMod + Return**    | `launch`     |
-| **\$mainMod + d**         | `rofi`       |
-| **\$mainMod + SHIFT + M** | `notify`     |
-| **\$mainMod + SHIFT + S** | `scripts`    |
+| Keys                      | Opens Submap                     |
+| ------------------------- | -------------------------------- |
+| **\$mainMod + Return**    | `launch`                         |
+| **\$mainMod + d**         | `rofi`                           |
+| **\$mainMod + SHIFT + S** | `scripts`                        |
+| **\$mainMod + SHIFT + M** | `notify`                         |
+| **\$mainMod + SHIFT + u** | `swap` : window swapping in sway |
 
 ---
 
