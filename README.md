@@ -18,6 +18,15 @@
 - **Policykit:** mate-polkit
 - **Shell:** zshell
 
+# Notes
+
+- [Notes](./notes_and_documents/notes/notes.md)
+- [Arch Installation Process I followed](./notes_and_documents/notes/archInstalltion.md)
+
+---
+
+## [keybindings](./notes_and_documents/notes/keymaps.md)
+
 ## Installation script :
 
 ```sh
@@ -52,15 +61,9 @@ curl -s https://raw.githubusercontent.com/bibjaw99/workstation/refs/heads/master
 │   ├── dev_pkg_list.txt
 │   ├── flatpak_pkg_list.txt
 │   ├── wayland_pkg_list.txt
-│   └── xorg_pkg_list.txt
 ├── symlink_configs.sh
 └── symlink_files.sh
 ```
-
-# Notes
-
-- [Important Notes](./arch_install/notes/notes.md)
-- [Arch Installation Process I followed](./arch_install/notes/archInstalltion.md)
 
 ### Drivers:
 
@@ -111,10 +114,6 @@ intel-gmmlib
 |        6         | Design tools          |
 |        7         | Office tools          |
 |        8         | System tools and Misc |
-
-## keymaps
-
-- [keymaps](./arch_install/notes/keymaps.md)
 
 ---
 
