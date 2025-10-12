@@ -20,14 +20,10 @@ map("n", "j", "gj", { desc = "Down In Wrap", noremap = true, silent = true })
 map("n", "k", "gk", { desc = "Up In Wrap", noremap = true, silent = true })
 
 -- Scrolling with HJKL
-map("n", "H", "5h", { desc = "Scroll Left", noremap = true, silent = false })
-map("n", "J", "5j", { desc = "Scroll Down", noremap = true, silent = false })
-map("n", "K", "5k", { desc = "Scroll Up", noremap = true, silent = false })
-map("n", "L", "5l", { desc = "Scroll Right", noremap = true, silent = false })
-
--- Move around in visual mode
-map("v", "J", ":m '>+1<CR>gv=gv", { desc = "Down In Visual", noremap = true, silent = true })
-map("v", "K", ":m '<-2<CR>gv=gv", { desc = "Up In Visual", noremap = true, silent = true })
+map({ "n", "v" }, "H", "5h", { desc = "Visual Scroll Left", noremap = true, silent = false })
+map({ "n", "v" }, "J", "5j", { desc = "Visual Scroll Down", noremap = true, silent = false })
+map({ "n", "v" }, "K", "5k", { desc = "Visual Scroll Up", noremap = true, silent = false })
+map({ "n", "v" }, "L", "5l", { desc = "Visual Scroll Right", noremap = true, silent = false })
 
 -- remapping escape key
 map({ "i", "v" }, "kj", "<Esc>", { desc = "Escape", noremap = true, silent = true })
