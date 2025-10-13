@@ -41,7 +41,7 @@ $ cfdisk /dev/nvme0n1
 
 > ##### A ui will popup. Select the desired size of the partition of efi, root and home directory
 
-![](./images/Cfdisk.png)
+![cfdisk](./images/Cfdisk.png)
 
 ---
 
@@ -86,10 +86,10 @@ $ mount /dev/nvme0n1p3 /mnt/home
 
 ```
 # for grub boot-loader
-$ pacstrap /mnt linux linux-headers linux-firmware base base-devel efibootmgr networkmanager neovim grub os-prober intel-ucode sof-firmware
+$ pacstrap /mnt linux linux-lts linux-zen linux-headers linux-firmware base base-devel efibootmgr networkmanager neovim grub os-prober intel-ucode intel-media-driver vulkan-intel intel-gmmlib sof-firmware
 
 # for systemdboot,
-$ pacstrap /mnt linux linux-headers linux-firmware base base-devel efibootmgr networkmanager neovim mtools dosfstools intel-ucode sof-firmware
+$ pacstrap /mnt linux linux-lts linux-zen linux-headers linux-firmware base base-devel efibootmgr networkmanager neovim mtools dosfstools intel-ucode intel-media-driver vulkan-intel intel-gmmlib sof-firmware
 ```
 
 ---
@@ -197,54 +197,44 @@ $ nvim loader.conf
 default arch.conf # should be same name as the conf file in entries directory
 
 $ cd entries/
-$ nvim arch.conf
+$ touch arch.conf arch-fb.conf arch-lts.conf arch-lts-fb.conf arch-zen.conf arch-zen-fb.conf
 
-# add the lines
+# arch.conf
 title	Arch Linux
 linux	/vmlinuz-linux
 initrd	/intel-ucode.img
 initrd	/initramfs-linux.img
 options	root=/dev/nvme0n1p2 rw quiet loglevel=3
 
-$ nvim arch-fb.conf
-
-# add the lines
+# arch-fb.conf
 title	Arch Linux Fallback Image
 linux	/vmlinuz-linux
 initrd	/intel-ucode.img
 initrd	/initramfs-linux-fallback.img
 options	root=/dev/nvme0n1p2 rw quiet loglevel=3
 
-$ nvim arch-lts.conf
-
-# add the lines
+# arch-lts.conf
 title	Arch Linux LTS
 linux	/vmlinuz-linux-lts
 initrd	/intel-ucode.img
 initrd	/initramfs-linux-lts.img
 options	root=/dev/nvme0n1p2 rw quiet loglevel=3
 
-$ nvim arch-lts-fb.conf
-
-# add the lines
+# arch-lts-fb.conf
 title	Arch Linux LTS Fallback
 linux	/vmlinuz-linux-lts
 initrd	/intel-ucode.img
 initrd	/initramfs-linux-lts-fallback.img
 options	root=/dev/nvme0n1p2 rw quiet loglevel=3
 
-$ nvim arch-zen.conf
-
-# add the lines
+# arch-zen.conf
 title	Arch Linux Zen
 linux	/vmlinuz-linux-zen
 initrd	/intel-ucode.img
 initrd	/initramfs-linux-zen.img
 options	root=/dev/nvme0n1p2 rw quiet loglevel=3
 
-$ nvim arch-zen-fb.conf
-
-# add the lines
+# arch-zen-fb.conf
 title	Arch Linux Zen Fallback
 linux	/vmlinuz-linux-zen
 initrd	/intel-ucode.img

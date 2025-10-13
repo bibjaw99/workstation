@@ -11,7 +11,7 @@ sudo flatpak override --system --reset
 sudo flatpak override --filesystem=$HOME/.themes/
 sudo flatpak override --filesystem=$HOME/.icons/
 sudo flatpak override --env=GTK_THEME=Orchis-Grey-Dark-Compact
-sudo flatpak override --env=ICON_THEME=Papirus-Dark
+sudo flatpak override --env=ICON_THEME=Papirus
 ```
 
 flatpak global override configs are in : `cd /var/lib/flatpak/overrides`

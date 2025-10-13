@@ -12,7 +12,6 @@
 - **Code Editor** : Neovim
 - **Lockscreen:** swaylock
 - **File Manager:** pcmanfm
-- **Browser:** firefox-developer-edition
 - **Screenshot Tool:** flameshot
 - **Fonts:** iosevkaterm nerd font, roboto-condensed
 - **Policykit:** mate-polkit
@@ -20,12 +19,12 @@
 
 # Notes
 
-- [Notes](./notes_and_documents/notes/notes.md)
-- [Arch Installation Process I followed](./notes_and_documents/notes/archInstalltion.md)
+- [Notes](./notes/notes.md)
+- [Arch Installation Process I followed](./notes/archInstalltion.md)
 
 ---
 
-## [keybindings](./notes_and_documents/notes/keymaps.md)
+## [keybindings](./notes/keymaps.md)
 
 ## Installation script :
 
