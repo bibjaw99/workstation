@@ -22,6 +22,8 @@
 - [Notes](./notes/notes.md)
 - [Arch Installation Process I followed](./notes/archInstalltion.md)
 
+## ⚠️ do not forget to change the settings related to your hardwares in `~/.config/sway/devices.conf` and `~/.config/hypr/devices.conf`
+
 ---
 
 ## [keybindings](./notes/keymaps.md)
@@ -116,17 +118,17 @@ intel-gmmlib
 
 ---
 
-## Neovim: Grimm Vim:
+## Neovim Text Editor: Grimm Vim: (Not a distro but my own personal config)
 
-#### Not a distro but my own personal config ⚠️
+#### Installation Guide :
 
-##### Keymaps:
+- remove or backup the `nvim` folder from the following directory :
+  - `~/.config/nvim`
+  - `~/.cache/nvim`
+  - `~/.local/share/nvim`
+  - `~/.local/state/nvim`
 
-- All the keymaps can be found in the `.config/nvim/lua/grimmvim/core/keymaps.lua` file.
-- Keymaps for `substitute.nvim` is in its plugin file: `.config/nvim/lua/grimmvim/plugins/substitute.lua`
-- Press `<leader>fk` to find available keymaps.
-
-### Neovim Gallery :
+- Now copy my `nvim` config folder in the `~/.config` directory
 
 ##### Start Page
 
@@ -151,13 +153,3 @@ intel-gmmlib
 ##### Plugin Manager : Lazy and LSP manager : Mason
 
 ![nvim 6](https://raw.githubusercontent.com/bibjaw99/workstation-screenshots/refs/heads/main/screenshots/neovim/6.png)
-
-#### Installation Guide :
-
-- remove or backup the `nvim` folder from the following directory :
-  - `~/.config/nvim`
-  - `~/.cache/nvim`
-  - `~/.local/share/nvim`
-  - `~/.local/state/nvim`
-
-- Now copy my `nvim` config folder in the `~/.config` directory

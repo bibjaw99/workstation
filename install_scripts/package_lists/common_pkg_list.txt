@@ -59,3 +59,4 @@ ttf-jetbrains-mono-nerd
 ttf-iosevkaterm-nerd
 ttf-font-awesome
 noto-fonts-emoji
+btop

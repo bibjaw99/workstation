@@ -1,7 +1,6 @@
-include ~/.config/sway/workspaces.conf
+include ~/.config/sway/appearance.conf
+include ~/.config/sway/autostart.conf
+include ~/.config/sway/devices.conf
 include ~/.config/sway/keymaps.conf
 include ~/.config/sway/windowrules.conf
-include ~/.config/sway/autostart.conf
-include ~/.config/sway/appearance.conf
-include ~/.config/sway/input.conf
-include ~/.config/sway/output.conf
+include ~/.config/sway/workspaces.conf
