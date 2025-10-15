@@ -46,7 +46,7 @@ for list in common_pkg_list.txt dev_pkg_list.txt wayland_pkg_list.txt ; do
   fi
 done
 
-# store the packages in an array fro the package lists
+# store the packages in an array for the package lists
 mapfile -t common_packages < "$dir_of_this_script/package_lists/common_pkg_list.txt"
 mapfile -t dev_packages < "$dir_of_this_script/package_lists/dev_pkg_list.txt"
 mapfile -t wayland_packages < "$dir_of_this_script/package_lists/wayland_pkg_list.txt"
