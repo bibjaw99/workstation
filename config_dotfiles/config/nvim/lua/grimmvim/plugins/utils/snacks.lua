@@ -72,6 +72,7 @@ return {
 			layouts = {
 				-- default layout
 				default = {
+					preview = false,
 					layout = {
 						box = "horizontal",
 						width = 0.90,
@@ -89,6 +90,7 @@ return {
 				},
 				-- vertical layout
 				vertical = {
+					preview = false,
 					layout = {
 						backdrop = false,
 						width = 0.5,
@@ -111,7 +113,7 @@ return {
 					keys = {
 						["<C-h>"] = { "toggle_hidden", mode = { "i", "n" } },
 						["<Esc>"] = { "close", mode = { "i", "n" } },
-						["<C-\\>"] = { "toggle_preview", mode = { "i", "n" } },
+						["<C-,>"] = { "toggle_preview", mode = { "i", "n" } },
 					},
 				},
 			},
