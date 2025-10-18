@@ -17,6 +17,7 @@ local function CodeRunner(filetype, command)
 end
 
 CodeRunner("javascript", "node")
+CodeRunner("typescript", "tsc % && node %:r.js")
 CodeRunner("cpp", "g++ % -o %:r && ./%:r")
 CodeRunner("c", "gcc % -o %:r && ./%:r")
 CodeRunner("lua", "lua")
