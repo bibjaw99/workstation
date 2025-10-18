@@ -32,8 +32,8 @@ if [[ -n "$CONFIG" ]]; then
   # Restart waybar
   pkill -x waybar 2>/dev/null || true
 
-  # waiting time to properly kill the waybar process
-  sleep 0.2
+  # 1 sec waiting time to properly kill the waybar process
+  sleep 1
 
   # handle duplicate waybar after changing themes in sway
   if [[ "$DESKTOP_SESSION" = "sway" ]]; then
