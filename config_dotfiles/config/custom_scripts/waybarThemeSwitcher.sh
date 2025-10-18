@@ -31,8 +31,17 @@ if [[ -n "$CONFIG" ]]; then
 
   # Restart waybar
   pkill -x waybar 2>/dev/null || true
+
+  # waiting time to properly kill the waybar process
   sleep 0.2
-  waybar & disown
+
+  # handle duplicate waybar after changing themes in sway
+  if [[ "$DESKTOP_SESSION" = "sway" ]]; then
+    swaymsg reload
+  else
+    waybar & disown
+  fi
+
 else
   notify-send "Waybar" "No configuration selected"
 fi
