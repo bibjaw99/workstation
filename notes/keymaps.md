@@ -1,4 +1,4 @@
-## keymaps : for Hyprland and Sway (AI generated tables please look into the `keymaps.config` files for more details)
+## keymaps : Sway (AI generated tables please look into the `keymaps.config` files for more details)
 
 - I am using keychords like keybindings.
 

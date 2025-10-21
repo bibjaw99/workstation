@@ -9,11 +9,8 @@
     "custom/rofi",
     "sway/workspaces",
     "sway/window",
-    "hyprland/workspaces",
-    "hyprland/window",
     "tray",
-    "sway/mode",
-    "hyprland/submap"
+    "sway/mode"
   ],
   "modules-center": [
     "clock"
@@ -60,33 +57,6 @@
     "tooltip": false
   },
   "sway/mode": {
-    "format": " {}",
-    "max-length": 50
-  },
-  "hyprland/workspaces": {
-    "disable-scroll": true,
-    "active-only": false,
-    "all-outputs": true,
-    "warp-on-scroll": false,
-    "format": "{icon}",
-    "format-icons": {
-      "1": "<span>󰧨</span>",
-      "2": "<span>󰈹</span>",
-      "3": "<span></span>",
-      "4": "<span></span>",
-      "5": "<span></span>",
-      "6": "<span>󰭛</span>",
-      "7": "<span>󱓷</span>",
-      "8": "<span>󰚀</span>"
-    }
-  },
-  "hyprland/window": {
-    "format": "<span color='#202020' bgcolor='#d3869b' > 󰣆 </span> {class}",
-    "separate-outputs": true,
-    "icon": false,
-    "tooltip": false
-  },
-  "hyprland/submap": {
     "format": " {}",
     "max-length": 50
   },

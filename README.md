@@ -5,7 +5,7 @@
 ## **Descriptions:**
 
 - **OS:** Arch Linux
-- **Window Manager:** hyprland, swaywm
+- **Window Manager:** swaywm
 - **Bar:** waybar
 - **Launcher:** rofi
 - **Terminal:** ghostty
@@ -21,8 +21,9 @@
 
 - [Notes](./notes/notes.md)
 - [Arch Installation Process I followed](./notes/archInstalltion.md)
+- [old configs with hyprland](https://github.com/bibjaw99/archive_configs/tree/main/current/config_dotfiles/config)
 
-## ⚠️ do not forget to change the settings related to your hardwares in `~/.config/sway/devices.conf` and `~/.config/hypr/devices.conf`
+## ⚠️ do not forget to change the settings related to your hardwares in `~/.config/sway/devices.conf`
 
 ---
 
@@ -89,9 +90,9 @@ intel-gmmlib
 
 ## Gallery
 
-### Sway / Hyprland
+### Sway
 
-![Sway and Hyprland](https://github.com/bibjaw99/workstation-screenshots/blob/main/screenshots/sway.png?raw=true)
+![Sway](https://github.com/bibjaw99/workstation-screenshots/blob/main/screenshots/sway.png?raw=true)
 
 ### waybar themes
 

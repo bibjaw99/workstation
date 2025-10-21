@@ -1,5 +1,4 @@
 ghostty
-hypr
 sway
 waybar
 nvim

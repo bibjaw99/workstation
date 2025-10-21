@@ -1,6 +1,5 @@
 ## Universal
 alias swayfig="nvim ~/.config/sway/keymaps.conf"
-alias hyconfig="nvim ~/.config/hypr/keymaps.conf"
 alias gconfig="nvim ~/.config/ghostty/config"
 alias ls="eza --icons"
 alias la="ls -la"
