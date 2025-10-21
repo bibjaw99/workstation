@@ -11,7 +11,7 @@
 - **Terminal:** ghostty
 - **Code Editor** : Neovim
 - **Lockscreen:** swaylock
-- **File Manager:** pcmanfm
+- **File Manager:** Nemo
 - **Screenshot Tool:** flameshot
 - **Fonts:** iosevkaterm nerd font, roboto-condensed
 - **Policykit:** mate-polkit
