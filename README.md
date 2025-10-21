@@ -34,6 +34,8 @@
 curl -s https://raw.githubusercontent.com/bibjaw99/workstation/refs/heads/master/install_scripts/script.sh | bash
 ```
 
+- Or, clone the repo and run the `install.sh` script
+
 ## how the script works :
 
 - all the dotfiles will be stored in a folder called `config_dotfiles` in your `$HOME/.local/share` directory
