@@ -4,7 +4,7 @@ zsh-syntax-highlighting
 zsh-autosuggestions
 lshw
 libnotify
-nemo
+pcmanfm
 xarchiver
 flameshot
 gvfs

@@ -1,3 +1,4 @@
+include ~/.config/sway/variables.conf
 include ~/.config/sway/appearance.conf
 include ~/.config/sway/autostart.conf
 include ~/.config/sway/devices.conf
