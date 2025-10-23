@@ -263,8 +263,9 @@ EndSection
 
 ```
 QT_QPA_PLATFORMTHEME=gtk3
-BROWSER=firefox-developer-edition
+BROWSER=librewolf
 EDITOR=nvim
+TERMINAL=ghostty
 ```
 
 ## sddm sugar-candy theme
@@ -305,6 +306,7 @@ $ sudo mkinitcpio -p linux
 - chromium-flags.conf
 
 ```
+--ozone-platform=x11
 --ignore-gpu-blocklist
 --enable-zero-copy
 --enable-features=VaapiVideoDecodeLinuxGL
