@@ -50,9 +50,27 @@ return {
 		},
 		{
 			mode = "n",
+			"<leader>eH",
+			":lua MiniFiles.open(vim.cmd('e ~/'))<cr>",
+			desc = "Home Dir",
+		},
+		{
+			mode = "n",
 			"<leader>ec",
-			":e ~/.config/nvim/lua/grimmvim/<cr>",
-			desc = "Config Dir",
+			":lua MiniFiles.open(vim.cmd('e ~/.config/nvim/lua/grimmvim/'))<cr>",
+			desc = "Nvim Config",
+		},
+		{
+			mode = "n",
+			"<leader>eC",
+			":lua MiniFiles.open(vim.cmd('e ~/.config/'))<cr>",
+			desc = "Configs Dir",
+		},
+		{
+			mode = "n",
+			"<leader>eD",
+			":lua MiniFiles.open(vim.cmd('e ~/.local/share/config_dotfiles/'))<cr>",
+			desc = "Dotfiles",
 		},
 		{
 			mode = "n",

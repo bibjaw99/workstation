@@ -167,9 +167,21 @@ return {
 		},
 		{
 			mode = "n",
-			"<leader>fF",
+			"<leader>fH",
 			':lua require("snacks").picker.files({cwd=vim.fn.expand("~")})<cr>',
 			desc = "Find From Home",
+		},
+		{
+			mode = "n",
+			"<leader>fD",
+			':lua require("snacks").picker.files({cwd=vim.fn.expand("~/.local/share/config_dotfiles/")})<cr>',
+			desc = "Find Dotfiles",
+		},
+		{
+			mode = "n",
+			"<leader>fC",
+			':lua require("snacks").picker.files({cwd=vim.fn.expand("~/.config/")})<cr>',
+			desc = "Find Configs",
 		},
 		{
 			mode = "n",
