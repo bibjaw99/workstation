@@ -263,7 +263,7 @@ EndSection
 
 ```
 QT_QPA_PLATFORMTHEME=gtk3
-BROWSER=librewolf
+BROWSER=firefox-developer-edition
 EDITOR=nvim
 TERMINAL=foot
 ```

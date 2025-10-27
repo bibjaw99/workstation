@@ -11,7 +11,6 @@ gvfs
 gvfs-mtp
 gvfs-gphoto2
 mtpfs
-jmtpfs
 ntfs-3g
 mate-polkit
 xdg-desktop-portal
@@ -32,8 +31,7 @@ rsync
 imagemagick
 python-pillow
 rofi-wayland
-rofi-emoji-git
-rate-mirrors-bin
+rofi-emoji
 pacman-contrib
 eza
 starship
@@ -50,7 +48,6 @@ blueman
 bluez
 bluez-utils
 gnome-bluetooth
-cmus
 ristretto
 mpv
 ttf-dejavu
