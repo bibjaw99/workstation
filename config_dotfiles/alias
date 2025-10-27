@@ -1,21 +1,12 @@
 ## Universal
-alias swayfig="nvim ~/.config/sway/keymaps.conf"
-alias gconfig="nvim ~/.config/ghostty/config"
 alias ls="eza --icons"
 alias la="ls -la"
 alias lsTree="ls --tree"
 alias vv="nvim"
-alias ss="ristretto ~/Pictures/screenshots"
-alias bg="ristretto ~/Pictures/backgrounds"
-alias anaconda="source ~/anaconda3/bin/activate && anaconda-navigator"
-alias luadir="cd ~/Documents/Lua/Lua_Basics/"
-alias neodir="cd ~/.config/nvim"
 alias DS="cd ~/Desktop/DS"
 alias bsource="source .bashrc"
 alias xx="exit"
-alias cc="clear"
 alias lg="lazygit"
-alias gg="fg"
 alias ins='nvim $(fzf -m --preview="bat --theme=gruvbox-dark --color=always {}")'
 alias fastfetch='fastfetch --kitty ~/.config/fastfetch/pngs/anime.png'
 

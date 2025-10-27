@@ -265,7 +265,7 @@ EndSection
 QT_QPA_PLATFORMTHEME=gtk3
 BROWSER=librewolf
 EDITOR=nvim
-TERMINAL=ghostty
+TERMINAL=foot
 ```
 
 ## sddm sugar-candy theme

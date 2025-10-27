@@ -8,7 +8,7 @@
 - **Window Manager:** swaywm
 - **Bar:** waybar
 - **Launcher:** rofi
-- **Terminal:** ghostty
+- **Terminal:** foot
 - **Code Editor** : Neovim
 - **Lockscreen:** swaylock
 - **File Manager:** Pcmanfm
