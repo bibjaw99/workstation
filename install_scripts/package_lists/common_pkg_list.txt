@@ -30,7 +30,7 @@ jq
 rsync
 imagemagick
 python-pillow
-rofi-wayland
+rofi
 rofi-emoji
 pacman-contrib
 eza
