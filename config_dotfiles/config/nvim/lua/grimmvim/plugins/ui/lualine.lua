@@ -1,46 +1,46 @@
 -- define colors
 local colors = {
-	blue = "#83a598",
-	green = "#8ec07c",
-	violet = "#d3869b",
-	yellow = "#d8a657",
-	red = "#FF4A4A",
-	cream = "#fff4d2",
-	black = "#1d1d1d",
-	grey = "#393939",
-	dark = "#292929",
+	gruvBlue = "#83a598",
+	gruvGreen = "#8ec07c",
+	gruvPink = "#d3869b",
+	gruvYellow = "#d8a657",
+	gruvRed = "#FF4A4A",
+	gruvWhite = "#fff4d2",
+	gruvBlack = "#1d1d1d",
+	gruvGray = "#393939",
+	gruvDark = "#292929",
 }
 
 -- custom modifications
 local gruv_material = {
 	normal = {
-		a = { bg = colors.dark, fg = colors.cream, gui = "bold" },
-		b = { bg = colors.grey, fg = colors.cream, gui = "bold" },
-		c = { bg = colors.blue, fg = colors.black, gui = "bold" },
+		a = { bg = colors.gruvDark, fg = colors.gruvWhite, gui = "bold" },
+		b = { bg = colors.gruvGray, fg = colors.gruvWhite, gui = "bold" },
+		c = { bg = colors.gruvBlue, fg = colors.gruvBlack, gui = "bold" },
 	},
 	insert = {
-		a = { bg = colors.blue, fg = colors.black, gui = "bold" },
-		c = { bg = colors.violet, fg = colors.black, gui = "bold" },
+		a = { bg = colors.gruvBlue, fg = colors.gruvBlack, gui = "bold" },
+		c = { bg = colors.gruvPink, fg = colors.gruvBlack, gui = "bold" },
 	},
 	visual = {
-		a = { bg = colors.violet, fg = colors.black, gui = "bold" },
-		c = { bg = colors.dark, fg = colors.cream, gui = "bold" },
+		a = { bg = colors.gruvPink, fg = colors.gruvBlack, gui = "bold" },
+		c = { bg = colors.gruvDark, fg = colors.gruvWhite, gui = "bold" },
 	},
 	command = {
-		a = { bg = colors.green, fg = colors.black, gui = "bold" },
-		c = { bg = colors.black, fg = colors.cream, gui = "bold" },
+		a = { bg = colors.gruvGreen, fg = colors.gruvBlack, gui = "bold" },
+		c = { bg = colors.gruvBlack, fg = colors.gruvWhite, gui = "bold" },
 	},
 	terminal = {
-		a = { bg = colors.red, fg = colors.black, gui = "bold" },
-		c = { bg = colors.black, fg = colors.cream, gui = "bold" },
+		a = { bg = colors.gruvRed, fg = colors.gruvBlack, gui = "bold" },
+		c = { bg = colors.gruvBlack, fg = colors.gruvWhite, gui = "bold" },
 	},
 	replace = {
-		a = { bg = colors.blue, fg = colors.black, gui = "bold" },
-		c = { bg = colors.violet, fg = colors.black, gui = "bold" },
+		a = { bg = colors.gruvBlue, fg = colors.gruvBlack, gui = "bold" },
+		c = { bg = colors.gruvPink, fg = colors.gruvBlack, gui = "bold" },
 	},
 	inactive = {
-		a = { bg = colors.green, fg = colors.black, gui = "bold" },
-		c = { bg = colors.black, fg = colors.cream, gui = "bold" },
+		a = { bg = colors.gruvGreen, fg = colors.gruvBlack, gui = "bold" },
+		c = { bg = colors.gruvBlack, fg = colors.gruvWhite, gui = "bold" },
 	},
 }
 
@@ -52,7 +52,7 @@ return {
 	opts = {
 		options = {
 			theme = gruv_material,
-			component_separators = { left = "│", right = "│" },
+			component_separators = { left = "|", right = "|" },
 			section_separators = { left = "", right = "" },
 			disabled_filetypes = { "snacks_dashboard" },
 		},
@@ -67,8 +67,8 @@ return {
 				{
 					"buffers",
 					buffers_color = {
-						active = { bg = colors.yellow, fg = colors.black, gui = "bold" },
-						inactive = { bg = colors.grey, fg = colors.cream, gui = "italic" },
+						active = { bg = colors.gruvYellow, fg = colors.gruvBlack, gui = "bold" },
+						inactive = { bg = colors.gruvGray, fg = colors.gruvWhite, gui = "italic" },
 					},
 					symbols = {
 						modified = " ●",
@@ -83,35 +83,22 @@ return {
 					"filename",
 					file_status = true,
 					path = 3,
-					shorting_target = 0,
 				},
 			},
 			lualine_x = {
 				"filesize",
+				"lsp_status",
 			},
 			lualine_y = {
 				"searchcount",
 				"selectioncount",
-				"encoding",
 				"filetype",
 			},
 			lualine_z = {
-				"progress",
+				"encoding",
 				"location",
 			},
 		},
-		inactive_sections = {
-			lualine_a = {},
-			lualine_b = {},
-			lualine_c = { "filename" },
-			lualine_x = { "location" },
-			lualine_y = {},
-			lualine_z = {},
-		},
-		tabline = {},
-		winbar = {},
-		inactive_winbar = {},
-		extensions = {},
 	},
 	config = function(_, opts)
 		require("lualine").setup(opts)
