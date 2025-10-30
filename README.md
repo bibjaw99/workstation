@@ -19,10 +19,6 @@
 
 # Notes
 
-- [Notes](./notes/notes.md)
-- [Arch Installation Process I followed](./notes/archInstalltion.md)
-- [old configs with hyprland](https://github.com/bibjaw99/archive_configs/tree/main/current/config_dotfiles/config)
-
 ## ⚠️ do not forget to change the settings related to your hardwares in `~/.config/sway/devices.conf`
 
 ---

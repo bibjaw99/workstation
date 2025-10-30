@@ -3,6 +3,7 @@ neovim
 tree-sitter-cli
 texlive-binextra
 fzf
+fd
 ripgrep
 lazygit
 tokei

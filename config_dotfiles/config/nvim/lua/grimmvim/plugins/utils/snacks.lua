@@ -36,7 +36,7 @@ return {
 			},
 		},
 		image = {
-			enabled = true,
+			enabled = false,
 		},
 		-- indent guide lines
 		indent = {
