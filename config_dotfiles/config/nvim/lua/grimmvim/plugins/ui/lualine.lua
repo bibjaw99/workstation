@@ -87,11 +87,11 @@ return {
 			},
 			lualine_x = {
 				"filesize",
-				"lsp_status",
 			},
 			lualine_y = {
 				"searchcount",
 				"selectioncount",
+				"lsp_status",
 				"filetype",
 			},
 			lualine_z = {

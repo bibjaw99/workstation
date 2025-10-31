@@ -6,7 +6,7 @@ dir_of_this_script="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 dir_github_projects="$HOME/github"
 
 # Load package lists
-for list in common_pkg_list.txt dev_pkg_list.txt wayland_pkg_list.txt ; do
+for list in common_pkg_list.txt dev_pkg_list.txt wayland_pkg_list.txt gui_pkg_list.txt; do
   file="$dir_of_this_script/package_lists/$list"
   if [[ ! -f "$file" ]]; then
     echo "❌ Missing file: $file"
@@ -18,6 +18,7 @@ done
 mapfile -t common_packages < "$dir_of_this_script/package_lists/common_pkg_list.txt"
 mapfile -t dev_packages < "$dir_of_this_script/package_lists/dev_pkg_list.txt"
 mapfile -t wayland_packages < "$dir_of_this_script/package_lists/wayland_pkg_list.txt"
+mapfile -t gui_packages < "$dir_of_this_script/package_lists/gui_pkg_list.txt"
 
 # Install package function
 install_package () {
@@ -37,3 +38,4 @@ install_package () {
 install_package "${common_packages[@]}"
 install_package "${dev_packages[@]}"
 install_package "${wayland_packages[@]}"
+install_package "${gui_packages[@]}"
