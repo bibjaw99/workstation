@@ -28,7 +28,9 @@
 ## Installation script :
 
 ```sh
-curl -s https://raw.githubusercontent.com/bibjaw99/workstation/refs/heads/master/install_scripts/script.sh | bash
+mkdir -p "$HOME/github"
+git clone https://github.com/bibjaw99/workstation "$HOME/github/workstation"
+bash "$HOME/github/workstation/install_scripts/install.sh"
 ```
 
 - Or, clone the repo and run the `install.sh` script
@@ -50,19 +52,22 @@ curl -s https://raw.githubusercontent.com/bibjaw99/workstation/refs/heads/master
   - just go to `/workstation/install_scripts/package_lists` directory to find all the list of packages
 
 ```sh
-├── config_lists
-│   ├── config_dirs.txt
-│   └── config_files.txt
-├── flatpak_install.sh
-├── install.sh
-├── package_install.sh
+.
 ├── package_lists
 │   ├── common_pkg_list.txt
 │   ├── dev_pkg_list.txt
 │   ├── flatpak_pkg_list.txt
-│   ├── wayland_pkg_list.txt
+│   ├── gui_pkg_list.txt
+│   └── wayland_pkg_list.txt
+├── config_lists
+│   ├── config_dirs.txt
+│   └── config_files.txt
+├── install.sh
+├── package_install.sh
 ├── symlink_configs.sh
-└── symlink_files.sh
+├── symlink_files.sh
+├── enable_services.sh
+└── flatpak_install.sh
 ```
 
 ### Drivers:
