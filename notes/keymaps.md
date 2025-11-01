@@ -1,4 +1,4 @@
-## keymaps : Sway (AI generated tables please look into the `keymaps.config` files for more details)
+## keymaps (AI generated tables please look into the `keymaps.config` files for more details) :
 
 - I am using keychords like keybindings.
 
@@ -80,6 +80,7 @@
 | **\$mainMod + n**      | Launch file manager      |
 | **\$mainMod + o**      | Launch PDF reader        |
 | **\$mainMod + b**      | Launch Bluetooth manager |
+| **\$mainMod + m**      | Launch cmus music        |
 | **Print**              | Screenshot full          |
 | **\$mainMod + Print**  | Screenshot GUI           |
 | **Esc**                | Exit submap              |

@@ -1,17 +1,16 @@
 # My workstation configs
 
-- The colorscheme is a combmination of both gruvbox and gruvbox-material in my configs
-
 ## **Descriptions:**
 
 - **OS:** Arch Linux
-- **Window Manager:** swaywm
+- **Window Manager:** swaywm, hyprland
 - **Bar:** waybar
 - **Launcher:** rofi
-- **Terminal:** foot
+- **Terminal:** Foot
+- **File Manager:** Pcmanfm
+- **Browser:** Firefox Developer Edition
 - **Code Editor** : Neovim
 - **Lockscreen:** swaylock
-- **File Manager:** Pcmanfm
 - **Screenshot Tool:** flameshot
 - **Fonts:** iosevkaterm nerd font, roboto-condensed
 - **Policykit:** mate-polkit
@@ -19,7 +18,16 @@
 
 # Notes
 
-## ⚠️ do not forget to change the settings related to your hardwares in `~/.config/sway/devices.conf`
+> ⚠️ do not forget to change the settings related to your hardwares in `~/.config/sway/devices.conf`
+
+## environment variables
+
+```sh
+QT_QPA_PLATFORMTHEME=gtk3
+BROWSER=firefox-developer-edition
+EDITOR=nvim
+TERMINAL=footclient
+```
 
 ---
 
