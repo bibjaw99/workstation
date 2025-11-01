@@ -13,7 +13,6 @@ enable_service() {
     else
       echo "enabling $service..."
       sudo systemctl enable "$service"
-      sudo systemctl start "$service"
     fi
   done
 }
