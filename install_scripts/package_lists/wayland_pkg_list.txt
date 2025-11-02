@@ -6,9 +6,7 @@ wlsunset
 wl-clipboard
 swaybg
 sway
-hyprland
 swaylock
 xdg-desktop-portal-wlr
-xdg-desktop-portal-hyprland
 mako
 grim

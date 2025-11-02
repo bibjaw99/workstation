@@ -3,7 +3,7 @@
 ## **Descriptions:**
 
 - **OS:** Arch Linux
-- **Window Manager:** swaywm, hyprland
+- **Window Manager:** SWAY
 - **Bar:** waybar
 - **Launcher:** rofi
 - **Terminal:** Foot
@@ -27,6 +27,7 @@ QT_QPA_PLATFORMTHEME=gtk3
 BROWSER=firefox-developer-edition
 EDITOR=nvim
 TERMINAL=footclient
+DESKTOP_SESSION=sway
 ```
 
 ---
