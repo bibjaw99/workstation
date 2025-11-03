@@ -6,7 +6,7 @@
 - **Window Manager:** SWAY
 - **Bar:** waybar
 - **Launcher:** rofi
-- **Terminal:** Foot
+- **Terminal:** Ghostty
 - **File Manager:** Pcmanfm
 - **Browser:** Firefox Developer Edition
 - **Code Editor** : Neovim
@@ -26,7 +26,7 @@
 QT_QPA_PLATFORMTHEME=gtk3
 BROWSER=firefox-developer-edition
 EDITOR=nvim
-TERMINAL=footclient
+TERMINAL=ghostty
 DESKTOP_SESSION=sway
 ```
 

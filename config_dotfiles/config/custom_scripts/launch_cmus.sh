@@ -1,9 +1,18 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-if pidof cmus ; then
-  notify-send -u low "CMUS 󰋌 is already running"
-  exit 1
-else
-  $TERMINAL -e cmus & disown
-fi
+TERMINAL="ghostty"
+SESSION_NAME="music"
+
+launch_cmus_in_tmux() {
+  if tmux has-session -t "$SESSION_NAME" 2>/dev/null; then
+    if pidof cmus >/dev/null; then
+      notify-send -u low "CMUS 󰋌 is already running"
+    fi
+    "$TERMINAL" -e tmux attach -t "$SESSION_NAME" & disown
+  else
+    "$TERMINAL" -e tmux new-session -s "$SESSION_NAME" "bash -l -c cmus" & disown
+  fi
+}
+
+launch_cmus_in_tmux

@@ -35,9 +35,6 @@ return {
 				header = { "%s", align = "center" },
 			},
 		},
-		image = {
-			enabled = false,
-		},
 		-- indent guide lines
 		indent = {
 			enabled = true,

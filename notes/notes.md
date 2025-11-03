@@ -265,7 +265,7 @@ EndSection
 QT_QPA_PLATFORMTHEME=gtk3
 BROWSER=firefox-developer-edition
 EDITOR=nvim
-TERMINAL=footclient
+TERMINAL=ghostty
 ```
 
 ## sddm sugar-candy theme

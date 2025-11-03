@@ -1,4 +1,4 @@
-foot
+ghostty
 sway
 waybar
 nvim
