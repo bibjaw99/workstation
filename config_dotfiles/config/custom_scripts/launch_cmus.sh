@@ -8,6 +8,7 @@ launch_cmus_in_tmux() {
   if tmux has-session -t "$SESSION_NAME" 2>/dev/null; then
     if pidof cmus >/dev/null; then
       notify-send -u low "CMUS 󰋌 is already running"
+      exit 0
     fi
     "$TERMINAL" -e tmux attach -t "$SESSION_NAME" & disown
   else
