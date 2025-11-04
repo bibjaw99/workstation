@@ -159,10 +159,6 @@ intel-gmmlib
 
 ![nvim 4](https://raw.githubusercontent.com/bibjaw99/workstation-screenshots/refs/heads/main/screenshots/neovim/4.png)
 
-##### ToggleTerm X Lazygit
-
-![nvim 5](https://raw.githubusercontent.com/bibjaw99/workstation-screenshots/refs/heads/main/screenshots/neovim/5.png)
-
 ##### Plugin Manager : Lazy and LSP manager : Mason
 
-![nvim 6](https://raw.githubusercontent.com/bibjaw99/workstation-screenshots/refs/heads/main/screenshots/neovim/6.png)
+![nvim 5](https://raw.githubusercontent.com/bibjaw99/workstation-screenshots/refs/heads/main/screenshots/neovim/5.png)
