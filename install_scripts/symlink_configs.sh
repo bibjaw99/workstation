@@ -6,15 +6,15 @@ dir_dotfiles="$HOME/.local/share/config_dotfiles/config"
 dir_config="$HOME/.config"
 dir_backup="$HOME/.config.backup/$(date +"%Y%d%m_%H-%M-%S")"
 
+# default configs
+default_dotfile_waybar="$HOME/.local/share/config_dotfiles/config/waybar_configs/waybar_block_1/"
+
 # make sure config and backup dir exists
 mkdir -p "$dir_config"
 mkdir -p "$dir_backup"
 
 # store the config directory names in an array
 mapfile -t dir_config_directories < "$dir_of_this_script/config_lists/config_dirs.txt"
-
-# default configs
-default_dotfile_waybar="$HOME/.local/share/config_dotfiles/config/waybar_configs/waybar_block_1/"
 
 for directory in "${dir_config_directories[@]}"; do
   path_config="$dir_config/$directory"
