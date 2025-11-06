@@ -79,40 +79,57 @@ bash "$HOME/github/workstation/install_scripts/install.sh"
 └── flatpak_install.sh
 ```
 
-### Drivers:
-
-##### Currently using an ultrabook: HP probook 10 G450, i5 13th gen with iGPU - intel iris xe.
-
-```sh
-# amd
-xf86-video-amdgpu
-xf86-video-ati
-amd-ucode
-amdvlk
-
-# intel
-intel-media-driver
-vulkan-intel
-intel-gmmlib
-```
-
 ---
 
 ## Gallery
 
 ### Sway
 
-![Sway](https://github.com/bibjaw99/workstation-screenshots/blob/main/screenshots/sway.png?raw=true)
+![Sway](https://github.com/bibjaw99/workstation-misc/blob/main/screenshots/sway.png?raw=true)
 
 ### waybar themes
 
 - to launch the rofi theme selector, press `mod+shift+s` then `b`
 
-![wabar themes](https://github.com/bibjaw99/workstation-screenshots/blob/main/screenshots/waybarSwitching.gif?raw=true)
+![wabar themes](https://github.com/bibjaw99/workstation-misc/blob/main/screenshots/waybarSwitching.gif?raw=true)
 
 ### App launcher and power menu: Rofi
 
-![Rofi](https://raw.githubusercontent.com/bibjaw99/workstation-screenshots/refs/heads/main/screenshots/rofi_1.png)
+![Rofi](https://raw.githubusercontent.com/bibjaw99/workstation-misc/refs/heads/main/screenshots/rofi_1.png)
+
+---
+
+## Neovim Text Editor: Grimm Vim: (Not a distro but my own personal config)
+
+#### Installation Guide :
+
+- remove or backup the `nvim` folder from the following directory :
+  - `~/.config/nvim`
+  - `~/.cache/nvim`
+  - `~/.local/share/nvim`
+  - `~/.local/state/nvim`
+
+- Now copy my `nvim` config folder in the `~/.config` directory
+
+##### Start Page
+
+![nvim 1](https://raw.githubusercontent.com/bibjaw99/workstation-misc/refs/heads/main/screenshots/neovim/1.png)
+
+##### File Tree : mini.files
+
+![nvim 2](https://raw.githubusercontent.com/bibjaw99/workstation-misc/refs/heads/main/screenshots/neovim/2.png)
+
+##### LSP Support and Autocompletion support
+
+![nvim 3](https://raw.githubusercontent.com/bibjaw99/workstation-misc/refs/heads/main/screenshots/neovim/3.png)
+
+##### Gitsigns plugin for visual git status
+
+![nvim 4](https://raw.githubusercontent.com/bibjaw99/workstation-misc/refs/heads/main/screenshots/neovim/4.png)
+
+##### Plugin Manager : Lazy and LSP manager : Mason
+
+![nvim 5](https://raw.githubusercontent.com/bibjaw99/workstation-misc/refs/heads/main/screenshots/neovim/5.png)
 
 ---
 
@@ -131,34 +148,150 @@ intel-gmmlib
 
 ---
 
-## Neovim Text Editor: Grimm Vim: (Not a distro but my own personal config)
+## keymaps (AI generated tables please look into the `keymaps.config` files for more details) :
 
-#### Installation Guide :
+- I am using keychords like keybindings.
 
-- remove or backup the `nvim` folder from the following directory :
-  - `~/.config/nvim`
-  - `~/.cache/nvim`
-  - `~/.local/share/nvim`
-  - `~/.local/state/nvim`
+- **for those who don't know about keychords:** actually it's a way to divide your keymaps into multiple layers. For example , suppose you used to use mod+shift+w to launch your browser and mod+shift+q to quit. Now sometimes , due to mistyping, your current focused windows get killed .... Instead of launching the browser.
+- Now after applying keycords like behavior, before launching an app you have to enter the launch mode. Then press mod+shift+w to launch the browser. If you use neovim or emacs , consider this as setting a master or prefix key
 
-- Now copy my `nvim` config folder in the `~/.config` directory
+### Workspace Management
 
-##### Start Page
+| Keys                           | Action                                   |
+| ------------------------------ | ---------------------------------------- |
+| **\$mainMod + \[1-8]**         | Switch to workspace (1–8)                |
+| **\$mainMod + SHIFT + \[1-8]** | Move active window to workspace (silent) |
+| **\$mainMod + Tab**            | Next workspace                           |
+| **Alt + Tab**                  | Previous workspace                       |
 
-![nvim 1](https://raw.githubusercontent.com/bibjaw99/workstation-screenshots/refs/heads/main/screenshots/neovim/1.png)
+---
 
-##### File Tree : mini.files
+### Window Management
 
-![nvim 2](https://raw.githubusercontent.com/bibjaw99/workstation-screenshots/refs/heads/main/screenshots/neovim/2.png)
+| Keys                      | Action                                          |
+| ------------------------- | ----------------------------------------------- |
+| **\$mainMod + Space**     | Toggle floating                                 |
+| **\$mainMod + m**         | Toggle fullscreen                               |
+| **\$mainMod + q**         | focus next/floating window                      |
+| **\$mainMod + SHIFT + n** | Cycle window next                               |
+| **\$mainMod + SHIFT + p** | Cycle window previous                           |
+| **\$mainMod + SHIFT + q** | Kill active window                              |
+| **\$mainMod + SHIFT + o** | Cycle Layouts : `tabbed, vertical , horizontal` |
 
-##### LSP Support and Autocompletion support
+---
 
-![nvim 3](https://raw.githubusercontent.com/bibjaw99/workstation-screenshots/refs/heads/main/screenshots/neovim/3.png)
+### Window Focus & Movement
 
-##### Gitsigns plugin for visual git status
+| Keys                            | Action                           |
+| ------------------------------- | -------------------------------- |
+| **\$mainMod + h/j/k/l**         | Move focus (left/down/up/right)  |
+| **\$mainMod + SHIFT + h/j/k/l** | Move window (left/down/up/right) |
+| **\$mainMod + Ctrl + h/j/k/l**  | Resize window (±30px)            |
 
-![nvim 4](https://raw.githubusercontent.com/bibjaw99/workstation-screenshots/refs/heads/main/screenshots/neovim/4.png)
+---
 
-##### Plugin Manager : Lazy and LSP manager : Mason
+### Mouse Bindings
 
-![nvim 5](https://raw.githubusercontent.com/bibjaw99/workstation-screenshots/refs/heads/main/screenshots/neovim/5.png)
+| Keys                | Action        |
+| ------------------- | ------------- |
+| **\$mainMod + LMB** | Move window   |
+| **\$mainMod + RMB** | Resize window |
+
+---
+
+### System & Misc
+
+| Keys                      | Action      |
+| ------------------------- | ----------- |
+| **\$mainMod + SHIFT + R** | Reload      |
+| **\$mainMod + SHIFT + X** | Lock screen |
+
+---
+
+### Submap/mode Trigger keys
+
+| Keys                      | Opens Submap                     |
+| ------------------------- | -------------------------------- |
+| **\$mainMod + Return**    | `launch`                         |
+| **\$mainMod + d**         | `rofi`                           |
+| **\$mainMod + SHIFT + S** | `scripts`                        |
+| **\$mainMod + SHIFT + M** | `notify`                         |
+| **\$mainMod + SHIFT + u** | `swap` : window swapping in sway |
+
+---
+
+### Submap: Launch
+
+| Keys                   | Action                   |
+| ---------------------- | ------------------------ |
+| **\$mainMod + Return** | Launch terminal          |
+| **\$mainMod + w**      | Launch browser           |
+| **\$mainMod + i**      | Launch browser incognito |
+| **\$mainMod + n**      | Launch file manager      |
+| **\$mainMod + o**      | Launch PDF reader        |
+| **\$mainMod + b**      | Launch Bluetooth manager |
+| **\$mainMod + m**      | Launch cmus music        |
+| **Print**              | Screenshot full          |
+| **\$mainMod + Print**  | Screenshot GUI           |
+| **Esc**                | Exit submap              |
+
+---
+
+### Submap: Rofi
+
+| Keys                      | Action               |
+| ------------------------- | -------------------- |
+| **\$mainMod + d**         | Rofi app launcher    |
+| **\$mainMod + SHIFT + d** | Rofi run             |
+| **\$mainMod + w**         | Rofi window switcher |
+| **\$mainMod + e**         | Rofi emoji picker    |
+| **\$mainMod + SHIFT + e** | Power menu script    |
+| **Esc**                   | Exit submap          |
+
+---
+
+### Submap: Notify
+
+| Keys          | Action                    |
+| ------------- | ------------------------- |
+| **M**         | Restore notifications     |
+| **SHIFT + m** | Dismiss all notifications |
+| **Esc**       | Exit submap               |
+
+---
+
+### Submap: Scripts
+
+| Keys    | Action                    |
+| ------- | ------------------------- |
+| **t**   | wlsunset                  |
+| **w**   | Run background chooser    |
+| **b**   | Run Waybar theme switcher |
+| **Esc** | Exit submap               |
+
+---
+
+### Brightness & Volume
+
+| Keys                                   | Action              |
+| -------------------------------------- | ------------------- |
+| **XF86MonBrightnessUp / Down**         | Brightness ±10%     |
+| **\$mainMod + F4 / F3**                | Brightness ±5%      |
+| **XF86AudioRaiseVolume / LowerVolume** | Volume ±5%          |
+| **XF86AudioMute**                      | Toggle audio mute   |
+| **XF86AudioMicMute**                   | Toggle mic mute     |
+| **\$mainMod + F7 / F6**                | Volume ±5% (pactl)  |
+| **\$mainMod + F5**                     | Toggle mute (pactl) |
+
+---
+
+### Media Controls
+
+| Keys                          | Action                |
+| ----------------------------- | --------------------- |
+| **XF86AudioNext / Prev**      | Next / Previous track |
+| **XF86AudioPlay / Pause**     | Play / Pause          |
+| **\$mainMod + SHIFT + Right** | Next track            |
+| **\$mainMod + SHIFT + Left**  | Previous track        |
+| **\$mainMod + SHIFT + Up**    | Play                  |
+| **\$mainMod + SHIFT + Down**  | Pause                 |

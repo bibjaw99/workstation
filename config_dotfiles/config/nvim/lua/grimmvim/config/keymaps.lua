@@ -74,6 +74,7 @@ map("n", "<Tab>", ":bnext<cr>", { desc = "Next Buffer", noremap = true, silent =
 map("n", "<S-Tab>", ":bprevious<cr>", { desc = "Previous Buffer", noremap = true, silent = true })
 map("n", "<leader>bn", ":enew<cr>", { desc = "New Empty Buffer", noremap = true, silent = true })
 map("n", "<leader>bl", ":blast<cr>", { desc = "Last Buffer", noremap = true, silent = true })
+map("n", "<leader>ba", ":%bdelete!<cr>", { desc = "Delete All Buffers", noremap = true, silent = true })
 -- map("n", "<leader>bx", ":bp<bar>sp<bar>bn<bar>bd<cr>", { desc = "Delete Buffer", noremap = true, silent = true })
 map("n", "<leader>bs", ":source %<cr>", { desc = "Source Buffer", noremap = true, silent = true })
 
