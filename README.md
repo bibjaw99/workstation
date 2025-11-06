@@ -32,8 +32,6 @@ DESKTOP_SESSION=sway
 
 ---
 
-## [keybindings](./notes/keymaps.md)
-
 ## Installation script :
 
 ```sh
