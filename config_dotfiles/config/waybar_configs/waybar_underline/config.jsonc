@@ -60,7 +60,7 @@
   },
   "tray": {
     "icon-size": 16,
-    "spacing": 6
+    "spacing": 8
   },
   "disk": {
     "format": "<span color='#ea6962'>[]</span> {free}",

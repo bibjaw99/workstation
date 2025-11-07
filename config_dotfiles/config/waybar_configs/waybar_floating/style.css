@@ -54,11 +54,15 @@ window#waybar {
 
 #workspaces button {
   padding: 0 4px;
-  margin: 0px 3px;
+  margin-right: 5px;
   min-width: 22px;
   color: #ebdbb2;
   background: #222222;
   border: 4px solid #222222;
+}
+
+#workspaces button:last-child {
+  margin-right: 0;
 }
 
 #workspaces button:hover {

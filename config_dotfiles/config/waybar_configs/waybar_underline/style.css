@@ -46,7 +46,11 @@ window#waybar {
   border: 3px solid #fff4d2;
   min-width: 22px;
   padding: 0 6px;
-  margin: 0px 3px;
+  margin-right: 5px;
+}
+
+#workspaces button:last-child {
+  margin-right: 0;
 }
 
 #workspaces button:hover {
@@ -83,7 +87,7 @@ window#waybar {
 }
 
 #tray {
-  background: #484848;
+  border: 3px solid #e78a4e;
   padding: 0 8;
 }
 

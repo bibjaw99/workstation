@@ -52,9 +52,13 @@ window#waybar {
 #workspaces button {
   color: #fff4d2;
   border: 3px solid #fff4d2;
-  margin: 0px 3px;
+  margin-right: 5px;
   min-width: 22px;
   padding: 0 6;
+}
+
+#workspaces button:last-child {
+  margin-right: 0;
 }
 
 #workspaces button:hover {

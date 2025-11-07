@@ -55,8 +55,12 @@ window#waybar {
   background-color: #333333;
   border: 3px solid #484848;
   min-width: 20px;
-  margin: 0 3px;
+  margin-right: 5px;
   padding: 0px 6px;
+}
+
+#workspaces button:last-child {
+  margin-right: 0;
 }
 
 #workspaces button:hover {
