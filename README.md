@@ -117,6 +117,10 @@ bash "$HOME/github/workstation/install_scripts/install.sh"
 
 ![nvim 2](https://raw.githubusercontent.com/bibjaw99/workstation-misc/refs/heads/main/screenshots/neovim/2.png)
 
+##### Fuzzy Finder: Snacks.nvim
+
+![nvim 6](https://raw.githubusercontent.com/bibjaw99/workstation-misc/refs/heads/main/screenshots/neovim/6.png)
+
 ##### LSP Support and Autocompletion support
 
 ![nvim 3](https://raw.githubusercontent.com/bibjaw99/workstation-misc/refs/heads/main/screenshots/neovim/3.png)
