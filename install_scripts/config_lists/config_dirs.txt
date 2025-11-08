@@ -1,5 +1,6 @@
 ghostty
 sway
+hypr
 waybar
 nvim
 zathura
@@ -7,6 +8,5 @@ fontconfig
 custom_scripts
 rofi
 mako
-walls
 zathura
 walls

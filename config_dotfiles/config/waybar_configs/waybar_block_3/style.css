@@ -70,7 +70,9 @@ window#waybar {
 }
 
 #workspaces button.visible,
-#workspaces button.visible:hover {
+#workspaces button.visible:hover,
+#workspaces button.active,
+#workspaces button.active:hover {
   color: #000000;
   background: #8ec07c;
   border: 3px solid #689d68;

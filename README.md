@@ -3,7 +3,7 @@
 ## **Descriptions:**
 
 - **OS:** Arch Linux
-- **Window Manager:** SWAY
+- **Window Manager:** Sway, Hyprland
 - **Bar:** waybar
 - **Launcher:** rofi
 - **Terminal:** Ghostty
@@ -27,7 +27,6 @@ QT_QPA_PLATFORMTHEME=gtk3
 BROWSER=firefox-developer-edition
 EDITOR=nvim
 TERMINAL=ghostty
-DESKTOP_SESSION=sway
 ```
 
 ---
