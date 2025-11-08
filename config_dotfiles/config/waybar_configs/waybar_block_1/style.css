@@ -55,8 +55,8 @@ window#waybar {
   color: #fff4d2;
   border: 3px solid #fff4d2;
   margin-right: 5px;
-  min-width: 22px;
-  padding: 0 6;
+  min-width: 20px;
+  padding: 0 5;
 }
 
 #workspaces button:last-child {

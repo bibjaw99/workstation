@@ -44,8 +44,8 @@ window#waybar {
   color: #fff4d2;
   background: #222222;
   border: 3px solid #fff4d2;
-  min-width: 22px;
-  padding: 0 6px;
+  min-width: 20px;
+  padding: 0 5px;
   margin-right: 5px;
 }
 

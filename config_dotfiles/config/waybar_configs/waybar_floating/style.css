@@ -53,9 +53,9 @@ window#waybar {
 }
 
 #workspaces button {
-  padding: 0 4px;
+  padding: 0 5px;
   margin-right: 5px;
-  min-width: 22px;
+  min-width: 20px;
   color: #ebdbb2;
   background: #222222;
   border: 4px solid #222222;
@@ -86,7 +86,7 @@ window#waybar {
 }
 
 #tray {
-  padding: 0 6px;
+  padding: 0 8px;
   background: #222222;
 }
 
