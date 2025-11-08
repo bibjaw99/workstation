@@ -75,8 +75,8 @@ return {
 					preview = false,
 					layout = {
 						box = "horizontal",
-						width = 0.90,
-						height = 0.90,
+						width = 0.99,
+						height = 0.99,
 						{
 							box = "vertical",
 							border = "bold",
@@ -93,10 +93,8 @@ return {
 					preview = false,
 					layout = {
 						backdrop = false,
-						width = 0.5,
-						min_width = 80,
-						height = 0.8,
-						min_height = 30,
+						width = 0.99,
+						height = 0.99,
 						box = "vertical",
 						border = "bold",
 						title = "{title} {live} {flags}",
