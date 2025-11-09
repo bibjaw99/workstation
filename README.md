@@ -8,7 +8,7 @@
 - **Launcher:** rofi
 - **Terminal:** Ghostty
 - **File Manager:** Pcmanfm
-- **Browser:** Firefox Developer Edition
+- **Default Browser:** Brave
 - **Code Editor** : Neovim
 - **Lockscreen:** swaylock
 - **Screenshot Tool:** flameshot
@@ -18,13 +18,13 @@
 
 # Notes
 
-> ⚠️ do not forget to change the settings related to your hardwares in `~/.config/sway/devices.conf`
+> ⚠️ do not forget to change the settings related to your hardwares in `~/.local/share/config_dotfiles/config/hypr/devices.conf` and `~/.local/share/config_dotfiles/config/sway/devices.conf`
 
 ## environment variables
 
 ```sh
 QT_QPA_PLATFORMTHEME=gtk3
-BROWSER=firefox-developer-edition
+BROWSER=brave
 EDITOR=nvim
 TERMINAL=ghostty
 ```

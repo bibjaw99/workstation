@@ -17,5 +17,4 @@ zathura
 zathura-pdf-poppler
 ristretto
 mpv
-firefox-developer-edition
 sddm
