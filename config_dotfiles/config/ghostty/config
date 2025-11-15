@@ -5,6 +5,7 @@ adjust-cursor-height = -30%
 
 # fonts
 font-size = 15
+font-feature = -calt
 
 font-family = "IosevkaTerm NFM SemiBold"
 font-family-bold = "IosevkaTerm NFM ExtraBold"

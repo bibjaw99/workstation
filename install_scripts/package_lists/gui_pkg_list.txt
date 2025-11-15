@@ -5,7 +5,7 @@ pcmanfm
 xarchiver
 flameshot
 mate-polkit
-pavucontrol
+pavucontrol-qt
 libgnome-keyring
 gnome-keyring
 gnome-disk-utility
