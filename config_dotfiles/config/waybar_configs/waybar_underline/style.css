@@ -57,7 +57,6 @@ window#waybar {
   color: #202020;
   background: #d3869b;
   border: 3px solid #b16286;
-  min-width: 22px;
 }
 
 #workspaces button.visible,
