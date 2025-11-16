@@ -37,7 +37,7 @@ window#waybar {
 #battery.warning,
 #network,
 #clock {
-  border: 3px solid #484848;
+  border: 3px solid #585858;
   color: #fff4d2;
   background-color: #333333;
   padding-right: 6px;
@@ -53,7 +53,7 @@ window#waybar {
 #workspaces button {
   color: #fff4d2;
   background-color: #333333;
-  border: 3px solid #484848;
+  border: 3px solid #585858;
   min-width: 20px;
   margin-right: 5px;
   padding: 0px 5px;
@@ -108,7 +108,7 @@ window#waybar {
 #tray {
   color: #fff4d2;
   background-color: #383838;
-  border: 3px solid #484848;
+  border: 3px solid #585858;
   padding: 0 8px;
 }
 
