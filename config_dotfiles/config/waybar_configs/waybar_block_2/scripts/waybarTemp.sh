@@ -2,6 +2,10 @@
 
 TEMP=$(sensors | grep -m 1 'Package id 0' | awk '{print $4}' | tr -d '+°C')
 
+if [[ -z "$TEMP" ]]; then
+  TEMP=$(sensors | grep -m 1 'edge' | awk '{print $2}' | tr -d '+°C')
+fi
+
 # fallback
 if [[ -z "$TEMP" ]]; then
   CLASS="unknown"
@@ -10,7 +14,6 @@ if [[ -z "$TEMP" ]]; then
   exit 0
 fi
 
-# Convert TEMP to an integer (remove decimal part)
 TEMP_INT=$(printf "%.0f" "$TEMP")
 
 if (( TEMP_INT >= 70 )); then
@@ -21,5 +24,4 @@ else
   FORMAT="<span color='#d8a657'> 󰴈 </span>${TEMP_INT}°C"
 fi
 
-# print JSON with both text and class
 printf '{"text":"%s","class":"%s"}\n' "$FORMAT" "$CLASS"
