@@ -1,5 +1,5 @@
 include ~/.config/sway/variables.conf
-include ~/.config/sway/appearance.conf
+include ~/.config/sway/lookAndFeel.conf
 include ~/.config/sway/autostart.conf
 include ~/.config/sway/devices.conf
 include ~/.config/sway/keymaps.conf
