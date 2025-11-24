@@ -20,6 +20,8 @@
 
 > ⚠️ do not forget to change the settings related to your hardwares in `~/.local/share/config_dotfiles/config/hypr/devices.conf` and `~/.local/share/config_dotfiles/config/sway/devices.conf`
 
+> please check the `varibles.conf` file of each window manager config directory at the beginning
+
 ## environment variables
 
 ```sh
@@ -75,6 +77,8 @@ bash "$HOME/github/workstation/install_scripts/install.sh"
 ├── enable_services.sh
 └── flatpak_install.sh
 ```
+
+> flatpak install script is optional, so you have to run it manually
 
 ---
 
@@ -215,6 +219,7 @@ bash "$HOME/github/workstation/install_scripts/install.sh"
 | ------------------------- | -------------------------------- |
 | **\$mainMod + Return**    | `launch`                         |
 | **\$mainMod + d**         | `rofi`                           |
+| **\$mainMod + SHIFT + W** | `webapps`                        |
 | **\$mainMod + SHIFT + S** | `scripts`                        |
 | **\$mainMod + SHIFT + M** | `notify`                         |
 | **\$mainMod + SHIFT + u** | `swap` : window swapping in sway |
@@ -234,7 +239,21 @@ bash "$HOME/github/workstation/install_scripts/install.sh"
 | **\$mainMod + m**      | Launch cmus music        |
 | **Print**              | Screenshot full          |
 | **\$mainMod + Print**  | Screenshot GUI           |
-| **Esc**                | Exit submap              |
+
+---
+
+### Submap : webapps
+
+| Keys  | Action                 |
+| ----- | ---------------------- |
+| **y** | Open YouTube           |
+| **a** | Open ChatGPT           |
+| **i** | Open ChatGPT (private) |
+| **g** | Open GitHub            |
+| **r** | Open Reddit            |
+| **f** | Open Facebook          |
+| **m** | Open Messenger         |
+| **t** | Open Monkeytype        |
 
 ---
 
@@ -247,7 +266,6 @@ bash "$HOME/github/workstation/install_scripts/install.sh"
 | **\$mainMod + w**         | Rofi window switcher |
 | **\$mainMod + e**         | Rofi emoji picker    |
 | **\$mainMod + SHIFT + e** | Power menu script    |
-| **Esc**                   | Exit submap          |
 
 ---
 
@@ -257,18 +275,16 @@ bash "$HOME/github/workstation/install_scripts/install.sh"
 | ------------- | ------------------------- |
 | **M**         | Restore notifications     |
 | **SHIFT + m** | Dismiss all notifications |
-| **Esc**       | Exit submap               |
 
 ---
 
 ### Submap: Scripts
 
-| Keys    | Action                    |
-| ------- | ------------------------- |
-| **t**   | wlsunset                  |
-| **w**   | Run background chooser    |
-| **b**   | Run Waybar theme switcher |
-| **Esc** | Exit submap               |
+| Keys  | Action                    |
+| ----- | ------------------------- |
+| **t** | wlsunset                  |
+| **w** | Run background chooser    |
+| **b** | Run Waybar theme switcher |
 
 ---
 
