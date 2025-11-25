@@ -1,5 +1,4 @@
 * {
-  /* `otf-font-awesome` is required to be installed for icons */
   padding: 0;
   margin: 0;
   min-height: 0;
@@ -10,12 +9,17 @@
   box-shadow: none;
 }
 
-/* the whole window */
+.modules-left,
+.modules-center,
+.modules-right {
+  padding: 0 3pt;
+}
+
 window#waybar {
   color: #ebdbb2;
   background: none;
   font-family: IosevkaTerm Nerd Font Propo;
-  font-size: 14px;
+  font-size: 11pt;
   font-weight: 900;
 }
 
@@ -38,27 +42,27 @@ window#waybar {
 #clock {
   color: #ebdbb2;
   background: #222222;
-  border: 4px solid #222222;
-  padding-right: 4px;
+  border: 2.5pt solid #222222;
+  padding-right: 3pt;
 }
 
 #custom-rofi {
   color: #222222;
   background: #83a598;
-  padding: 0 8px;
+  padding: 0 6pt;
 }
 
 #workspaces {
-  margin: 0px;
+  margin: 0;
 }
 
 #workspaces button {
-  padding: 0 5px;
-  margin-right: 5px;
-  min-width: 20px;
+  padding: 0 3.75pt;
+  margin-right: 3pt;
+  min-width: 15pt;
   color: #ebdbb2;
   background: #222222;
-  border: 4px solid #222222;
+  border: 2.5pt solid #222222;
 }
 
 #workspaces button:last-child {
@@ -88,7 +92,7 @@ window#waybar {
 }
 
 #tray {
-  padding: 0 8px;
+  padding: 0 6pt;
   background: #222222;
 }
 
@@ -152,5 +156,5 @@ window#waybar {
 #submap {
   color: #222222;
   background: #83a598;
-  padding: 0 6px;
+  padding: 0 4.5pt;
 }

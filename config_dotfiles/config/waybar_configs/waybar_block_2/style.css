@@ -1,5 +1,4 @@
 * {
-  /* `otf-font-awesome` is required to be installed for icons */
   padding: 0;
   margin: 0;
   min-height: 0;
@@ -15,14 +14,14 @@ window#waybar {
   color: #ebdbb2;
   background: none;
   font-family: IosevkaTerm Nerd Font Propo;
-  font-size: 14px;
+  font-size: 11pt;
   font-weight: 900;
 }
 
 .modules-left,
 .modules-center,
 .modules-right {
-  padding: 5px;
+  padding: 3pt;
   background: #222222;
 }
 
@@ -40,21 +39,21 @@ window#waybar {
 #battery.warning,
 #network,
 #clock {
-  padding: 0 2px;
+  padding: 0 1.5pt;
 }
 
 #custom-rofi {
   color: #83a598;
-  border: 3px solid #83a598;
-  padding: 0 8px;
+  border: 2pt solid #83a598;
+  padding: 0 6pt; /* 8px */
 }
 
 #workspaces button {
   color: #fff4d2;
-  border: 3px solid #fff4d2;
-  margin-right: 5px;
-  min-width: 20px;
-  padding: 0 5;
+  border: 2pt solid #fff4d2;
+  margin-right: 3pt;
+  min-width: 15pt;
+  padding: 0 3.75pt;
 }
 
 #workspaces button:last-child {
@@ -63,7 +62,7 @@ window#waybar {
 
 #workspaces button:hover {
   color: #d3869b;
-  border: 3px solid #d3869b;
+  border-color: #d3869b;
 }
 
 #workspaces button.visible,
@@ -71,86 +70,86 @@ window#waybar {
 #workspaces button.active,
 #workspaces button.active:hover {
   color: #8ec07c;
-  border: 3px solid #8ec07c;
+  border-color: #8ec07c;
 }
 
 #workspaces button.urgent {
   color: #ea6962;
-  border: 3px solid #ea6962;
+  border-color: #ea6962;
 }
 
 #window {
-  border: 3px solid #d3869b;
+  border: 2pt solid #d3869b;
 }
 
 #tray {
   background: #222222;
-  border: 3px solid #e78a4e;
-  padding: 0 8;
+  border: 2pt solid #e78a4e;
+  padding: 0 6pt;
 }
 
 #disk {
-  border: 3px solid #ea6962;
+  border: 2pt solid #ea6962;
 }
 
 #cpu {
-  border: 3px solid #e78a4e;
+  border: 2pt solid #e78a4e;
 }
 
 #custom-cpu_temp {
-  border: 3px solid #d8a657;
+  border: 2pt solid #d8a657;
 }
 
 #custom-cpu_temp.critical {
   color: #cc241d;
-  border: 3px solid #cc241d;
+  border: 2pt solid #cc241d;
 }
 
 #custom-cpu_temp.unknown {
-  border: 3px solid #555555;
+  border: 2pt solid #555555;
 }
 
 #backlight {
-  border: 3px solid #f6c657;
+  border: 2pt solid #f6c657;
 }
 
 #custom-memory {
-  border: 3px solid #458588;
+  border: 2pt solid #458588;
 }
 
 #pulseaudio {
-  border: 3px solid #83a598;
+  border: 2pt solid #83a598;
 }
 
 #pulseaudio.muted {
-  border: 3px solid #ea6962;
+  border: 2pt solid #ea6962;
   color: #ea6962;
 }
 
 #battery {
-  border: 3px solid #689d68;
+  border: 2pt solid #689d68;
 }
 
 #battery.critical {
-  border: 3px solid #cc241d;
+  border: 2pt solid #cc241d;
 }
 
 #battery.warning {
-  border: 3px solid #e78a4e;
+  border: 2pt solid #e78a4e;
 }
 
 #clock {
-  border: 3px solid #8ec07c;
+  border: 2pt solid #8ec07c;
 }
 
 #network {
-  border: 3px solid #d3869b;
+  border: 2pt solid #d3869b;
 }
 
 #mode,
 #submap {
   background: #222222;
   color: #83a598;
-  border: 3px solid #83a598;
-  padding: 0 10;
+  border: 2pt solid #83a598;
+  padding: 0 7.5pt;
 }

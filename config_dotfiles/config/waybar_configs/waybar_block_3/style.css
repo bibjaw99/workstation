@@ -11,7 +11,7 @@
 window#waybar {
   background: none;
   font-family: IosevkaTerm Nerd Font Propo;
-  font-size: 14px;
+  font-size: 11pt;
   font-weight: 900;
   color: #ebdbb2;
 }
@@ -19,7 +19,7 @@ window#waybar {
 .modules-left,
 .modules-center,
 .modules-right {
-  padding: 5px;
+  padding: 3pt;
   background: #222222;
 }
 
@@ -37,26 +37,26 @@ window#waybar {
 #battery.warning,
 #network,
 #clock {
-  border: 3px solid #585858;
+  border: 2pt solid #585858;
   color: #fff4d2;
   background-color: #333333;
-  padding-right: 6px;
+  padding-right: 4.5pt;
 }
 
 #custom-rofi {
   color: #000000;
-  border: 3px solid #458588;
+  border: 2pt solid #458588;
   background: #83a598;
-  padding: 0px 8px;
+  padding: 0pt 6pt;
 }
 
 #workspaces button {
   color: #fff4d2;
   background-color: #333333;
-  border: 3px solid #585858;
-  min-width: 20px;
-  margin-right: 5px;
-  padding: 0px 5px;
+  border: 2pt solid #585858;
+  min-width: 15pt;
+  margin-right: 3pt;
+  padding: 0pt 3.75pt;
 }
 
 #workspaces button:last-child {
@@ -66,7 +66,7 @@ window#waybar {
 #workspaces button:hover {
   color: #222222;
   background: #d3869b;
-  border: 3px solid #b26286;
+  border-color: #b26286;
 }
 
 #workspaces button.visible,
@@ -75,18 +75,18 @@ window#waybar {
 #workspaces button.active:hover {
   color: #000000;
   background: #8ec07c;
-  border: 3px solid #689d68;
+  border-color: #689d68;
 }
 
 #workspaces button.urgent {
   color: #222222;
-  border: 3px solid #cc241d;
+  border-color: #cc241d;
   background: #ea6962;
 }
 
 #custom-cpu_temp.critical {
   background-color: #b22222;
-  border: 3px solid #b22222;
+  border: 2pt solid #b22222;
 }
 
 #custom-cpu_temp.unknown {
@@ -94,28 +94,28 @@ window#waybar {
 }
 
 #pulseaudio.muted {
-  border: 3px solid #ea6962;
+  border: 2pt solid #ea6962;
 }
 
 #battery.critical {
-  border: 3px solid #b22222;
+  border: 2pt solid #b22222;
 }
 
 #battery.warning {
-  border: 3px solid #e78a4e;
+  border: 2pt solid #e78a4e;
 }
 
 #tray {
   color: #fff4d2;
   background-color: #383838;
-  border: 3px solid #585858;
-  padding: 0 8px;
+  border: 2pt solid #585858;
+  padding: 0 6pt;
 }
 
 #mode,
 #submap {
   color: #000000;
-  border: 3px solid #458588;
+  border: 2pt solid #458588;
   background: #83a598;
-  padding: 0px 8px;
+  padding: 0pt 6pt;
 }
