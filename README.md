@@ -100,6 +100,49 @@ bash "$HOME/github/workstation/install_scripts/install.sh"
 
 ---
 
+## hyprland animations config if you want :
+
+```hyprlang
+animations {
+  enabled = true
+  bezier = wind, 0.05, 0.85, 0.03, 0.97
+  bezier = winIn, 0.07, 0.88, 0.04, 0.99
+  bezier = winOut, 0.20, -0.15, 0, 1
+  bezier = liner, 1, 1, 1, 1
+  bezier = md3_standard, 0.12, 0, 0, 1
+  bezier = md3_decel, 0.05, 0.80, 0.10, 0.97
+  bezier = md3_accel, 0.20, 0, 0.80, 0.08
+  bezier = overshot, 0.05, 0.85, 0.07, 1.04
+  bezier = crazyshot, 0.1, 1.22, 0.68, 0.98
+  bezier = hyprnostretch, 0.05, 0.82, 0.03, 0.94
+  bezier = menu_decel, 0.05, 0.82, 0, 1
+  bezier = menu_accel, 0.20, 0, 0.82, 0.10
+  bezier = easeInOutCirc, 0.75, 0, 0.15, 1
+  bezier = easeOutCirc, 0, 0.48, 0.38, 1
+  bezier = easeOutExpo, 0.10, 0.94, 0.23, 0.98
+  bezier = softAcDecel, 0.20, 0.20, 0.15, 1
+  bezier = md2, 0.30, 0, 0.15, 1
+
+  bezier = OutBack, 0.28, 1.40, 0.58, 1
+  bezier = easeInOutCirc, 0.78, 0, 0.15, 1
+
+  animation = border, 1, 1.0, liner
+  animation = borderangle, 1, 82, liner, loop
+  animation = windowsIn, 1, 1.8, winIn, slide
+  animation = windowsOut, 1, 1.5, easeOutCirc
+  animation = windowsMove, 1, 1.5, wind, slide
+  animation = fade, 1, 1.0, md3_decel
+  animation = layersIn, 1, 1.0, menu_decel, slide
+  animation = layersOut, 1, 1.0, menu_accel
+  animation = fadeLayersIn, 1, 1.0, menu_decel
+  animation = fadeLayersOut, 1, 1.0, menu_accel
+  animation = workspaces, 1, 2.0, menu_decel, slide
+  animation = specialWorkspace, 1, 1.2, md3_decel, slidefadevert 15%
+}
+```
+
+---
+
 ## Neovim Text Editor: Grimm Vim: (Not a distro but my own personal config)
 
 #### Installation Guide :
