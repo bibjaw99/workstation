@@ -9,6 +9,7 @@ mkdir -p "$dir_backup"
 
 # Define config source paths
 starship_config="$HOME/.local/share/config_dotfiles/config/starship.toml"
+mimeapps_list="$HOME/.local/share/config_dotfiles/config/mimeapps.list"
 zsh_config="$HOME/.local/share/config_dotfiles/zshrc"
 bash_config="$HOME/.local/share/config_dotfiles/bashrc"
 vim_config="$HOME/.local/share/config_dotfiles/vimrc"
@@ -23,6 +24,10 @@ for file in "${config_files[@]}"; do
     "starship.toml")
       target="$dir_config/$file"
       source="$starship_config"
+      ;;
+    "mimeapps.list")
+      target="$dir_config/$file"
+      source="$mimeapps_list"
       ;;
     ".alias")
       target="$HOME/$file"
