@@ -10,3 +10,4 @@ rofi
 mako
 zathura
 walls
+btop
