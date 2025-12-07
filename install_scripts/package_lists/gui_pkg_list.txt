@@ -1,4 +1,4 @@
-ghostty
+foot
 rofi
 rofi-emoji
 pcmanfm

@@ -35,6 +35,10 @@ return {
 				header = { "%s", align = "center" },
 			},
 		},
+		-- disable image
+		image = {
+			enabled = false,
+		},
 		-- indent guide lines
 		indent = {
 			enabled = true,

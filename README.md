@@ -6,7 +6,7 @@
 - **Window Manager:** Sway, Hyprland
 - **Bar:** waybar
 - **Launcher:** rofi
-- **Terminal:** Ghostty
+- **Terminal:** Foot
 - **File Manager:** Pcmanfm
 - **Browser:** Librewolf
 - **Code Editor** : Neovim
@@ -28,7 +28,7 @@
 QT_QPA_PLATFORMTHEME=gtk3
 BROWSER=librewolf
 EDITOR=nvim
-TERMINAL=ghostty
+TERMINAL=footclient
 ```
 
 ---
