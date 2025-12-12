@@ -43,9 +43,9 @@ window#waybar {
 #workspaces button {
   color: #fff4d2;
   border: 2pt solid #fff4d2;
+  margin-right: 3pt;
   min-width: 15pt;
   padding: 0 3.75pt;
-  margin-right: 3pt;
 }
 
 #workspaces button:last-child {
@@ -53,22 +53,21 @@ window#waybar {
 }
 
 #workspaces button:hover {
-  color: #222222;
-  background: #d3869b;
-  border-color: #b16286;
+  color: #d3869b;
+  border-color: #d3869b;
 }
 
 #workspaces button.visible,
-#workspaces button.visible:hover {
-  color: #222222;
-  border-color: #689d68;
-  background: #8ec07c;
+#workspaces button.visible:hover,
+#workspaces button.active,
+#workspaces button.active:hover {
+  color: #8ec07c;
+  border-color: #8ec07c;
 }
 
 #workspaces button.urgent {
-  color: #222222;
-  border: 2pt solid #cc241d;
-  background: #ea6962;
+  color: #ea6962;
+  border-color: #ea6962;
 }
 
 #custom-rofi {

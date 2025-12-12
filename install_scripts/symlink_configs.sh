@@ -7,7 +7,7 @@ dir_config="$HOME/.config"
 dir_backup="$HOME/.config.backup/$(date +"%Y%d%m_%H-%M-%S")"
 
 # default configs
-default_dotfile_waybar="$HOME/.local/share/config_dotfiles/config/waybar_configs/waybar_block_1/"
+default_dotfile_waybar="$HOME/.local/share/config_dotfiles/config/waybar_configs/waybar_underline/"
 
 # make sure config and backup dir exists
 mkdir -p "$dir_config"
