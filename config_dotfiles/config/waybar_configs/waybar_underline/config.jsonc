@@ -11,11 +11,11 @@
     "sway/window",
     "hyprland/workspaces",
     "hyprland/window",
-    "tray",
     "sway/mode",
     "hyprland/submap"
   ],
   "modules-right": [
+    "tray",
     "network",
     "disk",
     "cpu",

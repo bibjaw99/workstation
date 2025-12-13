@@ -82,7 +82,8 @@ window#waybar {
 }
 
 #tray {
-  border: 2pt solid #e78a4e;
+  border-bottom: 2pt solid #686868;
+  background: #383838;
   padding: 0 6pt;
 }
 
