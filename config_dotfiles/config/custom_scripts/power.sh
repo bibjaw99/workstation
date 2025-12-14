@@ -18,7 +18,7 @@ if [ "$DESKTOP_SESSION" = "i3" ]; then
     logout="loginctl terminate-user $USER"
 fi
 
-chosen=$(printf "Log Out\nSuspend\nRestart\nPower OFF" | rofi -dmenu -i -theme-str '@import "~/.config/rofi/powermenu.rasi"')
+chosen=$(printf "Log Out\nSuspend\nRestart\nPower OFF\n" | rofi -dmenu -i -theme-str '@import "~/.config/rofi/themes/powermenu.rasi"')
 
 # Perform the action based on user choice
 case "$chosen" in
