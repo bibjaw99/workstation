@@ -29,7 +29,7 @@ listview {
   columns:4;
   margin:0px;
   padding: 6px 4px;
-  background-color: @yellow;
+  background-color: @green;
   border:5px;
   border-color: @dark;
   cycle:false;
@@ -47,7 +47,7 @@ element-text {
   text-color: @dark;
   padding: 8px ;
   margin:0;
-  background-color:@green;
+  background-color:@yellow;
   vertical-align: 0.5;
   horizontal-align: 0.5;
   border-color: @dark;
