@@ -1,111 +1,123 @@
 * {
-  margin:0;
-  padding:0;
-  spacing:0;
-  dark:#222222;
-  red:#ea6962;
-  red-alt:#ca3433;
-  orange:#e78a4e;
-  yellow: #d8a657;
-  aqua: #89b482;
-  cream:#d4be98;
-  highlight:underline bold #ca3433;
-  font:"Roboto Condensed Bold 13";
+  margin : 0;
+  padding : 0;
+  spacing : 0;
+  dark : #222222;
+  red : #ea6962;
+  red-alt : #ca3433;
+  yellow : #d8a657;
+  cream : #d4be98;
+  highlight : underline bold #ca3433;
+  font : "JetBrainsMono Nerd Font Propo ExtraBold 14";
 }
 
 configuration {
-  display-drun: "APPS";
-  display-run: "CMD";
-  display-window: "WIN";
+  display-drun : "APPS";
+  display-run : "CMD";
+  display-window : "WIN";
 }
 
 window {
-  background-color: @dark;
-  border:3px;
-  border-color:@yellow;
-  width: 25%;
-  location: center;
-  orientaion: horizontal;
-  children: [inputbar, message, listview];
+  width : 25%;
+  border : 3px;
+  border-color : @yellow;
+  background-color : @dark;
+  location : center;
+  orientaion : horizontal;
+  children : [inputbar, message, listview];
 }
 
 inputbar {
-  background-color: @dark;
-  children: [prompt,entry];
+  background-color : @dark;
+  children : [prompt,entry];
 }
 
 prompt {
-  margin :6px 0 6px 6px;
-  padding: 3px 6px;
-  text-color: @dark;
-  border:3px;
-  border-color:@red;
-  background-color: @red;
+  margin : 6px 0 6px 6px;
+  padding : 3px 6px;
+  text-color : @dark;
+  border : 3px;
+  border-color : @red;
+  background-color : @red;
 }
 
 entry {
-  margin :6px;
-  padding: 3px 6px;
-  text-color: @red;
-  border:3px;
-  border-color:@yellow;
-  background-color: @dark;
+  margin : 6px;
+  padding : 3px 6px;
+  text-color : @red;
+  border : 3px;
+  border-color : @yellow;
+  background-color : @dark;
 }
 
 listview {
-  lines:8;
-  children:[element];
-  margin: 0 6px 6px 6px;
-  padding: 6px 6px 0px 6px;
-  background-color: @dark;
-  border:3px;
-  border-color:@yellow;
+  lines : 8;
+  children : [element];
+  margin : 0 6px 6px 6px;
+  padding : 6px 6px 0px 6px;
+  border : 3px;
+  border-color : @yellow;
+  background-color : @dark;
 }
 
 element {
-  background-color: @dark;
-  margin: 0 0 6px 0 ;
+  margin : 0 0 6px 0 ;
+  background-color : @dark;
+}
+
+element selected active {
+  text-color : @cream;
+  background-color : @red-alt;
 }
 
 element-text {
-  padding: 6px;
-  text-color:@cream;
-  background-color: @dark;
+  padding : 6px;
+  text-color : @cream;
+  background-color : @dark;
 }
 
 element-text selected {
-  text-color:@dark;
-  background-color: @yellow;
+  text-color : @dark;
+  background-color : @yellow;
+}
+
+element-text selected active {
+  text-color : @cream;
+  background-color : @red-alt;
 }
 
 element-icon{
-  size:20px;
-  padding: 6px;
-  background-color: @dark;
+  size : 20px;
+  padding : 6px;
+  background-color : @dark;
 }
 
 element-icon selected {
-  text-color:@dark;
-  background-color: @yellow;
+  text-color : @dark;
+  background-color : @yellow;
+}
+
+element-icon selected active {
+  text-color : @cream;
+  background-color : @red-alt;
 }
 
 message {
-  expand:true;
-  background-color: @dark;
-  children: [textbox];
-  margin:0;
+  margin : 0;
+  expand : true;
+  background-color : @dark;
+  children : [textbox];
 }
 
-
 textbox {
-  expand: true;
-  padding:6px;
-  border-color:@red-alt;
-  background-color:@dark;
-  text-color:@red-alt;
+  expand : true;
+  padding : 6px;
+  border-color : @red-alt;
+  background-color : @dark;
+  text-color : @red-alt;
 }
 
 error-message {
-  expand: true;
-  text-color:@dark;
+  expand : true;
+  text-color : @dark;
 }

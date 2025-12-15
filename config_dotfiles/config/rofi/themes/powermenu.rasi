@@ -1,61 +1,60 @@
 * {
-  margin:0;
-  padding:0;
-  spacing:0;
-  dark:#222222;
-  red:#ea6962;
-  red-alt:#ca3433;
-  orange:#e78a4e;
-  yellow: #d8a657;
-  green:#a9a665;
-  cream:#d4be98;
-  transparent:#00000000;
-  font:"Roboto Condensed Bold 16";
-  text-color:@dark;
+  margin : 0;
+  padding : 0;
+  spacing : 0;
+  dark : #222222;
+  red : #ea6962;
+  red-alt : #ca3433;
+  yellow : #d8a657;
+  green : #a9a665;
+  cream : #d4be98;
+  transparent : #00000000;
+  font : "JetBrainsMono Nerd Font Propo ExtraBold 18";
+  text-color : @dark;
 }
 
 window {
-  width: 35%;
-  location: center;
-  children: [listview];
-  padding:0;
-  border:3px;
-  background-color: @transparent;
-  border-color: @transparent;
+  width : 35%;
+  location : center;
+  children : [listview];
+  padding : 0;
+  border : 3px;
+  background-color : @transparent;
+  border-color : @transparent;
 }
 
 listview {
-  lines:1;
-  columns:4;
-  margin:0px;
-  padding: 6px 4px;
-  background-color: @green;
-  border:5px;
-  border-color: @dark;
-  cycle:false;
+  lines : 1;
+  columns : 4;
+  margin : 0px;
+  padding : 6px 4px;
+  background-color : @green;
+  border : 5px;
+  border-color : @dark;
+  cycle : false;
 }
 
 element {
-  background-color:@dark;
-  padding: 0px;
-  border:5px;
-  border-color: @dark;
-  margin:0 4px;
+  background-color : @dark;
+  padding : 0px;
+  border : 5px;
+  border-color : @dark;
+  margin : 0 4px;
 }
 
 element-text {
-  text-color: @dark;
-  padding: 8px ;
-  margin:0;
-  background-color:@yellow;
-  vertical-align: 0.5;
-  horizontal-align: 0.5;
-  border-color: @dark;
+  text-color : @dark;
+  padding : 8px ;
+  margin : 0;
+  background-color : @yellow;
+  vertical-align : 0.5;
+  horizontal-align : 0.5;
+  border-color : @dark;
 }
 
 element-text selected {
-  border-color: @dark;
-  margin:0px;
-  background-color: @red;
+  border-color : @dark;
+  margin : 0px;
+  background-color : @red;
 }
 
