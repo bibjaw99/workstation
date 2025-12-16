@@ -2,9 +2,9 @@
 
 # Detect whether we're running on Xorg or Wayland
 if [ "$XDG_SESSION_TYPE" = "wayland" ]; then
-    suspend="systemctl suspend && swaylock -i ~/.config/walls/VIM.png"
+    suspend="systemctl suspend && swaylock -i ~/.config/walls/wall.png"
 else
-    suspend="systemctl suspend && i3lock -i ~/.config/walls/VIM.png"
+    suspend="systemctl suspend && i3lock -i ~/.config/walls/wall.png"
 fi
 
 # special method for loggin out :(

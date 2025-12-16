@@ -18,7 +18,7 @@
 
 # Notes
 
-> ⚠️ do not forget to change the settings related to your hardwares in `~/.local/share/config_dotfiles/config/hypr/devices.conf` and `~/.local/share/config_dotfiles/config/sway/devices.conf`
+> ⚠️ do not forget to change the settings related to your hardwares in `~/.local/share/config_dotfiles/config/sway/devices.conf`
 
 > please check the `varibles.conf` file of each window manager config directory at the beginning
 
