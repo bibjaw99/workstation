@@ -23,11 +23,11 @@ pacman-contrib
 eza
 starship
 poppler
+pipewire-media-session
 pipewire
 pipewire-pulse
 pipewire-jack
 pipewire-alsa
-wireplumber
 blueman
 bluez
 bluez-utils
