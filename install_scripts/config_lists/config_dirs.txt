@@ -1,4 +1,5 @@
 foot
+hypr
 sway
 waybar
 nvim

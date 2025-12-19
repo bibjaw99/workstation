@@ -3,12 +3,12 @@
 ## **Descriptions:**
 
 - **OS:** Arch Linux
-- **Window Manager:** Sway
+- **Window Manager:** Sway, hyprland
 - **Bar:** waybar
 - **Launcher:** rofi
 - **Terminal:** Foot
 - **File Manager:** Pcmanfm
-- **Browser:** Librewolf
+- **Browser:** Brave
 - **Code Editor** : Neovim
 - **Lockscreen:** swaylock
 - **Screenshot Tool:** flameshot
@@ -18,7 +18,7 @@
 
 # Notes
 
-> ⚠️ do not forget to change the settings related to your hardwares in `~/.local/share/config_dotfiles/config/sway/devices.conf`
+> ⚠️ do not forget to change the settings related to your hardwares in `~/.local/share/config_dotfiles/config/sway/devices.conf` and `~/.local/share/config_dotfiles/config/hypr/devices.conf`
 
 > please check the `varibles.conf` file of each window manager config directory at the beginning
 
@@ -26,7 +26,7 @@
 
 ```sh
 QT_QPA_PLATFORMTHEME=gtk3
-BROWSER=librewolf
+BROWSER=brave
 EDITOR=nvim
 TERMINAL=footclient
 ```
@@ -117,6 +117,7 @@ bash "$HOME/github/workstation/install_scripts/install.sh"
 ## keymaps
 
 - swaywm : [swaywm keymaps](./config_dotfiles/config/sway/keymaps.conf)
+- hyprland : [hyprland keymaps](./config_dotfiles/config/hypr/keymaps.conf)
 
 ---
 
