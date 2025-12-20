@@ -25,5 +25,5 @@ function handle() {
 }
 
 case $window in
-*) handle "70%" "75%" ;;
+*) handle "73%" "75%" ;;
 esac
