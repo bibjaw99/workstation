@@ -3,7 +3,6 @@ rofi
 rofi-emoji
 pcmanfm
 xarchiver
-flameshot
 mate-polkit
 pavucontrol-qt
 libgnome-keyring

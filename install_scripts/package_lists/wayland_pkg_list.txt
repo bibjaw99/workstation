@@ -12,3 +12,4 @@ xdg-desktop-portal-wlr
 xdg-desktop-portal-hyprland
 mako
 grim
+satty

@@ -11,7 +11,7 @@
 - **Browser:** Librewolf
 - **Code Editor** : Neovim
 - **Lockscreen:** swaylock
-- **Screenshot Tool:** flameshot
+- **Screenshot Tool:** Grim & Satty
 - **Fonts:** iosevkaterm nerd font, roboto-condensed, jetbrainsmono nerd font
 - **Policykit:** mate-polkit
 - **Shell:** zshell
