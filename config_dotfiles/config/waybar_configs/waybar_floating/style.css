@@ -57,12 +57,12 @@ window#waybar {
 }
 
 #workspaces button {
-  padding: 0 3.75pt;
-  margin-right: 3pt;
-  min-width: 15pt;
   color: #ebdbb2;
   background: #222222;
   border: 2.5pt solid #222222;
+  padding: 0 3.75pt;
+  margin-right: 3pt;
+  min-width: 15pt;
 }
 
 #workspaces button:last-child {

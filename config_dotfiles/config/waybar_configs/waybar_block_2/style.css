@@ -50,6 +50,7 @@ window#waybar {
 
 #workspaces button {
   color: #fff4d2;
+  background: #222222;
   border: 2pt solid #fff4d2;
   margin-right: 3pt;
   min-width: 15pt;
