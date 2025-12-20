@@ -1,6 +1,5 @@
 starship.toml
 mimeapps.list
-brave-flags.conf
 .alias
 .zshrc
 .tmux.conf

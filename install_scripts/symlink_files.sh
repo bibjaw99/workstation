@@ -9,7 +9,6 @@ mkdir -p "$dir_backup"
 
 # Define config source paths
 starship_config="$HOME/.local/share/config_dotfiles/config/starship.toml"
-brave_flags="$HOME/.local/share/config_dotfiles/config/brave-flags.conf"
 mimeapps_list="$HOME/.local/share/config_dotfiles/config/mimeapps.list"
 zsh_config="$HOME/.local/share/config_dotfiles/zshrc"
 bash_config="$HOME/.local/share/config_dotfiles/bashrc"
@@ -25,10 +24,6 @@ for file in "${config_files[@]}"; do
     "starship.toml")
       target="$dir_config/$file"
       source="$starship_config"
-      ;;
-    "brave-flags.conf")
-      target="$dir_config/$file"
-      source="$brave_flags"
       ;;
     "mimeapps.list")
       target="$dir_config/$file"

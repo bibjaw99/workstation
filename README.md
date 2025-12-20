@@ -8,7 +8,7 @@
 - **Launcher:** rofi
 - **Terminal:** Foot
 - **File Manager:** Pcmanfm
-- **Browser:** Brave
+- **Browser:** Librewolf
 - **Code Editor** : Neovim
 - **Lockscreen:** swaylock
 - **Screenshot Tool:** flameshot
@@ -26,7 +26,7 @@
 
 ```sh
 QT_QPA_PLATFORMTHEME=gtk3
-BROWSER=brave
+BROWSER=librewolf
 EDITOR=nvim
 TERMINAL=footclient
 ```
