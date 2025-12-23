@@ -93,7 +93,14 @@ return {
 			clangd = {},
 			pyright = {},
 			html = {},
-			tailwindcss = {},
+			tailwindcss = {
+				filetypes = {
+					"javascriptreact",
+					"javascript.jsx",
+					"typescriptreact",
+					"typescript.tsx",
+				},
+			},
 		}
 
 		-- enable lsps
