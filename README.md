@@ -37,7 +37,7 @@ TERMINAL=footclient
 
 ```sh
 mkdir -p "$HOME/workstation_dotfiles"
-git clone https://github.com/bibjaw99/workstation "$HOME/workstation_dotfiles"
+git clone https://github.com/bibjaw99/workstation "$HOME/workstation_dotfiles/workstation"
 bash "$HOME/workstation_dotfiles/workstation/install_scripts/install.sh"
 ```
 
