@@ -3,7 +3,7 @@
 ## **Descriptions:**
 
 - **OS:** Arch Linux
-- **Window Manager:** Sway
+- **Window Manager:** Sway, Hyprland
 - **Bar:** waybar
 - **Launcher:** rofi
 - **Terminal:** Foot
@@ -18,7 +18,7 @@
 
 # Notes
 
-> ⚠️ do not forget to change the settings related to your hardwares in `~/.local/share/config_dotfiles/config/sway/devices.conf`
+> ⚠️ do not forget to change the settings related to your hardwares in `~/.local/share/config_dotfiles/config/sway/devices.conf` or `~/.local/share/config_dotfiles/config/hypr/devices.conf`
 
 > please check the `varibles.conf` file of each window manager config directory at the beginning
 
@@ -117,6 +117,7 @@ bash "$HOME/workstation_dotfiles/workstation/install_scripts/install.sh"
 ## keymaps
 
 - swaywm : [swaywm keymaps](./config_dotfiles/config/sway/keymaps.conf)
+- hyprland : [hyprland keymaps](./config_dotfiles/config/hypr/keymaps.conf)
 
 ---
 

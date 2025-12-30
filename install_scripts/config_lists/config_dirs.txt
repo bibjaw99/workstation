@@ -1,5 +1,6 @@
 foot
 sway
+hypr
 waybar
 nvim
 zathura
