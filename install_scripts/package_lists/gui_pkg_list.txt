@@ -8,7 +8,6 @@ pavucontrol-qt
 libgnome-keyring
 gnome-keyring
 gnome-disk-utility
-gnome-bluetooth
 xdg-desktop-portal
 xdg-desktop-portal-gtk
 xdg-user-dirs

@@ -5,11 +5,9 @@ nwg-look
 wlsunset
 wl-clipboard
 swaybg
-hyprland
 sway
 swaylock
 xdg-desktop-portal-wlr
-xdg-desktop-portal-hyprland
 mako
 grim
 satty

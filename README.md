@@ -3,12 +3,12 @@
 ## **Descriptions:**
 
 - **OS:** Arch Linux
-- **Window Manager:** Sway, hyprland
+- **Window Manager:** Sway
 - **Bar:** waybar
 - **Launcher:** rofi
 - **Terminal:** Foot
 - **File Manager:** Pcmanfm
-- **Browser:** Librewolf
+- **Primary Browser:** Librewolf
 - **Code Editor** : Neovim
 - **Lockscreen:** swaylock
 - **Screenshot Tool:** Grim & Satty
@@ -18,7 +18,7 @@
 
 # Notes
 
-> ⚠️ do not forget to change the settings related to your hardwares in `~/.local/share/config_dotfiles/config/sway/devices.conf` and `~/.local/share/config_dotfiles/config/hypr/devices.conf`
+> ⚠️ do not forget to change the settings related to your hardwares in `~/.local/share/config_dotfiles/config/sway/devices.conf`
 
 > please check the `varibles.conf` file of each window manager config directory at the beginning
 
@@ -36,9 +36,9 @@ TERMINAL=footclient
 ## Installation script :
 
 ```sh
-mkdir -p "$HOME/github"
-git clone https://github.com/bibjaw99/workstation "$HOME/github/workstation"
-bash "$HOME/github/workstation/install_scripts/install.sh"
+mkdir -p "$HOME/workstation_dotfiles"
+git clone https://github.com/bibjaw99/workstation "$HOME/workstation_dotfiles"
+bash "$HOME/workstation_dotfiles/workstation/install_scripts/install.sh"
 ```
 
 - Or, clone the repo and run the `install.sh` script
@@ -48,14 +48,14 @@ bash "$HOME/github/workstation/install_scripts/install.sh"
 - all the dotfiles will be stored in a folder called `config_dotfiles` in your `$HOME/.local/share` directory
 - then if the config already exists in the `$HOME/.config` directory then it will be backed up in the `$HOME/.config.backup` directory
 - then a symlink will be created from `$HOME/.local/share/config_dotfiles` directory to the `$HOME/.config` directory
-  - **why this approach instead of using/creating actual directories ? :** it's easy to dump them all togather in the github project folder after making huge changes in multiple app configs
+  - **why this approach instead of using/creating actual directories ? :** it's easy to dump them all togather in the project folder after making huge changes in multiple app configs
 - names of the config directories and config files that needs to be symlinked, must be listed in the respected files in `workstation/install_scripts/config_lists`.
   - check `symlink_configs.sh` and `symlink_files.sh` to understand it better
 
 ## folder structure of my install script :
 
 - if you already finished the base arch installation just clone the repo
-- run the `$HOME/github/workstation/install_scripts/install.sh` script
+- run the `$HOME/workstation_dotfiles/workstation/install_scripts/install.sh` script
 - before installing you can check the list of the Packages in the install_scripts directory and modify it according to your likings
   - just go to `/workstation/install_scripts/package_lists` directory to find all the list of packages
 
@@ -117,7 +117,6 @@ bash "$HOME/github/workstation/install_scripts/install.sh"
 ## keymaps
 
 - swaywm : [swaywm keymaps](./config_dotfiles/config/sway/keymaps.conf)
-- hyprland : [hyprland keymaps](./config_dotfiles/config/hypr/keymaps.conf)
 
 ---
 

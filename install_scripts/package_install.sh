@@ -3,7 +3,6 @@ set -euo pipefail
 
 # Variables
 dir_of_this_script="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-dir_github_projects="$HOME/github"
 
 # store the packages in an array for the package lists
 mapfile -t common_packages < "$dir_of_this_script/package_lists/common_pkg_list.txt"

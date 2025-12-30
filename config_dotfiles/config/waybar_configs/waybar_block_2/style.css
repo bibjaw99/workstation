@@ -67,9 +67,7 @@ window#waybar {
 }
 
 #workspaces button.visible,
-#workspaces button.visible:hover,
-#workspaces button.active,
-#workspaces button.active:hover {
+#workspaces button.visible:hover {
   color: #8ec07c;
   border-color: #8ec07c;
 }
@@ -147,8 +145,7 @@ window#waybar {
   border: 2pt solid #d3869b;
 }
 
-#mode,
-#submap {
+#mode {
   background: #222222;
   color: #83a598;
   border: 2pt solid #83a598;

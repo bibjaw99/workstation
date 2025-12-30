@@ -3,9 +3,9 @@ set -euo pipefail
 
 repo_url_workstation="https://github.com/bibjaw99/workstation"
 dir_dotfiles="$HOME/.local/share/config_dotfiles"
-dir_github_projects="$HOME/github"
+dir_workstation_projects="$HOME/workstation_dotfiles"
 basename_repo_workstation=$(basename "$repo_url_workstation" .git)
-dir_project_workstation="$dir_github_projects/$basename_repo_workstation"
+dir_project_workstation="$dir_workstation_projects/$basename_repo_workstation"
 dir_install_scripts="$dir_project_workstation/install_scripts"
 
 mkdir -p "$(dirname "$dir_dotfiles")"
@@ -55,7 +55,7 @@ fi
 # Clone repo if needed
 if [[ ! -d "$dir_project_workstation" ]]; then
   info "Cloning $repo_url_workstation into $dir_project_workstation"
-  mkdir -p "$dir_github_projects"
+  mkdir -p "$dir_workstation_projects"
   git clone "$repo_url_workstation" "$dir_project_workstation"
 else
   info "Repo already exists at $dir_project_workstation"
