@@ -1,6 +1,6 @@
 [Default Applications]
 application/pdf=org.pwmt.zathura-pdf-poppler.desktop
-inode/directory=pcmanfm.desktop
+inode/directory=org.gnome.Nautilus.desktop
 image/png=org.xfce.ristretto.desktop
 image/jpeg=org.xfce.ristretto.desktop
 image/webp=librewolf.desktop
@@ -17,7 +17,7 @@ x-scheme-handler/unknown=librewolf.desktop
 
 [Added Associations]
 application/pdf=org.pwmt.zathura-pdf-poppler.desktop
-inode/directory=pcmanfm.desktop
+inode/directory=org.gnome.Nautilus.desktop
 image/png=org.xfce.ristretto.desktop
 image/jpeg=org.xfce.ristretto.desktop
 image/webp=librewolf.desktop

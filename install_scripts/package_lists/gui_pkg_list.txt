@@ -1,7 +1,7 @@
 foot
 rofi
 rofi-emoji
-pcmanfm
+nautilus
 xarchiver
 mate-polkit
 pavucontrol-qt
