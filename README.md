@@ -8,7 +8,7 @@
 - **Launcher:** rofi
 - **Terminal:** Foot
 - **File Manager:** Nautilus
-- **Primary Browser:** Librewolf
+- **Primary Browser:** firefox-developer-edition
 - **Code Editor** : Neovim
 - **Lockscreen:** swaylock
 - **Screenshot Tool:** Grim & Satty
@@ -26,7 +26,7 @@
 
 ```sh
 QT_QPA_PLATFORMTHEME=gtk3
-BROWSER=librewolf
+BROWSER=firefox-developer-edition
 EDITOR=nvim
 TERMINAL=footclient
 ```

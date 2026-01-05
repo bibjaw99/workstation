@@ -16,3 +16,4 @@ zathura-pdf-poppler
 ristretto
 mpv
 sddm
+firefox-developer-edition
