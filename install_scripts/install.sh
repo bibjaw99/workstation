@@ -3,7 +3,7 @@ set -euo pipefail
 
 repo_url_workstation="https://github.com/bibjaw99/workstation"
 dir_dotfiles="$HOME/.local/share/config_dotfiles"
-dir_workstation_projects="$HOME/workstation_dotfiles"
+dir_workstation_projects="$HOME/workstationdots"
 basename_repo_workstation=$(basename "$repo_url_workstation" .git)
 dir_project_workstation="$dir_workstation_projects/$basename_repo_workstation"
 dir_install_scripts="$dir_project_workstation/install_scripts"

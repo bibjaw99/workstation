@@ -36,9 +36,9 @@ TERMINAL=footclient
 ## Installation script :
 
 ```sh
-mkdir -p "$HOME/workstation_dotfiles"
-git clone https://github.com/bibjaw99/workstation "$HOME/workstation_dotfiles/workstation"
-bash "$HOME/workstation_dotfiles/workstation/install_scripts/install.sh"
+mkdir -p "$HOME/workstationdots"
+[ -d "$HOME/workstationdots/workstation" ] || git clone --depth 1 https://github.com/bibjaw99/workstation "$HOME/workstationdots/workstation"
+bash "$HOME/workstationdots/workstation/install_scripts/install.sh"
 ```
 
 - Or, clone the repo and run the `install.sh` script
@@ -55,7 +55,7 @@ bash "$HOME/workstation_dotfiles/workstation/install_scripts/install.sh"
 ## folder structure of my install script :
 
 - if you already finished the base arch installation just clone the repo
-- run the `$HOME/workstation_dotfiles/workstation/install_scripts/install.sh` script
+- run the `$HOME/workstationdots/workstation/install_scripts/install.sh` script
 - before installing you can check the list of the Packages in the install_scripts directory and modify it according to your likings
   - just go to `/workstation/install_scripts/package_lists` directory to find all the list of packages
 
