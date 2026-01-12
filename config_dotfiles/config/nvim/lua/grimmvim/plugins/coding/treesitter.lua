@@ -3,6 +3,7 @@ return {
 	event = { "BufReadPost", "BufNewFile" },
 	dependencies = {
 		"nvim-treesitter/nvim-treesitter",
+		build = ":TSUpdate",
 		dependencies = {
 			"windwp/nvim-ts-autotag",
 			opts = {},
@@ -17,7 +18,7 @@ return {
 			},
 		},
 	},
-	build = ":TSUpdate",
+
 	opts = {
 		ensure_installed = {
 			"json",
