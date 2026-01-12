@@ -1,6 +1,6 @@
 [Default Applications]
 application/pdf=org.pwmt.zathura-pdf-poppler.desktop
-inode/directory=org.gnome.Nautilus.desktop
+inode/directory=pcmanfm.desktop
 image/png=org.xfce.ristretto.desktop
 image/jpeg=org.xfce.ristretto.desktop
 image/webp=firefox-developer-edition.desktop
@@ -17,7 +17,7 @@ x-scheme-handler/unknown=firefox-developer-edition.desktop
 
 [Added Associations]
 application/pdf=org.pwmt.zathura-pdf-poppler.desktop
-inode/directory=org.gnome.Nautilus.desktop
+inode/directory=pcmanfm.desktop
 image/png=org.xfce.ristretto.desktop
 image/jpeg=org.xfce.ristretto.desktop
 image/webp=firefox-developer-edition.desktop

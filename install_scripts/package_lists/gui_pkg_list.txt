@@ -1,11 +1,10 @@
 foot
 rofi
 rofi-emoji
-nautilus
+pcmanfm
 xarchiver
 mate-polkit
 pavucontrol-qt
-libgnome-keyring
 gnome-keyring
 gnome-disk-utility
 xdg-desktop-portal

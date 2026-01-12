@@ -7,7 +7,7 @@
 - **Bar:** waybar
 - **Launcher:** rofi
 - **Terminal:** Foot
-- **File Manager:** Nautilus
+- **File Manager:** Pcmanfm
 - **Primary Browser:** firefox-developer-edition
 - **Code Editor** : Neovim
 - **Lockscreen:** swaylock
