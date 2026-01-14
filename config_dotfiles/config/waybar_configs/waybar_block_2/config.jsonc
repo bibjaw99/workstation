@@ -25,7 +25,7 @@
     "custom/cpu_temp",
     "backlight",
     "custom/memory",
-    "pulseaudio",
+    "wireplumber",
     "battery"
   ],
   "custom/rofi": {
@@ -121,7 +121,7 @@
     "return-type": "json",
     "format": "<span color='#458588'>  </span>{} "
   },
-  "pulseaudio": {
+  "wireplumber": {
     "format": "<span color='#83a598'>  </span>{volume}% ",
     "format-muted": "<span color='#ea6962'>  </span>{volume}% ",
     "format-bluetooth": "<span color='#83a598'> 󰂰 </span>{volume}% ",

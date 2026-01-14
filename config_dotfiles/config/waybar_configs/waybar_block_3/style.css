@@ -30,8 +30,8 @@ window#waybar {
 #custom-cpu_temp.critical,
 #backlight,
 #custom-memory,
-#pulseaudio,
-#pulseaudio.muted,
+#wireplumber,
+#wireplumber.muted,
 #battery,
 #battery.critical,
 #battery.warning,
@@ -93,7 +93,7 @@ window#waybar {
   color: #555555;
 }
 
-#pulseaudio.muted {
+#wireplumber.muted {
   border: 2pt solid #ea6962;
 }
 
