@@ -22,6 +22,8 @@
 
 > please check the `varibles.conf` file of each window manager config directory at the beginning
 
+> store your bookmarks in "$HOME/.local/share/bookmarks/" directory in `.txt` files to make the bookmark script work
+
 ## environment variables
 
 ```sh

@@ -1,45 +1,73 @@
-# Lines configured by zsh-newuser-install
+# ================================
+# Zsh history
+# ================================
 HISTFILE=~/.histfile
 HISTSIZE=10000
 SAVEHIST=10000
 
-# The following lines were added by compinstall
+# ================================
+# Completion system
+# ================================
 zstyle :compinstall filename '~/.zshrc'
 zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}'
 
 autoload -Uz compinit
 compinit
 
+# ================================
+# Plugins
+# ================================
 source "/usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.plugin.zsh"
 source "/usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.plugin.zsh"
 source <(fzf --zsh)
 
+# ================================
+# Aliases
+# ================================
 source "$HOME/.alias"
 
-# vi mode
+# ================================
+# Vi mode (SAFE)
+# ================================
 bindkey -v
 export KEYTIMEOUT=1
 
-# language and unicode
+# Enable edit-command-line BUT bind to Shift+V (not v)
+autoload -Uz edit-command-line
+zle -N edit-command-line
+bindkey -M vicmd V edit-command-line
+
+# ================================
+# Keybindings
+# ================================
+bindkey "^[[H"   beginning-of-line
+bindkey "^[[F"   end-of-line
+bindkey "^[[3~"  delete-char
+
+# ================================
+# Language & locale
+# ================================
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 export GROFF_NO_SGR=1
+
+# ================================
 # Editor
+# ================================
 export EDITOR=nvim
 export VISUAL=nvim
+
+# ================================
+# Terminal
+# ================================
 export TERM=xterm-256color
 
-## Editing command line in vim
-autoload -z edit-command-line
-zle -N edit-command-line
-bindkey -M  vicmd v edit-command-line
-
-# Keybindings
-bindkey  "^[[H"   beginning-of-line
-bindkey  "^[[F"   end-of-line
-bindkey  "^[[3~"  delete-char
-
+# ================================
+# Path
+# ================================
 export PATH="$HOME/.local/bin:$PATH"
 
+# ================================
+# Prompt
+# ================================
 eval "$(starship init zsh)"
-
