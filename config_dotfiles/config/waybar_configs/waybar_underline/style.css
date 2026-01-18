@@ -16,8 +16,8 @@
 #custom-cpu_temp.critical,
 #backlight,
 #custom-memory,
-#wireplumber,
-#wireplumber.muted,
+#pulseaudio,
+#pulseaudio.muted,
 #battery,
 #battery.critical,
 #battery.warning,
@@ -118,11 +118,11 @@ window#waybar {
   border-bottom: 2pt solid #458588;
 }
 
-#wireplumber {
+#pulseaudio {
   border-bottom: 2pt solid #83a598;
 }
 
-#wireplumber.muted {
+#pulseaudio.muted {
   color: #ea6962;
   border-bottom: 2pt solid #ea6962;
 }
