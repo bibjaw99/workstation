@@ -181,6 +181,12 @@ return {
 		},
 		{
 			mode = "n",
+			"<leader>fB",
+			':lua require("snacks").picker.files({cwd=vim.fn.expand("~/.local/share/bookmarks/")})<cr>',
+			desc = "Find Bookmarks",
+		},
+		{
+			mode = "n",
 			"<leader>fC",
 			':lua require("snacks").picker.files({cwd=vim.fn.expand("~/.config/")})<cr>',
 			desc = "Find Configs",

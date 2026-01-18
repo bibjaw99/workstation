@@ -74,6 +74,12 @@ return {
 		},
 		{
 			mode = "n",
+			"<leader>eB",
+			":lua MiniFiles.open(vim.cmd('e ~/.local/share/bookmarks/'))<cr>",
+			desc = "Bookmarks",
+		},
+		{
+			mode = "n",
 			"<leader>et",
 			":e ~/.local/share/nvim/mini.files/trash/<cr>",
 			desc = "MiniFiles Trash",
