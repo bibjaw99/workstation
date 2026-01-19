@@ -5,3 +5,5 @@ org.gimp.GIMP
 org.inkscape.Inkscape
 org.localsend.localsend_app
 org.qbittorrent.qBittorrent
+com.getpostman.Postman
+com.mongodb.Compass

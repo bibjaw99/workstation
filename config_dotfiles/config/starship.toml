@@ -7,7 +7,7 @@ $git_state\
 $git_status\
 $git_metrics\
 $fill\
-$cmd_duration $jobs\
+$jobs\
 $line_break\
 $character\
 """
@@ -50,10 +50,6 @@ symbol = ""
 style = "bold red"
 number_threshold = 1
 format = "[$symbol]($style)"
-
-[cmd_duration]
-format = "[$duration]($style)"
-style = "yellow"
 
 [memory_usage]
 symbol = " "

@@ -14,6 +14,10 @@ zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}'
 autoload -Uz compinit
 compinit
 
+# Man Pages with Bat
+export MANROFFOPT="-c"
+export MANPAGER="sh -c 'col -bx | bat -l man -p --theme=ansi'"
+
 # ================================
 # Plugins
 # ================================

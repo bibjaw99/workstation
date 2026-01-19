@@ -14,7 +14,7 @@
 - **Screenshot Tool:** Grim & Satty
 - **Fonts:** iosevkaterm nerd font, roboto-condensed, jetbrainsmono nerd font
 - **Policykit:** mate-polkit
-- **Shell:** zshell
+- **Shell:** bash, zsh
 
 # Notes
 

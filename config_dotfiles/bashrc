@@ -1,0 +1,61 @@
+# If not running interactively, don't do anything
+[[ $- != *i* ]] && return
+
+export LC_ALL=en_US.UTF-8
+export LANG=en_US.UTF-8
+
+# Man Pages with Bat
+export MANROFFOPT="-c"
+export MANPAGER="sh -c 'col -bx | bat -l man -p --theme=ansi'"
+
+# HISTORY (zsh-like)
+export HISTFILE="$HOME/.histfile"
+export HISTSIZE=100000
+export HISTFILESIZE=200000
+
+# vi mode
+set -o vi
+export EDITOR=nvim
+export VISUAL=nvim
+
+# Enable bash-completion
+if ! shopt -oq posix; then
+  if [ -f /usr/share/bash-completion/bash_completion ]; then
+    . /usr/share/bash-completion/bash_completion
+  elif [ -f /etc/bash_completion ]; then
+    . /etc/bash_completion
+  fi
+fi
+
+# search history with fzf
+__fzf_history() {
+  local cmd
+  cmd=$(history | fzf --tac | sed 's/^[[:space:]]*[0-9]\+[[:space:]]*//') || return
+  READLINE_LINE="$cmd"
+  READLINE_POINT=${#READLINE_LINE}
+}
+bind -x '"\C-y": __fzf_history'
+
+# Re-enable Ctrl+L to clear screen in Vi mode
+bind -m vi-insert '"\C-l": clear-screen'
+bind -m vi-command '"\C-l": clear-screen'
+
+# Case-insensitive tab completion
+bind 'set completion-ignore-case on'
+bind 'TAB:menu-complete'
+bind '"\e[Z":menu-complete'
+bind 'set show-all-if-ambiguous on'
+bind 'set show-all-if-unmodified on'
+bind 'set colored-stats on'
+bind 'set blink-matching-paren on'
+bind 'set menu-complete-display-prefix on'
+bind 'set show-mode-in-prompt on'
+bind 'set keyseq-timeout 10'
+
+# Vi mode cursor changes
+bind 'set vi-ins-mode-string "\1\e[6 q\2"'
+bind 'set vi-cmd-mode-string "\1\e[2 q\2"'
+
+# Custom Scripts & Prompt
+source "$HOME/.alias"
+eval "$(starship init bash)"

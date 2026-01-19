@@ -1,6 +1,7 @@
 zsh
 zsh-syntax-highlighting
 zsh-autosuggestions
+bash-completion
 lshw
 libnotify
 gvfs
@@ -21,6 +22,8 @@ imagemagick
 python-pillow
 pacman-contrib
 eza
+bat
+man-db
 starship
 poppler
 wireplumber
