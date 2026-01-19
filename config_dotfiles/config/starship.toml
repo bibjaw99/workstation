@@ -14,7 +14,7 @@ $character\
 add_newline = false
 
 [fill]
-symbol = " "
+symbol = ""
 
 [directory]
 style = "blue"

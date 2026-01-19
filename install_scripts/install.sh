@@ -84,5 +84,6 @@ run_script_if_exists "package_install.sh"
 run_script_if_exists "symlink_configs.sh"
 run_script_if_exists "symlink_files.sh"
 run_script_if_exists "enable_services.sh"
+run_script_if_exists "changeshell.sh"
 
 success "✅ All done."
