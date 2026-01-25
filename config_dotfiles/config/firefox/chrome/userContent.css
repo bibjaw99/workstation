@@ -1,4 +1,4 @@
-@-moz-document url(about:home), url(about:blank), url(about:newtab), url(about:privatebrowsing), url("chrome://browser/content/blanktab.html") {
+@-moz-document url("about:home"), url("about:blank"), url("about:newtab"), url("about:privatebrowsing"), url("chrome://browser/content/blanktab.html") {
   .click-target-container *,
   .top-sites-list * {
     color: #fff !important;
@@ -10,7 +10,7 @@
     position: fixed;
     top: 0;
     left: 0;
-    background: #f9a no-repeat url(img/wall.png) center;
+    background: #000 no-repeat url(img/wall.png) center;
     background-size: cover;
     width: 100vw;
     height: 100vh;
