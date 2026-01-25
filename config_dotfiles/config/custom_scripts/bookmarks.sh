@@ -3,9 +3,15 @@ set -euo pipefail
 
 bookmarksDir="$HOME/.local/share/bookmarks"
 
+# firefox
 BROWSER="firefox-developer-edition --new-tab"
 BROWSER_WINDOW="firefox-developer-edition --new-window"
 BROWSER_PRIVATE="firefox-developer-edition --private-window"
+
+# BRAVE
+# BROWSER="brave --new-tab --url"
+# BROWSER_WINDOW="brave --new-window"
+# BROWSER_PRIVATE="brave --incognito --new-tab --url"
 
 # Validate bookmarks directory
 [[ -d "$bookmarksDir" ]] || {
