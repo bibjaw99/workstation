@@ -1,7 +1,7 @@
 /* ROOT VARIABLES */
 * {
-  filter: none !important;
-  backdrop-filter: none !important;
+  filter: blur(0) !important;
+  backdrop-filter: blur(0) !important;
   border-radius: 0 !important;
 }
 :root {
