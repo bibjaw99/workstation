@@ -1,3 +1,4 @@
+// ==============================================================
 /** STARTUP & UI CUSTOMIZATION **/
 user_pref("_user.js.parrot", "START: Oh yes, the Norwegian Blue... what's wrong with it?");
 user_pref("toolkit.legacyUserProfileCustomizations.stylesheets", true);
@@ -187,3 +188,11 @@ user_pref("extensions.ml.enabled", false);
 user_pref("browser.urlbar.quicksuggest.mlEnabled", false);
 user_pref("pdfjs.enableAltText", false);
 user_pref("places.semanticHistory.featureGate", false);
+// ===============================================================
+//** betterfox smooth scrolling
+user_pref("apz.overscroll.enabled", true);
+user_pref("general.smoothScroll", true);
+user_pref("mousewheel.min_line_scroll_amount", 10);
+user_pref("general.smoothScroll.mouseWheel.durationMinMS", 80);
+user_pref("general.smoothScroll.currentVelocityWeighting", "0.15");
+user_pref("general.smoothScroll.stopDecelerationWeighting", "0.6");
