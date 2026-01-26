@@ -4,7 +4,7 @@ user_pref("_user.js.parrot", "START: Oh yes, the Norwegian Blue... what's wrong 
 user_pref("toolkit.legacyUserProfileCustomizations.stylesheets", true);
 user_pref("browser.aboutConfig.showWarning", false);
 user_pref("browser.startup.page", 1);
-user_pref("browser.startup.homepage", "about:blank");
+user_pref("browser.startup.homepage", "about:newtab");
 user_pref("browser.display.background_color", "#222222");
 user_pref("browser.display.foreground_color", "#ffffff");
 // ==============================================================
@@ -188,6 +188,7 @@ user_pref("extensions.ml.enabled", false);
 user_pref("browser.urlbar.quicksuggest.mlEnabled", false);
 user_pref("pdfjs.enableAltText", false);
 user_pref("places.semanticHistory.featureGate", false);
+
 // ===============================================================
 //** betterfox smooth scrolling
 user_pref("apz.overscroll.enabled", true);

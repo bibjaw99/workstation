@@ -1,5 +1,59 @@
+/* ROOT VARIABLES */
 * {
-  filter: blur(0) !important;
-  backdrop-filter: blur(0) !important;
+  filter: none !important;
+  backdrop-filter: none !important;
   border-radius: 0 !important;
+}
+:root {
+  --toolbar-bgcolor: #222222 !important;
+  --urlbarView-highlight-background: #d8a657 !important;
+}
+
+/* navbar */
+#nav-bar {
+  background-color: #000000 !important;
+  color: #ffffff !important;
+}
+
+/* TAB BAR */
+.tabbrowser-tab .tab-background {
+  background-color: #333333 !important;
+  outline: 3px solid #555555 !important;
+}
+
+.tabbrowser-tab[selected="true"] .tab-background {
+  background-color: #333333 !important;
+  outline: 3px solid #d8a657 !important;
+}
+
+/* SIDEBAR (BOOKMARKS / HISTORY) */
+#sidebar-box,
+#sidebar {
+  background-color: #282828 !important;
+}
+
+/* Tree container */
+.sidebar-placesTree {
+  background-color: transparent !important;
+}
+
+/* Hovered item */
+.sidebar-placesTree treechildren::-moz-tree-row(hover) {
+  background-color: #282828 !important;
+}
+
+/* Selected item */
+.sidebar-placesTree treechildren::-moz-tree-row(selected) {
+  background-color: #282828 !important;
+}
+
+/* TEXT SELECTION INSIDE URL BAR */
+#urlbar-input:focus::selection {
+  background-color: #d8a657 !important;
+  color: #000000 !important;
+}
+
+#urlbar-background,
+.urlbar-background {
+  background-color: #222222 !important;
 }
