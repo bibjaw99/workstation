@@ -6,7 +6,9 @@
 }
 :root {
   --toolbar-bgcolor: #222222 !important;
+  --toolbar-field-focus-border-color: #686868 !important;
   --urlbarView-highlight-background: #d8a657 !important;
+  --urlbarView-highlight-color: #000000 !important;
 }
 
 /* navbar */
@@ -17,12 +19,12 @@
 
 /* TAB BAR */
 .tabbrowser-tab .tab-background {
-  background-color: #333333 !important;
-  outline: 3px solid #555555 !important;
+  background-color: #282828 !important;
+  outline: 3px solid #686868 !important;
 }
 
 .tabbrowser-tab[selected="true"] .tab-background {
-  background-color: #333333 !important;
+  background-color: #282828 !important;
   outline: 3px solid #d8a657 !important;
 }
 
