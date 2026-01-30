@@ -1,4 +1,4 @@
-com.discordapp.Discord
+dev.vencord.Vesktop
 org.telegram.desktop
 org.libreoffice.LibreOffice
 org.gimp.GIMP

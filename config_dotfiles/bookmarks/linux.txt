@@ -1,0 +1,8 @@
+https://archlinux.org/packages
+https://wiki.archlinux.org/title/Main_page
+https://status.archlinux.org/
+
+https://www.phoronix.com
+https://itsfoss.com
+https://distrowatch.com
+https://flathub.org

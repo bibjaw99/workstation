@@ -1,4 +1,8 @@
 @-moz-document url("about:home"), url("about:blank"), url("about:newtab"), url("about:privatebrowsing"), url("chrome://browser/content/blanktab.html") {
+  .showPrivate,
+  .showSearch {
+    display: none !important;
+  }
   .click-target-container *,
   .top-sites-list * {
     color: #fff !important;

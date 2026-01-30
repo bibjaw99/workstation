@@ -3,6 +3,7 @@
 user_pref("_user.js.parrot", "START: Oh yes, the Norwegian Blue... what's wrong with it?");
 user_pref("toolkit.legacyUserProfileCustomizations.stylesheets", true);
 user_pref("browser.aboutConfig.showWarning", false);
+user_pref("browser.download.autohideButton", false);
 user_pref("browser.startup.page", 1);
 user_pref("browser.startup.homepage", "about:newtab");
 user_pref("browser.display.background_color", "#222222");
@@ -161,8 +162,11 @@ user_pref("browser.download.useDownloadDir", false);
 user_pref("sidebar.verticalTabs", true);
 user_pref("sidebar.position_start", false);
 user_pref("sidebar.visibility", "hide-sidebar");
+user_pref("sidebar.expandOnHover", false);
 user_pref("browser.toolbars.bookmarks.visibility", "never");
 user_pref("sidebar.revamp", false);
+user_pref("sidebar.main.tools", " ");
+user_pref("sidebar.notification.badge.aichat", false);
 // ==============================================================
 /** TAB & WINDOW MANAGEMENT **/
 user_pref("browser.link.open_newwindow", 3);
@@ -180,6 +184,7 @@ user_pref("browser.tabs.groups.smart.enabled", false);
 // ==============================================================
 /** AI (ML) FEATURES & EXPERIMENTS **/
 user_pref("browser.ml.enable", false);
+user_pref("browser.ml.chat.sidebar", false);
 user_pref("browser.ml.chat.enabled", false);
 user_pref("browser.ml.linkPreview.enabled", false);
 user_pref("browser.ml.pageAssist.enabled", false);

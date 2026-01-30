@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-bookmarksDir="$HOME/.local/share/bookmarks"
+bookmarksDir="$HOME/.local/share/config_dotfiles/bookmarks"
 
 # firefox
 BROWSER="firefox-developer-edition --new-tab"

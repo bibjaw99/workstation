@@ -6,7 +6,7 @@
 }
 :root {
   --toolbar-bgcolor: #222222 !important;
-  --toolbar-field-focus-border-color: #686868 !important;
+  --toolbar-field-focus-border-color: #686868  !important;
   --urlbarView-highlight-background: #d8a657 !important;
   --urlbarView-highlight-color: #000000 !important;
 }
@@ -18,6 +18,16 @@
 }
 
 /* TAB BAR */
+#tabbrowser-tabs:not([vertical]) .tabbrowser-tab {
+    min-width: 50px !important;
+    max-width: 180px !important;
+    margin-left: 2px !important;
+}
+
+#tabbrowser-tabs:not([vertical]) .tab-stack {
+    margin-inline: 0px !important;
+}
+
 .tabbrowser-tab .tab-background {
   background-color: #282828 !important;
   outline: 3px solid #686868 !important;
