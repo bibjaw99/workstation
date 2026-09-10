@@ -21,6 +21,7 @@ require("lazy").setup({
 		-- import your plugins
 		{ import = "grimmvim.plugins.ui" },
 		{ import = "grimmvim.plugins.coding" },
+		{ import = "grimmvim.plugins.database" },
 		{ import = "grimmvim.plugins.utils" },
 		{ import = "grimmvim.plugins.lsp_completion" },
 	},

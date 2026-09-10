@@ -3,6 +3,7 @@ local cmd = vim.cmd
 
 cmd([[highlight WinSeparator guibg = None]])
 cmd([[highlight CursorLineNr guifg = #d8a657]])
+cmd([[highlight MsgSeparator guifg = #d8a657]])
 
 -- changing bg and border colors
 hl(0, "FloatBorder", { link = "Normal" })

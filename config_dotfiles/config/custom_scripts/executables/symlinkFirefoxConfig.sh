@@ -1,5 +1,4 @@
 #!/usr/bin/env bash
-set -euo pipefail
 
 CONFIG_ROOT="$HOME/.local/share/config_dotfiles/config/firefox"
 

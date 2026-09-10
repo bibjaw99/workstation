@@ -17,9 +17,8 @@ local function CodeRunner(filetype, command)
 end
 
 CodeRunner("javascript", "node")
-CodeRunner("typescript", "tsc % && node %:r.js")
-CodeRunner("cpp", "g++ % -o %:r && ./%:r")
-CodeRunner("c", "gcc % -o %:r && ./%:r")
+CodeRunner("cpp", "mkdir -p test_builds && g++ % -o test_builds/%:t:r && ./test_builds/%:t:r")
+CodeRunner("c", "mkdir -p test_builds && gcc % -o test_builds/%:t:r && ./test_builds/%:t:r")
 CodeRunner("lua", "lua")
 CodeRunner("python", "python3")
 CodeRunner("sh", "bash")
@@ -29,19 +28,6 @@ vim.api.nvim_create_autocmd("ExitPre", {
 	group = vim.api.nvim_create_augroup("Exit", { clear = true }),
 	command = "set guicursor=a:ver90",
 	desc = "Set cursor back to beam when leaving Neovim.",
-})
-
--- Options for markdown
-vim.api.nvim_create_autocmd("FileType", {
-	pattern = "markdown",
-	callback = function()
-		vim.opt.wrap = false
-		vim.opt.linebreak = true
-		vim.opt.tabstop = 2
-		vim.opt.shiftwidth = 2
-		vim.bo.softtabstop = 2
-		vim.opt.expandtab = true
-	end,
 })
 
 -- disalbe commenting next line
@@ -74,4 +60,12 @@ vim.api.nvim_create_autocmd("User", {
 vim.api.nvim_create_autocmd({ "TextChanged", "TextChangedI" }, {
 	pattern = "*",
 	command = "silent! write",
+})
+
+-- enable linebreak for markdown
+vim.api.nvim_create_autocmd("FileType", {
+	pattern = { "markdown" },
+	callback = function()
+		vim.opt.linebreak = true
+	end,
 })

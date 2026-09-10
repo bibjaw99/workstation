@@ -1,0 +1,152 @@
+set drawbox
+set icons
+set ignorecase
+set previewer ~/.config/lf/previewer
+
+#=====================================================================================================
+# create dir
+cmd mkdir ${{
+  printf "Name Dir: "
+  read ans
+  mkdir $ans
+}}
+
+#=====================================================================================================
+# create file
+cmd mkfile ${{
+  printf "Name File: "
+  read ans
+  $EDITOR $ans
+}}
+
+#=====================================================================================================
+# unarchive
+cmd unarchive ${{
+  case "$f" in
+    *.zip) unzip "$f" ;;
+    *.rar) unrar x "$f" ;;
+    *.tar.gz) tar -xzvf "$f" ;;
+    *.tar.xz) tar -xf "$f" ;;
+    *.tar.bz2) tar -xjvf "$f" ;;
+    *.tar) tar -xvf "$f" ;;
+    *.7z) 7z e "$f" ;;
+    *) echo "Unsupported Format !!" ;;
+  esac
+}}
+
+#=====================================================================================================
+# open files with default apps
+cmd open &{{
+	case $(file --mime-type -Lb $f) in
+		text/*) lf -remote "send $id \$nvim \$fx";;
+		*) xdg-open "$f"
+	esac
+}}
+
+#=====================================================================================================
+# set wallpaper
+cmd setwall %{{
+  # get base name with pure bash
+  filename="${f%/}"
+  while [[ "$filename" == */ ]]; do
+    filename="${filename%/}"
+  done
+  filename="${filename##*/}"
+
+  echo "$filename" > "$HOME/.cache/wall.txt"
+
+  selected_wall="$(<"$HOME/.cache/wall.txt")"
+
+  case "${selected_wall,,}" in
+    *.jpg|*.jpeg|*.png|*.webp)
+      pkill swaybg
+      swaybg -i "$selected_wall" -m fill  > /dev/null 2>&1 &
+      exit 0
+      ;;
+    *)
+      echo "Not an image format!"
+      exit 1
+      ;;
+  esac
+}}
+
+#=====================================================================================================
+# trash-cli
+cmd trash ${{
+  files=$(printf "$fx" | tr '\n' ';')
+  while [ "$files" ]; do
+    file=${files%%;*}
+    # get base name with pure bash
+    filename="${file%/}"
+    filename="${filename##*/}"
+
+    trash-put "$filename"
+    if [ "$files" = "$file" ]; then
+      files=''
+    else
+      files="${files#*;}"
+    fi
+  done
+}}
+
+cmd trash_restore ${{
+  trash-restore
+}}
+
+cmd trash_empty ${{
+  trash-empty
+}}
+
+#=====================================================================================================
+# fzf
+cmd fzf_jump ${{
+res="$(find . -maxdepth 1 | fzf --reverse --header='Jump to location')"
+if [ -n "$res" ]; then
+  if [ -d "$res" ]; then
+    cmd="cd"
+  else
+    cmd="select"
+  fi
+  res="$(printf '%s' "$res" | sed 's/\\/\\\\/g;s/"/\\"/g')"
+  lf -remote "send $id $cmd \"$res\""
+fi
+}}
+
+#=====================================================================================================
+# unmap existing keys
+map d
+map t
+map w
+
+#=====================================================================================================
+# custom funstion keymaps
+map <c-f> :fzf_jump
+map au unarchive
+map W setwall
+map <enter> open
+
+# trash-cli
+map dd trash
+map te trash_empty
+map tr trash_restore
+
+#=====================================================================================================
+# keymaps
+map R reload
+
+# Movement
+map H push 5h
+map J push 5j
+map K push 5k
+map L push 5l
+
+# direcotry shortcuts
+map gc cd ~/.local/share/config_dotfiles
+map gC cd ~/.config
+map gD cd ~/Documents
+map gd cd ~/Downloads
+map gp cd ~/Pictures/
+map gs cd ~/Pictures/screenshots/
+map gb cd ~/Pictures/backgrounds/
+map gv cd ~/Videos
+map gl cd ~/.local

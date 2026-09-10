@@ -27,14 +27,21 @@ if ! shopt -oq posix; then
   fi
 fi
 
-# search history with fzf
+# bash history with fzf
 __fzf_history() {
   local cmd
-  cmd=$(history | fzf --tac | sed 's/^[[:space:]]*[0-9]\+[[:space:]]*//') || return
-  READLINE_LINE="$cmd"
-  READLINE_POINT=${#READLINE_LINE}
+  cmd=$(history | tac | awk '{
+      s=$0; sub(/^[[:space:]]*[0-9]+[[:space:]]+/, "", s);
+      if (!seen[s]++) print $0
+    }' | fzf --tiebreak=index --query="$READLINE_LINE" --height=80% --margin=10%,20% --layout=reverse | \
+    sed 's/^[[:space:]]*[0-9]\+[[:space:]]*//')
+
+  if [ -n "$cmd" ]; then
+    READLINE_LINE="$cmd"
+    READLINE_POINT=${#READLINE_LINE}
+  fi
 }
-bind -x '"\C-y": __fzf_history'
+bind -x '"\C-r": __fzf_history'
 
 # Re-enable Ctrl+L to clear screen in Vi mode
 bind -m vi-insert '"\C-l": clear-screen'
@@ -59,3 +66,5 @@ bind 'set vi-cmd-mode-string "\1\e[2 q\2"'
 # Custom Scripts & Prompt
 source "$HOME/.alias"
 eval "$(starship init bash)"
+
+# source "$HOME/.local/share/bob/env/env.sh"

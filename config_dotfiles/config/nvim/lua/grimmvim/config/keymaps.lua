@@ -2,12 +2,9 @@ vim.g.mapleader = " "
 local map = vim.keymap.set
 
 -- custom functions
-vim.keymap.set(
-	"n",
-	"gf",
-	":lua OpenFile()<cr>",
-	{ desc = "Open or create file under cursor", noremap = true, silent = true }
-)
+vim.keymap.set("n", "gf", function()
+	require("grimmvim.config.custom_functions").OpenFile()
+end, { desc = "Open or create file under cursor", noremap = true, silent = true })
 
 -- disable double click mouse
 vim.api.nvim_set_keymap("n", "<2-LeftMouse>", "", { noremap = true, silent = true })
@@ -62,12 +59,9 @@ map("n", "<leader>ol", ":set linebreak!<cr>", { desc = "Toggle Break Lines", nor
 map("n", "<leader>os", ":set spell!<cr>", { desc = "Toggle Spell Check On", noremap = true, silent = true })
 map("n", "<leader>oh", ":set hlsearch!<cr>", { desc = "Toggle Search Highlight", noremap = true, silent = false })
 map("n", "<leader>od", ":pwd<cr>", { desc = "Current Working Directory", noremap = true, silent = false })
-map(
-	"n",
-	"<leader>oc",
-	":lua ToggleConcealLevel()<cr>",
-	{ desc = "Toggle Conceallevel", noremap = true, silent = false }
-)
+map("n", "<leader>oc", function()
+	require("grimmvim.config.custom_functions").ToggleConcealLevel()
+end, { desc = "Toggle Conceallevel", noremap = true, silent = false })
 
 -- Buffers
 map("n", "<Tab>", ":bnext<cr>", { desc = "Next Buffer", noremap = true, silent = true })
@@ -97,25 +91,34 @@ map("n", "<leader>t", ":sp<bar>term<cr>:resize 10<cr>", { desc = "Split Terminal
 map("i", "<C-;>", "<esc>A;<esc>i", { desc = "semicolon at the end", noremap = true, silent = true })
 
 -- lsp keymaps
-map("n", "<leader>lk", ":lua vim.lsp.buf.hover()<cr>", { desc = "LSP Hover", noremap = true, silent = true })
-map("n", "<leader>ld", ":lua vim.lsp.buf.definition()<cr>", { desc = "LSP Definition", noremap = true, silent = true })
-map(
-	"n",
-	"<leader>lt",
-	":lua vim.lsp.buf.type_definition()<cr>",
-	{ desc = "Type Definition", noremap = true, silent = true }
-)
-map(
-	"n",
-	"<leader>ln",
-	":lua vim.diagnostic.goto_next()<cr>",
-	{ desc = "LSP Next Diagnostic", noremap = true, silent = true }
-)
-map(
-	"n",
-	"<leader>lN",
-	":lua vim.diagnostic.goto_prev()<cr>",
-	{ desc = "LSP Previous Diagnostic", noremap = true, silent = true }
-)
-map("n", "<leader>lr", ":lua vim.lsp.buf.references()<cr>", { desc = "LSP References", noremap = true, silent = true })
-map("n", "<leader>lR", ":lua vim.lsp.buf.rename()<cr>", { desc = "LSP Rename", noremap = true, silent = true })
+map("n", "<leader>lk", function()
+	vim.lsp.buf.hover()
+end, { desc = "LSP Hover", noremap = true, silent = true })
+
+map("n", "<leader>ld", function()
+	vim.lsp.buf.definition()
+end, { desc = "LSP Definition", noremap = true, silent = true })
+
+map("n", "<leader>lt", function()
+	vim.lsp.buf.type_definition()
+end, { desc = "Type Definition", noremap = true, silent = true })
+
+map("n", "<leader>ln", function()
+	vim.diagnostic.jump({ count = 1, float = true })
+end, { desc = "Next diagnostic" })
+
+map("n", "<leader>lN", function()
+	vim.diagnostic.jump({ count = -1, float = true })
+end, { desc = "Previous diagnostic" })
+
+map("n", "<leader>lr", function()
+	vim.lsp.buf.references()
+end, { desc = "LSP References", noremap = true, silent = true })
+
+map("n", "<leader>lR", function()
+	vim.lsp.buf.rename()
+end, { desc = "LSP Rename", noremap = true, silent = true })
+
+-- undo tree
+vim.cmd("packadd nvim.undotree")
+vim.keymap.set("n", "<leader>uu", require("undotree").open)

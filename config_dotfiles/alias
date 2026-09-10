@@ -11,6 +11,9 @@ alias zsource="source .bashrc"
 alias xx="exit"
 alias lg="lazygit"
 alias ins='nvim $(fzf -m --preview="bat --theme=gruvbox-dark --color=always {}")'
+alias bt="bluetui"
+alias wm="wiremix"
+alias lf='cd "$(command lf -print-last-dir "$@")"'
 
 ## Arch
 alias pac="sudo pacman"

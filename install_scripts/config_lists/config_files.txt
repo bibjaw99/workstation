@@ -1,7 +1,0 @@
-starship.toml
-mimeapps.list
-.alias
-.zshrc
-.bashrc
-.tmux.conf
-.vimrc

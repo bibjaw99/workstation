@@ -1,23 +1,25 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
-folder="$HOME/Pictures/backgrounds/"
-mapfile -t wallpapers < <(find "$folder" -type f \( -iname "*.jpg" -o -iname "*.png" -o -iname "*.jpeg" -o -iname "*.gif" \) -printf "%f\t%p\n")
-selected=$(printf '%s\n' "${wallpapers[@]}" | cut -f1 | rofi -dmenu -i -p "Walls")
-if [ -n "$selected" ]; then
-  full_path=$(printf '%s\n' "${wallpapers[@]}" | grep -F "$selected" | cut -f2 -d$'\t')
-  echo "$(basename "$full_path")" > "$HOME/.cache/wall.txt"
-    # swaybg
-    if command -v swaybg >/dev/null 2>&1; then
-      pkill swaybg 2>/dev/null
-      swaybg -i "$full_path" -m fill &
-    else
-      echo "Warning: swaybg is not installed." >&2
-    fi
+get_wall_name() {
+  local backgrounds_directory="$HOME/Pictures/backgrounds"
+  local images=()
 
-    # feh
-    if command -v feh >/dev/null 2>&1; then
-      feh --bg-fill "$full_path"
-    else
-      echo "Warning: feh is not installed." >&2
-    fi
-fi
+  while IFS= read -r file; do
+      name="${file##*/}"
+      images+=("$name")
+  done < <(find "$backgrounds_directory" -maxdepth 1 -type f \( \
+      -iname "*.jpg" -o \
+      -iname "*.jpeg" -o \
+      -iname "*.png" -o \
+      -iname "*.gif" -o \
+      -iname "*.bmp" -o \
+      -iname "*.webp" \
+  \))
+  selected_wall="$(printf '%s\n' "${images[@]}" | sort | fuzzel --dmenu --prompt="Walls: ")"
+  [[ -z "$selected_wall" ]] && exit 1
+  echo "$selected_wall" > "$HOME/.cache/wall.txt"
+  pkill swaybg
+  swaybg -i "$backgrounds_directory/$selected_wall" -m fill >/dev/null 2>&1 &
+}
+
+get_wall_name

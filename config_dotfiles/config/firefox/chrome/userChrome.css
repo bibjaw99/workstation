@@ -2,11 +2,11 @@
 * {
   filter: blur(0) !important;
   backdrop-filter: blur(0) !important;
-  border-radius: 0 !important;
+  border-radius: 0px !important;
 }
 :root {
-  --toolbar-bgcolor: #222222 !important;
-  --toolbar-field-focus-border-color: #686868  !important;
+  --toolbar-bgcolor: #000000 !important;
+  --toolbar-field-focus-border-color: #000000 !important;
   --urlbarView-highlight-background: #d8a657 !important;
   --urlbarView-highlight-color: #000000 !important;
 }
@@ -19,13 +19,13 @@
 
 /* TAB BAR */
 #tabbrowser-tabs:not([vertical]) .tabbrowser-tab {
-    min-width: 50px !important;
-    max-width: 180px !important;
-    margin-left: 2px !important;
+  min-width: 50px !important;
+  max-width: 180px !important;
+  margin-left: 2px !important;
 }
 
 #tabbrowser-tabs:not([vertical]) .tab-stack {
-    margin-inline: 0px !important;
+  margin-inline: 0px !important;
 }
 
 .tabbrowser-tab .tab-background {
@@ -33,15 +33,16 @@
   outline: 3px solid #686868 !important;
 }
 
-.tabbrowser-tab[selected="true"] .tab-background {
+.tabbrowser-tab[selected] .tab-background {
   background-color: #282828 !important;
   outline: 3px solid #d8a657 !important;
 }
 
 /* SIDEBAR (BOOKMARKS / HISTORY) */
 #sidebar-box,
-#sidebar {
-  background-color: #282828 !important;
+#sidebar,
+#sidebar-main {
+  background-color: #222222 !important;
 }
 
 /* Tree container */
@@ -67,5 +68,9 @@
 
 #urlbar-background,
 .urlbar-background {
+  background-color: #202020 !important;
+}
+
+#appMenu-popup panelview {
   background-color: #222222 !important;
 }

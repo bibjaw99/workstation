@@ -1,3 +1,73 @@
+@-moz-document url-prefix("about:preferences") {
+  * {
+    border-radius: 0 !important;
+    border-color: #585858 !important;
+    outline-color: #585858 !important;
+  }
+  :root,
+  page,
+  treechildren #engineChildren,
+  .sticky-container,
+  .sticky-inner-container,
+  .container,
+  .picker-item,
+  .with-icon,
+  .uri-element,
+  .moz-card,
+  .info-box-container,
+  #search-container,
+  #input,
+  #engineList,
+  #handlersView {
+    background-color: #222222 !important;
+  }
+  #categories .category,
+  #helpButton,
+  #addonsButton {
+    border-width: 2px !important;
+    margin: 5px !important;
+  }
+  .toggle-button::before {
+    border-radius: 0px !important;
+    background-color: #d8a657 !important;
+  }
+}
+
+@-moz-document url-prefix("about:addons") {
+  * {
+    border-radius: 0 !important;
+    border-color: #585858 !important;
+    outline-color: #585858 !important;
+  }
+  :root,
+  treechildren #engineChildren,
+  .sticky-container,
+  .sticky-inner-container,
+  .container,
+  .picker-item,
+  .with-icon,
+  .uri-element,
+  .moz-card,
+  .main-search,
+  .main-heading,
+  .card.addon,
+  #input,
+  #engineList,
+  #handlersView {
+    background-color: #222222 !important;
+  }
+  #categories .category,
+  #help-button,
+  #preferencesButton {
+    border-width: 2px !important;
+    margin: 5px !important;
+  }
+  .toggle-button::before {
+    border-radius: 0px !important;
+    background-color: #d8a657 !important;
+  }
+}
+
 @-moz-document url("about:home"), url("about:blank"), url("about:newtab"), url("about:privatebrowsing"), url("chrome://browser/content/blanktab.html") {
   .showPrivate,
   .showSearch {

@@ -77,7 +77,7 @@ return {
 			cssls = {
 				settings = {
 					css = {
-						validate = true,
+						validate = false,
 						lint = { unknownAtRules = "ignore" },
 					},
 					scss = {
@@ -93,6 +93,16 @@ return {
 			clangd = {},
 			pyright = {},
 			html = {},
+			prismals = {
+				cmd = { "prisma-language-server", "--stdio" },
+				filetypes = { "prisma" },
+				settings = {
+					prisma = {
+						-- Forces the server to ignore standard backup extensions
+						fileWatcherIgnore = { "**/*~", "**/*.swp", "**/*.swo", "**/.git/**" },
+					},
+				},
+			},
 			tailwindcss = {
 				filetypes = {
 					"javascriptreact",

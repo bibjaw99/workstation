@@ -32,6 +32,7 @@ return {
 			list = {
 				selection = {
 					preselect = false,
+					auto_insert = false,
 				},
 			},
 			documentation = {
@@ -49,9 +50,26 @@ return {
 				enabled = false,
 			},
 		},
+		-- enable command line completion
+		cmdline = {
+			enabled = true,
+			keymap = { preset = "inherit" },
+			completion = {
+				menu = { auto_show = true },
+				list = {
+					selection = {
+						preselect = false,
+						auto_insert = false,
+					},
+				},
+			},
+		},
 		snippets = { preset = "luasnip" },
 		sources = {
 			default = { "lazydev", "lsp", "path", "snippets", "buffer" },
+			per_filetype = {
+				sql = { "dadbod", "snippets", "buffer" },
+			},
 			providers = {
 				lazydev = {
 					name = "LazyDev",
@@ -59,6 +77,7 @@ return {
 					-- make lazydev completions top priority (see `:h blink.cmp`)
 					score_offset = 100,
 				},
+				dadbod = { name = "Dadbod", module = "vim_dadbod_completion.blink" },
 			},
 		},
 		signature = {

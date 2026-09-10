@@ -18,6 +18,13 @@ return {
 			liquid = { "prettier" },
 			lua = { "stylua" },
 			python = { "isort", "black" },
+			sql = { "pg_format" },
+			prisma = { "prismals" },
+		},
+		formatters = {
+			pg_format = {
+				prepend_args = { "-s", "2" },
+			},
 		},
 		format_on_save = {
 			lsp_fallback = true,

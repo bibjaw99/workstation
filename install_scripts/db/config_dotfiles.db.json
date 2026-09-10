@@ -1,0 +1,102 @@
+[
+  {
+    "name": "foot",
+    "config_src": "$HOME/.local/share/config_dotfiles/config/foot",
+    "config_des": "$HOME/.config/foot"
+  },
+  {
+    "name": "neovim",
+    "config_src": "$HOME/.local/share/config_dotfiles/config/nvim",
+    "config_des": "$HOME/.config/nvim"
+  },
+  {
+    "name": "swaywm",
+    "config_src": "$HOME/.local/share/config_dotfiles/config/sway",
+    "config_des": "$HOME/.config/sway"
+  },
+  {
+    "name": "sway-session",
+    "config_src": "$HOME/.local/share/config_dotfiles/config/systemd",
+    "config_des": "$HOME/.config/systemd"
+  },
+  {
+    "name": "waybar",
+    "config_src": "$HOME/.local/share/config_dotfiles/config/waybar_configs/waybar_block_4",
+    "config_des": "$HOME/.config/waybar"
+  },
+  {
+    "name": "fuzzel",
+    "config_src": "$HOME/.local/share/config_dotfiles/config/fuzzel",
+    "config_des": "$HOME/.config/fuzzel"
+  },
+  {
+    "name": "fontconfig",
+    "config_src": "$HOME/.local/share/config_dotfiles/config/fontconfig",
+    "config_des": "$HOME/.config/fontconfig"
+  },
+  {
+    "name": "custom scripts",
+    "config_src": "$HOME/.local/share/config_dotfiles/config/custom_scripts",
+    "config_des": "$HOME/.config/custom_scripts"
+  },
+  {
+    "name": "zathura",
+    "config_src": "$HOME/.local/share/config_dotfiles/config/zathura",
+    "config_des": "$HOME/.config/zathura"
+  },
+  {
+    "name": "lf file manager",
+    "config_src": "$HOME/.local/share/config_dotfiles/config/lf",
+    "config_des": "$HOME/.config/lf"
+  },
+  {
+    "name": "wallpapers",
+    "config_src": "$HOME/.local/share/config_dotfiles/config/walls",
+    "config_des": "$HOME/.config/walls"
+  },
+  {
+    "name": "btop",
+    "config_src": "$HOME/.local/share/config_dotfiles/config/btop",
+    "config_des": "$HOME/.config/btop"
+  },
+  {
+    "name": "mako",
+    "config_src": "$HOME/.local/share/config_dotfiles/config/mako",
+    "config_des": "$HOME/.config/mako"
+  },
+  {
+    "name": "starship.toml",
+    "config_src": "$HOME/.local/share/config_dotfiles/config/starship.toml",
+    "config_des": "$HOME/.config/starship.toml"
+  },
+  {
+    "name": "mimpeapps",
+    "config_src": "$HOME/.local/share/config_dotfiles/config/mimeapps.list",
+    "config_des": "$HOME/.config/mimeapps.list"
+  },
+  {
+    "name": "alias",
+    "config_src": "$HOME/.local/share/config_dotfiles/alias",
+    "config_des": "$HOME/.alias"
+  },
+  {
+    "name": "bashrc",
+    "config_src": "$HOME/.local/share/config_dotfiles/bashrc",
+    "config_des": "$HOME/.bashrc"
+  },
+  {
+    "name": "zshrc",
+    "config_src": "$HOME/.local/share/config_dotfiles/zshrc",
+    "config_des": "$HOME/.zshrc"
+  },
+  {
+    "name": "tmux",
+    "config_src": "$HOME/.local/share/config_dotfiles/tmux.conf",
+    "config_des": "$HOME/.tmux.conf"
+  },
+  {
+    "name": "vim",
+    "config_src": "$HOME/.local/share/config_dotfiles/vimrc",
+    "config_des": "$HOME/.vimrc"
+  }
+]

@@ -1,5 +1,7 @@
+local M = {}
+
 -- toggle conceallevel
-function ToggleConcealLevel()
+function M.ToggleConcealLevel()
 	if vim.wo.conceallevel == 0 then
 		vim.wo.conceallevel = 2
 	else
@@ -8,7 +10,7 @@ function ToggleConcealLevel()
 end
 
 -- automatically create a file if it does not exist
-function OpenFile()
+function M.OpenFile()
 	local filepath = vim.fn.expand("<cfile>")
 	if vim.fn.filereadable(filepath) == 0 then
 		-- Create and open the file
@@ -30,3 +32,5 @@ function vim.lsp.util.open_floating_preview(contents, syntax, opts, ...)
 	opts.max_height = opts.max_height or 20
 	return orig_util_open_floating_preview(contents, syntax, opts, ...)
 end
+
+return M

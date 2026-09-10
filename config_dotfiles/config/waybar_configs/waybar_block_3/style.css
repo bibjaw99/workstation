@@ -1,3 +1,33 @@
+/* ===== COLORS ===== */
+@define-color bg #222222;
+@define-color bg-alt #333333;
+@define-color bg-tray #383838;
+
+@define-color fg #ebdbb2;
+@define-color fg-soft #fff4d2;
+
+@define-color border #484848;
+@define-color gray #555555;
+
+@define-color black #000000;
+
+@define-color blue #83a598;
+@define-color blue-dark #458588;
+
+@define-color pink #d3869b;
+@define-color pink-dark #b26286;
+
+@define-color green #8ec07c;
+@define-color green-dark #689d68;
+
+@define-color red #ea6962;
+@define-color red-dark #cc241d;
+@define-color red-critical #b22222;
+
+@define-color orange #e78a4e;
+
+
+/* ===== GLOBAL ===== */
 * {
   padding: 0;
   min-height: 0;
@@ -13,16 +43,17 @@ window#waybar {
   font-family: IosevkaTerm Nerd Font Propo;
   font-size: 12pt;
   font-weight: 900;
-  color: #ebdbb2;
+  color: @fg;
 }
 
 .modules-left,
 .modules-center,
 .modules-right {
   padding: 3pt;
-  background: #222222;
+  background: @bg;
 }
 
+/* ===== COMMON MODULE STYLE ===== */
 #window,
 #disk,
 #cpu,
@@ -37,23 +68,25 @@ window#waybar {
 #battery.warning,
 #network,
 #clock {
-  border: 2pt solid #585858;
-  color: #fff4d2;
-  background-color: #333333;
+  border: 2pt solid @border;
+  color: @fg-soft;
+  background-color: @bg-alt;
   padding-right: 4.5pt;
 }
 
-#custom-rofi {
-  color: #000000;
-  border: 2pt solid #458588;
-  background: #83a598;
+/* ===== launcher ===== */
+#custom-launcher {
+  color: @black;
+  border: 2pt solid @blue-dark;
+  background: @blue;
   padding: 0pt 6pt;
 }
 
+/* ===== WORKSPACES ===== */
 #workspaces button {
-  color: #fff4d2;
-  background-color: #333333;
-  border: 2pt solid #585858;
+  color: @fg-soft;
+  background-color: @bg-alt;
+  border: 2pt solid @border;
   min-width: 15pt;
   margin-right: 3pt;
   padding: 0pt 3.75pt;
@@ -64,58 +97,58 @@ window#waybar {
 }
 
 #workspaces button:hover {
-  color: #222222;
-  background: #d3869b;
-  border-color: #b26286;
+  color: @bg;
+  background: @pink;
+  border-color: @pink-dark;
 }
 
 #workspaces button.visible,
-#workspaces button.visible:hover,
-#workspaces button.active,
-#workspaces button.active:hover {
-  color: #000000;
-  background: #8ec07c;
-  border-color: #689d68;
+#workspaces button.visible:hover {
+  color: @black;
+  background: @green;
+  border-color: @green-dark;
 }
 
 #workspaces button.urgent {
-  color: #222222;
-  border-color: #cc241d;
-  background: #ea6962;
+  color: @bg;
+  border-color: @red-dark;
+  background: @red;
 }
 
+/* ===== SPECIAL STATES ===== */
 #custom-cpu_temp.critical {
-  background-color: #b22222;
-  border: 2pt solid #b22222;
+  background-color: @red-dark;
+  border: 2pt solid @fg;
 }
 
 #custom-cpu_temp.unknown {
-  color: #555555;
+  color: @gray;
 }
 
 #pulseaudio.muted {
-  border: 2pt solid #ea6962;
+  border: 2pt solid @red;
 }
 
 #battery.critical {
-  border: 2pt solid #b22222;
+  border: 2pt solid @red-critical;
 }
 
 #battery.warning {
-  border: 2pt solid #e78a4e;
+  border: 2pt solid @orange;
 }
 
+/* ===== TRAY ===== */
 #tray {
-  color: #fff4d2;
-  background-color: #383838;
-  border: 2pt solid #585858;
+  color: @fg-soft;
+  background-color: @bg-tray;
+  border: 2pt solid @border;
   padding: 0 6pt;
 }
 
-#mode,
-#submap {
-  color: #000000;
-  border: 2pt solid #458588;
-  background: #83a598;
+/* ===== MODE ===== */
+#mode {
+  color: @black;
+  border: 2pt solid @blue-dark;
+  background: @blue;
   padding: 0pt 6pt;
 }

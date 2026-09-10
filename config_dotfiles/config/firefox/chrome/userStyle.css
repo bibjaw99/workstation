@@ -1,5 +1,6 @@
 * {
   filter: blur(0) !important;
   backdrop-filter: blur(0) !important;
-  border-radius: 0 !important;
+  border-color: #585858;
+  border-radius: 0px !important;
 }

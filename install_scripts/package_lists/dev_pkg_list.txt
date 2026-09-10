@@ -1,5 +1,6 @@
 tmux
 neovim
+vim
 tree-sitter-cli
 texlive-binextra
 fzf
@@ -24,3 +25,6 @@ npm
 yarn
 typescript
 mercurial
+shellcheck
+unixodbc
+postgresql

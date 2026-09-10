@@ -1,3 +1,29 @@
+/* ===== COLORS ===== */
+@define-color bg #222222;
+@define-color fg #ebdbb2;
+
+@define-color black #222222;
+
+@define-color blue #83a598;
+@define-color blue-dark #458588;
+
+@define-color pink #d3869b;
+
+@define-color green #8ec07c;
+@define-color green-dark #689d68;
+
+@define-color red #ea6962;
+@define-color red-dark #cc241d;
+
+@define-color orange #e78a4e;
+
+@define-color yellow #f6c657;
+@define-color yellow-soft #d8a657;
+
+@define-color gray #555555;
+
+
+/* ===== GLOBAL ===== */
 * {
   padding: 0;
   margin: 0;
@@ -16,14 +42,15 @@
 }
 
 window#waybar {
-  color: #ebdbb2;
+  color: @fg;
   background: none;
   font-family: IosevkaTerm Nerd Font Propo;
   font-size: 12pt;
   font-weight: 900;
 }
 
-#custom-rofi,
+/* ===== COMMON MODULE STYLE ===== */
+#custom-launcher,
 #mode,
 #submap,
 #window,
@@ -40,26 +67,28 @@ window#waybar {
 #battery.warning,
 #network,
 #clock {
-  color: #ebdbb2;
-  background: #222222;
-  border: 2.5pt solid #222222;
+  color: @fg;
+  background: @bg;
+  border: 2.5pt solid @bg;
   padding-right: 3pt;
 }
 
-#custom-rofi {
-  color: #222222;
-  background: #83a598;
+/* ===== launcher ===== */
+#custom-launcher {
+  color: @black;
+  background: @blue;
   padding: 0 6pt;
 }
 
+/* ===== WORKSPACES ===== */
 #workspaces {
   margin: 0;
 }
 
 #workspaces button {
-  color: #ebdbb2;
-  background: #222222;
-  border: 2.5pt solid #222222;
+  color: @fg;
+  background: @bg;
+  border: 2.5pt solid @bg;
   padding: 0 3.75pt;
   margin-right: 3pt;
   min-width: 15pt;
@@ -70,91 +99,91 @@ window#waybar {
 }
 
 #workspaces button:hover {
-  color: #222222;
-  background: #d3869b;
+  color: @black;
+  background: @pink;
 }
 
 #workspaces button.visible,
-#workspaces button.visible:hover,
-#workspaces button.active,
-#workspaces button.active:hover {
-  color: #222222;
-  background: #8ec07c;
+#workspaces button.visible:hover {
+  color: @black;
+  background: @green;
 }
 
 #workspaces button.urgent {
-  color: #222222;
-  background: #ea6962;
+  color: @black;
+  background: @red;
 }
 
+/* ===== MODULE COLORS ===== */
 #window {
-  color: #d3869b;
+  color: @pink;
 }
 
 #tray {
   padding: 0 6pt;
-  background: #222222;
+  background: @bg;
 }
 
 #disk {
-  color: #ea6962;
+  color: @red;
 }
 
 #cpu {
-  color: #e78a4e;
+  color: @orange;
 }
 
 #custom-cpu_temp {
-  color: #d8a657;
+  color: @yellow-soft;
 }
 
 #custom-cpu_temp.critical {
-  color: #cc241d;
+  color: @red-dark;
 }
 
 #custom-cpu_temp.unknown {
-  color: #555555;
+  color: @gray;
 }
 
 #backlight {
-  color: #f6c657;
+  color: @yellow;
 }
 
 #custom-memory {
-  color: #458588;
+  color: @blue-dark;
 }
 
 #pulseaudio {
-  color: #83a598;
+  color: @blue;
 }
 
 #pulseaudio.muted {
-  color: #ea6962;
+  color: @red;
 }
 
 #battery {
-  color: #689d68;
+  color: @green-dark;
 }
 
 #battery.critical {
-  color: #cc241d;
+  color: @red-dark;
 }
 
 #battery.warning {
-  color: #e78a4e;
+  color: @orange;
 }
 
 #clock {
-  color: #8ec07c;
+  color: @green;
 }
 
 #network {
-  color: #d3869b;
+  color: @pink;
 }
 
-#mode,
-#submap {
-  color: #222222;
-  background: #83a598;
+/* ===== MODE ===== */
+#submap,
+#mode {
+  color: @black;
+  background: @blue;
   padding: 0 4.5pt;
 }

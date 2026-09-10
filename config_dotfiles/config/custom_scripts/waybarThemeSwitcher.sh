@@ -1,47 +1,59 @@
 #!/usr/bin/env bash
-set -euo pipefail
 
-CONFIG_DIR="$HOME/.local/share/config_dotfiles/config/waybar_configs"
-TARGET_DIR="$HOME/.config/waybar"
+switch_waybar_themes() {
+  local waybar_themes_directory="$HOME/.local/share/config_dotfiles/config/waybar_configs"
+  local waybar_config_directory="$HOME/.config/waybar"
+  local waybar_themes
+  local selected_waybar_theme
+  local selected_path
 
-# list available waybar configs with rofi
-CONFIG=$(ls -1 "$CONFIG_DIR" | grep -v '^\.' | sort | rofi -dmenu -p "themes")
+  # store theme directories in an array
+  mapfile -t waybar_themes < <(
+    find "$waybar_themes_directory" -mindepth 1 -maxdepth 1 -type d -printf "%f\n"
+  )
 
-if [[ -n "$CONFIG" ]]; then
-  SELECTED="$CONFIG_DIR/$CONFIG"
+  # theme selection prompt
+  selected_waybar_theme="$(
+    printf "%s\n" "${waybar_themes[@]}" |
+    sort |
+    fuzzel --dmenu --prompt="Themes: "
+  )"
 
-  # Check config folder existance
-  if [[ ! -d "$SELECTED" ]]; then
-    notify-send "Waybar" "Config \"$CONFIG\" not found in $CONFIG_DIR"
-    exit 1
+  # notify if a theme is not selected
+  if [[ -z "$selected_waybar_theme" ]];then
+    return 0
+  fi
+  
+  # full selected path
+  selected_path="$waybar_themes_directory/$selected_waybar_theme"
+
+  # handle wrong theme name
+  [[ -d "$selected_path" ]] || {
+    notify-send "Waybar" "Config \"$selected_waybar_theme\" not found"
+    return 1
+  }
+
+  # check if link is already selected
+  if [[ -L "$waybar_config_directory" ]];then
+    if [[ "$(readlink -f "$waybar_config_directory")" == "$(readlink -f "$selected_path")" ]]; then
+      notify-send "Waybar" "Already using: $selected_waybar_theme"
+      return 0
+    fi
   fi
 
-  # notify if already selected
-  if [[ -L "$TARGET_DIR" ]] && [[ "$(readlink -f "$TARGET_DIR")" = "$(readlink -f "$SELECTED")" ]]; then
-    notify-send "Waybar" "Already using config: $CONFIG"
-    exit 0
-  fi
+  # create symlink or replace with existing one
+  ln -sfn "$selected_path" "$waybar_config_directory"
 
-  # Make sure parent directories exist
-  mkdir -p "$(dirname "$TARGET_DIR")"
-
-  # Remove existing target only if it's not the desired symlink
-  # using ln -sfn is to create/replace symlink atomically
-  ln -sfn "$SELECTED" "$TARGET_DIR"
-
-  # Restart waybar
+  # restart waybar session
   pkill -x waybar 2>/dev/null || true
-
-  # 1 sec waiting time to properly kill the waybar process
   sleep 1
 
-  # handle duplicate waybar after changing themes in sway
-  if [[ "$DESKTOP_SESSION" = "sway" ]]; then
+  # reload depending on the window manager
+  if [[ "$XDG_CURRENT_DESKTOP" == "sway:wlroots" ]];then
     swaymsg reload
   else
     waybar & disown
   fi
+}
 
-else
-  notify-send "Waybar" "No configuration selected"
-fi
+switch_waybar_themes

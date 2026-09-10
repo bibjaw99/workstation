@@ -2,6 +2,7 @@ local cmd = vim.cmd
 local opt = vim.opt
 
 cmd("let g:netrw_liststyle = 3")
+cmd("let g:markdown_recommended_style = 0")
 cmd("filetype plugin indent on")
 
 -- Appearance
@@ -11,9 +12,10 @@ opt.cmdheight = 0
 opt.conceallevel = 0
 opt.showtabline = 0
 opt.winborder = "bold"
+opt.linebreak = false
 
 -- Files and Others
-opt.fileencoding = "utf-8" -- File Encoding
+opt.fileencoding = "utf-8"
 opt.autochdir = true
 opt.hidden = true
 opt.whichwrap = "b,s,<,>,[,],h,l"
@@ -35,7 +37,7 @@ opt.smartindent = true
 opt.autoindent = true
 opt.expandtab = true
 
-opt.fillchars = { eob = " " }
+opt.fillchars = { eob = " ", msgsep = "-" }
 
 opt.clipboard = "unnamedplus"
 opt.backspace = "indent,eol,start"
@@ -55,7 +57,7 @@ opt.inccommand = "split"
 -- Update and backups
 opt.showmode = false
 opt.backup = false
-opt.writebackup = true
+opt.writebackup = false
 opt.updatetime = 300
 opt.timeoutlen = 500
 opt.swapfile = false

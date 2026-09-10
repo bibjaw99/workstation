@@ -6,14 +6,11 @@
   "margin-left": 5,
   "margin-right": 5,
   "modules-left": [
-    "custom/rofi",
+    "custom/launcher",
     "sway/workspaces",
-    "hyprland/workspaces",
     "sway/window",
-    "hyprland/window",
     "tray",
-    "sway/mode",
-    "hyprland/submap"
+    "sway/mode"
   ],
   "modules-center": [
     "clock"
@@ -28,9 +25,9 @@
     "pulseaudio",
     "battery"
   ],
-  "custom/rofi": {
+  "custom/launcher": {
     "format": "<span ></span>",
-    "on-click": "rofi -show drun -disable-history -show-icons -theme-str 'window { width: 22% ; location: northwest; margin: 10px 0 0 10px; } listview { lines: 20; }'",
+    "on-click": "fuzzel --lines=20 --anchor=top-left",
     "on-click-right": "~/.config/custom_scripts/power.sh",
     "escape": true,
     "tooltip": false
@@ -50,7 +47,9 @@
       "5": "<span></span>",
       "6": "<span>󰭛</span>",
       "7": "<span>󱓷</span>",
-      "8": "<span>󰚀</span>"
+      "8": "<span>󰴘</span>",
+      "9": "<span>󰟝</span>",
+      "10": "<span>󰚀</span>"
     }
   },
   "sway/window": {
@@ -59,33 +58,6 @@
     "tooltip": false
   },
   "sway/mode": {
-    "format": " {}",
-    "max-length": 50
-  },
-  "hyprland/workspaces": {
-    "disable-scroll": true,
-    "active-only": false,
-    "all-outputs": true,
-    "warp-on-scroll": false,
-    "format": "{icon}",
-    "format-icons": {
-      "1": "<span>󰧨</span>",
-      "2": "<span>󰈹</span>",
-      "3": "<span></span>",
-      "4": "<span></span>",
-      "5": "<span></span>",
-      "6": "<span>󰭛</span>",
-      "7": "<span>󱓷</span>",
-      "8": "<span>󰚀</span>"
-    }
-  },
-  "hyprland/window": {
-    "format": "<span color='#f6c657' > 󰣆 </span>{class}",
-    "separate-outputs": true,
-    "icon": false,
-    "tooltip": false
-  },
-  "hyprland/submap": {
     "format": " {}",
     "max-length": 50
   },
@@ -100,7 +72,8 @@
   "cpu": {
     "format": "<span color='#e78a4e' >  </span>{usage}%",
     "tooltip": false,
-    "interval": 1
+    "interval": 1,
+    "on-click-right": "~/.config/custom_scripts/launch_tui.sh btop"
   },
   "custom/cpu_temp": {
     "exec": "~/.config/waybar/scripts/waybarTemp.sh",
@@ -122,13 +95,14 @@
     "format": "<span color='#458588' >  </span>{}"
   },
   "pulseaudio": {
+    "scroll-step": 1,
     "format": "<span color='#83a598' >  </span>{volume}%",
     "format-muted": "<span color='#ea6962' >  </span>{volume}%",
     "format-bluetooth": "<span color='#83a598' > 󰂰 </span>{volume}%",
     "format-bluetooth-muted": "<span color='#ea6962' > 󰂲 </span>{volume}%",
     "format-source": "{volume}% ",
     "on-click": "pactl set-sink-mute @DEFAULT_SINK@ toggle",
-    "on-click-right": "blueman-manager",
+    "on-click-right": "~/.config/custom_scripts/launch_tui.sh wiremix",
     "tooltip": false,
     "max-volume": 130
   },

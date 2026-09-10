@@ -1,0 +1,9 @@
+cmus
+faad2
+libao
+libcddb
+libiconv
+libmp4v2
+libmpcdec
+opusfile
+wavpack

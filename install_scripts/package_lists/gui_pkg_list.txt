@@ -1,10 +1,9 @@
 foot
-rofi
-rofi-emoji
+fuzzel
+rofimoji
 pcmanfm
 xarchiver
 mate-polkit
-pavucontrol-qt
 gnome-keyring
 gnome-disk-utility
 xdg-desktop-portal
@@ -14,5 +13,5 @@ zathura
 zathura-pdf-poppler
 ristretto
 mpv
-sddm
+ly
 firefox-developer-edition

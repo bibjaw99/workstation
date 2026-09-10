@@ -1,0 +1,153 @@
+/* ===== COLORS ===== */
+@define-color bg #222222;
+@define-color bg-alt #383838;
+
+@define-color fg #ebdbb2;
+@define-color fg-soft #fff4d2;
+
+@define-color border #484848;
+@define-color gray #555555;
+
+@define-color black #000000;
+
+@define-color blue #83a598;
+@define-color blue-dark #458588;
+
+@define-color pink #d3869b;
+@define-color pink-dark #b26286;
+
+@define-color green #8ec07c;
+@define-color green-dark #689d68;
+
+@define-color red #ea6962;
+@define-color red-dark #cc241d;
+@define-color red-critical #b22222;
+
+@define-color orange #e78a4e;
+
+
+/* ===== GLOBAL ===== */
+* {
+  padding: 0;
+  min-height: 0;
+  margin: 0;
+  text-shadow: none;
+  transition: none;
+  box-shadow: none;
+  border-radius: 0;
+}
+
+window#waybar {
+  background: @bg;
+  font-family: IosevkaTerm Nerd Font Propo;
+  font-size: 12pt;
+  font-weight: 900;
+  color: @fg;
+}
+
+.modules-left,
+.modules-center,
+.modules-right {
+  padding: 3pt;
+  background: @bg;
+}
+
+/* ===== COMMON MODULE STYLE ===== */
+#window,
+#disk,
+#cpu,
+#custom-cpu_temp,
+#custom-cpu_temp.critical,
+#backlight,
+#custom-memory,
+#pulseaudio,
+#pulseaudio.muted,
+#battery,
+#battery.critical,
+#battery.warning,
+#network,
+#clock {
+  color: @fg-soft;
+  border: 2pt solid @border;
+  background-color: @bg-alt;
+  padding-right: 4.5pt;
+}
+
+/* ===== launcher ===== */
+#custom-launcher {
+  color: @black;
+  border: 2pt solid @blue-dark;
+  background: @blue;
+  padding: 0pt 6pt;
+}
+
+/* ===== WORKSPACES ===== */
+#workspaces button {
+  color: @fg-soft;
+  background-color: @bg-alt;
+  border: 2pt solid @border;
+  min-width: 15pt;
+  margin-right: 3pt;
+  padding: 0pt 3.75pt;
+}
+
+#workspaces button:last-child {
+  margin-right: 0;
+}
+
+#workspaces button:hover {
+  color: @bg;
+  background: @pink;
+  border-color: @pink-dark;
+}
+
+#workspaces button.visible,
+#workspaces button.visible:hover {
+  color: @black;
+  background: @green;
+  border-color: @green-dark;
+}
+
+#workspaces button.urgent {
+  color: @bg;
+  border-color: @red-dark;
+  background: @red;
+}
+
+/* ===== SPECIAL STATES ===== */
+#custom-cpu_temp.critical {
+  background-color: @red-dark;
+  border: 2pt solid @fg;
+}
+
+#custom-cpu_temp.unknown {
+  color: @gray;
+}
+
+#pulseaudio.muted {
+  border: 2pt solid @red;
+}
+
+#battery.critical {
+  border: 2pt solid @red-critical;
+}
+
+#battery.warning {
+  border: 2pt solid @orange;
+}
+
+/* ===== TRAY ===== */
+#tray {
+  color: @fg-soft;
+  border: 2pt solid @border;
+  background-color: @bg-alt;
+  padding: 0 6pt;
+}
+
+/* ===== MODE ===== */
+#mode {
+  color: @black;
+  border: 2pt solid @blue-dark;
+  background: @blue;
+  padding: 0pt 6pt;
+}

@@ -5,5 +5,11 @@ org.gimp.GIMP
 org.inkscape.Inkscape
 org.localsend.localsend_app
 org.qbittorrent.qBittorrent
+org.kde.kdenlive
 com.getpostman.Postman
 com.mongodb.Compass
+com.jgraph.drawio.desktop
+org.pgadmin.pgadmin4
+io.github.Faugus.faugus-launcher
+com.obsproject.Studio
+com.obsproject.Studio.Plugin.GStreamerVaapi
