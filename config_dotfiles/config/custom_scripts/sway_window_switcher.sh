@@ -10,7 +10,7 @@ sway_windows=$(
       .name,
       (if .type == "floating_con" then "FLOATING" else "TILED" end)
     ]
-  | @tsv' | fuzzel --dmenu --prompt="Window picker: " --width=100
+  | @tsv' | rofi -dmenu -p "Window picker" -theme-str 'window { width: 80% ; margin: 10 0 0 10; }'
 )
 
 # no input

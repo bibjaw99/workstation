@@ -3,7 +3,7 @@
 - **OS:** Arch Linux
 - **Window Manager:** Sway
 - **Bar:** waybar
-- **Launcher:** Fuzzel
+- **Launcher:** Rofi
 - **Terminal:** Foot
 - **File Manager:** Pcmanfm
 - **Terminal File manager:** lf
@@ -102,7 +102,7 @@ bash "$HOME/workstationdots/swaystation/install_scripts/install.sh"
 
 ![wabar themes](https://github.com/mister-grimm96/swaystation-misc/blob/main/screenshots/waybarSwitching.gif?raw=true)
 
-### App launcher and power menu: Fuzzel
+### Launcher and power menu: Rofi
 
 ![Launcher](https://github.com/mister-grimm96/swaystation-misc/blob/main/screenshots/launcher.png?raw=true)
 

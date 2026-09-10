@@ -15,7 +15,7 @@ get_wall_name() {
       -iname "*.bmp" -o \
       -iname "*.webp" \
   \))
-  selected_wall="$(printf '%s\n' "${images[@]}" | sort | fuzzel --dmenu --prompt="Walls: ")"
+  selected_wall="$(printf '%s\n' "${images[@]}" | sort | rofi -dmenu -p "Walls")"
   [[ -z "$selected_wall" ]] && exit 1
   echo "$selected_wall" > "$HOME/.cache/wall.txt"
   pkill swaybg

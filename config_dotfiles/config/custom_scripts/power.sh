@@ -28,7 +28,7 @@ options=(
     "POWER OFF"
 )
 
-chosen=$(printf '%s\n' "${options[@]}" | fuzzel --dmenu --anchor=top-right --hide-prompt --lines=5 --width=12)
+chosen=$(printf '%s\n' "${options[@]}" | rofi -dmenu -i -theme-str '@import "~/.config/rofi/themes/powermenu.rasi"')
 
 # Perform the action based on user choice
 case "$chosen" in

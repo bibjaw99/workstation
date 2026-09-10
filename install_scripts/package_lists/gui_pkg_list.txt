@@ -1,5 +1,5 @@
 foot
-fuzzel
+rofi
 rofimoji
 pcmanfm
 xarchiver

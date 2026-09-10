@@ -25,9 +25,9 @@
     "config_des": "$HOME/.config/waybar"
   },
   {
-    "name": "fuzzel",
-    "config_src": "$HOME/.local/share/config_dotfiles/config/fuzzel",
-    "config_des": "$HOME/.config/fuzzel"
+    "name": "rofi",
+    "config_src": "$HOME/.local/share/config_dotfiles/config/rofi",
+    "config_des": "$HOME/.config/rofi"
   },
   {
     "name": "fontconfig",

@@ -43,14 +43,14 @@ if [[ "$bookmarks_selection_mode" == "all" ]]; then
   mapfile -t bookmarks < <(remove_empty_lines_and_spaces "$BOOKMARKS_DIRECTORY"/*.txt)
   # exit if bookmarks is empty
   [[ ${#bookmarks[@]} -gt 0 ]] || exit 0
-  selected=$(printf '%s\n' "${bookmarks[@]}" | sort | fuzzel --dmenu --prompt="Bookmarks: " --width=80)
+  selected=$(printf '%s\n' "${bookmarks[@]}" | sort | rofi -dmenu -p "Bookmarks" -theme-str 'window { width: 50% ; margin: 10 0 0 10; }')
 else
   # store available categories file in an array
   mapfile -t categories < <(find "$BOOKMARKS_DIRECTORY" -maxdepth 1 -type f -name "*.txt" -printf "%f\n")
   # if there's no category file then exit
   [[ ${#categories[@]} -gt 0 ]] || exit 0
   # print available bookmark of a category
-  selected_category=$(printf '%s\n' "${categories[@]}" | sort | fuzzel --dmenu --prompt="Categories: " --width=80)
+  selected_category=$(printf '%s\n' "${categories[@]}" | sort | rofi -dmenu -p "Categories" -theme-str 'window { width: 50% ; margin: 10 0 0 10; }')
   # exit if there is no selected category
   [[ -n "$selected_category" ]] || exit 0
   # file path of the selected category
@@ -60,7 +60,7 @@ else
   # exit if no category is selected
   [[ ${#bookmarks[@]} -gt 0 ]] || exit 0
   # available bookmarks in selected category
-  selected=$(printf '%s\n' "${bookmarks[@]}" | sort | fuzzel --dmenu --prompt="$selected_category: " --width=80)
+  selected=$(printf '%s\n' "${bookmarks[@]}" | sort | rofi -dmenu -p "$selected_category" -theme-str 'window { width: 50% ; margin: 10 0 0 10; }')
 fi
 
 # exit if nothing is selected

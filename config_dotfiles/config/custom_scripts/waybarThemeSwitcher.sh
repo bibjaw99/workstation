@@ -16,7 +16,7 @@ switch_waybar_themes() {
   selected_waybar_theme="$(
     printf "%s\n" "${waybar_themes[@]}" |
     sort |
-    fuzzel --dmenu --prompt="Themes: "
+    rofi -dmenu -p "Themes"
   )"
 
   # notify if a theme is not selected

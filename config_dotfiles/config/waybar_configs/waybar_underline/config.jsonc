@@ -25,7 +25,7 @@
   ],
   "custom/launcher": {
     "format": "<span ></span>",
-    "on-click": "fuzzel --lines=20 --anchor=top-left",
+    "on-click": "rofi -show drun -disable-history -show-icons -theme-str 'window { width: 22% ; location: northwest; margin: 10px 0 0 10px; } listview { lines: 20; }'",
     "on-click-right": "~/.config/custom_scripts/power.sh",
     "escape": true,
     "tooltip": false

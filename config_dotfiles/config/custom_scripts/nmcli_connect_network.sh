@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # list of networks
-selected_network=$(nmcli -t -f SSID dev wifi list | sed '/^$/d' | sort -u | fuzzel --dmenu --prompt="WiFi: ")
+selected_network=$(nmcli -t -f SSID dev wifi list | sed '/^$/d' | sort -u | rofi -dmenu -i -matching fuzzy -p "WiFi")
 
 [ -z "$selected_network" ] && exit 0
 
@@ -18,7 +18,7 @@ fi
 
 # 3 times pass check
 for attempt in 1 2 3; do
-  PASSWORD=$(printf '' | fuzzel --dmenu --password='*' --prompt-only="$selected_network Pass ($attempt/3): " --width=60 )
+  PASSWORD=$(printf '' | rofi -dmenu -password -no-fixed-num-lines -p "Password ($attempt/3)" -theme-str 'window { width: 30% ; margin: 10 0 0 10; }')
 
   [ -z "$PASSWORD" ] && exit 0
 
